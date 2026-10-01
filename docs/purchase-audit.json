@@ -131,9 +131,13 @@
     {
       "id": "23",
       "title": "Motette (Motet)",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "partially_verified",
+      "sources": [
+        "https://www.boosey.com/cr/music/Hans-Gal-Motet/28283",
+        "https://www.boosey.com/purchase-music/Hans-Gal-Motet/28283"
+      ],
+      "note": "Op.19, eight-part mixed choir, Claudius text. Publisher confirms for sale; purchase page redirects readers to their preferred music shop without identifying an edition or format. Exact product/format remains unresolved.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "132",
@@ -208,9 +212,13 @@
     {
       "id": "32",
       "title": "Epigramme (Epigrams)",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "partially_verified",
+      "sources": [
+        "https://www.boosey.com/cr/music/Hans-Gal-Epigramme/58580",
+        "https://www.boosey.com/purchase-music/Hans-Gal-Epigramme/58580"
+      ],
+      "note": "Op.27, 4/8-part mixed choir, Lessing text. Publisher confirms for sale; purchase page gives no exact edition or checkout. No format-specific purchase URL added.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "131",
@@ -607,9 +615,13 @@
     {
       "id": "49",
       "title": "Concertino for piano and string orchestra",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "partially_verified",
+      "sources": [
+        "https://www.boosey.com/cr/music/Hans-Gal-Concertino-for-piano-and-strings/27544",
+        "https://www.boosey.com/purchase-music/Hans-Gal-Concertino-for-piano-and-strings/27544"
+      ],
+      "note": "Op.43, piano and strings. Publisher lists rental and sale; exact sale edition is not specified and the linked Zinfonia rental handoff could not be inspected. No unverified format link added.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "89",
@@ -840,9 +852,13 @@
     {
       "id": "124",
       "title": "String Quintet",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "partially_verified",
+      "sources": [
+        "https://www.boosey.com/cr/music/Hans-Gal-String-Quintet/28265",
+        "https://www.boosey.com/purchase-music/Hans-Gal-String-Quintet/28265"
+      ],
+      "note": "Op.106, two violins/two violas/cello. Publisher confirms sale, but purchase page only refers to a preferred music shop. Exact edition/format pending.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "125",
@@ -917,9 +933,13 @@
     {
       "id": "138",
       "title": "Sonata in D for violin and piano",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "partially_verified",
+      "sources": [
+        "https://www.boosey.com/publications/sheet-music/Hans-Gal-Sonate-in-D-1933-fur-Violine-und-Klavier/38774",
+        "https://www.boosey.com/shop/prod/Hans-Gal-Sonate-in-D-1933-fur-Violine-und-Klavier-Violin-Piano/920949"
+      ],
+      "note": "Exact 1933 D-major violin/piano sonata, edited by David Fr\u00fchwirth; Simrock EE5318, ISMN 9790221121097, score and part. Publisher product page has Buy Now; current handoff directs to preferred music shop. Stock and digital edition not verified.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "139",
@@ -954,9 +974,13 @@
     {
       "id": "144",
       "title": "Quartet for violin, viola, cello and piano left hand",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "partially_verified",
+      "sources": [
+        "https://www.boosey.com/cr/music/Hans-Gal-Piano-Quartet-in-A/102022",
+        "https://www.boosey.com/purchase-music/Hans-Gal-Piano-Quartet-in-A/102022"
+      ],
+      "note": "1926 quartet for violin, viola, cello and piano left hand. Correct work confirmed; purchase page gives no exact product edition or checkout. No format-specific link added.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "145",

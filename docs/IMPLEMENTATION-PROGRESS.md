@@ -110,3 +110,12 @@ Continue translation and original-title provenance review, score-basket verifica
 - Added the remaining biography chapters covering recognition, scholarship, Mainz, dismissal, Die beiden Klaas, return to Vienna, emigration and internment. Contact and Society page bodies now translated; donation declaration/messages localized on both Society and donation pages. Empty family-tree body preserved.
 - Corrected reversible UTF-8/Windows-1252 decoding artifacts found in German text of seven previously translated biography chapters and a shared musical title. Original English fields and URLs remain unchanged.
 - Full translation remains incomplete: 56 inventory fields pending, plus embedded popup/attribute/caption sweep. Full purchase audit remains pending. This checkpoint is not a claim that those remaining mission requirements are complete.
+
+### 1 October: popup notes, initial reviews and publisher evidence
+
+- PR #8 deployed successfully at `671984c2812dca71ec5476444683a9bae4ca1eab`, Pages run 36911900902.
+- All 19 unique biography popup notes translated across 51 occurrences; all resulting scripts parse. Dedicated `popup-translation-coverage.json` records source hashes and historical ambiguities. Original English bodies, links and media preserved.
+- Seven recording reviews translated (16, 19, 22, 24, 28, 32, 48), with translated quotations identified. Review 16 contains historical claims conflicting with the biography (award age and length of internment); preserved as the critic's words and flagged here for editorial review, not endorsed as newly checked facts.
+- Hosted catalogue PASS: German Vokalquartette query returns work149; descending year sort has 1986, 1983, 1983, 1982, 1982, 1979; switching language preserves current search and sort and returns the English equivalent of the same work. Original arrow-sort behavior resets text search, as in the preserved legacy UI; language switching itself retains the current query.
+- Six further publisher work matches investigated. Added exact Simrock EE5318 / ISMN 9790221121097 violin-sonata product page (work138). Five other Boosey purchase pages lack exact edition/format checkout and remain partially verified, with no guessed links. Publisher crawler limitations include UE/Boosey 403 and Breitkopf 429; indexed primary-source evidence distinguished from stock verification.
+- Full translation and all-record purchase audit are still in progress; 49 inventory fields remain pending, plus HTML-attribute and standalone-caption checks.

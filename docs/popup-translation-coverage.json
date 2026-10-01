@@ -1,0 +1,331 @@
+{
+  "complete": true,
+  "unique_notes": 19,
+  "occurrences": 51,
+  "verification": "All source popup occurrences replaced exactly once in German bodies; original English bodies unchanged; every extracted script parses. Quotations identified as translations.",
+  "source_ambiguities": [
+    "Levetzow birthplace is described anachronistically as Czechoslovakia in 1871; claim retained.",
+    "Neue Wiener B\u00fchne described as open-air in supplied source; retained for editorial review.",
+    "Toch Pulitzer date and Ros\u00e9 family name chronology retained from source pending editorial review."
+  ],
+  "notes": [
+    {
+      "key": "5ebe709504c11ba4",
+      "uses": [
+        [
+          "1",
+          "jenny"
+        ],
+        [
+          "11",
+          "jenny"
+        ],
+        [
+          "27",
+          "jenny"
+        ],
+        [
+          "38",
+          "jenny"
+        ],
+        [
+          "39",
+          "jenny"
+        ],
+        [
+          "41",
+          "jenny"
+        ],
+        [
+          "42",
+          "jenny"
+        ],
+        [
+          "43",
+          "jenny"
+        ],
+        [
+          "46",
+          "jenny"
+        ],
+        [
+          "49",
+          "jenny"
+        ],
+        [
+          "50",
+          "jenny"
+        ],
+        [
+          "51",
+          "jenny"
+        ],
+        [
+          "52",
+          "jenny"
+        ],
+        [
+          "53",
+          "jenny"
+        ],
+        [
+          "54",
+          "jenny"
+        ],
+        [
+          "55",
+          "jenny"
+        ],
+        [
+          "56",
+          "jenny"
+        ]
+      ],
+      "source_sha256": "5ebe709504c11ba457f02104f70a82a8f4797bb6586d9eb4384da845f6f930de"
+    },
+    {
+      "key": "d8e3c8da93b2e789",
+      "uses": [
+        [
+          "1",
+          "kleiber"
+        ],
+        [
+          "11",
+          "kleiber"
+        ],
+        [
+          "27",
+          "kleiber"
+        ],
+        [
+          "38",
+          "kleiber"
+        ],
+        [
+          "39",
+          "kleiber"
+        ],
+        [
+          "41",
+          "kleiber"
+        ],
+        [
+          "42",
+          "kleiber"
+        ],
+        [
+          "43",
+          "kleiber"
+        ],
+        [
+          "46",
+          "kleiber"
+        ],
+        [
+          "49",
+          "kleiber"
+        ],
+        [
+          "50",
+          "kleiber"
+        ],
+        [
+          "51",
+          "kleiber"
+        ],
+        [
+          "52",
+          "kleiber"
+        ],
+        [
+          "53",
+          "kleiber"
+        ],
+        [
+          "54",
+          "kleiber"
+        ],
+        [
+          "55",
+          "kleiber"
+        ],
+        [
+          "56",
+          "kleiber"
+        ]
+      ],
+      "source_sha256": "d8e3c8da93b2e789b8eaec809684c8e11238080200199ee3ac56f660914fdae4"
+    },
+    {
+      "key": "bf4c8bf4abf71f13",
+      "uses": [
+        [
+          "2",
+          "robert"
+        ]
+      ],
+      "source_sha256": "bf4c8bf4abf71f132cffacc6ede742b05a0178d09f895bea4f484c505ab333e5"
+    },
+    {
+      "key": "88bd4d19a939613f",
+      "uses": [
+        [
+          "2",
+          "adler"
+        ]
+      ],
+      "source_sha256": "88bd4d19a939613f043b7b45d22a621e00a323087a03401ddabdf34bcb28aacc"
+    },
+    {
+      "key": "909870e9f5f8e799",
+      "uses": [
+        [
+          "2",
+          "mandyczewski"
+        ]
+      ],
+      "source_sha256": "909870e9f5f8e7996c3f5f8a6b5d66c01636bc50d21510a71dcb824e5488c838"
+    },
+    {
+      "key": "a55b2b6163e475d2",
+      "uses": [
+        [
+          "2",
+          "mandy2"
+        ]
+      ],
+      "source_sha256": "a55b2b6163e475d22d04f031d8e5454e6a7acedd818c646a9e017e4cda41e801"
+    },
+    {
+      "key": "04dd22a6e709464f",
+      "uses": [
+        [
+          "9",
+          "rose"
+        ]
+      ],
+      "source_sha256": "04dd22a6e709464fb5080cc0d4d624cd4c7ed6c164242e359c2eaa91b54094dd"
+    },
+    {
+      "key": "5fe4e1655eaa8d96",
+      "uses": [
+        [
+          "9",
+          "heurigen"
+        ]
+      ],
+      "source_sha256": "5fe4e1655eaa8d96ea9cd3fc425d3df07d74c5c7197460ab599ccbd955d4f02a"
+    },
+    {
+      "key": "f9e48c938cc61a61",
+      "uses": [
+        [
+          "28",
+          "buehne"
+        ]
+      ],
+      "source_sha256": "f9e48c938cc61a61723f64c294d71f01edd4f19db781d207bf40a8e47749c209"
+    },
+    {
+      "key": "7757f7a923f5801a",
+      "uses": [
+        [
+          "28",
+          "levetzow"
+        ]
+      ],
+      "source_sha256": "7757f7a923f5801a867b335edfdf0812d782d266915c09f7cd6aaf82a3b13d0e"
+    },
+    {
+      "key": "3fcec344677e53de",
+      "uses": [
+        [
+          "29",
+          "jerusalem"
+        ]
+      ],
+      "source_sha256": "3fcec344677e53de31c67a7d4fb3193722901777e7e41f2a8c1c9a365448d6c1"
+    },
+    {
+      "key": "8204ddea187ac02b",
+      "uses": [
+        [
+          "40",
+          "kolisch"
+        ]
+      ],
+      "source_sha256": "8204ddea187ac02be3b8e2309c0df4711499156fec7bcafdbe113541f516c39f"
+    },
+    {
+      "key": "81426caac8c6cd09",
+      "uses": [
+        [
+          "40",
+          "admv"
+        ]
+      ],
+      "source_sha256": "81426caac8c6cd0975c8060cc174a508ec9cff50a4f5f4b0d3defaa659476ab1"
+    },
+    {
+      "key": "7c2e213a838bec8c",
+      "uses": [
+        [
+          "44",
+          "toch"
+        ]
+      ],
+      "source_sha256": "7c2e213a838bec8ce88bb5a4e979c45d5d95c756b5bc7784cc93e833cb40e249"
+    },
+    {
+      "key": "d886026dceac5379",
+      "uses": [
+        [
+          "45",
+          "arier"
+        ]
+      ],
+      "source_sha256": "d886026dceac537949d763dbb7691050b920c3ea4ab0ffc8d6c29bc5826b9fa3"
+    },
+    {
+      "key": "730849cc06530797",
+      "uses": [
+        [
+          "47",
+          "horvath"
+        ]
+      ],
+      "source_sha256": "730849cc06530797eeb642560516ef8dbb0351a110777c8a967b20338e436b39"
+    },
+    {
+      "key": "ba538efb9e161159",
+      "uses": [
+        [
+          "48",
+          "jenny2"
+        ]
+      ],
+      "source_sha256": "ba538efb9e1611591d83dbce2559fea635cf2298fa37aa9c93122602e9f33988"
+    },
+    {
+      "key": "e5bd90ce15ab6b43",
+      "uses": [
+        [
+          "48",
+          "tovey"
+        ]
+      ],
+      "source_sha256": "e5bd90ce15ab6b436459094c57edabc0535bf06c8e1439be861f75a707b107b8"
+    },
+    {
+      "key": "251d621586901ab6",
+      "uses": [
+        [
+          "48",
+          "grierson"
+        ]
+      ],
+      "source_sha256": "251d621586901ab6426eb45530733673f46e5266eac57af8a38fa729b5c1eef2"
+    }
+  ]
+}
