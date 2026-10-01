@@ -1,0 +1,237 @@
+{
+  "source_sql_sha256": "7308e6b6d0e5ab9751a29d1d90aec3d53387de21609a7a3f8e31cc65ec6f8e3b",
+  "table_counts": {
+    "audio_sample": 75,
+    "catalogue": 179,
+    "catalogue_audio_sample": 75,
+    "catalogue_category": 547,
+    "catalogue_image": 2,
+    "catalogue_recordings": 111,
+    "category": 44,
+    "faqs": 6,
+    "heading": 6,
+    "menu": 48,
+    "photos": 106,
+    "photos_category": 5,
+    "properties": 4,
+    "recording": 78,
+    "recording_audio_sample": 10,
+    "thumbnail": 34
+  },
+  "excluded_private_or_working_tables": [
+    "cctemp",
+    "comments",
+    "temp"
+  ],
+  "assets": 1282,
+  "asset_bytes": 311656702,
+  "omitted_non_public_application_files": [
+    "gfx/flash/xspf_player/xspf_player_slim.as",
+    "gfx/flash/xspf_player/xspf_player_slim.fla",
+    "gfx/flash/xspf_player/xspf_player_slim.swf.bak",
+    "gfx/images/.htaccess",
+    "gfx/images/menu-c.jpg.bak",
+    "gfx/images/menu-l.jpg.bak",
+    "gfx/images/menu-r.jpg.bak",
+    "imageflow/error_log",
+    "imageflow/reflect2.php",
+    "imageflow/reflect3.php"
+  ],
+  "portable_filename_mappings": [
+    {
+      "source_path": "storage/jmwaudioguide/Item507 Burleque f\udcfcr Cello und Klavi.mp3",
+      "path": "/storage/jmwaudioguide/Item507 Burleque f\u00fcr Cello und Klavi.mp3",
+      "bytes": 377312,
+      "sha256": "ac4b0626ab837e2607146f31de88908096f34a1bb1f7491958d3432ed8329e6c"
+    },
+    {
+      "source_path": "storage/jmwaudioguide/Item510 Mandyzschwesky und G\udce1ls Ewig.mp3",
+      "path": "/storage/jmwaudioguide/Item510 Mandyzschwesky und G\u00e1ls Ewig.mp3",
+      "bytes": 301288,
+      "sha256": "b83c224366cbfc9855724c8b18b00d7f9d395f57f75d19b9de33af87ae527006"
+    },
+    {
+      "source_path": "storage/jmwaudioguide/Item515 spricht \udcfcber seine Fr\udcfchwerke.mp3",
+      "path": "/storage/jmwaudioguide/Item515 spricht \u00fcber seine Fr\u00fchwerke.mp3",
+      "bytes": 685568,
+      "sha256": "35c252459bc42f84c5b26d0e398ce22f617a852e66a5fe2dccb037a771e269d3"
+    },
+    {
+      "source_path": "storage/jmwaudioguide/Item517 Hans G\udce1l spricht \udcfcber Mahler.mp3",
+      "path": "/storage/jmwaudioguide/Item517 Hans G\u00e1l spricht \u00fcber Mahler.mp3",
+      "bytes": 861536,
+      "sha256": "c7851bfe73e4fd7486d4837975138a50682dce58fbb7d74d4b9fb05fbf70b60a"
+    },
+    {
+      "source_path": "storage/jmwaudioguide/Item518 Das B\udce4umlein das andere Bl\udce4t.mp3",
+      "path": "/storage/jmwaudioguide/Item518 Das B\u00e4umlein das andere Bl\u00e4t.mp3",
+      "bytes": 983411,
+      "sha256": "cd9a04b427528a401aeea126349884d480b48bec3def3681b7f2c915257eb3fa"
+    },
+    {
+      "source_path": "storage/jmwaudioguide/Item519 Aus der Ouvert\udcfcre zu einem P.mp3",
+      "path": "/storage/jmwaudioguide/Item519 Aus der Ouvert\u00fcre zu einem P.mp3",
+      "bytes": 559520,
+      "sha256": "69284d624dcbcbba89ee4c78a83fb7cf46a4b449334f0ac4d09880d5b172a27e"
+    },
+    {
+      "source_path": "storage/jmwaudioguide/Item521 Hans G\udce1l \udcfcber seine erste Op.mp3",
+      "path": "/storage/jmwaudioguide/Item521 Hans G\u00e1l \u00fcber seine erste Op.mp3",
+      "bytes": 550056,
+      "sha256": "eeefe303cdc119259f4e18efc89b0ab1ff282ad00a6af8cf1a06a8ad0de17881"
+    },
+    {
+      "source_path": "storage/jmwaudioguide/Item524 \udcfcber Georg Szell.mp3",
+      "path": "/storage/jmwaudioguide/Item524 \u00fcber Georg Szell.mp3",
+      "bytes": 273208,
+      "sha256": "08140b9c2bf6e1e1028778c69a8b3cc3cdf2230dd04eff16ed4905cea9e98845"
+    },
+    {
+      "source_path": "storage/jmwaudioguide/Item527 aus Drei Lieder f\udcfcr Frauench.mp3",
+      "path": "/storage/jmwaudioguide/Item527 aus Drei Lieder f\u00fcr Frauench.mp3",
+      "bytes": 797472,
+      "sha256": "6df72c6a2e38fbc127d5660e61ee573c8f8392fabd12caf2548996b89c0db90f"
+    },
+    {
+      "source_path": "storage/jmwaudioguide/Item528 aus dem Bl\udce4ser Oktett op. 22.mp3",
+      "path": "/storage/jmwaudioguide/Item528 aus dem Bl\u00e4ser Oktett op. 22.mp3",
+      "bytes": 364000,
+      "sha256": "b2a79015c7b22d818239d4266072d9ac5ccddd67c366908b1efd534390b7d5f0"
+    },
+    {
+      "source_path": "storage/jmwaudioguide/Item529 Hans G\udce1l \udcfcber Brahms mit Bei.mp3",
+      "path": "/storage/jmwaudioguide/Item529 Hans G\u00e1l \u00fcber Brahms mit Bei.mp3",
+      "bytes": 627432,
+      "sha256": "05d315ff6dcfddd397d1e49d6f3f737357a424a6b67623e6189c63ad463fe677"
+    },
+    {
+      "source_path": "storage/jmwaudioguide/Item530 Hans G\udce1l \udcfcber die Brahms Aus.mp3",
+      "path": "/storage/jmwaudioguide/Item530 Hans G\u00e1l \u00fcber die Brahms Aus.mp3",
+      "bytes": 447304,
+      "sha256": "b214b0fd608d516413d54d40089738d5ea190276508935eec1874ab18ad1f3e2"
+    },
+    {
+      "source_path": "storage/jmwaudioguide/Item531 Aus der Serenade f\udcfcr Streich.mp3",
+      "path": "/storage/jmwaudioguide/Item531 Aus der Serenade f\u00fcr Streich.mp3",
+      "bytes": 1009008,
+      "sha256": "8d967e3089676bb7311cff34e31b69e4e2a4b4239520128b4ae5d7a75f9700f2"
+    },
+    {
+      "source_path": "storage/jmwaudioguide/Item532 Hans G\udce1l \udcfcber Mainz und den.mp3",
+      "path": "/storage/jmwaudioguide/Item532 Hans G\u00e1l \u00fcber Mainz und den.mp3",
+      "bytes": 294424,
+      "sha256": "233999366023cc06ea002be318f4216cc0df0f057fb984abf6b815ece4bcf52f"
+    },
+    {
+      "source_path": "storage/jmwaudioguide/Item533 AUs einem Brief von Hans G\udce1l.mp3",
+      "path": "/storage/jmwaudioguide/Item533 AUs einem Brief von Hans G\u00e1l.mp3",
+      "bytes": 315640,
+      "sha256": "2832d25c24f19df6c0951721b897de5e322447a366d5155241ba7afbcc4d8b09"
+    },
+    {
+      "source_path": "storage/jmwaudioguide/Item534 Aus dem Konzert f\udcfcr Violin u.mp3",
+      "path": "/storage/jmwaudioguide/Item534 Aus dem Konzert f\u00fcr Violin u.mp3",
+      "bytes": 1208896,
+      "sha256": "f570a99f5116462876d5647b80d8fe137670743d6f749a11e925f76512a12a4c"
+    },
+    {
+      "source_path": "storage/jmwaudioguide/Item537 Hans G\udce1l \udcfcber Hitler.mp3",
+      "path": "/storage/jmwaudioguide/Item537 Hans G\u00e1l \u00fcber Hitler.mp3",
+      "bytes": 473616,
+      "sha256": "3ef4957d43a445d93145027f8671e5de92dfdd8e6f16fb7a06f8c5a6a421ed33"
+    },
+    {
+      "source_path": "storage/jmwaudioguide/Item538 Hans G\udce1l speaks about Hitler.mp3",
+      "path": "/storage/jmwaudioguide/Item538 Hans G\u00e1l speaks about Hitler.mp3",
+      "bytes": 430976,
+      "sha256": "7c043a09e834234d3fd179a40e1882946c320635f571b453e8bbf42ba21b0c82"
+    },
+    {
+      "source_path": "storage/jmwaudioguide/Item540 Hans G\udce1l \udcfcber die R\udcfcckkehr n.mp3",
+      "path": "/storage/jmwaudioguide/Item540 Hans G\u00e1l \u00fcber die R\u00fcckkehr n.mp3",
+      "bytes": 647712,
+      "sha256": "736a67718823561b21da4ebdecc1ce38543c78bf7885d81ff3d4371c770b9492"
+    },
+    {
+      "source_path": "storage/jmwaudioguide/Item542 \udcdcber England, die Intenierun.mp3",
+      "path": "/storage/jmwaudioguide/Item542 \u00dcber England, die Intenierun.mp3",
+      "bytes": 1141192,
+      "sha256": "8dc11d851aa5ad9e689545e79df2159f660e8a4dcc13d457be3ab3e8aa047a84"
+    },
+    {
+      "source_path": "storage/jmwaudioguide/Item545 \udcdcber die Flucht aus Deutschl.mp3",
+      "path": "/storage/jmwaudioguide/Item545 \u00dcber die Flucht aus Deutschl.mp3",
+      "bytes": 961792,
+      "sha256": "c7f111dab3c0527bc9228d02ad1d62a02561c40a9dce8f956aff60faf5129bd9"
+    },
+    {
+      "source_path": "storage/jmwaudioguide/Item546 Concertino f\udcfcr Violine und S.mp3",
+      "path": "/storage/jmwaudioguide/Item546 Concertino f\u00fcr Violine und S.mp3",
+      "bytes": 1134848,
+      "sha256": "55870bbdea3d033c13cd72477c5782ed00d63bbfb73689efb3dad37239555a68"
+    },
+    {
+      "source_path": "storage/jmwaudioguide/Item547 Hans G\udce1l spricht \udcfcber die Re.mp3",
+      "path": "/storage/jmwaudioguide/Item547 Hans G\u00e1l spricht \u00fcber die Re.mp3",
+      "bytes": 242112,
+      "sha256": "93d1681d7d0f8cc16d9ad2873f99f4235543aba35ebd712589630371c9c489b0"
+    },
+    {
+      "source_path": "storage/jmwaudioguide/Item554 Hans G\udce1l Song aus der Revue.mp3",
+      "path": "/storage/jmwaudioguide/Item554 Hans G\u00e1l Song aus der Revue.mp3",
+      "bytes": 1007552,
+      "sha256": "c12d2fe0a4353c9ab3273c5db183879710c69570e57decd72d1d80c1c5d63bdf"
+    },
+    {
+      "source_path": "storage/jmwaudioguide/Item558 Hans G\udce1l Song aus der Revue.mp3",
+      "path": "/storage/jmwaudioguide/Item558 Hans G\u00e1l Song aus der Revue.mp3",
+      "bytes": 598208,
+      "sha256": "2ec042f900ee6faf43761c144253463810ee37559d15a7a001910c9059c1898a"
+    },
+    {
+      "source_path": "storage/jmwaudioguide/Item559 Hans G\udce1l Song aus der Revue.mp3",
+      "path": "/storage/jmwaudioguide/Item559 Hans G\u00e1l Song aus der Revue.mp3",
+      "bytes": 679120,
+      "sha256": "2ff9cc0ddde40b9d699aacd760549c63f6ebcf1974ca5aad7034c9a781d5d1d6"
+    },
+    {
+      "source_path": "storage/jmwaudioguide/Item561 Karl Rankls _B\udcf6hmisches Rekr.mp3",
+      "path": "/storage/jmwaudioguide/Item561 Karl Rankls _B\u00f6hmisches Rekr.mp3",
+      "bytes": 1056224,
+      "sha256": "5f54d294ac21a0df863cd23f754b04a9f979bf3b2cdb53d12191e5935671c4c2"
+    },
+    {
+      "source_path": "storage/jmwaudioguide/Item563 Konzert f\udcfcr Klavier Op. 57,.mp3",
+      "path": "/storage/jmwaudioguide/Item563 Konzert f\u00fcr Klavier Op. 57,.mp3",
+      "bytes": 534976,
+      "sha256": "76ee49dcc3639ca476f4d79f9cba7f55144cefbd9c33ad6f6fe827d3727fcccf"
+    },
+    {
+      "source_path": "storage/jmwaudioguide/Item564 Hans G\udce1l spielt Liebeslieder.mp3",
+      "path": "/storage/jmwaudioguide/Item564 Hans G\u00e1l spielt Liebeslieder.mp3",
+      "bytes": 664768,
+      "sha256": "cdc05df083548af79d8e784cb90c6c89049df98ca802a816ce3e7ece0931e984"
+    },
+    {
+      "source_path": "storage/jmwaudioguide/Item565 Hans G\udce1l \udcfcber die Arbeit an.mp3",
+      "path": "/storage/jmwaudioguide/Item565 Hans G\u00e1l \u00fcber die Arbeit an.mp3",
+      "bytes": 208000,
+      "sha256": "73e07dc26a89c2b858801cf71a1c63760c8fc197ceb0da173d57ec3de2c01463"
+    },
+    {
+      "source_path": "storage/jmwaudioguide/Item566 James Lockhart \udcfcber Hans G\udce1l.mp3",
+      "path": "/storage/jmwaudioguide/Item566 James Lockhart \u00fcber Hans G\u00e1l.mp3",
+      "bytes": 671736,
+      "sha256": "dcdf881495a7bea947985226bbf4f74edb22fcb18e9926eae04a4a69d780894c"
+    },
+    {
+      "source_path": "storage/jmwaudioguide/Item570 Hans G\udce1l \udcfcber seine Schrifte.mp3",
+      "path": "/storage/jmwaudioguide/Item570 Hans G\u00e1l \u00fcber seine Schrifte.mp3",
+      "bytes": 814320,
+      "sha256": "521901080ea2c4b5f25514bd1ac1f82527a63068e16b5852b25b479640ee09af"
+    }
+  ],
+  "route_count": 322,
+  "note": "Exact source fields and asset bytes within the approved scope. Private submissions, working tables, hosting configuration, the excluded preview and raw archives are outside this repository.",
+  "owner_requested_exclusion": "One private listening preview page and its six audio clips are omitted from the replica. They remain in the separate preservation archive."
+}

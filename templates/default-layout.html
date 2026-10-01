@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head profile="http://gmpg.org/xfn/11">
+      <title></title>
+      <meta name="description" content="" />
+      <meta name="keywords" content="" />
+      <meta name="robots" content="index,follow" />
+      <meta http-equiv="Pragma" content="no-cache" />
+      <meta http-equiv="content-language" content="hu" />
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <script type="text/javascript" language="JavaScript" src="/gfx/js/jquery-1.3.2.min.js"></script>
+      <script type="text/javascript" language="JavaScript" src="/gfx/js/jquery.json-2.2.js"></script>
+      <script type="text/javascript" language="JavaScript" src="/gfx/js/jquery.fancybox/jquery.fancybox-1.2.1.pack.js"></script>
+      <script type="text/javascript" language="JavaScript" src="/gfx/js/swfobject.js"></script>
+      <script src="/app/catalogue.js" defer="defer"></script>
+      <script type="text/javascript" language="JavaScript" src="/gfx/js/hansgal.js" defer="defer"></script>
+      <link rel="stylesheet" href="/gfx/css/site.css" type="text/css" media="screen" charset="utf-8" />
+            <link href='https://fonts.googleapis.com/css?family=Eagle+Lake&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+            <link href='https://fonts.googleapis.com/css?family=Marcellus+SC&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+            <link href='https://fonts.googleapis.com/css?family=Macondo' rel='stylesheet' type='text/css'>
+            <link href='https://fonts.googleapis.com/css?family=Handlee' rel='stylesheet' type='text/css'>
+
+
+      <!--[if IE]>
+    <link rel="stylesheet" href="/gfx/css/site-ie.css" type="text/css" media="screen" charset="utf-8" />
+    <![endif]-->
+      <link rel="stylesheet" href="/gfx/js/jquery.fancybox/jquery.fancybox.css" type="text/css" media="screen" charset="utf-8" />
+    <link rel="stylesheet" href="/imageflow/imageflow.css" type="text/css" />
+    <script type="text/javascript" src="/imageflow/imageflow.js"></script>
+  </head>
+  <body>
+    <div id="wrapper">
+   
+      <div class="bg-head">
+        <div class="player" id="player"></div>
+      </div>
+      
+      <div class="bg-logo">
+        <a href="/"><img src="/gfx/images/hansgal-logo-website.png"/></a>
+      </div>
+
+      <div class="searchbox">
+        <form action="/search" method="post">
+          <input type="text" name="keyword" class="text" size="45" value="Search" onfocus="if(this.value=='Search')this.value=''" onblur="if(this.value=='')this.value='Search'" />
+        </form>
+      </div>
+      
+      <div class="bg-content">  
+      
+        <div class="content">
+          
+          <div class="mainmenu">
+            <div class="menurow1">
+              <ul class="menutab">
+                <li {{ selectedhansgal }}><a href="/hansgal" class="hansgal first">ABOUT HANS G&Aacute;L</a></li>
+                <li {{ selectednews }}><a href="/news" class="news last">NEWS</a></li>
+              </ul>
+            </div>
+            <div class="menurow2">
+              <ul class="menutab">
+                <li {{ selectedworks }}><a href="/works" class="works first">WORKS</a></li>
+                <li {{ selectedrecordings }}><a href="/recordings" class="recordings middle">RECORDINGS</a></li>
+                <li {{ selectedbooksandarticles }}><a href="/booksandarticles" class="booksarticles last">BOOKS/ARTICLES</a></li>
+              </ul>
+            </div>
+            <div class="menurow3">
+              <ul class="menutab">
+                <li {{ selectedaudiosamples }}><a href="/audiosamples" class="audiosamples first">AUDIO SAMPLES</a></li>
+                <li {{ selectedpublishers }}><a href="/publishers" class="publishers middle">PUBLISHERS</a></li>
+                <li {{ selectedbibliography }}><a href="/bibliography" class="bibliography middle">BIBLIOGRAPHY</a></li>
+                <li {{ selectedphotos }}><a href="/photos" class="photos last">PHOTOS</a></li>
+              </ul>
+            </div>
+            <div class="menurow4">
+              <ul class="menutab">
+                <li {{ selectedfaq }}><a href="/faqs" class="faq first">FAQs</a></li>
+                <li {{ selectedcontacts }}><a href="/contacts" class="contacts middle">CONTACTS</a></li>
+                <li {{ selectedhansgalsociety }}><a href="/hansgalsociety" class="hansgalsociety middle">HANS G&Aacute;L SOCIETY</a></li>
+                <li {{ selectedcomments }}><a href="/contacts" class="comments middle">COMMENTS</a></li>
+                <li {{ selecteddonate }}><a href="/donate" class="donate last">DONATE</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="clear"></div>
+          
+          <div class="middle">
+            {{ CONTENT }}
+          </div>
+          
+        </div>
+        <div id="copyright">{{ copyright_footer.value }}</div> 
+      </div>
+      
+      <div class="bg-foot"></div>
+      
+    </div>
+    
+  </body>
+</html>

@@ -1,0 +1,18 @@
+{
+  "checked_utc_date": "2026-10-01",
+  "environment": "Chromium browser, local static server, root and /hansgal-org base paths",
+  "checks": [
+    {"feature": "Initial works list", "result": "PASS", "observed": "179 linked works; original styling and assets render"},
+    {"feature": "Opus search", "result": "PASS", "observed": "3 returns work IDs 3, 4 and 5 (opus 3, 3b, 3c)"},
+    {"feature": "Accent-insensitive title search", "result": "PASS", "observed": "baumlein returns work ID 2"},
+    {"feature": "Genre change", "result": "PASS", "observed": "symphony returns four works and clears title search as the old controller does"},
+    {"feature": "Work detail sections", "result": "PASS", "observed": "PERFORMANCES toggles from hidden to displayed"},
+    {"feature": "Audio samples", "result": "PASS", "observed": "75 work options; first work has four samples; selecting sample 2 loads the preserved MP3 with readyState 4 and duration 135.586167 seconds"},
+    {"feature": "Work-page audio", "result": "PASS", "observed": "Work 1 offers four samples; sample 2 loads the same preserved MP3 at the review base path"},
+    {"feature": "Recording list and Cover Flow", "result": "PASS", "observed": "78 covers load; selecting a cover updates the detail; switching back restores the list"},
+    {"feature": "Photo lightbox", "result": "PASS", "observed": "106 image links; first photo opens in the original Fancybox lightbox"},
+    {"feature": "Site search", "result": "PASS", "observed": "symphony returns 36 result headings across the five original sections, including seven work links"},
+    {"feature": "GitHub Pages base path", "result": "PASS", "observed": "Logo, background, JSON, navigation, works links and audio resolve beneath /hansgal-org"}
+  ],
+  "limits": "Representative browser checks supplement, rather than replace, the 99 captured catalogue fixtures and all-page content comparison. This is not a pixel-by-pixel visual comparison or an exhaustive test of every external link."
+}

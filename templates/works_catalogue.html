@@ -1,0 +1,96 @@
+<!--[if IE]>
+<br />
+<![endif]-->
+<div class="staticpage">
+	<div class="text" style="width: 814px;">
+		<div class="title">WORKS</div>
+		<div class="article"><br />
+			<br />
+			<strong>{{ catalogue.title|stripcslashes }}</strong><br />
+			{{ catalogue.description|stripcslashes }}{% if php_truth(catalogue.opus_no) %}, Opus {{ catalogue.opus_no }}{% endif %}, ({{ catalogue.year_of_composition }})<br />
+                        {{ catalogue.movements|stripcslashes }}<br/>
+			{% if catalogue.other_versions %}
+                        	{{ catalogue.other_versions|stripcslashes }}<br/>
+			{% endif %}
+			<br />
+			<div style="padding-left: 40px;">
+				{{ catalogue.orchestration|stripcslashes }}<br />
+				Duration: {{ catalogue.duration }}'<br />
+				Publisher: {{ catalogue.publisher }}<br />
+				{{ catalogue.availability|stripcslashes }}
+			</div>
+
+			{% if recordings %}
+			<br />
+			<div class="block" onclick="Hansgal.showBlock('recordings_content')">RECORDINGS</div>
+			<div class="recordings_content" id="recordings_content" style="display: none;">
+				{% for i in range(recordings|length) %}
+				<div>
+					<table border="0" cellpadding="10" cellspacing="0">
+						<tr>
+							<td><img src="/storage/recordingcovers/thumb_{{ recordings[i].cover }}" border="0" /></td>
+							<td>{{ recordings[i].detail|stripcslashes }}</td>
+						</tr>
+					</table>
+				</div>
+				{% endfor %}
+			</div>
+			{% endif %}
+
+			{% if catalogue.first_performance or catalogue.other_performances %}
+			<div class="block" onclick="Hansgal.showBlock('performances')">PERFORMANCES</div>
+			<div class="performances" id="performances" style="display: none;">
+				{% if catalogue.first_performance %}
+				First performance: {{ catalogue.first_performance|stripcslashes }}<br />
+				{% endif %}
+				{% if catalogue.other_performances %}
+				<br />
+				Other performances: {{ catalogue.other_performances|stripcslashes }}<br />
+				{% endif %}
+			</div>
+			{% endif %}
+
+			{% if catalogue.further_details %}
+			<br />
+			<div>{{ catalogue.further_details|stripcslashes }}</div>
+			{% endif %}
+
+			<div class="clear"></div>
+
+			{% if audiosamples %}
+				<div class="block" onclick="Hansgal.showBlock('audiosamples_content')">AUDIO SAMPLES</div>
+				{% if chosenfile != "" %}
+					<audio controls="controls" {% if autoplay != "" %} autoplay="autoplay" {% endif %}>
+						<source src="/storage/audiosamples/{{ audiosamples[0].files[chosenfile].filename }}" type='audio/mpeg; codecs="mp3"' />
+						Your browser does not support the HTML5 Audio element.
+					</audio><br />
+				{% endif %}
+				Please choose a sample<br />
+				<form action="{{ route }}" method="POST" id="audiofile">
+					{% for j in range(audiosamples[0].files|length) %}
+						<input type="radio" name="chosenfile" value="{{ j }}" {% if chosenfile != ""  and  j == chosenfile %}checked{% endif %} onchange="$('#audiofile').submit()">{{ audiosamples[0].files[j].title }}<br>
+					{% endfor %}
+				</form>
+			{% endif %}
+
+			{% if images %}
+			<div class="block" onclick="Hansgal.showBlock('images_content')">IMAGES</div>
+			<div class="images_content" id="images_content" style="display: none;">
+				{% for i in range(images|length) %}
+				<div class="thumbnail" style="width: 120px; height: 120px;">
+					<a class="imagesItem" rel="group" href="/storage/catalogueimages/{{ images[i].filename }}"><img src="/storage/catalogueimages/thumb_{{ images[i].filename }}" border="0" /></a>
+				</div>
+				{% endfor %}
+				<div class="clear"></div>
+			</div>
+			{% endif %}
+			{% if catalogue.free_downloads %}
+			<div class="block" onclick="Hansgal.showBlock('freedownloads_content')">FREE DOWNLOADS</div>
+			<div class="freedownloads_content" id="freedownloads_content" style="display: none;">
+				{{ catalogue.free_downloads|stripcslashes }}
+			</div>
+			{% endif %}
+		</div>
+	</div>
+	<div class="clear"></div>
+</div>

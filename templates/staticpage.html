@@ -1,0 +1,39 @@
+<!--[if IE]>
+<br />
+<![endif]-->
+<div class="staticpage">
+	<div class="widelead">
+		{{ lead }}
+	</div>
+	<div class="menu">
+		{% for i in range(submenus|length) %}
+		{% if submenus[i].hidden == 'no' %}
+		<div class="mi">
+			<div class="l {{ mainmenu }}"></div>
+			<a href="/{{ mainmenu }}/{{ submenus[i].id }}" class="c {{ mainmenu }}">{{ submenus[i].title }}</a>
+			<div class="r {{ mainmenu }}"></div>
+		</div>
+		{% endif %}
+		{% endfor %}
+		{% if thumb %}
+		<img class="thumb" src="/storage/pictureundersubmenus/thumb_{{ mainmenu }}.jpg" border="0" />
+		{% endif %}
+	</div>
+	<div class="text">
+		<div class="title">{{ title }}</div>
+		<div class="lead">
+			{% if thumbnails %}
+			<br /><br />
+			{% for i in range(thumbnails|length) %}
+			<div class="thumbnail">
+				<a class="imagesItem" rel="group" href="/storage/thumbnails/{{ thumbnails[i].filename }}"><img src="/storage/thumbnails/thumb_{{ thumbnails[i].filename }}" border="0" /></a>
+			</div>
+			{% endfor %}
+			<br />
+			<div class="clear"></div>
+			{% endif %}
+		</div>
+		<div class="article">{{ body }}</div>
+	</div>
+	<div class="clear"></div>
+</div>

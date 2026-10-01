@@ -1,0 +1,24 @@
+<!--[if IE]>
+<br />
+<![endif]-->
+<div class="staticpage">
+	<div class="text" style="width: 800px;">
+		<div class="title">RECORDINGS</div>
+		<div class="article" style="padding: 10px 0 0 20px;">
+			
+			{% if viewmode == 'coverflow' %}
+			<div id="coverflow" class="imageflow">
+			{% for i in range(recordings|length) %}
+				<img src="{{ '' }}/storage/recordingcovers/{{ recordings[i].cover }}" longdesc="{{ recordings[i].id }}" width="150" height="150" border="0" />
+			{% endfor %}
+			</div>
+			{% endif %}
+			
+			<div class="webshop" id="webshop">
+			{% include "recordings_content.html" %}
+			</div>
+			
+		</div>
+	</div>
+	<div class="clear"></div>
+</div>

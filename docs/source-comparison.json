@@ -1,0 +1,25 @@
+{
+  "content_pages_passed": 313,
+  "content_pages_failed": 0,
+  "differences": [],
+  "exact_table_fields": {
+    "audio_sample": true,
+    "catalogue": true,
+    "catalogue_audio_sample": true,
+    "catalogue_category": true,
+    "catalogue_image": true,
+    "catalogue_recordings": true,
+    "category": true,
+    "faqs": true,
+    "heading": true,
+    "menu": true,
+    "photos": true,
+    "photos_category": true,
+    "properties": true,
+    "recording": true,
+    "recording_audio_sample": true,
+    "thumbnail": true
+  },
+  "asset_count": 1282,
+  "changed_asset_bytes": []
+}

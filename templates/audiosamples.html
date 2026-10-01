@@ -1,0 +1,40 @@
+<!--[if IE]>
+<br />
+<![endif]-->
+<div class="staticpage">
+	<div class="text" style="width: 800px;">
+		<div class="title">AUDIO SAMPLES</div>
+		<div class="article">
+			<br />
+			<form action="/audiosamples" method="POST" id="audioform">
+				<select name="chosenwork" class="audiowork" onchange="$('#audioform').submit()">
+					<option value="">Select a work</option>
+					{% for i in range(audiosamples|length) %}
+						<option value="{{ i }}"{% if chosenwork != ""  and  i == chosenwork %} selected="selected"{% endif %}>{{ audiosamples[i].title }}</option>
+					{% endfor %}
+				</select>
+			</form>
+			<div class="clear"></div>
+			{% if chosenwork != "" %}
+				<br />
+				<audio controls="controls" {% if autoplay != "" %} autoplay="autoplay" {% endif %}>
+					<source src="{{ audiosamples[chosenwork].files[audiofile].fileroot }}.mp3" type='audio/mpeg; codecs="mp3"' />
+					<source src="{{ audiosamples[chosenwork].files[audiofile].fileroot }}.ogg" type='audio/ogg; codecs="vorbis"' />
+					Your browser does not support the HTML5 Audio element.
+				</audio>
+				<br />Please choose a sample<br />
+				<form action="/audiosamples" method="POST" id="audiofile">
+					<input type="hidden" name="chosenwork" id="chosenwork" value="{{ chosenwork }}" />
+					{% for j in range(audiosamples[chosenwork].files|length) %}
+						<input type="radio" name="chosenfile" value="{{ j }}" {% if j ==  chosenfile %}checked{% endif %} onchange="$('#audiofile').submit()">{{ audiosamples[chosenwork].files[j].title }}<br>
+					{% endfor %}
+				</form>
+				{% if audiosamples[chosenwork].opus_no != "Op. -" %}
+					<br />{{ audiosamples[chosenwork].opus_no }}<br />
+				{% endif %}
+				{{ audiosamples[chosenwork].details }}
+			{% endif %}
+		</div>
+	</div>
+	<div class="clear"></div>
+</div>

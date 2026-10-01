@@ -1,0 +1,25 @@
+<!--[if IE]>
+<br />
+<![endif]-->
+<div class="staticpage">
+	<div class="text" style="width: 800px;">
+		<div class="title">PHOTOS</div>
+		<div class="article" style="padding: 0 0 0 20px;">
+			<br /><br />
+			{% for key, photo_group in photos.items() %}
+				&nbsp;&nbsp;<strong>{{ key }}</strong><br /><br />
+				{% for i in range(photo_group|length) %}
+				<div style="position: relative;" onmousemove="Hansgal.showSmallPhoto('{{ photo_group[i].id }}')" onmouseout="Hansgal.hideSmallPhoto('{{ photo_group[i].id }}')">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<a class="imagesItem" rel="group{{ photo_group[i].photos_category_id }}" title="{{ photo_group[i].title }}" href="/storage/photos/{{ photo_group[i].filename }}">{{ photo_group[i].title }}</a><br />
+					<div class="photosThumb" id="thumb{{ photo_group[i].id }}" style="position: absolute; left: -50px; top: 0; display: none;">
+						<img src="/storage/photos/thumb_{{ photo_group[i].filename }}" border="0" />
+					</div>
+				</div>
+				{% endfor %}
+				<br />
+			{% endfor %}
+		</div>
+	</div>
+	<div class="clear"></div>
+</div>

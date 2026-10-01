@@ -1,0 +1,85 @@
+<div class="control">
+	Switch to: 
+        {% if viewmode == 'coverflow' %}
+        <input type="button" value="Cover List" style="background: #b45f96; cursor: pointer; border: none; color: white;" onclick="location.href='/recordings/changeview/coverlist'" />
+        {% else %}
+        <input type="button" value="Cover Flow" style="background: #72315e; cursor: pointer; border: none; color: white;" onclick="location.href='/recordings/changeview/coverflow'" />
+        {% endif %}
+</div>
+
+{% if recordings  and  viewmode == 'coverlist' %}
+	<div class="albumlist">
+		{% for i in range(recordings|length) %}
+		<div class="item" {% if recordings[i].id == recording.id %}style="background: #DDD;"{% endif %}>
+			<table border="0" cellpadding="0" cellspacing="0" width="100%">
+				<tr>
+					<td style="width: 58px;"><a href="javascript:void(0)" onclick="location.href='/recordings/{{ recordings[i].id }}'"><img width="50" src="/storage/recordingcovers/{{ recordings[i].cover }}" border="0" /></a></td>
+					<td align="left" valign="top">{{ recordings[i].title }}</td>
+				</tr>
+			</table>
+		</div>
+		{% endfor %}
+	</div>
+{% endif %}
+
+{% if recording %}
+<div class="tracklist{% if viewmode == 'coverflow' %} flow{% endif %}">
+	<div class="albumhead">
+		<table border="0" cellpadding="0" cellspacing="0" width="{% if viewmode == 'coverflow' %}740{% else %}500{% endif %}">
+			<tr>
+				<td valign="top" style="width: 260px;">
+					<a class="imagesItem" href="/storage/recordingcovers/{{ recording.cover }}">
+						<img src="/storage/recordingcovers/{{ recording.cover }}" width="250" border="0" />
+					</a>
+				</td>
+				<td align="left" valign="top">
+					
+					<div class="albumhead_detail">{{ recording.detail|stripcslashes }}</div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<br />
+					
+					{{ recording.review|stripcslashes }}
+				</td>
+			</tr>
+			{% if audiosamples %}
+			<tr>
+				<td colspan="2">
+					<br />
+					<br />
+					<div class="albumhead_title">Audio Sample(s)</div>
+					<div class="article">
+						
+						{% for i in range(audiosamples|length) %}
+						<div class="audiosample" id="audiosample_{{ audiosamples[i].id }}">
+							<div class="opus_no" style="width: 65px;">{{ audiosamples[i].opus_no }}</div>
+							<div class="speaker" onclick="Hansgal.playAS({{ audiosamples[i].id }})"></div>
+							<div class="title" style="width: 315px;"><a href="javascript:void(0)" onclick="Hansgal.playAS({{ audiosamples[i].id }}, '{{ audiosamples[i].files[0].filename }}')">{{ audiosamples[i].title }}</a></div>
+						</div>
+						<div class="clear"></div>
+						<div class="detail" id="detail_{{ audiosamples[i].id }}">
+							{% for j in range(audiosamples[i].files|length) %}
+							<div class="audiosample">
+								<div class="opus_no" style="width: 146px; text-align: right;"><span class="nowplaying" id="nowplaying_{{ audiosamples[i].id }}_{{ j }}">&nbsp;</span></div>
+								<div class="speaker" onclick="Hansgal.playASItem('{{ audiosamples[i].files[j].filename }}', {{ audiosamples[i].id }}, {{ j }})"></div>
+								<div class="title" style="width: 230px;"><a href="javascript:void(0)" onclick="Hansgal.playASItem('{{ audiosamples[i].files[j].filename }}', {{ audiosamples[i].id }}, {{ j }})">{{ audiosamples[i].files[j].title }}</a></div>
+							</div>
+							{% endfor %}
+							{{ audiosamples[i].details }}
+						</div>
+						<div class="clear"></div>
+						{% endfor %}
+					</div>
+				</td>
+			</tr>
+			{% endif %}
+		</table>
+	</div>
+</div>
+{% else %}
+<br><br><b><center>No results.</center></b><br><br>
+{% endif %}
+
+<div style="clear: both;"></div>
