@@ -1,0 +1,760 @@
+BODY {
+	margin: 0;
+}
+
+@font-face {
+  font-family: 'Macondo';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Macondo'), local('Macondo-Regular'), url(/gfx/fonts/macondo.ttf) format('truetype');
+}
+
+A {
+	text-decoration: none;
+	/* color: #CC796A; */
+  color: #44222e;
+}
+
+IMG {
+	border: none;
+}
+
+A:LINK {
+  color: #b36195;
+  font-weight: bold;
+}
+
+A:HOVER {
+	text-decoration: underline;
+}
+
+.menutab li A:LINK {
+  font-weight: normal;
+}
+
+BODY, TABLE, TABLE TR, TABLE TR TD, DIV, UL, UL LI, SPAN, INPUT, TEXTAREA, SELECT {
+	font-family: Arial;
+	font-size: 12px;
+}
+
+INPUT.text,
+INPUT.button,
+SELECT.select,
+TEXTAREA.textarea {
+}
+
+SELECT.select {
+	padding: 2px 2px 2px 7px;
+}
+
+INPUT.text {
+	padding: 2px 10px 2px 10px;
+}
+
+INPUT.button {
+	
+}
+
+DIV.clear {
+	clear: both;
+}
+
+DIV#wrapper {
+	width: 969px;
+	margin: 0 auto;
+	position: relative;
+}
+
+	DIV#wrapper DIV.bg-head {
+		height: 22px;
+		background: transparent url(/gfx/images/bg-head.png) no-repeat;
+		position: relative;
+	}
+	
+	DIV#wrapper DIV.searchbox {
+		position: absolute;
+		top: 165px;
+                right: 60px;
+	}
+
+        DIV#wrapper DIV.bg-logo {
+                position: absolute;
+                top: 36px;
+                left: 46px;
+        }
+	
+		DIV#wrapper DIV.searchbox input.text {
+			color: #555;
+      font-size: medium;
+		}
+
+	DIV#wrapper DIV.bg-head DIV.player {
+		position: absolute;
+		top: 165px;
+		left: 55px;
+	}
+	
+	DIV#wrapper DIV.bg-foot {
+		height: 22px;
+		background: transparent url(/gfx/images/bg-foot.png) no-repeat;
+	}
+	
+	DIV#wrapper DIV.bg-content {
+		background: transparent url(/gfx/images/bg-content.png) repeat-y;
+		
+	}
+	
+		DIV.content {
+			min-height: 400px;
+			background: url(/gfx/images/content-bg.png) top center no-repeat;
+		}
+		
+			DIV.content DIV.mainmenu {
+				width: 510px;
+				position: relative;
+				height: 109px;
+				background: transparent;
+				float: right;
+				margin: 10px 11px 0 0;
+			}
+			
+				DIV.content DIV.mainmenu DIV.menurow1 {
+					display: block;
+                                        padding-left: 100px;
+				}
+				DIV.content DIV.mainmenu DIV.menurow2 {
+					display: block;
+                                        padding-left: 60px;
+				}
+				DIV.content DIV.mainmenu DIV.menurow3 {
+					display: block;
+                                        padding-left: 40px;
+				}
+				DIV.content DIV.mainmenu DIV.menurow4 {
+					display: block;
+				}
+				DIV.content DIV.mainmenu ul {
+					margin: 0;
+                                        padding: 0;
+                                        list-style: none;
+clear: both;
+				}
+				DIV.content DIV.mainmenu li {
+					margin: 0;
+                                        padding: 0;
+                                        float: left;
+                                }
+				DIV.content DIV.mainmenu a {
+                                        display: block;
+                                        padding-left: 15px;
+                                        padding-top: 7px;
+                                        padding-bottom: 7px;
+                                        padding-right: 15px;
+                                        /* font-family: 'Eagle Lake', cursive; */
+                                        /* font-family: 'Marcellus SC', serif; */
+                                        font-family: 'Macondo', 'Arial', sans-serif; 
+                                        /* font-family: 'Handlee', cursive; */
+                                        color: #f9f9f9;
+                                        font-size: small;
+                                }
+				DIV.content DIV.mainmenu a:link {
+                                        text-decoration: none;
+                                }
+				DIV.content DIV.mainmenu a:visited {
+                                        text-decoration: none;
+                                }
+				DIV.content DIV.mainmenu a:hover {
+                                        cursor: hand;
+                                        text-decoration: none;
+                                }
+DIV.content DIV.mainmenu a.first {
+  border-top-left-radius: 5px;  
+  border-bottom-left-radius: 5px; 
+}
+
+DIV.content DIV.mainmenu #selected a.first { 
+  background-image: url('/gfx/images/menushadow2.png');
+  background-position: left top;
+  background-repeat: no-repeat;
+}
+
+DIV.content DIV.mainmenu #selected a.middle { 
+  background-image: url('/gfx/images/menushadow.png');
+  background-position: left top;
+  background-repeat: no-repeat;
+}
+
+DIV.content DIV.mainmenu #selected a.last { 
+  background-image: url('/gfx/images/menushadow.png');
+  background-position: left top;
+  background-repeat: no-repeat;
+}
+
+DIV.content DIV.mainmenu a.last {
+  border-top-right-radius: 5px;  
+  border-bottom-right-radius: 5px;  
+}
+
+DIV.content DIV.mainmenu a.hansgal {
+  background-color: #B67B8A; 
+}
+DIV.content DIV.mainmenu a.news {
+  background-color: #B45F96;
+}
+DIV.content DIV.mainmenu a.works {
+  background-color: #CC6291;
+}
+DIV.content DIV.mainmenu a.recordings {
+  background-color: #C6899E;
+}
+DIV.content DIV.mainmenu a.bibliography {
+  background-color: #C38882;
+}
+DIV.content DIV.mainmenu a.hansgalsociety {
+  background-color: #81466D;
+}
+DIV.content DIV.mainmenu a.booksarticles {
+  background-color: #BD8670;
+}
+DIV.content DIV.mainmenu a.audiosamples {
+  background-color: #C26F94;
+}
+DIV.content DIV.mainmenu a.publishers {
+  background-color: #A47967;
+}
+DIV.content DIV.mainmenu a.photos {
+  background-color: #B76A85;
+}
+DIV.content DIV.mainmenu a.contacts {
+  background-color: #9E7E63;
+}
+DIV.content DIV.mainmenu a.faq {
+  background-color: #772240;
+}
+DIV.content DIV.mainmenu a.donate {
+  background-color: #895E6D;
+}
+DIV.content DIV.mainmenu a.comments {
+  background-color: #A08A87;
+}
+
+
+/*				DIV.content DIV.mainmenu DIV.menurow2 ul {
+					margin: 0;
+                                        padding: 0;
+                                        list-style: none;
+				}
+				DIV.content DIV.mainmenu DIV.menurow2 ul li {
+					margin: 0;
+                                        padding: 0;
+                                        float: left;
+                                }
+				DIV.content DIV.mainmenu DIV.menurow3 ul {
+					margin: 0;
+                                        padding: 0;
+                                        list-style: none;
+				}
+				DIV.content DIV.mainmenu DIV.menurow3 ul li {
+					margin: 0;
+                                        padding: 0;
+                                        float: left;
+                                }
+				DIV.content DIV.mainmenu DIV.menurow4 ul {
+					margin: 0;
+                                        padding: 0;
+                                        list-style: none;
+				}
+				DIV.content DIV.mainmenu DIV.menurow4 ul li {
+					margin: 0;
+                                        padding: 0;
+                                        float: left;
+                                }
+*/			
+
+		DIV.content DIV.middle {
+			margin: 45px 0 0 0;
+		}
+				
+		DIV.content DIV.middle DIV.youarehere {
+			position: absolute;
+			left: 310px;
+			top: 214px;
+			color: #72315e;
+		}
+		
+			DIV.content DIV.middle DIV.youarehere span {
+				font-weight: bold;
+			}
+		
+		DIV.content DIV.middle DIV.staticpage {
+			width: 825px;
+			margin: 110px 0 0 45px;
+			padding: 0 0 20px 0;
+		}
+		
+		DIV.content DIV.middle DIV.staticpage DIV.menu {
+			float: left;
+			width: 190px;
+		}
+		
+			DIV.content DIV.middle DIV.staticpage DIV.menu img.thumb {
+				float: right;
+				margin-top: 15px;
+			}
+		
+			DIV.content DIV.middle DIV.staticpage DIV.menu DIV.piktogram {
+				width: 190px;
+			}
+			
+			DIV.content DIV.middle DIV.staticpage DIV.menu DIV.mi {
+				float: right;
+				clear: both;
+			}
+			
+				DIV.content DIV.middle DIV.staticpage DIV.menu DIV.mi DIV.l {
+					float: left;
+					width: 7px;
+					height: 22px;
+					background: url(/gfx/images/menu-l.jpg) no-repeat;
+				}
+				
+				DIV.content DIV.middle DIV.staticpage DIV.menu DIV.mi A.c {
+					display: block;
+					background: url(/gfx/images/menu-c.jpg) repeat-x;
+					float: left;
+					padding: 3px 4px 0 4px;
+					text-transform: uppercase;
+					color: white;
+					height: 19px;
+				}
+				
+				DIV.content DIV.middle DIV.staticpage DIV.menu DIV.mi A.c:hover {
+					text-decoration: none;
+				}
+				
+				DIV.content DIV.middle DIV.staticpage DIV.menu DIV.mi DIV.r {
+					float: left;
+					width: 7px;
+					height: 22px;
+					background: url(/gfx/images/menu-r.jpg) no-repeat;
+				}
+
+				
+				
+				DIV.content DIV.middle DIV.staticpage DIV.menu DIV.mi DIV.l.hansgal {
+					background: url(/gfx/images/menu-l-hansgal.jpg) no-repeat;
+				}
+				
+				DIV.content DIV.middle DIV.staticpage DIV.menu DIV.mi A.c.hansgal {
+					background: url(/gfx/images/menu-c-hansgal.jpg) repeat-x;
+				}
+				
+				DIV.content DIV.middle DIV.staticpage DIV.menu DIV.mi DIV.r.hansgal {
+					background: url(/gfx/images/menu-r-hansgal.jpg) no-repeat;
+				}
+				
+				DIV.content DIV.middle DIV.staticpage DIV.menu DIV.mi DIV.l.booksandarticles {
+					background: url(/gfx/images/menu-l-books.jpg) no-repeat;
+				}
+				
+				DIV.content DIV.middle DIV.staticpage DIV.menu DIV.mi A.c.booksandarticles {
+					background: url(/gfx/images/menu-c-books.jpg) repeat-x;
+				}
+				
+				DIV.content DIV.middle DIV.staticpage DIV.menu DIV.mi DIV.r.booksandarticles {
+					background: url(/gfx/images/menu-r-books.jpg) no-repeat;
+				}
+				
+				DIV.content DIV.middle DIV.staticpage DIV.menu DIV.mi DIV.l.publishers {
+					background: url(/gfx/images/menu-l-publishers.jpg) no-repeat;
+				}
+				
+				DIV.content DIV.middle DIV.staticpage DIV.menu DIV.mi A.c.publishers {
+					background: url(/gfx/images/menu-c-publishers.jpg) repeat-x;
+				}
+				
+				DIV.content DIV.middle DIV.staticpage DIV.menu DIV.mi DIV.r.publishers {
+					background: url(/gfx/images/menu-r-publishers.jpg) no-repeat;
+				}
+				
+				DIV.content DIV.middle DIV.staticpage DIV.menu DIV.mi DIV.l.bibliography {
+					background: url(/gfx/images/menu-l-bibliography.jpg) no-repeat;
+				}
+				
+				DIV.content DIV.middle DIV.staticpage DIV.menu DIV.mi A.c.bibliography {
+					background: url(/gfx/images/menu-c-bibliography.jpg) repeat-x;
+				}
+				
+				DIV.content DIV.middle DIV.staticpage DIV.menu DIV.mi DIV.r.bibliography {
+					background: url(/gfx/images/menu-r-bibliography.jpg) no-repeat;
+				}
+				
+				DIV.content DIV.middle DIV.staticpage DIV.menu DIV.mi DIV.l.hansgalsociety {
+					background: url(/gfx/images/menu-l-hansgalsociety.jpg) no-repeat;
+				}
+				
+				DIV.content DIV.middle DIV.staticpage DIV.menu DIV.mi A.c.hansgalsociety {
+					background: url(/gfx/images/menu-c-hansgalsociety.jpg) repeat-x;
+				}
+				
+				DIV.content DIV.middle DIV.staticpage DIV.menu DIV.mi DIV.r.hansgalsociety {
+					background: url(/gfx/images/menu-r-hansgalsociety.jpg) no-repeat;
+				}
+				
+				DIV.content DIV.middle DIV.staticpage DIV.menu DIV.mi DIV.l.contacts {
+					background: url(/gfx/images/menu-l-contacts.jpg) no-repeat;
+				}
+				
+				DIV.content DIV.middle DIV.staticpage DIV.menu DIV.mi A.c.contacts {
+					background: url(/gfx/images/menu-c-contacts.jpg) repeat-x;
+				}
+				
+				DIV.content DIV.middle DIV.staticpage DIV.menu DIV.mi DIV.r.contacts {
+					background: url(/gfx/images/menu-r-contacts.jpg) no-repeat;
+				}
+				
+				
+		DIV.content DIV.middle DIV.staticpage DIV.text {
+			width: 620px;
+			float: right;
+			color: #3c2733;
+		}
+		
+			DIV.content DIV.middle DIV.staticpage DIV.text DIV.navigation {
+				font-size: 11px;
+				text-transform: uppercase;
+			}
+			
+			DIV.content DIV.middle DIV.staticpage DIV.text DIV.title {
+				padding: 2px 0 0 0;
+				font-size: 14px;
+				text-transform: uppercase;
+			}
+
+			DIV.content DIV.middle DIV.staticpage DIV.text DIV.lead {
+
+			}
+			
+				DIV.content DIV.middle DIV.staticpage DIV.text DIV.thumbnail {
+					float: left;
+					width: 35px;
+					height: 35px;
+					margin-right: 8px;
+				}
+			
+			DIV.content DIV.middle DIV.staticpage DIV.text DIV.search {
+				font-size: 13px;
+				padding: 0 15px;
+			}
+			
+				DIV.content DIV.middle DIV.staticpage DIV.text DIV.search h2 {
+					font-size: 13px;
+					padding: 0;
+					margin: 0;
+				}
+				
+				DIV.content DIV.middle DIV.staticpage DIV.text DIV.search p.desc {
+					margin: 0;
+					padding: 0;
+				}
+				
+				DIV.content DIV.middle DIV.staticpage DIV.text DIV.search a {
+					margin: 0;
+					padding: 0;
+				}
+			
+				DIV.content DIV.middle DIV.staticpage DIV.text DIV.search .hr {
+					border-bottom: 1px dotted #000;
+				}
+				
+			DIV.content DIV.middle DIV.staticpage DIV.text DIV.article {
+				font-size: 13px;
+			}
+			
+				DIV.content DIV.middle DIV.staticpage DIV.text DIV.article DIV.audiosample {
+					height: 32px;
+					margin: 10px 0 10px;
+				}
+				
+					DIV.content DIV.middle DIV.staticpage DIV.text DIV.article DIV.audiosample DIV.opus_no {
+						float: left;
+						width: 70px;
+						font-size: 13px;
+						padding-top: 8px;
+					}
+					
+					DIV.content DIV.middle DIV.staticpage DIV.text DIV.article DIV.audiosample DIV.speaker {
+						float: left;
+						width: 120px;
+						background: transparent url(/gfx/images/playbutton.png) top center no-repeat;
+						/* background: url(/gfx/images/speaker.png) top center no-repeat; */
+						height: 32px;
+						text-align: center;
+						cursor: pointer;
+					}
+					
+					DIV.content DIV.middle DIV.staticpage DIV.text DIV.article DIV.audiosample DIV.title {
+						float: left;
+						padding-top: 6px;
+					}
+					
+						DIV.content DIV.middle DIV.staticpage DIV.text DIV.article DIV.audiosample DIV.title A {
+							font-size: 13px;
+							text-transform: none;
+							color: #3c2733;
+						}
+						
+				DIV.content DIV.middle DIV.staticpage DIV.text DIV.article DIV.audiosample.active DIV,
+				DIV.content DIV.middle DIV.staticpage DIV.text DIV.article DIV.audiosample.active DIV A {
+					color: #888888;
+				}
+
+				DIV.content DIV.middle DIV.staticpage DIV.text DIV.article DIV.detail {
+					clear: both;
+					margin: 6px 0 6px 0;
+					display: none;
+				}
+				
+					DIV.content DIV.middle DIV.staticpage DIV.text DIV.article DIV.detail span {
+						font-style: italic;
+						color: #666666;
+					}
+
+				DIV.content DIV.middle DIV.staticpage DIV.text DIV.article DIV.block {
+					border-top: 1px solid #DCD4D9;
+					border-bottom: 1px solid #DCD4D9;
+					margin: 8px 0 8px 0;
+					cursor: pointer;
+				}
+				
+			DIV.staticpage TABLE.catalogueTable {
+				/* width: 800px; */
+			}
+			
+				DIV.staticpage TABLE.catalogueTable TR TD {
+					padding-top: 4px;
+					padding-bottom: 4px;
+				}
+
+					DIV.staticpage TABLE.catalogueTable TR TD A {
+						color: #3c2733;
+					}
+				
+					DIV.staticpage TABLE.catalogueTable TR TH DIV.arrow_down {
+						width: 16px;
+						height: 16px;
+						background: transparent url(/gfx/images/arrow_down.png) no-repeat;
+						cursor: pointer;
+						float: right;
+					}
+				
+					DIV.staticpage TABLE.catalogueTable TR TH DIV.arrow_up {
+						width: 16px;
+						height: 16px;
+						background: transparent url(/gfx/images/arrow_up.png) no-repeat;
+						cursor: pointer;
+						float: right;
+					}
+				
+					DIV.staticpage TABLE.catalogueTable TR.light TD {
+						background: #EFEFEF;
+					}
+					
+					DIV.staticpage TABLE.catalogueTable TR.dark TD {
+						background: #EFE0E7;
+					}
+				
+				DIV.staticpage TABLE.catalogueTable TR TH {
+					text-align: left;
+					background: #72315E;
+					color: white;
+					padding-top: 4px;
+					padding-bottom: 4px;
+					padding-left: 2px;
+					padding-right: 2px;
+				}
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				div.webshop {
+					border: 1px dotted #555;
+				}
+				
+				div.control {
+					padding: 2px;
+					text-align: right;
+					border-bottom: 1px dotted #555;
+				}
+				
+				div.control select {
+					font-size: 11px;
+					color: #444;
+					border: 1px solid #999;
+				}
+				
+				div.albumlist {
+					float: left;
+					border-right: 1px dotted #555;
+					width: 240px;
+				}
+					
+					div.albumlist div.item {
+						padding: 8px;
+						
+						border-bottom: 1px dotted #555;
+					}
+					
+						div.albumlist div.item table tr td {
+							color: #555;
+						}
+						
+						div.albumlist div.item table tr td span {
+							font-size: 10px;
+							cursor: pointer;
+						}
+						
+						div.albumlist div.item table tr td span:hover {
+							xtext-decoration: underline;
+						}
+					
+						div.tracklist {
+							float: left;
+							width: 450px;
+							margin-left: 10px;
+							border-left: 1px dotted #555;
+							padding: 8px;
+						}
+						
+						div.flow {
+							width: 690px;
+							border-left: none;
+						}
+						
+							div.tracklist div.albumhead {
+							
+							}
+							
+								div.tracklist div.albumhead div.albumhead_title {
+									font-weight: bold;
+									border-top: 1px dotted #555;
+									border-bottom: 1px dotted #555;
+									padding: 3px 0 3px 0;
+								}
+								
+								div.tracklist div.albumhead div.albumhead_detail {
+									border-bottom: 1px dotted #555;
+									padding: 3px 0 3px 0;
+								}
+								
+								div.tracklist div.albumhead div.albumhead_download {
+									border-bottom: 1px dotted #555;
+									padding: 3px 0 3px 0;
+								}
+						
+							div.tracklist div.filemode {
+								background: #ddd;
+								color: #555;
+								font-weight: bold;
+								margin: 8px 0 8px 0;
+								padding: 1px 7px 1px 7px;
+							}
+							
+							div.tracklist div.filemode_content {
+							}
+							
+								div.tracklist div.filemode_control {
+									text-align: right;
+								}
+								
+								div.tracklist div.filemode_control span {
+									font-size: 10px;
+									cursor: pointer;
+								}
+								
+								div.tracks {
+									margin: 8px 0 0 0;
+								}
+								
+								div.tracks_music_item {
+									background: #E7E7E7;
+								}
+								
+								div.tracks_track_item {
+									background: #F0F0F0;
+									padding-left: 14px;
+								}
+								
+								div.track_infos {
+									background: #F0F0F0;
+									font-size: 11px;
+									font-weight: bold;
+									color: #666;
+									text-align: right;
+									margin-bottom: 10px;
+								}
+				
+.works_search td input {
+  font-size: large;
+}
+
+#copyright {
+  font-size: small;
+  color: grey;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.categorysearch {
+  width: 280px;
+  font-family: Arial;
+  font-size: medium;
+}
+
+.categorysearch option {
+  font-family: Arial;
+  font-size: medium;
+}
+
+dt {
+  font-weight: bold;
+}
+
+#commentstext {
+  width: 800px;
+  height: 200px;
+}

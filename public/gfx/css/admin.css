@@ -1,0 +1,117 @@
+BODY {
+	margin: 0;
+	background: #fff;
+}
+
+A {
+	text-decoration: none;
+	color: blue;
+}
+
+A:HOVER {
+	text-decoration: underline;
+}
+
+BODY, TABLE, TABLE TR, TABLE TR TD, DIV, UL, UL LI, SPAN, A, INPUT, TEXTAREA, SELECT {
+	font-family: Arial;
+	font-size: 12px;
+}
+
+H2 {
+	color: grey;
+	margin: 0 0 25px 0;
+	padding: 0;
+}
+
+TH {
+	text-align: right;
+}
+
+INPUT.text,
+INPUT.button,
+SELECT.select,
+TEXTAREA.textarea {
+	border: 1px dotted #a0a0a0;
+}
+
+SELECT.select {
+	padding: 2px 2px 2px 7px;
+	width: 322px;
+}
+
+INPUT.text {
+	padding: 2px 10px 2px 10px;
+	width: 300px;
+}
+
+INPUT.button {
+	
+}
+
+DIV.clear {
+	clear: both;
+}
+
+DIV.content {
+	padding: 10px;
+}
+
+/**ADMIN**/
+
+DIV.loginBox {
+	text-align: center;
+	margin: 110px auto 0 auto;
+}
+
+	DIV.loginBox TABLE TR TH {
+		text-align: right;
+	}
+
+DIV.admin-menu {
+	
+}
+
+	DIV.admin-menu A {
+		color: white;
+		padding: 5px 10px 5px 10px;
+		display: block;
+		float: left;
+		border: 1px solid #f2f1ef;
+		font-size: 13px;
+	}
+	
+	DIV.admin-menu A:hover {
+		border: 1px solid #555;
+		text-decoration: none;
+	}
+	
+DIV.admin-content {
+	margin: 40px 0 0 0;
+	padding: 15px;
+	border: 1px dotted grey;
+}
+
+DIV.thumbnail {
+	text-align: center;
+	float: left;
+	border: 1px dotted black;
+	height: 120px;
+	margin: 5px;
+	padding: 5px;
+	width: 120px;
+}
+
+DIV.thumbnail IMG {
+	border: 1px solid grey;
+}
+
+DIV.thumbnail A {
+	text-decoration: none;
+	color: red;
+}
+
+DIV.thumbnail A:hover {
+	text-decoration: underline;
+}
+
+/**ADMIN**/

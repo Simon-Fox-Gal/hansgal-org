@@ -1,0 +1,115 @@
+<html>
+<head>
+<title>Skizzen</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript"> 
+isamap = new Object(); 
+isamap[0] = "_df"; 
+isamap[1] = "_ov" ;
+function isimgact(id, act) 
+{ 
+if(document.images) document.images[id].src = eval( "isimages." + id + isamap[act] + ".src"); 
+} 
+if (document.images){ 
+isimages = new Object();
+isimages.zurueck_df = new Image();
+isimages.zurueck_df.src ="../buttons/zurueck.gif";
+isimages.zurueck_ov = new Image();
+isimages.zurueck_ov.src ="../buttons/zurueckov.gif"; 
+} 
+</script>
+</head>
+<body background="../newimages/backgrnd.gif" bgcolor="#FFFFFF" text="#000000">
+<table width="100%" height="4328">
+  <tr align="left" valign="middle"> 
+    <td align="center" height="49" valign="top" width="100"><img src="../newimages/gallogo.gif" width="100" height="50" border="0"></td>
+    <td height="49"> 
+      <div align="center"><font face="Arial, Helvetica, sans-serif" size="4">Aus 
+        G&aacute;ls Skizzenbuch, 1903</font></div>
+    </td>
+  </tr>
+  <tr> 
+    <td align="left" valign="top" width="100"> 
+      <div align="center"> 
+        <hr size="1">
+        <a href="javascript:close()"onMouseOver="isimgact('zurueck',1)"onMouseOut="isimgact('zurueck',0)"><img src="../buttons/zurueck.gif" width="57" height="15" name="zurueck" border="0">
+		</a>
+        <hr size="1">
+      </div>
+    </td>
+    <td valign="top" align="left" width="881"> 
+      <table width="100%">
+        <tr> 
+          <td> 
+            <div align="center"></div>
+          </td>
+        </tr>
+        <tr> 
+          <td> 
+            <div align="center"><img src="pic1.jpg" width="650" height="433"></div>
+          </td>
+        </tr>
+        <tr> 
+          <td>&nbsp;</td>
+        </tr>
+        <tr> 
+          <td> 
+            <div align="center"><img src="pic2.jpg" width="618" height="529"></div>
+          </td>
+        </tr>
+        <tr> 
+          <td>&nbsp;</td>
+        </tr>
+        <tr> 
+          <td> 
+            <div align="center"><img src="pic3.jpg" width="386" height="550"></div>
+          </td>
+        </tr>
+        <tr> 
+          <td>&nbsp; </td>
+        </tr>
+        <tr> 
+          <td> 
+            <div align="center"><img src="pic4.jpg" width="600" height="385"></div>
+          </td>
+        </tr>
+        <tr> 
+          <td>&nbsp; </td>
+        </tr>
+        <tr> 
+          <td> 
+            <div align="center"><img src="pic5.jpg" width="372" height="550"></div>
+          </td>
+        </tr>
+        <tr> 
+          <td>&nbsp; </td>
+        </tr>
+        <tr> 
+          <td> 
+            <div align="center"><img src="pic6.jpg" width="600" height="389"></div>
+          </td>
+        </tr>
+        <tr> 
+          <td>&nbsp; </td>
+        </tr>
+        <tr> 
+          <td> 
+            <div align="center"><img src="pic7.jpg" width="335" height="550"></div>
+          </td>
+        </tr>
+        <tr> 
+          <td>&nbsp; </td>
+        </tr>
+        <tr> 
+          <td> 
+            <div align="center"><img src="pic8.jpg" width="453" height="550"></div>
+          </td>
+        </tr>
+      </table>
+      <table width="100%">
+      </table>
+    </td>
+  </tr>
+</table>
+</body>
+</html>
