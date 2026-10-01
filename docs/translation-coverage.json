@@ -512,7 +512,7 @@
       "field": "body",
       "source_sha256": "1864766d00c7f874d2642c0385bd39e717c7ee7c14075e471a228aeef8d7708a",
       "characters": 8326,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -542,7 +542,7 @@
       "field": "body",
       "source_sha256": "7619422ba732aaf855b2232474242f16365bd2ff08ba7ec1ac4f65d5d1e5f32b",
       "characters": 47388,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -712,7 +712,7 @@
       "field": "body",
       "source_sha256": "34139c978c07d852a1d54701cfa04115bcc52a6bbe0b6ce94813ebebf1d3cb19",
       "characters": 6389,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {

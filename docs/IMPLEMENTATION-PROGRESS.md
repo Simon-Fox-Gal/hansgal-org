@@ -86,3 +86,11 @@ Continue translation and original-title provenance review, score-basket verifica
 - Added German early-life, education, early works, war, first-opera and postwar biography sections; membership, contact, general FAQ, sketchbook and performance-fund pages; bibliographic entries preserve official publication titles while explanatory prose is localized. In total 23 page bodies now have German variants, with all original links and media preserved. Empty HTML-only lead fields are shared unchanged.
 - Language-switch links now use the current search/sort URL at click time. Focused regression PASS for query, sort and fragment preservation. Basket page title corrected for canonical route without trailing slash.
 - Build, route/asset/relationship and 1,652-row source-preservation checks PASS. Full translation and purchase audits remain in progress; coverage retains pending entries rather than treating English fallback as complete.
+
+### 1 October: family, opera and donation text
+
+- PR #5 deployed successfully at `89f9b8643d55c0613ab2eea8779ce4d4ac376192`, Pages run 36906722838.
+- Added family/marriage and Die Heilige Ente biography chapters and the donation page. German donation UI, validation messages and Gift Aid declaration text retain the original payment destination, account identifiers, fund values and payment rules. No payment or email sent.
+- English/German donation regression PASS: exact recipient/fund/amount, bank/cheque GBP restriction and rejection of zero for the PayPal handoff. Score-basket downloads still accept zero independently. Local rendered German form inspected; EUR-to-bank selection correctly becomes GBP. Further local alert interaction was blocked by a browser-driver timeout, not treated as a passed UI check.
+- All 26 translated menu bodies retain their original links and media. Existing broken constitution link to `/admin/hansgalsociety/index/36` has no matching content record in the preserved source; retained and flagged rather than inventing a replacement document.
+- Remaining authored HTML attributes and embedded popup text still need a final language sweep alongside remaining page prose and recording text. Full translation is not yet complete.
