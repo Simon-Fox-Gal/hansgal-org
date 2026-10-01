@@ -101,7 +101,12 @@ def make_site(base_path='', review=True, language='en'):
                 u=urlsplit(value)
                 if u.scheme not in ('https','http') or not u.hostname or u.username or u.password:
                     raise ValueError(f'Invalid public purchase URL: {row.get("id")} {field}')
-                links.append({'url':value,'host':u.hostname.removeprefix('www.'),'label':label[language=='de']})
+                display_label=label[language=='de']
+                if field=='cd_url' and row.get('cd_format')=='Hybrid SACD':
+                    display_label=('Hybrid SACD / CD','Hybrid-SACD / CD')[language=='de']
+                if field=='cd_url' and row.get('cd_format')=='Used CD':
+                    display_label=('Used CD','Gebrauchte CD')[language=='de']
+                links.append({'url':value,'host':u.hostname.removeprefix('www.'),'label':display_label})
         return links
 
     def context(route):

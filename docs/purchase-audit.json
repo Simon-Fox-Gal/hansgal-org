@@ -1288,296 +1288,438 @@
     {
       "id": "15",
       "title": "Violin Concerto & Concertino, Triptych - Vogel/Woods/Northern Sinfonia",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.avie-records.com/releases/violin-concerto-violin-concertino-triptych-for-orchestra/",
+        "https://orcd.co/av2146"
+      ],
+      "note": "AV2146: label catalogue number, performers and programme match. Label CD ordering and digital download/listening options checked; prices and stock can change.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "16",
       "title": "Hans G\u00e1l Violin Sonatas and Suite",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.avie-records.com/releases/works-for-violin-and-piano/",
+        "https://orcd.co/av2182"
+      ],
+      "note": "AV2182: label catalogue number, performers and programme match. Label CD ordering and digital download/listening options checked; prices and stock can change.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "17",
       "title": "The Vienna Connection: Violin sonatas by G\u00e1l, Kornauth & Krenek",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.prestomusic.com/classical/products/8657108--vienna-connection"
+      ],
+      "note": "EDA32: release catalogue number, performers and programme verified; physical disc and MP3/lossless download listed. Retailer identifies pianist Florian Uhlig; the preserved historical description names Gottlieb Wallisch. Editorial reconciliation needed.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "18",
       "title": "Hans Gal Piano Trios",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "partially_verified",
+      "sources": [
+        "https://music.amazon.com.br/albums/B073J43V8P"
+      ],
+      "note": "Adam/Adam/Stradner, Camerata: all seven tracks of op.18, op.9 and op.49b verified on legitimate Amazon Music release. Exact CMCD28149 physical-CD or paid-download product not found in checked searches. Streaming region/account restrictions may apply.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "19",
       "title": "Hans Gal String Quartets 2 vols (Edinburgh Quartet)",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "partially_verified",
+      "sources": [
+        "https://www.prestomusic.com/classical/products/8734619--hans-gal-the-complete-string-quartets",
+        "https://www.meridian-records.co.uk/acatalog/CDE_84530.html",
+        "https://www.meridian-records.co.uk/acatalog/CDE84531_Hans_Gal.html"
+      ],
+      "note": "Edinburgh Quartet: both original physical volumes CDE84530/84531 have separate label product links. Digital complete-quartets compilation includes four quartets, Mozart variations and Five Intermezzi. Exact programmes verified.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "20",
       "title": "Hans Gal Orgelwerke",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.broinc.com/media/cd/cd-159174/",
+        "https://www.prestomusic.com/classical/products/8019534--hans-gal-organ-works"
+      ],
+      "note": "NCA60162, Matyas/Simonian/Pennetzdorfer/Wiener Akademie/Haselbock; hybrid SACD at Berkshire and MP3/lossless download at Presto verified.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "21",
       "title": "Portraits",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "partially_verified",
+      "sources": [
+        "https://lafollia.com/commande.html",
+        "https://www.lafollia.com/catalog.pdf"
+      ],
+      "note": "Label physical-CD order catalogue lists Portraits en forme de miroir, Calvo and friends, LFM30601. Label catalogue PDF confirms Gal Divertimento op.80 with Daups. Original abbreviated number3061 retained. No paid-download seller verified.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "22",
       "title": "Hans Gal Piano Music (Martin Jones)",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.prestomusic.com/classical/products/7954048--hans-gal-piano-music"
+      ],
+      "note": "NI57512: exact release catalogue number, performers and programme checked against retailer listing. CD order option verified. MP3/lossless download verified. ",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "23",
       "title": "Gal: Cello Suite, Scottish Rhapsodies; Brahms: Cello Sonata in D. Rust & Blum",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "partially_verified",
+      "sources": [
+        "https://www.bol.com/be/nl/p/hans-gal-suite-op-6-zwei-schottische-rhapsodien-brahms-sonate-d-dur-op-78/1000004004531385/"
+      ],
+      "note": "Rust/Blum, Cavalli CCD281, EAN4028183002815: exact programme and CD order option verified at bol partner seller. No digital-download product found.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "24",
       "title": "Hans Gal Complete Works for Solo Piano, Leon McCawley",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.avie-records.com/releases/the-complete-works-for-solo-piano/",
+        "https://orcd.co/av2064"
+      ],
+      "note": "AV2064: label catalogue number, performers and programme match. Label CD ordering and digital download/listening options checked; prices and stock can change.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "25",
       "title": "British Recorder Concertos",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "partially_verified",
+      "sources": [
+        "https://www.prestomusic.com/classical/products/7947174--british-recorder-concertos"
+      ],
+      "note": "CDLX7154: exact release catalogue number, performers and programme checked against retailer listing. CD order option verified. No digital-download purchase option found on the checked page. ",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "26",
       "title": "Voices in Exile: Choral music by Jean Berger & Hans G\u00e1l",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "partially_verified",
+      "sources": [
+        "https://www.ebay.com/p/22070883116"
+      ],
+      "note": "Voices in Exile, Bucks County Chamber Choir/Thomas Lloyd,2005: exact programme, performers and UPC0026724513121 match a used-CD marketplace listing. New CD at Fnac no longer sold. No digital-download product found. Used listings can end.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "27",
       "title": "Fagott und Violoncello",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "not_found",
+      "sources": [
+        "https://www.cavalli-records.de/",
+        "https://dme.mozarteum.at/DME/nma/nmaolrecs.php?idwnma=3269&p1=7&vsep=181"
+      ],
+      "note": "Exact searches for CavalliCCD257, Fagott und Violoncello, Edelmann/Rust found no current physical-CD or digital-download product. Label blocks automated access. Performer discography corroborates recording but is not a purchase page.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "28",
       "title": "Continental Britons: Music by Wellesz, Spinner, Goldschmidt, Gellhorn, Tausk\u00fd, G\u00e1l, Seiber, Reizenstein & Rankl.",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.prestomusic.com/classical/products/7961505--continental-britons-the-emigre-composers"
+      ],
+      "note": "NI57301: exact release catalogue number, performers and programme checked against retailer listing. CD order option verified. MP3/lossless download verified. ",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "29",
       "title": "Hans Gal and Egon Wellesz",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "not_found",
+      "sources": [
+        "https://www.mandelbaum.at/verlagsgeschichte?hist=rev",
+        "https://www.zvab.com/Musik-Aufbruchs-Hans-Gal-Egon-Wellesz/32083103662/bd"
+      ],
+      "note": "Museum exhibition publication Hans Gal und Egon Wellesz, ISBN9783854761167: no verified complete book/two-CD product found. Used listing explicitly includes only one CD, so not substituted for complete source edition. No digital-download seller found.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "30",
       "title": "Trails of Creativity: Music from between the Wars - Vienna-Berlin-London 1918-1938",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.avie-records.com/releases/trails-of-creativity-music-from-between-the-wars-1918-1938/",
+        "https://orcd.co/av0009"
+      ],
+      "note": "AV0009: exact David Fruehwirth/Henri Sigfridsson release. Label lists digital only and catalogue marks CD out of stock. Download and listening handoff verified; no CD purchase button added.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "31",
       "title": "Paths: Oboe works by Haas, Wolpe & G\u00e1l",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "partially_verified",
+      "sources": [
+        "https://megadisc-classics.com/album/pavel-haas-stefan-wolpe-hans-gal/"
+      ],
+      "note": "MDC7805, Van Bockstal/Oya, Paths: label CD order page verified. No digital-download order found on checked label page.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "32",
       "title": "Neue Kammermusik: Werke von Hans G\u00e1l",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "partially_verified",
+      "sources": [
+        "https://cybele.de/en/album/neue-kammermusik-werke-von-hans-gal/"
+      ],
+      "note": "Cybele360901: exact Vogel/Slenczka/Lecuona release and both sonatas confirmed. Label provides current streaming/download service links; downstream 7digital fetch blocked. No physical-CD checkout on label page.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "33",
       "title": "Hans G\u00e1l Music for Mandolin CD1",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "partially_verified",
+      "sources": [
+        "https://www.prestomusic.com/classical/products/9814246--hans-gal-musik-fuer-und-mit-mandoline"
+      ],
+      "note": "BM319177: exact release catalogue number, performers and programme checked against retailer listing. No physical-CD order option found on the checked page. MP3/lossless download verified. ",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "34",
       "title": "Music for Mandolin CD2",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "partially_verified",
+      "sources": [
+        "https://www.prestomusic.com/classical/products/9814244--hans-gal"
+      ],
+      "note": "BM319171: release catalogue number, performers and programme verified; no physical disc order found; MP3/lossless download listed. Track list confirms Biedermeiertaenze op.66, Sinfonietta No.1 op.81 and Divertimenti op.80/68c; source opus discrepancy retained.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "35",
       "title": "Virtuoso Mandolin",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "partially_verified",
+      "sources": [
+        "https://www.prestomusic.com/classical/products/8066283--virtuoso-mandolin"
+      ],
+      "note": "TUXCD1085: exact release catalogue number, performers and programme checked against retailer listing. No physical-CD order option found on the checked page. MP3/lossless download verified. ",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "36",
       "title": "Hans Gal Complete Piano Duos",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.prestomusic.com/classical/products/8007089--hans-gal-the-complete-piano-duos"
+      ],
+      "note": "DDA25098: release catalogue number, performers and programme verified; physical disc and MP3/lossless download listed.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "37",
       "title": "Twenty Four Preludes, Aladar Racz",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "not_found",
+      "sources": [
+        "https://panclassics.com/",
+        "https://www.ebay.com/itm/195587320520"
+      ],
+      "note": "Racz 24 Preludes op.83, Pan Classics: exact used-CD listing is sold, not offered as a purchase link. Label TLS connection failed. No current physical-CD or digital-download product found in checked searches.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "38",
       "title": "Donaueschingen 1926",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "partially_verified",
+      "sources": [
+        "https://www.prestomusic.com/classical/products/9250097--donaueschingen-1926"
+      ],
+      "note": "ACD6005: exact release catalogue number, performers and programme checked against retailer listing. No physical-CD order option found on the checked page. MP3/lossless download verified. ",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "39",
       "title": "Streifz\u00fcge",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "partially_verified",
+      "sources": [
+        "https://szo-online.de/szo/de/cds/streifzuege/",
+        "https://szo-online.de/szo/de/cds/"
+      ],
+      "note": "Streifzuege two-CD collection: orchestra confirms exact Capriccio/Fackler performance. Its CD catalogue says CDs can be ordered through the orchestra contact form or specialist shops. No paid digital-download product found.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "40",
       "title": "Oesterreich-Ungarn. Oboe works by G\u00e1l, Takacs & Seiber",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "partially_verified",
+      "sources": [
+        "https://www.prestomusic.com/classical/products/9814233--musik-im-20-jahrhundert"
+      ],
+      "note": "BM319158: exact release catalogue number, performers and programme checked against retailer listing. No physical-CD order option found on the checked page. MP3/lossless download verified. ",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "41",
       "title": "Classic Sax",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "not_found",
+      "sources": [
+        "https://www.jazzhelden.nl/action/front/portrait%3Bjsessionid%3D92766E78BB4EA84AB61212A4AF71970B?intro=&name=Leo+van+Oostrom"
+      ],
+      "note": "Classic Sax, Oostrom/Watzinger, AIS1168.01: artist archive confirms release; no current CD or digital-download seller found. Original private availability retained; other saxophone recordings not substituted.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "42",
       "title": "Foliage",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://riverdaleensemble.com/Recordings.html"
+      ],
+      "note": "Foliage, Riverdale Ensemble, FMDC4619-2: artist offers physical CD and MP3 eCD with PDF booklet. Digital delivery is by emailed link after order, not immediate checkout download.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "43",
       "title": "Echoes from Austria",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "not_found",
+      "sources": [
+        "https://www.bocksmusicshop.at/detail.asp?art=9677"
+      ],
+      "note": "Echoes from Austria,Josef Mayr,Extraplatte: exact programme and price found, but no order/stock control could be verified on product page. No digital-download seller found; retained as evidence rather than claiming availability.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "44",
       "title": "Amber Trio Jerusalem",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "not_found",
+      "sources": [
+        "https://www.egonwellesz.at/e_wellesz_diskographie.htm",
+        "https://www.musicweb-international.com/trio_survey/trio-discogG.pdf"
+      ],
+      "note": "Amber Trio Jerusalem,ORFCD193: exact release corroborated in discographies, but no current physical-CD or paid-download product found in artist/title/catalogue-number searches.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "45",
       "title": "Klaus/Barrett: Brahms/Gal Clarinet Sonatas",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "partially_verified",
+      "sources": [
+        "https://www.prestomusic.com/classical/products/7970983--brahms-gal-clarinet-sonatas"
+      ],
+      "note": "C130052: exact release catalogue number, performers and programme checked against retailer listing. No physical-CD order option found on the checked page. MP3/lossless download verified. ",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "46",
       "title": "Late Romantics",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "partially_verified",
+      "sources": [
+        "https://www.prestomusic.com/classical/products/8015977--late-romantics"
+      ],
+      "note": "SMCD5167: exact release catalogue number, performers and programme checked against retailer listing. No physical-CD order option found on the checked page. MP3/lossless download verified. ",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "47",
       "title": "Music for Wind Ensemble and Concert Band ",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.prestomusic.com/classical/products/7928930--music-for-wind-ensemble-and-concert-band"
+      ],
+      "note": "WER66412: exact release catalogue number, performers and programme checked against retailer listing. CD order option verified. MP3/lossless download verified. ",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "48",
       "title": "Cantium Winds",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "not_found",
+      "sources": [
+        "https://www.walterhartley.com/Recordings_2.htm"
+      ],
+      "note": "Cantium Winds,Brendon Le Page,MCPSCSCD102: composer discography confirms exact disc; no current CD or digital-download product found in title/performer searches. Historic postal-order information is not treated as current availability.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "49",
       "title": "Brahms: the 2 Clarinet Sonatas - G\u00e1l: Clarinet Sonata",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "partially_verified",
+      "sources": [
+        "https://www.prestomusic.com/classical/products/8062177--brahms-hans-gal-clarinet-sonatas"
+      ],
+      "note": "CCD1027: exact release catalogue number, performers and programme checked against retailer listing. No physical-CD order option found on the checked page. MP3/lossless download verified. ",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "50",
       "title": "Johannes Brahms, Liebeslieder",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "partially_verified",
+      "sources": [
+        "https://www.prestomusic.com/classical/products/8052011--mahler-kindertotenlieder-brahms-liebeslieder-walzer"
+      ],
+      "note": "Decca4259952: Ferrier/Seefried/Patzak/Guenther/Curzon/Gal and Klemperer confirmed; MP3/lossless download and streaming verified. No physical-CD order found on checked page.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "52",
       "title": "Hans G\u00e1l: The Right Tempo",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.prestomusic.com/classical/products/7990353--hans-gal-the-right-tempo"
+      ],
+      "note": "98896: exact release catalogue number, performers and programme checked against retailer listing. CD order option verified. MP3/lossless download verified. ",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "53",
       "title": "Hans G\u00e1l: Violin Concerto, Violin Sonatas",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.prestomusic.com/classical/products/8001156--hans-gal-violin-concerto-violin-sonatas"
+      ],
+      "note": "98921: release catalogue number, performers and programme verified; physical disc and MP3/lossless download listed.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "54",
       "title": "Modern Times: Songs by Schreker, G\u00e1l, Goldschmidt, Eisler, Korngold, Zemlinsky & Grosz",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.prestomusic.com/classical/products/8004475--modern-times"
+      ],
+      "note": "AVI8553229: exact release catalogue number, performers and programme checked against retailer listing. CD order option verified. MP3/lossless download verified. ",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "55",
       "title": "Hans G\u00e1l 3rd Symphony Schumann 3rd Symphony",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.avie-records.com/releases/symphony-no-3/",
+        "https://www.prestomusic.com/classical/products/7997912--hans-gal-schumann-symphony-no-3"
+      ],
+      "note": "AV2230: label catalogue number, performers and programme match. Label CD ordering and digital download/listening options checked; prices and stock can change.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "56",
       "title": "Hans G\u00e1l 1st Symphony, Franz Schubert 6th Symphony",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.avie-records.com/releases/symphony-no-1-symphony-no-6/",
+        "https://www.prestomusic.com/classical/products/7921932--hans-gal-schubert-kindred-spirits"
+      ],
+      "note": "AV2224: label catalogue number, performers and programme match. Label CD ordering and digital download/listening options checked; prices and stock can change.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "57",
       "title": "Hans G\u00e1l 2nd Symphony, Franz Schubert 9th Symphony",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.avie-records.com/releases/symphony-no-2-symphony-no-9/",
+        "https://www.prestomusic.com/classical/products/7997480--hans-gal-schubert-kindred-spirits"
+      ],
+      "note": "AV2225: label catalogue number, performers and programme match. Label CD ordering and digital download/listening options checked; prices and stock can change.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "58",
@@ -1591,96 +1733,140 @@
     {
       "id": "59",
       "title": "Hans G\u00e1l 4th Symphony Schumann 2nd Symphony",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.avie-records.com/releases/symphony-no-4-symphony-no-2/",
+        "https://www.prestomusic.com/classical/products/8005715--hans-gal-symphony-no-4-schumann-symphony-no-2"
+      ],
+      "note": "AV2231: label catalogue number, performers and programme match. Label CD ordering and digital download/listening options checked; prices and stock can change.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "60",
       "title": "Zemlinsky, Goldmark & G\u00c3\u00a1l: Klaviertrios/Piano Trios",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.prestomusic.com/classical/products/8007722--zemlinsky-goldmark-gal-piano-trios"
+      ],
+      "note": "98933: exact release catalogue number, performers and programme checked against retailer listing. CD order option verified. MP3/lossless download verified. ",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "61",
       "title": "Antonio Meneses: Elgar Callo Concerto - G\u00e1l Cello Concerto",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.avie-records.com/releases/cello-concertos/",
+        "https://orcd.co/av2237"
+      ],
+      "note": "AV2237: label catalogue number, performers and programme match. Label CD ordering and digital download/listening options checked; prices and stock can change.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "62",
       "title": "Hans G\u00e1l & Hans Kr\u00e1sa: Complete String Trios",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.avie-records.com/releases/complete-string-trios/",
+        "https://orcd.co/av2259"
+      ],
+      "note": "AV2259: label catalogue number, performers and programme match. Label CD ordering and digital download/listening options checked; prices and stock can change.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "65",
       "title": "Der Ochse auf dem Dach",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.prestomusic.com/classical/products/8019914--the-ox-on-the-roof-and-other-bans"
+      ],
+      "note": "98892: exact release catalogue number, performers and programme checked against retailer listing. CD order option verified. MP3/lossless download verified. ",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "66",
       "title": "Hans G\u00e1l 2nd Symphony Robert Schumann 4th Symphony",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.avie-records.com/releases/symphony-no-2-symphony-no-4/",
+        "https://www.prestomusic.com/classical/products/8029550--hans-gal-symphony-no-2-schumann-symphony-no-4"
+      ],
+      "note": "AV2232: label catalogue number, performers and programme match. Label CD ordering and digital download/listening options checked; prices and stock can change.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "67",
       "title": "Hans G\u00e1l 1st Symphony Robert Schumann 1st Symphony",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.avie-records.com/releases/symphony-no-1-2/",
+        "https://www.prestomusic.com/classical/products/8038027--hans-gal-symphony-no-1-schumann-symphony-no-1"
+      ],
+      "note": "AV2233: label catalogue number, performers and programme match. Label CD ordering and digital download/listening options checked; prices and stock can change.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "68",
       "title": "Through The Centuries",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "partially_verified",
+      "sources": [
+        "https://www.bluegriffin.com/cd-catalog/p/through-the-centuries-annette-barbara-vogel-daniel-sweaney"
+      ],
+      "note": "Through the Centuries, Vogel/Sweaney, BGR269: label CD order verified with Gal Divertimento op.90/3. No digital-download order found on checked label page.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "70",
       "title": "Viola in Exile",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "partially_verified",
+      "sources": [
+        "https://www.prestomusic.com/classical/products/8061083--viola-in-exile"
+      ],
+      "note": "GRAM99026: exact release catalogue number, performers and programme checked against retailer listing. No physical-CD order option found on the checked page. MP3/lossless download verified. ",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "71",
       "title": "Voices in the Wilderness",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "partially_verified",
+      "sources": [
+        "https://www.broinc.com/media/cd/cd-170128/",
+        "https://www.melbarecordings.com.au/catalogue/album/voices-wilderness"
+      ],
+      "note": "MR301145, Benedict/Young: physical CD verified at Berkshire. Label previews remain; label no longer processes CD/download payments, so its historic Buy controls are not used as purchase links. No current digital-download seller verified.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "72",
       "title": "Hans G\u00e1l: The Four Symphonies",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.avie-records.com/releases/the-four-symphonies-2/",
+        "https://www.prestomusic.com/classical/products/8053613--hans-gal-the-four-symphonies"
+      ],
+      "note": "AV2322: label catalogue number, performers and programme match. Label CD ordering and digital download/listening options checked; prices and stock can change.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "73",
       "title": "G\u00e1l Concerto for Piano & Orchestra",
-      "status": "partially_verified",
+      "status": "verified",
       "sources": [
         "https://www.avie-records.com/releases/gal-mozart-piano-concertos/",
         "https://orcd.co/av2358"
       ],
-      "note": "Label catalogue and performers matched. Official album link provides Download and Play choices with matching tracks. A current physical-CD retailer product page remains to be verified."
+      "note": "AV2358: label catalogue number, performers and programme match. Label CD ordering and digital download/listening options checked; prices and stock can change.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "74",
       "title": "Oboe & Piano",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.prestomusic.com/classical/products/8347344--gal-martinu-haas-janacek-slavicky-works-for-oboe-piano"
+      ],
+      "note": "AVI8553386: exact release catalogue number, performers and programme checked against retailer listing. CD order option verified. MP3/lossless download verified. ",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "75",
@@ -1694,19 +1880,23 @@
     {
       "id": "76",
       "title": "Voices in the Wilderness: cello concertos by exiled Jewish composers",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.prestomusic.com/classical/products/8366153--voices-in-the-wilderness"
+      ],
+      "note": "555074-2: exact release catalogue number, performers and programme checked against retailer listing. CD order option verified. MP3/lossless download verified. ",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "77",
       "title": "Hans G\u00e1l: Concertino for Cello & Strings, Solo Cello Sonata, Solo Cello Suite",
-      "status": "partially_verified",
+      "status": "verified",
       "sources": [
         "https://www.avie-records.com/releases/concertino-for-cello-and-strings-solo-cello-sonata-solo-cello-suite/",
         "https://orcd.co/av2380"
       ],
-      "note": "Label catalogue and performers matched. Official album link provides Download and Play choices with matching tracks. A current physical-CD retailer product page remains to be verified."
+      "note": "AV2380: label catalogue number, performers and programme match. Label CD ordering and digital download/listening options checked; prices and stock can change.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "78",
@@ -1720,54 +1910,73 @@
     {
       "id": "79",
       "title": "G\u00e1l - Shostakovich",
-      "status": "partially_verified",
+      "status": "verified",
       "sources": [
         "https://www.avie-records.com/releases/gal-shostakovich-piano-trios/",
         "https://orcd.co/av2390"
       ],
-      "note": "Label catalogue and performers matched. Official album link provides Download and Play choices with matching tracks. A current physical-CD retailer product page remains to be verified."
+      "note": "AV2390: label catalogue number, performers and programme match. Label CD ordering and digital download/listening options checked; prices and stock can change.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "81",
       "title": "Das Lied der Nacht",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.prestomusic.com/classical/products/8541282--gal-das-lied-der-nacht-op-23"
+      ],
+      "note": "555186-2: exact release catalogue number, performers and programme checked against retailer listing. CD order option verified. MP3/lossless download verified. ",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "82",
       "title": "Hans G\u00e1l: Music for Viola, Vol.1",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://toccataclassics.com/product/hans-gal-music-for-viola/"
+      ],
+      "note": "TOCC0535: exact performers and programme matched. Official label offers CD, MP3, FLAC and HD WAV with audio samples. Stock and prices may change.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "83",
       "title": "Remembering Vienna; Hans G\u00e1l: works for treble recorder & piano",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.prestomusic.com/classical/products/8781218--hans-gal-first-complete-works-for-flute-piano"
+      ],
+      "note": "TXA19140: exact release catalogue number, performers and programme checked against retailer listing. CD order option verified. MP3/lossless download verified. Distributor calls recorder/flute and misidentifies Eva Fox-Gal as the widow; catalogue number, performers and programme identify the exact release. No historical descriptive field changed.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "84",
       "title": "Hans G\u00e1l: Music for Voices Vol.1",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://toccataclassics.com/product/hans-gal-music-for-voices/"
+      ],
+      "note": "TOCC0509: exact performers and programme matched. Official label offers CD, MP3, FLAC and HD WAV with audio samples. Stock and prices may change.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "85",
       "title": "Hidden Treasure: Hans G\u00e1l's unpublished Lieder",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "partially_verified",
+      "sources": [
+        "https://www.prestomusic.com/classical/products/8861914--hidden-treasure-hans-gals-unpublished-lieder"
+      ],
+      "note": "BIS2543: release catalogue number, performers and programme verified; no physical disc order found; MP3/lossless download listed.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "86",
       "title": "Hans Gal Piano Quartet in A ",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.prestomusic.com/classical/products/9367214--hans-gal-piano-quartet-in-a-major-suite-op-24-concertino-op-43-impromptu"
+      ],
+      "note": "555276-2: exact release catalogue number, performers and programme checked against retailer listing. CD order option verified. MP3/lossless download verified. Physical order is a backorder; distributor currently out of stock. ",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "87",
@@ -1781,16 +1990,22 @@
     {
       "id": "88",
       "title": "Hans G\u00e1l: Works for Viola, Piano, Violin and Oboe",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "partially_verified",
+      "sources": [
+        "https://www.prestomusic.com/classical/products/9450082--hans-gal-works-for-viola-piano-violin-oboe"
+      ],
+      "note": "CRC3975-76: exact release catalogue number, performers and programme checked against retailer listing. No physical-CD order option found on the checked page. MP3/lossless download verified. ",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "89",
       "title": "Hans G\u00e1l: Works for Viola and Piano",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "partially_verified",
+      "sources": [
+        "https://www.prestomusic.com/classical/products/9337591--hans-gal-works-for-viola-piano"
+      ],
+      "note": "RecArt0045: exact release catalogue number, performers and programme checked against retailer listing. No physical-CD order option found on the checked page. MP3/lossless download verified. ",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "90",
@@ -1804,16 +2019,22 @@
     {
       "id": "91",
       "title": "Hans G\u00e1l: Music for Chamber Orchestra",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.prestomusic.com/classical/products/9635449--hans-gal-music-for-chamber-orchestra"
+      ],
+      "note": "555623-2: exact release catalogue number, performers and programme checked against retailer listing. CD order option verified. MP3/lossless download verified. Physical order is a backorder; distributor currently out of stock. ",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "92",
       "title": "Krenek, G\u00e1l and Penderecki: Serenade for Clarinet and Strings",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.prestomusic.com/classical/products/9626680--serenade-for-clarinet-strings-krenek-gal-penderecki"
+      ],
+      "note": "AVI8553537: exact release catalogue number, performers and programme checked against retailer listing. CD order option verified. MP3/lossless download verified. Physical order is a backorder; distributor currently out of stock. ",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "93",
@@ -1827,30 +2048,42 @@
     {
       "id": "94",
       "title": "Hans G\u00e1l: Concertinos for Violin, Cello and Piano; String Serenade",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.prestomusic.com/classical/products/9528236--hans-gal-concertino-for-cello-serenade-for-string-orchestra"
+      ],
+      "note": "HC23049: exact release catalogue number, performers and programme checked against retailer listing. CD order option verified. MP3/lossless download verified. Distributor mislabels Nina Karmon as cello; catalogue number and programme match HC23049. Historical performer data retained.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "95",
       "title": "Hans G\u00e1l: Chamber Music",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.prestomusic.com/classical/products/9828314--hans-gal-chamber-music"
+      ],
+      "note": "555721-2: exact release catalogue number, performers and programme checked against retailer listing. CD order option verified. MP3/lossless download verified. Distributor release date is 6 March 2026; historical source dates differ and are retained for review.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "96",
       "title": "G\u00e1l, Kaminski and Bernstein: Works for Violin and Orchestra",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.prestomusic.com/classical/products/8659699--gal-kaminski-bernstein-works-for-violin-orchestra"
+      ],
+      "note": "HC19020: exact release catalogue number, performers and programme checked against retailer listing. CD order option verified. MP3/lossless download verified. ",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "97",
       "title": "Reflections - Brahms and G\u00e1l: Piano Quartets",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.prestomusic.com/classical/products/9831970--reflections"
+      ],
+      "note": "GEN26954: exact release catalogue number, performers and programme checked against retailer listing. CD order option verified. MP3/lossless download verified. ",
+      "checked_date": "2026-10-01"
     }
   ]
 }
