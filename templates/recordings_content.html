@@ -13,7 +13,7 @@
 		<div class="item" {% if recordings[i].id == recording.id %}style="background: #DDD;"{% endif %}>
 			<table border="0" cellpadding="0" cellspacing="0" width="100%">
 				<tr>
-					<td style="width: 58px;"><a href="javascript:void(0)" onclick="location.href='/recordings/{{ recordings[i].id }}'"><img width="50" src="/storage/recordingcovers/{{ recordings[i].cover }}" border="0" /></a></td>
+					<td style="width: 58px;"><a href="/recordings/{{ recordings[i].id }}/" data-recording-link="{{ recordings[i].id }}" aria-label="{{ recordings[i].title|striptags|e }}"><img width="50" src="/storage/recordingcovers/{{ recordings[i].cover }}" alt="{{ recordings[i].title|striptags|e }}" border="0" /></a></td>
 					<td align="left" valign="top">{{ recordings[i].title }}</td>
 				</tr>
 			</table>

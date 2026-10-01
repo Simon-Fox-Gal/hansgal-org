@@ -80,7 +80,7 @@
     const gradient=ctx.createLinearGradient(0,150,0,210);gradient.addColorStop(0,'rgba(238,238,238,0.5)');gradient.addColorStop(1,'rgba(238,238,238,1)');ctx.fillStyle=gradient;ctx.fillRect(0,150,150,60);
     return canvas.toDataURL('image/png');
   }
-  let imageFlow,recordingRequest=0;
+  let imageFlow;
   async function viewMode(mode) {
     sessionStorage.setItem('hansgal-recording-view',mode);
     const list=document.querySelector('.albumlist'),track=document.querySelector('.tracklist');
@@ -124,7 +124,7 @@
     hideSmallPhoto:id=>{const e=document.getElementById('thumb'+id);if(e)e.style.display='none';},
     playAS:async (id,filename)=>{await ready;const d=document.getElementById('detail_'+id);const open=d&&getComputedStyle(d).display==='none';if(d)d.style.display=open?'block':'none';if(open){const r=data.audio_sample.find(r=>r.id===String(id));window.Hansgal.playASItem(filename||files(r)[0]?.filename,id,0);}},
     playASItem:async (filename,id,index)=>{await ready;if(!files(data.audio_sample.find(r=>r.id===String(id))).some(f=>f.filename===filename))return;player(document.getElementById('player'),filename,true);document.querySelectorAll('span.nowplaying').forEach(e=>e.innerHTML='');const s=document.getElementById('nowplaying_'+id+'_'+index);if(s)s.innerHTML='<i>Now playing...</i>';},
-    getRecordingInfo:async id=>{const request=++recordingRequest;const r=await fetch(href('/recordings/getalbuminfo/'+id+'/'));const text=await r.text();if(r.ok&&request===recordingRequest){document.getElementById('webshop').innerHTML=text;document.getElementById('webshop').dataset.recordingId=String(id);document.getElementById('webshop').dataset.recordingTitle=data.recording.find(x=>x.id===String(id))?.title||'Recordings';lightboxes();await viewMode(sessionStorage.getItem('hansgal-recording-view')||'coverlist');}},
+    getRecordingInfo:async id=>{await ready;if(data.recording.some(r=>r.id===String(id)))location.assign(href('/recordings/'+encodeURIComponent(id)+'/'));},
     viewMode
   };
   function init() {

@@ -27,8 +27,10 @@ Each verified milestone receives a commit. This file records resume state; priva
 
 ## Progress / verification
 
-- Discovery complete. Implementation and hosted verification pending.
-- Recording thumbnails currently use JavaScript-only links; cover-flow changes do not update the page URL. Replace with real stable destinations and test all generated pages.
+- Discovery complete. Recording navigation implementation complete; hosted verification pending publication.
+- Recording thumbnails now have native stable links with accessible labels. Cover-flow selections navigate to the same canonical detail pages so refresh/back/forward retain recording identity.
+- PASS: 78 recording destinations and 6,162 thumbnail-to-cover/destination checks at `/hansgal-org`; regression check added to existing CI without permission changes.
+- PASS: 99 frozen catalogue cases and edited-data regression checks; 633 routes, 1,282 assets, 230 audio references; preservation verification reports original content unchanged, no duplicate IDs or new broken relationships.
 - CMS currently has no upload storage; HTML previews appear only for already-tagged values. Pending upload privacy must be enforced on the server.
 
 ## Outstanding decisions
@@ -39,4 +41,4 @@ Each verified milestone receives a commit. This file records resume state; priva
 
 ## Resume next
 
-Implement and verify recording routing first, then continue stages 3–7. No mission feature is yet claimed complete or published.
+Save recording checkpoint, then continue stages 3–7. Hosted publication remains pending. Initial plan checkpoint: `535595b78bc7069716870579c5bb61070119e31f`. Git CLI writes are unavailable; use the connected GitHub API for checkpoints.

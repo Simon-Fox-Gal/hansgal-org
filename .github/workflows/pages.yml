@@ -26,6 +26,7 @@ jobs:
       - run: node tests/catalogue.test.cjs
       - run: python scripts/build.py --base-path /hansgal-org
       - run: python scripts/verify.py
+      - run: python tests/recordings.py
       - uses: actions/upload-pages-artifact@v4
         with:
           path: dist
