@@ -17,7 +17,17 @@ for path in paths:
     if not isinstance(old,list) or not old or not isinstance(old[0],dict):
         assert old==new,path
         continue
-    assert len(old)==len(new),f'{path}: rows omitted or duplicated'
+    assert len(new)>=len(old),f'{path}: original rows omitted'
+    # New editorial records may be appended; original row order and values
+    # remain checked below. Reject reused IDs and repeated new relations.
+    if 'id' in old[0]:
+        assert len({r['id'] for r in new})==len(new),f'{path}: duplicate ID'
+    else:
+        seen={json.dumps(r,sort_keys=True) for r in new[:len(old)]}
+        for row in new[len(old):]:
+            key=json.dumps(row,sort_keys=True)
+            assert key not in seen,f'{path}: duplicate appended relation'
+            seen.add(key)
     for before,after in zip(old,new):
         for key,value in before.items():
             if path=='content/catalogue.json' and key in ('title_de','description_de'):continue

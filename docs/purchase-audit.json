@@ -2545,6 +2545,31 @@
       ],
       "note": "GEN26954: exact release catalogue number, performers and programme checked against retailer listing. CD order option verified. MP3/lossless download verified. ",
       "checked_date": "2026-10-01"
+    },
+    {
+      "id": "98",
+      "title": "Eisnacht (Ice Night) \u2014 Songs by Jewish Composers",
+      "status": "verified",
+      "sources": [
+        "https://www.genuinclassics.com/gen26948-eisnacht-ice-night",
+        "https://www.prestomusic.com/classical/products/9837494--eisnacht",
+        "https://www.qobuz.com/au-en/album/eisnacht-pia-viola-buchert-and-tatjana-dravenau/sbak9kfp1y75w",
+        "https://klassik-begeistert.de/cd-blu-ray-besprechung-eisnacht-pia-viola-buchert-tatjana-dravenau-klassik-begeistert-de-13-februar-2026/"
+      ],
+      "note": "GEN26948 verified with GENUIN: performers, complete op. 33, release date and cover. CD and digital options verified. Primary release date is 6 February 2026; Presto lists 6 March 2026.",
+      "checked_date": "2026-10-02"
+    },
+    {
+      "id": "99",
+      "title": "Project Paloma, Volume 1 \u2014 Emily Beynon and Andrew West",
+      "status": "verified",
+      "sources": [
+        "https://emilybeynon.com/shop/cds/project-paloma-volume-1/",
+        "https://zefirrecords.bandcamp.com/album/project-paloma-i-second-world-war-masterpieces-for-flute-piano",
+        "https://bfs.org.uk/s/Pan-Journal-March-2022.pdf#page=60"
+      ],
+      "note": "Exact Volume 1 programme, artists, CD and digital options verified with artist and label. G\u00e1l op. 64 is for solo piano. Label release is 28 October 2021; some retailers list later dates. Label catalogue number unavailable in consulted primary listings; EAN 8717774570784 identifies the edition. Artist total 54:03; individual rounded Bandcamp timings sum to 54:00.",
+      "checked_date": "2026-10-02"
     }
   ]
 }

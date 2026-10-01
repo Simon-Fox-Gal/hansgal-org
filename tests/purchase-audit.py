@@ -22,4 +22,4 @@ for table,section,route,fields in [('catalogue','works','works/show',('purchase_
      page=(root/'dist'/language/route/r['id']/'index.html').read_text(encoding='utf8')
      assert 'href="'+html.escape(url,quote=True)+'"' in page,(r['id'],language,url)
     total+=1
-print('PASS: all179 works and78 recordings audited once; every structured purchase URL has evidence and renders in both languages:',total)
+print(f'PASS: all {len(audit["works"])} works and {len(audit["recordings"])} recordings audited once; every structured purchase URL has evidence and renders in both languages: {total}')

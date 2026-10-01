@@ -1,5 +1,5 @@
 {
-  "policy": "Original title fields preserve source wording. und denotes unverified original language; display translations do not assert German originals. English title fields remain unchanged.",
+  "policy": "Original title fields preserve source wording. und denotes unverified original language; display translations do not assert German originals. English title fields remain unchanged. For established English-original works, German display titles retain the English original first, followed by the German translation in parentheses.",
   "needs_review": [
     {
       "id": "52",
