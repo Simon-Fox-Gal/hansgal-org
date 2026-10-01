@@ -142,7 +142,7 @@
       "field": "body",
       "source_sha256": "8a60db4ba49c3c8fddf7f0b0c7d09629574f131f8d1ca296f711b263693bc906",
       "characters": 33383,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -342,8 +342,8 @@
       "field": "body",
       "source_sha256": "4f48c5762c81c8f002c90f110ee2c50a1b59cd4ad00490c5ad679091a74b08dd",
       "characters": 29642,
-      "status": "pending",
-      "note": ""
+      "status": "translated",
+      "note": "Original label-directory claims and unusable embedded citation markers retained. Several release/programme associations conflict with individual recording records; not new availability verification."
     },
     {
       "table": "menu",
@@ -372,7 +372,7 @@
       "field": "body",
       "source_sha256": "6a9944fa0e5fb668766d55cf61f136f571a52b6fd53a2721e9dbf088d404fb46",
       "characters": 10119,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -392,7 +392,7 @@
       "field": "body",
       "source_sha256": "5ef2c27a6ab6a1eb1ad65b6feac20a3feeff86246caf8707c89d26175e51bf46",
       "characters": 5063,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -452,7 +452,7 @@
       "field": "body",
       "source_sha256": "691fd4869d60344fcb7f72d2a9599041fdb3850fb9309a2e417359cb77dbc9c9",
       "characters": 19807,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -1112,8 +1112,8 @@
       "field": "body",
       "source_sha256": "7a1f3dabc593417a17ba8ce007430fe22fd9515c80a9b3f51fbb058d8f0fb583",
       "characters": 16547,
-      "status": "pending",
-      "note": ""
+      "status": "translated",
+      "note": "Original event dates/weekdays and forthcoming/past grouping retained, including the Wednesday 15 June 2023 inconsistency and September 2026 event still under forthcoming. Localized dates are not fresh schedule verification."
     },
     {
       "table": "menu",
@@ -1142,8 +1142,8 @@
       "field": "body",
       "source_sha256": "de81d1027823abcfb493dc9d357fab7ff4a13455e7fd00f4d91b1f894c7eefba",
       "characters": 13443,
-      "status": "pending",
-      "note": ""
+      "status": "translated",
+      "note": "Original Schumann Symphony No.1/opus120 mismatch retained for editorial review. Musical names, performers and catalogue numbers preserved."
     },
     {
       "table": "menu",
@@ -1192,8 +1192,8 @@
       "field": "body",
       "source_sha256": "70bc32817f9b52fc0c66fb49940ded69e38ed3ebd0704dad73d9d8608c5d2fec",
       "characters": 10965,
-      "status": "pending",
-      "note": ""
+      "status": "translated",
+      "note": "Original publication year 1912 retained, although conflicting with surrounding modern publication context; editorial correction requires source review. Quoted diary passage is translated from the supplied English review, not a recovered German original."
     },
     {
       "table": "menu",
@@ -19082,8 +19082,8 @@
       "field": "body",
       "source_sha256": "78eaea0eedaa7cb5c8cfb17540ae771620654e0d08a326aeab2ec6544269a140",
       "characters": 15,
-      "status": "pending",
-      "note": ""
+      "status": "shared_opaque_original",
+      "note": "Opaque legacy placeholder text, not English prose. Retained exactly; no invented replacement."
     },
     {
       "table": "heading",
@@ -19092,8 +19092,8 @@
       "field": "body",
       "source_sha256": "70b683b01ff1de1540f9f47cc4e184883463d0ae16ea08ba2b6206e34a2b15d8",
       "characters": 13,
-      "status": "pending",
-      "note": ""
+      "status": "shared_opaque_original",
+      "note": "Opaque legacy placeholder text, not English prose. Retained exactly; no invented replacement."
     },
     {
       "table": "heading",
@@ -19102,8 +19102,8 @@
       "field": "body",
       "source_sha256": "68f663c4511c916a4d8f3e6fd764522d65770bbda907a2cdc317861682a0d2b9",
       "characters": 26,
-      "status": "pending",
-      "note": ""
+      "status": "shared_opaque_original",
+      "note": "Opaque legacy placeholder text, not English prose. Retained exactly; no invented replacement."
     },
     {
       "table": "heading",
@@ -19112,8 +19112,8 @@
       "field": "body",
       "source_sha256": "e2ae2238578a41a95fba9545f652eb71618748b093129f11270ed7f0d5c20f1b",
       "characters": 11,
-      "status": "pending",
-      "note": ""
+      "status": "shared_opaque_original",
+      "note": "Opaque legacy placeholder text, not English prose. Retained exactly; no invented replacement."
     },
     {
       "table": "category",

@@ -15,24 +15,24 @@
     "mainmenu": "publishers",
     "body": "hullahopp<br />",
     "id": "3",
-    "body_de": ""
+    "body_de": "hullahopp<br />"
   },
   {
     "mainmenu": "bibliography",
     "body": "abcdefg<br />",
     "id": "4",
-    "body_de": ""
+    "body_de": "abcdefg<br />"
   },
   {
     "mainmenu": "contacts",
     "body": "fdsafdsafdasfdsafdsa<br />",
     "id": "5",
-    "body_de": ""
+    "body_de": "fdsafdsafdasfdsafdsa<br />"
   },
   {
     "mainmenu": "booksandarticles",
     "body": "efsdc<br />",
     "id": "6",
-    "body_de": ""
+    "body_de": "efsdc<br />"
   }
 ]
