@@ -90,7 +90,6 @@ def make_site(base_path='', review=True):
 
     def transform(markup,route):
         markup=markup.replace('/gfx/js/hansgal.js','/app/replica.js')
-        markup=markup.replace('src="/app/replica.js"','src="/app/replica.js" defer="defer"')
         # POST selection changes become browser-side state on a static host.
         markup=re.sub(r'''onchange="\$\('#(worksform|audioform|audiofile)'\)\.submit\(\)"''',lambda m:'onchange="Hansgal.submit(\''+m[1]+'\')"',markup)
         markup=re.sub(r'''\b(href|src|action|poster|data)\s*=\s*(["'])(.*?)\2''',lambda m:m[1]+'='+m[2]+html.escape(url(m[3]),quote=True)+m[2],markup,flags=re.I|re.S)
@@ -186,3 +185,4 @@ def make_site(base_path='', review=True):
 if __name__=='__main__':
     p=argparse.ArgumentParser();p.add_argument('--base-path',default='');p.add_argument('--production',action='store_true')
     args=p.parse_args();make_site(args.base_path,not args.production)
+
