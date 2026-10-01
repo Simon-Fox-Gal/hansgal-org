@@ -2,11 +2,22 @@
 from __future__ import annotations
 import argparse, copy, hashlib, html, json, pathlib, re, shutil, subprocess
 from collections import OrderedDict
-from urllib.parse import urlsplit, unquote, quote
+from urllib.parse import urlsplit, unquote, quote, urljoin
 from jinja2 import Environment, FileSystemLoader, ChainableUndefined
 from i18n import localize, translate_template
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
+STANDALONE_GERMAN={
+ '/storage/sketchbook/galpictures.html':[
+  ('Sketches','Skizzen'),
+  ("From \n        G&aacute;l's sketchbook, 1903",'Aus G&aacute;ls Skizzenbuch, 1903'),
+ ],
+ '/storage/texts/levetzowpoem.html':[
+  ('Levetzow poem','Gedicht von Levetzow'),
+  ('Text \n        of a poem by Levetzow,','Text eines Gedichts von Levetzow,'),
+  ("commemorating the G&aacute;ls' visit to Corsica",'zur Erinnerung an den Besuch der Familie G&aacute;l auf Korsika'),
+ ],
+}
 def load(name):
     return json.loads((ROOT/'content'/f'{name}.json').read_text(encoding='utf8'))
 
@@ -110,11 +121,11 @@ def make_site(base_path='', review=True, language='en'):
             if u.query: value+='?'+u.query
             if u.fragment: value+='#'+u.fragment
         if value.startswith('/') and not value.startswith('//'):
-            if language=='de' and (value=='/' or re.match(r'^/(?:hansgal|news|works|recordings|booksandarticles|audiosamples|publishers|bibliography|photos|faqs?|contacts|hansgalsociety|comments|donate|search|score-basket)(?:/|\?|$)',value)):
+            if language=='de' and (urlsplit(value).path in STANDALONE_GERMAN or value=='/' or re.match(r'^/(?:hansgal|news|works|recordings|booksandarticles|audiosamples|publishers|bibliography|photos|faqs?|contacts|hansgalsociety|comments|donate|search|score-basket)(?:/|\?|$)',value)):
                 value='/de'+value
             return base_path+value
         if value.startswith(('storage/','gfx/','imageflow/')):
-            return base_path+'/'+value
+            return url('/'+value)
         return value
 
     def transform(markup,route):
@@ -173,6 +184,7 @@ def make_site(base_path='', review=True, language='en'):
             c['thumb']=f'storage/pictureundersubmenus/thumb_hansgal_{id}.jpg'
             text=ROOT/'public/storage/textsundersubmenus'/f'hansgal_{id}.html'
             c['piktorgram']=stripcslashes(text.read_text(encoding='utf8')) if text.exists() else ''
+            if language=='de':c['piktorgram']=translate_template(c['piktorgram'])
         else:
             c['thumb']=f'/storage/pictureundersubmenus/thumb_{section}.jpg' in source_assets
         page(route,'hansgal' if section=='hansgal' else 'staticpage',**c)
@@ -210,6 +222,32 @@ def make_site(base_path='', review=True, language='en'):
             save('/audiosamples/play/'+r['id']+'/'+f['filename'],markup,'audio-player',True)
     page('/comments','comments')
     page('/search','search')
+    if language=='de':
+        # Preserve the original English asset bytes and URLs. German standalone
+        # pages reuse the same layout, images and original German/Latin poem.
+        for route,replacements in STANDALONE_GERMAN.items():
+            markup=(ROOT/'public'/route.lstrip('/')).read_text(encoding='utf8')
+            for before,after in replacements:
+                if before not in markup:raise ValueError('Missing standalone phrase: '+before)
+                markup=markup.replace(before,after)
+            markup=markup.replace('<html>','<html lang="de">',1).replace('charset=iso-8859-1','charset=utf-8')
+            # These obsolete ImageStyler rollovers are unused in the preserved
+            # document bodies; their image files are absent from the source.
+            markup=re.sub(r'<script\b[^>]*>[\s\S]*?</script>','',markup,flags=re.I)
+            markup=re.sub(r'\s+background="\.\./newimages/backgrnd\.gif"','',markup)
+            def absolute_asset(match):
+                value=match[3]
+                if not urlsplit(value).scheme and not value.startswith(('/', '#')):value=urljoin(route,value)
+                return match[1]+'='+match[2]+html.escape(value,quote=True)+match[2]
+            markup=re.sub(r'''\b(href|src|background)\s*=\s*(["'])(.*?)\2''',absolute_asset,markup,flags=re.I|re.S)
+            # Legacy background attributes are not part of the normal renderer.
+            markup=re.sub(r'''\bbackground="(/[^"<>]+)"''',lambda m:'background="'+base_path+m[1]+'"',markup)
+            nav='<nav aria-label="Language / Sprache" style="text-align:right"><a data-language="en" lang="en" href="'+base_path+route+'">English</a> · <a data-language="de" lang="de" href="'+base_path+'/de'+route+'">Deutsch</a></nav>'
+            markup=transform(markup,route)
+            # Add links after URL rewriting to avoid applying the base twice.
+            markup=re.sub(r'(<body\b[^>]*>)',lambda m:m[1]+nav,markup,count=1,flags=re.I)
+            target=out/'de'/route.lstrip('/');target.parent.mkdir(parents=True,exist_ok=True);target.write_text(markup,encoding='utf8')
+            generated['/de'+route]={'path':'/de'+route,'file':target.relative_to(out).as_posix(),'template':'standalone-german','sha256':hashlib.sha256(markup.encode()).hexdigest()}
     for mode in ('coverlist','coverflow'):
         aliases['/recordings/changeview/'+mode]='/recordings?view='+mode
     for route,target in aliases.items():

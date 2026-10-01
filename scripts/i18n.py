@@ -6,6 +6,13 @@ FIELDS={
  'thumbnail':['title'],'photos_category':['name'],
 }
 UI={
+ 'Select a work':'Werk auswählen','SEARCH RESULT':'SUCHERGEBNIS',
+ 'If you have any comments about our website, or wish to get in touch for any reason, please feel free to contact us using the form below:':'Wenn Sie Anmerkungen zu unserer Website haben oder aus einem anderen Grund mit uns in Verbindung treten möchten, nutzen Sie bitte das folgende Formular:',
+ "value='Submit'":"value='Absenden'",
+ 'JavaScript is needed for the basket. Individual score PDFs remain available on each work’s page.':'Für den Notenkorb wird JavaScript benötigt. Einzelne Noten-PDFs können weiterhin auf der jeweiligen Werkseite heruntergeladen werden.',
+ 'Reflections — Brahms and Gál: Piano Quartets, Confringo Klavierquartett (2026)':'Reflections — Brahms und Gál: Klavierquartette, Confringo Klavierquartett (2026)',
+ 'Hans Gál: Music for Voices, Volume Three (2025)':'Hans Gál: Vokalmusik, Folge drei (Music for Voices, Volume Three), 2025',
+ 'Hans Gál: Music for Viola, Volume Two (2025)':'Hans Gál: Musik für Viola, Folge zwei (Music for Viola, Volume Two), 2025',
  'ABOUT HANS G&Aacute;L':'ÜBER HANS GÁL','NEWS':'AKTUELLES','WORKS':'WERKE','RECORDINGS':'AUFNAHMEN',
  'BOOKS/ARTICLES':'BÜCHER/ARTIKEL','AUDIO SAMPLES':'HÖRPROBEN','PUBLISHERS':'VERLAGE','BIBLIOGRAPHY':'BIBLIOGRAFIE',
  'PHOTOS':'FOTOS','CONTACTS':'KONTAKT','HANS G&Aacute;L SOCIETY':'HANS-GÁL-GESELLSCHAFT','COMMENTS':'KOMMENTARE','DONATE':'SPENDEN',
@@ -31,6 +38,14 @@ def localize(tables):
   for row in result.get(table,[]):
    for field in fields:
     if row.get(field+'_de') not in (None,''):row[field]=row[field+'_de']
+ # Publisher identities and dates remain shared editorial data; only the
+ # surrounding availability wording is localized in the German display copy.
+ for row in result.get('catalogue',[]):
+  if row.get('publisher'):
+   value=row['publisher']
+   for en,de in [('First published by','Zuerst veröffentlicht bei'),('Suite only:','Nur die Suite:'),('orch. Parts:','Orchesterstimmen:'),('pending publication by','Veröffentlichung vorgesehen bei'),('Pending publication by','Veröffentlichung vorgesehen bei'),('now also','jetzt auch'),('now private','jetzt in Privatbesitz'),('now','jetzt'),('Unpublished','Unveröffentlicht'),('successors','Nachfolger'),('Vienna','Wien')]:
+    value=value.replace(en,de)
+   row['publisher']=value
  return result
 
 def translate_template(source):

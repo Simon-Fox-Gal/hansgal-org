@@ -1,0 +1,283 @@
+{
+  "attributes": [
+    {
+      "table": "menu",
+      "id": "1",
+      "field": "body_de",
+      "attribute": "alt",
+      "source": "up",
+      "translation": "Nach oben"
+    },
+    {
+      "table": "menu",
+      "id": "2",
+      "field": "body_de",
+      "attribute": "alt",
+      "source": "up",
+      "translation": "Nach oben"
+    },
+    {
+      "table": "menu",
+      "id": "25",
+      "field": "body_de",
+      "attribute": "alt",
+      "source": "The Hans G\u00e1l Society logo",
+      "translation": "Logo der Hans G\u00e1l Society"
+    },
+    {
+      "table": "menu",
+      "id": "25",
+      "field": "body_de",
+      "attribute": "aria-label",
+      "source": "Page shortcuts",
+      "translation": "Abschnitte dieser Seite"
+    },
+    {
+      "table": "menu",
+      "id": "9",
+      "field": "body_de",
+      "attribute": "alt",
+      "source": "up",
+      "translation": "Nach oben"
+    },
+    {
+      "table": "menu",
+      "id": "11",
+      "field": "body_de",
+      "attribute": "alt",
+      "source": "up",
+      "translation": "Nach oben"
+    },
+    {
+      "table": "menu",
+      "id": "24",
+      "field": "body_de",
+      "attribute": "alt",
+      "source": "The Hans G\u00e1l Society logo",
+      "translation": "Logo der Hans G\u00e1l Society"
+    },
+    {
+      "table": "menu",
+      "id": "27",
+      "field": "body_de",
+      "attribute": "alt",
+      "source": "up",
+      "translation": "Nach oben"
+    },
+    {
+      "table": "menu",
+      "id": "28",
+      "field": "body_de",
+      "attribute": "alt",
+      "source": "up",
+      "translation": "Nach oben"
+    },
+    {
+      "table": "menu",
+      "id": "29",
+      "field": "body_de",
+      "attribute": "alt",
+      "source": "up",
+      "translation": "Nach oben"
+    },
+    {
+      "table": "menu",
+      "id": "32",
+      "field": "body_de",
+      "attribute": "placeholder",
+      "source": "e.g. 20.00",
+      "translation": "z. B. 20.00"
+    },
+    {
+      "table": "menu",
+      "id": "32",
+      "field": "body_de",
+      "attribute": "placeholder",
+      "source": "e.g. 20.00",
+      "translation": "z. B. 20.00"
+    },
+    {
+      "table": "menu",
+      "id": "38",
+      "field": "body_de",
+      "attribute": "alt",
+      "source": "up",
+      "translation": "Nach oben"
+    },
+    {
+      "table": "menu",
+      "id": "39",
+      "field": "body_de",
+      "attribute": "alt",
+      "source": "up",
+      "translation": "Nach oben"
+    },
+    {
+      "table": "menu",
+      "id": "40",
+      "field": "body_de",
+      "attribute": "alt",
+      "source": "up",
+      "translation": "Nach oben"
+    },
+    {
+      "table": "menu",
+      "id": "41",
+      "field": "body_de",
+      "attribute": "alt",
+      "source": "up",
+      "translation": "Nach oben"
+    },
+    {
+      "table": "menu",
+      "id": "42",
+      "field": "body_de",
+      "attribute": "alt",
+      "source": "up",
+      "translation": "Nach oben"
+    },
+    {
+      "table": "menu",
+      "id": "43",
+      "field": "body_de",
+      "attribute": "alt",
+      "source": "up",
+      "translation": "Nach oben"
+    },
+    {
+      "table": "menu",
+      "id": "44",
+      "field": "body_de",
+      "attribute": "alt",
+      "source": "up",
+      "translation": "Nach oben"
+    },
+    {
+      "table": "menu",
+      "id": "45",
+      "field": "body_de",
+      "attribute": "alt",
+      "source": "up",
+      "translation": "Nach oben"
+    },
+    {
+      "table": "menu",
+      "id": "46",
+      "field": "body_de",
+      "attribute": "alt",
+      "source": "up",
+      "translation": "Nach oben"
+    },
+    {
+      "table": "menu",
+      "id": "47",
+      "field": "body_de",
+      "attribute": "alt",
+      "source": "up",
+      "translation": "Nach oben"
+    },
+    {
+      "table": "menu",
+      "id": "48",
+      "field": "body_de",
+      "attribute": "alt",
+      "source": "up",
+      "translation": "Nach oben"
+    },
+    {
+      "table": "menu",
+      "id": "49",
+      "field": "body_de",
+      "attribute": "alt",
+      "source": "up",
+      "translation": "Nach oben"
+    },
+    {
+      "table": "menu",
+      "id": "50",
+      "field": "body_de",
+      "attribute": "alt",
+      "source": "up",
+      "translation": "Nach oben"
+    },
+    {
+      "table": "menu",
+      "id": "51",
+      "field": "body_de",
+      "attribute": "alt",
+      "source": "up",
+      "translation": "Nach oben"
+    },
+    {
+      "table": "menu",
+      "id": "52",
+      "field": "body_de",
+      "attribute": "alt",
+      "source": "up",
+      "translation": "Nach oben"
+    },
+    {
+      "table": "menu",
+      "id": "53",
+      "field": "body_de",
+      "attribute": "alt",
+      "source": "up",
+      "translation": "Nach oben"
+    },
+    {
+      "table": "menu",
+      "id": "54",
+      "field": "body_de",
+      "attribute": "alt",
+      "source": "up",
+      "translation": "Nach oben"
+    },
+    {
+      "table": "menu",
+      "id": "55",
+      "field": "body_de",
+      "attribute": "alt",
+      "source": "up",
+      "translation": "Nach oben"
+    },
+    {
+      "table": "menu",
+      "id": "56",
+      "field": "body_de",
+      "attribute": "alt",
+      "source": "up",
+      "translation": "Nach oben"
+    },
+    {
+      "table": "menu",
+      "id": "78",
+      "field": "body_de",
+      "attribute": "alt",
+      "source": "up",
+      "translation": "Nach oben"
+    },
+    {
+      "table": "menu",
+      "id": "76",
+      "field": "body_de",
+      "attribute": "title",
+      "source": "5.0 out of 5 stars",
+      "translation": "5,0 von 5 Sternen"
+    },
+    {
+      "table": "recording",
+      "id": "61",
+      "field": "review_de",
+      "attribute": "alt",
+      "source": "Grammy logo",
+      "translation": "Grammy-Logo"
+    }
+  ],
+  "sidebar_captions": "Chronology and family-tree captions localized during rendering; all other sidebar fragments contain no authored prose.",
+  "standalone_pages": [
+    "/de/storage/sketchbook/galpictures.html",
+    "/de/storage/texts/levetzowpoem.html"
+  ],
+  "original_assets": "Original files preserved byte-for-byte. Poem text already German/Latin; only English heading localized. Existing historical German sketchbook file retained.",
+  "third_party_demos": "ImageFlow and Flash-player demonstration pages are software vendor examples, not authored G\u00e1l editorial content."
+}
