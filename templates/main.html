@@ -8,7 +8,17 @@
 <br />
 <br />
 <![endif]-->
-<a href="{{ mainpage_image_click_destination.value }}"><img src="/storage/mainpage.jpg" border="0" /></a>
+<a class="homepage-banner" href="{{ mainpage_image_click_destination.value }}" style="display:inline-block;position:relative;width:948px;max-width:100%;overflow:hidden;line-height:0;">
+  <img src="/storage/mainpage.jpg" width="948" height="347" style="display:block;width:100%;height:auto;border:0;" alt="A not-for-profit information site for the composer Hans Gál (1890-1987), jointly managed by The Hans Gál Society and Gál's family." />
+  <!-- Recolour only the manuscript panel; retain the original lettering, signature and portrait. -->
+  <img src="/storage/mainpage.jpg" width="948" height="347" alt="" aria-hidden="true" style="position:absolute;inset:0;width:100%;height:100%;clip-path:inset(0 25.211% 0 12.236%);filter:hue-rotate(210deg) saturate(0.9) contrast(1.22);" />
+  <!-- Original cover files, newest first, preserve the labels' artwork and typography. -->
+  <span style="position:absolute;inset:0 auto 0 0;width:12.236%;display:flex;flex-direction:column;background:#24464b;">
+    <img src="/storage/recordingcovers/eb0dd3388931d982246fea7c614fe9e3.jpg" width="1200" height="1200" alt="Reflections — Brahms and Gál: Piano Quartets, Confringo Klavierquartett (2026)" style="display:block;width:100%;height:33.333333%;object-fit:contain;" />
+    <img src="/storage/recordingcovers/b0f0ef85485de4e94fee75ecdce68b82.jpg" width="3000" height="3000" alt="Hans Gál: Music for Voices, Volume Three (2025)" style="display:block;width:100%;height:33.333333%;object-fit:contain;" />
+    <img src="/storage/recordingcovers/7eca97f55824eece79950410c226d9b0.jpg" width="3000" height="3000" alt="Hans Gál: Music for Viola, Volume Two (2025)" style="display:block;width:100%;height:33.333333%;object-fit:contain;" />
+  </span>
+</a>
 <br />
 <br />
 </center>
