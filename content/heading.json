@@ -1,26 +1,38 @@
 [
   {
     "mainmenu": "hansgal",
-    "body": "<p align=\"justify\"><span style=\"font-size: larger; \"><font face=\"Arial, Helvetica, sans-serif\">The composer Hans G&aacute;l was born near Vienna in 1890. Following considerable success in the 1920s, he was appointed Director of the Conservatory in Mainz in 1929. Hitler's accession to power in 1933 led to his instant dismissal and the banning of all his works. He returned to Vienna, but was again to forced to flee by Hitler's annexation of Austria in 1938. He emigrated to Britain and settled in Edinburgh, where he remained active until his death in 1987.</font></span></p>"
+    "body": "<p align=\"justify\"><span style=\"font-size: larger; \"><font face=\"Arial, Helvetica, sans-serif\">The composer Hans G&aacute;l was born near Vienna in 1890. Following considerable success in the 1920s, he was appointed Director of the Conservatory in Mainz in 1929. Hitler's accession to power in 1933 led to his instant dismissal and the banning of all his works. He returned to Vienna, but was again to forced to flee by Hitler's annexation of Austria in 1938. He emigrated to Britain and settled in Edinburgh, where he remained active until his death in 1987.</font></span></p>",
+    "id": "1",
+    "body_de": ""
   },
   {
     "mainmenu": "news",
-    "body": ""
+    "body": "",
+    "id": "2",
+    "body_de": ""
   },
   {
     "mainmenu": "publishers",
-    "body": "hullahopp<br />"
+    "body": "hullahopp<br />",
+    "id": "3",
+    "body_de": ""
   },
   {
     "mainmenu": "bibliography",
-    "body": "abcdefg<br />"
+    "body": "abcdefg<br />",
+    "id": "4",
+    "body_de": ""
   },
   {
     "mainmenu": "contacts",
-    "body": "fdsafdsafdasfdsafdsa<br />"
+    "body": "fdsafdsafdasfdsafdsa<br />",
+    "id": "5",
+    "body_de": ""
   },
   {
     "mainmenu": "booksandarticles",
-    "body": "efsdc<br />"
+    "body": "efsdc<br />",
+    "id": "6",
+    "body_de": ""
   }
 ]

@@ -2,11 +2,12 @@
 (function () {
   'use strict';
   const base=document.querySelector('meta[name="hansgal-base"]')?.content||'';
-  const href=p=>base+p;
-  const path=decodeURI(location.pathname).slice(base.length).replace(/\/$/,'')||'/';
+  const language=document.documentElement.lang==='de'?'de':'en';
+  const href=p=>base+(language==='de'&&!/^\/(app|storage|gfx|imageflow)\//.test(p)?'/de':'')+p;
+  const path=decodeURI(location.pathname).slice(base.length).replace(/^\/de(?=\/|$)/,'').replace(/\/$/,'')||'/';
   const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const strip=s=>String(s??'').replace(/\\([nrtvabf]|x[0-9a-f]{1,2}|[0-7]{1,3}|.)/gi,(_,x)=>({n:'\n',r:'\r',t:'\t',v:'\v',a:'\x07',b:'\b',f:'\f'}[x]??(x.startsWith('x')?String.fromCharCode(parseInt(x.slice(1),16)):/^[0-7]+$/.test(x)?String.fromCharCode(parseInt(x,8)):x)));
-  const read=async name=>{const r=await fetch(href('/app/'+name+'.json'));if(!r.ok)throw Error('Unable to load '+name);return r.json();};
+  const read=async name=>{const r=await fetch(href('/app/'+name+(name==='site-data'&&language==='de'?'-de':'')+'.json'));if(!r.ok)throw Error('Unable to load '+name);return r.json();};
   let data,config,accent,orders;
   const ready=Promise.all([read('site-data'),read('runtime-config'),read('accent-map'),read('catalogue-orders')]).then(v=>{[data,config,accent,orders]=v;});
   const files=r=>String(r?.filename||'').split('|').filter(s=>s.includes('#')).map(s=>({title:s.slice(0,s.indexOf('#')),filename:s.slice(s.indexOf('#')+1)}));

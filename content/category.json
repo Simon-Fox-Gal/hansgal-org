@@ -2,221 +2,265 @@
   {
     "id": "1",
     "name": "all chamber",
-    "type": "Genre"
+    "type": "Genre",
+    "name_de": ""
   },
   {
     "id": "2",
     "name": "all instrument alone or with piano",
-    "type": "Genre"
+    "type": "Genre",
+    "name_de": ""
   },
   {
     "id": "3",
     "name": "all keyboard",
-    "type": "Genre"
+    "type": "Genre",
+    "name_de": ""
   },
   {
     "id": "4",
     "name": "all orchestral",
-    "type": "Genre"
+    "type": "Genre",
+    "name_de": ""
   },
   {
     "id": "5",
     "name": "all vocal including choral",
-    "type": "Genre"
+    "type": "Genre",
+    "name_de": ""
   },
   {
     "id": "7",
     "name": "arrangements and editions",
-    "type": "Genre"
+    "type": "Genre",
+    "name_de": ""
   },
   {
     "id": "8",
     "name": "bassoon",
-    "type": "Instrument"
+    "type": "Instrument",
+    "name_de": ""
   },
   {
     "id": "9",
     "name": "cello",
-    "type": "Instrument"
+    "type": "Instrument",
+    "name_de": ""
   },
   {
     "id": "10",
     "name": "choral a cappella",
-    "type": "Genre"
+    "type": "Genre",
+    "name_de": ""
   },
   {
     "id": "11",
     "name": "choral female",
-    "type": "Genre"
+    "type": "Genre",
+    "name_de": ""
   },
   {
     "id": "12",
     "name": "choral male",
-    "type": "Genre"
+    "type": "Genre",
+    "name_de": ""
   },
   {
     "id": "13",
     "name": "choral mixed",
-    "type": "Genre"
+    "type": "Genre",
+    "name_de": ""
   },
   {
     "id": "14",
     "name": "chorus and orchestra",
-    "type": "Genre"
+    "type": "Genre",
+    "name_de": ""
   },
   {
     "id": "15",
     "name": "clarinet",
-    "type": "Instrument"
+    "type": "Instrument",
+    "name_de": ""
   },
   {
     "id": "16",
     "name": "concertos and concertinos",
-    "type": "Genre"
+    "type": "Genre",
+    "name_de": ""
   },
   {
     "id": "17",
     "name": "flute",
-    "type": "Instrument"
+    "type": "Instrument",
+    "name_de": ""
   },
   {
     "id": "18",
     "name": "guitar",
-    "type": "Instrument"
+    "type": "Instrument",
+    "name_de": ""
   },
   {
     "id": "19",
     "name": "harp",
-    "type": "Instrument"
+    "type": "Instrument",
+    "name_de": ""
   },
   {
     "id": "20",
     "name": "harpsichord",
-    "type": "Instrument"
+    "type": "Instrument",
+    "name_de": ""
   },
   {
     "id": "21",
     "name": "horn",
-    "type": "Instrument"
+    "type": "Instrument",
+    "name_de": ""
   },
   {
     "id": "22",
     "name": "mandolin",
-    "type": "Instrument"
+    "type": "Instrument",
+    "name_de": ""
   },
   {
     "id": "24",
     "name": "oboe",
-    "type": "Instrument"
+    "type": "Instrument",
+    "name_de": ""
   },
   {
     "id": "25",
     "name": "opera",
-    "type": "Genre"
+    "type": "Genre",
+    "name_de": ""
   },
   {
     "id": "26",
     "name": "organ",
-    "type": "Instrument"
+    "type": "Instrument",
+    "name_de": ""
   },
   {
     "id": "27",
     "name": "piano",
-    "type": "Instrument"
+    "type": "Instrument",
+    "name_de": ""
   },
   {
     "id": "28",
     "name": "piano duet",
-    "type": "Genre"
+    "type": "Genre",
+    "name_de": ""
   },
   {
     "id": "29",
     "name": "piano quartet",
-    "type": "Genre"
+    "type": "Genre",
+    "name_de": ""
   },
   {
     "id": "30",
     "name": "piano solo",
-    "type": "Genre"
+    "type": "Genre",
+    "name_de": ""
   },
   {
     "id": "31",
     "name": "piano trio",
-    "type": "Genre"
+    "type": "Genre",
+    "name_de": ""
   },
   {
     "id": "32",
     "name": "recorder",
-    "type": "Instrument"
+    "type": "Instrument",
+    "name_de": ""
   },
   {
     "id": "33",
     "name": "saxophone",
-    "type": "Instrument"
+    "type": "Instrument",
+    "name_de": ""
   },
   {
     "id": "36",
     "name": "string orchestra",
-    "type": "Genre"
+    "type": "Genre",
+    "name_de": ""
   },
   {
     "id": "37",
     "name": "string quartet",
-    "type": "Genre"
+    "type": "Genre",
+    "name_de": ""
   },
   {
     "id": "38",
     "name": "string trio",
-    "type": "Genre"
+    "type": "Genre",
+    "name_de": ""
   },
   {
     "id": "39",
     "name": "symphony",
-    "type": "Genre"
+    "type": "Genre",
+    "name_de": ""
   },
   {
     "id": "40",
     "name": "trumpet",
-    "type": "Instrument"
+    "type": "Instrument",
+    "name_de": ""
   },
   {
     "id": "41",
     "name": "viola",
-    "type": "Instrument"
+    "type": "Instrument",
+    "name_de": ""
   },
   {
     "id": "43",
     "name": "viola d'amore",
-    "type": "Instrument"
+    "type": "Instrument",
+    "name_de": ""
   },
   {
     "id": "42",
     "name": "viola da gamba",
-    "type": "Instrument"
+    "type": "Instrument",
+    "name_de": ""
   },
   {
     "id": "44",
     "name": "violin",
-    "type": "Instrument"
+    "type": "Instrument",
+    "name_de": ""
   },
   {
     "id": "45",
     "name": "vocal chamber",
-    "type": "Genre"
+    "type": "Genre",
+    "name_de": ""
   },
   {
     "id": "46",
     "name": "vocal duet",
-    "type": "Genre"
+    "type": "Genre",
+    "name_de": ""
   },
   {
     "id": "47",
     "name": "vocal solo",
-    "type": "Genre"
+    "type": "Genre",
+    "name_de": ""
   },
   {
     "id": "48",
     "name": "wind ensemble",
-    "type": "Genre"
+    "type": "Genre",
+    "name_de": ""
   }
 ]

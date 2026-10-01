@@ -2,31 +2,43 @@
   {
     "id": "2",
     "question": "Did G&aacute;l write anything for [____]?",
-    "answer": "G&aacute;l wrote for most instruments and genres. To check go to the works page and scroll the category search."
+    "answer": "G&aacute;l wrote for most instruments and genres. To check go to the works page and scroll the category search.",
+    "question_de": "",
+    "answer_de": ""
   },
   {
     "id": "3",
     "question": "How can I get hold of the music?",
-    "answer": "Unless the work says 'available privately' it is in print and should be available from shops/publishers. However for historical reasons it is not always straightforward (see further FAQs below)"
+    "answer": "Unless the work says 'available privately' it is in print and should be available from shops/publishers. However for historical reasons it is not always straightforward (see further FAQs below)",
+    "question_de": "",
+    "answer_de": ""
   },
   {
     "id": "4",
     "question": "I tried to get music from a shop but they can't find it on the system",
-    "answer": "Because G&aacute;l works are with a range of publishers, titles are not always distinctive and can get lost in the system. Please persevere. You may need the opus number, published and/or instrumentation or simply to include the 'a' accent in G&aacute;l (AltGr'a' on qwerty). Work details can be found on the Works page. In the UK, Schott, Boosey, Novello and Universal Edition all use the MDS distributor (this may help). Any persisting problems please contact us (see contacts page)"
+    "answer": "Because G&aacute;l works are with a range of publishers, titles are not always distinctive and can get lost in the system. Please persevere. You may need the opus number, published and/or instrumentation or simply to include the 'a' accent in G&aacute;l (AltGr'a' on qwerty). Work details can be found on the Works page. In the UK, Schott, Boosey, Novello and Universal Edition all use the MDS distributor (this may help). Any persisting problems please contact us (see contacts page)",
+    "question_de": "",
+    "answer_de": ""
   },
   {
     "id": "5",
     "question": "I tried to get music from a shop but was told it is out of print/doesn't exist",
-    "answer": "It can happen that when there are no more copies in the warehouse, they come up on the system as out of print. Please don't take no for an answer and inform us if problems persist (see contacts page) and we will take it up with the publishers"
+    "answer": "It can happen that when there are no more copies in the warehouse, they come up on the system as out of print. Please don't take no for an answer and inform us if problems persist (see contacts page) and we will take it up with the publishers",
+    "question_de": "",
+    "answer_de": ""
   },
   {
     "id": "6",
     "question": "I tried to get music from the publishers but they couldn't help",
-    "answer": "Because G&aacute;l was forced to emigrate, some of his works are based with publishers in Austria, some in Germany, some in the UK, and not all publisher offices have the music on their system. Please don't take no for an answer, and contact us if problems persist."
+    "answer": "Because G&aacute;l was forced to emigrate, some of his works are based with publishers in Austria, some in Germany, some in the UK, and not all publisher offices have the music on their system. Please don't take no for an answer, and contact us if problems persist.",
+    "question_de": "",
+    "answer_de": ""
   },
   {
     "id": "7",
     "question": "How come I have never heard of G&aacute;l yet the music is so wonderful?",
-    "answer": "You're in good company. This has complex historical reasons, but the tide has turned! Please help more to discover his music by suggesting G&aacute;l to orchestras, choirs, opera companies, musicians, festivals and radio stations. Thank you."
+    "answer": "You're in good company. This has complex historical reasons, but the tide has turned! Please help more to discover his music by suggesting G&aacute;l to orchestras, choirs, opera companies, musicians, festivals and radio stations. Thank you.",
+    "question_de": "",
+    "answer_de": ""
   }
 ]

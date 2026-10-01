@@ -1,22 +1,27 @@
 [
   {
     "id": "4",
-    "name": "People"
+    "name": "People",
+    "name_de": ""
   },
   {
     "id": "5",
-    "name": "Documents"
+    "name": "Documents",
+    "name_de": ""
   },
   {
     "id": "6",
-    "name": "Works"
+    "name": "Works",
+    "name_de": ""
   },
   {
     "id": "7",
-    "name": "Books"
+    "name": "Books",
+    "name_de": ""
   },
   {
     "id": "8",
-    "name": "Other photographs"
+    "name": "Other photographs",
+    "name_de": ""
   }
 ]

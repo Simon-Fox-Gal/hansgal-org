@@ -7690,5 +7690,10 @@
     "path": "/storage/writings/volksetymologie.pdf",
     "bytes": 93657,
     "sha256": "1d13932f11d39d1752a9885e66533c14884c989ce1780794328acb9a2b373587"
+  },
+  {
+    "path": "/storage/scores/hans-gal-three-vocal-quartets-1934.pdf",
+    "bytes": 1730587,
+    "sha256": "f23c09702805478f89c8a4d06e8bf47e70b81cd537240fbc0b0ab240b672714c"
   }
 ]
