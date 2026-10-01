@@ -1,26 +1,38 @@
 [
   {
     "mainmenu": "hansgal",
-    "body": "<p align=\"justify\"><span style=\"font-size: larger; \"><font face=\"Arial, Helvetica, sans-serif\">The composer Hans G&aacute;l was born near Vienna in 1890. Following considerable success in the 1920s, he was appointed Director of the Conservatory in Mainz in 1929. Hitler's accession to power in 1933 led to his instant dismissal and the banning of all his works. He returned to Vienna, but was again to forced to flee by Hitler's annexation of Austria in 1938. He emigrated to Britain and settled in Edinburgh, where he remained active until his death in 1987.</font></span></p>"
+    "body": "<p align=\"justify\"><span style=\"font-size: larger; \"><font face=\"Arial, Helvetica, sans-serif\">The composer Hans G&aacute;l was born near Vienna in 1890. Following considerable success in the 1920s, he was appointed Director of the Conservatory in Mainz in 1929. Hitler's accession to power in 1933 led to his instant dismissal and the banning of all his works. He returned to Vienna, but was again to forced to flee by Hitler's annexation of Austria in 1938. He emigrated to Britain and settled in Edinburgh, where he remained active until his death in 1987.</font></span></p>",
+    "id": "1",
+    "body_de": "<p align=\"justify\"><span style=\"font-size: larger; \"><font face=\"Arial, Helvetica, sans-serif\">Der Komponist Hans G\u00e1l wurde 1890 in der N\u00e4he von Wien geboren. Nach beachtlichen Erfolgen in den 1920er Jahren wurde er 1929 zum Direktor des Konservatoriums in Mainz berufen. Hitlers Macht\u00fcbernahme 1933 f\u00fchrte zu seiner sofortigen Entlassung und zum Verbot s\u00e4mtlicher seiner Werke. Er kehrte nach Wien zur\u00fcck, musste jedoch nach der Annexion \u00d6sterreichs durch Hitler 1938 erneut fliehen. Er emigrierte nach Gro\u00dfbritannien und lie\u00df sich in Edinburgh nieder, wo er bis zu seinem Tod 1987 t\u00e4tig blieb.</font></span></p>"
   },
   {
     "mainmenu": "news",
-    "body": ""
+    "body": "",
+    "id": "2",
+    "body_de": ""
   },
   {
     "mainmenu": "publishers",
-    "body": "hullahopp<br />"
+    "body": "hullahopp<br />",
+    "id": "3",
+    "body_de": ""
   },
   {
     "mainmenu": "bibliography",
-    "body": "abcdefg<br />"
+    "body": "abcdefg<br />",
+    "id": "4",
+    "body_de": ""
   },
   {
     "mainmenu": "contacts",
-    "body": "fdsafdsafdasfdsafdsa<br />"
+    "body": "fdsafdsafdasfdsafdsa<br />",
+    "id": "5",
+    "body_de": ""
   },
   {
     "mainmenu": "booksandarticles",
-    "body": "efsdc<br />"
+    "body": "efsdc<br />",
+    "id": "6",
+    "body_de": ""
   }
 ]

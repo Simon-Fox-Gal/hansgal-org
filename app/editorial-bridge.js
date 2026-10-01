@@ -6,10 +6,10 @@
  let peer=null,pick=false,last='';
  const base=document.querySelector('meta[name="hansgal-base"]')?.content||'';
  function context(element){
-  const path=location.pathname.slice(base.length)||'/';
+  const path=location.pathname.slice(base.length).replace(/^\/de(?=\/|$)/,'')||'/';
   let reference=path+location.search+location.hash,url=location.href;
   const album=document.getElementById('webshop')?.dataset.recordingId;
-  if(album){reference='recording:'+album;url=location.origin+base+'/recordings/'+album+'/';}
+  if(album){reference='recording:'+album;}
   else if(/^\/works\/show\/\d+/.test(path))reference='catalogue:'+path.split('/')[3];
   else if(/^\/[a-z]+\/\d+\/?$/.test(path))reference='menu:'+path.split('/')[2];
   const text=element?element.innerText||element.textContent||'':getSelection()?.toString()||'';

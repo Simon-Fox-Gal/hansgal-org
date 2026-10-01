@@ -8,6 +8,9 @@
 			<br />
 			<strong>{{ catalogue.title|stripcslashes }}</strong><br />
 			{{ catalogue.description|stripcslashes }}{% if php_truth(catalogue.opus_no) %}, Opus {{ catalogue.opus_no }}{% endif %}, ({{ catalogue.year_of_composition }})<br />
+            {% if catalogue.score_available == 'yes' and catalogue.score_file %}
+            <section aria-label="Downloadable score"><p>{{ catalogue.score_note|e }}</p><p><a href="{{ catalogue.score_file|e }}" download>Download PDF</a> · <button type="button" data-add-score="{{ catalogue.id }}">Add to score basket</button> · <a href="/score-basket/">View score basket</a></p><p id="score-added-status" role="status"></p></section>
+            {% endif %}
                         {{ catalogue.movements|stripcslashes }}<br/>
 			{% if catalogue.other_versions %}
                         	{{ catalogue.other_versions|stripcslashes }}<br/>
@@ -18,6 +21,7 @@
 				Duration: {{ catalogue.duration }}'<br />
 				Publisher: {{ catalogue.publisher }}<br />
 				{{ catalogue.availability|stripcslashes }}
+				{% include 'purchase-links.html' %}
 			</div>
 
 			{% if recordings %}

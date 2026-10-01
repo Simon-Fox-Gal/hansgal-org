@@ -1,0 +1,585 @@
+{
+  "policy": "Original title fields preserve source wording. und denotes unverified original language; display translations do not assert German originals. English title fields remain unchanged.",
+  "needs_review": [
+    {
+      "id": "52",
+      "title": "Serenade for String Orchestra",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "8",
+      "title": "Suite for Cello and Piano",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "10",
+      "title": "Two Songs for 4-Part Male-Voice Choir <i>a cappella</i>",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "12",
+      "title": "Five Intermezzi",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "15",
+      "title": "Three Songs for 3- and 4-part Male-Voice Choir with piano (or small orchestra)",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "16",
+      "title": "Three Songs for 3- and 4-part Women's Choir with Piano",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "17",
+      "title": "Piano Quartet (B flat major)",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "20",
+      "title": "String Quartet No.I (F Minor)",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "21",
+      "title": "Sonata in Bb Minor for Violin and Piano",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "22",
+      "title": "Piano Trio (E Major)",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "132",
+      "title": "Capriccio for Mandolin Orchestra",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "170",
+      "title": "Hugo Wolf: Corregidor Suite",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "117",
+      "title": "Triptych",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "123",
+      "title": "Symphony No. 4 (Sinfonia Concertante)",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "96",
+      "title": "Sinfonietta No. 1 for mandolin orchestra",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "131",
+      "title": "A Pastoral Tune",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "142",
+      "title": "Phantasia, Arioso and Capriccioso",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "143",
+      "title": "Prelude and Fugue in A Flat",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "147",
+      "title": "Three Impromptus",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "98",
+      "title": "Twenty-four Preludes",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "126",
+      "title": "Twenty-four Fugues",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "93",
+      "title": "Idyllikon",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "36",
+      "title": "Three Songs to poems by R.M.Rilke",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "38",
+      "title": "Five Songs",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "40",
+      "title": "String Quartet No.2 (A Minor)",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "87",
+      "title": "Music for String Orchestra",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "44",
+      "title": "Concerto for violin and small orchestra",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "46",
+      "title": "Serenade for violin, viola and cello",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "76",
+      "title": "Three Preludes for Piano",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "73",
+      "title": "Symphony No. 3 (A major)",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "61",
+      "title": "Symphony No. 2 (F major)",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "55",
+      "title": "Little Suite",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "56",
+      "title": "Trio for piano, violin and cello",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "54",
+      "title": "Lilliburlero",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "57",
+      "title": "De Profundis",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "60",
+      "title": "Concertino for violin and string orchestra",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "75",
+      "title": "Three Small Pieces for Piano",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "64",
+      "title": "Suite for violin and piano",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "65",
+      "title": "Partita for Mandolin and Piano",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "68",
+      "title": "Sonatina for Two Mandolins",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "69",
+      "title": "Suite for Three Mandolins",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "71",
+      "title": "Improvisation, Variations and Finale on a Theme by Mozart",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "74",
+      "title": "Two Songs for 4-Part Male-voice Choir <i>a cappella</i>",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "79",
+      "title": "Concerto for Cello and Orchestra",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "80",
+      "title": "Suite for Recorder and Violin",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "81",
+      "title": "Six Two-Part Inventions",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "82",
+      "title": "Divertimento for 2 Treble Recorders and Guitar",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "85",
+      "title": "Three Sonatinas for violin and piano",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "86",
+      "title": "Satirikon",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "41",
+      "title": "Ballet Suite 'Scaramuccio'",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "49",
+      "title": "Concertino for piano and string orchestra",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "92",
+      "title": "Quartettino",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "31",
+      "title": "Requiem for Mignon",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "35",
+      "title": "Symphony No.1 (D major)",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "94",
+      "title": "Divertimento for mandolin with harp or piano",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "95",
+      "title": "Divertimento for flute, viola and harp",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "97",
+      "title": "Concertino for treble recorder/flute and string quartet",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "99",
+      "title": "Sonata for clarinet and piano",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "100",
+      "title": "Sonata for oboe and piano",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "102",
+      "title": "Concertino for Cello and String Orchestra",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "103",
+      "title": "Trio-Serenade",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "104",
+      "title": "Sonata for Cello and Piano",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "105",
+      "title": "Divertimento for Bassoon and Cello",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "106",
+      "title": "Divertimento for Violin and Cello",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "107",
+      "title": "Divertimento for Violin and Viola",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "110",
+      "title": "Serenade for clarinet, violin and cello",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "111",
+      "title": "Trio for oboe, violin and viola",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "112",
+      "title": "String Quartet No.3 (B Minor)",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "113",
+      "title": "Sonata for Two Violins and Piano",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "114",
+      "title": "Trio for Violin, Clarinet and Piano",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "115",
+      "title": "Divertimento for Three Recorders",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "116",
+      "title": "String Quartet No.4",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "118",
+      "title": "Sonata for Viola and Piano",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "119",
+      "title": "Suite for viola and piano or orchestra",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "120",
+      "title": "Suite for alto saxophone and piano or orchestra ",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "121",
+      "title": "Three Intermezzi",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "122",
+      "title": "Trio in F sharp minor",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "26",
+      "title": "Divertimento for flute, oboe, two clarinets, trumpet, two horns and bassoon ",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "124",
+      "title": "String Quintet",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "125",
+      "title": "Clarinet Quintet",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "127",
+      "title": "Sonata for Cello Solo",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "128",
+      "title": "Suite for Cello Solo",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "129",
+      "title": "Four Bagatelles",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "130",
+      "title": "Recorder Sonatina",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "34",
+      "title": "Toccata",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "135",
+      "title": "Moment Musical",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "137",
+      "title": "Impromptu for Viola and Piano",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "138",
+      "title": "Sonata in D for violin and piano",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "140",
+      "title": "Intrata Giocosa",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "141",
+      "title": "Lyrical Suite",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "144",
+      "title": "Quartet for violin, viola, cello and piano left hand",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "145",
+      "title": "Scherzando",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "146",
+      "title": "Part-songs",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "151",
+      "title": "Two Scottish Rhapsodies",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "156",
+      "title": "Brahms: Hungarian Dances nos. 8 and 9",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "157",
+      "title": "Folksongs from the <i>Volksliederbuch f&uuml;r die Jugend</i>",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "159",
+      "title": "Gluck: Symphony in G minor",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "160",
+      "title": "Handel: 6 Italian Arias",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "161",
+      "title": "Handel: Suite of Airs and Dances",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "162",
+      "title": "Haydn: Overture to 'Armida'",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "163",
+      "title": "Haydn: Symphony in B flat. Op.X No.2",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "165",
+      "title": "Sch&uuml;tz: Two Dialogues",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "29",
+      "title": "Suite for Piano",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "172",
+      "title": "Beethoven: Three Marches, Op.45",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "173",
+      "title": "Five Proven&ccedil;ale folk-songs",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "174",
+      "title": "Handel: Overture to 'B&eacute;r&eacute;nice'",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "175",
+      "title": "Handel: Overture to 'Faramondo'",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "177",
+      "title": "Schubert: Divertissement (E Minor)",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "178",
+      "title": "Schubert: Two Marches Militaires",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "33",
+      "title": "Sonata for Piano",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "66",
+      "title": "Concerto for piano and orchestra",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "67",
+      "title": "Two Sonatinas for Piano",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "70",
+      "title": "Improvisation, Variations and Finale on a Theme by Mozart",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "63",
+      "title": "Concertino for organ and string orchestra",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "27",
+      "title": "Divertimento for Small Orchestra",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    },
+    {
+      "id": "101",
+      "title": "Sinfonietta No. 2 (E Minor) for mandolin orchestra",
+      "reason": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title."
+    }
+  ]
+}

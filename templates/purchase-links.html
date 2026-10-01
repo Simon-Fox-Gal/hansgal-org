@@ -1,0 +1,6 @@
+{% if purchase_links %}
+<section aria-label="{% if language == 'de' %}Noten und Aufnahmen beziehen{% else %}Obtain music{% endif %}">
+  <h3>{% if language == 'de' %}Bezugs- und Hörmöglichkeiten{% else %}Where to buy or listen{% endif %}</h3>
+  <ul>{% for link in purchase_links %}<li><a href="{{ link.url|e }}" rel="noopener noreferrer">{{ link.label|e }} · {{ link.host|e }}</a></li>{% endfor %}</ul>
+</section>
+{% endif %}
