@@ -21,6 +21,7 @@
 				Duration: {{ catalogue.duration }}'<br />
 				Publisher: {{ catalogue.publisher }}<br />
 				{{ catalogue.availability|stripcslashes }}
+				{% include 'purchase-links.html' %}
 			</div>
 
 			{% if recordings %}

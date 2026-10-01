@@ -3,24 +3,24 @@
     "id": "1",
     "name": "mainpage_image_click_destination",
     "value": "/works",
-    "value_de": ""
+    "value_de": "/works"
   },
   {
     "id": "2",
     "name": "copyright_footer",
     "value": "\u00a9 hansgal.org 2026. All Rights Reserved.",
-    "value_de": ""
+    "value_de": "\u00a9 hansgal.org 2026. Alle Rechte vorbehalten."
   },
   {
     "id": "3",
     "name": "works_searchtext",
     "value": "lied",
-    "value_de": ""
+    "value_de": "Lied"
   },
   {
     "id": "4",
     "name": "works_lead",
     "value": "<br />",
-    "value_de": ""
+    "value_de": "<br />"
   }
 ]

@@ -3,42 +3,42 @@
     "id": "2",
     "question": "Did G&aacute;l write anything for [____]?",
     "answer": "G&aacute;l wrote for most instruments and genres. To check go to the works page and scroll the category search.",
-    "question_de": "",
-    "answer_de": ""
+    "question_de": "Hat G\u00e1l etwas f\u00fcr [____] geschrieben?",
+    "answer_de": "G\u00e1l komponierte f\u00fcr die meisten Instrumente und Gattungen. Auf der Werkseite k\u00f6nnen Sie dies mithilfe der Kategorienauswahl nachsehen."
   },
   {
     "id": "3",
     "question": "How can I get hold of the music?",
     "answer": "Unless the work says 'available privately' it is in print and should be available from shops/publishers. However for historical reasons it is not always straightforward (see further FAQs below)",
-    "question_de": "",
-    "answer_de": ""
+    "question_de": "Wie kann ich die Noten bekommen?",
+    "answer_de": "Sofern bei einem Werk nicht \u201eprivat erh\u00e4ltlich\u201c angegeben ist, ist es gedruckt und sollte \u00fcber den Musikalienhandel oder den Verlag erh\u00e4ltlich sein. Aus historischen Gr\u00fcnden ist die Beschaffung allerdings nicht immer unkompliziert (siehe die weiteren Fragen unten)."
   },
   {
     "id": "4",
     "question": "I tried to get music from a shop but they can't find it on the system",
     "answer": "Because G&aacute;l works are with a range of publishers, titles are not always distinctive and can get lost in the system. Please persevere. You may need the opus number, published and/or instrumentation or simply to include the 'a' accent in G&aacute;l (AltGr'a' on qwerty). Work details can be found on the Works page. In the UK, Schott, Boosey, Novello and Universal Edition all use the MDS distributor (this may help). Any persisting problems please contact us (see contacts page)",
-    "question_de": "",
-    "answer_de": ""
+    "question_de": "Ich habe im Musikalienhandel nach Noten gefragt, aber man konnte sie im System nicht finden.",
+    "answer_de": "G\u00e1ls Werke liegen bei verschiedenen Verlagen. Die Titel sind nicht immer eindeutig und k\u00f6nnen deshalb bei der Suche \u00fcbersehen werden. Bitte bleiben Sie beharrlich. M\u00f6glicherweise ben\u00f6tigen Sie die Opusnummer, den Verlag und/oder die Besetzung \u2013 oder Sie m\u00fcssen lediglich den Akzent auf dem \u201e\u00e1\u201c in G\u00e1l eingeben (auf einer QWERTY-Tastatur mit AltGr + a). Angaben zu den Werken finden Sie auf der Werkseite. In Gro\u00dfbritannien nutzen Schott, Boosey, Novello und Universal Edition den Vertrieb MDS; dieser Hinweis kann hilfreich sein. Bei anhaltenden Schwierigkeiten wenden Sie sich bitte an uns (siehe Kontaktseite)."
   },
   {
     "id": "5",
     "question": "I tried to get music from a shop but was told it is out of print/doesn't exist",
     "answer": "It can happen that when there are no more copies in the warehouse, they come up on the system as out of print. Please don't take no for an answer and inform us if problems persist (see contacts page) and we will take it up with the publishers",
-    "question_de": "",
-    "answer_de": ""
+    "question_de": "Im Musikalienhandel hie\u00df es, die Noten seien vergriffen oder existierten nicht.",
+    "answer_de": "Wenn keine Exemplare mehr auf Lager sind, kann es vorkommen, dass ein Werk im System als vergriffen erscheint. Bitte geben Sie sich damit nicht zufrieden. Falls die Schwierigkeiten anhalten, informieren Sie uns bitte \u00fcber die Kontaktseite; wir werden uns dann an den Verlag wenden."
   },
   {
     "id": "6",
     "question": "I tried to get music from the publishers but they couldn't help",
     "answer": "Because G&aacute;l was forced to emigrate, some of his works are based with publishers in Austria, some in Germany, some in the UK, and not all publisher offices have the music on their system. Please don't take no for an answer, and contact us if problems persist.",
-    "question_de": "",
-    "answer_de": ""
+    "question_de": "Ich habe beim Verlag nachgefragt, aber man konnte mir nicht helfen.",
+    "answer_de": "Da G\u00e1l zur Emigration gezwungen war, liegen einige seiner Werke bei Verlagen in \u00d6sterreich, andere in Deutschland und wieder andere in Gro\u00dfbritannien. Nicht jede Verlagsniederlassung hat alle Noten in ihrem System. Bitte bleiben Sie beharrlich und wenden Sie sich an uns, wenn die Schwierigkeiten anhalten."
   },
   {
     "id": "7",
     "question": "How come I have never heard of G&aacute;l yet the music is so wonderful?",
     "answer": "You're in good company. This has complex historical reasons, but the tide has turned! Please help more to discover his music by suggesting G&aacute;l to orchestras, choirs, opera companies, musicians, festivals and radio stations. Thank you.",
-    "question_de": "",
-    "answer_de": ""
+    "question_de": "Warum habe ich noch nie von G\u00e1l geh\u00f6rt, obwohl seine Musik so wunderbar ist?",
+    "answer_de": "Damit sind Sie in guter Gesellschaft. Die Gr\u00fcnde sind historisch vielschichtig, doch inzwischen hat sich das Blatt gewendet! Helfen Sie bitte dabei, seine Musik weiter bekannt zu machen: Schlagen Sie G\u00e1l Orchestern, Ch\u00f6ren, Opernh\u00e4usern, Musikerinnen und Musikern, Festivals und Radiosendern vor. Vielen Dank."
   }
 ]

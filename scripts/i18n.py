@@ -1,6 +1,6 @@
 """Bilingual editorial fields; shared identifiers, facts and assets never localize."""
 FIELDS={
- 'menu':['title','lead','body'],'catalogue':['title','description','movements','further_details','orchestration','availability','first_performance','other_performances','other_versions','score_note'],
+ 'menu':['title','lead','body'],'catalogue':['title','description','movements','further_details','orchestration','availability','first_performance','other_performances','other_versions','free_downloads','score_note'],
  'recording':['title','detail','review'],'photos':['title'],'faqs':['question','answer'],
  'properties':['value'],'heading':['body'],'category':['name'],'audio_sample':['title','details'],
  'thumbnail':['title'],'photos_category':['name'],
@@ -15,6 +15,14 @@ UI={
  'Cover List':'Coverliste','Cover Flow':'Coverkarussell','No results.':'Keine Ergebnisse.','No result':'Kein Ergebnis',
  'Download PDF':'PDF herunterladen','Add to score basket':'Zum Notenkorb hinzufügen','View score basket':'Notenkorb ansehen',
  'Downloadable score':'Noten zum Herunterladen','Score basket':'Notenkorb','Loading scores…':'Noten werden geladen…',
+ 'Select a genre and/or instrument and click "Display":':'Wählen Sie eine Gattung und/oder ein Instrument und klicken Sie auf „Anzeigen“:',
+ 'All genres':'Alle Gattungen','All instruments':'Alle Instrumente','value="Display"':'value="Anzeigen"',
+ 'Search Op.':'Opus suchen','Search Title':'Titel suchen','Search Yr':'Jahr suchen','Search Publisher':'Verlag suchen',
+ 'value="Go"':'value="Suchen"','>Title<':'>Titel<','>Description<':'>Besetzung / Beschreibung<','>Year<':'>Jahr<','>Publisher<':'>Verlag<',
+ 'value="Search"':'value="Suche"',"this.value=='Search'":"this.value=='Suche'","this.value='Search'":"this.value='Suche'",
+ "Chronology of G&aacute;l's life":'Gáls Leben in Daten','Family tree':'Stammbaum',
+ 'Your browser does not support the HTML5 Audio element.':'Ihr Browser unterstützt dieses Audioformat nicht.',
+ 'A not-for-profit information site for the composer Hans Gál (1890-1987), jointly managed by The Hans Gál Society and Gál\'s family.':'Eine gemeinnützige Informationsseite über den Komponisten Hans Gál (1890–1987), gemeinsam betreut von der Hans-Gál-Gesellschaft und Gáls Familie.',
 }
 def localize(tables):
  import copy

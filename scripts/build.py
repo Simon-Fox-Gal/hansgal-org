@@ -74,6 +74,21 @@ def make_site(base_path='', review=True, language='en'):
         # Missing parents are retained in source data; the old join omitted them.
         return [objects[r[right]] for r in tables[table] if r[left]==id and r[right] in objects]
 
+    def purchase_links(row):
+        labels={'purchase_url':('Printed music / publisher product page','Gedruckte Noten / Verlagsproduktseite'),
+                'hire_url':('Hire materials','Leihmaterial'), 'score_purchase_download_url':('Buy digital sheet music','Digitale Noten kaufen'),
+                'cd_url':('Physical CD','CD'), 'download_url':('Buy audio download','Audio-Download kaufen'), 'listen_url':('Listen','Anhören')}
+        links=[]
+        for field,label in labels.items():
+            for value in (row.get(field) or '').splitlines():
+                value=value.strip()
+                if not value:continue
+                u=urlsplit(value)
+                if u.scheme not in ('https','http') or not u.hostname or u.username or u.password:
+                    raise ValueError(f'Invalid public purchase URL: {row.get("id")} {field}')
+                links.append({'url':value,'host':u.hostname.removeprefix('www.'),'label':label[language=='de']})
+        return links
+
     def context(route):
         section=route.split('/')[1] if route!='/' else ''
         c=dict(props,route=route,mainmenu=section,viewmode='coverlist',chosenfile='',chosenwork='',autoplay='',genre='',instrument='',keywords={},audiosamples=[],recordings=[],thumbnails=[],thumb=False,piktorgram='',title='',lead='',body='')
@@ -139,7 +154,7 @@ def make_site(base_path='', review=True, language='en'):
 
     page('/','main')
     page('/score-basket','score-basket')
-    page('/hansgal','hansgal_index',biography_menu=by_id['menu'],biography_extra=[r for r in tables['menu'] if r['mainmenu']=='hansgal' and r['hidden']!='yes' and r['id'] not in ['1', '2', '9', '11', '27', '28', '29', '38', '39', '40', '41', '42', '43', '44', '45', '46', '47', '48', '49', '50', '51', '52', '53', '54', '55', '56']])
+    page('/hansgal','hansgal_index',biography_intro=by_id['heading']['1']['body'],biography_menu=by_id['menu'],biography_extra=[r for r in tables['menu'] if r['mainmenu']=='hansgal' and r['hidden']!='yes' and r['id'] not in ['1', '2', '9', '11', '27', '28', '29', '38', '39', '40', '41', '42', '43', '44', '45', '46', '47', '48', '49', '50', '51', '52', '53', '54', '55', '56']])
     for menu in tables['menu']:
         section=menu['mainmenu']; id=menu['id']; route=f'/{section}/{id}'
         c={k:stripcslashes(menu[k]) for k in ('title','lead','body')}
@@ -165,14 +180,14 @@ def make_site(base_path='', review=True, language='en'):
     for work in tables['catalogue']:
         id=work['id']; w=copy.deepcopy(work)
         if len(w['free_downloads'] or '')<10:w['free_downloads']=False
-        page('/works/show/'+id,'works_catalogue',catalogue=w,recordings=related('catalogue_recordings','catalogue_id',id,'recording_id',by_id['recording']),audiosamples=related('catalogue_audio_sample','catalogue_id',id,'audio_sample_id',audios),images=[r for r in tables['catalogue_image'] if r['catalogue_id']==id])
+        page('/works/show/'+id,'works_catalogue',catalogue=w,purchase_links=purchase_links(w),recordings=related('catalogue_recordings','catalogue_id',id,'recording_id',by_id['recording']),audiosamples=related('catalogue_audio_sample','catalogue_id',id,'audio_sample_id',audios),images=[r for r in tables['catalogue_image'] if r['catalogue_id']==id])
     for id in [None]+[r['id'] for r in recordings]:
         route='/recordings'+('/'+id if id else '')
         rec=by_id['recording'][id] if id else recordings[0]
         samples=related('recording_audio_sample','recording_id',id,'audio_sample_id',audios) if id else []
-        page(route,'recordings',recording=rec,recordings=recordings,audiosamples=samples)
+        page(route,'recordings',recording=rec,recordings=recordings,audiosamples=samples,purchase_links=purchase_links(rec))
         if id:
-            c=context(route);c.update(recording=rec,recordings=recordings,audiosamples=samples)
+            c=context(route);c.update(recording=rec,recordings=recordings,audiosamples=samples,purchase_links=purchase_links(rec))
             save('/recordings/getalbuminfo/'+id,env.get_template('recordings_content.html').render(**c),'recordings_content',True)
     photos=OrderedDict((cat['name'],sorted([r for r in tables['photos'] if r['photos_category_id']==cat['id']],key=lambda r:int(r['sorrend']))) for cat in tables['photos_category'])
     page('/photos','photos',photos=photos)
