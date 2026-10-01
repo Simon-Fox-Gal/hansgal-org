@@ -1,132 +1,178 @@
 {
-  "checked_date": "2026-10-01",
-  "method": "Exact work/release, instrumentation/performers and publication/catalogue numbers checked against publisher, label or retailer pages. Pending entries are not verified. Historical source information is retained. Prices and stock are not promised.",
+  "checked_date": "2026-10-02",
+  "method": "Every catalogue work and recording was reviewed against title, opus, instrumentation, edition and format. Verified means at least the explicitly described option matched; partially_verified records a publisher match or a limited edition/format; not_found means no exact current offer confirmed in the checked sources, not proof of unavailability. Original historical fields are retained. Stock, delivery and prices can change.",
   "works": [
     {
       "id": "1",
       "title": "Von ewiger Freude (Of Eternal Joy)",
-      "status": "pending",
+      "status": "not_found",
       "sources": [],
-      "note": ""
+      "note": "No exact current purchase, publisher-issued download or hire product confirmed in the checked title/opus/instrumentation searches. Historical publisher and availability information retained; this is not a claim that the work is unavailable.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal Von ewiger Freude op 1 sheet music publisher buy"
     },
     {
       "id": "2",
       "title": "Vom B\u00e4umlein, das andere Bl\u00e4tter hat gewollt (The Tree That Wanted Different Leaves)",
-      "status": "pending",
+      "status": "not_found",
       "sources": [],
-      "note": ""
+      "note": "No exact current purchase, publisher-issued download or hire product confirmed in the checked title/opus/instrumentation searches. Historical publisher and availability information retained; this is not a claim that the work is unavailable.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal Vom B\u00e4umlein, das andere Bl\u00e4tter hat gewollt op 2 sheet music publisher buy"
     },
     {
       "id": "52",
       "title": "Serenade for String Orchestra",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.wisemusicclassical.com/work/9579/Serenade-for-Strings--Hans-Gal/"
+      ],
+      "note": "Op.46 string serenade: Novello publisher explicitly offers hire. No other format is implied.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "6",
       "title": "Der Arzt der Sobeide (Sobeide's Doctor)",
-      "status": "pending",
+      "status": "not_found",
       "sources": [],
-      "note": ""
+      "note": "No exact current purchase, publisher-issued download or hire product confirmed in the checked title/opus/instrumentation searches. Historical publisher and availability information retained; this is not a claim that the work is unavailable.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal Der Arzt der Sobeide op 4 sheet music publisher buy"
     },
     {
       "id": "7",
       "title": "Phantasien (Fantasies): Three Songs to poems by Rabindranath Tagore",
-      "status": "pending",
+      "status": "not_found",
       "sources": [],
-      "note": ""
+      "note": "No exact current purchase, publisher-issued download or hire product confirmed in the checked title/opus/instrumentation searches. Historical publisher and availability information retained; this is not a claim that the work is unavailable.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal Phantasien op 5 sheet music publisher buy"
     },
     {
       "id": "8",
       "title": "Suite for Cello and Piano",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.boosey.com/purchase-music/Hans-Gal-Suite-for-cello-and-piano/27974"
+      ],
+      "note": "Op.6 cello/piano: publisher product and Buy Now option match. No other format is implied.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "10",
       "title": "Two Songs for 4-Part Male-Voice Choir <i>a cappella</i>",
-      "status": "pending",
+      "status": "not_found",
       "sources": [],
-      "note": ""
+      "note": "No exact current purchase, publisher-issued download or hire product confirmed in the checked title/opus/instrumentation searches. Historical publisher and availability information retained; this is not a claim that the work is unavailable.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal Two Songs for 4-Part Male-Voice Choir a cappella op 8 sheet music publisher buy"
     },
     {
       "id": "11",
       "title": "Variationen \u00fcber eine Wiener Heurigenmelodie (Variations on a Viennese 'Heurigen' Melody)",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.stretta-music.at/gl-variationen-op-9-nr-208871.html"
+      ],
+      "note": "Op.9 violin/cello/piano, EE3131: printed score listing matches. No other format is implied.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "12",
       "title": "Five Intermezzi",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.boosey.com/purchase-music/Hans-Gal-5-Intermezzi/51490"
+      ],
+      "note": "Op.10 string quartet: publisher offers score and parts. No other format is implied.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "13",
       "title": "Vier Miniaturen (Four Miniatures)",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.trekel.de/detailview?no=466056"
+      ],
+      "note": "Op.10a mandolin/violin/viola/cello, T6567, ISMN9790016130938: score and parts order option. No other format is implied.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "15",
       "title": "Three Songs for 3- and 4-part Male-Voice Choir with piano (or small orchestra)",
-      "status": "pending",
+      "status": "not_found",
       "sources": [],
-      "note": ""
+      "note": "No exact current purchase, publisher-issued download or hire product confirmed in the checked title/opus/instrumentation searches. Historical publisher and availability information retained; this is not a claim that the work is unavailable.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal Three Songs for 3- and 4-part Male-Voice Choir with piano (or small orchestra) op 11 sheet music publisher buy"
     },
     {
       "id": "16",
       "title": "Three Songs for 3- and 4-part Women's Choir with Piano",
-      "status": "pending",
+      "status": "not_found",
       "sources": [],
-      "note": ""
+      "note": "No exact current purchase, publisher-issued download or hire product confirmed in the checked title/opus/instrumentation searches. Historical publisher and availability information retained; this is not a claim that the work is unavailable.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal Three Songs for 3- and 4-part Women's Choir with Piano op 12 sheet music publisher buy"
     },
     {
       "id": "17",
       "title": "Piano Quartet (B flat major)",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.boosey.com/publications/sheet-music/Hans-Gal-Piano-Quartet-B-flat-op-13/36834"
+      ],
+      "note": "Op.13 piano quartet in B flat, EE1667, ISMN9790221120625: printed edition. No other format is implied.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "18",
       "title": "Kinderverse (Children's Verses)",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "partially_verified",
+      "sources": [
+        "https://theaterverlag-eirich.at/index.php?Itemid=148&catid=1860%3A_mw_de_G%C3%A1l-Hans&id=10554546%3AKinderverse-op--14_de&lang=de&option=com_phocacart&view=item"
+      ],
+      "note": "Kinderverse op.14: exact publisher work page and instrumentation found; order/format/stock availability not confirmed.",
+      "checked_date": "2026-10-02"
     },
     {
       "id": "19",
       "title": "Die Heilige Ente (The Sacred Duck)",
-      "status": "pending",
+      "status": "not_found",
       "sources": [],
-      "note": ""
+      "note": "No exact current purchase, publisher-issued download or hire product confirmed in the checked title/opus/instrumentation searches. Historical publisher and availability information retained; this is not a claim that the work is unavailable.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal Die Heilige Ente op 15 sheet music publisher buy"
     },
     {
       "id": "20",
       "title": "String Quartet No.I (F Minor)",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.boosey.com/purchase-music/Hans-Gal-String-Quartet-No-1-in-F-minor/51491"
+      ],
+      "note": "Op.16 first string quartet: score and parts purchase option. No other format is implied.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "21",
       "title": "Sonata in Bb Minor for Violin and Piano",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "partially_verified",
+      "sources": [
+        "https://www.boosey.com/cr/music/Hans-Gal-Violin-Sonata/51232"
+      ],
+      "note": "Exact publisher work page matches violin sonata op.17. Linked purchase page directs customers to a music shop; edition and stock not confirmed.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "22",
       "title": "Piano Trio (E Major)",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.boosey.com/publications/sheet-music/Hans-Gal-Piano-Trio-in-E-op-18/36849"
+      ],
+      "note": "Op.18 piano trio in E, EE1669, ISMN9790221120656: printed edition. No other format is implied.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "23",
@@ -142,72 +188,98 @@
     {
       "id": "132",
       "title": "Capriccio for Mandolin Orchestra",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.demond.de/hans-gal-capriccio-fuer-mandolinenorchester-21600"
+      ],
+      "note": "Capriccio for mandolin orchestra, R365/P: printed score order option. No other format is implied.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "153",
       "title": "Vorspiel zu einer Feier (Prelude to a Pageant)",
-      "status": "pending",
+      "status": "not_found",
       "sources": [],
-      "note": ""
+      "note": "No exact current purchase, publisher-issued download or hire product confirmed in the checked title/opus/instrumentation searches. Historical publisher and availability information retained; this is not a claim that the work is unavailable.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal Vorspiel zu einer Feier sheet music publisher buy"
     },
     {
       "id": "170",
       "title": "Hugo Wolf: Corregidor Suite",
-      "status": "pending",
+      "status": "not_found",
       "sources": [],
-      "note": ""
+      "note": "Wolf Corregidor search results for the original opera/overture do not establish the Gal suite edition.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal Hugo Wolf: Corregidor Suite sheet music publisher buy"
     },
     {
       "id": "25",
       "title": "Zwei geistliche Ges\u00e4nge (Two Sacred Songs)",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.demond.de/hans-gal-2-geistliche-gesaenge-op-21-fuer-sopran-gambe-violoncello-und-orgel-67434"
+      ],
+      "note": "Op.21 soprano/gamba or cello/organ, L8426, ISMN9790202384268: printed score and parts order option. No other format is implied.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "117",
       "title": "Triptych",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "partially_verified",
+      "sources": [
+        "https://www.boosey.com/cr/music/Hans-Gal-Triptych/28683"
+      ],
+      "note": "Exact publisher work page matches title, opus and instrumentation. Publisher lists sale and rental availability; specific edition, stock and digital-download checkout not confirmed. Link is labelled publisher/distributor page, not a promise of stock.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "123",
       "title": "Symphony No. 4 (Sinfonia Concertante)",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "partially_verified",
+      "sources": [
+        "https://www.boosey.com/cr/music/Hans-Gal-Symphony-No-4-Sinfonia-Concertante/28542"
+      ],
+      "note": "Exact publisher work page matches title, opus and instrumentation. Publisher lists sale and rental availability; specific edition, stock and digital-download checkout not confirmed. Link is labelled publisher/distributor page, not a promise of stock.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "28",
       "title": "Das Lied der Nacht (The Song of the Night)",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://repertoire-explorer.musikmph.de/de/produkt/gal-hans/"
+      ],
+      "note": "Op.23 opera: publisher's study-score reprint in two volumes with German libretto, item2076. This is a study score, not performance parts. No other format is implied.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "155",
       "title": "Altwiener T&auml;nze (Old Viennese Dances)",
-      "status": "pending",
+      "status": "not_found",
       "sources": [],
-      "note": ""
+      "note": "No exact current purchase, publisher-issued download or hire product confirmed in the checked title/opus/instrumentation searches. Historical publisher and availability information retained; this is not a claim that the work is unavailable.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal Altwiener T\u00e4nze sheet music publisher buy"
     },
     {
       "id": "30",
       "title": "Herbstlieder (Autumn Songs)",
-      "status": "pending",
+      "status": "not_found",
       "sources": [],
-      "note": ""
+      "note": "No exact current purchase, publisher-issued download or hire product confirmed in the checked title/opus/instrumentation searches. Historical publisher and availability information retained; this is not a claim that the work is unavailable.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal Herbstlieder op 25 sheet music publisher buy"
     },
     {
       "id": "96",
       "title": "Sinfonietta No. 1 for mandolin orchestra",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.demond.de/hans-gal-sinfonietta-fuer-mandolinen-orchester-partitur-184074"
+      ],
+      "note": "First mandolin Sinfonietta op.81, R385/P printed score; not second Sinfonietta op.86. No other format is implied.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "32",
@@ -223,394 +295,545 @@
     {
       "id": "131",
       "title": "A Pastoral Tune",
-      "status": "pending",
+      "status": "not_found",
       "sources": [],
-      "note": ""
+      "note": "Pastoral Tune JC9608 retailer listing is for violin, cello and piano; catalogue says piano six hands. Not substituted.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal A Pastoral Tune sheet music publisher buy"
     },
     {
       "id": "134",
       "title": "Kleine Suite (Little Suite)",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.stretta-music.de/gl-kleine-suite-nr-314371.html",
+        "https://www.stretta-music.de/gl-kleine-suite-nr-748615.html"
+      ],
+      "note": "Kleine Suite for harpsichord, ED8847, ISMN9790001123495: printed edition. Kleine Suite for harpsichord, ED8847Q3104: digital edition; four movements match. No other format is implied.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "142",
       "title": "Phantasia, Arioso and Capriccioso",
-      "status": "pending",
+      "status": "not_found",
       "sources": [],
-      "note": ""
+      "note": "No exact current purchase, publisher-issued download or hire product confirmed in the checked title/opus/instrumentation searches. Historical publisher and availability information retained; this is not a claim that the work is unavailable.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal Phantasia, Arioso and Capriccioso sheet music publisher buy"
     },
     {
       "id": "143",
       "title": "Prelude and Fugue in A Flat",
-      "status": "pending",
+      "status": "not_found",
       "sources": [],
-      "note": ""
+      "note": "No exact current purchase, publisher-issued download or hire product confirmed in the checked title/opus/instrumentation searches. Historical publisher and availability information retained; this is not a claim that the work is unavailable.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal Prelude and Fugue in A Flat sheet music publisher buy"
     },
     {
       "id": "147",
       "title": "Three Impromptus",
-      "status": "pending",
+      "status": "not_found",
       "sources": [],
-      "note": ""
+      "note": "No exact current purchase, publisher-issued download or hire product confirmed in the checked title/opus/instrumentation searches. Historical publisher and availability information retained; this is not a claim that the work is unavailable.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal Three Impromptus sheet music publisher buy"
     },
     {
       "id": "154",
       "title": "What a Life",
-      "status": "pending",
+      "status": "not_found",
       "sources": [],
-      "note": ""
+      "note": "No exact current purchase, publisher-issued download or hire product confirmed in the checked title/opus/instrumentation searches. Historical publisher and availability information retained; this is not a claim that the work is unavailable.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal What a Life sheet music publisher buy"
     },
     {
       "id": "98",
       "title": "Twenty-four Preludes",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.sheetmusicplus.com/en/product/preludes-24-book-1-piano-5498557.html",
+        "https://www.sheetmusicplus.com/en/product/preludes-24-book-2-piano-5498563.html"
+      ],
+      "note": "Op.83 piano preludes: printed book1, UE12998. Book2 listed separately. Op.83 piano preludes: printed book2, UE12999. No other format is implied.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "126",
       "title": "Twenty-four Fugues",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.sheetmusicplus.com/en/product/24-fugues-op108-pno-21337611.html"
+      ],
+      "note": "Op.108 24 piano fugues, HL48018457/M221111326: printed edition. Retailer composer-name encoding is defective; catalogue and work match. No other format is implied.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "93",
       "title": "Idyllikon",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.boosey.com/cr/music/Hans-Gal-Idyllikon/4659"
+      ],
+      "note": "Op.79 Idyllikon for orchestra: publisher rental availability verified. No other format is implied.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "36",
       "title": "Three Songs to poems by R.M.Rilke",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.schott-music.com/en/three-songs-no174403.html"
+      ],
+      "note": "Op.31 three Rilke songs for women's voices and piano, EE1670: printed choral score. No other format is implied.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "37",
       "title": "F\u00fcnf ernste Ges\u00e4nge (Five Serious Songs)",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://theaterverlag-eirich.at/index.php?Itemid=148&catid=1860%3A_mw_de_G%C3%A1l-Hans&id=10554548%3AFuenf-ernste-Gesaenge-op--32_de&lang=de&option=com_phocacart&view=item"
+      ],
+      "note": "Fuenf ernste Gesaenge op.32: publisher lists TTBB printed material TJ1058-1 for purchase.",
+      "checked_date": "2026-10-02"
     },
     {
       "id": "38",
       "title": "Five Songs",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.schott-music.com/en/5-songs-no174400.html"
+      ],
+      "note": "Op.33 medium voice/piano, EE1671, ISMN9790221120595: printed edition; five song titles match. No other format is implied.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "39",
       "title": "Drei Portr\u00e4tstudien (Three Portrait Studies)",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.schott-music.com/de/drei-portraetstudien-noc22063.html"
+      ],
+      "note": "Op.34 TTBB/piano, C46936: printed score and separately selectable PDF edition. PDF edition C46936Q9573,27 pages; print edition28 pages. Both formats explicitly listed by publisher. No other format is implied.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "40",
       "title": "String Quartet No.2 (A Minor)",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.halleonard.com/product/49004143/string-quartet-2-op35-a-min-sc"
+      ],
+      "note": "Op.35 second string quartet: printed score, special import/backorder; stock not promised. No other format is implied.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "87",
       "title": "Music for String Orchestra",
-      "status": "pending",
+      "status": "not_found",
       "sources": [],
-      "note": ""
+      "note": "No exact current purchase, publisher-issued download or hire product confirmed in the checked title/opus/instrumentation searches. Historical publisher and availability information retained; this is not a claim that the work is unavailable.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal Music for String Orchestra op 73 sheet music publisher buy"
     },
     {
       "id": "42",
       "title": "Drei Ges\u00e4nge (Three Songs) for mixed choir (SATB) <i>a cappella</i>",
-      "status": "pending",
+      "status": "not_found",
       "sources": [],
-      "note": ""
+      "note": "No exact current purchase, publisher-issued download or hire product confirmed in the checked title/opus/instrumentation searches. Historical publisher and availability information retained; this is not a claim that the work is unavailable.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal Drei Ges\u00e4nge op 37 sheet music publisher buy"
     },
     {
       "id": "83",
       "title": "M\u00e4ander (Meanders)",
-      "status": "pending",
+      "status": "not_found",
       "sources": [],
-      "note": ""
+      "note": "No exact current purchase, publisher-issued download or hire product confirmed in the checked title/opus/instrumentation searches. Historical publisher and availability information retained; this is not a claim that the work is unavailable.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal M\u00e4ander op 69 sheet music publisher buy"
     },
     {
       "id": "84",
       "title": "Lebenskreise (Life Cycles)",
-      "status": "pending",
+      "status": "partially_verified",
       "sources": [],
-      "note": ""
+      "note": "Historic Baerenreiter orchestral catalogue lists AE297; exact current order/hire product not confirmed.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal Lebenskreise op 70 sheet music publisher buy"
     },
     {
       "id": "44",
       "title": "Concerto for violin and small orchestra",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.breitkopf.com/en/work/2575/9790004189344/violin-concerto-op.-39"
+      ],
+      "note": "Op.39 violin concerto: piano reduction EB9457/ISMN9790004189344,56 pages, edited Anthony Fox and Eva Fox-Gal. Op.39 orchestral hire material MM2319315 on request; purchase product is the piano reduction. No other format is implied.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "45",
       "title": "Drei Idyllen (Three Idylls)",
-      "status": "pending",
+      "status": "not_found",
       "sources": [],
-      "note": ""
+      "note": "No exact current purchase, publisher-issued download or hire product confirmed in the checked title/opus/instrumentation searches. Historical publisher and availability information retained; this is not a claim that the work is unavailable.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal Drei Idyllen op 40 sheet music publisher buy"
     },
     {
       "id": "46",
       "title": "Serenade for violin, viola and cello",
-      "status": "pending",
+      "status": "not_found",
       "sources": [],
-      "note": ""
+      "note": "No exact current purchase, publisher-issued download or hire product confirmed in the checked title/opus/instrumentation searches. Historical publisher and availability information retained; this is not a claim that the work is unavailable.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal Serenade for violin, viola and cello op 41 sheet music publisher buy"
     },
     {
       "id": "47",
       "title": "Die Beiden Klaas (Rich Claus, Poor Claus)",
-      "status": "pending",
+      "status": "not_found",
       "sources": [],
-      "note": ""
+      "note": "No exact current purchase, publisher-issued download or hire product confirmed in the checked title/opus/instrumentation searches. Historical publisher and availability information retained; this is not a claim that the work is unavailable.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal Die Beiden Klaas op 42 sheet music publisher buy"
     },
     {
       "id": "76",
       "title": "Three Preludes for Piano",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.halleonard.com/product/49008372/three-preludes-op-65three-preludes-op-65",
+        "https://www.sheetmusicplus.com/en/product/three-preludes-21909710.html"
+      ],
+      "note": "Op.65 three piano preludes: printed special-import/backorder edition. Op.65 three piano preludes: digital score product. No other format is implied.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "88",
       "title": "Drei Marionetten (Three Marionettes)",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.all-sheetmusic.com/Piano-Organ-Accordion/Piano/Three-Marionettes-Op-74.html"
+      ],
+      "note": "Op.74 piano four hands, EE3166, ISMN9790221111173: printed edition. No other format is implied.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "50",
       "title": "Nachtmusik (Night Music)",
-      "status": "pending",
+      "status": "not_found",
       "sources": [],
-      "note": ""
+      "note": "No exact current purchase, publisher-issued download or hire product confirmed in the checked title/opus/instrumentation searches. Historical publisher and availability information retained; this is not a claim that the work is unavailable.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal Nachtmusik op 44 sheet music publisher buy"
     },
     {
       "id": "73",
       "title": "Symphony No. 3 (A major)",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "partially_verified",
+      "sources": [
+        "https://www.breitkopf.com/fr/EN-POINT-DE-VUE/Redecouvertes/"
+      ],
+      "note": "Breitkopf confirms Symphony No.3 op.62 in its rediscoveries catalogue. Search result for Walter Hartley Symphony3 rejected; exact order/hire terms not confirmed.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal Symphony No. 3 (A major) op 62 sheet music publisher buy"
     },
     {
       "id": "77",
       "title": "Biedermeiert\u00e4nze (Biedermeier dances)",
-      "status": "pending",
+      "status": "not_found",
       "sources": [],
-      "note": ""
+      "note": "No exact current purchase, publisher-issued download or hire product confirmed in the checked title/opus/instrumentation searches. Historical publisher and availability information retained; this is not a claim that the work is unavailable.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal Biedermeiert\u00e4nze op 66 sheet music publisher buy"
     },
     {
       "id": "61",
       "title": "Symphony No. 2 (F major)",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "partially_verified",
+      "sources": [
+        "https://www.breitkopf.com/fr/EN-POINT-DE-VUE/Redecouvertes/"
+      ],
+      "note": "Breitkopf confirms Symphony No.2 op.53 in its rediscoveries catalogue; exact current order/hire terms not confirmed.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal Symphony No. 2 (F major) op 53 sheet music publisher buy"
     },
     {
       "id": "62",
       "title": "Kaledonische Suite (Caledonian Suite)",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://theaterverlag-eirich.at/index.php?Itemid=148&catid=1860%3A_mw_de_G%C3%A1l-Hans&id=10484121%3AKaledonische-Suite-op--54_de&lang=de&option=com_phocacart&view=item"
+      ],
+      "note": "Caledonian Suite op.54: publisher lists hire score EV9190-1. Conflicting publisher composition year was not substituted for the original catalogue date.",
+      "checked_date": "2026-10-02"
     },
     {
       "id": "53",
       "title": "Summer Idylls (Stille Lieder)",
-      "status": "pending",
+      "status": "not_found",
       "sources": [],
-      "note": ""
+      "note": "No exact current purchase, publisher-issued download or hire product confirmed in the checked title/opus/instrumentation searches. Historical publisher and availability information retained; this is not a claim that the work is unavailable.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal Stille Lieder op 47 sheet music publisher buy"
     },
     {
       "id": "55",
       "title": "Little Suite",
-      "status": "pending",
+      "status": "not_found",
       "sources": [],
-      "note": ""
+      "note": "No exact current purchase, publisher-issued download or hire product confirmed in the checked title/opus/instrumentation searches. Historical publisher and availability information retained; this is not a claim that the work is unavailable.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal Little Suite op 49a sheet music publisher buy"
     },
     {
       "id": "56",
       "title": "Trio for piano, violin and cello",
-      "status": "pending",
+      "status": "not_found",
       "sources": [],
-      "note": ""
+      "note": "No exact current purchase, publisher-issued download or hire product confirmed in the checked title/opus/instrumentation searches. Historical publisher and availability information retained; this is not a claim that the work is unavailable.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal Trio for piano, violin and cello op 49b sheet music publisher buy"
     },
     {
       "id": "54",
       "title": "Lilliburlero",
-      "status": "pending",
+      "status": "not_found",
       "sources": [],
-      "note": ""
+      "note": "No exact current purchase, publisher-issued download or hire product confirmed in the checked title/opus/instrumentation searches. Historical publisher and availability information retained; this is not a claim that the work is unavailable.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal Lilliburlero op 48 sheet music publisher buy"
     },
     {
       "id": "57",
       "title": "De Profundis",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.breitkopf.com/en/work/2566/de-profundis-op.-50"
+      ],
+      "note": "Op.50 SATB soloists/choir/orchestra, MM2319310: hire material on request. No other format is implied.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "58",
       "title": "Four Madrigals to Elizabethan Poems",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/Youth-And-Cupid-Op-51-No-1.html",
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/True-Love-Op-51-No-2.html",
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/A-Cradle-Song-Op-51-No-3.html",
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/A-Foolish-Love-Op-51-No-4.html"
+      ],
+      "note": "All four op.51 madrigals individually listed as printed Novello editions NOV451546, NOV401273, NOV401276 and NOV451547. Delivery times vary; no digital edition confirmed.",
+      "checked_date": "2026-10-02"
     },
     {
       "id": "59",
       "title": "Three Madrigals to Elizabethan Poems",
-      "status": "pending",
+      "status": "not_found",
       "sources": [],
-      "note": ""
+      "note": "No exact current purchase, publisher-issued download or hire product confirmed in the checked title/opus/instrumentation searches. Historical publisher and availability information retained; this is not a claim that the work is unavailable.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal Three Madrigals to Elizabethan Poems op 51b sheet music publisher buy"
     },
     {
       "id": "60",
       "title": "Concertino for violin and string orchestra",
-      "status": "pending",
+      "status": "partially_verified",
       "sources": [],
-      "note": ""
+      "note": "Baerenreiter/Alkor orchestral catalogue lists AE237; exact current purchase/hire product not confirmed.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal Concertino for violin and string orchestra op 52 sheet music publisher buy"
     },
     {
       "id": "75",
       "title": "Three Small Pieces for Piano",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.stretta-music.de/gl-drei-kleine-stuecke-op-64-nr-314370.html"
+      ],
+      "note": "Op.64 Three Small Pieces for piano, ED8846: printed edition. No other format is implied.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "64",
       "title": "Suite for violin and piano",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.prestomusic.com/sheet-music/products/7251151--gal-h-suite-in-g-op-56"
+      ],
+      "note": "Op.56 violin/piano suite, EE3146/ISMN9790221110893: printed edition; all four movements match. No other format is implied.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "65",
       "title": "Partita for Mandolin and Piano",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.heinrichshofen.de/de/instrumental/zupfinstrumente/mandoline/492/partita?c=320"
+      ],
+      "note": "Op.56a Partita for mandolin and piano, N1723, printed score and part. No other format is implied.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "68",
       "title": "Sonatina for Two Mandolins",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.heinrichshofen.de/de/instrumental/zupfinstrumente/mandoline/473/sonatine?c=320"
+      ],
+      "note": "Op.59a two-mandolin Sonatina, N1704 printed parts, order option verified. No other format is implied.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "69",
       "title": "Suite for Three Mandolins",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.heinrichshofen.de/de/instrumental/zupfinstrumente/mandoline/472/suite"
+      ],
+      "note": "Op.59b Suite for three mandolins, N1703 printed parts. No other format is implied.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "71",
       "title": "Improvisation, Variations and Finale on a Theme by Mozart",
-      "status": "pending",
+      "status": "not_found",
       "sources": [],
-      "note": ""
+      "note": "No exact current purchase, publisher-issued download or hire product confirmed in the checked title/opus/instrumentation searches. Historical publisher and availability information retained; this is not a claim that the work is unavailable.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal Improvisation, Variations and Finale on a Theme by Mozart op 60b sheet music publisher buy"
     },
     {
       "id": "72",
       "title": "Four Part-Songs",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "partially_verified",
+      "sources": [
+        "https://www.boosey.com/cr/music/Hans-Gal-4-Gesange/51502"
+      ],
+      "note": "Exact publisher work page matches title, opus and instrumentation. Publisher lists sale availability; specific edition, stock and digital-download checkout not confirmed. Link is labelled publisher/distributor page, not a promise of stock.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "51",
       "title": "A Pickwickian Overture",
-      "status": "pending",
+      "status": "not_found",
       "sources": [],
-      "note": ""
+      "note": "No exact current purchase, publisher-issued download or hire product confirmed in the checked title/opus/instrumentation searches. Historical publisher and availability information retained; this is not a claim that the work is unavailable.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal A Pickwickian Overture op 45 sheet music publisher buy"
     },
     {
       "id": "74",
       "title": "Two Songs for 4-Part Male-voice Choir <i>a cappella</i>",
-      "status": "pending",
+      "status": "not_found",
       "sources": [],
-      "note": ""
+      "note": "No exact current purchase, publisher-issued download or hire product confirmed in the checked title/opus/instrumentation searches. Historical publisher and availability information retained; this is not a claim that the work is unavailable.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal Two Songs for 4-Part Male-voice Choir a cappella op 63 sheet music publisher buy"
     },
     {
       "id": "9",
       "title": "Drei Skizzen (Three Sketches)",
-      "status": "pending",
+      "status": "not_found",
       "sources": [],
-      "note": ""
+      "note": "No exact current purchase, publisher-issued download or hire product confirmed in the checked title/opus/instrumentation searches. Historical publisher and availability information retained; this is not a claim that the work is unavailable.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal Drei Skizzen op 7 sheet music publisher buy"
     },
     {
       "id": "78",
       "title": "Biedermeiert\u00e4nze (Biedermeier dances)",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "partially_verified",
+      "sources": [
+        "https://www.trekel.info/detailview?no=6460"
+      ],
+      "note": "Trekel R9601/P Biedermeier op.66b listing uses a different instrument layout from the supplied catalogue. Edition match needs editorial confirmation.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal Biedermeiert\u00e4nze op 66b sheet music publisher buy"
     },
     {
       "id": "79",
       "title": "Concerto for Cello and Orchestra",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.sheetmusicplus.com/en/product/violoncello-concerto-op-67-20318811.html"
+      ],
+      "note": "Op.67 cello concerto: printed piano reduction EB8866, not orchestral parts. No other format is implied.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "80",
       "title": "Suite for Recorder and Violin",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://preigu.de/buecher/suite-op68a-fuer-blockfloete-und-violine/121791764"
+      ],
+      "note": "Op.68a recorder and violin, Doblinger HBR14 ISMN9790012170242 printed edition. No other format is implied.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "81",
       "title": "Six Two-Part Inventions",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.sheetmusicplus.com/en/product/6-zweistimmige-inventionen-17869807.html"
+      ],
+      "note": "Op.68b six two-part inventions for two recorders: Doblinger printed edition. No other format is implied.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "82",
       "title": "Divertimento for 2 Treble Recorders and Guitar",
-      "status": "pending",
+      "status": "not_found",
       "sources": [],
-      "note": ""
+      "note": "No exact current purchase, publisher-issued download or hire product confirmed in the checked title/opus/instrumentation searches. Historical publisher and availability information retained; this is not a claim that the work is unavailable.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal Divertimento for 2 Treble Recorders and Guitar op 68c sheet music publisher buy"
     },
     {
       "id": "43",
       "title": "Der Zauberspiegel (The Magic Mirror)",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "partially_verified",
+      "sources": [
+        "https://repertoire-explorer.musikmph.de/product/gal-hans-2/"
+      ],
+      "note": "Der Zauberspiegel op.38: orchestral suite study score4610 only, not the complete stage work. No other format is implied.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "85",
       "title": "Three Sonatinas for violin and piano",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.prestomusic.com/sheet-music/products/9573872--gal-hans-3-sonatinas-op-71-1-3"
+      ],
+      "note": "Op.71 three violin/piano sonatinas: score-download product, distinct from piano sonatinas58. No other format is implied.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "86",
       "title": "Satirikon",
-      "status": "pending",
+      "status": "partially_verified",
       "sources": [],
-      "note": ""
+      "note": "Kistner choral catalogue has a likely matching title but a conflicting opus number; no verified current product.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal Satirikon op 72 sheet music publisher buy"
     },
     {
       "id": "41",
       "title": "Ballet Suite 'Scaramuccio'",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.schott-music.com/fr/ballett-suite-no151925.html"
+      ],
+      "note": "Op.36 Ballet Suite: publisher rental listing and six movements match. No other format is implied.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "49",
@@ -626,191 +849,266 @@
     {
       "id": "89",
       "title": "Songs of Youth (Jugendlieder)",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "partially_verified",
+      "sources": [
+        "https://www.boosey.com/cr/music/Hans-Gal-Jugendlieder/51503"
+      ],
+      "note": "Exact publisher work page matches title, opus and instrumentation. Publisher lists sale availability; specific edition, stock and digital-download checkout not confirmed. Link is labelled publisher/distributor page, not a promise of stock.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "90",
       "title": "A Clarion Call ",
-      "status": "pending",
+      "status": "not_found",
       "sources": [],
-      "note": ""
+      "note": "No exact current purchase, publisher-issued download or hire product confirmed in the checked title/opus/instrumentation searches. Historical publisher and availability information retained; this is not a claim that the work is unavailable.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal A Clarion Call  op 76 sheet music publisher buy"
     },
     {
       "id": "91",
       "title": "Of a Summer Day",
-      "status": "pending",
+      "status": "not_found",
       "sources": [],
-      "note": ""
+      "note": "No exact current purchase, publisher-issued download or hire product confirmed in the checked title/opus/instrumentation searches. Historical publisher and availability information retained; this is not a claim that the work is unavailable.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal Of a Summer Day op 77 sheet music publisher buy"
     },
     {
       "id": "92",
       "title": "Quartettino",
-      "status": "pending",
+      "status": "not_found",
       "sources": [],
-      "note": ""
+      "note": "No exact current purchase, publisher-issued download or hire product confirmed in the checked title/opus/instrumentation searches. Historical publisher and availability information retained; this is not a claim that the work is unavailable.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal Quartettino op 78 sheet music publisher buy"
     },
     {
       "id": "31",
       "title": "Requiem for Mignon",
-      "status": "pending",
+      "status": "not_found",
       "sources": [],
-      "note": ""
+      "note": "No exact current purchase, publisher-issued download or hire product confirmed in the checked title/opus/instrumentation searches. Historical publisher and availability information retained; this is not a claim that the work is unavailable.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal Requiem for Mignon op 26 sheet music publisher buy"
     },
     {
       "id": "35",
       "title": "Symphony No.1 (D major)",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.boosey.com/cr/music/Hans-Gal-Symphony-No-1-Sinfonietta/27506"
+      ],
+      "note": "Op.30 Symphony No.1: publisher's exact work page links to rental enquiry. No digital score purchase verified. No other format is implied.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "94",
       "title": "Divertimento for mandolin with harp or piano",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.stretta-music.de/gl-divertimento-fuer-mandoline-und-harfe-klavier-op-80-nr-418357.html"
+      ],
+      "note": "Op.80 mandolin/harp or piano: printed score; not the flute/viola/harp version80b. No other format is implied.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "95",
       "title": "Divertimento for flute, viola and harp",
-      "status": "pending",
+      "status": "not_found",
       "sources": [],
-      "note": ""
+      "note": "No exact current purchase, publisher-issued download or hire product confirmed in the checked title/opus/instrumentation searches. Historical publisher and availability information retained; this is not a claim that the work is unavailable.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal Divertimento for flute, viola and harp op 80b sheet music publisher buy"
     },
     {
       "id": "97",
       "title": "Concertino for treble recorder/flute and string quartet",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.prestomusic.com/sheet-music/products/7308233--gal-hans-concertino-op-82"
+      ],
+      "note": "Op.82 flute/recorder concertino: printed piano reduction UE12644, ISBN9783702466657. No other format is implied.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "99",
       "title": "Sonata for clarinet and piano",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.schott-music.com/en/sonata-noc65929.html"
+      ],
+      "note": "Op.84 clarinet/piano sonata, KLB44: publisher product page. No other format is implied.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "100",
       "title": "Sonata for oboe and piano",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.prestomusic.com/sheet-music/products/9566593--gal-hans-sonata-op-85"
+      ],
+      "note": "Op.85 oboe/piano, OBB40Q5189: digital score,52 pages. No other format is implied.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "102",
       "title": "Concertino for Cello and String Orchestra",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "partially_verified",
+      "sources": [
+        "https://www.boosey.com/cr/music/Hans-Gal-Concertino-for-cello-and-strings/28251"
+      ],
+      "note": "Exact publisher work page matches title, opus and instrumentation. Publisher lists sale and rental availability; specific edition, stock and digital-download checkout not confirmed. Link is labelled publisher/distributor page, not a promise of stock. Publisher purchase page offers print-on-demand enquiry.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "103",
       "title": "Trio-Serenade",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.stretta-music.de/gl-trio-serenade-nr-793721.html"
+      ],
+      "note": "Op.88 treble recorder/flute, violin and cello: digital score and parts,64 pages. No other format is implied.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "104",
       "title": "Sonata for Cello and Piano",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "partially_verified",
+      "sources": [
+        "https://www.boosey.com/cr/music/Hans-Gal-Cello-Sonata/28356"
+      ],
+      "note": "Exact publisher work page matches title, opus and instrumentation. Publisher lists sale availability; specific edition, stock and digital-download checkout not confirmed. Link is labelled publisher/distributor page, not a promise of stock.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "105",
       "title": "Divertimento for Bassoon and Cello",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.prestomusic.com/sheet-music/products/7251130--gal-h-divertimento-op-90-1"
+      ],
+      "note": "Op.90/1 bassoon/cello, EE3128: printed edition. No other format is implied.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "106",
       "title": "Divertimento for Violin and Cello",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.sheetmusicplus.com/en/product/divertimento-in-a-op-90-2-21253005.html"
+      ],
+      "note": "Op.90/2 violin/cello: printed edition, distinct from90/1 and90/3. No other format is implied.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "107",
       "title": "Divertimento for Violin and Viola",
-      "status": "pending",
+      "status": "not_found",
       "sources": [],
-      "note": ""
+      "note": "No exact current purchase, publisher-issued download or hire product confirmed in the checked title/opus/instrumentation searches. Historical publisher and availability information retained; this is not a claim that the work is unavailable.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal Divertimento for Violin and Viola op 90(3) sheet music publisher buy"
     },
     {
       "id": "108",
       "title": "Sp\u00e4tlese",
-      "status": "pending",
+      "status": "not_found",
       "sources": [],
-      "note": ""
+      "note": "No exact current purchase, publisher-issued download or hire product confirmed in the checked title/opus/instrumentation searches. Historical publisher and availability information retained; this is not a claim that the work is unavailable.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal Sp\u00e4tlese op 91 sheet music publisher buy"
     },
     {
       "id": "109",
       "title": "Huyton Suite",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.prestomusic.com/sheet-music/products/7251142--gal-h-huyton-suite-op-92"
+      ],
+      "note": "Op.92 flute/two violins, EE3138A: printed study score,18 pages. No other format is implied.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "110",
       "title": "Serenade for clarinet, violin and cello",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.boosey.com/purchase-music/Hans-Gal-Serenade-for-clarinet-violin-and-cello/27993"
+      ],
+      "note": "Op.93 clarinet/violin/cello: publisher lists parts and study score for purchase. No other format is implied.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "111",
       "title": "Trio for oboe, violin and viola",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "partially_verified",
+      "sources": [
+        "https://www.boosey.com/cr/music/Hans-Gal-Trio-for-oboe-violin-and-viola/28311"
+      ],
+      "note": "Exact publisher work page matches title, opus and instrumentation. Publisher lists sale availability; specific edition, stock and digital-download checkout not confirmed. Link is labelled publisher/distributor page, not a promise of stock.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "112",
       "title": "String Quartet No.3 (B Minor)",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.noten-roehr.de/en/scores/0008/chamber-music-%283-9-instruments%29/0803/3-9-string-instruments/0805/string-quartets/046805"
+      ],
+      "note": "Op.95 third string quartet: printed miniature score order option. No other format is implied.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "113",
       "title": "Sonata for Two Violins and Piano",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "partially_verified",
+      "sources": [
+        "https://www.boosey.com/cr/music/Hans-Gal-Sonata-in-C-for-two-violins-and-piano/28190"
+      ],
+      "note": "Exact publisher work page matches title, opus and instrumentation. Publisher lists sale availability; specific edition, stock and digital-download checkout not confirmed. Link is labelled publisher/distributor page, not a promise of stock.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "114",
       "title": "Trio for Violin, Clarinet and Piano",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "partially_verified",
+      "sources": [
+        "https://www.boosey.com/cr/music/Hans-Gal-Trio-for-violin-clarinet-and-piano/28270"
+      ],
+      "note": "Exact publisher work page matches title, opus and instrumentation. Publisher lists sale availability; specific edition, stock and digital-download checkout not confirmed. Link is labelled publisher/distributor page, not a promise of stock.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "115",
       "title": "Divertimento for Three Recorders",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.halleonard.com/product/49011221/divertimento-op-98"
+      ],
+      "note": "Op.98 three recorders: printed special-import score; retailer stock not promised. No other format is implied.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "116",
       "title": "String Quartet No.4",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.all-sheetmusic.com/String-Ensemble/String-Quartet-4-op-99.html",
+        "https://www.all-sheetmusic.com/String-Ensemble/String-Quartet-No-4-Op-99-Standard.html"
+      ],
+      "note": "Op.99 fourth string quartet, EE3147-1, ISMN9790221110916: printed score. Op.99 EE3147, ISMN9790221110909: printed parts. Preview PDF is not a purchased digital edition. No other format is implied.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "118",
       "title": "Sonata for Viola and Piano",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "partially_verified",
+      "sources": [
+        "https://www.sheetmusicplus.com/en/product/sonata-in-a-op-101-21287415.html"
+      ],
+      "note": "Viola Sonata op.101 EE3150, matching printed edition; stock not confirmed. No other format is implied.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "119",
@@ -819,35 +1117,48 @@
       "sources": [
         "https://www.boosey.com/publications/sheet-music/Hans-Gal-Suite/104435"
       ],
-      "note": "Suite for viola and piano, ISMN 9790221199362: publisher explicitly offers Digital Download. Orchestra version and printed edition remain to be verified."
+      "note": "Suite for viola and piano, ISMN 9790221199362: publisher explicitly offers Digital Download. Orchestra version and printed edition remain to be verified.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "120",
       "title": "Suite for alto saxophone and piano or orchestra ",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "partially_verified",
+      "sources": [
+        "https://www.boosey.com/cr/music/Hans-Gal-Suite-for-alto-saxophone-and-piano/28397"
+      ],
+      "note": "Exact publisher work page matches title, opus and instrumentation. Publisher lists sale availability; specific edition, stock and digital-download checkout not confirmed. Link is labelled publisher/distributor page, not a promise of stock.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "121",
       "title": "Three Intermezzi",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.halleonard.com/product/49011235/3-intermezzi-op-103"
+      ],
+      "note": "Op.103 treble recorder/flute and harpsichord/piano, OFB134: printed special-import/backorder edition. No other format is implied.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "122",
       "title": "Trio in F sharp minor",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "partially_verified",
+      "sources": [
+        "https://www.boosey.com/cr/music/Hans-Gal-String-Trio/28392"
+      ],
+      "note": "Publisher confirms op.104 String Trio and lists sale availability. Exact edition/stock unconfirmed. Retailer key discrepancy was not copied into the catalogue.",
+      "checked_date": "2026-10-02"
     },
     {
       "id": "26",
       "title": "Divertimento for flute, oboe, two clarinets, trumpet, two horns and bassoon ",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.hebu-music.com/en/article/hans-gal/maecenas-music/divertimento-op22.595852/"
+      ],
+      "note": "Op.22 wind octet: Maecenas MW0007/EAN5025966699582 printed score and parts; exact eight instruments and movements match. No other format is implied.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "124",
@@ -863,72 +1174,103 @@
     {
       "id": "125",
       "title": "Clarinet Quintet",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "partially_verified",
+      "sources": [
+        "https://www.boosey.com/cr/music/Hans-Gal-Clarinet-Quintet/28772"
+      ],
+      "note": "Exact publisher work page matches title, opus and instrumentation. Publisher lists sale availability; specific edition, stock and digital-download checkout not confirmed. Link is labelled publisher/distributor page, not a promise of stock.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "127",
       "title": "Sonata for Cello Solo",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "partially_verified",
+      "sources": [
+        "https://www.boosey.com/cr/music/Hans-Gal-Sonata-for-solo-cello/28366"
+      ],
+      "note": "Exact publisher work page matches title, opus and instrumentation. Publisher lists sale availability; specific edition, stock and digital-download checkout not confirmed. Link is labelled publisher/distributor page, not a promise of stock.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "128",
       "title": "Suite for Cello Solo",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.prestomusic.com/sheet-music/products/7251212--gal-h-suite-op-109b"
+      ],
+      "note": "Op.109b solo cello suite, EE3195/ISMN9790221111432: printed edition. No other format is implied.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "129",
       "title": "Four Bagatelles",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.sheetmusicplus.com/en/product/pieces-for-solo-recorder-vol-1-22874991.html"
+      ],
+      "note": "Op.110a Four Bagatelles: publisher-issued digital collection Pieces for Solo Recorder Vol.1 includes all four movements, not a standalone score. No other format is implied.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "130",
       "title": "Recorder Sonatina",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.forsyths.co.uk/music/sheet-music/instruments/woodwind/recorder-sheet-music/13221-pieces-for-solo-recorder-sheet-music-album-9790570503254.html",
+        "https://www.sheetmusicplus.com/en/product/pieces-for-solo-recorder-vol-2-21406037.html"
+      ],
+      "note": "Sonatina110b is included in Pieces for Solo Recorder Vol.2,FZZ04: publisher's printed collection, not a standalone edition. Sonatina110b in digital Pieces for Solo Recorder Vol.2; collection contents match. No other format is implied.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "34",
       "title": "Toccata",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.prestomusic.com/sheet-music/products/7251644--gal-h-toccata-in-e-minor-e-minor-op-29"
+      ],
+      "note": "Organ Toccata op.29 EE4006, printed edition. No other format is implied.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "133",
       "title": "Hin und Her",
-      "status": "pending",
+      "status": "not_found",
       "sources": [],
-      "note": ""
+      "note": "No exact current purchase, publisher-issued download or hire product confirmed in the checked title/opus/instrumentation searches. Historical publisher and availability information retained; this is not a claim that the work is unavailable.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal Hin und Her sheet music publisher buy"
     },
     {
       "id": "135",
       "title": "Moment Musical",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.forsyths.co.uk/music/sheet-music/instruments/woodwind/recorder-sheet-music/13218-society-of-recorder-players-birthday-album---various-9790570503223.html"
+      ],
+      "note": "Moment Musical is included in printed Society of Recorder Players Birthday Album FZZ01/ISMN9790570503223; publisher order option verified. No other format is implied.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "136",
       "title": "Promenadenmusik",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.schott-music.com/de/promenadenmusik-noc89418.html"
+      ],
+      "note": "Promenadenmusik for wind band, SHS1007: publisher lists printed score and PDF score. Parts are SHS1007-70. Promenadenmusik SHS1007: PDF score format explicitly listed in publisher's dedicated series catalogue; parts are separately printed. No other format is implied.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "137",
       "title": "Impromptu for Viola and Piano",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.sheetmusicplus.com/en/product/impromptu-19254678.html",
+        "https://www.sheetmusicplus.com/en/product/impromptu-22203402.html"
+      ],
+      "note": "Impromptu for viola/piano: printed Schott edition, distinct from the piano Impromptus. Impromptu for viola/piano: digital score product. No other format is implied.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "138",
@@ -944,23 +1286,29 @@
     {
       "id": "139",
       "title": "In neue R\u00e4ume (Into New Rooms)",
-      "status": "pending",
+      "status": "not_found",
       "sources": [],
-      "note": ""
+      "note": "No exact current purchase, publisher-issued download or hire product confirmed in the checked title/opus/instrumentation searches. Historical publisher and availability information retained; this is not a claim that the work is unavailable.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal In neue R\u00e4ume sheet music publisher buy"
     },
     {
       "id": "140",
       "title": "Intrata Giocosa",
-      "status": "pending",
+      "status": "not_found",
       "sources": [],
-      "note": ""
+      "note": "No exact current purchase, publisher-issued download or hire product confirmed in the checked title/opus/instrumentation searches. Historical publisher and availability information retained; this is not a claim that the work is unavailable.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal Intrata Giocosa sheet music publisher buy"
     },
     {
       "id": "141",
       "title": "Lyrical Suite",
-      "status": "pending",
+      "status": "not_found",
       "sources": [],
-      "note": ""
+      "note": "No exact current purchase, publisher-issued download or hire product confirmed in the checked title/opus/instrumentation searches. Historical publisher and availability information retained; this is not a claim that the work is unavailable.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal Lyrical Suite sheet music publisher buy"
     },
     {
       "id": "3",
@@ -969,7 +1317,8 @@
       "sources": [
         "https://www.universaledition.com/Serbische-Weisen/P0049702"
       ],
-      "note": "UE5980, Op.3, piano four hands: exact print-on-demand playing score. Publisher indexed product data verified; direct automated read returns 403. No digital edition verified."
+      "note": "UE5980, Op.3, piano four hands: exact print-on-demand playing score. Publisher indexed product data verified; direct automated read returns 403. No digital edition verified.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "144",
@@ -985,303 +1334,409 @@
     {
       "id": "145",
       "title": "Scherzando",
-      "status": "pending",
+      "status": "not_found",
       "sources": [],
-      "note": ""
+      "note": "No exact current purchase, publisher-issued download or hire product confirmed in the checked title/opus/instrumentation searches. Historical publisher and availability information retained; this is not a claim that the work is unavailable.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal Scherzando sheet music publisher buy"
     },
     {
       "id": "146",
       "title": "Part-songs",
-      "status": "pending",
+      "status": "not_found",
       "sources": [],
-      "note": ""
+      "note": "No exact current purchase, publisher-issued download or hire product confirmed in the checked title/opus/instrumentation searches. Historical publisher and availability information retained; this is not a claim that the work is unavailable.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal Part-songs sheet music publisher buy"
     },
     {
       "id": "148",
       "title": "Three Lyrics to Poems by Thomas Moore",
-      "status": "pending",
+      "status": "not_found",
       "sources": [],
-      "note": ""
+      "note": "No exact current purchase, publisher-issued download or hire product confirmed in the checked title/opus/instrumentation searches. Historical publisher and availability information retained; this is not a claim that the work is unavailable.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal Three Lyrics to Poems by Thomas Moore sheet music publisher buy"
     },
     {
       "id": "149",
       "title": "Three Vocal Quartets",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://simon-fox-gal.github.io/hansgal-org/works/show/149/"
+      ],
+      "note": "User-authorized 21-page PDF includes the two surviving quartets; third is lost. Download basket tested with editable GBP10 suggestion and GBP0 download. PDF/ZIP integrity checked.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal Three Vocal Quartets sheet music publisher buy"
     },
     {
       "id": "150",
       "title": "Two Anthems",
-      "status": "pending",
+      "status": "not_found",
       "sources": [],
-      "note": ""
+      "note": "No exact current purchase, publisher-issued download or hire product confirmed in the checked title/opus/instrumentation searches. Historical publisher and availability information retained; this is not a claim that the work is unavailable.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal Two Anthems sheet music publisher buy"
     },
     {
       "id": "151",
       "title": "Two Scottish Rhapsodies",
-      "status": "pending",
+      "status": "not_found",
       "sources": [],
-      "note": ""
+      "note": "No exact current purchase, publisher-issued download or hire product confirmed in the checked title/opus/instrumentation searches. Historical publisher and availability information retained; this is not a claim that the work is unavailable.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal Two Scottish Rhapsodies sheet music publisher buy"
     },
     {
       "id": "152",
       "title": "Vom heiligen Ehestand (On the holy marriage state)",
-      "status": "pending",
+      "status": "not_found",
       "sources": [],
-      "note": ""
+      "note": "No exact current purchase, publisher-issued download or hire product confirmed in the checked title/opus/instrumentation searches. Historical publisher and availability information retained; this is not a claim that the work is unavailable.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal Vom heiligen Ehestand sheet music publisher buy"
     },
     {
       "id": "156",
       "title": "Brahms: Hungarian Dances nos. 8 and 9",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "partially_verified",
+      "sources": [
+        "https://www.boosey.com/cr/music/Johannes-Brahms-Hungarian-Dance-No-8-in-A-minor/27759"
+      ],
+      "note": "Brahms Hungarian Dance No.8, arranged by Hans Gal, confirmed on publisher rental page. This link covers No.8 only; No.9 not verified.",
+      "checked_date": "2026-10-02"
     },
     {
       "id": "157",
       "title": "Folksongs from the <i>Volksliederbuch f&uuml;r die Jugend</i>",
-      "status": "pending",
+      "status": "not_found",
       "sources": [],
-      "note": ""
+      "note": "No exact current purchase, publisher-issued download or hire product confirmed in the checked title/opus/instrumentation searches. Historical publisher and availability information retained; this is not a claim that the work is unavailable.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal Folksongs from the Volksliederbuch f\u00fcr die Jugend sheet music publisher buy"
     },
     {
       "id": "158",
       "title": "Four British Folk-Songs",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/4-British-Folk-Songs-No-1-Standard.html",
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/4-British-Folk-Songs-No-2-Standard.html",
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/O-can-ye-sew-cushions-Standard.html",
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/4-British-Folk-Songs-No-4-Standard.html",
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/4-britische-Volkslieder-Nr-1-Download.html",
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/4-britische-Volkslieder-Nr-2-Download.html",
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/4-britische-Volkslieder-Nr-3-Download.html",
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/4-britische-Volkslieder-Nr-4-Download.html"
+      ],
+      "note": "All four British Folk Songs individually available in print C42310-13 and publisher-issued digital editions C42310-13-DL. Separate product links for each song and format.",
+      "checked_date": "2026-10-02"
     },
     {
       "id": "159",
       "title": "Gluck: Symphony in G minor",
-      "status": "pending",
+      "status": "not_found",
       "sources": [],
-      "note": ""
+      "note": "Gluck concerto in another key/arrangement not substituted for the Gal edition.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal Gluck: Symphony in G minor sheet music publisher buy"
     },
     {
       "id": "160",
       "title": "Handel: 6 Italian Arias",
-      "status": "pending",
+      "status": "not_found",
       "sources": [],
-      "note": ""
+      "note": "No exact current purchase, publisher-issued download or hire product confirmed in the checked title/opus/instrumentation searches. Historical publisher and availability information retained; this is not a claim that the work is unavailable.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal Handel: 6 Italian Arias sheet music publisher buy"
     },
     {
       "id": "161",
       "title": "Handel: Suite of Airs and Dances",
-      "status": "pending",
+      "status": "not_found",
       "sources": [],
-      "note": ""
+      "note": "No exact current purchase, publisher-issued download or hire product confirmed in the checked title/opus/instrumentation searches. Historical publisher and availability information retained; this is not a claim that the work is unavailable.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal Handel: Suite of Airs and Dances sheet music publisher buy"
     },
     {
       "id": "162",
       "title": "Haydn: Overture to 'Armida'",
-      "status": "pending",
+      "status": "not_found",
       "sources": [],
-      "note": ""
+      "note": "No exact current purchase, publisher-issued download or hire product confirmed in the checked title/opus/instrumentation searches. Historical publisher and availability information retained; this is not a claim that the work is unavailable.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal Haydn: Overture to 'Armida' sheet music publisher buy"
     },
     {
       "id": "163",
       "title": "Haydn: Symphony in B flat. Op.X No.2",
-      "status": "pending",
+      "status": "not_found",
       "sources": [],
-      "note": ""
+      "note": "Haydn PH700 is a Robbins Landon edition, not the requested Gal arrangement. Rejected.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal Haydn: Symphony in B flat. Op.X No.2 sheet music publisher buy"
     },
     {
       "id": "164",
       "title": "Morgengruss, Lockruf der Mutter (Barthel)",
-      "status": "pending",
+      "status": "not_found",
       "sources": [],
-      "note": ""
+      "note": "No exact current purchase, publisher-issued download or hire product confirmed in the checked title/opus/instrumentation searches. Historical publisher and availability information retained; this is not a claim that the work is unavailable.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal Morgengruss, Lockruf der Mutter sheet music publisher buy"
     },
     {
       "id": "165",
       "title": "Sch&uuml;tz: Two Dialogues",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.stretta-music.de/schuetz-two-dialogues-nr-982908.html"
+      ],
+      "note": "Schuetz Two Dialogues: product explicitly credits arrangement and English version to Hans Gal. No other format is implied.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "166",
       "title": "Sechs Volkslieder (Six Folk-Songs)",
-      "status": "pending",
+      "status": "not_found",
       "sources": [],
-      "note": ""
+      "note": "No exact current purchase, publisher-issued download or hire product confirmed in the checked title/opus/instrumentation searches. Historical publisher and availability information retained; this is not a claim that the work is unavailable.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal Sechs Volkslieder sheet music publisher buy"
     },
     {
       "id": "167",
       "title": "Drei Deutsche Volkslieder (Three German Folk-Songs)",
-      "status": "pending",
+      "status": "not_found",
       "sources": [],
-      "note": ""
+      "note": "No exact current purchase, publisher-issued download or hire product confirmed in the checked title/opus/instrumentation searches. Historical publisher and availability information retained; this is not a claim that the work is unavailable.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal Drei Deutsche Volkslieder sheet music publisher buy"
     },
     {
       "id": "168",
       "title": "Drei Alte Weisen (Three Old Songs)",
-      "status": "pending",
+      "status": "not_found",
       "sources": [],
-      "note": ""
+      "note": "No exact current purchase, publisher-issued download or hire product confirmed in the checked title/opus/instrumentation searches. Historical publisher and availability information retained; this is not a claim that the work is unavailable.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal Drei Alte Weisen sheet music publisher buy"
     },
     {
       "id": "29",
       "title": "Suite for Piano",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.sheetmusicplus.com/en/product/suite-op-24-21283862.html"
+      ],
+      "note": "Op.24 piano solo, Simrock EE1674,24 pages: printed special-order edition. Generic MP3 help on retailer page is not a score-download offer. No other format is implied.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "4",
       "title": "Serbische Weisen (Serbian Melodies)",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.theaterverlag-eirich.at/index.php?Itemid=149&catid=1861%3A_mw_gb_G%C3%A1l-Hans&id=20484119%3ASerbische-Weisen-op--3b_gb&lang=en&option=com_phocacart&view=item"
+      ],
+      "note": "Op.3b orchestra: publisher lists EV9191-1 full score on hire; this is not the piano-duet edition3 or mandolin version3c. No other format is implied.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "24",
       "title": "Ouvert\u00fcre zu einem Puppenspiel (Overture to a Puppet Play)",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://theaterverlag-eirich.at/index.php?Itemid=148&catid=1860%3A_mw_de_G%C3%A1l-Hans&id=10484120%3AOuvertuere-zu-einem-Puppenspiel-op--20_de&lang=de&option=com_phocacart&view=item"
+      ],
+      "note": "Puppenspiel overture op.20: publisher lists hire score TJ830-1.",
+      "checked_date": "2026-10-02"
     },
     {
       "id": "171",
       "title": "Zelter: Bundeslied (Goethe)",
-      "status": "pending",
+      "status": "not_found",
       "sources": [],
-      "note": ""
+      "note": "No exact current purchase, publisher-issued download or hire product confirmed in the checked title/opus/instrumentation searches. Historical publisher and availability information retained; this is not a claim that the work is unavailable.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal Zelter: Bundeslied sheet music publisher buy"
     },
     {
       "id": "172",
       "title": "Beethoven: Three Marches, Op.45",
-      "status": "pending",
+      "status": "not_found",
       "sources": [],
-      "note": ""
+      "note": "No exact current purchase, publisher-issued download or hire product confirmed in the checked title/opus/instrumentation searches. Historical publisher and availability information retained; this is not a claim that the work is unavailable.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal Beethoven: Three Marches, Op.45 sheet music publisher buy"
     },
     {
       "id": "173",
       "title": "Five Proven&ccedil;ale folk-songs",
-      "status": "pending",
+      "status": "not_found",
       "sources": [],
-      "note": ""
+      "note": "No exact current purchase, publisher-issued download or hire product confirmed in the checked title/opus/instrumentation searches. Historical publisher and availability information retained; this is not a claim that the work is unavailable.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal Five Proven\u00e7ale folk-songs sheet music publisher buy"
     },
     {
       "id": "174",
       "title": "Handel: Overture to 'B&eacute;r&eacute;nice'",
-      "status": "pending",
+      "status": "not_found",
       "sources": [],
-      "note": ""
+      "note": "No exact current purchase, publisher-issued download or hire product confirmed in the checked title/opus/instrumentation searches. Historical publisher and availability information retained; this is not a claim that the work is unavailable.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal Handel: Overture to 'B\u00e9r\u00e9nice' sheet music publisher buy"
     },
     {
       "id": "175",
       "title": "Handel: Overture to 'Faramondo'",
-      "status": "pending",
+      "status": "not_found",
       "sources": [],
-      "note": ""
+      "note": "No exact current purchase, publisher-issued download or hire product confirmed in the checked title/opus/instrumentation searches. Historical publisher and availability information retained; this is not a claim that the work is unavailable.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal Handel: Overture to 'Faramondo' sheet music publisher buy"
     },
     {
       "id": "176",
       "title": "Purcell: \\'No, resistance is but vain\\'",
-      "status": "pending",
+      "status": "not_found",
       "sources": [],
-      "note": ""
+      "note": "Purcell arrangement by Britten not substituted for the Gal edition.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal Purcell: \\'No, resistance is but vain\\' sheet music publisher buy"
     },
     {
       "id": "177",
       "title": "Schubert: Divertissement (E Minor)",
-      "status": "pending",
+      "status": "not_found",
       "sources": [],
-      "note": ""
+      "note": "No exact current purchase, publisher-issued download or hire product confirmed in the checked title/opus/instrumentation searches. Historical publisher and availability information retained; this is not a claim that the work is unavailable.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal Schubert: Divertissement (E Minor) sheet music publisher buy"
     },
     {
       "id": "178",
       "title": "Schubert: Two Marches Militaires",
-      "status": "pending",
+      "status": "not_found",
       "sources": [],
-      "note": ""
+      "note": "No exact current purchase, publisher-issued download or hire product confirmed in the checked title/opus/instrumentation searches. Historical publisher and availability information retained; this is not a claim that the work is unavailable.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal Schubert: Two Marches Militaires sheet music publisher buy"
     },
     {
       "id": "33",
       "title": "Sonata for Piano",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.prestomusic.com/sheet-music/products/7251889--gal-h-piano-sonata-op-28"
+      ],
+      "note": "Piano Sonata op.28, EE5296 printed edition. No other format is implied.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "169",
       "title": "Weisen aus Alt-Wien (Tunes from old Vienna)",
-      "status": "pending",
+      "status": "not_found",
       "sources": [],
-      "note": ""
+      "note": "No exact current purchase, publisher-issued download or hire product confirmed in the checked title/opus/instrumentation searches. Historical publisher and availability information retained; this is not a claim that the work is unavailable.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal Weisen aus Alt-Wien sheet music publisher buy"
     },
     {
       "id": "5",
       "title": "Serbische Weisen (Serbian Melodies)",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.heinrichshofen.de/de/ensemble-und-orchester/orchester/zupforchester/498/serbische-weisen"
+      ],
+      "note": "Op.3c mandolin orchestra arrangement: Heinrichshofen1744 printed score; distinct from piano duet and original orchestra. No other format is implied.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "14",
       "title": "Vier Miniaturen (Four Miniatures)",
-      "status": "pending",
+      "status": "not_found",
       "sources": [],
-      "note": ""
+      "note": "Matching Miniaturen op.10b Trekel parts found, but a complete score/set product was not confirmed; individual instrument parts not substituted.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal Vier Miniaturen op 10b sheet music publisher buy"
     },
     {
       "id": "66",
       "title": "Concerto for piano and orchestra",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.breitkopf.com/en/work/2569/piano-concerto-op.-57"
+      ],
+      "note": "Op.57: printed piano reduction EB8901, ISMN9790004185292,100 pages; orchestral materials separately for hire. Op.57 orchestral hire material MM2319311 on request; purchase option on same page is piano reduction. No other format is implied.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "67",
       "title": "Two Sonatinas for Piano",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.halleonard.com/product/49012984/gal-two-sonatinas-pft"
+      ],
+      "note": "Op.58 two piano sonatinas, ED8848: printed special-import/backorder edition. Another retailer incorrectly calls the second sonatina A major; original A minor retained. No other format is implied.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "70",
       "title": "Improvisation, Variations and Finale on a Theme by Mozart",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.demond.de/hans-gal-improvisation-variationen-und-finale-ueber-ein-thema-von-mozart-op-60-fuer-mandoline-violine-viola-und-violoncello-614996"
+      ],
+      "note": "Op.60 mandolin/violin/viola/cello, T6026: score and parts order option; not the string-quartet version60b. No other format is implied.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "63",
       "title": "Concertino for organ and string orchestra",
-      "status": "pending",
+      "status": "not_found",
       "sources": [],
-      "note": ""
+      "note": "No exact current purchase, publisher-issued download or hire product confirmed in the checked title/opus/instrumentation searches. Historical publisher and availability information retained; this is not a claim that the work is unavailable.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal Concertino for organ and string orchestra op 55 sheet music publisher buy"
     },
     {
       "id": "48",
       "title": "Burleske (Burlesque)",
-      "status": "pending",
+      "status": "not_found",
       "sources": [],
-      "note": ""
+      "note": "No exact current purchase, publisher-issued download or hire product confirmed in the checked title/opus/instrumentation searches. Historical publisher and availability information retained; this is not a claim that the work is unavailable.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal Burleske op 42b sheet music publisher buy"
     },
     {
       "id": "27",
       "title": "Divertimento for Small Orchestra",
-      "status": "pending",
+      "status": "not_found",
       "sources": [],
-      "note": ""
+      "note": "No exact current purchase, publisher-issued download or hire product confirmed in the checked title/opus/instrumentation searches. Historical publisher and availability information retained; this is not a claim that the work is unavailable.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal Divertimento for Small Orchestra op 22b sheet music publisher buy"
     },
     {
       "id": "101",
       "title": "Sinfonietta No. 2 (E Minor) for mandolin orchestra",
-      "status": "pending",
+      "status": "not_found",
       "sources": [],
-      "note": ""
+      "note": "Trekel R385/P is Sinfonietta No.1 op.81, not this second Sinfonietta op.86. Rejected.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal Sinfonietta No. 2 (E Minor) for mandolin orchestra op 86 sheet music publisher buy"
     },
     {
       "id": "185",
       "title": "Monsigny: Das Lebenselixir",
-      "status": "pending",
+      "status": "not_found",
       "sources": [],
-      "note": ""
+      "note": "No exact current purchase, publisher-issued download or hire product confirmed in the checked title/opus/instrumentation searches. Historical publisher and availability information retained; this is not a claim that the work is unavailable.",
+      "checked_date": "2026-10-02",
+      "checked_query": "Hans Gal Monsigny: Das Lebenselixir sheet music publisher buy"
     }
   ],
   "recordings": [
@@ -1728,7 +2183,8 @@
       "sources": [
         "https://toccataclassics.com/product/gal-music-for-cello/"
       ],
-      "note": "Exact release, catalogue number and named performers matched. Label product page offers CD, MP3/FLAC downloads and audio excerpts. Prices and stock may change."
+      "note": "Exact release, catalogue number and named performers matched. Label product page offers CD, MP3/FLAC downloads and audio excerpts. Prices and stock may change.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "59",
@@ -1875,7 +2331,8 @@
       "sources": [
         "https://toccataclassics.com/product/hans-gal-chamber-music-clarinet/"
       ],
-      "note": "Exact release, catalogue number and named performers matched. Label product page offers CD, MP3/FLAC downloads and audio excerpts. Prices and stock may change."
+      "note": "Exact release, catalogue number and named performers matched. Label product page offers CD, MP3/FLAC downloads and audio excerpts. Prices and stock may change.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "76",
@@ -1905,7 +2362,8 @@
       "sources": [
         "https://toccataclassics.com/product/has-gal-chamber-music-three/"
       ],
-      "note": "Exact release, catalogue number and named performers matched. Label product page offers CD, MP3/FLAC downloads and audio excerpts. Prices and stock may change."
+      "note": "Exact release, catalogue number and named performers matched. Label product page offers CD, MP3/FLAC downloads and audio excerpts. Prices and stock may change.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "79",
@@ -1985,7 +2443,8 @@
       "sources": [
         "https://toccataclassics.com/product/hans-gal-music-for-voices-volume-two/"
       ],
-      "note": "Exact release, catalogue number and named performers matched. Label product page offers CD, MP3/FLAC downloads and audio excerpts. Prices and stock may change."
+      "note": "Exact release, catalogue number and named performers matched. Label product page offers CD, MP3/FLAC downloads and audio excerpts. Prices and stock may change.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "88",
@@ -2014,7 +2473,8 @@
       "sources": [
         "https://toccataclassics.com/product/hans-gal-music-for-viola-volume-two/"
       ],
-      "note": "Exact release, catalogue number and named performers matched. Label product page offers CD, MP3/FLAC downloads and audio excerpts. Prices and stock may change."
+      "note": "Exact release, catalogue number and named performers matched. Label product page offers CD, MP3/FLAC downloads and audio excerpts. Prices and stock may change.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "91",
@@ -2043,7 +2503,8 @@
       "sources": [
         "https://toccataclassics.com/product/hans-gal-music-for-voices-volume-three/"
       ],
-      "note": "Exact release, catalogue number and named performers matched. Label product page offers CD, MP3/FLAC downloads and audio excerpts. Prices and stock may change."
+      "note": "Exact release, catalogue number and named performers matched. Label product page offers CD, MP3/FLAC downloads and audio excerpts. Prices and stock may change.",
+      "checked_date": "2026-10-01"
     },
     {
       "id": "94",
