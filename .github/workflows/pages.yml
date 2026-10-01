@@ -15,8 +15,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
-      - name: Fetch and verify public media
-        run: python scripts/import_public_assets.py
       - uses: actions/configure-pages@v5
       - uses: actions/setup-python@v5
         with:
