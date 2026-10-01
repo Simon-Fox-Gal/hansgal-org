@@ -803,9 +803,11 @@
     {
       "id": "119",
       "title": "Suite for viola and piano or orchestra",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "partially_verified",
+      "sources": [
+        "https://www.boosey.com/publications/sheet-music/Hans-Gal-Suite/104435"
+      ],
+      "note": "Suite for viola and piano, ISMN 9790221199362: publisher explicitly offers Digital Download. Orchestra version and printed edition remain to be verified."
     },
     {
       "id": "120",
@@ -943,9 +945,11 @@
     {
       "id": "3",
       "title": "Serbische Weisen (Serbian Melodies)",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://www.universaledition.com/Serbische-Weisen/P0049702"
+      ],
+      "note": "UE5980, Op.3, piano four hands: exact print-on-demand playing score. Publisher indexed product data verified; direct automated read returns 403. No digital edition verified."
     },
     {
       "id": "144",
@@ -1554,9 +1558,11 @@
     {
       "id": "58",
       "title": "Hans G\u00e1l: Music for Cello",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://toccataclassics.com/product/gal-music-for-cello/"
+      ],
+      "note": "Exact release, catalogue number and named performers matched. Label product page offers CD, MP3/FLAC downloads and audio excerpts. Prices and stock may change."
     },
     {
       "id": "59",
@@ -1638,9 +1644,12 @@
     {
       "id": "73",
       "title": "G\u00e1l Concerto for Piano & Orchestra",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "partially_verified",
+      "sources": [
+        "https://www.avie-records.com/releases/gal-mozart-piano-concertos/",
+        "https://orcd.co/av2358"
+      ],
+      "note": "Label catalogue and performers matched. Official album link provides Download and Play choices with matching tracks. A current physical-CD retailer product page remains to be verified."
     },
     {
       "id": "74",
@@ -1652,9 +1661,11 @@
     {
       "id": "75",
       "title": "Hans G\u00e1l: Chamber Music For Clarinet",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://toccataclassics.com/product/hans-gal-chamber-music-clarinet/"
+      ],
+      "note": "Exact release, catalogue number and named performers matched. Label product page offers CD, MP3/FLAC downloads and audio excerpts. Prices and stock may change."
     },
     {
       "id": "76",
@@ -1666,23 +1677,31 @@
     {
       "id": "77",
       "title": "Hans G\u00e1l: Concertino for Cello & Strings, Solo Cello Sonata, Solo Cello Suite",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "partially_verified",
+      "sources": [
+        "https://www.avie-records.com/releases/concertino-for-cello-and-strings-solo-cello-sonata-solo-cello-suite/",
+        "https://orcd.co/av2380"
+      ],
+      "note": "Label catalogue and performers matched. Official album link provides Download and Play choices with matching tracks. A current physical-CD retailer product page remains to be verified."
     },
     {
       "id": "78",
       "title": "Hans G\u00e1l: Chamber Music, Volume Three",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://toccataclassics.com/product/has-gal-chamber-music-three/"
+      ],
+      "note": "Exact release, catalogue number and named performers matched. Label product page offers CD, MP3/FLAC downloads and audio excerpts. Prices and stock may change."
     },
     {
       "id": "79",
       "title": "G\u00e1l - Shostakovich",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "partially_verified",
+      "sources": [
+        "https://www.avie-records.com/releases/gal-shostakovich-piano-trios/",
+        "https://orcd.co/av2390"
+      ],
+      "note": "Label catalogue and performers matched. Official album link provides Download and Play choices with matching tracks. A current physical-CD retailer product page remains to be verified."
     },
     {
       "id": "81",
@@ -1729,9 +1748,11 @@
     {
       "id": "87",
       "title": "Hans G\u00e1l: Music for Voices: Volume 2",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://toccataclassics.com/product/hans-gal-music-for-voices-volume-two/"
+      ],
+      "note": "Exact release, catalogue number and named performers matched. Label product page offers CD, MP3/FLAC downloads and audio excerpts. Prices and stock may change."
     },
     {
       "id": "88",
@@ -1750,9 +1771,11 @@
     {
       "id": "90",
       "title": "Hans G\u00e1l: Music for Viola, Volume Two",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://toccataclassics.com/product/hans-gal-music-for-viola-volume-two/"
+      ],
+      "note": "Exact release, catalogue number and named performers matched. Label product page offers CD, MP3/FLAC downloads and audio excerpts. Prices and stock may change."
     },
     {
       "id": "91",
@@ -1771,9 +1794,11 @@
     {
       "id": "93",
       "title": "Hans G\u00e1l: Music for Voices, Volume Three",
-      "status": "pending",
-      "sources": [],
-      "note": ""
+      "status": "verified",
+      "sources": [
+        "https://toccataclassics.com/product/hans-gal-music-for-voices-volume-three/"
+      ],
+      "note": "Exact release, catalogue number and named performers matched. Label product page offers CD, MP3/FLAC downloads and audio excerpts. Prices and stock may change."
     },
     {
       "id": "94",

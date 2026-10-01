@@ -131,6 +131,11 @@ def make_site(base_path='', review=True, language='en'):
         markup=markup.replace('<html xmlns=',f'<html lang="{language}" xmlns=').replace('content="hu"',f'content="{language}"')
         title_match=re.search(r'<div class="title">(.*?)</div>',markup,re.S)
         page_title=html.unescape(re.sub('<[^>]*>','',title_match[1])) if title_match else 'Hans Gál Society'
+        match=re.match(r'^/(works/show|recordings|hansgal|news|booksandarticles|publishers|bibliography|hansgalsociety)/(\d+)/?$',route)
+        if match:
+            table='catalogue' if match[1]=='works/show' else 'recording' if match[1]=='recordings' else 'menu'
+            page_title=html.unescape(re.sub('<[^>]*>','',by_id[table].get(match[2],{}).get('title') or page_title))
+        if route=='/score-basket/':page_title='Ihr Notenkorb' if language=='de' else 'Your score basket'
         markup=markup.replace('<title></title>','<title>'+html.escape(page_title)+' · Hans Gál</title>',1)
         head='<meta name="hansgal-base" content="'+base_path+'" />\n<link rel="canonical" href="https://hansgal.org'+html.escape(localized,quote=True)+'" />\n'
         for lang,prefix in [('en',''),('de','/de'),('x-default','')]:head+='<link rel="alternate" hreflang="'+lang+'" href="https://hansgal.org'+html.escape(prefix+route,quote=True)+'" />\n'

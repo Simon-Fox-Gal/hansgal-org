@@ -33,7 +33,7 @@ Each verified milestone receives a commit. This file records resume state; priva
 - Existing private CMS published with private source commit `b268e7e8e0ff25b0d70f36b0cc5f38c2d4db51ce`. Added authenticated durable R2 uploads, file signature checks, bounded 25 MB uploads, private previews, immutable attachment references in requests, and HTML source/rendered-preview modes.
 - CMS validation PASS: TypeScript/build; existing workflow integration; upload byte/SHA integrity, identity/origin rejection, spoofed/unsupported-file rejection, durable request attachment references. Browser paste PASS locally and hosted; local source/preview round trip preserved exact text. Existing approval and nightly workflow retained. No real approval emails or payments sent.
 
-### Current unpublished work
+### Foundation milestone (now published; historical implementation notes)
 
 - Bilingual route foundation creates English and `/de` equivalents, metadata, language links and remembered entry preference. Authored content remains in separate fields; untranslated fields still fall back to English, so bilingual publication is NOT complete.
 - All 179 catalogue German titles and descriptions populated. Original-language provenance uncertainties are explicitly listed in `docs/title-review.json`; these display translations are not claims of newly discovered German originals.
@@ -68,3 +68,13 @@ Continue translation and original-title provenance review, score-basket verifica
 - CMS source `5dfd9438a984c54e853d0665ac984d15e265920f`: new-record proposals for all 16 collections, visible uploads and screenshot paste at the top of record editing, preserved attachment references into review dialogs, bilingual controls, and sandboxed Browse and comment preview. Local browser selection/navigation/new draft/paste PASS; creation, upload and approval integration PASS. Deployment in progress.
 - Public feature build PASS: catalogue 99 baseline scenarios plus edited-data cases, 78 recording destinations / 6162 links, 1652 preserved source rows, bilingual routes, approved score bytes, independently decoded two-file ZIP. Publishing the score basket and language framework as a review milestone; full German prose and purchase audit remain in progress, not complete.
 - German photo captions, audio descriptions and movement labels, plus seven biography sections, added. Coverage regenerated from current content; embedded popup texts remain explicitly pending.
+
+### 1 October: hosted features and catalogue translation milestone
+
+- Public PR #3 merged at `948a8a891993c70539f5bea5b820e0acd14f52a7`; Pages run 36900985098 succeeded. Hosted recording regression PASS for 78 destinations and 6,162 links. Hosted score PDF SHA-256 matches the approved original; add-to-basket, £10 suggestion, £0 download and English/German basket selection PASS. PayPal handoff reached the official service but its CAPTCHA prevented further hosted inspection; no payment made.
+- Private CMS deployment of `5dfd9438a984c54e853d0665ac984d15e265920f` succeeded. Hosted Browse preview and page-comment dialog PASS; New record and bilingual fields visible. Local paste retains the attachment into the review dialog. All 16 collections pass creation/overwrite-rejection tests. New-record default fields are included in the follow-up source fix.
+- Catalogue German fields now cover titles, descriptions, movements, orchestration, availability, other versions, work notes and performance details. Existing bilingual Das Lied der Nacht libretto retained. Translated quotations labelled. Historic availability wording is translated, not represented as a new stock check.
+- Original source truncations in works 154, 157 and 169, and contradictory Canadian geography in work 12, retained and flagged in translation coverage. No invented corrections.
+- Eleven exact purchase/release matches recorded with evidence: nine recordings and two works. Format-specific links added only where verified. Remaining purchase audits are pending.
+- Page titles now identify the localized work/recording/page. Basket custom donation persists across language switching for the same selection.
+- Build, catalogue tests, route/asset/relationship verification and source-preservation tests PASS. Original 1,652 rows and pre-existing English fields retained; authorized German display fields updated. Full-site translation remains incomplete: recording text, remaining long page prose, embedded popups and standalone captions require work. Coverage is not a claim of editorial approval of uncertain source titles.
