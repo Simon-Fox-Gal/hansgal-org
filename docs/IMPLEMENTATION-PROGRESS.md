@@ -50,7 +50,7 @@ Each verified milestone receives a commit. This file records resume state; priva
 - Ambiguous original-language work titles: inventory before translating; flag unresolved titles rather than inventing originals.
 - Exact purchase formats and editions: verify externally; retain unavailable statuses explicitly.
 
-## Resume next
+## Historical resume note (superseded by the latest checkpoint below)
 
 Continue translation and original-title provenance review, score-basket verification, complete purchase-link audit, bilingual CMS verification, then publish verified remaining milestones. Initial plan checkpoint: `535595b78bc7069716870579c5bb61070119e31f`. Git CLI writes are unavailable; use the connected GitHub API for checkpoints. Public source checkout is `work/hansgal-org`; private CMS checkout is `work/cms` in this mission workspace. Never copy the private CMS source into the public repository.
 
@@ -148,3 +148,12 @@ Continue translation and original-title provenance review, score-basket verifica
 - Label-service limitations retained: Melba no longer processes direct purchases; use verified Berkshire CD offer and label listening previews. Riverdale download delivery is by emailed link after ordering. Cybele links to external download/streaming services, with downstream7digital automated fetch blocked. Cavalli blocks automated access and Pan Classics failed TLS. The exhibition book listing including only one disc was not substituted for the original two-CD edition.
 - Source discrepancies (EDA32 pianist, mandolin opus, recorder/flute, performer instrument and release dates) recorded for editorial review; original historical fields retained exactly.
 - PASS: build; all78 destinations and6162 thumbnail links; all1652 original rows/English fields; score PDF/ZIP integrity; German completion;1270 routes,1283 assets and230 audio references. Full work-level publisher/distributor audit remains in progress.
+
+### 2 October: completed work audit and final publication checkpoint
+
+- All179 works reviewed:71 have a verified explicitly described score/download/hire option,31 have a partial publisher/edition match or limited format,77 have no exact current offer confirmed. All78 recordings remain audited (47 verified,24 partial,7 not found). No pending audit rows remain. `purchase-audit.json` contains evidence, search terms for unmatched works, format limits and rejected near-matches. Not-found does not mean unavailable.
+- Added direct score, digital-score and hire links while preserving every original catalogue field except the explicitly requested German display fields. Partial sets, study scores, piano reductions and conflicting arrangements are documented. The four British folk songs have separate print/download products; all four Elizabethan madrigals have printed products. No unrelated arrangement was substituted.
+- Final local checks PASS: 1652 original rows and English fields preserved, no omissions or duplicate IDs; 1270 routes,1283 assets,230 audio references; all78 recording destinations/6162 thumbnails; all293 structured purchase/listening URLs have audit evidence and render in both languages;99 catalogue baseline cases plus edited-data behavior; language state; donation rules and PDF/ZIP integrity; completed German inventory. Purchase audit regression added to existing CI without new permissions.
+- CMS feature deployment remains the verified private deployment with New record in all16 categories, authenticated Browse/comment proxy, durable private uploads and screenshot paste, media/file previews, HTML source/render controls and compact English/German tabs. Source commit2976c2c5aa57f0ca276aba042c240e3aca879d69; deployment appgdep_6abea1d92fa48191ac8c607884c482ad. Authentication, approval choices and nightly workflow preserved.
+- Public PR12 recording checkpoint deployed successfully at4e3c5e3b796e7149c1537adaeeb053ef03355ba0 (Pages36922726095). This final work-audit checkpoint is ready for publication and hosted readback; report its merge/deployment result in the final task response.
+- Remaining editorial decisions are documented original-title/source factual ambiguities and unconfirmed external editions/formats; no feature implementation remains pending. Original hosting/DNS and excluded private material remain untouched. No payment or real approval email was sent.
