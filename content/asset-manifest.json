@@ -7695,5 +7695,15 @@
     "path": "/storage/scores/hans-gal-three-vocal-quartets-1934.pdf",
     "bytes": 1730587,
     "sha256": "f23c09702805478f89c8a4d06e8bf47e70b81cd537240fbc0b0ab240b672714c"
+  },
+  {
+    "path": "/storage/recordingcovers/eisnacht-gen26948.jpg",
+    "bytes": 252113,
+    "sha256": "6154bafa6f7ad2b1247d3bee697088e2d2074decc8f6c3c0dad556af2f9f5e19"
+  },
+  {
+    "path": "/storage/recordingcovers/project-paloma-volume-1.jpg",
+    "bytes": 69997,
+    "sha256": "1410da8c2dd86ced41015f5fc8eff51740300b26cfbe47a1441f097bc2b5e6ca"
   }
 ]

@@ -157,3 +157,9 @@ Continue translation and original-title provenance review, score-basket verifica
 - CMS feature deployment remains the verified private deployment with New record in all16 categories, authenticated Browse/comment proxy, durable private uploads and screenshot paste, media/file previews, HTML source/render controls and compact English/German tabs. Source commit2976c2c5aa57f0ca276aba042c240e3aca879d69; deployment appgdep_6abea1d92fa48191ac8c607884c482ad. Authentication, approval choices and nightly workflow preserved.
 - Public PR12 recording checkpoint deployed successfully at4e3c5e3b796e7149c1537adaeeb053ef03355ba0 (Pages36922726095). This final work-audit checkpoint is ready for publication and hosted readback; report its merge/deployment result in the final task response.
 - Remaining editorial decisions are documented original-title/source factual ambiguities and unconfirmed external editions/formats; no feature implementation remains pending. Original hosting/DNS and excluded private material remain untouched. No payment or real approval email was sent.
+
+## Editorial update — 2 October 2026
+
+- German display titles for twelve established English-original works now put the English original first and the German translation in parentheses. Source English titles remain untouched.
+- Added Eisnacht (GEN26948, Pia Viola Buchert and Tatjana Dravenau) and Project Paloma, Volume 1 (Emily Beynon and Andrew West), with bilingual details, complete tracks/timings, sourced reviews, official cover artwork and checked purchase/listening links. Linked Gál op. 33 and op. 64 respectively; op. 64 is explicitly solo piano.
+- Exact comparison with the preceding public revision confirms that existing recording rows and relationships are unchanged. All catalogue, build, route, translation, recording-link, purchase-link and score integrity checks pass.

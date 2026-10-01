@@ -21854,6 +21854,66 @@
       "characters": 17,
       "status": "translated",
       "note": ""
+    },
+    {
+      "table": "recording",
+      "id": "98",
+      "row": 78,
+      "field": "title",
+      "source_sha256": "e9d4f360ee58f67beeb04dc224d03528edf058d577f99efda2549c53cb862ea5",
+      "characters": 48,
+      "status": "translated",
+      "note": ""
+    },
+    {
+      "table": "recording",
+      "id": "98",
+      "row": 78,
+      "field": "detail",
+      "source_sha256": "d9d713940a963edbcb31b25b2145c6bc4009a297848dc4ff4180d5691d0565fc",
+      "characters": 163,
+      "status": "translated",
+      "note": ""
+    },
+    {
+      "table": "recording",
+      "id": "98",
+      "row": 78,
+      "field": "review",
+      "source_sha256": "1872402edcb433d3c1ce54bd08a110720f438c3cbd40e855bf79da25e57a6e0e",
+      "characters": 4482,
+      "status": "translated",
+      "note": ""
+    },
+    {
+      "table": "recording",
+      "id": "99",
+      "row": 79,
+      "field": "title",
+      "source_sha256": "22d0612ade190a0107c23af43b3f6924acbac177157c6bf9c5cc7777fa45c640",
+      "characters": 55,
+      "status": "translated",
+      "note": ""
+    },
+    {
+      "table": "recording",
+      "id": "99",
+      "row": 79,
+      "field": "detail",
+      "source_sha256": "e6347b0dd2065ac3f0c42a22da230c9bcbc778e432a8027668f5bf593eb5f1a5",
+      "characters": 173,
+      "status": "translated",
+      "note": ""
+    },
+    {
+      "table": "recording",
+      "id": "99",
+      "row": 79,
+      "field": "review",
+      "source_sha256": "a61e7f0c6fb731af8ce229711179826290d57a9b58b63ab4d4d965e01fe7ab36",
+      "characters": 3770,
+      "status": "translated",
+      "note": ""
     }
   ],
   "additional_pending": [
