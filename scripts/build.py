@@ -1,6 +1,6 @@
 """Render the Hans Gál replica as static files. No database or web backend."""
 from __future__ import annotations
-import argparse, copy, hashlib, html, json, pathlib, re, shutil
+import argparse, copy, hashlib, html, json, pathlib, re, shutil, subprocess
 from collections import OrderedDict
 from urllib.parse import urlsplit, unquote, quote
 from jinja2 import Environment, FileSystemLoader, ChainableUndefined
@@ -99,7 +99,8 @@ def make_site(base_path='', review=True):
         markup=markup.replace('content="index,follow"','content="'+robots+'"')
         # Preserve path identity for eventual production canonical URLs.
         head='<meta name="hansgal-base" content="'+base_path+'" />\n<link rel="canonical" href="https://hansgal.org'+html.escape(route,quote=True)+'" />\n'
-        markup=markup.replace('</head>',head+'</head>')
+        head+='<script defer src="'+base_path+'/app/editorial-bridge.js"></script>\n'
+        markup=markup.replace('</head>',head+'</head>',1)
         return markup
 
     def save(route,markup,template='generated',fragment=False):
@@ -117,7 +118,7 @@ def make_site(base_path='', review=True):
         save(route,env.get_template('default-layout.html').render(**c),template)
 
     page('/','main')
-    page('/hansgal','hansgal_index')
+    page('/hansgal','hansgal_index',biography_menu=by_id['menu'],biography_extra=[r for r in tables['menu'] if r['mainmenu']=='hansgal' and r['hidden']!='yes' and r['id'] not in ['1', '2', '9', '11', '27', '28', '29', '38', '39', '40', '41', '42', '43', '44', '45', '46', '47', '48', '49', '50', '51', '52', '53', '54', '55', '56']])
     for menu in tables['menu']:
         section=menu['mainmenu']; id=menu['id']; route=f'/{section}/{id}'
         c={k:stripcslashes(menu[k]) for k in ('title','lead','body')}
@@ -132,6 +133,12 @@ def make_site(base_path='', review=True):
         page(route,'hansgal' if section=='hansgal' else 'staticpage',**c)
     # The initial ordering is captured from the source rather than guessed from a locale.
     order=load('catalogue-order') if (ROOT/'content/catalogue-order.json').exists() else [r['id'] for r in tables['catalogue']]
+    basis=load('catalogue-orders')['orders'].get('__basis')
+    current=[[r.get(k) for k in ('id','opus_no','title','description','year_of_composition','publisher')] for r in tables['catalogue']]
+    if basis != current:
+        payload=json.dumps({'data':tables,'accent':load('accent-map'),'orders':load('catalogue-orders')['orders']})
+        result=subprocess.run(['node',str(ROOT/'scripts/catalogue-order.cjs')],input=payload,text=True,encoding='utf8',capture_output=True,check=True)
+        order=json.loads(result.stdout)
     catalogue=[by_id['catalogue'][id] for id in order]
     page('/works','works',catalogues=catalogue,works_lead=props['works_lead']['value'],genres=[r for r in tables['category'] if r['type']=='Genre'],instruments=[r for r in tables['category'] if r['type']=='Instrument'])
     for work in tables['catalogue']:
@@ -185,4 +192,3 @@ def make_site(base_path='', review=True):
 if __name__=='__main__':
     p=argparse.ArgumentParser();p.add_argument('--base-path',default='');p.add_argument('--production',action='store_true')
     args=p.parse_args();make_site(args.base_path,not args.production)
-

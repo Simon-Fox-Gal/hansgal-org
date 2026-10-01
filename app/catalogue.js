@@ -51,7 +51,10 @@
     const columns=['opus_no','title','description','year_of_composition','publisher'];
     const column=columns.includes(form.ordercolumn)?form.ordercolumn:'opus_no';
     const direction=form.orderby==='DESC'?'DESC':'ASC';
-    const rank=new Map((orders[column+'-'+direction]||[]).map((id,i)=>[id,i]));
+    const basis=orders.__basis;
+    const keys=['id','opus_no','title','description','year_of_composition','publisher'];
+    const unchanged=!basis || (basis.length===data.catalogue.length && basis.every((row,i)=>keys.every((k,j)=>(data.catalogue[i][k]??null)===(row[j]??null))));
+    const rank=new Map((unchanged?(orders[column+'-'+direction]||[]):[]).map((id,i)=>[id,i]));
     const collator=new Intl.Collator('en',{sensitivity:'base'});
     const sign=direction==='DESC'?-1:1;
     const filterCategory=String(form.genre||form.instrument||'');

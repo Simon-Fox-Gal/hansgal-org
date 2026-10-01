@@ -26,7 +26,7 @@ Family tree &nbsp;<a href="/hansgal/12"><img width="36" height="36" alt="" src="
 									<td style="width: 280px; padding: 4px 0 4px 0;">
 										<div class="mi" style="float: right;">
 											<div class="l hansgal"></div>
-											<a href="/hansgal/1" class="c hansgal">1. EARLY LIFE</a>
+											{% if biography_menu['1'].hidden != 'yes' %}<a href="/hansgal/1" class="c hansgal">{{ biography_menu['1'].title }}</a>{% endif %}
 											<div class="r hansgal"></div>
 										</div>
 									</td>
@@ -35,7 +35,7 @@ Family tree &nbsp;<a href="/hansgal/12"><img width="36" height="36" alt="" src="
 									<td style="width: 280px; padding: 4px 0 4px 0;">
 										<div class="mi" style="float: right;">
 											<div class="l hansgal"></div>
-											<a href="/hansgal/2" class="c hansgal">2. MUSICAL EDUCATION</a>
+											{% if biography_menu['2'].hidden != 'yes' %}<a href="/hansgal/2" class="c hansgal">{{ biography_menu['2'].title }}</a>{% endif %}
 											<div class="r hansgal"></div>
 										</div>
 									</td>
@@ -44,7 +44,7 @@ Family tree &nbsp;<a href="/hansgal/12"><img width="36" height="36" alt="" src="
 									<td style="width: 280px; padding: 4px 0 4px 0;">
 										<div class="mi" style="float: right;">
 											<div class="l hansgal"></div>
-											<a href="/hansgal/9" class="c hansgal">3. EARLY WORKS</a>
+											{% if biography_menu['9'].hidden != 'yes' %}<a href="/hansgal/9" class="c hansgal">{{ biography_menu['9'].title }}</a>{% endif %}
 											<div class="r hansgal"></div>
 										</div>
 									</td>
@@ -53,7 +53,7 @@ Family tree &nbsp;<a href="/hansgal/12"><img width="36" height="36" alt="" src="
 									<td style="width: 280px; padding: 4px 0 4px 0;">
 										<div class="mi" style="float: right;">
 											<div class="l hansgal"></div>
-											<a href="/hansgal/11" class="c hansgal">4. THE FIRST WORLD WAR</a>
+											{% if biography_menu['11'].hidden != 'yes' %}<a href="/hansgal/11" class="c hansgal">{{ biography_menu['11'].title }}</a>{% endif %}
 											<div class="r hansgal"></div>
 										</div>
 									</td>
@@ -62,7 +62,7 @@ Family tree &nbsp;<a href="/hansgal/12"><img width="36" height="36" alt="" src="
 									<td style="width: 280px; padding: 4px 0 4px 0;">
 										<div class="mi" style="float: right;">
 											<div class="l hansgal"></div>
-											<a href="/hansgal/27" class="c hansgal">5. 'Arzt der Sobeide'</a>
+											{% if biography_menu['27'].hidden != 'yes' %}<a href="/hansgal/27" class="c hansgal">{{ biography_menu['27'].title }}</a>{% endif %}
 											<div class="r hansgal"></div>
 										</div>
 									</td>
@@ -71,7 +71,7 @@ Family tree &nbsp;<a href="/hansgal/12"><img width="36" height="36" alt="" src="
 									<td style="width: 280px; padding: 4px 0 4px 0;">
 										<div class="mi" style="float: right;">
 											<div class="l hansgal"></div>
-											<a href="/hansgal/28" class="c hansgal">6. Post war recovery</a>
+											{% if biography_menu['28'].hidden != 'yes' %}<a href="/hansgal/28" class="c hansgal">{{ biography_menu['28'].title }}</a>{% endif %}
 											<div class="r hansgal"></div>
 										</div>
 									</td>
@@ -80,7 +80,7 @@ Family tree &nbsp;<a href="/hansgal/12"><img width="36" height="36" alt="" src="
 									<td style="width: 280px; padding: 4px 0 4px 0;">
 										<div class="mi" style="float: right;">
 											<div class="l hansgal"></div>
-											<a href="/hansgal/29" class="c hansgal">7. Marriage and family</a>
+											{% if biography_menu['29'].hidden != 'yes' %}<a href="/hansgal/29" class="c hansgal">{{ biography_menu['29'].title }}</a>{% endif %}
 											<div class="r hansgal"></div>
 										</div>
 									</td>
@@ -89,7 +89,7 @@ Family tree &nbsp;<a href="/hansgal/12"><img width="36" height="36" alt="" src="
 									<td style="width: 280px; padding: 4px 0 4px 0;">
 										<div class="mi" style="float: right;">
 											<div class="l hansgal"></div>
-											<a href="/hansgal/38" class="c hansgal">8. 'Die Heilige Ente'</a>
+											{% if biography_menu['38'].hidden != 'yes' %}<a href="/hansgal/38" class="c hansgal">{{ biography_menu['38'].title }}</a>{% endif %}
 											<div class="r hansgal"></div>
 										</div>
 									</td>
@@ -98,7 +98,7 @@ Family tree &nbsp;<a href="/hansgal/12"><img width="36" height="36" alt="" src="
 									<td style="width: 280px; padding: 4px 0 4px 0;">
 										<div class="mi" style="float: right;">
 											<div class="l hansgal"></div>
-											<a href="/hansgal/39" class="c hansgal">9. 'Das Lied der Nacht'</a>
+											{% if biography_menu['39'].hidden != 'yes' %}<a href="/hansgal/39" class="c hansgal">{{ biography_menu['39'].title }}</a>{% endif %}
 											<div class="r hansgal"></div>
 										</div>
 									</td>
@@ -107,7 +107,7 @@ Family tree &nbsp;<a href="/hansgal/12"><img width="36" height="36" alt="" src="
 									<td style="width: 280px; padding: 4px 0 4px 0;">
 										<div class="mi" style="float: right;">
 											<div class="l hansgal"></div>
-											<a href="/hansgal/40" class="c hansgal">10. The 1920s</a>
+											{% if biography_menu['40'].hidden != 'yes' %}<a href="/hansgal/40" class="c hansgal">{{ biography_menu['40'].title }}</a>{% endif %}
 											<div class="r hansgal"></div>
 										</div>
 									</td>
@@ -116,7 +116,7 @@ Family tree &nbsp;<a href="/hansgal/12"><img width="36" height="36" alt="" src="
 									<td style="width: 280px; padding: 4px 0 4px 0;">
 										<div class="mi" style="float: right;">
 											<div class="l hansgal"></div>
-											<a href="/hansgal/41" class="c hansgal">11. Recognition</a>
+											{% if biography_menu['41'].hidden != 'yes' %}<a href="/hansgal/41" class="c hansgal">{{ biography_menu['41'].title }}</a>{% endif %}
 											<div class="r hansgal"></div>
 										</div>
 									</td>
@@ -125,7 +125,7 @@ Family tree &nbsp;<a href="/hansgal/12"><img width="36" height="36" alt="" src="
 									<td style="width: 280px; padding: 4px 0 4px 0;">
 										<div class="mi" style="float: right;">
 											<div class="l hansgal"></div>
-											<a href="/hansgal/42" class="c hansgal">12. Scholarship</a>
+											{% if biography_menu['42'].hidden != 'yes' %}<a href="/hansgal/42" class="c hansgal">{{ biography_menu['42'].title }}</a>{% endif %}
 											<div class="r hansgal"></div>
 										</div>
 									</td>
@@ -134,12 +134,12 @@ Family tree &nbsp;<a href="/hansgal/12"><img width="36" height="36" alt="" src="
 									<td style="width: 280px; padding: 4px 0 4px 0;">
 										<div class="mi" style="float: right;">
 											<div class="l hansgal"></div>
-											<a href="/hansgal/43" class="c hansgal">13. Appointment in Mainz</a>
+											{% if biography_menu['43'].hidden != 'yes' %}<a href="/hansgal/43" class="c hansgal">{{ biography_menu['43'].title }}</a>{% endif %}
 											<div class="r hansgal"></div>
 										</div>
 									</td>
 								</tr>
-																										</table>
+																										{% for item in biography_extra %}<div class="mi"><div class="l hansgal"></div><a class="c hansgal" href="/hansgal/{{ item.id }}">{{ item.title }}</a><div class="r hansgal"></div></div>{% endfor %}</table>
 							</div>
 							<div style="width: 280px; float: left; margin-left: 15px;">
 							<table border="0" cellpadding="2" cellspacing="0" style="width: 280px;">
@@ -147,7 +147,7 @@ Family tree &nbsp;<a href="/hansgal/12"><img width="36" height="36" alt="" src="
 									<td style="width: 280px; padding: 4px 0 4px 0;">
 										<div class="mi" style="float: left;">
 											<div class="l hansgal"></div>
-											<a href="/hansgal/44" class="c hansgal">14. The Mainz Period</a>
+											{% if biography_menu['44'].hidden != 'yes' %}<a href="/hansgal/44" class="c hansgal">{{ biography_menu['44'].title }}</a>{% endif %}
 											<div class="r hansgal"></div>
 										</div>
 									</td>
@@ -156,7 +156,7 @@ Family tree &nbsp;<a href="/hansgal/12"><img width="36" height="36" alt="" src="
 									<td style="width: 280px; padding: 4px 0 4px 0;">
 										<div class="mi" style="float: left;">
 											<div class="l hansgal"></div>
-											<a href="/hansgal/45" class="c hansgal">15. The Nazi take-over</a>
+											{% if biography_menu['45'].hidden != 'yes' %}<a href="/hansgal/45" class="c hansgal">{{ biography_menu['45'].title }}</a>{% endif %}
 											<div class="r hansgal"></div>
 										</div>
 									</td>
@@ -165,7 +165,7 @@ Family tree &nbsp;<a href="/hansgal/12"><img width="36" height="36" alt="" src="
 									<td style="width: 280px; padding: 4px 0 4px 0;">
 										<div class="mi" style="float: left;">
 											<div class="l hansgal"></div>
-											<a href="/hansgal/46" class="c hansgal">16. 'Die Beiden Klaas'</a>
+											{% if biography_menu['46'].hidden != 'yes' %}<a href="/hansgal/46" class="c hansgal">{{ biography_menu['46'].title }}</a>{% endif %}
 											<div class="r hansgal"></div>
 										</div>
 									</td>
@@ -174,7 +174,7 @@ Family tree &nbsp;<a href="/hansgal/12"><img width="36" height="36" alt="" src="
 									<td style="width: 280px; padding: 4px 0 4px 0;">
 										<div class="mi" style="float: left;">
 											<div class="l hansgal"></div>
-											<a href="/hansgal/47" class="c hansgal">17. Return to Vienna</a>
+											{% if biography_menu['47'].hidden != 'yes' %}<a href="/hansgal/47" class="c hansgal">{{ biography_menu['47'].title }}</a>{% endif %}
 											<div class="r hansgal"></div>
 										</div>
 									</td>
@@ -183,7 +183,7 @@ Family tree &nbsp;<a href="/hansgal/12"><img width="36" height="36" alt="" src="
 									<td style="width: 280px; padding: 4px 0 4px 0;">
 										<div class="mi" style="float: left;">
 											<div class="l hansgal"></div>
-											<a href="/hansgal/48" class="c hansgal">18. Emigration</a>
+											{% if biography_menu['48'].hidden != 'yes' %}<a href="/hansgal/48" class="c hansgal">{{ biography_menu['48'].title }}</a>{% endif %}
 											<div class="r hansgal"></div>
 										</div>
 									</td>
@@ -192,7 +192,7 @@ Family tree &nbsp;<a href="/hansgal/12"><img width="36" height="36" alt="" src="
 									<td style="width: 280px; padding: 4px 0 4px 0;">
 										<div class="mi" style="float: left;">
 											<div class="l hansgal"></div>
-											<a href="/hansgal/49" class="c hansgal">19. Internment</a>
+											{% if biography_menu['49'].hidden != 'yes' %}<a href="/hansgal/49" class="c hansgal">{{ biography_menu['49'].title }}</a>{% endif %}
 											<div class="r hansgal"></div>
 										</div>
 									</td>
@@ -201,7 +201,7 @@ Family tree &nbsp;<a href="/hansgal/12"><img width="36" height="36" alt="" src="
 									<td style="width: 280px; padding: 4px 0 4px 0;">
 										<div class="mi" style="float: left;">
 											<div class="l hansgal"></div>
-											<a href="/hansgal/50" class="c hansgal">20. Edinburgh</a>
+											{% if biography_menu['50'].hidden != 'yes' %}<a href="/hansgal/50" class="c hansgal">{{ biography_menu['50'].title }}</a>{% endif %}
 											<div class="r hansgal"></div>
 										</div>
 									</td>
@@ -210,7 +210,7 @@ Family tree &nbsp;<a href="/hansgal/12"><img width="36" height="36" alt="" src="
 									<td style="width: 280px; padding: 4px 0 4px 0;">
 										<div class="mi" style="float: left;">
 											<div class="l hansgal"></div>
-											<a href="/hansgal/51" class="c hansgal">21. Wartime works</a>
+											{% if biography_menu['51'].hidden != 'yes' %}<a href="/hansgal/51" class="c hansgal">{{ biography_menu['51'].title }}</a>{% endif %}
 											<div class="r hansgal"></div>
 										</div>
 									</td>
@@ -219,7 +219,7 @@ Family tree &nbsp;<a href="/hansgal/12"><img width="36" height="36" alt="" src="
 									<td style="width: 280px; padding: 4px 0 4px 0;">
 										<div class="mi" style="float: left;">
 											<div class="l hansgal"></div>
-											<a href="/hansgal/52" class="c hansgal">22. New works</a>
+											{% if biography_menu['52'].hidden != 'yes' %}<a href="/hansgal/52" class="c hansgal">{{ biography_menu['52'].title }}</a>{% endif %}
 											<div class="r hansgal"></div>
 										</div>
 									</td>
@@ -228,7 +228,7 @@ Family tree &nbsp;<a href="/hansgal/12"><img width="36" height="36" alt="" src="
 									<td style="width: 280px; padding: 4px 0 4px 0;">
 										<div class="mi" style="float: left;">
 											<div class="l hansgal"></div>
-											<a href="/hansgal/53" class="c hansgal">23. Late works</a>
+											{% if biography_menu['53'].hidden != 'yes' %}<a href="/hansgal/53" class="c hansgal">{{ biography_menu['53'].title }}</a>{% endif %}
 											<div class="r hansgal"></div>
 										</div>
 									</td>
@@ -237,7 +237,7 @@ Family tree &nbsp;<a href="/hansgal/12"><img width="36" height="36" alt="" src="
 									<td style="width: 280px; padding: 4px 0 4px 0;">
 										<div class="mi" style="float: left;">
 											<div class="l hansgal"></div>
-											<a href="/hansgal/54" class="c hansgal">24. Research & writing</a>
+											{% if biography_menu['54'].hidden != 'yes' %}<a href="/hansgal/54" class="c hansgal">{{ biography_menu['54'].title }}</a>{% endif %}
 											<div class="r hansgal"></div>
 										</div>
 									</td>
@@ -246,7 +246,7 @@ Family tree &nbsp;<a href="/hansgal/12"><img width="36" height="36" alt="" src="
 									<td style="width: 280px; padding: 4px 0 4px 0;">
 										<div class="mi" style="float: left;">
 											<div class="l hansgal"></div>
-											<a href="/hansgal/55" class="c hansgal">25. Gál's music</a>
+											{% if biography_menu['55'].hidden != 'yes' %}<a href="/hansgal/55" class="c hansgal">{{ biography_menu['55'].title }}</a>{% endif %}
 											<div class="r hansgal"></div>
 										</div>
 									</td>
@@ -255,7 +255,7 @@ Family tree &nbsp;<a href="/hansgal/12"><img width="36" height="36" alt="" src="
 									<td style="width: 280px; padding: 4px 0 4px 0;">
 										<div class="mi" style="float: left;">
 											<div class="l hansgal"></div>
-											<a href="/hansgal/56" class="c hansgal">26. Postscript</a>
+											{% if biography_menu['56'].hidden != 'yes' %}<a href="/hansgal/56" class="c hansgal">{{ biography_menu['56'].title }}</a>{% endif %}
 											<div class="r hansgal"></div>
 										</div>
 									</td>

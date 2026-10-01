@@ -25,7 +25,7 @@ Open `http://127.0.0.1:4173/`. The server is only a local static preview; the de
 
 For GitHub Pages, build with `python scripts/build.py --base-path /hansgal-org`. A future domain cutover uses an empty base path and `--production`; the domain, redirects and indexing must be reviewed before that cutover.
 
-## Content and the future CMS
+## Content and editorial CMS
 
 - `content/` holds the original public content fields and relationships as JSON, retaining IDs, nulls, bilingual fields, hidden flags and source HTML. Unlinked menu pages keep their direct URLs and remain absent from navigation.
 - `templates/` contains presentation templates translated from the original Smarty templates to Jinja. The biography index retains its rendered original markup.
@@ -35,7 +35,7 @@ For GitHub Pages, build with `python scripts/build.py --base-path /hansgal-org`.
 - `tests/` contains 99 independently captured catalogue input/result fixtures from the old website.
 - `docs/` records migration checks and known differences.
 
-The later CMS should edit the JSON and media, then run this build. It must preserve record IDs, relationships and old paths. Authentication, editorial workflows, validation and publishing controls are not implemented in this review phase. The catalogue's captured collation ranks and the biography index must be integrated with editing before the CMS is enabled; they are documented in `docs/review-notes.md`.
+A separate private online CMS provides an editorial inbox, page comments, direct field editing and per-request preview approval. It edits this JSON and media through a checked publishing workflow. The catalogue now detects edited sorting fields, includes new works, and preserves its 99-case regression suite against immutable original fixtures. See `docs/WEBMASTER.md` for agent instructions and required checks.
 
 ## Verification
 
