@@ -63,3 +63,8 @@ Continue translation and original-title provenance review, score-basket verifica
 - German FAQ, category names, menu headings and biography introduction translated. Dynamic interface messages translated; full long-form content remains pending.
 - Purchase-link fields and rendering added for printed scores, rental materials, score PDFs, CDs, audio downloads and listening. Existing historical text retained. Audit in `docs/purchase-audit.json` is still pending; no unchecked product links added.
 - Private CMS language/score/link controls pass TypeScript; publication pending integration checks.
+
+### 1 October: visible feature publication
+- CMS source `5dfd9438a984c54e853d0665ac984d15e265920f`: new-record proposals for all 16 collections, visible uploads and screenshot paste at the top of record editing, preserved attachment references into review dialogs, bilingual controls, and sandboxed Browse and comment preview. Local browser selection/navigation/new draft/paste PASS; creation, upload and approval integration PASS. Deployment in progress.
+- Public feature build PASS: catalogue 99 baseline scenarios plus edited-data cases, 78 recording destinations / 6162 links, 1652 preserved source rows, bilingual routes, approved score bytes, independently decoded two-file ZIP. Publishing the score basket and language framework as a review milestone; full German prose and purchase audit remain in progress, not complete.
+- German photo captions, audio descriptions and movement labels, plus seven biography sections, added. Coverage regenerated from current content; embedded popup texts remain explicitly pending.

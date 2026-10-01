@@ -11,7 +11,7 @@
   const read=async name=>{const r=await fetch(href('/app/'+name+(name==='site-data'&&language==='de'?'-de':'')+'.json'));if(!r.ok)throw Error('Unable to load '+name);return r.json();};
   let data,config,accent,orders;
   const ready=Promise.all([read('site-data'),read('runtime-config'),read('accent-map'),read('catalogue-orders')]).then(v=>{[data,config,accent,orders]=v;});
-  const files=r=>String(r?.filename||'').split('|').filter(s=>s.includes('#')).map(s=>({title:s.slice(0,s.indexOf('#')),filename:s.slice(s.indexOf('#')+1)}));
+  const files=r=>String(r?.filename||'').split('|').filter(s=>s.includes('#')).map((s,i)=>({title:r?.track_titles?.split('\n')[i]||s.slice(0,s.indexOf('#')),filename:s.slice(s.indexOf('#')+1)}));
   function localMarkup(markup) {
     return String(markup??'').replace(/((?:href|src)\s*=\s*["'])(?:https?:\/\/(?:www\.)?hansgal\.(?:org|com))?(\/[^"']*)/gi,(_,a,b)=>a+href(b));
   }

@@ -2,7 +2,7 @@
 FIELDS={
  'menu':['title','lead','body'],'catalogue':['title','description','movements','further_details','orchestration','availability','first_performance','other_performances','other_versions','free_downloads','score_note'],
  'recording':['title','detail','review'],'photos':['title'],'faqs':['question','answer'],
- 'properties':['value'],'heading':['body'],'category':['name'],'audio_sample':['title','details'],
+ 'properties':['value'],'heading':['body'],'category':['name'],'audio_sample':['title','details','track_titles'],
  'thumbnail':['title'],'photos_category':['name'],
 }
 UI={

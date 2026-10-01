@@ -25,6 +25,10 @@ def php_truth(value):
 def audio_row(row):
     r=copy.deepcopy(row)
     r['files']=[{'title':s.split('#',1)[0], 'filename':s.split('#',1)[1], 'fileroot':'/storage/audiosamples/'+s.split('#',1)[1].removesuffix('.mp3')} for s in r['filename'].split('|') if '#' in s]
+    labels=(r.get('track_titles') or '').splitlines()
+    if labels:
+        if len(labels)!=len(r['files']):raise ValueError('Audio track title count differs: '+r['id'])
+        for f,label in zip(r['files'],labels):f['title']=label
     return r
 
 def make_site(base_path='', review=True, language='en'):
