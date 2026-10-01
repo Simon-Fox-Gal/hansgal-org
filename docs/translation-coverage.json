@@ -72,7 +72,7 @@
       "field": "lead",
       "source_sha256": "7a1718a3cc58b9857b9d014b1a18d3079f9e1351abfe90d4f864b6be42c34c9d",
       "characters": 6,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -82,7 +82,7 @@
       "field": "body",
       "source_sha256": "53a8322e79a8c6acc3a453c812f3731cc9f5844bedd1f4e380f907b5b08f63d5",
       "characters": 8932,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -102,7 +102,7 @@
       "field": "lead",
       "source_sha256": "7a1718a3cc58b9857b9d014b1a18d3079f9e1351abfe90d4f864b6be42c34c9d",
       "characters": 6,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -112,7 +112,7 @@
       "field": "body",
       "source_sha256": "714ecd48af71ec6bcba5fc006f99868dbb788199c28ec89f3643bbd0808d38a1",
       "characters": 13992,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -132,7 +132,7 @@
       "field": "lead",
       "source_sha256": "7a1718a3cc58b9857b9d014b1a18d3079f9e1351abfe90d4f864b6be42c34c9d",
       "characters": 6,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -162,7 +162,7 @@
       "field": "lead",
       "source_sha256": "7a1718a3cc58b9857b9d014b1a18d3079f9e1351abfe90d4f864b6be42c34c9d",
       "characters": 6,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -172,7 +172,7 @@
       "field": "body",
       "source_sha256": "4c3e001857ecd2c779b64193b8b3d270874ed0f7e53fdc2ba0431be0b2710f36",
       "characters": 4213,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -192,7 +192,7 @@
       "field": "body",
       "source_sha256": "e28c2eff111566a1893d9d6ef2f6380e9faab5ce84820f16c17f6d5ab0207be5",
       "characters": 1336,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -212,7 +212,7 @@
       "field": "body",
       "source_sha256": "11f53a94de583081331b436330dea1355ab5b0eb55912cceb75d9d6db092da8f",
       "characters": 8286,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -232,7 +232,7 @@
       "field": "body",
       "source_sha256": "7686a7f10f7e8bd5f867e5f4c05c96e7153ddabb7f212d3d7ea7341eab4016ba",
       "characters": 7087,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -272,7 +272,7 @@
       "field": "lead",
       "source_sha256": "7a1718a3cc58b9857b9d014b1a18d3079f9e1351abfe90d4f864b6be42c34c9d",
       "characters": 6,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -282,7 +282,7 @@
       "field": "body",
       "source_sha256": "917060a89e5e4a0cae81a0ad0b9a8b8c115f4a0f30d6b1a2d81996c53f355d67",
       "characters": 8148,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -302,7 +302,7 @@
       "field": "lead",
       "source_sha256": "7a1718a3cc58b9857b9d014b1a18d3079f9e1351abfe90d4f864b6be42c34c9d",
       "characters": 6,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -312,7 +312,7 @@
       "field": "body",
       "source_sha256": "162071bbbf459f207356ac7778bee2e1d9ee29776af50f5b6a64d11602ee09fe",
       "characters": 5191,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -332,7 +332,7 @@
       "field": "lead",
       "source_sha256": "7a1718a3cc58b9857b9d014b1a18d3079f9e1351abfe90d4f864b6be42c34c9d",
       "characters": 6,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -362,7 +362,7 @@
       "field": "lead",
       "source_sha256": "7a1718a3cc58b9857b9d014b1a18d3079f9e1351abfe90d4f864b6be42c34c9d",
       "characters": 6,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -412,7 +412,7 @@
       "field": "lead",
       "source_sha256": "7a1718a3cc58b9857b9d014b1a18d3079f9e1351abfe90d4f864b6be42c34c9d",
       "characters": 6,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -442,7 +442,7 @@
       "field": "lead",
       "source_sha256": "7a1718a3cc58b9857b9d014b1a18d3079f9e1351abfe90d4f864b6be42c34c9d",
       "characters": 6,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -472,7 +472,7 @@
       "field": "body",
       "source_sha256": "c127a16851435e362fc1f1d08adff0498358967d411d4b885eeb1b363d2c8964",
       "characters": 5821,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -492,7 +492,7 @@
       "field": "body",
       "source_sha256": "d33edf6be86c6ad6c1910bb50573ac6e998b43182433f341d7bf3999ae1a6bc6",
       "characters": 5911,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -532,7 +532,7 @@
       "field": "lead",
       "source_sha256": "7a1718a3cc58b9857b9d014b1a18d3079f9e1351abfe90d4f864b6be42c34c9d",
       "characters": 6,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -562,7 +562,7 @@
       "field": "lead",
       "source_sha256": "7a1718a3cc58b9857b9d014b1a18d3079f9e1351abfe90d4f864b6be42c34c9d",
       "characters": 6,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -572,7 +572,7 @@
       "field": "body",
       "source_sha256": "026eafbf8a65f511a874298bdf69f5b0315a6890d351ee14daa0bc80a8b3249f",
       "characters": 2318,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -592,7 +592,7 @@
       "field": "lead",
       "source_sha256": "7a1718a3cc58b9857b9d014b1a18d3079f9e1351abfe90d4f864b6be42c34c9d",
       "characters": 6,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -622,7 +622,7 @@
       "field": "lead",
       "source_sha256": "7a1718a3cc58b9857b9d014b1a18d3079f9e1351abfe90d4f864b6be42c34c9d",
       "characters": 6,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -632,7 +632,7 @@
       "field": "body",
       "source_sha256": "4b07b4788348b4778916f50b7aa88b0137961be8d0c0a5981feac7fcb9a34db0",
       "characters": 2518,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -652,7 +652,7 @@
       "field": "lead",
       "source_sha256": "7a1718a3cc58b9857b9d014b1a18d3079f9e1351abfe90d4f864b6be42c34c9d",
       "characters": 6,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -662,7 +662,7 @@
       "field": "body",
       "source_sha256": "4dd3c992d79f1844d69417abdb34b0f6b4ab9854aef3e1086adc6d0b276b3b44",
       "characters": 3681,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -682,7 +682,7 @@
       "field": "lead",
       "source_sha256": "7a1718a3cc58b9857b9d014b1a18d3079f9e1351abfe90d4f864b6be42c34c9d",
       "characters": 6,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -692,7 +692,7 @@
       "field": "body",
       "source_sha256": "f7d76b77e991a861a7547b487a6a4916c6ce3aa5fc1ce0156e2c63c36c87a034",
       "characters": 834,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -992,7 +992,7 @@
       "field": "lead",
       "source_sha256": "7a1718a3cc58b9857b9d014b1a18d3079f9e1351abfe90d4f864b6be42c34c9d",
       "characters": 6,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -1102,7 +1102,7 @@
       "field": "lead",
       "source_sha256": "7a1718a3cc58b9857b9d014b1a18d3079f9e1351abfe90d4f864b6be42c34c9d",
       "characters": 6,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -1132,7 +1132,7 @@
       "field": "lead",
       "source_sha256": "7a1718a3cc58b9857b9d014b1a18d3079f9e1351abfe90d4f864b6be42c34c9d",
       "characters": 6,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -1162,7 +1162,7 @@
       "field": "body",
       "source_sha256": "13842321d3e08b6b5f71ed3939645c3a78634487a5704c4a7e0fef3534959e3a",
       "characters": 2010,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -1182,7 +1182,7 @@
       "field": "lead",
       "source_sha256": "7a1718a3cc58b9857b9d014b1a18d3079f9e1351abfe90d4f864b6be42c34c9d",
       "characters": 6,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -1212,7 +1212,7 @@
       "field": "lead",
       "source_sha256": "7a1718a3cc58b9857b9d014b1a18d3079f9e1351abfe90d4f864b6be42c34c9d",
       "characters": 6,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -1222,7 +1222,7 @@
       "field": "body",
       "source_sha256": "05cfd7f9e5fc55b9f2eeaa342561e84f2dcd6269a3ff6b6ab55adcec421de84c",
       "characters": 40643,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {

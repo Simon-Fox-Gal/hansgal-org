@@ -78,3 +78,11 @@ Continue translation and original-title provenance review, score-basket verifica
 - Eleven exact purchase/release matches recorded with evidence: nine recordings and two works. Format-specific links added only where verified. Remaining purchase audits are pending.
 - Page titles now identify the localized work/recording/page. Basket custom donation persists across language switching for the same selection.
 - Build, catalogue tests, route/asset/relationship verification and source-preservation tests PASS. Original 1,652 rows and pre-existing English fields retained; authorized German display fields updated. Full-site translation remains incomplete: recording text, remaining long page prose, embedded popups and standalone captions require work. Coverage is not a claim of editorial approval of uncertain source titles.
+
+### 1 October: page translation checkpoint
+
+- PR #4 deployed successfully at `4fa1cdee5d6328c467628611e3e6016e981d1f64` (Pages run 36904932601). Hosted German title search PASS; custom basket amount £3.25 retained on switching to German, then restored to £10.
+- Private CMS follow-up `2976c2c5aa57f0ca276aba042c240e3aca879d69` deployed successfully; includes complete default values in new-record proposals.
+- Added German early-life, education, early works, war, first-opera and postwar biography sections; membership, contact, general FAQ, sketchbook and performance-fund pages; bibliographic entries preserve official publication titles while explanatory prose is localized. In total 23 page bodies now have German variants, with all original links and media preserved. Empty HTML-only lead fields are shared unchanged.
+- Language-switch links now use the current search/sort URL at click time. Focused regression PASS for query, sort and fragment preservation. Basket page title corrected for canonical route without trailing slash.
+- Build, route/asset/relationship and 1,652-row source-preservation checks PASS. Full translation and purchase audits remain in progress; coverage retains pending entries rather than treating English fallback as complete.
