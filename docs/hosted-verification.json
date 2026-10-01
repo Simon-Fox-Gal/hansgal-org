@@ -1,0 +1,30 @@
+{
+  "review_url": "https://simon-fox-gal.github.io/hansgal-org/",
+  "routes_checked": 633,
+  "routes_passed": 633,
+  "failures": [],
+  "verification": "PASS",
+  "checked_utc_date": "2026-10-01",
+  "site_commit": "82b6161c1d1e85311f03d6e17693926255ed2806",
+  "public_assets_verified_against_repository": 1282,
+  "captured_source_content_pages_matched": 313,
+  "catalogue_fixture_cases_passed": 99,
+  "private_preview_excluded": true,
+  "remaining_unlinked_pages_preserved": 7,
+  "temporary_import_workflow_removed": true,
+  "repository_write_permission_in_deployment_workflow": false,
+  "browser_checks": [
+    "Opus 3 returns records 3, 4, 5",
+    "baumlein returns record 2",
+    "Symphony genre returns four works and clears title",
+    "Title descending sort updates order",
+    "Audio excerpt loads with readyState 4 and duration 135.586167 seconds",
+    "78 recording covers load; Cover Flow and Cover List both work",
+    "106 photo links retained"
+  ],
+  "limitations": [
+    "Comparison preserves captured content and original design; it is not a pixel-by-pixel visual proof.",
+    "Existing source defects are recorded separately in link-audit.json.",
+    "Comment submission storage and the CMS are later work."
+  ]
+}
