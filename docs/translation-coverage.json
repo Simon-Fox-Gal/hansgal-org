@@ -732,7 +732,7 @@
       "field": "body",
       "source_sha256": "89eaaa30b300d5134f1f109d0c103dbb65279edeacd91304ed78ddd92ca71996",
       "characters": 9917,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -752,7 +752,7 @@
       "field": "body",
       "source_sha256": "66721d6fbb3054c464cbd4fcece3801cca049ac6f56d18a06e0691b09f33d3bd",
       "characters": 7957,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -15512,7 +15512,7 @@
       "field": "title",
       "source_sha256": "75d4e2d6979cbee9141812e49956eabc8cdc1637d25d7d82698ff1f7deada20a",
       "characters": 70,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -15522,7 +15522,7 @@
       "field": "detail",
       "source_sha256": "32a4ea1b8be2e3a73ad639364a3f19a7a5b38b917d1fe5547bf618ca84e2f7a7",
       "characters": 1137,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -15542,7 +15542,7 @@
       "field": "title",
       "source_sha256": "0a3e3bcd3c07fcb0d60e3f6cf4267bc903d42448cfa41e5eb833e2951432f73f",
       "characters": 33,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -15552,7 +15552,7 @@
       "field": "detail",
       "source_sha256": "eea0e13336eed24cbafb81a313eb37a7e7b815445447d0a6290b65339936755c",
       "characters": 1558,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -15572,7 +15572,7 @@
       "field": "title",
       "source_sha256": "4e8a073d10d17d758a44b2eb64bec1ec2b19ffa27eda5e6319ebff5e3bb5a89f",
       "characters": 63,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -15582,7 +15582,7 @@
       "field": "detail",
       "source_sha256": "34fab82218c1a96f3690d0ea1a652945c316d9012c237b528053ba8fb666bbfc",
       "characters": 618,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -15592,7 +15592,7 @@
       "field": "review",
       "source_sha256": "7a1718a3cc58b9857b9d014b1a18d3079f9e1351abfe90d4f864b6be42c34c9d",
       "characters": 6,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -15602,7 +15602,7 @@
       "field": "title",
       "source_sha256": "a8614ab7df197ffda97554cb8db01770f8f540c0dee35eda9a0f9b94428a6e7e",
       "characters": 20,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -15612,7 +15612,7 @@
       "field": "detail",
       "source_sha256": "cb98b47d8dcbb46ea545e58a153d3e2e285e68b8937a0e49429100eb42bcefb3",
       "characters": 624,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -15622,7 +15622,7 @@
       "field": "review",
       "source_sha256": "610c35ce19ab75f358432d6ee59584307ae486c4040d336d1d80c5ce7016e2af",
       "characters": 6,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -15632,7 +15632,7 @@
       "field": "title",
       "source_sha256": "d95521b3b41ff9fb9d89c227a6cc1dca578e13e49d04659ef1e6c7edfb7a08c2",
       "characters": 51,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -15642,7 +15642,7 @@
       "field": "detail",
       "source_sha256": "adac69543cdf784d1cef9f07e00c3afde94e57acc4303ac2bbb01514051e77e3",
       "characters": 1230,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -15662,7 +15662,7 @@
       "field": "title",
       "source_sha256": "e860aee30c8bdd0064dab36581dabd4244add1622ef55b4d04b3da90bcf51bd8",
       "characters": 19,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -15672,7 +15672,7 @@
       "field": "detail",
       "source_sha256": "c10bbcfcf70f8f264499c5d35205f9792dc75ac2b46dd2a75970f6b3776b206c",
       "characters": 985,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -15682,7 +15682,7 @@
       "field": "review",
       "source_sha256": "7a1718a3cc58b9857b9d014b1a18d3079f9e1351abfe90d4f864b6be42c34c9d",
       "characters": 6,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -15692,7 +15692,7 @@
       "field": "title",
       "source_sha256": "16bd26d05ee0aa4850e95fcbf4d6182b04c2326d490b07acb8fae168f6c44338",
       "characters": 9,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -15702,7 +15702,7 @@
       "field": "detail",
       "source_sha256": "9d3094086044b9dd5ee3a5749d2e6632e8cbe2acb4d601f83c2074af9fb98d94",
       "characters": 644,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -15712,7 +15712,7 @@
       "field": "review",
       "source_sha256": "7a1718a3cc58b9857b9d014b1a18d3079f9e1351abfe90d4f864b6be42c34c9d",
       "characters": 6,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -15722,7 +15722,7 @@
       "field": "title",
       "source_sha256": "a9b2f119ce2d392afa101b22ed3ae185cab402a1733392e395d6f43e4948e5aa",
       "characters": 35,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -15732,7 +15732,7 @@
       "field": "detail",
       "source_sha256": "7ecd7f26184eecb17fa15805469754b55c0fa03f730eb5ea6815d766ac5d4042",
       "characters": 971,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -15752,7 +15752,7 @@
       "field": "title",
       "source_sha256": "067253f720b75f7747387666fd8208af68521f91dccb6c5bce432f02d8902f0a",
       "characters": 77,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -15762,7 +15762,7 @@
       "field": "detail",
       "source_sha256": "c0ea3ab8079797f3f025b215723ba167441eda456a9456d883b4e29d918060c7",
       "characters": 963,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -15772,7 +15772,7 @@
       "field": "review",
       "source_sha256": "7a1718a3cc58b9857b9d014b1a18d3079f9e1351abfe90d4f864b6be42c34c9d",
       "characters": 6,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -15782,7 +15782,7 @@
       "field": "title",
       "source_sha256": "480c68a46e828a16c87378bbf138d377a42e7b088126edc21e561d919c3c79e9",
       "characters": 53,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -15792,7 +15792,7 @@
       "field": "detail",
       "source_sha256": "c933ab50bcc4cedcf7f871c838bcb3f1ffff5d2ce1921027aade2e19b5d366a7",
       "characters": 2039,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -15812,7 +15812,7 @@
       "field": "title",
       "source_sha256": "8bc68ed813ab803b2936ba7e080e644eed1528bf2840ea9ac48263cc5f7eedba",
       "characters": 26,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -15822,7 +15822,7 @@
       "field": "detail",
       "source_sha256": "21cab2c58baf09867aef544f6256d62af7ef48b9cc4fccc721222537983dc745",
       "characters": 813,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -15832,7 +15832,7 @@
       "field": "review",
       "source_sha256": "7a1718a3cc58b9857b9d014b1a18d3079f9e1351abfe90d4f864b6be42c34c9d",
       "characters": 6,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -15842,7 +15842,7 @@
       "field": "title",
       "source_sha256": "9de030bafad815d6fc0b191f3543b65b9542468618e244e8f12e1895a0720062",
       "characters": 55,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -15852,7 +15852,7 @@
       "field": "detail",
       "source_sha256": "8f8b01bf79f6ad552a069b9345f0eca991b6829bb4571d48b64739f8b54a162c",
       "characters": 633,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -15862,7 +15862,7 @@
       "field": "review",
       "source_sha256": "7a1718a3cc58b9857b9d014b1a18d3079f9e1351abfe90d4f864b6be42c34c9d",
       "characters": 6,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -15872,7 +15872,7 @@
       "field": "title",
       "source_sha256": "bc908ec6d8d26eaf436ff0f7efe27fd69e3bf61430de0ed62277cf73498327e1",
       "characters": 22,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -15882,7 +15882,7 @@
       "field": "detail",
       "source_sha256": "15807bde26dfc3cf54f1012a10183f0491e86e98c1245942082b4e69199cf849",
       "characters": 531,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -15892,7 +15892,7 @@
       "field": "review",
       "source_sha256": "7a1718a3cc58b9857b9d014b1a18d3079f9e1351abfe90d4f864b6be42c34c9d",
       "characters": 6,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -15902,7 +15902,7 @@
       "field": "title",
       "source_sha256": "04e9bd6b0dc118db5cd4306a423683a9a8fd10150b0e8d57c310e6069663bfe7",
       "characters": 112,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -15912,7 +15912,7 @@
       "field": "detail",
       "source_sha256": "93459aa22b1e995475642e58b5ecdb1ffcc94fce30e1416f527cdba27a6ec9ef",
       "characters": 1038,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -15932,7 +15932,7 @@
       "field": "title",
       "source_sha256": "7d1025ae09705475f05f54b3dea6fe32b3e08be31d34bcbf0d1d677b2a97221e",
       "characters": 25,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -15942,7 +15942,7 @@
       "field": "detail",
       "source_sha256": "ebae65f4dd21c7d358a2838bb8135999fc037b2bdb343179edad9237d5045a85",
       "characters": 1770,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -15952,7 +15952,7 @@
       "field": "review",
       "source_sha256": "7a1718a3cc58b9857b9d014b1a18d3079f9e1351abfe90d4f864b6be42c34c9d",
       "characters": 6,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -15962,7 +15962,7 @@
       "field": "title",
       "source_sha256": "f09085f43e206d189aaafa7e10301de3e611e9bbdb07e428f981a54b082a4fc5",
       "characters": 82,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -15972,7 +15972,7 @@
       "field": "detail",
       "source_sha256": "0930b4c2740edd79d8efead35bc5f539be8c4bfbc0a7f35dd61ab7b37eba76c3",
       "characters": 692,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -15992,7 +15992,7 @@
       "field": "title",
       "source_sha256": "bf5a9c607db9cb233a4b7678180d85ac33062f008c6a680e81feed6c5a8eb138",
       "characters": 38,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16002,7 +16002,7 @@
       "field": "detail",
       "source_sha256": "869db9c4a6389a3072499e14494b16b5bce745369d7860a9d742cbbf5d733c30",
       "characters": 669,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16012,7 +16012,7 @@
       "field": "review",
       "source_sha256": "7a1718a3cc58b9857b9d014b1a18d3079f9e1351abfe90d4f864b6be42c34c9d",
       "characters": 6,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16022,7 +16022,7 @@
       "field": "title",
       "source_sha256": "3be8d7afc18d5b5d04a3766d48e58f5d76e1f2ea9fb790ae01dbababd76c9834",
       "characters": 36,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16032,7 +16032,7 @@
       "field": "detail",
       "source_sha256": "8157799fe6412d3d697e507c05653225c6238437a39ae98f72ff304b4824ed29",
       "characters": 502,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16052,7 +16052,7 @@
       "field": "title",
       "source_sha256": "85c471becf112e4bef453210ebdfecf469acf80811871e342302a97853a797cf",
       "characters": 31,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16062,7 +16062,7 @@
       "field": "detail",
       "source_sha256": "0ae230655be82f9e53089da520a66091dcfbe39aed12e16e447f6541236c10b5",
       "characters": 932,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16082,7 +16082,7 @@
       "field": "title",
       "source_sha256": "c5527a2a47ec211a8aee060fd1b17c5f90e6b0d6241d7afff6254a711ca261db",
       "characters": 22,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16092,7 +16092,7 @@
       "field": "detail",
       "source_sha256": "5ec9b88f830118017165d02dd90456532ece9b8aa3b3666392c94bed5c94ec95",
       "characters": 901,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16102,7 +16102,7 @@
       "field": "review",
       "source_sha256": "7a1718a3cc58b9857b9d014b1a18d3079f9e1351abfe90d4f864b6be42c34c9d",
       "characters": 6,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16112,7 +16112,7 @@
       "field": "title",
       "source_sha256": "5bab408558d128a424d24a59344e0250afac711a607e50d61ea003bf3c35f350",
       "characters": 17,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16122,7 +16122,7 @@
       "field": "detail",
       "source_sha256": "09108c7545bbabbb507da431df1f8c0249a0e38f2322ae94b47c7924fbe6aa97",
       "characters": 616,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16132,7 +16132,7 @@
       "field": "review",
       "source_sha256": "7a1718a3cc58b9857b9d014b1a18d3079f9e1351abfe90d4f864b6be42c34c9d",
       "characters": 6,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16142,7 +16142,7 @@
       "field": "title",
       "source_sha256": "bac706a1226434176b1115bc27574ce5e4313892e4d0aec100e74e5f18047805",
       "characters": 28,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16152,7 +16152,7 @@
       "field": "detail",
       "source_sha256": "953d9e0ab84cfaed68961c0053dc4a2e6b7d62eeb044c22f9fbe3d1485fba144",
       "characters": 932,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16162,7 +16162,7 @@
       "field": "review",
       "source_sha256": "7a1718a3cc58b9857b9d014b1a18d3079f9e1351abfe90d4f864b6be42c34c9d",
       "characters": 6,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16172,7 +16172,7 @@
       "field": "title",
       "source_sha256": "be27f9d06298e29d1b6aa86408e3dad3f6f566430b9ac54e46916becb46efdad",
       "characters": 33,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16182,7 +16182,7 @@
       "field": "detail",
       "source_sha256": "40986f47d4cdf153a2e4615e0704c7996e5e3b82950835715308d5faf699e5aa",
       "characters": 1921,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16192,7 +16192,7 @@
       "field": "review",
       "source_sha256": "7a1718a3cc58b9857b9d014b1a18d3079f9e1351abfe90d4f864b6be42c34c9d",
       "characters": 6,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16202,7 +16202,7 @@
       "field": "title",
       "source_sha256": "1d20928192eb9b1c9606e5686814f8882ee0eb1ac849dc54c4e6b18fbf342218",
       "characters": 19,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16212,7 +16212,7 @@
       "field": "detail",
       "source_sha256": "5a5674eea54e1722f6c92f17f6b05e72fdcceb2efeff9088038b62a823d2438f",
       "characters": 510,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16222,7 +16222,7 @@
       "field": "review",
       "source_sha256": "7a1718a3cc58b9857b9d014b1a18d3079f9e1351abfe90d4f864b6be42c34c9d",
       "characters": 6,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16232,7 +16232,7 @@
       "field": "title",
       "source_sha256": "7ef6875fa6253a65cc13f27615d404f3476b13e3b6c2091567619119c1ca0259",
       "characters": 10,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16242,7 +16242,7 @@
       "field": "detail",
       "source_sha256": "f1644204cd92b08d961aba3d6ab7ca0c7f52420ac92981ba8179438811ec1313",
       "characters": 493,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16252,7 +16252,7 @@
       "field": "review",
       "source_sha256": "7a1718a3cc58b9857b9d014b1a18d3079f9e1351abfe90d4f864b6be42c34c9d",
       "characters": 6,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16262,7 +16262,7 @@
       "field": "title",
       "source_sha256": "e315d13dfac84bd4e3285f46aeddd2284edc1d334b74d40a262035a0845efa58",
       "characters": 54,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16272,7 +16272,7 @@
       "field": "detail",
       "source_sha256": "a6b9422419ef5cb9a1152585aa30ffede3f4516b0220e6ca816694104444a47b",
       "characters": 473,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16282,7 +16282,7 @@
       "field": "review",
       "source_sha256": "7a1718a3cc58b9857b9d014b1a18d3079f9e1351abfe90d4f864b6be42c34c9d",
       "characters": 6,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16292,7 +16292,7 @@
       "field": "title",
       "source_sha256": "877fff905fea6168867081034aa84c1fa83748f00a94cc74859958fe3db19f8b",
       "characters": 11,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16302,7 +16302,7 @@
       "field": "detail",
       "source_sha256": "ae1b9736b7eef599c85329593c3e2ad6521bbc305c3b2f1ac277e86f273060dd",
       "characters": 333,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16312,7 +16312,7 @@
       "field": "review",
       "source_sha256": "7a1718a3cc58b9857b9d014b1a18d3079f9e1351abfe90d4f864b6be42c34c9d",
       "characters": 6,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16322,7 +16322,7 @@
       "field": "title",
       "source_sha256": "8debf51b693d063bed75214602a528b96d4a22146be8c2b0baa9090f212cb040",
       "characters": 7,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16332,7 +16332,7 @@
       "field": "detail",
       "source_sha256": "0380d88ec8c871d1c78a39df7da63fb7263df05c25e4dec929b41c34040c83a4",
       "characters": 442,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16342,7 +16342,7 @@
       "field": "review",
       "source_sha256": "7a1718a3cc58b9857b9d014b1a18d3079f9e1351abfe90d4f864b6be42c34c9d",
       "characters": 6,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16352,7 +16352,7 @@
       "field": "title",
       "source_sha256": "2db86dd982dd651c3fdf0b686b5c676a661bd71de906ae0e7697d0a189ad27b0",
       "characters": 19,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16362,7 +16362,7 @@
       "field": "detail",
       "source_sha256": "7b06d6db8ab7041341f7121c22bd5a17f2201816c3e4a5e4606f4a2a44b047ea",
       "characters": 756,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16372,7 +16372,7 @@
       "field": "review",
       "source_sha256": "7a1718a3cc58b9857b9d014b1a18d3079f9e1351abfe90d4f864b6be42c34c9d",
       "characters": 6,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16382,7 +16382,7 @@
       "field": "title",
       "source_sha256": "e4df9c8f7305892577ad0345a59925f9615c2efc7ebeb88e2fe5871921eafab2",
       "characters": 20,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16392,7 +16392,7 @@
       "field": "detail",
       "source_sha256": "631d94293cf680c2e14f14b62a4c7f53977655428823da1c03991127ba7ffe4b",
       "characters": 255,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16402,7 +16402,7 @@
       "field": "review",
       "source_sha256": "7a1718a3cc58b9857b9d014b1a18d3079f9e1351abfe90d4f864b6be42c34c9d",
       "characters": 6,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16412,7 +16412,7 @@
       "field": "title",
       "source_sha256": "a9b7b330f969796aa64626564eed99d37b62b917ee7df2d44ec7b8569e273a9a",
       "characters": 42,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16422,7 +16422,7 @@
       "field": "detail",
       "source_sha256": "ace9d6ebbbb674df7b31b5a6647303c0a55e6772ad0c5eff73b8095a84264132",
       "characters": 493,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16432,7 +16432,7 @@
       "field": "review",
       "source_sha256": "7a1718a3cc58b9857b9d014b1a18d3079f9e1351abfe90d4f864b6be42c34c9d",
       "characters": 6,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16442,7 +16442,7 @@
       "field": "title",
       "source_sha256": "01b1eb41e7ec71b6cf3bdc19e2e105fa5fcee440277168e5b4090b9c960b1766",
       "characters": 14,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16452,7 +16452,7 @@
       "field": "detail",
       "source_sha256": "a6a6ba1430617c94efd403bbf65c949dc720e67da4215df10722dfbb3a4a5a83",
       "characters": 646,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16462,7 +16462,7 @@
       "field": "review",
       "source_sha256": "7a1718a3cc58b9857b9d014b1a18d3079f9e1351abfe90d4f864b6be42c34c9d",
       "characters": 6,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16472,7 +16472,7 @@
       "field": "title",
       "source_sha256": "fc72f56ece172abebf7cda343be63645029b2b23009ad6600bcca8c6f4f0ef51",
       "characters": 41,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16482,7 +16482,7 @@
       "field": "detail",
       "source_sha256": "3eecdbd6530af24caec601b58dde147caf154146ddf4502f79c21035512315b7",
       "characters": 365,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16492,7 +16492,7 @@
       "field": "review",
       "source_sha256": "7a1718a3cc58b9857b9d014b1a18d3079f9e1351abfe90d4f864b6be42c34c9d",
       "characters": 6,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16502,7 +16502,7 @@
       "field": "title",
       "source_sha256": "12dabce0eec327368d2ccb8d4e5ffa19d3423be9adb4f8b81f012405d771793e",
       "characters": 13,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16512,7 +16512,7 @@
       "field": "detail",
       "source_sha256": "bf791a43ebbb936e38d0d382caf7a8a1a839579343ecc1a6d97e81b65e7eb241",
       "characters": 392,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16532,7 +16532,7 @@
       "field": "title",
       "source_sha256": "72c54152934c110596901f6c3e9dd4f0ca985cfff63ed4cc8a445d30a7fb9e2f",
       "characters": 53,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16542,7 +16542,7 @@
       "field": "detail",
       "source_sha256": "a943b6578ba2efc7a96d3ab4a15ff268d88becc57da5082913ba726366090846",
       "characters": 514,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16552,7 +16552,7 @@
       "field": "review",
       "source_sha256": "7a1718a3cc58b9857b9d014b1a18d3079f9e1351abfe90d4f864b6be42c34c9d",
       "characters": 6,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16562,7 +16562,7 @@
       "field": "title",
       "source_sha256": "3f659547355ad5cbacc28e9374def83e4b5ee8870367419950749c0c52149a62",
       "characters": 29,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16572,7 +16572,7 @@
       "field": "detail",
       "source_sha256": "de7849eec222a94aa38342b645273f8767b8849f343970383ad29264be5fcc27",
       "characters": 459,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16582,7 +16582,7 @@
       "field": "review",
       "source_sha256": "610c35ce19ab75f358432d6ee59584307ae486c4040d336d1d80c5ce7016e2af",
       "characters": 6,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16592,7 +16592,7 @@
       "field": "title",
       "source_sha256": "d7f15b98e3a4138972face3a942ba04f853052174d7d6cd3c1bdfeacc06fe04c",
       "characters": 25,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16602,7 +16602,7 @@
       "field": "detail",
       "source_sha256": "190a71e9660d68aa29aad4efcc9834aee0d1bd0f2c4f318511279e598ce90bbf",
       "characters": 1013,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16612,7 +16612,7 @@
       "field": "review",
       "source_sha256": "7a1718a3cc58b9857b9d014b1a18d3079f9e1351abfe90d4f864b6be42c34c9d",
       "characters": 6,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16622,7 +16622,7 @@
       "field": "title",
       "source_sha256": "657aebd8b45de7bbc5415e92137fb1812f658e75f0102f223a4ebf68165e9297",
       "characters": 41,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16632,7 +16632,7 @@
       "field": "detail",
       "source_sha256": "31988d77fb33d626a402f0ce1f939c2cfe0684b47c95741f22a75ef431b2bcfe",
       "characters": 787,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16652,7 +16652,7 @@
       "field": "title",
       "source_sha256": "d6af7782c999ac95326cb6bf3a561f6bccedf21b9cedfe407a55b2483dc6aaca",
       "characters": 86,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16662,7 +16662,7 @@
       "field": "detail",
       "source_sha256": "114c5618020dac907e66611c14f3805b323d07ab79bcf81e144be306e8f0c581",
       "characters": 712,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16672,7 +16672,7 @@
       "field": "review",
       "source_sha256": "7a1718a3cc58b9857b9d014b1a18d3079f9e1351abfe90d4f864b6be42c34c9d",
       "characters": 6,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16682,7 +16682,7 @@
       "field": "title",
       "source_sha256": "540069d8b61f87834bec37cfde2163fac716d4fb15b1a1ee00dd38b555791fbe",
       "characters": 43,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16692,7 +16692,7 @@
       "field": "detail",
       "source_sha256": "5453e54009a6840bd0ffee66d1a6ccbea2a9577c14201e92bea7f7d5ad626893",
       "characters": 563,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16702,7 +16702,7 @@
       "field": "review",
       "source_sha256": "7a1718a3cc58b9857b9d014b1a18d3079f9e1351abfe90d4f864b6be42c34c9d",
       "characters": 6,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16712,7 +16712,7 @@
       "field": "title",
       "source_sha256": "f4a1396e0660b32995c8d400515ffde5045efd2a28021d500aabddb55d08e819",
       "characters": 50,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16722,7 +16722,7 @@
       "field": "detail",
       "source_sha256": "a01eb1e9ac7c1bd4a1702829280ca24ea72fdb3f51826a5f76e78ecaa3fadf31",
       "characters": 608,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16742,7 +16742,7 @@
       "field": "title",
       "source_sha256": "a5e9b383a100391e71fe2e5d7bb7910d98dca4fbb32d72a645c2f0bdf01fe98d",
       "characters": 50,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16752,7 +16752,7 @@
       "field": "detail",
       "source_sha256": "8331acd9b2dafeacd4f688f34edc12c66359106519e88de432dfcef0cc124873",
       "characters": 17548,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16772,7 +16772,7 @@
       "field": "title",
       "source_sha256": "ec67784aea425a975ad386a2d8a0e1034ad9abdfd6e9e16114cfbf254b8f82fd",
       "characters": 25,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16782,7 +16782,7 @@
       "field": "detail",
       "source_sha256": "24c61c1bef6656a6ad4156fec0eb6c8cc43399d9f37f9735a8c04961654bb311",
       "characters": 839,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16802,7 +16802,7 @@
       "field": "title",
       "source_sha256": "b29bf02694c3b4d28a66da2ae771cea827aca36df7b47aee7dba1bffa7d4043f",
       "characters": 43,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16812,7 +16812,7 @@
       "field": "detail",
       "source_sha256": "e038b180a1302a5b25cd3d72686ca3d9fe910c010a64a5e7523bb72e960309b1",
       "characters": 585,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16822,7 +16822,7 @@
       "field": "review",
       "source_sha256": "7a1718a3cc58b9857b9d014b1a18d3079f9e1351abfe90d4f864b6be42c34c9d",
       "characters": 6,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16832,7 +16832,7 @@
       "field": "title",
       "source_sha256": "3deb32d84a1421dfbc6f2ce392751dff9dec1ae45606719167e58b721f9caf5d",
       "characters": 52,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16842,7 +16842,7 @@
       "field": "detail",
       "source_sha256": "21624bf624d341f65b55c056784136da852470b6509c0526ca171336f2a572e2",
       "characters": 652,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16852,7 +16852,7 @@
       "field": "review",
       "source_sha256": "7a1718a3cc58b9857b9d014b1a18d3079f9e1351abfe90d4f864b6be42c34c9d",
       "characters": 6,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16862,7 +16862,7 @@
       "field": "title",
       "source_sha256": "6824588e88515f3aef0158170e996f9947d7293798fa2731ef5b6c4f30772192",
       "characters": 58,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16872,7 +16872,7 @@
       "field": "detail",
       "source_sha256": "c96fe6b36d6096d9579aa172fa3ac92e25d8995969b217dddeb01fbdfd46ee5d",
       "characters": 1146,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16892,7 +16892,7 @@
       "field": "title",
       "source_sha256": "1035a629a4eb906df43f8b39436efe5e462159049a5616fce7c453cfe51d644c",
       "characters": 44,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16902,7 +16902,7 @@
       "field": "detail",
       "source_sha256": "dfb460966f13eca5b4f51e6301584fb4dc3b198e38399b3260bb16ab0ad2d9cc",
       "characters": 717,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16922,7 +16922,7 @@
       "field": "title",
       "source_sha256": "ddc3d5a88cfece6347cf60e2f8c42196ee8669d4c88d62b753099547352d6acf",
       "characters": 22,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16932,7 +16932,7 @@
       "field": "detail",
       "source_sha256": "b07b065f9e726821511049adff6435d057907ec03a9fffd6ea13990dafe005ec",
       "characters": 502,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16942,7 +16942,7 @@
       "field": "review",
       "source_sha256": "7a1718a3cc58b9857b9d014b1a18d3079f9e1351abfe90d4f864b6be42c34c9d",
       "characters": 6,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16952,7 +16952,7 @@
       "field": "title",
       "source_sha256": "16e651ac29b16ab71c5a7ec3e642ca416b00798037f819b40b6d4b2caf56d1ac",
       "characters": 50,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16962,7 +16962,7 @@
       "field": "detail",
       "source_sha256": "f1313079a3b0f038df6246ccba3d9dc8e275ab51d15088a28e3c9fc31d9df9af",
       "characters": 521,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16972,7 +16972,7 @@
       "field": "review",
       "source_sha256": "7a1718a3cc58b9857b9d014b1a18d3079f9e1351abfe90d4f864b6be42c34c9d",
       "characters": 6,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16982,7 +16982,7 @@
       "field": "title",
       "source_sha256": "c42c608bdc44f22ff270d78e69da1b08e0336c207b9500165756725215227bd9",
       "characters": 50,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -16992,7 +16992,7 @@
       "field": "detail",
       "source_sha256": "41290704eb318a622bde0f454588c9542b46ca46524d7d0801f96e7c0dbcfa57",
       "characters": 320,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -17012,7 +17012,7 @@
       "field": "title",
       "source_sha256": "0903dbf21e93bd052c1c8962d97403102e1b0784783c36f51d73adcc20cc4c60",
       "characters": 21,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -17022,7 +17022,7 @@
       "field": "detail",
       "source_sha256": "13622828bee0c7d88510274de563e844430ab2f07e3e8390f61b9aa4737eae7d",
       "characters": 330,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -17032,7 +17032,7 @@
       "field": "review",
       "source_sha256": "7a1718a3cc58b9857b9d014b1a18d3079f9e1351abfe90d4f864b6be42c34c9d",
       "characters": 6,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -17042,7 +17042,7 @@
       "field": "title",
       "source_sha256": "f7a7dfd46b32e47e18ca51be46163aaf2f980c59010abeee981c695a1237dbf0",
       "characters": 14,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -17052,7 +17052,7 @@
       "field": "detail",
       "source_sha256": "b4632b129996c969aa39c1d7ec0d969115950a4e4f8d60692c2a32f37b505928",
       "characters": 390,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -17072,7 +17072,7 @@
       "field": "title",
       "source_sha256": "507771e907b5bae0c05d8f1968009bd0e76e3d3c376a39c5db57e7078ba54181",
       "characters": 24,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -17082,7 +17082,7 @@
       "field": "detail",
       "source_sha256": "ee1764c06f3bedce10ce8e3c5c8cdfc20321fd47ed244cb7f864f3820a9d90a4",
       "characters": 403,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -17102,7 +17102,7 @@
       "field": "title",
       "source_sha256": "962f97f15986e3d1a6b7b6fb4c12d5cb0640530f869c7720abee5346e669f794",
       "characters": 29,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -17112,7 +17112,7 @@
       "field": "detail",
       "source_sha256": "517016ad0c3f4a08bf3017bbcb3ca4c95adc6994e705201ef424be04704659c5",
       "characters": 343,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -17132,7 +17132,7 @@
       "field": "title",
       "source_sha256": "33fe12c8e80bce432070f116fcdf670a42b313f0918d7e10eeca41494ba770d9",
       "characters": 34,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -17142,7 +17142,7 @@
       "field": "detail",
       "source_sha256": "1eba9855bc84477c7309c59fb3a3f39e4a9177d6748024881c72c4104fd43f7b",
       "characters": 319,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -17162,7 +17162,7 @@
       "field": "title",
       "source_sha256": "4167c6f34359600c39fbeafb4a146ea326ae8b366303b0a4874d62605e2ac691",
       "characters": 12,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -17172,7 +17172,7 @@
       "field": "detail",
       "source_sha256": "f6685afa617581ba0076cfb76fc122eb0f104904f49000ea72eb6c7789759b5c",
       "characters": 444,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -17192,7 +17192,7 @@
       "field": "title",
       "source_sha256": "8f04bca774cf8c1db435c60134cab0b32a1fb6ecc9dd56d87ea39a9ae2c5c817",
       "characters": 36,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -17202,7 +17202,7 @@
       "field": "detail",
       "source_sha256": "6c3d388fdd00a157f72acd1dd89a59e9e13321c0557e2814d8458200fa946ff5",
       "characters": 279,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -17222,7 +17222,7 @@
       "field": "title",
       "source_sha256": "ae33f8168487cace98e6d0dd47b3af5d3df34eef810e0858a2b7700e209e0b19",
       "characters": 68,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -17232,7 +17232,7 @@
       "field": "detail",
       "source_sha256": "cfe9da92def1a788ec1ba5310552731d194a6151ad59fa8875b5ded9bc668527",
       "characters": 36645,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -17252,7 +17252,7 @@
       "field": "title",
       "source_sha256": "ee9afe4771c03790aed880483407fe0ada2bac21bca9efa0a7342ee3469cf019",
       "characters": 77,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -17262,7 +17262,7 @@
       "field": "detail",
       "source_sha256": "d6d2c9dfd8c6a23b2d3db6e4c02cdd7dc4df57e1b3c873a77b6e1202be1f25c0",
       "characters": 19072,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -17282,7 +17282,7 @@
       "field": "title",
       "source_sha256": "2bee5bdab64e65b08097ed2f5b5a7a43c89cb7949339ca394c29d9bfaef21738",
       "characters": 37,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -17292,7 +17292,7 @@
       "field": "detail",
       "source_sha256": "84559567ef99af58b1ac2ad3ef655d8382da2862aac440f639fb4be77f19976c",
       "characters": 18683,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -17312,7 +17312,7 @@
       "field": "title",
       "source_sha256": "22995b90a6b194fc2f9152c3165a91d98bb31dcb4d1dcc26e34a1b1bb2b78f19",
       "characters": 18,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -17322,7 +17322,7 @@
       "field": "detail",
       "source_sha256": "f35652977d51bf60d523c9c22c489e1ee943ba3e48664f35803c4bddb3353e13",
       "characters": 427,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -17342,7 +17342,7 @@
       "field": "title",
       "source_sha256": "e5a2a65246e8fe6420fc807b99c1fe5692497480ba4707f854ed7416e2f3c657",
       "characters": 18,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -17352,7 +17352,7 @@
       "field": "detail",
       "source_sha256": "e7c610174691bda7c534aef9ba11ca0381b84683e76751113b58cbb90f96e060",
       "characters": 398,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -17372,7 +17372,7 @@
       "field": "title",
       "source_sha256": "e3e5607573a76fe40b515c1a7739ff0dbfbbf62d572d7dddac8505a47ed91caa",
       "characters": 32,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -17382,7 +17382,7 @@
       "field": "detail",
       "source_sha256": "57dc2c72a79ed70ac16a3650ec7143795fbfc12d881c81660776890bd65f1e63",
       "characters": 509,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -17402,7 +17402,7 @@
       "field": "title",
       "source_sha256": "55f21cc382eb3dbc21073a7345599af3e7669ec9c30325d465f76a1ccc25abd8",
       "characters": 63,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -17412,7 +17412,7 @@
       "field": "detail",
       "source_sha256": "02e66a78753db76acba687f1d012d27615dfaa787b554581049476915d0fb905",
       "characters": 1246,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -17432,7 +17432,7 @@
       "field": "title",
       "source_sha256": "8625f39b55c9b829aa994ea2e50cd52c5027409e18b65a5ad675365af62c8b7b",
       "characters": 32,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -17442,7 +17442,7 @@
       "field": "detail",
       "source_sha256": "c0f88b62ee61898f0acabbbdb562525c6192840729c42b99d944c04245578e1e",
       "characters": 421,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -17462,7 +17462,7 @@
       "field": "title",
       "source_sha256": "ffedb2710042bdcc5926087419ec6d568d2d31086b5946d8520b09ae83bb83a7",
       "characters": 46,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -17472,7 +17472,7 @@
       "field": "detail",
       "source_sha256": "bf1c5351a364bfa741e56914f0ddbfc026df40d32227fe6f50f94914e730869d",
       "characters": 312,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -17492,7 +17492,7 @@
       "field": "title",
       "source_sha256": "1e12e1a803f846dd6bc4d0889a0388cfceff6ea0d68bdda2a0b8b33e282e96d0",
       "characters": 28,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -17502,7 +17502,7 @@
       "field": "detail",
       "source_sha256": "7ed97d4c0045ccd1b12b5dd0a7770fe70ed41b7139491c303fcd3cd2614df885",
       "characters": 1023,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -17522,7 +17522,7 @@
       "field": "title",
       "source_sha256": "0cc881c6e62095d7f4ceb54c6014c8de4a43eb366466f7cfa6b428bab8848694",
       "characters": 36,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -17532,7 +17532,7 @@
       "field": "detail",
       "source_sha256": "48e34113b1dd10f8156888890b342bb2c01fda7091a95ac01badaae8bc3e55c5",
       "characters": 695,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -17552,7 +17552,7 @@
       "field": "title",
       "source_sha256": "77a985c3f38d4faa6efe6a48112757c7042f2a1276155c9960fd340bb8bce51c",
       "characters": 49,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -17562,7 +17562,7 @@
       "field": "detail",
       "source_sha256": "e10bf9e300d121812a77638e14e4fb2ba270db01c6e9b043d0b4a604390d0180",
       "characters": 449,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -17582,7 +17582,7 @@
       "field": "title",
       "source_sha256": "53f3f9ebc72901ad969ed67fb049753e4a68e9cd1d96465eebd9557714191767",
       "characters": 35,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -17592,7 +17592,7 @@
       "field": "detail",
       "source_sha256": "1ac1adbc513f6eab2657f6b43b5426141df3485823a9445a8e83ad9b43c3557b",
       "characters": 291,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -17612,7 +17612,7 @@
       "field": "title",
       "source_sha256": "0b2ac682cf654bd1d48c8212719a5d4e50ba045e8a8e00be773f83abc03499e9",
       "characters": 37,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -17622,7 +17622,7 @@
       "field": "detail",
       "source_sha256": "82739935a6cf07ebb146d20f4aabd5ae5c2be4fb74067be4e84901411f2ce8c3",
       "characters": 513,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -17642,7 +17642,7 @@
       "field": "title",
       "source_sha256": "8d1cb9eb2858692352c47a913c3883c7afd3da3689edfe93551b10dae4dc06d1",
       "characters": 37,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -17652,7 +17652,7 @@
       "field": "detail",
       "source_sha256": "d464ffc7c159bb0a263ed9d6b1a3a00e6b12280c92f36405ba9a29c6fa052696",
       "characters": 391,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -17672,7 +17672,7 @@
       "field": "title",
       "source_sha256": "9263e3b3a06922f9ed73329311ad9075a01602af1cebe8c03cdf946065c454df",
       "characters": 61,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -17682,7 +17682,7 @@
       "field": "detail",
       "source_sha256": "fe51c3541377b1b86d61f968277c3f6bda850b49761d34ce9dee4878cbbcc729",
       "characters": 307,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -17702,7 +17702,7 @@
       "field": "title",
       "source_sha256": "0721759dd83884f04d00e5d0417172dd0dde9c6d8da84d81bf642f70fc5e1f3f",
       "characters": 40,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -17712,7 +17712,7 @@
       "field": "detail",
       "source_sha256": "2c9220b364648ad24717fdf2d36d06844026e2d56be271869f8a1177a42dc1c8",
       "characters": 364,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -17732,7 +17732,7 @@
       "field": "title",
       "source_sha256": "91cab082d88d2ca829bb1d6f0d6294aa42390d6276e4bf9a8f00cb4caedd1fe6",
       "characters": 66,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -17742,7 +17742,7 @@
       "field": "detail",
       "source_sha256": "d958da3d09e50cc240a9708fb4ca0c01c241b27c03307a70ca05066ac1765b57",
       "characters": 462,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -17762,7 +17762,7 @@
       "field": "title",
       "source_sha256": "d44aec47efece2dc91d70ed5e8fdb34d02ffa57994a03fb8ef81daed58257fdb",
       "characters": 23,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -17772,7 +17772,7 @@
       "field": "detail",
       "source_sha256": "c7326fb9bd172e6fcf76e6ba369fbdc8be7afafd9ac43f8148d60268e3f63adb",
       "characters": 295,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -17792,7 +17792,7 @@
       "field": "title",
       "source_sha256": "4730672acf93f901017fe65437f4cd55bf07779950f9e41c01158ef63d2351a2",
       "characters": 59,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -17802,7 +17802,7 @@
       "field": "detail",
       "source_sha256": "9cb9e4b7bab615d69ecc203fb894a13583ebd9ac92fe82ed8cb5e70684c3d78a",
       "characters": 307,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -17822,7 +17822,7 @@
       "field": "title",
       "source_sha256": "30e5c33d6ad85defdff87653637e04599a791d1ca32c804a0368fff0e2686ddd",
       "characters": 44,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
@@ -17832,7 +17832,7 @@
       "field": "detail",
       "source_sha256": "5c2eb179f07fe899cb73ea8d1ac180a0ba524fba65a44f2405d4d9d266ef8a41",
       "characters": 189,
-      "status": "pending",
+      "status": "translated",
       "note": ""
     },
     {
