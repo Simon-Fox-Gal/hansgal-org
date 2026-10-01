@@ -21,12 +21,14 @@
  addEventListener('message',e=>{
   if(e.source!==parent||!allowed.has(e.origin))return;
   if(e.data?.type==='hansgal:hello'){peer=e.origin;last='';send();}
+  if(e.data?.type==='hansgal:comment'&&peer===e.origin)send(null,true);
   if(e.data?.type==='hansgal:pick'&&peer===e.origin){pick=true;document.documentElement.style.cursor='crosshair';}
  });
  document.addEventListener('click',e=>{if(!pick)return;e.preventDefault();e.stopImmediatePropagation();pick=false;document.documentElement.style.cursor='';send(e.target.closest('p,h1,h2,h3,li,td,img,a,div')||e.target,true);},true);
  addEventListener('keydown',e=>{if(e.key==='Escape'){pick=false;document.documentElement.style.cursor='';}});
  addEventListener('selectionchange',()=>send());
  addEventListener('popstate',()=>send());addEventListener('hashchange',()=>send());
+ addEventListener('beforeunload',()=>{if(peer)parent.postMessage({type:'hansgal:navigating'},peer);});
  const observer=new MutationObserver(()=>send());observer.observe(document.body,{childList:true,subtree:true,attributes:true,attributeFilter:['data-recording-id']});
  const replace=history.replaceState;history.replaceState=function(){const r=replace.apply(this,arguments);send();return r;};
 })();

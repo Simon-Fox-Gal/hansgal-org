@@ -108,7 +108,7 @@ def make_site(base_path='', review=True):
         target=out/route.lstrip('/')/'index.html' if route!='/' else out/'index.html'
         target.parent.mkdir(parents=True,exist_ok=True)
         final=transform(markup,route)
-        target.write_text(final,encoding='utf8')
+        target.write_text(final,encoding='utf8',newline='\n')
         generated[route]={'path':route,'file':target.relative_to(out).as_posix(),'template':template,'sha256':hashlib.sha256(final.encode()).hexdigest()}
 
     def page(route,template,**kwargs):
