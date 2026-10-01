@@ -102,3 +102,11 @@ Continue translation and original-title provenance review, score-basket verifica
 - Added biography chapters on Das Lied der Nacht and the 1920s. Historical quotations are labelled as translations of the supplied English wording, not asserted to reproduce a recovered German original.
 - Source issues retained for editorial review: recording 34's Sinfonietta opus, 78's performer spelling and 88's viola-suite opus; obvious German-display typographical corrections in 60, 61, 83 and 84 are supported by the same records' title/body, with original English fields unchanged.
 - Source preservation PASS: all 1,652 original rows; no new duplicate IDs or broken relationships. Recording translation numeric sequences and media/link targets checked before application. Remaining long reviews/pages, embedded text and full purchase audit are still outstanding.
+
+### 1 October: hosted CMS recheck and biography completion
+
+- PR #7 deployed successfully at `b1d0e8c26b4bc1cd8fa980678242e53be3dbf776`, Pages run 36910045345.
+- Hosted CMS recheck PASS after closing a stalled donation-test browser tab: Browse preview renders, page-comment dialog opens, New record opens, clipboard PNG uploads privately and displays filename/thumbnail/details, source-to-preview-to-source preserves exact HTML, and the uploaded attachment survives into the new-record review dialog. Test draft discarded without saving to inbox or sending email.
+- Added the remaining biography chapters covering recognition, scholarship, Mainz, dismissal, Die beiden Klaas, return to Vienna, emigration and internment. Contact and Society page bodies now translated; donation declaration/messages localized on both Society and donation pages. Empty family-tree body preserved.
+- Corrected reversible UTF-8/Windows-1252 decoding artifacts found in German text of seven previously translated biography chapters and a shared musical title. Original English fields and URLs remain unchanged.
+- Full translation remains incomplete: 56 inventory fields pending, plus embedded popup/attribute/caption sweep. Full purchase audit remains pending. This checkpoint is not a claim that those remaining mission requirements are complete.
