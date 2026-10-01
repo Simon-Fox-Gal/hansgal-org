@@ -94,3 +94,11 @@ Continue translation and original-title provenance review, score-basket verifica
 - English/German donation regression PASS: exact recipient/fund/amount, bank/cheque GBP restriction and rejection of zero for the PayPal handoff. Score-basket downloads still accept zero independently. Local rendered German form inspected; EUR-to-bank selection correctly becomes GBP. Further local alert interaction was blocked by a browser-driver timeout, not treated as a passed UI check.
 - All 26 translated menu bodies retain their original links and media. Existing broken constitution link to `/admin/hansgalsociety/index/36` has no matching content record in the preserved source; retained and flagged rather than inventing a replacement document.
 - Remaining authored HTML attributes and embedded popup text still need a final language sweep alongside remaining page prose and recording text. Full translation is not yet complete.
+
+### 1 October: recording descriptions and further biography
+
+- PR #6 deployed successfully at `39472ca615c3cfd1d83c58ff524f4f7392ccb7d3`, Pages run 36908135961.
+- All 78 recording titles and descriptions now have German display text. Original release titles remain alongside changed title translations. Musical descriptions translated with original performer/ensemble names, dates, opus/catalogue numbers and link/media targets preserved. Empty review placeholders shared; substantial reviews remain pending.
+- Added biography chapters on Das Lied der Nacht and the 1920s. Historical quotations are labelled as translations of the supplied English wording, not asserted to reproduce a recovered German original.
+- Source issues retained for editorial review: recording 34's Sinfonietta opus, 78's performer spelling and 88's viola-suite opus; obvious German-display typographical corrections in 60, 61, 83 and 84 are supported by the same records' title/body, with original English fields unchanged.
+- Source preservation PASS: all 1,652 original rows; no new duplicate IDs or broken relationships. Recording translation numeric sequences and media/link targets checked before application. Remaining long reviews/pages, embedded text and full purchase audit are still outstanding.
