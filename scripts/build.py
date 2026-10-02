@@ -111,13 +111,13 @@ def make_site(base_path='', review=True, language='en'):
 
     def context(route):
         section=route.split('/')[1] if route!='/' else ''
-        c=dict(props,route=route,mainmenu=section,viewmode='coverlist',chosenfile='',chosenwork='',autoplay='',genre='',instrument='',keywords={},audiosamples=[],recordings=[],thumbnails=[],thumb=False,piktorgram='',title='',lead='',body='')
+        c=dict(props,language=language,tr=lambda en,de: de if language=='de' else en,route=route,mainmenu=section,viewmode='coverlist',chosenfile='',chosenwork='',autoplay='',genre='',instrument='',keywords={},audiosamples=[],recordings=[],thumbnails=[],thumb=False,piktorgram='',title='',lead='',body='')
         for s in ['hansgal','news','works','recordings','booksandarticles','audiosamples','publishers','bibliography','photos','faq','contacts','hansgalsociety','comments','donate']:
             c['selected'+s]=' id="selected"' if section==s else ''
         return c
 
     # Root-relative URLs resolve both at /hansgal-org on Pages and at / on the future domain.
-    local_hosts={'hansgal.org','www.hansgal.org','hansgal.com','www.hansgal.com','production.hansgal.org'}
+    local_hosts={'hansgal.org','www.hansgal.org','hansgal.com','www.hansgal.com','production.hansgal.org','hansgal.musicessences.com'}
     def url(value):
         value=html.unescape(value)
         u=urlsplit(value)
@@ -145,7 +145,7 @@ def make_site(base_path='', review=True, language='en'):
         # Preserve path identity for eventual production canonical URLs.
         localized=('/de' if language=='de' else '')+route
         markup=markup.replace('<html xmlns=',f'<html lang="{language}" xmlns=').replace('content="hu"',f'content="{language}"')
-        title_match=re.search(r'<div class="title">(.*?)</div>',markup,re.S)
+        title_match=re.search(r'<h1[^>]*>(.*?)</h1>',markup,re.S) or re.search(r'<div class="title">(.*?)</div>',markup,re.S)
         page_title=html.unescape(re.sub('<[^>]*>','',title_match[1])) if title_match else 'Hans Gál Society'
         match=re.match(r'^/(works/show|recordings|hansgal|news|booksandarticles|publishers|bibliography|hansgalsociety)/(\d+)/?$',route)
         if match:
@@ -159,7 +159,8 @@ def make_site(base_path='', review=True, language='en'):
         head+='<script defer src="'+base_path+'/app/editorial-bridge.js"></script>\n'
         markup=markup.replace('</head>',head+'</head>',1)
         switch='<nav aria-label="Language / Sprache" style="text-align:right;padding:4px 12px"><a data-language="en" lang="en" href="'+base_path+route+'">English</a> · <a data-language="de" lang="de" href="'+base_path+'/de'+route+'">Deutsch</a></nav>'
-        if '<div id="wrapper">' in markup:markup=markup.replace('<div id="wrapper">','<div id="wrapper">'+switch,1)
+        if '<!-- LANGUAGE_SWITCH -->' in markup:markup=markup.replace('<!-- LANGUAGE_SWITCH -->',switch,1)
+        elif '<div id="wrapper">' in markup:markup=markup.replace('<div id="wrapper">','<div id="wrapper">'+switch,1)
         return markup
 
     def save(route,markup,template='generated',fragment=False):
@@ -177,7 +178,7 @@ def make_site(base_path='', review=True, language='en'):
         c['CONTENT']=content
         save(route,env.get_template('default-layout.html').render(**c),template)
 
-    page('/','main')
+    page('/','main',featured_recordings=recordings[:3])
     page('/score-basket','score-basket')
     page('/hansgal','hansgal_index',biography_intro=by_id['heading']['1']['body'],biography_menu=by_id['menu'],biography_extra=[r for r in tables['menu'] if r['mainmenu']=='hansgal' and r['hidden']!='yes' and r['id'] not in ['1', '2', '9', '11', '27', '28', '29', '38', '39', '40', '41', '42', '43', '44', '45', '46', '47', '48', '49', '50', '51', '52', '53', '54', '55', '56']])
     for menu in tables['menu']:
@@ -186,7 +187,8 @@ def make_site(base_path='', review=True, language='en'):
         c['submenus']=[r for r in tables['menu'] if r['mainmenu']==section]
         c['thumbnails']=[r for r in tables['thumbnail'] if r['menu_id']==id]
         if section=='hansgal':
-            c['thumb']=f'storage/pictureundersubmenus/thumb_hansgal_{id}.jpg'
+            candidate=f'storage/pictureundersubmenus/thumb_hansgal_{id}.jpg'
+            c['thumb']=candidate if (ROOT/'public'/candidate).is_file() else False
             text=ROOT/'public/storage/textsundersubmenus'/f'hansgal_{id}.html'
             c['piktorgram']=stripcslashes(text.read_text(encoding='utf8')) if text.exists() else ''
             if language=='de':c['piktorgram']=translate_template(c['piktorgram'])

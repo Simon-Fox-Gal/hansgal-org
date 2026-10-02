@@ -1,58 +1,13 @@
-<div class="control">
-	Switch to: 
-        {% if viewmode == 'coverflow' %}
-        <input type="button" value="Cover List" style="background: #b45f96; cursor: pointer; border: none; color: white;" onclick="location.href='/recordings/changeview/coverlist'" />
-        {% else %}
-        <input type="button" value="Cover Flow" style="background: #72315e; cursor: pointer; border: none; color: white;" onclick="location.href='/recordings/changeview/coverflow'" />
-        {% endif %}
-</div>
+{% macro collection() %}<details class="recording-browser" id="recording-collection" {% if route=='/recordings' %}open{% endif %}><summary>{{ tr('The recording collection','Die Aufnahmensammlung') }} · {{ recordings|length }}</summary><div class="collection-tools"><label for="recording-search">{{ tr("Find a recording","Eine Aufnahme finden") }}</label><input type="search" id="recording-search"><button type="button" id="recording-view-toggle">{{ tr("Horizontal view","Horizontale Ansicht") }}</button><p id="recording-count" role="status"></p></div><div class="albumlist">{% for r in recordings %}<a class="item" href="/recordings/{{ r.id }}/" data-recording-link="{{ r.id }}" {% if r.id==recording.id %}aria-current="page"{% endif %}><img loading="lazy" src="/storage/recordingcovers/{{ r.cover }}" alt="{{ r.title|striptags|e }}"><span>{{ r.title }}</span></a>{% endfor %}</div></details>{% endmacro %}
+{% if route=='/recordings' %}{{ collection() }}{% endif %}
+{% if recording %}<article class="tracklist">{% if route=='/recordings' %}<h2 class="recording-title">{{ recording.title }}</h2>{% else %}<h1 class="recording-title">{{ recording.title }}</h1>{% endif %}<div class="albumhead"><a class="imagesItem album-art" href="/storage/recordingcovers/{{ recording.cover }}" aria-label="{{ tr('Enlarge cover','Cover vergrößern') }}"><img src="/storage/recordingcovers/{{ recording.cover }}" alt="{{ recording.title|striptags|e }}"></a><div><div class="albumhead_detail">{{ recording.detail|stripcslashes }}</div>{% include 'purchase-links.html' %}</div></div><div class="recording-review article">{{ recording.review|stripcslashes }}</div><div class="recording-audio">{% if audiosamples %}
 
-{% if recordings  and  viewmode == 'coverlist' %}
-	<div class="albumlist">
-		{% for i in range(recordings|length) %}
-		<div class="item" {% if recordings[i].id == recording.id %}style="background: #DDD;"{% endif %}>
-			<table border="0" cellpadding="0" cellspacing="0" width="100%">
-				<tr>
-					<td style="width: 58px;"><a href="/recordings/{{ recordings[i].id }}/" data-recording-link="{{ recordings[i].id }}" aria-label="{{ recordings[i].title|striptags|e }}"><img width="50" src="/storage/recordingcovers/{{ recordings[i].cover }}" alt="{{ recordings[i].title|striptags|e }}" border="0" /></a></td>
-					<td align="left" valign="top">{{ recordings[i].title }}</td>
-				</tr>
-			</table>
-		</div>
-		{% endfor %}
-	</div>
-{% endif %}
 
-{% if recording %}
-<div class="tracklist{% if viewmode == 'coverflow' %} flow{% endif %}">
-	<div class="albumhead">
-		<table border="0" cellpadding="0" cellspacing="0" width="{% if viewmode == 'coverflow' %}740{% else %}500{% endif %}">
-			<tr>
-				<td valign="top" style="width: 260px;">
-					<a class="imagesItem" href="/storage/recordingcovers/{{ recording.cover }}">
-						<img src="/storage/recordingcovers/{{ recording.cover }}" width="250" border="0" />
-					</a>
-				</td>
-				<td align="left" valign="top">
-					
-					<div class="albumhead_detail">{{ recording.detail|stripcslashes }}</div>
-					{% include 'purchase-links.html' %}
-				</td>
-			</tr>
-			<tr>
-				<td colspan="2">
-					<br />
-					
-					{{ recording.review|stripcslashes }}
-				</td>
-			</tr>
-			{% if audiosamples %}
-			<tr>
-				<td colspan="2">
 					<br />
 					<br />
 					<div class="albumhead_title">Audio Sample(s)</div>
 					<div class="article">
-						
+
 						{% for i in range(audiosamples|length) %}
 						<div class="audiosample" id="audiosample_{{ audiosamples[i].id }}">
 							<div class="opus_no" style="width: 65px;">{{ audiosamples[i].opus_no }}</div>
@@ -73,14 +28,8 @@
 						<div class="clear"></div>
 						{% endfor %}
 					</div>
-				</td>
-			</tr>
-			{% endif %}
-		</table>
-	</div>
-</div>
-{% else %}
-<br><br><b><center>No results.</center></b><br><br>
-{% endif %}
 
-<div style="clear: both;"></div>
+
+			{% endif %}</div></article>{% endif %}
+
+{% if route!='/recordings' %}{{ collection() }}{% endif %}
