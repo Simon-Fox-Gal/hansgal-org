@@ -5,7 +5,7 @@ from collections import OrderedDict
 from urllib.parse import urlsplit, unquote, quote, urljoin
 from jinja2 import Environment, FileSystemLoader, ChainableUndefined
 from i18n import localize, translate_template
-from work_pdfs import build_work_pdfs
+from work_pdfs import build_work_pdfs, download_filename
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 STANDALONE_GERMAN={
@@ -88,6 +88,7 @@ def make_site(base_path='', review=True, language='en'):
     env=Environment(loader=LocaleLoader(ROOT/'templates'),autoescape=False,undefined=ChainableUndefined,keep_trailing_newline=True,finalize=lambda v:'' if v is None else v)
     env.globals['language']=language
     env.filters['stripcslashes']=stripcslashes
+    env.filters['work_pdf_filename']=lambda value:download_filename(stripcslashes(value))
     env.globals['php_truth']=php_truth
     props={x['name']:x for x in tables['properties']}
     recordings=sorted(tables['recording'],key=lambda r:(int(r['sequence']),-int(r['id'])))

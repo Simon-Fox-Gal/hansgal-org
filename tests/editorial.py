@@ -5,6 +5,7 @@ from pypdf import PdfReader
 ROOT=pathlib.Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'scripts'))
 from i18n import localize
 from build import stripcslashes
+from work_pdfs import download_filename
 def load(name):return json.loads((ROOT/'content'/f'{name}.json').read_text(encoding='utf8'))
 class Text(HTMLParser):
  def __init__(self,s):super().__init__();self.parts=[];self.skip=0;self.feed(s)
@@ -24,7 +25,10 @@ tables={name:load(name) for name in ['catalogue','recording','menu','catalogue_r
 for lang in ['en','de']:
  data=localize(tables) if lang=='de' else tables;prefix='de/' if lang=='de' else ''
  for r in data['catalogue']:
-  file=ROOT/'dist/storage/work-notes'/lang/(r['id']+'.pdf');pdf=PdfReader(file);text=compact(' '.join(re.sub(r'^Hans Gál · (?:Work|Werk) \d+\s*\n\d+\s*\n','',page.extract_text()) for page in pdf.pages))
+  file=ROOT/'dist/storage/work-notes'/lang/(r['id']+'.pdf');pdf=PdfReader(file)
+  text=''.join(compact(page.extract_text()).replace(compact('Hans Gál · '+plain(r['title']))+str(n),'',1) for n,page in enumerate(pdf.pages,1))
+  footer=compact('Hans Gál · '+plain(r['title']))
+  for page in pdf.pages:assert footer in compact(page.extract_text()),(lang,r['id'],'title missing from PDF footer')
   for field in ['title','description','movements','orchestration','availability','first_performance','other_performances','further_details','other_versions','publisher','free_downloads']:
    source=compact(plain(r.get(field)))
    assert not source or source in text,(lang,r['id'],field,'PDF text missing')
@@ -33,6 +37,9 @@ for lang in ['en','de']:
    if rel['catalogue_id']==r['id'] and rel['recording_id'] in recordings:assert compact(plain(recordings[rel['recording_id']]['title'])) in text,(lang,r['id'],'recording')
   markup=(ROOT/'dist'/prefix/'works/show'/r['id']/'index.html').read_text(encoding='utf8')
   assert f'/storage/work-notes/{lang}/{r["id"]}.pdf' in markup
+  filename=download_filename(stripcslashes(r['title']))
+  assert filename in [html.unescape(v) for v in re.findall(r'download="([^"]*)"',markup)],(lang,r['id'],'title filename missing')
+  assert not re.search(r'[<>:"/\\|?*\x00-\x1f]',filename),(lang,r['id'],'unsafe filename')
   if not r.get('year_of_composition') or r['year_of_composition']=='0':assert '(0)' not in markup
   checked+=1
  audio=(ROOT/'dist'/prefix/'audiosamples/index.html').read_text(encoding='utf8')

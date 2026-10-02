@@ -43,6 +43,11 @@ class Copy(HTMLParser):
   if not self.skip:self.parts.append(html.escape(s))
 
 def plain(s):return html.unescape(re.sub('<[^>]*>','',s or '')).strip()
+def download_filename(value):
+ title=re.sub(r'[<>:"/\\|?*\x00-\x1f]', '-', plain(value))
+ title=re.sub(r'\s+', ' ',title).strip(' .-')[:160].rstrip(' .-')
+ return 'Hans Gál - '+(title or 'Work notes')+'.pdf'
+
 def paragraphs(value,style,site,strip):
  # Legacy HTML is occasionally unbalanced. Reflow text safely while retaining
  # every textual value; append explicit link labels separately below.
@@ -101,11 +106,15 @@ def build_work_pdfs(tables,out,language,base_path,strip):
     story.append(Paragraph('<link href="'+url+'" color="#792858"><b>'+html.escape(plain(strip(record['title'])))+'</b></link>',body))
     story+=paragraphs(record['detail'],body,site,strip);story.append(Spacer(1,7))
   story.append(Spacer(1,15));story.append(Paragraph('<link href="'+work_url+'" color="#215d42">'+t('View this work online','Dieses Werk online ansehen')+'</link>',small))
+  footer=Paragraph('Hans Gál · '+html.escape(plain(strip(row['title']))),ParagraphStyle('footer',fontName='Edition',fontSize=8,leading=11,textColor=GREEN))
+  footer_width=A4[0]-118
+  _,footer_height=footer.wrap(footer_width,A4[1])
+  footer_line=28+footer_height+8
   def furniture(canvas,doc):
    canvas.saveState();canvas.setTitle(plain(strip(row['title']))+' · Hans Gál');canvas.setAuthor('The Hans Gál Society')
    canvas.drawImage(str(ROOT/'public/gfx/images/hansgal-logo-website.png'),42,A4[1]-69,width=157,height=58.5,mask='auto',preserveAspectRatio=True)
-   canvas.setStrokeColor(PLUM);canvas.setLineWidth(.6);canvas.line(42,43,A4[0]-42,43)
-   canvas.setFont('Edition',8);canvas.setFillColor(GREEN);canvas.drawString(42,28,'Hans Gál · '+t('Work','Werk')+' '+row['id']);canvas.drawRightString(A4[0]-42,28,str(doc.page));canvas.restoreState()
-  doc=SimpleDocTemplate(str(folder/(row['id']+'.pdf')),pagesize=A4,rightMargin=46,leftMargin=46,topMargin=91,bottomMargin=59,pageCompression=1,invariant=1)
+   canvas.setStrokeColor(PLUM);canvas.setLineWidth(.6);canvas.line(42,footer_line,A4[0]-42,footer_line)
+   canvas.setFont('Edition',8);canvas.setFillColor(GREEN);footer.drawOn(canvas,42,28);canvas.drawRightString(A4[0]-42,28,str(doc.page));canvas.restoreState()
+  doc=SimpleDocTemplate(str(folder/(row['id']+'.pdf')),pagesize=A4,rightMargin=46,leftMargin=46,topMargin=91,bottomMargin=footer_line+16,pageCompression=1,invariant=1)
   doc.build(story,onFirstPage=furniture,onLaterPages=furniture)
  return len(tables['catalogue'])
