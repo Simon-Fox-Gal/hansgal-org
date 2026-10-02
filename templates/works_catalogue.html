@@ -6,11 +6,11 @@
 			<h1>{{ catalogue.title|stripcslashes }}</h1>
 			{{ catalogue.description|stripcslashes }}{% if php_truth(catalogue.opus_no) %}, Opus {{ catalogue.opus_no }}{% endif %}, ({{ catalogue.year_of_composition }})<br />
             {% if catalogue.score_available == 'yes' and catalogue.score_file %}
-            <section class="score-panel" aria-label="Downloadable score"><p>{{ catalogue.score_note|e }}</p><p><a href="{{ catalogue.score_file|e }}" download>Download PDF</a> · <button type="button" data-add-score="{{ catalogue.id }}">Add to score basket</button> · <a href="/score-basket/">View score basket</a></p><p id="score-added-status" role="status"></p></section>
+            <section class="score-panel" aria-label="Downloadable score"><p>{{ catalogue.score_note|e }}</p><p class="score-donation">{{ tr("Suggested donation","Empfohlene Spende") }}: £{{ catalogue.score_suggested_donation }} · {{ tr("A £0 download is also available.","Ein Download für £0 ist ebenfalls möglich.") }}</p><div class="score-actions"><a href="{{ catalogue.score_file|e }}" download>Download PDF</a><button type="button" data-add-score="{{ catalogue.id }}">Add to score basket</button><a href="/score-basket/">View score basket</a></div><p id="score-added-status" role="status"></p></section>
             {% endif %}
                         {{ catalogue.movements|stripcslashes }}<br/>
 			{% if catalogue.other_versions %}
-                        	{{ catalogue.other_versions|stripcslashes }}<br/>
+                           {{ catalogue.other_versions|stripcslashes }}<br/>
 			{% endif %}
 			<br />
 			<div class="work-facts">

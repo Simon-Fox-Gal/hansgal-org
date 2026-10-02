@@ -1,13 +1,13 @@
-<div class="recording-toolbar"><a class="text-link" href="/recordings/#recording-collection">{{ tr('Browse all recordings','Alle Aufnahmen ansehen') }} →</a><button type="button" id="recording-view-toggle">{{ tr('Horizontal view','Horizontale Ansicht') }}</button></div>
-<details class="recording-browser" id="recording-collection" {% if route=='/recordings' %}open{% endif %}><summary>{{ tr('The recording collection','Die Aufnahmensammlung') }} · {{ recordings|length }}</summary><div class="albumlist">{% for r in recordings %}<a class="item" href="/recordings/{{ r.id }}/" data-recording-link="{{ r.id }}" {% if r.id==recording.id %}aria-current="page"{% endif %}><img loading="lazy" src="/storage/recordingcovers/{{ r.cover }}" alt="{{ r.title|striptags|e }}"><span>{{ r.title }}</span></a>{% endfor %}</div></details>
-{% if recording %}<article class="tracklist"><h2 class="recording-title">{{ recording.title }}</h2><div class="albumhead"><a class="imagesItem album-art" href="/storage/recordingcovers/{{ recording.cover }}" aria-label="{{ tr('Enlarge cover','Cover vergrößern') }}"><img src="/storage/recordingcovers/{{ recording.cover }}" alt="{{ recording.title|striptags|e }}"></a><div><div class="albumhead_detail">{{ recording.detail|stripcslashes }}</div>{% include 'purchase-links.html' %}</div></div><div class="recording-review article">{{ recording.review|stripcslashes }}</div><div class="recording-audio">{% if audiosamples %}
-			
-				
+{% macro collection() %}<details class="recording-browser" id="recording-collection" {% if route=='/recordings' %}open{% endif %}><summary>{{ tr('The recording collection','Die Aufnahmensammlung') }} · {{ recordings|length }}</summary><div class="collection-tools"><label for="recording-search">{{ tr("Find a recording","Eine Aufnahme finden") }}</label><input type="search" id="recording-search"><button type="button" id="recording-view-toggle">{{ tr("Horizontal view","Horizontale Ansicht") }}</button><p id="recording-count" role="status"></p></div><div class="albumlist">{% for r in recordings %}<a class="item" href="/recordings/{{ r.id }}/" data-recording-link="{{ r.id }}" {% if r.id==recording.id %}aria-current="page"{% endif %}><img loading="lazy" src="/storage/recordingcovers/{{ r.cover }}" alt="{{ r.title|striptags|e }}"><span>{{ r.title }}</span></a>{% endfor %}</div></details>{% endmacro %}
+{% if route=='/recordings' %}{{ collection() }}{% endif %}
+{% if recording %}<article class="tracklist">{% if route=='/recordings' %}<h2 class="recording-title">{{ recording.title }}</h2>{% else %}<h1 class="recording-title">{{ recording.title }}</h1>{% endif %}<div class="albumhead"><a class="imagesItem album-art" href="/storage/recordingcovers/{{ recording.cover }}" aria-label="{{ tr('Enlarge cover','Cover vergrößern') }}"><img src="/storage/recordingcovers/{{ recording.cover }}" alt="{{ recording.title|striptags|e }}"></a><div><div class="albumhead_detail">{{ recording.detail|stripcslashes }}</div>{% include 'purchase-links.html' %}</div></div><div class="recording-review article">{{ recording.review|stripcslashes }}</div><div class="recording-audio">{% if audiosamples %}
+
+
 					<br />
 					<br />
 					<div class="albumhead_title">Audio Sample(s)</div>
 					<div class="article">
-						
+
 						{% for i in range(audiosamples|length) %}
 						<div class="audiosample" id="audiosample_{{ audiosamples[i].id }}">
 							<div class="opus_no" style="width: 65px;">{{ audiosamples[i].opus_no }}</div>
@@ -28,6 +28,8 @@
 						<div class="clear"></div>
 						{% endfor %}
 					</div>
-				
-			
+
+
 			{% endif %}</div></article>{% endif %}
+
+{% if route!='/recordings' %}{{ collection() }}{% endif %}

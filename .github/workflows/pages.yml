@@ -34,6 +34,7 @@ jobs:
       - run: node tests/donations.test.cjs
       - run: python tests/recordings.py
       - run: python tests/purchase-audit.py
+      - run: python tests/edition.py
       - uses: actions/upload-pages-artifact@v4
         with:
           path: dist

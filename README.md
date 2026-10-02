@@ -1,6 +1,6 @@
-# Hans Gál website — replica for review
+# Hans Gál website — The Living Edition
 
-This is the first static replica of **hansgal.org**. It preserves the original pages, design, wording, record IDs and URL paths, while replacing PHP/MySQL page generation with JSON, templates and browser JavaScript.
+This static edition of **hansgal.org** preserves its authored content, record IDs, relationships, media and URL paths, with the approved Living Edition redesign across the bilingual public site. Python renders JSON and templates; browser JavaScript provides catalogue search, audio and score downloads. See [the design and verification notes](docs/LIVING-EDITION.md).
 
 The live hansgal.org site and its DNS have not been changed. The preservation archive remains separate in Google Drive; it is not part of this repository.
 
@@ -28,7 +28,7 @@ For GitHub Pages, build with `python scripts/build.py --base-path /hansgal-org`.
 ## Content and editorial CMS
 
 - `content/` holds the original public content fields and relationships as JSON, retaining IDs, nulls, bilingual fields, hidden flags and source HTML. Unlinked menu pages keep their direct URLs and remain absent from navigation.
-- `templates/` contains presentation templates translated from the original Smarty templates to Jinja. The biography index retains its rendered original markup.
+- `templates/` contains the Living Edition presentation templates in Jinja, retaining the original content fields and stable navigation destinations.
 - `public/` holds original public media, documents, fonts, styles and browser libraries.
 - `app/` replaces database-backed reading and selection with browser code.
 - `scripts/` builds and serves the static output. `dist/` is generated and is not committed.
@@ -41,7 +41,7 @@ A separate private online CMS provides an editorial inbox, page comments, direct
 
 The migration comparison passed for all 313 included captured HTML content pages after normalizing whitespace and excluding scripts/styles. All fields in the 16 selected content tables match the preserved source JSON. The 99 catalogue cases match the live site's result IDs and ordering. Original copied asset bytes are checked by SHA-256.
 
-These are preservation and functional checks, not a claim that the old site had no defects. Existing missing images, invalid links and text encoding artifacts remain recorded. See `docs/source-comparison.json`, `docs/link-audit.json` and `docs/review-notes.md`.
+Those migration comparisons describe the original capture. The redesign additionally checks 2,922 authored field appearances in both languages and preserves the original logo. Existing missing images, invalid links and text encoding artifacts remain recorded. See `docs/LIVING-EDITION.md`, `docs/source-comparison.json`, `docs/link-audit.json` and `docs/review-notes.md`.
 
 ## Rights
 

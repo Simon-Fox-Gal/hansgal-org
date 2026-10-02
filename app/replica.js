@@ -33,9 +33,9 @@
     const rows=window.HansgalCatalogue.select(data,form,accent,orders.orders||{});
     const table=document.querySelector('table.catalogue-results');
     if(!table)return;
-    const head=table.rows[0].outerHTML;
-    table.innerHTML=head+rows.map((r,i)=>'<tr class="'+(i%2?'dark':'light')+'"><td width="80px">'+(r.opus_no??'')+'</td><td width="200px"><a href="'+href('/works/show/'+r.id)+'">'+strip(r.title)+'</a></td><td width="270px">'+(r.description??'')+'</td><td width="80px">'+(r.year_of_composition??'')+'</td><td width="140px">'+(r.publisher??'')+'</td></tr>').join('');
-    if(!rows.length)table.insertAdjacentHTML('beforeend','<tr class="light"><td colspan="5" align="center"><br />'+t('No result','Kein Ergebnis')+'<br /><br /></td></tr>');
+    const body=table.tBodies[0];
+    body.innerHTML=rows.map((r,i)=>'<tr class="'+(i%2?'dark':'light')+'"><td>'+(r.opus_no??'')+'</td><td><a href="'+href('/works/show/'+r.id)+'">'+strip(r.title)+'</a></td><td>'+(r.description??'')+'</td><td>'+(r.year_of_composition??'')+'</td><td>'+(r.publisher??'')+'</td></tr>').join('');
+    if(!rows.length)body.innerHTML='<tr class="light"><td colspan="5">'+t('No result','Kein Ergebnis')+'</td></tr>';
     table.dataset.resultCount=String(rows.length);
     const labels=[t('Opus','Opus'),t('Title','Titel'),t('Description','Beschreibung'),t('Year','Jahr'),t('Publisher','Verlag')];
     Array.from(table.rows).slice(1).forEach(row=>Array.from(row.cells).forEach((cell,i)=>cell.dataset.label=labels[i]));
@@ -48,7 +48,7 @@
     const form=document.getElementById(id);
     if(id==='worksform') {
       const values=Object.fromEntries(new FormData(form));
-      if(button)values.submitbutton=button;
+      values.submitbutton=button||'Go';
       // All controls participate in filtering and sorting together.
       renderWorks(values);
     } else if(id==='audioform')selectAudio(form.elements.chosenwork.value);
@@ -90,9 +90,11 @@
     const match=(r,fields)=>fields.some(f=>window.HansgalCatalogue.like(window.HansgalCatalogue.unaccent(r[f],accent).toLowerCase(),k));
     const plain=s=>{const d=document.createElement('div');d.innerHTML=strip(s);return d.textContent||'';};
     const sections=[['ARTICLES',data.menu,['title','lead','body'],'body',r=>'/'+r.mainmenu+'/'+r.id],['AUDIO SAMPLES',config.audioOrder.map(id=>data.audio_sample.find(r=>r.id===id)),['title','details'],'details',r=>'/audiosamples?chosenwork='+config.audioOrder.indexOf(r.id)],['WORKS',data.catalogue,['title','description','title_de','description_de','hidden_terms','publisher','further_details','free_downloads','other_versions'],'description',r=>'/works/show/'+r.id],['PHOTOS',data.photos,['title'],'title',r=>'/storage/photos/'+r.filename],['RECORDINGS',data.recording,['title','detail','review'],'detail',r=>'/recordings/'+r.id]];
-    target.innerHTML='<br /><br />'+sections.map(([heading,rows,fields,desc,route])=> {
-      const hits=keyword?rows.filter(r=>match(r,fields)):[];
-      return ({ARTICLES:t('ARTICLES','ARTIKEL'),'AUDIO SAMPLES':t('AUDIO SAMPLES','HÖRPROBEN'),WORKS:t('WORKS','WERKE'),PHOTOS:t('PHOTOS','FOTOS'),RECORDINGS:t('RECORDINGS','AUFNAHMEN')}[heading])+'<div class="hr"></div><br />'+(hits.length?hits.map(r=>'<h2>'+strip(r.title)+'</h2>'+(heading==='PHOTOS'?'<a class="imagesItem" rel="group'+r.photos_category_id+'" href="'+href(route(r))+'">'+r.title+'</a><br />':'<p class="desc">'+esc(plain(r[desc]).slice(0,210))+(plain(r[desc]).length>210?'...':'')+'<br /></p><a href="'+href(route(r))+'">'+t('More','Weiterlesen')+'</a><br /><br />')).join(''):t('No result.','Kein Ergebnis.'))+'<br /><br />';
+    if(!keyword.trim()){target.innerHTML='<p>'+t('Enter a word, title or name to explore the archive.','Geben Sie ein Wort, einen Titel oder einen Namen ein, um das Archiv zu durchsuchen.')+'</p>';return;}
+    target.innerHTML=sections.map(([heading,rows,fields,desc,route])=> {
+      const hits=rows.filter(r=>match(r,fields));
+      const title={ARTICLES:t('Articles','Artikel'),'AUDIO SAMPLES':t('Audio samples','Hörproben'),WORKS:t('Works','Werke'),PHOTOS:t('Photographs','Fotografien'),RECORDINGS:t('Recordings','Aufnahmen')}[heading];
+      return '<section><h2>'+title+' <small>('+hits.length+')</small></h2>'+(hits.length?hits.map(r=>'<article><h3><a '+(heading==='PHOTOS'?'class="imagesItem" rel="group'+r.photos_category_id+'" ':'')+'href="'+href(route(r))+'">'+strip(r.title)+'</a></h3>'+(heading==='PHOTOS'?'':'<p>'+esc(plain(r[desc]).slice(0,210))+(plain(r[desc]).length>210?'…':'')+'</p>')+'</article>').join(''):'<p>'+t('No result.','Kein Ergebnis.')+'</p>')+'</section>';
     }).join('');lightboxes();
   }
   window.Hansgal={
