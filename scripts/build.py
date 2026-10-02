@@ -5,6 +5,7 @@ from collections import OrderedDict
 from urllib.parse import urlsplit, unquote, quote, urljoin
 from jinja2 import Environment, FileSystemLoader, ChainableUndefined
 from i18n import localize, translate_template
+from work_pdfs import build_work_pdfs
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 STANDALONE_GERMAN={
@@ -32,6 +33,19 @@ def stripcslashes(value):
 
 def php_truth(value):
     return bool(value) and value != '0'
+
+def editorial_fragment(value):
+    """Discard embedded document chrome/CSS; retain authored text and controls."""
+    scripts=[]
+    def keep_script(match):
+        scripts.append(match[0]);return f'<!--EDITORIAL_SCRIPT_{len(scripts)-1}-->'
+    value=re.sub(r'<script\b[^>]*>.*?</script\s*>',keep_script,value,flags=re.I|re.S)
+    value=re.sub(r'<head\b[^>]*>.*?</head\s*>','',value,flags=re.I|re.S)
+    value=re.sub(r'<style\b[^>]*>.*?</style\s*>','',value,flags=re.I|re.S)
+    value=re.sub(r'<!doctype[^>]*>|</?(?:html|body)\b[^>]*>','',value,flags=re.I)
+    value=re.sub(r'<(/?)h1\b',r'<\1h2',value,flags=re.I)
+    for i,script in enumerate(scripts):value=value.replace(f'<!--EDITORIAL_SCRIPT_{i}-->',script)
+    return value
 
 def audio_row(row):
     r=copy.deepcopy(row)
@@ -65,6 +79,7 @@ def make_site(base_path='', review=True, language='en'):
             css.write_text(value,encoding='utf8')
     tables={p.stem:json.loads(p.read_text(encoding='utf8')) for p in (ROOT/'content').glob('*.json') if p.stem not in ('asset-manifest','legacy-routes','catalogue-order','catalogue-orders','accent-map')}
     if language=='de':tables=localize(tables)
+    build_work_pdfs(tables,out,language,base_path,stripcslashes)
     by_id={k:{r.get('id'):r for r in v} for k,v in tables.items()}
     class LocaleLoader(FileSystemLoader):
         def get_source(self,environment,template):
@@ -183,7 +198,7 @@ def make_site(base_path='', review=True, language='en'):
     page('/hansgal','hansgal_index',biography_intro=by_id['heading']['1']['body'],biography_menu=by_id['menu'],biography_extra=[r for r in tables['menu'] if r['mainmenu']=='hansgal' and r['hidden']!='yes' and r['id'] not in ['1', '2', '9', '11', '27', '28', '29', '38', '39', '40', '41', '42', '43', '44', '45', '46', '47', '48', '49', '50', '51', '52', '53', '54', '55', '56']])
     for menu in tables['menu']:
         section=menu['mainmenu']; id=menu['id']; route=f'/{section}/{id}'
-        c={k:stripcslashes(menu[k]) for k in ('title','lead','body')}
+        c={k:editorial_fragment(stripcslashes(menu[k])) for k in ('title','lead','body')}
         c['submenus']=[r for r in tables['menu'] if r['mainmenu']==section]
         c['thumbnails']=[r for r in tables['thumbnail'] if r['menu_id']==id]
         if section=='hansgal':
@@ -220,8 +235,6 @@ def make_site(base_path='', review=True, language='en'):
     photos=OrderedDict((cat['name'],sorted([r for r in tables['photos'] if r['photos_category_id']==cat['id']],key=lambda r:int(r['sorrend']))) for cat in tables['photos_category'])
     page('/photos','photos',photos=photos)
     audio_display=copy.deepcopy(audio)
-    for r in audio_display:
-        if re.search(r'\d',r['opus_no']):r['title']=r['opus_no']+' '+r['title']
     page('/audiosamples','audiosamples',audiosamples=audio_display)
     for r in audio:
         for f in r['files']:

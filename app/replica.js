@@ -34,7 +34,7 @@
     const table=document.querySelector('table.catalogue-results');
     if(!table)return;
     const body=table.tBodies[0];
-    body.innerHTML=rows.map((r,i)=>'<tr class="'+(i%2?'dark':'light')+'"><td>'+(r.opus_no??'')+'</td><td><a href="'+href('/works/show/'+r.id)+'">'+strip(r.title)+'</a></td><td>'+(r.description??'')+'</td><td>'+(r.year_of_composition??'')+'</td><td>'+(r.publisher??'')+'</td></tr>').join('');
+    body.innerHTML=rows.map((r,i)=>'<tr class="'+(i%2?'dark':'light')+'"><td>'+(r.opus_no??'')+'</td><td><a href="'+href('/works/show/'+r.id)+'">'+strip(r.title)+'</a></td><td>'+(r.description??'')+'</td><td>'+(r.year_of_composition&&r.year_of_composition!=='0'?r.year_of_composition:'')+'</td><td>'+(r.publisher??'')+'</td></tr>').join('');
     if(!rows.length)body.innerHTML='<tr class="light"><td colspan="5">'+t('No result','Kein Ergebnis')+'</td></tr>';
     table.dataset.resultCount=String(rows.length);
     const labels=[t('Opus','Opus'),t('Title','Titel'),t('Description','Beschreibung'),t('Year','Jahr'),t('Publisher','Verlag')];
@@ -116,9 +116,10 @@
     if(path==='/works') {
       const form=document.getElementById('worksform');form.onsubmit=e=>{e.preventDefault();submit('worksform',e.submitter?.value||'Go');};
       for(const [k,v] of Object.entries(params))if(form.elements[k]&&k!=='submitbutton')form.elements[k].value=v;
+      form.querySelectorAll('select').forEach(select=>select.addEventListener('change',()=>submit('worksform')));
       if(Object.keys(params).length)renderWorks(params);
     }
-    if(path==='/audiosamples') {
+    if(path==='/audiosamples'&&!document.getElementById('listening-station')) {
       document.getElementById('audioform').onsubmit=e=>{e.preventDefault();submit('audioform');};
       if(params.chosenwork!==undefined){document.querySelector('[name=chosenwork]').value=params.chosenwork;selectAudio(params.chosenwork,params.chosenfile??null);}
     }

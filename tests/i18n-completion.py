@@ -34,6 +34,6 @@ for before,after in zip(works,translated):
 assert any(r['publisher']=='Unveröffentlicht' for r in translated)
 coverage=json.loads((ROOT/'docs/translation-coverage.json').read_text(encoding='utf8'))
 assert not any(i['status']=='pending' for i in coverage['items'])
-assert 'Werk auswählen' in (ROOT/'dist/de/audiosamples/index.html').read_text(encoding='utf8')
+assert 'Ein Ort zum Zuhören' in (ROOT/'dist/de/audiosamples/index.html').read_text(encoding='utf8')
 assert 'SUCHERGEBNIS' in (ROOT/'dist/de/search/index.html').read_text(encoding='utf8')
 print('PASS: completed table inventory, embedded labels, sidebar captions, standalone German routes, unchanged source poem/images/assets and publisher identifiers.')

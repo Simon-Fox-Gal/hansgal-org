@@ -7705,5 +7705,11 @@
     "path": "/storage/recordingcovers/project-paloma-volume-1.jpg",
     "bytes": 69997,
     "sha256": "1410da8c2dd86ced41015f5fc8eff51740300b26cfbe47a1441f097bc2b5e6ca"
+  },
+  {
+    "source_path": "storage/userfiles/image/gal-family-tree.svg",
+    "path": "/storage/userfiles/image/gal-family-tree.svg",
+    "bytes": 14496,
+    "sha256": "ee5ed1690e6ba9ad67da7c04c739c49afbcee188db26cf558e4731b41fa9783d"
   }
 ]
