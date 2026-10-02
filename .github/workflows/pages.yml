@@ -18,6 +18,7 @@ jobs:
         with:
           fetch-depth: 0
       - uses: actions/configure-pages@v5
+        id: pages
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
@@ -26,7 +27,16 @@ jobs:
           node-version: '22'
       - run: python -m pip install -r requirements.txt
       - run: node tests/catalogue.test.cjs
-      - run: python scripts/build.py --base-path /hansgal-org
+      - name: Build for the configured Pages address
+        env:
+          SITE_BASE_PATH: ${{ steps.pages.outputs.base_path }}
+          SITE_HOST: ${{ steps.pages.outputs.host }}
+        run: |
+          if [ "$SITE_HOST" = "hansgal.org" ] || [ "$SITE_HOST" = "www.hansgal.org" ]; then
+            python scripts/build.py --base-path "$SITE_BASE_PATH" --production
+          else
+            python scripts/build.py --base-path "$SITE_BASE_PATH"
+          fi
       - run: python scripts/verify.py
       - run: python tests/mission.py
       - run: python tests/i18n-completion.py
