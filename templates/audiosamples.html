@@ -1,40 +1,11 @@
-<!--[if IE]>
-<br />
-<![endif]-->
-<div class="staticpage">
-	<div class="text" style="width: 800px;">
-		<h1 class="title">AUDIO SAMPLES</h1>
-		<div class="article">
-			<br />
-			<form action="/audiosamples" method="POST" id="audioform">
-				<select name="chosenwork" class="audiowork" onchange="$('#audioform').submit()">
-					<option value="">Select a work</option>
-					{% for i in range(audiosamples|length) %}
-						<option value="{{ i }}"{% if chosenwork != ""  and  i == chosenwork %} selected="selected"{% endif %}>{{ audiosamples[i].title }}</option>
-					{% endfor %}
-				</select>
-			</form>
-			<div class="clear"></div>
-			{% if chosenwork != "" %}
-				<br />
-				<audio controls="controls" {% if autoplay != "" %} autoplay="autoplay" {% endif %}>
-					<source src="{{ audiosamples[chosenwork].files[audiofile].fileroot }}.mp3" type='audio/mpeg; codecs="mp3"' />
-					<source src="{{ audiosamples[chosenwork].files[audiofile].fileroot }}.ogg" type='audio/ogg; codecs="vorbis"' />
-					Your browser does not support the HTML5 Audio element.
-				</audio>
-				<br />Please choose a sample<br />
-				<form action="/audiosamples" method="POST" id="audiofile">
-					<input type="hidden" name="chosenwork" id="chosenwork" value="{{ chosenwork }}" />
-					{% for j in range(audiosamples[chosenwork].files|length) %}
-						<input type="radio" name="chosenfile" value="{{ j }}" {% if j ==  chosenfile %}checked{% endif %} onchange="$('#audiofile').submit()">{{ audiosamples[chosenwork].files[j].title }}<br>
-					{% endfor %}
-				</form>
-				{% if audiosamples[chosenwork].opus_no != "Op. -" %}
-					<br />{{ audiosamples[chosenwork].opus_no }}<br />
-				{% endif %}
-				{{ audiosamples[chosenwork].details }}
-			{% endif %}
-		</div>
-	</div>
-	<div class="clear"></div>
-</div>
+<section class="listening-station" id="listening-station">
+<p class="eyebrow">{{ tr('The music, at first hand','Die Musik erleben') }}</p>
+<h1>{{ tr('A place to listen','Ein Ort zum Zuhören') }}</h1>
+<p class="listening-intro">{{ tr('An open invitation to the music of Hans Gál. Begin with today’s excerpt, follow an instrument or a voice, or find a work you already love.','Eine Einladung in die Musik von Hans Gál. Beginnen Sie mit der heutigen Hörprobe, folgen Sie einem Instrument oder einer Stimme, oder finden Sie ein vertrautes Werk wieder.') }}</p>
+<div class="listening-hero"><div><p class="eyebrow">{{ tr('A different discovery every day','Jeden Tag eine neue Entdeckung') }}</p><h2 id="daily-title">{{ tr('Today’s listening','Heute hören') }}</h2><p id="daily-track"></p><button type="button" id="play-daily">{{ tr('Play today’s excerpt','Heutige Hörprobe abspielen') }} ▶</button></div><div class="listening-score"><p class="eyebrow">{{ tr('Make room for the music','Zeit für die Musik') }}</p><p>{{ tr('From an intimate solo to the breadth of an orchestra: explore the collection at your own pace.','Vom intimen Solo bis zum Klangraum des Orchesters: Entdecken Sie die Sammlung in Ihrem eigenen Tempo.') }}</p><button type="button" id="surprise-listening">{{ tr('Choose something for me','Eine Hörprobe für mich auswählen') }}</button></div></div>
+<h2>{{ tr('Find your way in','Zugänge zur Musik') }}</h2><div class="listening-toolbar" aria-label="{{ tr('Listening categories','Hörkategorien') }}">{% for value,en,de in [('','Everything','Alles'),('4','Orchestra','Orchester'),('1','Chamber music','Kammermusik'),('3','Keyboard','Tasteninstrumente'),('5','Voices','Stimmen')] %}<button type="button" data-listening-category="{{ value }}" aria-pressed="{{ 'false' if value else 'true' }}">{{ tr(en,de) }}</button>{% endfor %}</div>
+<label class="listening-search">{{ tr('Search the listening collection','Hörsammlung durchsuchen') }}<input type="search" id="listening-search" placeholder="{{ tr('A title, instrument or opus number','Titel, Instrument oder Opusnummer') }}"></label><p id="listening-count" class="listening-status" role="status"></p>
+<div class="listening-library">{% for r in audiosamples %}<article class="listening-work" data-audio-id="{{ r.id }}"><p class="eyebrow">{{ r.opus_no if r.opus_no != 'Op. -' else tr('From the archive','Aus dem Archiv') }}</p><h3>{{ r.title|stripcslashes }}</h3><details><summary>{{ r.files|length }} {{ tr('excerpts · open to listen','Hörproben · zum Anhören öffnen') }}</summary><div>{% for f in r.files %}<a class="listening-track" data-track="{{ loop.index0 }}" href="/storage/audiosamples/{{ f.filename }}">▶ {{ f.title|stripcslashes }}</a>{% endfor %}</div><div class="listening-details">{{ r.details|stripcslashes }}</div></details></article>{% endfor %}</div>
+<section class="listening-now" id="listening-now" hidden aria-label="{{ tr('Now playing','Aktuelle Hörprobe') }}"><div><button type="button" id="close-listening" aria-label="{{ tr('Close player','Player schließen') }}">×</button><p class="eyebrow" style="color:white">{{ tr('On the music stand','Auf dem Notenpult') }}</p><h2 id="now-title"></h2><p id="now-track"></p><div class="player-controls"><button type="button" id="previous-excerpt">← {{ tr('Previous','Zurück') }}</button><button type="button" id="next-excerpt">{{ tr('Next','Weiter') }} →</button><a id="now-work" hidden>{{ tr('About this work','Über dieses Werk') }}</a></div></div><div><audio id="listening-player" controls preload="none"></audio><p id="player-message" role="status"></p><label><input type="checkbox" id="continuous-listening">{{ tr('Continue to the next excerpt','Nächste Hörprobe automatisch abspielen') }}</label></div></section>
+<noscript><p>{{ tr('Open a work and select an excerpt to listen directly. Enable JavaScript for daily discoveries and filters.','Öffnen Sie ein Werk und wählen Sie eine Hörprobe aus. Aktivieren Sie JavaScript für die tägliche Auswahl und die Filter.') }}</p></noscript>
+</section><script defer src="/app/listening.js"></script>

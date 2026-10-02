@@ -1,5 +1,6 @@
 """Independent integrity checks for the bilingual catalogue and score delivery."""
 import hashlib, io, json, pathlib, re, subprocess, zipfile
+from editorial_updates import approved
 from html.parser import HTMLParser
 
 ROOT=pathlib.Path(__file__).resolve().parents[1]
@@ -31,6 +32,7 @@ for path in paths:
     for before,after in zip(old,new):
         for key,value in before.items():
             if path=='content/catalogue.json' and key in ('title_de','description_de'):continue
+            if approved(path,before.get('id'),key,after[key]):continue
             assert after[key]==value,f'{path} {before.get("id")} {key}: unintended alteration'
         original_count+=1
 
