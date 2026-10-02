@@ -29,8 +29,18 @@ for path in paths:
             key=json.dumps(row,sort_keys=True)
             assert key not in seen,f'{path}: duplicate appended relation'
             seen.add(key)
-    for before,after in zip(old,new):
+    # Visual CMS ordering may reorder whole arrays or renumber rank fields.
+    # Match by stable ID for those arrays; keep every non-order field checked.
+    if path in ('content/faqs.json','content/photos_category.json'):
+        current_by_id={r['id']:r for r in new}
+        pairs=[(r,current_by_id[r['id']]) for r in old]
+    else:
+        pairs=zip(old,new)
+    for before,after in pairs:
         for key,value in before.items():
+            if (path in ('content/recording.json','content/audio_sample.json') and key=='sequence') or (path=='content/photos.json' and key=='sorrend'):
+                assert str(after[key]).isdigit(),f'{path}: invalid display order'
+                continue
             if path=='content/catalogue.json' and key in ('title_de','description_de'):continue
             if approved(path,before.get('id'),key,after[key]):continue
             assert after[key]==value,f'{path} {before.get("id")} {key}: unintended alteration'
