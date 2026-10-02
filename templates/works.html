@@ -1,64 +1,8 @@
-<!--[if IE]>
-<br />
-<![endif]-->
-<div class="staticpage">
-	<div class="widelead">{{ works_lead }}</div>
-	<form action="/works" method="POST" id="worksform">
-		<div class="text" style="width: 808px; padding-bottom: 15px;">
-			<div class="title">WORKS</div>
-			<div class="article">
-				<br /><br />
-				<input type="hidden" name="ordercolumn" id="ordercolumn" value="opus_no" />
-				<input type="hidden" name="orderby" id="orderby" value="ASC" />
-				Select a genre and/or instrument and click "Display":<br />
-				<select name="genre" class="categorysearch" onchange="$('#worksform').submit()">
-					<option value="">All genres</option>
-					{% for i in range(genres|length) %}
-					<option value="{{ genres[i].id }}"{% if genres[i].id == genre %} selected="selected"{% endif %}>{{ genres[i].name }}</option>
-					{% endfor %}
-				</select>
-				<select name="instrument" class="categorysearch" onchange="$('#worksform').submit()">
-					<option value="">All instruments</option>
-					{% for i in range(instruments|length) %}
-					<option value="{{ instruments[i].id }}"{% if instruments[i].id == instrument %} selected="selected"{% endif %}>{{ instruments[i].name }}</option>
-					{% endfor %}
-				</select>
-				<input type="submit" name="submitbutton" value="Display" /><br></br>
+<section class="catalogue-page"><p class="eyebrow">{{ tr('The music of Hans Gál','Die Musik von Hans Gál') }}</p><h1>{{ tr('Works catalogue','Werkverzeichnis') }}</h1><div class="catalogue-intro">{{ works_lead }}</div>
+<form action="/works" method="get" id="worksform" class="catalogue-filters"><input type="hidden" name="ordercolumn" id="ordercolumn" value="opus_no"><input type="hidden" name="orderby" id="orderby" value="ASC">
+<div class="filter-grid"><label>{{ tr('Genre','Gattung') }}<select name="genre"><option value="">All genres</option>{% for g in genres %}<option value="{{ g.id }}">{{ g.name }}</option>{% endfor %}</select></label><label>{{ tr('Instrument','Instrument') }}<select name="instrument"><option value="">All instruments</option>{% for i in instruments %}<option value="{{ i.id }}">{{ i.name }}</option>{% endfor %}</select></label></div>
+<div class="keyword-grid"><label>Opus<input name="opus_number" type="search" placeholder="{{ tr('e.g. 33','z. B. 33') }}"></label><label>{{ tr('Title','Titel') }}<input name="title" type="search" placeholder="{{ tr('Title or keyword','Titel oder Suchbegriff') }}"></label><label>{{ tr('Year','Jahr') }}<input name="year" type="search" inputmode="numeric"></label><label>{{ tr('Publisher','Verlag') }}<input name="publisher" type="search"></label></div>
+<div class="filter-actions"><button type="submit" name="submitbutton" value="Go">{{ tr('Find works','Werke finden') }}</button><button type="button" class="reset-button" id="reset-catalogue">{{ tr('Clear filters','Filter zurücksetzen') }}</button></div><details class="search-help"><summary>{{ tr('Search tips','Hinweise zur Suche') }}</summary><div>{{ works_searchtext.value }}</div></details></form>
+<p class="catalogue-count" role="status" id="catalogue-count">{{ catalogues|length }} {{ tr('works','Werke') }}</p>
 
-                {{ works_searchtext.value }}<br/>
-		<table border="0" cellpadding="0" cellspacing="0" class="catalogueTable">
-			<tr class="works_search">
-				<td width="80px"><input style="font-size: medium; width: 80px; color: #777;" type="text" name="opus_number" value="{% if (keywords.opus_no is defined) %}{{ keywords.opus_no }}{% endif %}" placeholder="Search Op." /></td>
-				<td width="476px"><input style="font-size: medium; width: 476px; color: #777;" type="text" name="title" value="{% if (keywords.title is defined) %}{{ keywords.title }}{% endif %}" placeholder="Search Title" /></td>
-				<td width="80px"><input style="font-size: medium; width: 80px; color: #777;" type="text" name="year" value="{% if (keywords.year_of_composition is defined) %}{{ keywords.year_of_composition }}{% endif %}" placeholder="Search Yr" /></td>
-				<td width="140px"><input style="font-size: medium; width: 140px; color: #777;" type="text" name="publisher" value="{% if (keywords.publisher is defined) %}{{ keywords.publisher }}{% endif %}" placeholder="Search Publisher" /></td>
-				<td><input type="submit" name="submitbutton" value="Go" /></td>
-			</tr>
-		</table>
-	</form>
-	<table border="0" cellpadding="0" cellspacing="2" class="catalogueTable">
-		<tr>
-			<th width="80px">Opus<div class="arrow_down" onclick="Hansgal.order('opus_no', 'ASC')"></div><div class="arrow_up" onclick="Hansgal.order('opus_no', 'DESC')"></div></th>
-			<th width="200px">Title<div class="arrow_down" onclick="Hansgal.order('title', 'ASC')"></div><div class="arrow_up" onclick="Hansgal.order('title', 'DESC')"></div></th>
-			<th width="270px">Description<div class="arrow_down" onclick="Hansgal.order('description', 'ASC')"></div><div class="arrow_up" onclick="Hansgal.order('description', 'DESC')"></div></th>
-			<th width="80px">Year<div class="arrow_down" onclick="Hansgal.order('year_of_composition', 'ASC')"></div><div class="arrow_up" onclick="Hansgal.order('year_of_composition', 'DESC')"></div></th>
-			<th width="140px">Publisher<div class="arrow_down" onclick="Hansgal.order('publisher', 'ASC')"></div><div class="arrow_up" onclick="Hansgal.order('publisher', 'DESC')"></div></th>
-		</tr>
-		{% for li in range(catalogues|length) %}
-		<tr class="{% if li%2 == 0 %}light{% else %}dark{% endif %}">
-			<td width="80px">{{ catalogues[li].opus_no }}</td>
-			<td width="200px"><a href="/works/show/{{ catalogues[li].id }}">{{ catalogues[li].title|stripcslashes }}</a></td>
-			<td width="270px">{{ catalogues[li].description }}</td>
-			<td width="80px">{{ catalogues[li].year_of_composition }}</td>
-			<td width="140px">{{ catalogues[li].publisher }}</td>
-		</tr>
-		{% else %}
-		<tr class="light">
-			<td colspan="5" align="center"><br />No result<br /><br /></td>
-		</tr>
-		{% endfor %}
-	</table>
-			</div>
-		</div>
-		<div class="clear"></div>
-</div>
+<table class="catalogueTable catalogue-results"><caption class="sr-only">{{ tr('Works catalogue results','Ergebnisse im Werkverzeichnis') }}</caption><thead><tr>{% for key,en,de in [('opus_no','Opus','Opus'),('title','Title','Titel'),('description','Description','Beschreibung'),('year_of_composition','Year','Jahr'),('publisher','Publisher','Verlag')] %}<th scope="col">{{ tr(en,de) }}<span class="sort-buttons"><button type="button" data-sort="{{ key }}" data-direction="ASC" aria-label="{{ tr(en,de) }}: {{ tr('sort ascending','aufsteigend sortieren') }}" aria-pressed="{{ 'true' if key=='opus_no' else 'false' }}" onclick="Hansgal.order('{{ key }}','ASC')">↑</button><button type="button" data-sort="{{ key }}" data-direction="DESC" aria-label="{{ tr(en,de) }}: {{ tr('sort descending','absteigend sortieren') }}" aria-pressed="false" onclick="Hansgal.order('{{ key }}','DESC')">↓</button></span></th>{% endfor %}</tr></thead><tbody>{% for r in catalogues %}<tr class="{{ 'dark' if loop.index0%2 else 'light' }}"><td data-label="Opus">{{ r.opus_no }}</td><td data-label="{{ tr('Title','Titel') }}"><a href="/works/show/{{ r.id }}/">{{ r.title|stripcslashes }}</a></td><td data-label="{{ tr('Description','Beschreibung') }}">{{ r.description }}</td><td data-label="{{ tr('Year','Jahr') }}">{{ r.year_of_composition }}</td><td data-label="{{ tr('Publisher','Verlag') }}">{{ r.publisher }}</td></tr>{% endfor %}</tbody></table></section>

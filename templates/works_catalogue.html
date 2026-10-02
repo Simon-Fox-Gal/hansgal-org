@@ -1,22 +1,19 @@
-<!--[if IE]>
-<br />
-<![endif]-->
-<div class="staticpage">
+<div class="staticpage work-body">
 	<div class="text" style="width: 814px;">
-		<div class="title">WORKS</div>
+		<p class="page-kicker"><a href="/works/">← {{ tr("Works catalogue","Werkverzeichnis") }}</a></p>
 		<div class="article"><br />
 			<br />
-			<strong>{{ catalogue.title|stripcslashes }}</strong><br />
+			<h1>{{ catalogue.title|stripcslashes }}</h1>
 			{{ catalogue.description|stripcslashes }}{% if php_truth(catalogue.opus_no) %}, Opus {{ catalogue.opus_no }}{% endif %}, ({{ catalogue.year_of_composition }})<br />
             {% if catalogue.score_available == 'yes' and catalogue.score_file %}
-            <section aria-label="Downloadable score"><p>{{ catalogue.score_note|e }}</p><p><a href="{{ catalogue.score_file|e }}" download>Download PDF</a> · <button type="button" data-add-score="{{ catalogue.id }}">Add to score basket</button> · <a href="/score-basket/">View score basket</a></p><p id="score-added-status" role="status"></p></section>
+            <section class="score-panel" aria-label="Downloadable score"><p>{{ catalogue.score_note|e }}</p><p><a href="{{ catalogue.score_file|e }}" download>Download PDF</a> · <button type="button" data-add-score="{{ catalogue.id }}">Add to score basket</button> · <a href="/score-basket/">View score basket</a></p><p id="score-added-status" role="status"></p></section>
             {% endif %}
                         {{ catalogue.movements|stripcslashes }}<br/>
 			{% if catalogue.other_versions %}
                         	{{ catalogue.other_versions|stripcslashes }}<br/>
 			{% endif %}
 			<br />
-			<div style="padding-left: 40px;">
+			<div class="work-facts">
 				{{ catalogue.orchestration|stripcslashes }}<br />
 				Duration: {{ catalogue.duration }}'<br />
 				Publisher: {{ catalogue.publisher }}<br />
@@ -26,13 +23,13 @@
 
 			{% if recordings %}
 			<br />
-			<div class="block" onclick="Hansgal.showBlock('recordings_content')">RECORDINGS</div>
+			<button type="button" class="block" aria-expanded="false" aria-controls="recordings_content" onclick="Hansgal.showBlock('recordings_content')">RECORDINGS</button>
 			<div class="recordings_content" id="recordings_content" style="display: none;">
 				{% for i in range(recordings|length) %}
 				<div>
 					<table border="0" cellpadding="10" cellspacing="0">
 						<tr>
-							<td><img src="/storage/recordingcovers/thumb_{{ recordings[i].cover }}" border="0" /></td>
+							<td><a href="/recordings/{{ recordings[i].id }}/"><img src="/storage/recordingcovers/{{ recordings[i].cover }}" width="120" alt="{{ recordings[i].title|striptags|e }}" /></a></td>
 							<td>{{ recordings[i].detail|stripcslashes }}</td>
 						</tr>
 					</table>
@@ -42,7 +39,7 @@
 			{% endif %}
 
 			{% if catalogue.first_performance or catalogue.other_performances %}
-			<div class="block" onclick="Hansgal.showBlock('performances')">PERFORMANCES</div>
+			<button type="button" class="block" aria-expanded="false" aria-controls="performances" onclick="Hansgal.showBlock('performances')">PERFORMANCES</button>
 			<div class="performances" id="performances" style="display: none;">
 				{% if catalogue.first_performance %}
 				First performance: {{ catalogue.first_performance|stripcslashes }}<br />
@@ -62,7 +59,7 @@
 			<div class="clear"></div>
 
 			{% if audiosamples %}
-				<div class="block" onclick="Hansgal.showBlock('audiosamples_content')">AUDIO SAMPLES</div>
+				<button type="button" class="block" aria-expanded="false" aria-controls="audiosamples_content" onclick="Hansgal.showBlock('audiosamples_content')">AUDIO SAMPLES</button>
 				{% if chosenfile != "" %}
 					<audio controls="controls" {% if autoplay != "" %} autoplay="autoplay" {% endif %}>
 						<source src="/storage/audiosamples/{{ audiosamples[0].files[chosenfile].filename }}" type='audio/mpeg; codecs="mp3"' />
@@ -78,7 +75,7 @@
 			{% endif %}
 
 			{% if images %}
-			<div class="block" onclick="Hansgal.showBlock('images_content')">IMAGES</div>
+			<button type="button" class="block" aria-expanded="false" aria-controls="images_content" onclick="Hansgal.showBlock('images_content')">IMAGES</button>
 			<div class="images_content" id="images_content" style="display: none;">
 				{% for i in range(images|length) %}
 				<div class="thumbnail" style="width: 120px; height: 120px;">
@@ -89,7 +86,7 @@
 			</div>
 			{% endif %}
 			{% if catalogue.free_downloads %}
-			<div class="block" onclick="Hansgal.showBlock('freedownloads_content')">FREE DOWNLOADS</div>
+			<button type="button" class="block" aria-expanded="false" aria-controls="freedownloads_content" onclick="Hansgal.showBlock('freedownloads_content')">FREE DOWNLOADS</button>
 			<div class="freedownloads_content" id="freedownloads_content" style="display: none;">
 				{{ catalogue.free_downloads|stripcslashes }}
 			</div>

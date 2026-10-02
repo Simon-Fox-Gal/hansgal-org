@@ -1,26 +1,15 @@
-<!--[if IE]>
-<br />
-<![endif]-->
-<div class="staticpage">
+<div class="staticpage reading-layout">
 	<div class="widelead">
 		{{ lead }}
 	</div>
-	<div class="menu">
-		{% for i in range(submenus|length) %}
-		{% if submenus[i].hidden == 'no' %}
-		<div class="mi">
-			<div class="l {{ mainmenu }}"></div>
-			<a href="/{{ mainmenu }}/{{ submenus[i].id }}" class="c {{ mainmenu }}">{{ submenus[i].title }}</a>
-			<div class="r {{ mainmenu }}"></div>
-		</div>
-		{% endif %}
-		{% endfor %}
-		{% if thumb %}
+<aside class="chapter-nav"><details open><summary>{{ tr('In this section','In diesem Abschnitt') }}</summary><nav aria-label="{{ tr('Section pages','Seiten in diesem Abschnitt') }}">
+ {% for item in submenus %}{% if item.hidden == 'no' %}<a href="/{{ mainmenu }}/{{ item.id }}/" {% if route == '/' ~ mainmenu ~ '/' ~ item.id %}aria-current="page"{% endif %}>{{ item.title }}</a>{% endif %}{% endfor %}
+ </nav></details>		{% if thumb %}
 		<img class="thumb" src="/storage/pictureundersubmenus/thumb_{{ mainmenu }}.jpg" border="0" />
 		{% endif %}
-	</div>
-	<div class="text">
-		<div class="title">{{ title }}</div>
+</aside>
+ 	<div class="text">
+		<h1 class="title">{{ title }}</h1>
 		<div class="lead">
 			{% if thumbnails %}
 			<br /><br />
