@@ -11,3 +11,31 @@
 
 .listening-now{position:fixed;left:0;right:0;bottom:0;max-width:1280px;margin:0 auto;box-shadow:0 -4px 20px #29252a22}.listening-now .eyebrow{color:white}.listening-now #now-work{align-self:center}#close-listening{float:right;min-height:38px;padding:.2rem .6rem;margin:0 0 .5rem .5rem}
 @media(max-width:650px){.listening-now{position:fixed;max-height:45vh;overflow:auto;grid-template-columns:1fr;padding:.7rem 1rem;gap:.4rem;font-size:1rem}.listening-now .eyebrow{display:none}.listening-now h2{font-size:1.1rem;margin:0}.listening-now #now-track{font-size:.95rem}.listening-now .player-controls{margin:.4rem 0}.listening-now audio{height:40px}.listening-now input[type=checkbox]{width:20px;height:20px}.listening-station:has(#listening-now:not([hidden])){padding-bottom:45vh}}
+
+/* Score basket: a clear reading column and a separate optional contribution. */
+#score-basket{max-width:none}
+#score-basket .basket-intro{max-width:850px;margin-bottom:2.5rem}
+.basket-layout{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(0,1fr);gap:3rem;align-items:start}
+#score-basket .basket-items{list-style:none;padding:0;margin:0}
+#score-basket .basket-item{padding:1.6rem 0 2rem;margin:0;border-top:2px solid var(--green)}
+.basket-item-heading{display:flex;justify-content:space-between;gap:1.5rem;align-items:start}
+#score-basket .basket-item h2{font-size:1.85rem;line-height:1.25;margin:0;flex:1}
+#score-basket .basket-item-amount{font-size:1.35rem;font-weight:700;margin:0;text-align:right;flex:0 0 180px}
+.basket-item-amount span{display:block;font-size:1rem;line-height:1.5;font-weight:400;color:var(--muted)}
+#score-basket .basket-item-note{font-size:1.1rem;margin:1rem 0 1.5rem}
+.basket-item-actions{display:flex;gap:1rem;align-items:center;justify-content:space-between;flex-wrap:wrap}
+#score-basket .basket-remove{background:transparent;color:var(--plum);border:1px solid var(--line);font-size:1rem}
+.basket-downloads{border-top:1px solid var(--line);padding-top:1.5rem}
+#score-basket .basket-total{display:flex;justify-content:space-between;gap:1rem;margin:0 0 1.5rem}
+.basket-support{background:white;border:1px solid var(--line);padding:2rem}
+#score-basket .basket-support h2{font-size:1.85rem;margin:0 0 1.5rem}
+#score-basket #score-donation label{display:block;font-weight:700;font-size:1.1rem;margin-bottom:.5rem}
+#score-basket input[type=number]{display:block;width:100%;max-width:180px;margin:0 0 1rem}
+#score-basket #score-donation button{width:100%;white-space:normal}
+#score-basket .basket-support p{font-size:1rem;line-height:1.6}
+.basket-support details{border-top:1px solid var(--line);margin-top:1.5rem;padding-top:1rem}
+.basket-support summary{font-size:1rem;font-weight:700;min-height:44px;cursor:pointer}
+.basket-empty{padding:2rem;border-block:1px solid var(--line)}
+@media(max-width:950px){.basket-layout{grid-template-columns:1fr;gap:2rem}.basket-support{max-width:650px}}
+@media(max-width:600px){.basket-item-heading{display:block}#score-basket .basket-item-amount{text-align:left;margin-top:1rem}.basket-item-amount span{display:inline}.basket-support{padding:1.25rem}.basket-item-actions .button{font-size:1rem}#score-basket .basket-item h2{font-size:1.7rem}}
+#score-basket .basket-item-actions a.button{color:white!important;text-decoration:none}#score-basket #score-donation>p{margin-top:1rem}
