@@ -42,3 +42,17 @@
 
 /* Keep the basket label and musical basket together at high zoom. */
 .header-tools .basket-link{display:inline-flex;align-items:center;gap:.45rem;white-space:nowrap;min-height:44px}.basket-icon{flex:none;width:28px;height:28px}
+
+/* Optional independent player keeps audio alive through ordinary page navigation. */
+.player-window-tools{display:flex;justify-content:flex-end;gap:.5rem;flex-wrap:wrap;margin-bottom:.6rem}
+#close-listening{float:none;margin:0}.listening-now .popout-hint{font-size:.88rem;line-height:1.4;margin:.5rem 0;color:#e6efe9}
+.listening-now.is-minimised{left:auto;right:1rem;bottom:1rem;width:min(380px,calc(100% - 2rem));grid-template-columns:1fr;padding:.75rem 1rem}
+.listening-now.is-minimised>div:nth-child(2),.listening-now.is-minimised>div:first-child>:not(.player-window-tools):not(#now-title){display:none}
+.listening-now.is-minimised #now-title{font-size:1.1rem;max-height:3.2em;overflow:hidden;margin:0}
+.listening-window .masthead,.listening-window .site-footer,.listening-window #player,.listening-window .skip-link,.listening-window .listening-station>:not(#listening-now){display:none!important}
+.listening-window #main-content{padding:16px;min-height:0}.listening-window .listening-station{padding:0!important}
+.listening-window .listening-now{position:static;display:grid;grid-template-columns:1fr;max-height:none;margin:0;width:100%;max-width:none;padding:1.2rem;box-shadow:none}
+.listening-window .popout-hint{display:none}.listening-window .listening-now.is-minimised{width:100%}
+@media print{.listening-now{display:none!important}}
+
+.listening-window .listening-now .eyebrow{display:block;margin-bottom:.5rem}.listening-window .listening-now h2{font-size:1.35rem}
