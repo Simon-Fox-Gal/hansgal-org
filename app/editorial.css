@@ -39,3 +39,6 @@
 @media(max-width:950px){.basket-layout{grid-template-columns:1fr;gap:2rem}.basket-support{max-width:650px}}
 @media(max-width:600px){.basket-item-heading{display:block}#score-basket .basket-item-amount{text-align:left;margin-top:1rem}.basket-item-amount span{display:inline}.basket-support{padding:1.25rem}.basket-item-actions .button{font-size:1rem}#score-basket .basket-item h2{font-size:1.7rem}}
 #score-basket .basket-item-actions a.button{color:white!important;text-decoration:none}#score-basket #score-donation>p{margin-top:1rem}
+
+/* Keep the basket label and musical basket together at high zoom. */
+.header-tools .basket-link{display:inline-flex;align-items:center;gap:.45rem;white-space:nowrap;min-height:44px}.basket-icon{flex:none;width:28px;height:28px}

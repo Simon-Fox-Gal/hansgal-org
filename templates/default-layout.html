@@ -17,7 +17,7 @@
  <header class="masthead">
   <div class="masthead-inner">
    <a class="brand" href="/" aria-label="{{ tr('Hans Gál — home','Hans Gál — Startseite') }}"><img src="/gfx/images/hansgal-logo-website.png" width="314" height="117" alt="The Hans Gál Website — music for generations"></a>
-   <div class="header-tools"><!-- LANGUAGE_SWITCH --><a class="basket-link" href="/score-basket/">{{ tr('Score basket','Notenkorb') }}</a></div>
+   <div class="header-tools"><!-- LANGUAGE_SWITCH --><a class="basket-link" href="/score-basket/"><svg class="basket-icon" viewBox="0 0 32 32" width="28" height="28" aria-hidden="true" focusable="false"><path d="M3 13h26l-3 15H6L3 13Zm5 0 5-9m11 9-4-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M18 16v7" fill="none" stroke="currentColor" stroke-width="2"/><path d="m18 16 5 2v3l-5-2Z" fill="currentColor"/><ellipse cx="15.5" cy="23" rx="3" ry="2" fill="currentColor"/></svg><span>{{ tr('Basket','Korb') }}</span></a></div>
    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation">{{ tr('Menu','Menü') }} <span aria-hidden="true">☰</span></button>
    <nav id="site-navigation" class="site-navigation" aria-label="{{ tr('Main navigation','Hauptnavigation') }}">
     {% for path,en,de in [('hansgal','About Gál','Über Gál'),('works','Works','Werke'),('recordings','Recordings','Aufnahmen'),('news','News','Aktuelles'),('hansgalsociety','The Society','Die Gesellschaft')] %}
