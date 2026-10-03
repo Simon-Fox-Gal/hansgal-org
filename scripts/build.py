@@ -125,6 +125,11 @@ def make_site(base_path='', review=True, language='en'):
                 links.append({'url':value,'host':u.hostname.removeprefix('www.'),'label':display_label})
         return links
 
+    def score_downloads(row):
+        paths=[value.strip() for value in (row.get('score_file') or '').splitlines() if value.strip()]
+        titles=(row.get('score_file_titles') or '').splitlines()
+        return [{'path':path,'title':titles[i].strip() if i<len(titles) and titles[i].strip() else ('Download PDF' if len(paths)==1 else f'Download PDF {i+1}')} for i,path in enumerate(paths)]
+
     def context(route):
         section=route.split('/')[1] if route!='/' else ''
         c=dict(props,language=language,tr=lambda en,de: de if language=='de' else en,route=route,mainmenu=section,viewmode='coverlist',chosenfile='',chosenwork='',autoplay='',genre='',instrument='',keywords={},audiosamples=[],recordings=[],thumbnails=[],thumb=False,piktorgram='',title='',lead='',body='')
@@ -231,7 +236,7 @@ def make_site(base_path='', review=True, language='en'):
     for work in tables['catalogue']:
         id=work['id']; w=copy.deepcopy(work)
         if len(w['free_downloads'] or '')<10:w['free_downloads']=False
-        page('/works/show/'+id,'works_catalogue',catalogue=w,purchase_links=purchase_links(w),recordings=related('catalogue_recordings','catalogue_id',id,'recording_id',by_id['recording']),audiosamples=related('catalogue_audio_sample','catalogue_id',id,'audio_sample_id',audios),images=[r for r in tables['catalogue_image'] if r['catalogue_id']==id])
+        page('/works/show/'+id,'works_catalogue',catalogue=w,score_downloads=score_downloads(w),purchase_links=purchase_links(w),recordings=related('catalogue_recordings','catalogue_id',id,'recording_id',by_id['recording']),audiosamples=related('catalogue_audio_sample','catalogue_id',id,'audio_sample_id',audios),images=[r for r in tables['catalogue_image'] if r['catalogue_id']==id])
     for id in [None]+[r['id'] for r in recordings]:
         route='/recordings'+('/'+id if id else '')
         rec=by_id['recording'][id] if id else recordings[0]

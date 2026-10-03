@@ -7697,6 +7697,36 @@
     "sha256": "f23c09702805478f89c8a4d06e8bf47e70b81cd537240fbc0b0ab240b672714c"
   },
   {
+    "path": "/storage/scores/hans-gal-op49b-trio-score.pdf",
+    "bytes": 513212,
+    "sha256": "97f624afaa93dbf57ccadee5ef5ac4dec04c9e410abf324811c68f32a755fbde"
+  },
+  {
+    "path": "/storage/scores/hans-gal-op49b-violin-flute-oboe-part.pdf",
+    "bytes": 128269,
+    "sha256": "427ef57e29819ca5a9c49a90d669fc377010b578f3da2a258a72068333a6cd76"
+  },
+  {
+    "path": "/storage/scores/hans-gal-op49b-violoncello-part.pdf",
+    "bytes": 107590,
+    "sha256": "6b0b1c0644f6cb0f17fba290f640a238e16788f699a19f0ce5b4dbd2263651e7"
+  },
+  {
+    "path": "/storage/scores/hans-gal-op80b-divertimento-score-harp.pdf",
+    "bytes": 411919,
+    "sha256": "b48434988488b51f8736624a7cbb9787b90aa1dbfc71b26230ed81df408d389a"
+  },
+  {
+    "path": "/storage/scores/hans-gal-op80b-flute-part.pdf",
+    "bytes": 147684,
+    "sha256": "f3a8dc299a3d9596089a214840a2a1d86bbfda6ebe01c743e2400ce85328d331"
+  },
+  {
+    "path": "/storage/scores/hans-gal-op80b-viola-part.pdf",
+    "bytes": 146259,
+    "sha256": "7897338fc72ce5e1988b08b28e7bb572767918d63a6a80976422cc89f80cafc4"
+  },
+  {
     "path": "/storage/recordingcovers/eisnacht-gen26948.jpg",
     "bytes": 252113,
     "sha256": "6154bafa6f7ad2b1247d3bee697088e2d2074decc8f6c3c0dad556af2f9f5e19"

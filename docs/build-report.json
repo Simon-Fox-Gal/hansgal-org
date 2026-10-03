@@ -310,7 +310,7 @@
       "path": "/works",
       "file": "works/index.html",
       "template": "works",
-      "sha256": "7fc14b60d90da1efdc70bb2228c38d6472c233c768d7f899100555df5f46b420"
+      "sha256": "6c8de443bddd865c4c6231a53188051b12adb59dfb2bb8fc5ec95582c11c1595"
     },
     {
       "path": "/works/show/1",
@@ -682,7 +682,7 @@
       "path": "/works/show/56",
       "file": "works/show/56/index.html",
       "template": "works_catalogue",
-      "sha256": "27f48f1754858bd234ee5bd7a3cf831a131069cb7d4290f25090268fa79b33df"
+      "sha256": "84da16d71d48eafa1a4f3130253e8292e54a46cb8092f9d1cddd02247efaa192"
     },
     {
       "path": "/works/show/54",
@@ -880,7 +880,7 @@
       "path": "/works/show/95",
       "file": "works/show/95/index.html",
       "template": "works_catalogue",
-      "sha256": "0ac2747946d8f9dbc5979f3bcfb917010050b744fb9832346da1cfc4d8693914"
+      "sha256": "64702c586b92a36c60fd4f57b36b90f891551a64219afde4c42e33adeb127031"
     },
     {
       "path": "/works/show/97",
@@ -1150,7 +1150,7 @@
       "path": "/works/show/149",
       "file": "works/show/149/index.html",
       "template": "works_catalogue",
-      "sha256": "4440677ac78e53b3a436f08790ce4248f1647411d34ea6dfde9d5a68a6676ddb"
+      "sha256": "02ca5a55a1174631d25e15636de796cab99806186ec8208bd6c4facb6ef658bd"
     },
     {
       "path": "/works/show/150",
@@ -4126,7 +4126,7 @@
       "path": "/de/works",
       "file": "de/works/index.html",
       "template": "works",
-      "sha256": "75d673a7ab30fb93cde14fca92b857d6e9ec83a6f210cf3aaf7219de565db525"
+      "sha256": "d005ac8732dc27a893bf0a7d05919730b1a35fe1c7991a3003feb1525e018f2f"
     },
     {
       "path": "/de/works/show/1",
@@ -4498,7 +4498,7 @@
       "path": "/de/works/show/56",
       "file": "de/works/show/56/index.html",
       "template": "works_catalogue",
-      "sha256": "47111243f2a4193f6154af8a8e4adae46bf5f2cfcb9b09db26a420fcaa26baf7"
+      "sha256": "65efd8b507010a56a6118e51474cc4c71db910537c91ed76a13ab2f49bc8911d"
     },
     {
       "path": "/de/works/show/54",
@@ -4696,7 +4696,7 @@
       "path": "/de/works/show/95",
       "file": "de/works/show/95/index.html",
       "template": "works_catalogue",
-      "sha256": "d77b28c50caff53d3f04d592c6a3bc93084b4e19344db51ad567dcd9cb63d80e"
+      "sha256": "024caa17ece6b8c9c0b7f2301b6851a9abe8ae55d022ac21efe5eab25c0b9f86"
     },
     {
       "path": "/de/works/show/97",
@@ -4966,7 +4966,7 @@
       "path": "/de/works/show/149",
       "file": "de/works/show/149/index.html",
       "template": "works_catalogue",
-      "sha256": "4efaf99009422d959d22d6604c2e930070971b8199978192873a174585cf2e77"
+      "sha256": "95d7b577237770d763e49d269d96160d3da72b3e64b849f580aea49acf6bdc32"
     },
     {
       "path": "/de/works/show/150",
@@ -7648,5 +7648,5 @@
   "missing_captured_paths": [],
   "base_path": "/hansgal-org",
   "review": true,
-  "total_bytes": 369855334
+  "total_bytes": 371321963
 }
