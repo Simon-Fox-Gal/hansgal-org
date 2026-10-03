@@ -28,8 +28,13 @@ for prefix in ('','de/'):
  assert {r['id']: [f['filename'] for f in r['files']] for r in embedded}=={id:files(r) for id,r in audio.items()}
  for r in embedded:
   for f in r['files']:assert f['credit']==credits.get(f['filename'],{})
-# The architecture repair must not alter any audio file or track selection.
+# Preserve all earlier selections except the explicitly replaced Op.33 songs 1–2.
 base=json.loads(subprocess.check_output(['git','show','b3f3504:content/audio_sample.json'],cwd=ROOT))
-assert load('audio_sample')==base
-assert not subprocess.check_output(['git','diff','b3f3504','--name-only','--','public/storage/audiosamples'],cwd=ROOT).strip()
-print(f'PASS: {checked} work/album track links in both languages match source relationships and embedded playlists; no index-based navigation, no changed audio.')
+assert [r for r in load('audio_sample') if r['id']!='24']==[r for r in base if r['id']!='24']
+old33=next(r for r in base if r['id']=='24');new33=audio['24']
+assert new33['filename'].split('|')[2:]==old33['filename'].split('|')[2:]
+assert {k:v for k,v in new33.items() if k not in ('filename','track_titles','track_titles_de')}=={k:v for k,v in old33.items() if k not in ('filename','track_titles','track_titles_de')}
+changes=subprocess.check_output(['git','diff','b3f3504','--name-status','--','public/storage/audiosamples'],cwd=ROOT).decode().splitlines()
+allowed={f'A\tpublic/storage/audiosamples/gal-bis2543-cd1-t{n}.mp3' for n in (27,28)}
+assert set(changes)<=allowed
+print(f'PASS: {checked} work/album track links in both languages match source relationships and embedded playlists; no index-based navigation; only the authorized Op.33 replacements.')

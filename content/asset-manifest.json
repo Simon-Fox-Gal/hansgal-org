@@ -9403,5 +9403,17 @@
     "path": "/storage/audiosamples/gal-tocc0761-cd1-t15.mp3",
     "bytes": 1922424,
     "sha256": "44eba9c7c573bf580a3aa6a2990d94cd84fa0ef4713f90079fb96cf015129d98"
+  },
+  {
+    "source_path": "storage/audiosamples/gal-bis2543-cd1-t27.mp3",
+    "path": "/storage/audiosamples/gal-bis2543-cd1-t27.mp3",
+    "bytes": 1922230,
+    "sha256": "5aedf48ed5840b3801fb9ed8fc6d874aa57293488cd0595a521b7e61b71391b1"
+  },
+  {
+    "source_path": "storage/audiosamples/gal-bis2543-cd1-t28.mp3",
+    "path": "/storage/audiosamples/gal-bis2543-cd1-t28.mp3",
+    "bytes": 1922210,
+    "sha256": "be720dd7785c648b6897821bf6bceca035fac28f17f3aaf35905a8c1cb54feb3"
   }
 ]

@@ -9,7 +9,7 @@ by_id={r['id']:r for r in samples}; by_file={r['filename']:r for r in credits}
 files=[f.split('#',1)[1] for r in samples for f in r['filename'].split('|')]
 assert len(files)==len(set(files)), 'Duplicate listening excerpts'
 new=[f for f in files if f.startswith('gal-')]
-assert len(new)==277 and all(f in by_file for f in new)
+assert len(new)==279 and all(f in by_file for f in new)
 assert len(by_file)==len(credits), 'Duplicate credit records'
 for ident in ('22','84','40','88'):
  assert by_id[ident]['filename']==next(r['filename'] for r in old if r['id']==ident), 'Symphony excerpts changed'
@@ -23,7 +23,9 @@ for asset in before('asset-manifest'):
 for row in old:
  if not any(f.startswith('gal-') for f in by_id[row['id']]['filename'].split('#')[1:]) and row['id'] not in ('22','84','40','88'):
   assert by_id[row['id']]==row, ('Unreplaced work changed',row['id'])
-assert by_id['24']['filename'].split('|')[:2]==next(r for r in old if r['id']=='24')['filename'].split('|')[:2]
+op33=[f.split('#',1)[1] for f in by_id['24']['filename'].split('|')]
+assert op33==[f'gal-bis2543-cd1-t{n}.mp3' for n in range(27,32)]
+assert all(by_file[f]['recording_id']=='85' and by_file[f]['album']=='BIS2543' for f in op33)
 book=[c for c in credits if c['album']=='TOCC0251']
 assert len(book)==20 and all(c['label']=='Toccata Press · 2014' and c['link']=='/booksandarticles/67/' for c in book)
 assert all('gal-tocc0251' not in by_id[i]['filename'] for i in ('76','38','46','47','51','77'))
@@ -47,4 +49,4 @@ for prefix in ('','de/'):
   page=(ROOT/'dist'/prefix/'recordings'/rec/'index.html').read_text(encoding='utf8')
   for fn in re.findall(r'data-sample="([^"]+)"',page):
    assert fn not in by_file or by_file[fn]['recording_id']==rec, ('Wrong recording on album page',rec,fn)
-print('PASS: 277 unique new excerpts, 15 unchanged symphony clips, all original audio bytes, 33 unreleased previews, correct book/CD links and per-album track filtering; no private source paths.')
+print('PASS: 279 unique new excerpts, all five Op.33 songs from BIS2543, 15 unchanged symphony clips, all original audio bytes, 33 unreleased previews, correct book/CD links and per-album track filtering; no private source paths.')
