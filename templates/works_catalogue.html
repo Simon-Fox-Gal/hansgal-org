@@ -62,8 +62,9 @@
 			{% if audiosamples %}
 <button type="button" class="block" id="audio-samples" aria-expanded="false" aria-controls="audiosamples_content" onclick="Hansgal.showBlock('audiosamples_content')">AUDIO SAMPLES</button>
 <div id="audiosamples_content" class="work-samples" style="display:none">
-{% for r in audiosamples %}<section><h3>{{ r.title|stripcslashes }}</h3>{% set listening_page=false %}{% include 'audio-sources.html' %}</section>{% endfor %}
+{% for r in audiosamples %}<section class="listening-work"><span class="sample-card-cover"><img loading="lazy" src="{{ r.sources[0].credit.cover or '/app/audio-placeholder.svg' }}" alt="" width="80" height="80"></span><h3>{{ r.title|stripcslashes }}</h3>{% set listening_page=false %}{% include 'audio-sources.html' %}</section>{% endfor %}
 </div>
+{% include 'audio-player.html' %}
 {% endif %}
 
 {% if images %}

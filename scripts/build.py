@@ -112,6 +112,9 @@ def make_site(base_path='', review=True, language='en'):
         r['sources']=list(groups.values())
         r['has_credits']=any(f['credit'] for f in r['files'])
         r['work_id']=next((x['catalogue_id'] for x in tables['catalogue_audio_sample'] if x['audio_sample_id']==r['id']),'')
+        work_ids=[x['catalogue_id'] for x in tables['catalogue_audio_sample'] if x['audio_sample_id']==r['id']]
+        r['categories']=list({x['category_id'] for x in tables['catalogue_category'] if x['catalogue_id'] in work_ids}|({r['listening_category']} if r.get('listening_category') else set()))
+        r['search']=' '.join(str(v or '') for v in [r['title'],r['opus_no'],r['details']]+[v for f in r['files'] for v in f['credit'].values()]+[v for w in tables['catalogue'] if w['id'] in work_ids for v in [w['title'],w['description'],w['orchestration']]])
         for i,f in enumerate(r['files']):f.setdefault('index',i)
         return r
     audio=[credit_groups(r) for r in audio]
