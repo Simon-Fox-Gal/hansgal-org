@@ -219,7 +219,14 @@ def make_site(base_path='', review=True, language='en'):
         payload=json.dumps({'data':tables,'accent':load('accent-map'),'orders':load('catalogue-orders')['orders']})
         result=subprocess.run(['node',str(ROOT/'scripts/catalogue-order.cjs')],input=payload,text=True,encoding='utf8',capture_output=True,check=True)
         order=json.loads(result.stdout)
-    catalogue=[by_id['catalogue'][id] for id in order]
+    recording_work_ids={r['catalogue_id'] for r in tables['catalogue_recordings'] if r['recording_id'] in by_id['recording']}
+    audio_work_ids={r['catalogue_id'] for r in tables['catalogue_audio_sample'] if r['audio_sample_id'] in audios}
+    catalogue=[]
+    for id in order:
+        row=copy.deepcopy(by_id['catalogue'][id])
+        row['_has_recordings']=id in recording_work_ids
+        row['_has_audio_samples']=id in audio_work_ids
+        catalogue.append(row)
     page('/works','works',catalogues=catalogue,works_lead=props['works_lead']['value'],genres=[r for r in tables['category'] if r['type']=='Genre'],instruments=[r for r in tables['category'] if r['type']=='Instrument'])
     for work in tables['catalogue']:
         id=work['id']; w=copy.deepcopy(work)
