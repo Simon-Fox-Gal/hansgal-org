@@ -71,11 +71,15 @@ for row in load('content/catalogue.json'):
     assert row['title_de'],('missing work title',row['id'])
     if row['score_available']!='yes':continue
     available.append(row['id'])
-    path=row['score_file'];assert re.fullmatch(r'/storage/scores/[^/]+\.pdf',path)
-    data=(ROOT/'public'/path.lstrip('/')).read_bytes()
-    assert data.startswith(b'%PDF-')
-    record=manifest.get(path) or manifest.get(path.lstrip('/'))
-    assert record and record['sha256']==hashlib.sha256(data).hexdigest()
+    paths=[path.strip() for path in row['score_file'].splitlines() if path.strip()];assert paths
+    labels=[label.strip() for label in row.get('score_file_titles','').splitlines()]
+    if labels:assert len(labels)==len(paths) and all(labels)
+    for path in paths:
+        assert re.fullmatch(r'/storage/scores/[^/]+\.pdf',path)
+        data=(ROOT/'public'/path.lstrip('/')).read_bytes()
+        assert data.startswith(b'%PDF-')
+        record=manifest.get(path) or manifest.get(path.lstrip('/'))
+        assert record and record['sha256']==hashlib.sha256(data).hexdigest()
     amount=row.get('score_suggested_donation')
     if amount not in (None,''):
         assert re.fullmatch(r'\d+(\.\d{1,2})?',amount),('invalid suggestion',row['id'])

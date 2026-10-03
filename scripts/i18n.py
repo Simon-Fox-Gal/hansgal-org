@@ -1,6 +1,6 @@
 """Bilingual editorial fields; shared identifiers, facts and assets never localize."""
 FIELDS={
- 'menu':['title','lead','body'],'catalogue':['title','description','movements','further_details','orchestration','availability','first_performance','other_performances','other_versions','free_downloads','score_note'],
+ 'menu':['title','lead','body'],'catalogue':['title','description','movements','further_details','orchestration','availability','first_performance','other_performances','other_versions','free_downloads','score_note','score_file_titles'],
  'recording':['title','detail','review'],'photos':['title'],'faqs':['question','answer'],
  'properties':['value'],'heading':['body'],'category':['name'],'audio_sample':['title','details','track_titles'],
  'thumbnail':['title'],'photos_category':['name'],

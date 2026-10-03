@@ -102,8 +102,13 @@ def build_work_pdfs(tables,out,language,base_path,strip):
     if url.strip():story.append(Paragraph('<link href="'+html.escape(url.strip(),quote=True)+'" color="#792858">'+t(en,ger)+'</link>',body))
   if row.get('score_available')=='yes' and row.get('score_file'):
    section('Available score','Verfügbare Noten',row.get('score_note'))
-   score=urljoin(site,row['score_file'].lstrip('/'))
-   story.append(Paragraph('<link href="'+html.escape(score,quote=True)+'" color="#792858">'+t('Download score','Noten herunterladen')+'</link>',body))
+   score_paths=[path.strip() for path in row['score_file'].splitlines() if path.strip()]
+   score_labels=((row.get('score_file_titles_de') if de else row.get('score_file_titles')) or '').splitlines()
+   for index,path in enumerate(score_paths):
+    score=urljoin(site,path.lstrip('/'))
+    fallback=t('Download score','Noten herunterladen')+((' '+str(index+1)) if len(score_paths)>1 else '')
+    score_label=score_labels[index].strip() if index<len(score_labels) and score_labels[index].strip() else fallback
+    story.append(Paragraph('<link href="'+html.escape(score,quote=True)+'" color="#792858">'+html.escape(score_label)+'</link>',body))
    story.append(Paragraph(t('Suggested donation','Empfohlene Spende')+': £'+str(row.get('score_suggested_donation') or '0')+t(' (a £0 download is also available).',' (ein Download für £0 ist ebenfalls möglich).'),body))
   ids=list(dict.fromkeys(r['recording_id'] for r in tables['catalogue_recordings'] if r['catalogue_id']==row['id'] and r['recording_id'] in recordings))
   if ids:
