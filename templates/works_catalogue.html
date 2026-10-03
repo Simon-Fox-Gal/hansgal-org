@@ -24,7 +24,7 @@
 
 			{% if recordings %}
 			<br />
-			<button type="button" class="block" aria-expanded="false" aria-controls="recordings_content" onclick="Hansgal.showBlock('recordings_content')">RECORDINGS</button>
+			<button type="button" class="block" id="recordings" aria-expanded="false" aria-controls="recordings_content" onclick="Hansgal.showBlock('recordings_content')">RECORDINGS</button>
 			<div class="recordings_content" id="recordings_content" style="display: none;">
 				{% for i in range(recordings|length) %}
 				<div>
@@ -60,7 +60,7 @@
 			<div class="clear"></div>
 
 			{% if audiosamples %}
-				<button type="button" class="block" aria-expanded="false" aria-controls="audiosamples_content" onclick="Hansgal.showBlock('audiosamples_content')">AUDIO SAMPLES</button>
+				<button type="button" class="block" id="audio-samples" aria-expanded="false" aria-controls="audiosamples_content" onclick="Hansgal.showBlock('audiosamples_content')">AUDIO SAMPLES</button>
 				{% if chosenfile != "" %}
 					<audio controls="controls" {% if autoplay != "" %} autoplay="autoplay" {% endif %}>
 						<source src="/storage/audiosamples/{{ audiosamples[0].files[chosenfile].filename }}" type='audio/mpeg; codecs="mp3"' />
