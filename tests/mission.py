@@ -67,11 +67,13 @@ for path,row in routes.items():
 
 manifest={r['path']:r for r in load('content/asset-manifest.json')}
 available=[]
+score_paths={}
 for row in load('content/catalogue.json'):
     assert row['title_de'],('missing work title',row['id'])
     if row['score_available']!='yes':continue
     available.append(row['id'])
     paths=[path.strip() for path in row['score_file'].splitlines() if path.strip()];assert paths
+    score_paths[row['id']]=paths
     labels=[label.strip() for label in row.get('score_file_titles','').splitlines()]
     if labels:assert len(labels)==len(paths) and all(labels)
     for path in paths:
@@ -94,6 +96,7 @@ for prefix,labels in [('', ('Downloadable score available','Recordings available
     assert markup.count('availability-mark availability-score')==len(available),(prefix,'score indicators')
     assert markup.count('availability-mark availability-recording')==len(recording_works),(prefix,'recording indicators')
     assert markup.count('availability-mark availability-audio')==len(audio_works),(prefix,'audio indicators')
+    assert 'icon-shine' in markup and 'icon-speaker' in markup,(prefix,'standard availability symbols')
     for work_id in available:
         target=base+('/de' if prefix else '')+f'/works/show/{work_id}/#downloadable-score'
         assert f'href="{target}"' in markup,(prefix,work_id,'score indicator target')
@@ -102,6 +105,11 @@ for prefix,labels in [('', ('Downloadable score available','Recordings available
         target=base+('/de' if prefix else '')+f'/works/show/{work_id}/#{fragment}'
         assert f'href="{target}"' in markup,(prefix,work_id,fragment,'indicator target')
         assert f'aria-label="{label}"' in markup,(prefix,work_id,fragment,'indicator label')
+    for work_id in available:
+        detail=(ROOT/'dist'/prefix/'works/show'/work_id/'index.html').read_text(encoding='utf8')
+        assert f'data-add-score="{work_id}"' in detail,(prefix,work_id,'basket action')
+        assert '/score-basket/' in detail,(prefix,work_id,'basket link')
+        assert all(path not in detail for path in score_paths[work_id]),(prefix,work_id,'direct score link on work page')
 
 # Exercise the actual browser ZIP implementation, then decode with Python's
 # independent standard-library reader (names, CRCs and exact bytes).

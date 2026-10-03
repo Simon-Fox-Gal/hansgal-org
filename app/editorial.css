@@ -12,7 +12,6 @@
 .listening-now{position:fixed;left:0;right:0;bottom:0;max-width:1280px;margin:0 auto;box-shadow:0 -4px 20px #29252a22}.listening-now .eyebrow{color:white}.listening-now #now-work{align-self:center}#close-listening{float:right;min-height:38px;padding:.2rem .6rem;margin:0 0 .5rem .5rem}
 @media(max-width:650px){.listening-now{position:fixed;max-height:45vh;overflow:auto;grid-template-columns:1fr;padding:.7rem 1rem;gap:.4rem;font-size:1rem}.listening-now .eyebrow{display:none}.listening-now h2{font-size:1.1rem;margin:0}.listening-now #now-track{font-size:.95rem}.listening-now .player-controls{margin:.4rem 0}.listening-now audio{height:40px}.listening-now input[type=checkbox]{width:20px;height:20px}.listening-station:has(#listening-now:not([hidden])){padding-bottom:45vh}}
 
-.score-file-list{display:flex;flex-wrap:wrap;gap:.6rem 1rem;margin:1rem 0}.score-file-list a{display:inline-flex;align-items:center;min-height:44px;padding:.35rem .65rem;border-bottom:1px solid var(--plum);text-decoration:none}
 /* Score basket: a clear reading column and a separate optional contribution. */
 #score-basket{max-width:none}
 #score-basket .basket-intro{max-width:850px;margin-bottom:2.5rem}
@@ -52,6 +51,8 @@
 .availability-mark svg{width:23px;height:23px;overflow:visible}.availability-mark:hover,.availability-mark:focus-visible{color:var(--green);background:var(--tint)}
 .availability-key .icon-page,.availability-mark .icon-page{fill:var(--tint);stroke:currentColor;stroke-width:1.5;stroke-linejoin:round}
 .availability-key .icon-disc,.availability-mark .icon-disc{fill:var(--tint);stroke:currentColor;stroke-width:1.5}
+.availability-key .icon-hole,.availability-mark .icon-hole{fill:currentColor}.availability-key .icon-shine,.availability-mark .icon-shine{fill:currentColor;opacity:.72}
+.availability-key .icon-speaker,.availability-mark .icon-speaker{fill:var(--tint);stroke:currentColor;stroke-width:1.7;stroke-linejoin:round}
 .availability-key .icon-line,.availability-mark .icon-line{fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
 .catalogueTable th:nth-child(1){width:7%}.catalogueTable th:nth-child(2){width:25%}.catalogueTable th:nth-child(3){width:27%}.catalogueTable th:nth-child(4){width:8%}.catalogueTable th:nth-child(5){width:22%}.catalogueTable th:nth-child(6){width:11%}
 @media(max-width:600px){.availability-key{justify-content:flex-start;margin:1rem 0}.availability-marks{gap:.3rem}}
