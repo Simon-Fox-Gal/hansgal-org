@@ -80,13 +80,24 @@ for row in load('content/catalogue.json'):
     if amount not in (None,''):
         assert re.fullmatch(r'\d+(\.\d{1,2})?',amount),('invalid suggestion',row['id'])
 
-for prefix,label in [('', 'Downloadable score available'), ('de/', 'Noten zum Herunterladen verfügbar')]:
+recording_ids={x['id'] for x in load('content/recording.json')}
+audio_ids={x['id'] for x in load('content/audio_sample.json')}
+catalogue_ids={x['id'] for x in load('content/catalogue.json')}
+recording_works={r['catalogue_id'] for r in load('content/catalogue_recordings.json') if r['catalogue_id'] in catalogue_ids and r['recording_id'] in recording_ids}
+audio_works={r['catalogue_id'] for r in load('content/catalogue_audio_sample.json') if r['catalogue_id'] in catalogue_ids and r['audio_sample_id'] in audio_ids}
+for prefix,labels in [('', ('Downloadable score available','Recordings available','Audio samples available')), ('de/', ('Noten zum Herunterladen verfügbar','Aufnahmen verfügbar','Hörproben verfügbar'))]:
     markup=(ROOT/'dist'/prefix/'works/index.html').read_text(encoding='utf8')
-    assert markup.count('class="score-available-mark"')==len(available),(prefix,'score indicators')
+    assert markup.count('availability-mark availability-score')==len(available),(prefix,'score indicators')
+    assert markup.count('availability-mark availability-recording')==len(recording_works),(prefix,'recording indicators')
+    assert markup.count('availability-mark availability-audio')==len(audio_works),(prefix,'audio indicators')
     for work_id in available:
         target=base+('/de' if prefix else '')+f'/works/show/{work_id}/#downloadable-score'
         assert f'href="{target}"' in markup,(prefix,work_id,'score indicator target')
-        assert f'aria-label="{label}"' in markup,(prefix,work_id,'score indicator label')
+        assert f'aria-label="{labels[0]}"' in markup,(prefix,work_id,'score indicator label')
+    for work_id,label,fragment in [(x,labels[1],'recordings') for x in recording_works]+[(x,labels[2],'audio-samples') for x in audio_works]:
+        target=base+('/de' if prefix else '')+f'/works/show/{work_id}/#{fragment}'
+        assert f'href="{target}"' in markup,(prefix,work_id,fragment,'indicator target')
+        assert f'aria-label="{label}"' in markup,(prefix,work_id,fragment,'indicator label')
 
 # Exercise the actual browser ZIP implementation, then decode with Python's
 # independent standard-library reader (names, CRCs and exact bytes).
