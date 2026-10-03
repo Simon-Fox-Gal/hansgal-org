@@ -1,8 +1,10 @@
 """Check the editorial features against their source data, including every PDF."""
 import json,pathlib,re,sys,subprocess,html
+import runpy
 from html.parser import HTMLParser
 from pypdf import PdfReader
 ROOT=pathlib.Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'scripts'))
+runpy.run_path(str(ROOT/'tests/audio-samples.py'))
 from i18n import localize
 from build import stripcslashes
 from work_pdfs import download_filename
@@ -43,8 +45,10 @@ for lang in ['en','de']:
   if not r.get('year_of_composition') or r['year_of_composition']=='0':assert '(0)' not in markup
   checked+=1
  audio=(ROOT/'dist'/prefix/'audiosamples/index.html').read_text(encoding='utf8')
- assert audio.count('data-audio-id=')==75 and audio.count('data-track=')==230
- assert 'recordingcovers' not in audio
+ samples=load('audio_sample')
+ assert audio.count('data-audio-id=')==len(samples)
+ assert audio.count('data-track=')==sum(len(r['filename'].split('|')) for r in samples)
+ assert 'recordingcovers' in audio
  if historical:
   events=next(r['body'] for r in data['menu'] if r['id']=='68');past=events.index('VERGANGENE VERANSTALTUNGEN' if lang=='de' else 'PAST EVENTS')
   assert events.index('Großer Saal')>past and events.index('Peterskirche Heidelberg')<past

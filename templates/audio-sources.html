@@ -1,0 +1,19 @@
+{% for source in r.sources %}{% set c=source.credit %}
+<section class="sample-source">
+{% if c %}<div class="sample-recording">
+{% if c.cover %}<a class="sample-cover" href="{{ c.link|e }}" aria-label="{{ c.album_title|e }}"><img loading="lazy" src="{{ c.cover|e }}" width="96" height="96" alt="{{ c.album_title|e }}"></a>{% endif %}
+<div class="sample-recording-text">
+{% if c.preview %}<p class="preview-badge">{{ tr('Unreleased recording · preview','Unveröffentlichte Aufnahme · Vorschau') }}</p>{% endif %}
+<p class="sample-album">{% if c.link %}<a href="{{ c.link|e }}">{{ c.album_title|e }}</a>{% else %}{{ c.album_title|e }}{% endif %}</p>
+{% if c.label %}<p class="sample-label">{{ c.label|e }}{% if c.album and c.album != 'TOCC0251' %} · {{ c.album|e }}{% endif %}</p>{% endif %}
+{% if source.performers %}<p class="sample-artists">{{ source.performers|e }}</p>{% endif %}
+{% if c.copyright %}<p class="sample-copyright">{{ c.copyright|e }}</p>{% endif %}
+{% if c.recording_id %}<a class="sample-recording-link" href="{{ c.link|e }}">{{ tr('Recording details & buying options','Aufnahme & Kaufmöglichkeiten') }} →</a>{% elif c.album == 'TOCC0251' %}<p class="sample-label">{{ tr('From the CD included with the book.','Von der dem Buch beiliegenden CD.') }}</p>{% endif %}
+</div></div>{% endif %}
+<ol class="sample-tracklist">{% for f in source.files %}<li>
+{% if listening_page %}<a class="listening-track" data-track="{{ f.index }}" href="/storage/audiosamples/{{ f.filename|e }}"><span class="sample-play" aria-hidden="true">▶</span><span>{{ f.title|stripcslashes|e }}</span>{% if f.credit.duration %}<span class="sample-duration">{{ f.credit.duration }}</span>{% endif %}</a>
+{% else %}<a class="sample-listen-link" href="/audiosamples/?chosenwork={{ r.playback_index }}&amp;chosenfile={{ f.index }}"><span aria-hidden="true">▶</span> {{ f.title|stripcslashes|e }}{% if f.credit.duration %}<span class="sample-duration">{{ f.credit.duration }}</span>{% endif %}</a>{% endif %}
+{% if f.credit.track %}<p class="sample-track-meta">{{ tr('CD','CD') }} {{ f.credit.disc }} · {{ tr('Track','Titel') }} {{ f.credit.track }}{% if f.credit.performers and not source.performers %} · {{ f.credit.performers|e }}{% endif %}</p>{% elif f.credit.performers and not source.performers %}<p class="sample-track-meta">{{ f.credit.performers|e }}</p>{% endif %}
+</li>{% endfor %}</ol>
+</section>{% endfor %}
+{% if not r.has_credits %}<div class="listening-details">{{ r.details|stripcslashes }}</div>{% endif %}

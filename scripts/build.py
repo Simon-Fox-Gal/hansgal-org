@@ -94,6 +94,27 @@ def make_site(base_path='', review=True, language='en'):
     recordings=sorted(tables['recording'],key=lambda r:(int(r['sequence']),-int(r['id'])))
     audio=sorted(tables['audio_sample'],key=lambda r:(int(r['sequence']),r['opus_no']))
     audio=[audio_row(r) for r in audio]
+    credit_by_file={r['filename']:r for r in tables.get('audio_credit',[])}
+    # Keep the original index-based listening bookmarks stable as new works arrive.
+    playback_order=[r for r in audio if int(r['id'])<=88]+[r for r in audio if int(r['id'])>88]
+    for index,r in enumerate(playback_order):r['playback_index']=index
+    def credit_groups(r):
+        groups=OrderedDict()
+        for f in r['files']:
+            c=credit_by_file.get(f['filename'],{})
+            f['credit']=c
+            key=c.get('album','')
+            group=groups.setdefault(key,{'credit':c,'files':[]})
+            group['files'].append(f)
+        for group in groups.values():
+            artists={f['credit'].get('performers','') for f in group['files']}
+            group['performers']=next(iter(artists)) if len(artists)==1 else ''
+        r['sources']=list(groups.values())
+        r['has_credits']=any(f['credit'] for f in r['files'])
+        r['work_id']=next((x['catalogue_id'] for x in tables['catalogue_audio_sample'] if x['audio_sample_id']==r['id']),'')
+        for i,f in enumerate(r['files']):f.setdefault('index',i)
+        return r
+    audio=[credit_groups(r) for r in audio]
     audios={r['id']:r for r in audio}
     source_assets={r['path'] for r in load('asset-manifest')}
     route_rows=load('legacy-routes')
@@ -241,18 +262,30 @@ def make_site(base_path='', review=True, language='en'):
         route='/recordings'+('/'+id if id else '')
         rec=by_id['recording'][id] if id else recordings[0]
         samples=related('recording_audio_sample','recording_id',id,'audio_sample_id',audios) if id else []
+        # A work can contain excerpts from more than one recording (Symphony I,
+        # for example). An album page must only play its own recording.
+        samples=[credit_groups(dict(copy.deepcopy(r),files=[f for f in copy.deepcopy(r['files']) if not f['credit'] or f['credit'].get('recording_id')==id])) for r in samples]
+        samples=[r for r in samples if r['files']]
         page(route,'recordings',recording=rec,recordings=recordings,audiosamples=samples,purchase_links=purchase_links(rec))
         if id:
             c=context(route);c.update(recording=rec,recordings=recordings,audiosamples=samples,purchase_links=purchase_links(rec))
             save('/recordings/getalbuminfo/'+id,env.get_template('recordings_content.html').render(**c),'recordings_content',True)
     photos=OrderedDict((cat['name'],sorted([r for r in tables['photos'] if r['photos_category_id']==cat['id']],key=lambda r:int(r['sorrend']))) for cat in tables['photos_category'])
     page('/photos','photos',photos=photos)
-    audio_display=copy.deepcopy(audio)
+    def opus_key(r):
+        match=re.search(r'(\d+)(.*)',r['opus_no'])
+        return (int(match[1]),match[2],r['title']) if match else (10000,'',r['title'])
+    audio_display=sorted(copy.deepcopy(audio),key=opus_key)
     page('/audiosamples','audiosamples',audiosamples=audio_display)
     for r in audio:
         for f in r['files']:
             markup='<audio controls="controls" autoplay="autoplay" src="/storage/audiosamples/'+html.escape(f['filename'],quote=True)+'">'+f['title']+'</audio>'
             save('/audiosamples/play/'+r['id']+'/'+f['filename'],markup,'audio-player',True)
+    for r in tables.get('audio_legacy_route',[]):
+        route='/audiosamples/play/'+r['audio_sample_id']+'/'+r['filename']
+        if ('/de' if language=='de' else '')+route not in generated:
+            markup='<audio controls src="/storage/audiosamples/'+html.escape(r['filename'],quote=True)+'">'+html.escape(r['title'])+'</audio>'
+            save(route,markup,'audio-player',True)
     page('/comments','comments')
     page('/search','search')
     if language=='de':
@@ -292,7 +325,7 @@ def make_site(base_path='', review=True, language='en'):
         generated[local_route]={'path':local_route,'file':targetfile.relative_to(out).as_posix(),'redirect':('/de' if language=='de' else '')+target}
     # Original source-only endpoints not in the crawler still need extensionless routes.
     (out/('app/site-data-de.json' if language=='de' else 'app/site-data.json')).write_text(json.dumps(tables,ensure_ascii=True,separators=(',',':')),encoding='utf8')
-    (out/'app/runtime-config.json').write_text(json.dumps({'basePath':base_path,'review':review,'audioOrder':[r['id'] for r in audio],'recordingOrder':[r['id'] for r in recordings]}),encoding='utf8')
+    (out/'app/runtime-config.json').write_text(json.dumps({'basePath':base_path,'review':review,'audioOrder':[r['id'] for r in playback_order],'recordingOrder':[r['id'] for r in recordings]}),encoding='utf8')
     for file in ('accent-map','catalogue-orders'):
         if (ROOT/'content'/f'{file}.json').exists(): shutil.copyfile(ROOT/'content'/f'{file}.json',out/'app'/f'{file}.json')
     (out/'.nojekyll').touch()

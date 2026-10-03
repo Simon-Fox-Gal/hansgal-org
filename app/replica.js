@@ -131,7 +131,7 @@
       if(params.chosenwork!==undefined){document.querySelector('[name=chosenwork]').value=params.chosenwork;selectAudio(params.chosenwork,params.chosenfile??null);}
     }
     if(path.startsWith('/works/show/')&&params.chosenfile!==undefined) {
-      const radio=document.querySelector('[name=chosenfile][value="'+CSS.escape(params.chosenfile)+'"]');if(radio){radio.checked=true;selectSample(radio.form);}
+      const radio=document.querySelector('[name=chosenfile][value="'+CSS.escape(params.chosenfile)+'"]');if(radio){radio.checked=true;selectSample(radio.form);}else{const link=document.querySelectorAll('#audiosamples_content .sample-listen-link')[Number(params.chosenfile)];if(link)location.replace(link.href);}
     }
     if(path==='/recordings'||/^\/recordings\/\d+$/.test(path))viewMode(params.view||(()=>{try{return sessionStorage.getItem('hansgal-recording-view');}catch{return null;}})()||'coverlist');
     if(path==='/search')search(params.keyword||'');
