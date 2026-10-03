@@ -60,22 +60,13 @@
 			<div class="clear"></div>
 
 			{% if audiosamples %}
-				<button type="button" class="block" id="audio-samples" aria-expanded="false" aria-controls="audiosamples_content" onclick="Hansgal.showBlock('audiosamples_content')">AUDIO SAMPLES</button>
-				{% if chosenfile != "" %}
-					<audio controls="controls" {% if autoplay != "" %} autoplay="autoplay" {% endif %}>
-						<source src="/storage/audiosamples/{{ audiosamples[0].files[chosenfile].filename }}" type='audio/mpeg; codecs="mp3"' />
-						Your browser does not support the HTML5 Audio element.
-					</audio><br />
-				{% endif %}
-				Please choose a sample<br />
-				<form action="{{ route }}" method="POST" id="audiofile">
-					{% for j in range(audiosamples[0].files|length) %}
-						<input type="radio" name="chosenfile" value="{{ j }}" {% if chosenfile != ""  and  j == chosenfile %}checked{% endif %} onchange="$('#audiofile').submit()">{{ audiosamples[0].files[j].title }}<br>
-					{% endfor %}
-				</form>
-			{% endif %}
+<button type="button" class="block" id="audio-samples" aria-expanded="false" aria-controls="audiosamples_content" onclick="Hansgal.showBlock('audiosamples_content')">AUDIO SAMPLES</button>
+<div id="audiosamples_content" class="work-samples" style="display:none">
+{% for r in audiosamples %}<section><h3>{{ r.title|stripcslashes }}</h3>{% set listening_page=false %}{% include 'audio-sources.html' %}</section>{% endfor %}
+</div>
+{% endif %}
 
-			{% if images %}
+{% if images %}
 			<button type="button" class="block" aria-expanded="false" aria-controls="images_content" onclick="Hansgal.showBlock('images_content')">IMAGES</button>
 			<div class="images_content" id="images_content" style="display: none;">
 				{% for i in range(images|length) %}
