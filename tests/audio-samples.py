@@ -45,8 +45,6 @@ for prefix in ('','de/'):
  for fn in new:assert fn in page
  for rec in records:
   page=(ROOT/'dist'/prefix/'recordings'/rec/'index.html').read_text(encoding='utf8')
-  for link in re.findall(r'class="sample-listen-link" href="([^"]+)"',page):
-   idx,track=map(int,re.search(r'chosenwork=(\d+)&amp;chosenfile=(\d+)',link).groups())
-   row=by_id[config['audioOrder'][idx]];fn=row['filename'].split('|')[track].split('#',1)[1]
+  for fn in re.findall(r'data-sample="([^"]+)"',page):
    assert fn not in by_file or by_file[fn]['recording_id']==rec, ('Wrong recording on album page',rec,fn)
 print('PASS: 277 unique new excerpts, 15 unchanged symphony clips, all original audio bytes, 33 unreleased previews, correct book/CD links and per-album track filtering; no private source paths.')

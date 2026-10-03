@@ -5,6 +5,8 @@ from html.parser import HTMLParser
 from pypdf import PdfReader
 ROOT=pathlib.Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'scripts'))
 runpy.run_path(str(ROOT/'tests/audio-samples.py'))
+runpy.run_path(str(ROOT/'tests/audio-routing.py'))
+subprocess.run(['node',str(ROOT/'tests/audio-player.test.cjs')],check=True)
 from i18n import localize
 from build import stripcslashes
 from work_pdfs import download_filename

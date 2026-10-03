@@ -5,3 +5,5 @@
 {% endif %}</div></article>{% endif %}
 
 {% if route!='/recordings' %}{{ collection() }}{% endif %}
+
+{% if audiosamples %}{% include 'audio-player.html' %}{% endif %}
