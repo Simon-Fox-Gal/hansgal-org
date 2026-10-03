@@ -43,6 +43,12 @@
 /* Keep the basket label and musical basket together at high zoom. */
 .header-tools .basket-link{display:inline-flex;align-items:center;gap:.45rem;white-space:nowrap;min-height:44px}.basket-icon{flex:none;width:28px;height:28px}
 
+/* Catalogue cue for works with a downloadable score. */
+.publisher-entry{display:inline-flex;align-items:center;gap:.45rem;flex-wrap:wrap}
+.score-available-mark{display:inline-flex;align-items:center;justify-content:center;color:var(--plum);min-width:36px;min-height:36px;text-decoration:none}
+.score-available-mark svg{width:24px;height:24px;overflow:visible}.score-available-mark svg>path:first-child{fill:var(--tint);stroke:currentColor;stroke-width:1.5;stroke-linejoin:round}.score-available-mark .score-note{fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.score-available-mark:hover,.score-available-mark:focus-visible{color:var(--green)}
+
 /* Optional independent player keeps audio alive through ordinary page navigation. */
 .player-window-tools{display:flex;justify-content:flex-end;gap:.5rem;flex-wrap:wrap;margin-bottom:.6rem}
 #close-listening{float:none;margin:0}.listening-now .popout-hint{font-size:.88rem;line-height:1.4;margin:.5rem 0;color:#e6efe9}

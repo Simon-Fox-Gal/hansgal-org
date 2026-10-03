@@ -80,6 +80,14 @@ for row in load('content/catalogue.json'):
     if amount not in (None,''):
         assert re.fullmatch(r'\d+(\.\d{1,2})?',amount),('invalid suggestion',row['id'])
 
+for prefix,label in [('', 'Downloadable score available'), ('de/', 'Noten zum Herunterladen verfügbar')]:
+    markup=(ROOT/'dist'/prefix/'works/index.html').read_text(encoding='utf8')
+    assert markup.count('class="score-available-mark"')==len(available),(prefix,'score indicators')
+    for work_id in available:
+        target=base+('/de' if prefix else '')+f'/works/show/{work_id}/#downloadable-score'
+        assert f'href="{target}"' in markup,(prefix,work_id,'score indicator target')
+        assert f'aria-label="{label}"' in markup,(prefix,work_id,'score indicator label')
+
 # Exercise the actual browser ZIP implementation, then decode with Python's
 # independent standard-library reader (names, CRCs and exact bytes).
 script="""const zip=require('./app/score-zip.js');
