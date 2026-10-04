@@ -9,7 +9,7 @@ by_id={r['id']:r for r in samples}; by_file={r['filename']:r for r in credits}
 files=[f.split('#',1)[1] for r in samples for f in r['filename'].split('|')]
 assert len(files)==len(set(files)), 'Duplicate listening excerpts'
 new=[f for f in files if f.startswith('gal-')]
-assert len(new)==279 and all(f in by_file for f in new)
+assert len(new)==291 and all(f in by_file for f in new)
 assert len(by_file)==len(credits), 'Duplicate credit records'
 for ident in ('22','84','40','88'):
  assert by_id[ident]['filename']==next(r['filename'] for r in old if r['id']==ident), 'Symphony excerpts changed'
@@ -49,4 +49,4 @@ for prefix in ('','de/'):
   page=(ROOT/'dist'/prefix/'recordings'/rec/'index.html').read_text(encoding='utf8')
   for fn in re.findall(r'data-sample="([^"]+)"',page):
    assert fn not in by_file or by_file[fn]['recording_id']==rec, ('Wrong recording on album page',rec,fn)
-print('PASS: 279 unique new excerpts, all five Op.33 songs from BIS2543, 15 unchanged symphony clips, all original audio bytes, 33 unreleased previews, correct book/CD links and per-album track filtering; no private source paths.')
+print('PASS: 291 unique new excerpts, all five Op.33 songs from BIS2543, 15 unchanged symphony clips, all original audio bytes, 33 unreleased previews, correct book/CD links and per-album track filtering; no private source paths.')
