@@ -24,7 +24,10 @@
 			<div class="clear"></div>
 			{% endif %}
 		</div>
+		{% if discover_player %}<p class="discover-listen"><a data-sample="{{ audiosamples[0].files[0].filename|e }}" href="/storage/audiosamples/{{ audiosamples[0].files[0].filename|e }}">{{ tr('Play an excerpt', 'Eine Hörprobe abspielen') }} ▶</a> · <a href="/audiosamples/">{{ tr('Explore all excerpts', 'Alle Hörproben entdecken') }} →</a></p>{% endif %}
 		<div class="article">{{ body }}</div>
 	</div>
 	<div class="clear"></div>
 </div>
+
+{% if discover_player %}{% include 'audio-player.html' %}{% endif %}
