@@ -9415,5 +9415,77 @@
     "path": "/storage/audiosamples/gal-bis2543-cd1-t28.mp3",
     "bytes": 1922210,
     "sha256": "be720dd7785c648b6897821bf6bceca035fac28f17f3aaf35905a8c1cb54feb3"
+  },
+  {
+    "source_path": "storage/audiosamples/gal-tocc0509-cd1-t01.mp3",
+    "path": "/storage/audiosamples/gal-tocc0509-cd1-t01.mp3",
+    "bytes": 1922110,
+    "sha256": "145596434a40ff93efe075dfd4d9e19ffcd8cfa20bad5c476c9942ea5b7ff7a1"
+  },
+  {
+    "source_path": "storage/audiosamples/gal-tocc0509-cd1-t06.mp3",
+    "path": "/storage/audiosamples/gal-tocc0509-cd1-t06.mp3",
+    "bytes": 1922112,
+    "sha256": "36c4c4546cc18bc56566a5a9742185dc9b7be49affb0435822a1ff534a2e5207"
+  },
+  {
+    "source_path": "storage/audiosamples/gal-tocc0509-cd1-t07.mp3",
+    "path": "/storage/audiosamples/gal-tocc0509-cd1-t07.mp3",
+    "bytes": 1922109,
+    "sha256": "5f219f1cb8caf7b3148a55351dcc8f9e816e12d772b72a0710b89001bfd2fe0f"
+  },
+  {
+    "source_path": "storage/audiosamples/gal-tocc0509-cd1-t08.mp3",
+    "path": "/storage/audiosamples/gal-tocc0509-cd1-t08.mp3",
+    "bytes": 1922114,
+    "sha256": "db30ad3656deaeb9c56a0a5e85afe5ef47f9ea41acecde70ea2a1ed91fa8aae2"
+  },
+  {
+    "source_path": "storage/audiosamples/gal-tocc0509-cd1-t09.mp3",
+    "path": "/storage/audiosamples/gal-tocc0509-cd1-t09.mp3",
+    "bytes": 1922109,
+    "sha256": "4bba9d0de8615b387037f25d39f548b1ac647597ed1cf052fcd2c3d6c3407b21"
+  },
+  {
+    "source_path": "storage/audiosamples/gal-tocc0509-cd1-t10.mp3",
+    "path": "/storage/audiosamples/gal-tocc0509-cd1-t10.mp3",
+    "bytes": 1922115,
+    "sha256": "d2262ef121ca6734398fd70df4e77549a8dc13caaab29a73fad1407e60fff159"
+  },
+  {
+    "source_path": "storage/audiosamples/gal-tocc0644-cd1-t01.mp3",
+    "path": "/storage/audiosamples/gal-tocc0644-cd1-t01.mp3",
+    "bytes": 1922137,
+    "sha256": "049003f7e04795e480dae0f33f48e0afeb5090673449e57aa5e050e3b91c5d6c"
+  },
+  {
+    "source_path": "storage/audiosamples/gal-tocc0644-cd1-t02.mp3",
+    "path": "/storage/audiosamples/gal-tocc0644-cd1-t02.mp3",
+    "bytes": 1922137,
+    "sha256": "1d351db490d43c893926913b77fd5ad5e4380dea3be63ddff759bb56ec6ca1bd"
+  },
+  {
+    "source_path": "storage/audiosamples/gal-tocc0644-cd1-t03.mp3",
+    "path": "/storage/audiosamples/gal-tocc0644-cd1-t03.mp3",
+    "bytes": 1922141,
+    "sha256": "cdf8bff3f2d7f584dae25849e1653946ae004d1ccfa6f671a58acb9c3b619547"
+  },
+  {
+    "source_path": "storage/audiosamples/gal-tocc0644-cd1-t04.mp3",
+    "path": "/storage/audiosamples/gal-tocc0644-cd1-t04.mp3",
+    "bytes": 1922154,
+    "sha256": "5c629e30f0ac3c822e0f44db481a94b73fd713817986ec3f2c19440ecaaf50e9"
+  },
+  {
+    "source_path": "storage/audiosamples/gal-tocc0644-cd1-t05.mp3",
+    "path": "/storage/audiosamples/gal-tocc0644-cd1-t05.mp3",
+    "bytes": 1922119,
+    "sha256": "45d45a14ba7152c9ed71342ea25cbc6949ae72817b2f99d762d1d230ca4c9273"
+  },
+  {
+    "source_path": "storage/audiosamples/gal-tocc0644-cd1-t06.mp3",
+    "path": "/storage/audiosamples/gal-tocc0644-cd1-t06.mp3",
+    "bytes": 1922121,
+    "sha256": "f90d10bf4ab403618f76e35775cacff46142e1a190706428bc7e7b4aa9166d51"
   }
 ]
