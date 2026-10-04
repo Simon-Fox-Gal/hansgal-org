@@ -292,5 +292,10 @@
       "details": "b2d7c96c0893e45d4ee5bc2074a0e5ab56a4c85db860737a0e4372e9889dcf1e",
       "details_de": "8b10ba89e7ee7e2d4d97539dbfd1fde33ebf04a533797665fb99bb42b525259f"
     }
+  },
+  "content/page_text.json": {
+    "62": {
+      "value": "0c7eda08dafb534352cd7568900c408157342f4ac2abe09b4c871168fbaf09a9"
+    }
   }
 }
