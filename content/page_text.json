@@ -5,7 +5,9 @@
     "path": "/audiosamples/",
     "title": "Now playing",
     "value": "Now playing",
-    "value_de": "Aktuelle Hörprobe"
+    "value_de": "Aktuelle Hörprobe",
+    "value_fr": "À l’écoute",
+    "value_ja": "再生中"
   },
   {
     "id": "2",
@@ -13,7 +15,9 @@
     "path": "/audiosamples/",
     "title": "Minimise",
     "value": "Minimise",
-    "value_de": "Verkleinern"
+    "value_de": "Verkleinern",
+    "value_fr": "Réduire",
+    "value_ja": "最小化"
   },
   {
     "id": "3",
@@ -21,7 +25,9 @@
     "path": "/audiosamples/",
     "title": "Pause",
     "value": "Pause",
-    "value_de": "Pause"
+    "value_de": "Pause",
+    "value_fr": "Pause",
+    "value_ja": "一時停止"
   },
   {
     "id": "4",
@@ -29,7 +35,9 @@
     "path": "/audiosamples/",
     "title": "Close player",
     "value": "Close player",
-    "value_de": "Player schließen"
+    "value_de": "Player schließen",
+    "value_fr": "Fermer le lecteur",
+    "value_ja": "プレーヤーを閉じる"
   },
   {
     "id": "5",
@@ -37,7 +45,9 @@
     "path": "/audiosamples/",
     "title": "On the music stand",
     "value": "On the music stand",
-    "value_de": "Auf dem Notenpult"
+    "value_de": "Auf dem Notenpult",
+    "value_fr": "Sur le pupitre",
+    "value_ja": "譜面台の上で"
   },
   {
     "id": "6",
@@ -45,7 +55,9 @@
     "path": "/audiosamples/",
     "title": "Previous",
     "value": "Previous",
-    "value_de": "Zurück"
+    "value_de": "Zurück",
+    "value_fr": "Précédent",
+    "value_ja": "前へ"
   },
   {
     "id": "7",
@@ -53,7 +65,9 @@
     "path": "/audiosamples/",
     "title": "Next",
     "value": "Next",
-    "value_de": "Weiter"
+    "value_de": "Weiter",
+    "value_fr": "Suivant",
+    "value_ja": "次へ"
   },
   {
     "id": "8",
@@ -61,7 +75,9 @@
     "path": "/audiosamples/",
     "title": "Listen while browsing ↗",
     "value": "Listen while browsing ↗",
-    "value_de": "Beim Weitersurfen hören ↗"
+    "value_de": "Beim Weitersurfen hören ↗",
+    "value_fr": "Écouter en parcourant le site ↗",
+    "value_ja": "サイトを見ながら聴く ↗"
   },
   {
     "id": "9",
@@ -69,7 +85,9 @@
     "path": "/audiosamples/",
     "title": "About this work",
     "value": "About this work",
-    "value_de": "Über dieses Werk"
+    "value_de": "Über dieses Werk",
+    "value_fr": "À propos de cette œuvre",
+    "value_ja": "この作品について"
   },
   {
     "id": "10",
@@ -77,7 +95,9 @@
     "path": "/audiosamples/",
     "title": "Opens a small player window, or a separate tab on your phone.",
     "value": "Opens a small player window, or a separate tab on your phone.",
-    "value_de": "Öffnet ein kleines Player-Fenster oder einen separaten Tab auf dem Smartphone."
+    "value_de": "Öffnet ein kleines Player-Fenster oder einen separaten Tab auf dem Smartphone.",
+    "value_fr": "Ouvre une petite fenêtre de lecture, ou un onglet séparé sur votre téléphone.",
+    "value_ja": "小さなプレーヤーウィンドウが開きます。スマートフォンでは別のタブが開きます。"
   },
   {
     "id": "11",
@@ -85,7 +105,9 @@
     "path": "/audiosamples/",
     "title": "Continue to the next excerpt",
     "value": "Continue to the next excerpt",
-    "value_de": "Nächste Hörprobe automatisch abspielen"
+    "value_de": "Nächste Hörprobe automatisch abspielen",
+    "value_fr": "Passer à l’extrait suivant",
+    "value_ja": "次の抜粋を続けて再生"
   },
   {
     "id": "12",
@@ -93,7 +115,9 @@
     "path": "/audiosamples/",
     "title": "Unreleased recording · preview",
     "value": "Unreleased recording · preview",
-    "value_de": "Unveröffentlichte Aufnahme · Vorschau"
+    "value_de": "Unveröffentlichte Aufnahme · Vorschau",
+    "value_fr": "Enregistrement inédit · aperçu",
+    "value_ja": "未発売の録音・試聴"
   },
   {
     "id": "13",
@@ -101,7 +125,9 @@
     "path": "/audiosamples/",
     "title": "Recording details & buying options",
     "value": "Recording details & buying options",
-    "value_de": "Aufnahme & Kaufmöglichkeiten"
+    "value_de": "Aufnahme & Kaufmöglichkeiten",
+    "value_fr": "Détails de l’enregistrement et possibilités d’achat",
+    "value_ja": "録音の詳細・購入先"
   },
   {
     "id": "14",
@@ -109,7 +135,9 @@
     "path": "/audiosamples/",
     "title": "From the CD included with the book.",
     "value": "From the CD included with the book.",
-    "value_de": "Von der dem Buch beiliegenden CD."
+    "value_de": "Von der dem Buch beiliegenden CD.",
+    "value_fr": "Extrait du CD accompagnant le livre.",
+    "value_ja": "書籍付属のCDから。"
   },
   {
     "id": "15",
@@ -117,7 +145,9 @@
     "path": "/audiosamples/",
     "title": "CD",
     "value": "CD",
-    "value_de": "CD"
+    "value_de": "CD",
+    "value_fr": "CD",
+    "value_ja": "CD"
   },
   {
     "id": "16",
@@ -125,7 +155,9 @@
     "path": "/audiosamples/",
     "title": "Track",
     "value": "Track",
-    "value_de": "Titel"
+    "value_de": "Titel",
+    "value_fr": "Plage",
+    "value_ja": "トラック"
   },
   {
     "id": "17",
@@ -133,7 +165,9 @@
     "path": "/audiosamples/",
     "title": "About these excerpts",
     "value": "About these excerpts",
-    "value_de": "Über diese Hörproben"
+    "value_de": "Über diese Hörproben",
+    "value_fr": "À propos de ces extraits",
+    "value_ja": "試聴音源について"
   },
   {
     "id": "18",
@@ -141,7 +175,9 @@
     "path": "/audiosamples/",
     "title": "The music, at first hand",
     "value": "The music, at first hand",
-    "value_de": "Die Musik erleben"
+    "value_de": "Die Musik erleben",
+    "value_fr": "La musique, à l’écoute",
+    "value_ja": "音楽に直接触れる"
   },
   {
     "id": "19",
@@ -149,7 +185,9 @@
     "path": "/audiosamples/",
     "title": "A place to listen",
     "value": "A place to listen",
-    "value_de": "Ein Ort zum Zuhören"
+    "value_de": "Ein Ort zum Zuhören",
+    "value_fr": "Un espace pour écouter",
+    "value_ja": "音楽を聴く"
   },
   {
     "id": "20",
@@ -157,7 +195,9 @@
     "path": "/audiosamples/",
     "title": "An open invitation to the music of Hans Gál. Begin with today’s excerpt, follow an instrument or a voice, or find a work you already love.",
     "value": "An open invitation to the music of Hans Gál. Begin with today’s excerpt, follow an instrument or a voice, or find a work you already love.",
-    "value_de": "Eine Einladung in die Musik von Hans Gál. Beginnen Sie mit der heutigen Hörprobe, folgen Sie einem Instrument oder einer Stimme, oder finden Sie ein vertrautes Werk wieder."
+    "value_de": "Eine Einladung in die Musik von Hans Gál. Beginnen Sie mit der heutigen Hörprobe, folgen Sie einem Instrument oder einer Stimme, oder finden Sie ein vertrautes Werk wieder.",
+    "value_fr": "Une invitation à découvrir la musique de Hans Gál. Commencez par l’extrait du jour, suivez un instrument ou une voix, ou retrouvez une œuvre que vous aimez déjà.",
+    "value_ja": "ハンス・ガールの音楽へのご案内です。今日の抜粋から聴き始めたり、楽器や声を手がかりに探したり、お気に入りの作品を見つけたりしてみてください。"
   },
   {
     "id": "21",
@@ -165,7 +205,9 @@
     "path": "/audiosamples/",
     "title": "A different discovery every day",
     "value": "A different discovery every day",
-    "value_de": "Jeden Tag eine neue Entdeckung"
+    "value_de": "Jeden Tag eine neue Entdeckung",
+    "value_fr": "Une nouvelle découverte chaque jour",
+    "value_ja": "毎日、新たな出会いを"
   },
   {
     "id": "22",
@@ -173,7 +215,9 @@
     "path": "/audiosamples/",
     "title": "Today’s listening",
     "value": "Today’s listening",
-    "value_de": "Heute hören"
+    "value_de": "Heute hören",
+    "value_fr": "À écouter aujourd’hui",
+    "value_ja": "今日の試聴"
   },
   {
     "id": "23",
@@ -181,7 +225,9 @@
     "path": "/audiosamples/",
     "title": "Play today’s excerpt",
     "value": "Play today’s excerpt",
-    "value_de": "Heutige Hörprobe abspielen"
+    "value_de": "Heutige Hörprobe abspielen",
+    "value_fr": "Écouter l’extrait du jour",
+    "value_ja": "今日の抜粋を再生"
   },
   {
     "id": "24",
@@ -189,7 +235,9 @@
     "path": "/audiosamples/",
     "title": "From the recordings",
     "value": "From the recordings",
-    "value_de": "Aus den Aufnahmen"
+    "value_de": "Aus den Aufnahmen",
+    "value_fr": "Parmi les enregistrements",
+    "value_ja": "録音から"
   },
   {
     "id": "25",
@@ -197,7 +245,9 @@
     "path": "/audiosamples/",
     "title": "Listen to excerpts from Gál’s works. Where the recording is identified, discover the performers and the complete album.",
     "value": "Listen to excerpts from Gál’s works. Where the recording is identified, discover the performers and the complete album.",
-    "value_de": "Hören Sie Ausschnitte aus Gáls Werken. Wo die Aufnahme bekannt ist, finden Sie die Interpreten und das vollständige Album."
+    "value_de": "Hören Sie Ausschnitte aus Gáls Werken. Wo die Aufnahme bekannt ist, finden Sie die Interpreten und das vollständige Album.",
+    "value_fr": "Écoutez des extraits des œuvres de Gál. Lorsque la source est identifiée, découvrez les interprètes et l’album complet.",
+    "value_ja": "ガールの作品の抜粋をお聴きいただけます。出典が特定されている録音では、演奏者やアルバム全体の情報もご覧いただけます。"
   },
   {
     "id": "26",
@@ -205,7 +255,9 @@
     "path": "/audiosamples/",
     "title": "Choose something for me",
     "value": "Choose something for me",
-    "value_de": "Eine Hörprobe für mich auswählen"
+    "value_de": "Eine Hörprobe für mich auswählen",
+    "value_fr": "Choisir pour moi",
+    "value_ja": "おまかせで選ぶ"
   },
   {
     "id": "27",
@@ -213,7 +265,9 @@
     "path": "/audiosamples/",
     "title": "Find your way in",
     "value": "Find your way in",
-    "value_de": "Zugänge zur Musik"
+    "value_de": "Zugänge zur Musik",
+    "value_fr": "Trouvez votre point de départ",
+    "value_ja": "音楽への入り口"
   },
   {
     "id": "28",
@@ -221,7 +275,9 @@
     "path": "/audiosamples/",
     "title": "Listening categories",
     "value": "Listening categories",
-    "value_de": "Hörkategorien"
+    "value_de": "Hörkategorien",
+    "value_fr": "Catégories d’écoute",
+    "value_ja": "試聴カテゴリー"
   },
   {
     "id": "29",
@@ -229,7 +285,9 @@
     "path": "/audiosamples/",
     "title": "Search the listening collection",
     "value": "Search the listening collection",
-    "value_de": "Hörsammlung durchsuchen"
+    "value_de": "Hörsammlung durchsuchen",
+    "value_fr": "Rechercher dans les extraits",
+    "value_ja": "試聴音源を検索"
   },
   {
     "id": "30",
@@ -237,7 +295,9 @@
     "path": "/audiosamples/",
     "title": "A title, instrument or opus number",
     "value": "A title, instrument or opus number",
-    "value_de": "Titel, Instrument oder Opusnummer"
+    "value_de": "Titel, Instrument oder Opusnummer",
+    "value_fr": "Titre, instrument ou numéro d’opus",
+    "value_ja": "作品名・楽器・作品番号"
   },
   {
     "id": "31",
@@ -245,7 +305,9 @@
     "path": "/audiosamples/",
     "title": "Short excerpts to help you discover the music. Explore the recording pages for the complete albums and ways to support the performers.",
     "value": "Short excerpts to help you discover the music. Explore the recording pages for the complete albums and ways to support the performers.",
-    "value_de": "Kurze Ausschnitte zum Kennenlernen der Musik. Auf den Aufnahmenseiten finden Sie die vollständigen Alben und Kaufmöglichkeiten zur Unterstützung der Interpreten."
+    "value_de": "Kurze Ausschnitte zum Kennenlernen der Musik. Auf den Aufnahmenseiten finden Sie die vollständigen Alben und Kaufmöglichkeiten zur Unterstützung der Interpreten.",
+    "value_fr": "De courts extraits pour découvrir la musique. Consultez les pages des enregistrements pour trouver les albums complets et soutenir les interprètes.",
+    "value_ja": "音楽との出会いのための短い抜粋です。アルバム全体の情報や演奏者を支援する方法は、各録音のページをご覧ください。"
   },
   {
     "id": "32",
@@ -253,7 +315,9 @@
     "path": "/audiosamples/",
     "title": "From the archive",
     "value": "From the archive",
-    "value_de": "Aus dem Archiv"
+    "value_de": "Aus dem Archiv",
+    "value_fr": "Les archives",
+    "value_ja": "アーカイブから"
   },
   {
     "id": "33",
@@ -261,7 +325,9 @@
     "path": "/audiosamples/",
     "title": "About the work",
     "value": "About the work",
-    "value_de": "Über das Werk"
+    "value_de": "Über das Werk",
+    "value_fr": "À propos de l’œuvre",
+    "value_ja": "作品について"
   },
   {
     "id": "34",
@@ -269,7 +335,9 @@
     "path": "/audiosamples/",
     "title": "Unreleased recording · preview",
     "value": "Unreleased recording · preview",
-    "value_de": "Unveröffentlichte Aufnahme · Vorschau"
+    "value_de": "Unveröffentlichte Aufnahme · Vorschau",
+    "value_fr": "Enregistrement inédit · aperçu",
+    "value_ja": "未発売の録音・試聴"
   },
   {
     "id": "35",
@@ -277,7 +345,9 @@
     "path": "/audiosamples/",
     "title": "excerpt · open to listen",
     "value": "excerpt · open to listen",
-    "value_de": "Hörprobe · zum Anhören öffnen"
+    "value_de": "Hörprobe · zum Anhören öffnen",
+    "value_fr": "extrait · ouvrir pour écouter",
+    "value_ja": "抜粋・開いて聴く"
   },
   {
     "id": "36",
@@ -285,7 +355,9 @@
     "path": "/audiosamples/",
     "title": "excerpts · open to listen",
     "value": "excerpts · open to listen",
-    "value_de": "Hörproben · zum Anhören öffnen"
+    "value_de": "Hörproben · zum Anhören öffnen",
+    "value_fr": "extraits · ouvrir pour écouter",
+    "value_ja": "抜粋・開いて聴く"
   },
   {
     "id": "37",
@@ -293,7 +365,9 @@
     "path": "/audiosamples/",
     "title": "Open a work and select an excerpt to listen directly. Enable JavaScript for daily discoveries and filters.",
     "value": "Open a work and select an excerpt to listen directly. Enable JavaScript for daily discoveries and filters.",
-    "value_de": "Öffnen Sie ein Werk und wählen Sie eine Hörprobe aus. Aktivieren Sie JavaScript für die tägliche Auswahl und die Filter."
+    "value_de": "Öffnen Sie ein Werk und wählen Sie eine Hörprobe aus. Aktivieren Sie JavaScript für die tägliche Auswahl und die Filter.",
+    "value_fr": "Ouvrez une œuvre et choisissez un extrait pour l’écouter directement. Activez JavaScript pour les découvertes quotidiennes et les filtres.",
+    "value_ja": "作品を開いて抜粋を選ぶと、その場で再生できます。日替わりの試聴と絞り込みにはJavaScriptを有効にしてください。"
   },
   {
     "id": "38",
@@ -301,7 +375,9 @@
     "path": "/",
     "title": "The life, music and legacy of Hans Gál. Works, recordings, biography and resources from the Hans Gál Society.",
     "value": "The life, music and legacy of Hans Gál. Works, recordings, biography and resources from the Hans Gál Society.",
-    "value_de": "Das Leben, die Musik und das Erbe von Hans Gál. Werke, Aufnahmen, Biografie und Quellen der Hans-Gál-Gesellschaft."
+    "value_de": "Das Leben, die Musik und das Erbe von Hans Gál. Werke, Aufnahmen, Biografie und Quellen der Hans-Gál-Gesellschaft.",
+    "value_fr": "La vie, la musique et l’héritage de Hans Gál. Œuvres, enregistrements, biographie et ressources de la Hans Gál Society.",
+    "value_ja": "ハンス・ガールの生涯、音楽、そして遺産。ハンス・ガール協会による作品、録音、伝記、各種資料のご案内。"
   },
   {
     "id": "39",
@@ -309,7 +385,9 @@
     "path": "/",
     "title": "Skip to content",
     "value": "Skip to content",
-    "value_de": "Zum Inhalt"
+    "value_de": "Zum Inhalt",
+    "value_fr": "Aller au contenu",
+    "value_ja": "本文へ"
   },
   {
     "id": "40",
@@ -317,7 +395,9 @@
     "path": "/",
     "title": "Hans Gál — home",
     "value": "Hans Gál — home",
-    "value_de": "Hans Gál — Startseite"
+    "value_de": "Hans Gál — Startseite",
+    "value_fr": "Hans Gál — accueil",
+    "value_ja": "ハンス・ガール — ホーム"
   },
   {
     "id": "41",
@@ -325,7 +405,9 @@
     "path": "/",
     "title": "Basket",
     "value": "Basket",
-    "value_de": "Korb"
+    "value_de": "Korb",
+    "value_fr": "Panier",
+    "value_ja": "楽譜カート"
   },
   {
     "id": "42",
@@ -333,7 +415,9 @@
     "path": "/",
     "title": "Menu",
     "value": "Menu",
-    "value_de": "Menü"
+    "value_de": "Menü",
+    "value_fr": "Menu",
+    "value_ja": "メニュー"
   },
   {
     "id": "43",
@@ -341,7 +425,9 @@
     "path": "/",
     "title": "Main navigation",
     "value": "Main navigation",
-    "value_de": "Hauptnavigation"
+    "value_de": "Hauptnavigation",
+    "value_fr": "Navigation principale",
+    "value_ja": "メインナビゲーション"
   },
   {
     "id": "44",
@@ -349,7 +435,9 @@
     "path": "/",
     "title": "Explore",
     "value": "Explore",
-    "value_de": "Entdecken"
+    "value_de": "Entdecken",
+    "value_fr": "Explorer",
+    "value_ja": "さらに探す"
   },
   {
     "id": "45",
@@ -357,7 +445,9 @@
     "path": "/",
     "title": "Search the site",
     "value": "Search the site",
-    "value_de": "Website durchsuchen"
+    "value_de": "Website durchsuchen",
+    "value_fr": "Rechercher sur le site",
+    "value_ja": "サイト内を検索"
   },
   {
     "id": "46",
@@ -365,7 +455,9 @@
     "path": "/",
     "title": "Search",
     "value": "Search",
-    "value_de": "Suchen"
+    "value_de": "Suchen",
+    "value_fr": "Rechercher",
+    "value_ja": "検索"
   },
   {
     "id": "47",
@@ -373,7 +465,9 @@
     "path": "/",
     "title": "Search",
     "value": "Search",
-    "value_de": "Suchen"
+    "value_de": "Suchen",
+    "value_fr": "Rechercher",
+    "value_ja": "検索"
   },
   {
     "id": "48",
@@ -381,7 +475,9 @@
     "path": "/",
     "title": "Audio player",
     "value": "Audio player",
-    "value_de": "Audioplayer"
+    "value_de": "Audioplayer",
+    "value_fr": "Lecteur audio",
+    "value_ja": "オーディオプレーヤー"
   },
   {
     "id": "49",
@@ -389,7 +485,9 @@
     "path": "/",
     "title": "The Hans Gál Society",
     "value": "The Hans Gál Society",
-    "value_de": "Die Hans-Gál-Gesellschaft"
+    "value_de": "Die Hans-Gál-Gesellschaft",
+    "value_fr": "La Hans Gál Society",
+    "value_ja": "ハンス・ガール協会"
   },
   {
     "id": "50",
@@ -397,7 +495,9 @@
     "path": "/",
     "title": "Music for generations.",
     "value": "Music for generations.",
-    "value_de": "Musik für Generationen."
+    "value_de": "Musik für Generationen.",
+    "value_fr": "Une musique pour toutes les générations.",
+    "value_ja": "世代を越えて受け継ぐ音楽。"
   },
   {
     "id": "51",
@@ -405,7 +505,9 @@
     "path": "/",
     "title": "Exploring and sharing the life and music of Hans Gál, together with his family.",
     "value": "Exploring and sharing the life and music of Hans Gál, together with his family.",
-    "value_de": "Gemeinsam mit seiner Familie erforschen und vermitteln wir Hans Gáls Leben und Musik."
+    "value_de": "Gemeinsam mit seiner Familie erforschen und vermitteln wir Hans Gáls Leben und Musik.",
+    "value_fr": "Explorer et partager la vie et la musique de Hans Gál, avec sa famille.",
+    "value_ja": "ご家族とともに、ハンス・ガールの生涯と音楽を探究し、伝えていきます。"
   },
   {
     "id": "52",
@@ -413,7 +515,9 @@
     "path": "/",
     "title": "Further information",
     "value": "Further information",
-    "value_de": "Weitere Informationen"
+    "value_de": "Weitere Informationen",
+    "value_fr": "Informations complémentaires",
+    "value_ja": "関連情報"
   },
   {
     "id": "53",
@@ -421,7 +525,9 @@
     "path": "/hansgal/",
     "title": "In this section",
     "value": "In this section",
-    "value_de": "In diesem Abschnitt"
+    "value_de": "In diesem Abschnitt",
+    "value_fr": "Dans cette rubrique",
+    "value_ja": "このセクション"
   },
   {
     "id": "54",
@@ -429,7 +535,9 @@
     "path": "/hansgal/",
     "title": "Section pages",
     "value": "Section pages",
-    "value_de": "Seiten in diesem Abschnitt"
+    "value_de": "Seiten in diesem Abschnitt",
+    "value_fr": "Pages de la rubrique",
+    "value_ja": "セクション内のページ"
   },
   {
     "id": "55",
@@ -437,7 +545,9 @@
     "path": "/hansgal/",
     "title": "The life & the music",
     "value": "The life & the music",
-    "value_de": "Das Leben & die Musik"
+    "value_de": "Das Leben & die Musik",
+    "value_fr": "La vie et la musique",
+    "value_ja": "生涯と音楽"
   },
   {
     "id": "56",
@@ -445,7 +555,9 @@
     "path": "/hansgal/",
     "title": "About Hans Gál",
     "value": "About Hans Gál",
-    "value_de": "Über Hans Gál"
+    "value_de": "Über Hans Gál",
+    "value_fr": "À propos de Hans Gál",
+    "value_ja": "ハンス・ガールについて"
   },
   {
     "id": "57",
@@ -453,7 +565,9 @@
     "path": "/hansgal/",
     "title": "Biographical resources",
     "value": "Biographical resources",
-    "value_de": "Biografische Quellen"
+    "value_de": "Biografische Quellen",
+    "value_fr": "Documents biographiques",
+    "value_ja": "伝記資料"
   },
   {
     "id": "58",
@@ -461,7 +575,9 @@
     "path": "/hansgal/",
     "title": "Chronology of Gál’s life",
     "value": "Chronology of Gál’s life",
-    "value_de": "Gáls Leben in Daten"
+    "value_de": "Gáls Leben in Daten",
+    "value_fr": "Chronologie de la vie de Gál",
+    "value_ja": "ガールの生涯年表"
   },
   {
     "id": "59",
@@ -469,7 +585,9 @@
     "path": "/hansgal/",
     "title": "Family tree",
     "value": "Family tree",
-    "value_de": "Stammbaum"
+    "value_de": "Stammbaum",
+    "value_fr": "Arbre généalogique",
+    "value_ja": "家系図"
   },
   {
     "id": "60",
@@ -477,7 +595,9 @@
     "path": "/",
     "title": "An individual voice.",
     "value": "An individual voice.",
-    "value_de": "Eine eigene Stimme."
+    "value_de": "Eine eigene Stimme.",
+    "value_fr": "Une voix singulière.",
+    "value_ja": "独自の音楽の声。"
   },
   {
     "id": "61",
@@ -485,7 +605,9 @@
     "path": "/",
     "title": "A world of music.",
     "value": "A world of music.",
-    "value_de": "Eine Welt der Musik."
+    "value_de": "Eine Welt der Musik.",
+    "value_fr": "Tout un monde de musique.",
+    "value_ja": "豊かな音楽の世界。"
   },
   {
     "id": "62",
@@ -493,7 +615,9 @@
     "path": "/",
     "title": "Explore the life, works and recordings of a composer with his own distinctive language.",
     "value": "Explore the life, works and recordings of a composer with an exceptionally rich compositional oeuvre and his own distinctive musical voice.",
-    "value_de": "Entdecken Sie das Leben, die Werke und die Aufnahmen eines Komponisten mit einer ganz eigenen musikalischen Sprache."
+    "value_de": "Entdecken Sie das Leben, die Werke und die Aufnahmen eines Komponisten mit einer ganz eigenen musikalischen Sprache.",
+    "value_fr": "Découvrez la vie, les œuvres et les enregistrements d’un compositeur dont la production est d’une richesse exceptionnelle et la voix musicale profondément personnelle.",
+    "value_ja": "類まれに豊かな作品群と独自の音楽の声を持つ作曲家。その生涯、作品、録音をご紹介します。"
   },
   {
     "id": "63",
@@ -501,7 +625,9 @@
     "path": "/",
     "title": "Discover the music",
     "value": "Discover the music",
-    "value_de": "Die Musik entdecken"
+    "value_de": "Die Musik entdecken",
+    "value_fr": "Découvrir la musique",
+    "value_ja": "音楽を知る"
   },
   {
     "id": "64",
@@ -509,7 +635,9 @@
     "path": "/",
     "title": "Explore the works",
     "value": "Explore the works",
-    "value_de": "Die Werke erkunden"
+    "value_de": "Die Werke erkunden",
+    "value_fr": "Explorer les œuvres",
+    "value_ja": "作品を探す"
   },
   {
     "id": "65",
@@ -517,7 +645,9 @@
     "path": "/",
     "title": "Start exploring",
     "value": "Start exploring",
-    "value_de": "Einstieg"
+    "value_de": "Einstieg",
+    "value_fr": "Commencer la découverte",
+    "value_ja": "ここから探す"
   },
   {
     "id": "66",
@@ -525,7 +655,9 @@
     "path": "/",
     "title": "Listen",
     "value": "Listen",
-    "value_de": "Hören"
+    "value_de": "Hören",
+    "value_fr": "Écouter",
+    "value_ja": "聴く"
   },
   {
     "id": "67",
@@ -533,7 +665,9 @@
     "path": "/",
     "title": "Read",
     "value": "Read",
-    "value_de": "Lesen"
+    "value_de": "Lesen",
+    "value_fr": "Lire",
+    "value_ja": "読む"
   },
   {
     "id": "68",
@@ -541,7 +675,9 @@
     "path": "/",
     "title": "Explore",
     "value": "Explore",
-    "value_de": "Entdecken"
+    "value_de": "Entdecken",
+    "value_fr": "Explorer",
+    "value_ja": "探す"
   },
   {
     "id": "69",
@@ -549,7 +685,9 @@
     "path": "/",
     "title": "Portrait of Hans Gál by Lotte Meitner-Graf",
     "value": "Portrait of Hans Gál by Lotte Meitner-Graf",
-    "value_de": "Porträt von Hans Gál von Lotte Meitner-Graf"
+    "value_de": "Porträt von Hans Gál von Lotte Meitner-Graf",
+    "value_fr": "Portrait de Hans Gál par Lotte Meitner-Graf",
+    "value_ja": "ロッテ・マイトナー＝グラーフによるハンス・ガールの肖像"
   },
   {
     "id": "70",
@@ -557,7 +695,9 @@
     "path": "/",
     "title": "Photo:",
     "value": "Photo:",
-    "value_de": "Foto:"
+    "value_de": "Foto:",
+    "value_fr": "Photo :",
+    "value_ja": "写真："
   },
   {
     "id": "71",
@@ -565,7 +705,9 @@
     "path": "/",
     "title": "Discover Hans Gál",
     "value": "Discover Hans Gál",
-    "value_de": "Hans Gál entdecken"
+    "value_de": "Hans Gál entdecken",
+    "value_fr": "Découvrir Hans Gál",
+    "value_ja": "ハンス・ガールを知る"
   },
   {
     "id": "72",
@@ -573,7 +715,9 @@
     "path": "/",
     "title": "A life in music. A legacy to explore.",
     "value": "A life in music. A legacy to explore.",
-    "value_de": "Ein Leben für die Musik. Ein Erbe zum Entdecken."
+    "value_de": "Ein Leben für die Musik. Ein Erbe zum Entdecken.",
+    "value_fr": "Une vie en musique. Un héritage à découvrir.",
+    "value_ja": "音楽に生きた人生。その遺産をたどる。"
   },
   {
     "id": "73",
@@ -581,7 +725,9 @@
     "path": "/",
     "title": "The life",
     "value": "The life",
-    "value_de": "Das Leben"
+    "value_de": "Das Leben",
+    "value_fr": "La vie",
+    "value_ja": "生涯"
   },
   {
     "id": "74",
@@ -589,7 +735,9 @@
     "path": "/",
     "title": "From Vienna and Mainz to Edinburgh: a biography in chapters, photographs and recollections.",
     "value": "From Vienna and Mainz to Edinburgh: a biography in chapters, photographs and recollections.",
-    "value_de": "Von Wien und Mainz nach Edinburgh: eine Biografie in Kapiteln, Fotografien und Erinnerungen."
+    "value_de": "Von Wien und Mainz nach Edinburgh: eine Biografie in Kapiteln, Fotografien und Erinnerungen.",
+    "value_fr": "De Vienne et Mayence à Édimbourg : une biographie en chapitres, photographies et souvenirs.",
+    "value_ja": "ウィーン、マインツからエディンバラへ。各章の文章、写真、回想を通して生涯をたどります。"
   },
   {
     "id": "75",
@@ -597,7 +745,9 @@
     "path": "/",
     "title": "Read the biography",
     "value": "Read the biography",
-    "value_de": "Die Biografie lesen"
+    "value_de": "Die Biografie lesen",
+    "value_fr": "Lire la biographie",
+    "value_ja": "伝記を読む"
   },
   {
     "id": "76",
@@ -605,7 +755,9 @@
     "path": "/",
     "title": "The works",
     "value": "The works",
-    "value_de": "Die Werke"
+    "value_de": "Die Werke",
+    "value_fr": "Les œuvres",
+    "value_ja": "作品"
   },
   {
     "id": "77",
@@ -613,7 +765,9 @@
     "path": "/",
     "title": "Find a work by title, opus, instrument or genre. Explore its history, recordings and available scores.",
     "value": "Find a work by title, opus, instrument or genre. Explore its history, recordings and available scores.",
-    "value_de": "Finden Sie ein Werk nach Titel, Opus, Instrument oder Gattung – mit Hintergründen, Aufnahmen und verfügbaren Noten."
+    "value_de": "Finden Sie ein Werk nach Titel, Opus, Instrument oder Gattung – mit Hintergründen, Aufnahmen und verfügbaren Noten.",
+    "value_fr": "Recherchez une œuvre par titre, numéro d’opus, instrument ou genre. Découvrez son histoire, ses enregistrements et les partitions disponibles.",
+    "value_ja": "作品名、作品番号、楽器、ジャンルから作品を検索できます。作品の歴史、録音、入手できる楽譜をご覧ください。"
   },
   {
     "id": "78",
@@ -621,7 +775,9 @@
     "path": "/",
     "title": "Open the catalogue",
     "value": "Open the catalogue",
-    "value_de": "Zum Werkverzeichnis"
+    "value_de": "Zum Werkverzeichnis",
+    "value_fr": "Ouvrir le catalogue",
+    "value_ja": "作品目録を開く"
   },
   {
     "id": "79",
@@ -629,7 +785,9 @@
     "path": "/",
     "title": "The music",
     "value": "The music",
-    "value_de": "Die Musik"
+    "value_de": "Die Musik",
+    "value_fr": "La musique",
+    "value_ja": "音楽"
   },
   {
     "id": "80",
@@ -637,7 +795,9 @@
     "path": "/",
     "title": "Listen to excerpts and discover the melodic voice and contrapuntal imagination of Hans Gál.",
     "value": "Listen to excerpts and discover the melodic voice and contrapuntal imagination of Hans Gál.",
-    "value_de": "Hören Sie Ausschnitte und entdecken Sie Hans Gáls melodische Sprache und kontrapunktische Fantasie."
+    "value_de": "Hören Sie Ausschnitte und entdecken Sie Hans Gáls melodische Sprache und kontrapunktische Fantasie.",
+    "value_fr": "Écoutez des extraits et découvrez le chant mélodique et l’imagination contrapuntique de Hans Gál.",
+    "value_ja": "抜粋を聴きながら、ハンス・ガールの旋律と対位法の豊かな想像力に触れてみてください。"
   },
   {
     "id": "81",
@@ -645,7 +805,9 @@
     "path": "/",
     "title": "Start listening",
     "value": "Start listening",
-    "value_de": "Musik hören"
+    "value_de": "Musik hören",
+    "value_fr": "Commencer l’écoute",
+    "value_ja": "聴き始める"
   },
   {
     "id": "82",
@@ -653,7 +815,9 @@
     "path": "/",
     "title": "On record",
     "value": "On record",
-    "value_de": "Aufnahmen"
+    "value_de": "Aufnahmen",
+    "value_fr": "Les enregistrements",
+    "value_ja": "録音"
   },
   {
     "id": "83",
@@ -661,7 +825,9 @@
     "path": "/",
     "title": "The music, brought to life.",
     "value": "The music, brought to life.",
-    "value_de": "Die Musik wird lebendig."
+    "value_de": "Die Musik wird lebendig.",
+    "value_fr": "La musique prend vie.",
+    "value_ja": "演奏によって息づく音楽。"
   },
   {
     "id": "84",
@@ -669,7 +835,9 @@
     "path": "/",
     "title": "Browse all recordings",
     "value": "Browse all recordings",
-    "value_de": "Alle Aufnahmen ansehen"
+    "value_de": "Alle Aufnahmen ansehen",
+    "value_fr": "Voir tous les enregistrements",
+    "value_ja": "すべての録音を見る"
   },
   {
     "id": "85",
@@ -677,7 +845,9 @@
     "path": "/",
     "title": "Explore this recording",
     "value": "Explore this recording",
-    "value_de": "Diese Aufnahme entdecken"
+    "value_de": "Diese Aufnahme entdecken",
+    "value_fr": "Découvrir cet enregistrement",
+    "value_ja": "この録音について"
   },
   {
     "id": "86",
@@ -685,7 +855,9 @@
     "path": "/",
     "title": "The Hans Gál Society",
     "value": "The Hans Gál Society",
-    "value_de": "Die Hans-Gál-Gesellschaft"
+    "value_de": "Die Hans-Gál-Gesellschaft",
+    "value_fr": "La Hans Gál Society",
+    "value_ja": "ハンス・ガール協会"
   },
   {
     "id": "87",
@@ -693,7 +865,9 @@
     "path": "/",
     "title": "Keeping the music in our lives.",
     "value": "Keeping the music in our lives.",
-    "value_de": "Damit die Musik lebendig bleibt."
+    "value_de": "Damit die Musik lebendig bleibt.",
+    "value_fr": "Faire vivre la musique parmi nous.",
+    "value_ja": "音楽を私たちの暮らしの中に。"
   },
   {
     "id": "88",
@@ -701,7 +875,9 @@
     "path": "/",
     "title": "A not-for-profit resource, jointly managed by the Hans Gál Society and Gál’s family. Discover our work, explore the news and help this music reach new listeners.",
     "value": "A not-for-profit resource, jointly managed by the Hans Gál Society and Gál’s family. Discover our work, explore the news and help this music reach new listeners.",
-    "value_de": "Eine gemeinnützige Informationsquelle, gemeinsam betreut von der Hans-Gál-Gesellschaft und Gáls Familie. Entdecken Sie unsere Arbeit und unsere Neuigkeiten und helfen Sie uns, neue Hörer zu erreichen."
+    "value_de": "Eine gemeinnützige Informationsquelle, gemeinsam betreut von der Hans-Gál-Gesellschaft und Gáls Familie. Entdecken Sie unsere Arbeit und unsere Neuigkeiten und helfen Sie uns, neue Hörer zu erreichen.",
+    "value_fr": "Un site à but non lucratif, géré conjointement par la Hans Gál Society et la famille de Gál. Découvrez nos activités, suivez l’actualité et aidez cette musique à trouver de nouveaux auditeurs.",
+    "value_ja": "ハンス・ガール協会とガールの家族が共同で運営する非営利の情報サイトです。活動や最新情報をご覧いただき、この音楽を新たな聴き手に届ける取り組みにご協力ください。"
   },
   {
     "id": "89",
@@ -709,7 +885,9 @@
     "path": "/",
     "title": "Meet the Society",
     "value": "Meet the Society",
-    "value_de": "Die Gesellschaft kennenlernen"
+    "value_de": "Die Gesellschaft kennenlernen",
+    "value_fr": "Découvrir la Société",
+    "value_ja": "協会について"
   },
   {
     "id": "90",
@@ -717,7 +895,9 @@
     "path": "/",
     "title": "News & events",
     "value": "News & events",
-    "value_de": "Aktuelles & Veranstaltungen"
+    "value_de": "Aktuelles & Veranstaltungen",
+    "value_fr": "Actualités et événements",
+    "value_ja": "ニュース・催し"
   },
   {
     "id": "91",
@@ -725,7 +905,9 @@
     "path": "/photos/",
     "title": "The archive",
     "value": "The archive",
-    "value_de": "Das Archiv"
+    "value_de": "Das Archiv",
+    "value_fr": "Les archives",
+    "value_ja": "アーカイブ"
   },
   {
     "id": "92",
@@ -733,7 +915,9 @@
     "path": "/photos/",
     "title": "Photographs",
     "value": "Photographs",
-    "value_de": "Fotografien"
+    "value_de": "Fotografien",
+    "value_fr": "Photographies",
+    "value_ja": "写真"
   },
   {
     "id": "93",
@@ -741,7 +925,9 @@
     "path": "/recordings/",
     "title": "Listen & discover",
     "value": "Listen & discover",
-    "value_de": "Hören & entdecken"
+    "value_de": "Hören & entdecken",
+    "value_fr": "Écouter et découvrir",
+    "value_ja": "聴く・知る"
   },
   {
     "id": "94",
@@ -749,7 +935,9 @@
     "path": "/recordings/",
     "title": "Recordings",
     "value": "Recordings",
-    "value_de": "Aufnahmen"
+    "value_de": "Aufnahmen",
+    "value_fr": "Enregistrements",
+    "value_ja": "録音"
   },
   {
     "id": "95",
@@ -757,7 +945,9 @@
     "path": "/recordings/",
     "title": "All recordings",
     "value": "All recordings",
-    "value_de": "Alle Aufnahmen"
+    "value_de": "Alle Aufnahmen",
+    "value_fr": "Tous les enregistrements",
+    "value_ja": "すべての録音"
   },
   {
     "id": "96",
@@ -765,7 +955,9 @@
     "path": "/recordings/",
     "title": "The recording collection",
     "value": "The recording collection",
-    "value_de": "Die Aufnahmensammlung"
+    "value_de": "Die Aufnahmensammlung",
+    "value_fr": "La collection d’enregistrements",
+    "value_ja": "録音コレクション"
   },
   {
     "id": "97",
@@ -773,7 +965,9 @@
     "path": "/recordings/",
     "title": "Find a recording",
     "value": "Find a recording",
-    "value_de": "Eine Aufnahme finden"
+    "value_de": "Eine Aufnahme finden",
+    "value_fr": "Trouver un enregistrement",
+    "value_ja": "録音を探す"
   },
   {
     "id": "98",
@@ -781,7 +975,9 @@
     "path": "/recordings/",
     "title": "Horizontal view",
     "value": "Horizontal view",
-    "value_de": "Horizontale Ansicht"
+    "value_de": "Horizontale Ansicht",
+    "value_fr": "Vue horizontale",
+    "value_ja": "横並び表示"
   },
   {
     "id": "99",
@@ -789,7 +985,9 @@
     "path": "/recordings/",
     "title": "Enlarge cover",
     "value": "Enlarge cover",
-    "value_de": "Cover vergrößern"
+    "value_de": "Cover vergrößern",
+    "value_fr": "Agrandir la pochette",
+    "value_ja": "ジャケットを拡大"
   },
   {
     "id": "100",
@@ -797,7 +995,9 @@
     "path": "/recordings/",
     "title": "Listen to excerpts",
     "value": "Listen to excerpts",
-    "value_de": "Hörproben"
+    "value_de": "Hörproben",
+    "value_fr": "Écouter des extraits",
+    "value_ja": "抜粋を聴く"
   },
   {
     "id": "101",
@@ -805,7 +1005,9 @@
     "path": "/search/",
     "title": "Explore the archive",
     "value": "Explore the archive",
-    "value_de": "Das Archiv erkunden"
+    "value_de": "Das Archiv erkunden",
+    "value_fr": "Explorer les archives",
+    "value_ja": "アーカイブを探す"
   },
   {
     "id": "102",
@@ -813,7 +1015,9 @@
     "path": "/search/",
     "title": "Search the site",
     "value": "Search the site",
-    "value_de": "Website durchsuchen"
+    "value_de": "Website durchsuchen",
+    "value_fr": "Rechercher sur le site",
+    "value_ja": "サイト内を検索"
   },
   {
     "id": "103",
@@ -821,7 +1025,9 @@
     "path": "/search/",
     "title": "What would you like to find?",
     "value": "What would you like to find?",
-    "value_de": "Was möchten Sie finden?"
+    "value_de": "Was möchten Sie finden?",
+    "value_fr": "Que souhaitez-vous trouver ?",
+    "value_ja": "何をお探しですか？"
   },
   {
     "id": "104",
@@ -829,7 +1035,9 @@
     "path": "/search/",
     "title": "Search",
     "value": "Search",
-    "value_de": "Suchen"
+    "value_de": "Suchen",
+    "value_fr": "Rechercher",
+    "value_ja": "検索"
   },
   {
     "id": "105",
@@ -837,7 +1045,9 @@
     "path": "/hansgalsociety/",
     "title": "In this section",
     "value": "In this section",
-    "value_de": "In diesem Abschnitt"
+    "value_de": "In diesem Abschnitt",
+    "value_fr": "Dans cette rubrique",
+    "value_ja": "このセクション"
   },
   {
     "id": "106",
@@ -845,7 +1055,9 @@
     "path": "/hansgalsociety/",
     "title": "Section pages",
     "value": "Section pages",
-    "value_de": "Seiten in diesem Abschnitt"
+    "value_de": "Seiten in diesem Abschnitt",
+    "value_fr": "Pages de la rubrique",
+    "value_ja": "セクション内のページ"
   },
   {
     "id": "107",
@@ -853,7 +1065,9 @@
     "path": "/works/",
     "title": "The music of Hans Gál",
     "value": "The music of Hans Gál",
-    "value_de": "Die Musik von Hans Gál"
+    "value_de": "Die Musik von Hans Gál",
+    "value_fr": "La musique de Hans Gál",
+    "value_ja": "ハンス・ガールの音楽"
   },
   {
     "id": "108",
@@ -861,7 +1075,9 @@
     "path": "/works/",
     "title": "Works catalogue",
     "value": "Works catalogue",
-    "value_de": "Werkverzeichnis"
+    "value_de": "Werkverzeichnis",
+    "value_fr": "Catalogue des œuvres",
+    "value_ja": "作品目録"
   },
   {
     "id": "109",
@@ -869,7 +1085,9 @@
     "path": "/works/",
     "title": "Title",
     "value": "Title",
-    "value_de": "Titel"
+    "value_de": "Titel",
+    "value_fr": "Titre",
+    "value_ja": "作品名"
   },
   {
     "id": "110",
@@ -877,7 +1095,9 @@
     "path": "/works/",
     "title": "Title or keyword",
     "value": "Title or keyword",
-    "value_de": "Titel oder Suchbegriff"
+    "value_de": "Titel oder Suchbegriff",
+    "value_fr": "Titre ou mot-clé",
+    "value_ja": "作品名またはキーワード"
   },
   {
     "id": "111",
@@ -885,7 +1105,9 @@
     "path": "/works/",
     "title": "Filter by genre, instrument, opus or year",
     "value": "Filter by genre, instrument, opus or year",
-    "value_de": "Nach Gattung, Instrument, Opus oder Jahr filtern"
+    "value_de": "Nach Gattung, Instrument, Opus oder Jahr filtern",
+    "value_fr": "Filtrer par genre, instrument, opus ou année",
+    "value_ja": "ジャンル・楽器・作品番号・年で絞り込む"
   },
   {
     "id": "112",
@@ -893,7 +1115,9 @@
     "path": "/works/",
     "title": "Genre",
     "value": "Genre",
-    "value_de": "Gattung"
+    "value_de": "Gattung",
+    "value_fr": "Genre",
+    "value_ja": "ジャンル"
   },
   {
     "id": "113",
@@ -901,7 +1125,9 @@
     "path": "/works/",
     "title": "Instrument",
     "value": "Instrument",
-    "value_de": "Instrument"
+    "value_de": "Instrument",
+    "value_fr": "Instrument",
+    "value_ja": "楽器"
   },
   {
     "id": "114",
@@ -909,7 +1135,9 @@
     "path": "/works/",
     "title": "e.g. 33",
     "value": "e.g. 33",
-    "value_de": "z. B. 33"
+    "value_de": "z. B. 33",
+    "value_fr": "par ex. 33",
+    "value_ja": "例：33"
   },
   {
     "id": "115",
@@ -917,7 +1145,9 @@
     "path": "/works/",
     "title": "Year",
     "value": "Year",
-    "value_de": "Jahr"
+    "value_de": "Jahr",
+    "value_fr": "Année",
+    "value_ja": "年"
   },
   {
     "id": "116",
@@ -925,7 +1155,9 @@
     "path": "/works/",
     "title": "Publisher",
     "value": "Publisher",
-    "value_de": "Verlag"
+    "value_de": "Verlag",
+    "value_fr": "Éditeur",
+    "value_ja": "出版社"
   },
   {
     "id": "117",
@@ -933,7 +1165,9 @@
     "path": "/works/",
     "title": "Find works",
     "value": "Find works",
-    "value_de": "Werke finden"
+    "value_de": "Werke finden",
+    "value_fr": "Trouver des œuvres",
+    "value_ja": "作品を検索"
   },
   {
     "id": "118",
@@ -941,7 +1175,9 @@
     "path": "/works/",
     "title": "Clear filters",
     "value": "Clear filters",
-    "value_de": "Filter zurücksetzen"
+    "value_de": "Filter zurücksetzen",
+    "value_fr": "Effacer les filtres",
+    "value_ja": "絞り込みを解除"
   },
   {
     "id": "119",
@@ -949,7 +1185,9 @@
     "path": "/works/",
     "title": "Search tips",
     "value": "Search tips",
-    "value_de": "Hinweise zur Suche"
+    "value_de": "Hinweise zur Suche",
+    "value_fr": "Conseils de recherche",
+    "value_ja": "検索のヒント"
   },
   {
     "id": "120",
@@ -957,7 +1195,9 @@
     "path": "/works/",
     "title": "Availability symbols",
     "value": "Availability symbols",
-    "value_de": "Verfügbarkeitssymbole"
+    "value_de": "Verfügbarkeitssymbole",
+    "value_fr": "Symboles de disponibilité",
+    "value_ja": "入手・試聴情報の記号"
   },
   {
     "id": "121",
@@ -965,7 +1205,9 @@
     "path": "/works/",
     "title": "Score",
     "value": "Score",
-    "value_de": "Noten"
+    "value_de": "Noten",
+    "value_fr": "Partition",
+    "value_ja": "楽譜"
   },
   {
     "id": "122",
@@ -973,7 +1215,9 @@
     "path": "/works/",
     "title": "Recording",
     "value": "Recording",
-    "value_de": "Aufnahme"
+    "value_de": "Aufnahme",
+    "value_fr": "Enregistrement",
+    "value_ja": "録音"
   },
   {
     "id": "123",
@@ -981,7 +1225,9 @@
     "path": "/works/",
     "title": "Listen",
     "value": "Listen",
-    "value_de": "Hören"
+    "value_de": "Hören",
+    "value_fr": "Écouter",
+    "value_ja": "試聴"
   },
   {
     "id": "124",
@@ -989,7 +1235,9 @@
     "path": "/works/",
     "title": "works",
     "value": "works",
-    "value_de": "Werke"
+    "value_de": "Werke",
+    "value_fr": "œuvres",
+    "value_ja": "作品"
   },
   {
     "id": "125",
@@ -997,7 +1245,9 @@
     "path": "/works/",
     "title": "Works catalogue results",
     "value": "Works catalogue results",
-    "value_de": "Ergebnisse im Werkverzeichnis"
+    "value_de": "Ergebnisse im Werkverzeichnis",
+    "value_fr": "Résultats du catalogue des œuvres",
+    "value_ja": "作品目録の検索結果"
   },
   {
     "id": "126",
@@ -1005,7 +1255,9 @@
     "path": "/works/",
     "title": "sort ascending",
     "value": "sort ascending",
-    "value_de": "aufsteigend sortieren"
+    "value_de": "aufsteigend sortieren",
+    "value_fr": "tri croissant",
+    "value_ja": "昇順で並べ替え"
   },
   {
     "id": "127",
@@ -1013,7 +1265,9 @@
     "path": "/works/",
     "title": "sort descending",
     "value": "sort descending",
-    "value_de": "absteigend sortieren"
+    "value_de": "absteigend sortieren",
+    "value_fr": "tri décroissant",
+    "value_ja": "降順で並べ替え"
   },
   {
     "id": "128",
@@ -1021,7 +1275,9 @@
     "path": "/works/",
     "title": "Available",
     "value": "Available",
-    "value_de": "Verfügbar"
+    "value_de": "Verfügbar",
+    "value_fr": "Disponible",
+    "value_ja": "入手・試聴"
   },
   {
     "id": "129",
@@ -1029,7 +1285,9 @@
     "path": "/works/",
     "title": "Title",
     "value": "Title",
-    "value_de": "Titel"
+    "value_de": "Titel",
+    "value_fr": "Titre",
+    "value_ja": "作品名"
   },
   {
     "id": "130",
@@ -1037,7 +1295,9 @@
     "path": "/works/",
     "title": "Description",
     "value": "Description",
-    "value_de": "Beschreibung"
+    "value_de": "Beschreibung",
+    "value_fr": "Description",
+    "value_ja": "説明"
   },
   {
     "id": "131",
@@ -1045,7 +1305,9 @@
     "path": "/works/",
     "title": "Year",
     "value": "Year",
-    "value_de": "Jahr"
+    "value_de": "Jahr",
+    "value_fr": "Année",
+    "value_ja": "年"
   },
   {
     "id": "132",
@@ -1053,7 +1315,9 @@
     "path": "/works/",
     "title": "Publisher",
     "value": "Publisher",
-    "value_de": "Verlag"
+    "value_de": "Verlag",
+    "value_fr": "Éditeur",
+    "value_ja": "出版社"
   },
   {
     "id": "133",
@@ -1061,7 +1325,9 @@
     "path": "/works/",
     "title": "Available",
     "value": "Available",
-    "value_de": "Verfügbar"
+    "value_de": "Verfügbar",
+    "value_fr": "Disponible",
+    "value_ja": "入手・試聴"
   },
   {
     "id": "134",
@@ -1069,7 +1335,9 @@
     "path": "/works/",
     "title": "Downloadable score available",
     "value": "Downloadable score available",
-    "value_de": "Noten zum Herunterladen verfügbar"
+    "value_de": "Noten zum Herunterladen verfügbar",
+    "value_fr": "Partition téléchargeable disponible",
+    "value_ja": "ダウンロードできる楽譜あり"
   },
   {
     "id": "135",
@@ -1077,7 +1345,9 @@
     "path": "/works/",
     "title": "Downloadable score available",
     "value": "Downloadable score available",
-    "value_de": "Noten zum Herunterladen verfügbar"
+    "value_de": "Noten zum Herunterladen verfügbar",
+    "value_fr": "Partition téléchargeable disponible",
+    "value_ja": "ダウンロードできる楽譜あり"
   },
   {
     "id": "136",
@@ -1085,7 +1355,9 @@
     "path": "/works/",
     "title": "Recordings available",
     "value": "Recordings available",
-    "value_de": "Aufnahmen verfügbar"
+    "value_de": "Aufnahmen verfügbar",
+    "value_fr": "Enregistrements disponibles",
+    "value_ja": "録音あり"
   },
   {
     "id": "137",
@@ -1093,7 +1365,9 @@
     "path": "/works/",
     "title": "Recordings available",
     "value": "Recordings available",
-    "value_de": "Aufnahmen verfügbar"
+    "value_de": "Aufnahmen verfügbar",
+    "value_fr": "Enregistrements disponibles",
+    "value_ja": "録音あり"
   },
   {
     "id": "138",
@@ -1101,7 +1375,9 @@
     "path": "/works/",
     "title": "Audio samples available",
     "value": "Audio samples available",
-    "value_de": "Hörproben verfügbar"
+    "value_de": "Hörproben verfügbar",
+    "value_fr": "Extraits audio disponibles",
+    "value_ja": "試聴音源あり"
   },
   {
     "id": "139",
@@ -1109,7 +1385,9 @@
     "path": "/works/",
     "title": "Audio samples available",
     "value": "Audio samples available",
-    "value_de": "Hörproben verfügbar"
+    "value_de": "Hörproben verfügbar",
+    "value_fr": "Extraits audio disponibles",
+    "value_ja": "試聴音源あり"
   },
   {
     "id": "140",
@@ -1117,7 +1395,9 @@
     "path": "/works/",
     "title": "Works catalogue",
     "value": "Works catalogue",
-    "value_de": "Werkverzeichnis"
+    "value_de": "Werkverzeichnis",
+    "value_fr": "Catalogue des œuvres",
+    "value_ja": "作品目録"
   },
   {
     "id": "141",
@@ -1125,7 +1405,9 @@
     "path": "/works/",
     "title": "Download work details (PDF)",
     "value": "Download work details (PDF)",
-    "value_de": "Werkinformation als PDF herunterladen"
+    "value_de": "Werkinformation als PDF herunterladen",
+    "value_fr": "Télécharger la notice de l’œuvre (PDF)",
+    "value_ja": "作品の詳細をダウンロード（PDF）"
   },
   {
     "id": "142",
@@ -1133,7 +1415,9 @@
     "path": "/works/",
     "title": "Suggested donation",
     "value": "Suggested donation",
-    "value_de": "Empfohlene Spende"
+    "value_de": "Empfohlene Spende",
+    "value_fr": "Don suggéré",
+    "value_ja": "寄付の目安"
   },
   {
     "id": "143",
@@ -1141,6 +1425,8 @@
     "path": "/works/",
     "title": "A £0 download is also available.",
     "value": "A £0 download is also available.",
-    "value_de": "Ein Download für £0 ist ebenfalls möglich."
+    "value_de": "Ein Download für £0 ist ebenfalls möglich.",
+    "value_fr": "Le téléchargement est également possible pour 0 £.",
+    "value_ja": "寄付額を0ポンドとしてダウンロードすることもできます。"
   }
 ]

@@ -22,7 +22,7 @@ for asset in before('asset-manifest'):
   assert hashlib.sha256((ROOT/'public'/asset['path'].lstrip('/')).read_bytes()).hexdigest()==asset['sha256']
 for row in old:
  if not any(f.startswith('gal-') for f in by_id[row['id']]['filename'].split('#')[1:]) and row['id'] not in ('22','84','40','88'):
-  assert by_id[row['id']]==row, ('Unreplaced work changed',row['id'])
+  assert {k:v for k,v in by_id[row['id']].items() if not k.endswith(('_fr','_ja'))}==row, ('Unreplaced work changed',row['id'])
 op33=[f.split('#',1)[1] for f in by_id['24']['filename'].split('|')]
 assert op33==[f'gal-bis2543-cd1-t{n}.mp3' for n in range(27,32)]
 assert all(by_file[f]['recording_id']=='85' and by_file[f]['album']=='BIS2543' for f in op33)

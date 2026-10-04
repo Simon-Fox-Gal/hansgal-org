@@ -4,6 +4,6 @@
 {% for r in audiosamples %}<details class="album-samples"><summary>{{ r.opus_no }} · {{ r.title|stripcslashes }} · {{ r.files|length }}</summary>{% set listening_page=false %}{% include 'audio-sources.html' %}</details>{% endfor %}
 {% endif %}</div></article>{% endif %}
 
-{% if route!='/recordings' %}{{ collection() }}{% endif %}
+{% if route!='/recordings' and not album_fragment %}{{ collection() }}{% endif %}
 
 {% if audiosamples %}{% include 'audio-player.html' %}{% endif %}

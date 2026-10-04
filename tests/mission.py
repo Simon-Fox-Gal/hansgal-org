@@ -55,15 +55,16 @@ class Page(HTMLParser):
         if tag=='a':self.links.append(a)
 
 report=load('docs/build-report.json');base=report['base_path'];routes={r['path']:r for r in report['routes']}
+published=load('locales/languages.json')['published']
 for path,row in routes.items():
-    if path.startswith('/de') or 'redirect' in row or row['template'] in ('audio-player','recordings_content'):continue
-    counterpart='/de'+path
-    assert counterpart in routes,('missing German route',path)
-    for lang,target in [('en',path),('de',counterpart)]:
+    if any(path.startswith('/'+l+'/') or path=='/'+l for l in published if l!='en') or 'redirect' in row or row['template'] in ('audio-player','recordings_content'):continue
+    for lang in published:
+        target=('' if lang=='en' else '/'+lang)+path
+        assert target in routes,('missing language route',lang,path)
         page=Page((ROOT/'dist'/routes[target]['file']).read_text(encoding='utf8'))
         assert page.lang==lang,(target,page.lang)
         switches={a['data-language']:a['href'] for a in page.links if 'data-language' in a}
-        assert switches=={'en':base+path,'de':base+'/de'+path},target
+        assert switches=={l:base+('' if l=='en' else '/'+l)+path for l in published},target
 
 manifest={r['path']:r for r in load('content/asset-manifest.json')}
 available=[]

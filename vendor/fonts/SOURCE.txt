@@ -1,0 +1,4 @@
+Noto Sans JP, Google Fonts. SIL Open Font License 1.1.
+Source: https://raw.githubusercontent.com/google/fonts/main/ofl/notosansjp/NotoSansJP%5Bwght%5D.ttf
+Original SHA-256: c2f3b4d463500a2ddcd3849cded1fceeb9fd6d1c32e6cbecd568453ba50fc68f
+Derived by fixing the weight axis to 400 with fontTools.
