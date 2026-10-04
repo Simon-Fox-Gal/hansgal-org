@@ -36,3 +36,18 @@ For a request to add a CD, verify the exact release with the label or artists, t
 The browsing bridge is inert on the ordinary website. In the authorized CMS frame it reports the current URL, recording/work/page reference and selected text. It contains no credentials and grants no publishing ability. Any future change of CMS origin requires an explicit update to its allowlist.
 
 No production hansgal.org cutover, DNS change, permission expansion, or replacement of the website's original design is authorized by a routine editorial request.
+
+
+## Language scope and scheduled maintenance
+
+New editorial requests default to **all published languages**, even when the comment does not explicitly mention translation. Read the request's `languageScope` before implementation. A specific language limits text edits to that language. Missing scope on an older, unproposed request means all unless its original wording explicitly limits the language. Never expand an already-approved proposal without creating a new revision and obtaining any required approval.
+
+Discover the actual published languages from the repository on every run; currently these are English and German. When adding a language, update the private editor's `publishedLanguages` registry and include the new language in maintenance. This rule does not authorize launching additional languages automatically.
+
+Apply the intended semantic change in every selected language. Preserve original work titles, names, opus numbers, dates, recording credits, IDs, links and formatting. Consult approved English and German wording and maintain consistent musical terminology. Do not rewrite unrelated prose. Check translations for omissions, additions, altered facts and misleading terminology. Include every affected language in the proposal, approval preview, verification and publication record. Never report completion while a required translation is outstanding.
+
+The nightly inbox review is scheduled for 04:00 Europe/Bucharest through the Codex task automation. Existing claims, approval preferences, exact-revision approval and verified publication requirements remain in force. Unchecked requests authorize publication after checks; checked requests require approval. Do not resend reserved approval emails or repeat a completed publication. Stay quiet when no action is needed.
+
+On the first maintenance run each calendar month, review translation consistency, including manual edits outside the comments workflow. Compare repository history since the last successful checkpoint with the private request history. Review edits in every language; do not assume that an English version is more recent than an edited German or other version. Honor explicit single-language exceptions. Fix clearly evidenced missed corresponding edits through the normal tested publication workflow; preserve and flag ambiguous or conflicting edits for clarification. Do not perform a wholesale monthly retranslation.
+
+Keep the checkpoint and review record private: date, reviewed commit, published languages, specific-language exceptions, fixes and unresolved questions. On the first review establish a baseline and record pre-existing discrepancies separately. Advance the successful checkpoint only after completing and verifying the review. Do not place private comments or editor information in GitHub. The local task must be available to run; check automation status if a scheduled review has been missed.
