@@ -2,7 +2,7 @@
 	<div class="widelead">
 		{{ lead }}
 	</div>
-<aside class="chapter-nav"><details open><summary>{{ tr('In this section','In diesem Abschnitt') }}</summary><nav aria-label="{{ tr('Section pages','Seiten in diesem Abschnitt') }}">
+<aside class="chapter-nav"><details open><summary>{{ page_text('105') }}</summary><nav aria-label="{{ page_text('106') }}">
  {% for item in submenus %}{% if item.hidden == 'no' %}<a href="/{{ mainmenu }}/{{ item.id }}/" {% if route == '/' ~ mainmenu ~ '/' ~ item.id %}aria-current="page"{% endif %}>{{ item.title }}</a>{% endif %}{% endfor %}
  </nav></details>		{% if thumb %}
 		<img class="thumb" src="/storage/pictureundersubmenus/thumb_{{ mainmenu }}.jpg" border="0" />
