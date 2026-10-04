@@ -2,11 +2,12 @@ const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/st
 const root=path.join(__dirname,'..'),source=fs.readFileSync(path.join(root,'app/audio-player.js'),'utf8');
 const markup=fs.readFileSync(path.join(root,'dist/audiosamples/index.html'),'utf8');
 const rows=JSON.parse(markup.match(/id="audio-page-data">([\s\S]*?)<\/script>/)[1]);
-function boot(records,search=''){
+function boot(records,search='',startVisible=false){
  const ids=new Map(),links=records.flatMap(r=>r.files.map(f=>({dataset:{sample:f.filename},events:{},setAttribute(){},addEventListener(n,fn){this.events[n]=fn;},closest(){return null;}})));
  const make=()=>({textContent:'',dataset:{},hidden:true,checked:false,classList:{toggle(){return false;},add(){}},setAttribute(){},addEventListener(){}});
  for(const id of ['audio-page-data','listening-now','now-title','now-track','now-credit','now-cover','now-recording','now-work','player-message','previous-excerpt','next-excerpt','close-listening','continuous-listening','mini-play','minimise-listening','popout-listening'])ids.set(id,make());
  ids.get('audio-page-data').textContent=JSON.stringify(records);
+ if(startVisible)ids.get('listening-now').dataset.startVisible='true';
  const player={...make(),src:'',paused:true,plays:0,play(){this.paused=false;this.plays++;return Promise.resolve();},pause(){this.paused=true;}};ids.set('listening-player',player);
  const location={search,pathname:'/works/show/19/',hash:'',origin:'https://hansgal.org'};let address='';
  const context={URLSearchParams,Map,Date,Math,Number,JSON,console,location,history:{replaceState(a,b,c){address=c;}},document:{documentElement:{lang:'en'},getElementById:id=>ids.get(id)||null,querySelector:()=>({content:'/test'}),querySelectorAll:()=>links,createElement:()=>({set innerHTML(v){this.textContent=v.replace(/<[^>]*>/g,'');}})},window:{addEventListener(){},opener:null},fetch(){throw Error('Player must not load a separate cached playlist');}};
@@ -30,3 +31,7 @@ assert.equal(opus8.files.length,2);assert(opus8.files.every(f=>f.filename.starts
 for(const bad of ['?sample=not-a-track.mp3','?chosenfile=999','?chosenfile=-1']){const s=boot([ente],bad);assert.equal(s.player.src,'');assert.equal(s.player.plays,0);}
 const legacy=boot([ente],'?chosenfile=2');assert.equal(legacy.player.src,'/test/storage/audiosamples/'+ente.files[2].filename);assert.equal(legacy.player.plays,0);
 console.log(`PASS: ${count} click-to-play selections stay on the work page with correct audio/artwork; invalid tracks never fall back; old work bookmarks select locally; no network playlist dependency.`);
+
+const discover=boot(rows,'',true);assert.equal(discover.ids.get('listening-now').hidden,false);assert.equal(discover.player.plays,0);assert(discover.player.src.endsWith(rows[0].files[0].filename));assert.equal(discover.address(),'');
+const chosen=boot(rows,'?sample='+rows[1].files[0].filename,true);assert(chosen.player.src.endsWith(rows[1].files[0].filename));assert.equal(chosen.player.plays,0);
+console.log('PASS: discovery player is visible on arrival without autoplay or URL changes; explicit track requests take priority.');

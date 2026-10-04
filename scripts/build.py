@@ -240,6 +240,9 @@ def make_site(base_path='', review=True, language='en'):
             if language=='de':c['piktorgram']=translate_template(c['piktorgram'])
         else:
             c['thumb']=f'/storage/pictureundersubmenus/thumb_{section}.jpg' in source_assets
+        if section=='hansgal' and id=='55':
+            c['audiosamples']=audio
+            c['discover_player']=True
         page(route,'hansgal' if section=='hansgal' else 'staticpage',**c)
     # The initial ordering is captured from the source rather than guessed from a locale.
     order=load('catalogue-order') if (ROOT/'content/catalogue-order.json').exists() else [r['id'] for r in tables['catalogue']]

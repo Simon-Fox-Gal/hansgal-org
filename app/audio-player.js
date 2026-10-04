@@ -87,6 +87,7 @@
     const link=links.find(a=>a.dataset.sample===requested);if(link?.closest('details'))link.closest('details').open=true;
     const section=$('audiosamples_content');if(section){section.style.display='block';$('audio-samples')?.setAttribute('aria-expanded','true');}
   }else if(params.has('sample')||params.has('chosenfile')){panel.hidden=false;$('player-message').textContent=t('This excerpt is not available on this page. Choose a track below.','Diese Hörprobe ist auf dieser Seite nicht verfügbar. Wählen Sie unten einen Titel.');}
+  if(panel.dataset.startVisible==='true'&&!params.has('sample')&&!params.has('chosenfile')&&tracks.length)select(tracks[0].filename,false,false);
   if(location.hash==='#audio-samples'&&$('audiosamples_content')){$('audiosamples_content').style.display='block';$('audio-samples')?.setAttribute('aria-expanded','true');}
   if(popup){document.body.classList.add('listening-window');panel.hidden=false;$('popout-listening').hidden=true;for(const id of ['now-work','now-recording']){$(id).target='_blank';$(id).rel='noopener';}window.opener?.postMessage({type:'hansgal-ready'},location.origin);}
   panel.dataset.ready='true';
