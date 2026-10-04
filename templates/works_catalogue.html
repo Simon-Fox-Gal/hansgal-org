@@ -16,7 +16,7 @@
 			<br />
 			<div class="work-facts">
 				{{ catalogue.orchestration|stripcslashes }}<br />
-				Duration: {{ catalogue.duration }}'<br />
+				Duration: {{ duration_label(catalogue.duration) }}<br />
 				Publisher: {{ catalogue.publisher }}<br />
 				{{ catalogue.availability|stripcslashes }}
 				{% include 'purchase-links.html' %}

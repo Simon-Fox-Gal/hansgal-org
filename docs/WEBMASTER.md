@@ -40,6 +40,8 @@ No production hansgal.org cutover, DNS change, permission expansion, or replacem
 
 ## Language scope and scheduled maintenance
 
+Follow `docs/TRANSLATION-RULES.md` for all language work. Original work titles with bracketed translations apply across the entire site, including recordings and audio clips, not only catalogue pages.
+
 New editorial requests default to **all published languages**, even when the comment does not explicitly mention translation. Read the request's `languageScope` before implementation. A specific language limits text edits to that language. Missing scope on an older, unproposed request means all unless its original wording explicitly limits the language. Never expand an already-approved proposal without creating a new revision and obtaining any required approval.
 
 Discover the actual published languages from the repository on every run; currently these are English and German. When adding a language, update the private editor's `publishedLanguages` registry and include the new language in maintenance. This rule does not authorize launching additional languages automatically.

@@ -4,7 +4,7 @@
   const $=id=>document.getElementById(id), data=$('audio-page-data'), panel=$('listening-now');
   if(!data||!panel)return;
   const base=document.querySelector('meta[name=hansgal-base]')?.content||'';
-  const de=document.documentElement.lang==='de', t=(en,ger)=>de?ger:en;
+  const language=document.documentElement.lang||'en',de=language==='de', t=(en,ger)=>window.HansgalLocale?.labels?.[en]??(de?ger:en);
   const plain=s=>{const el=document.createElement('div');el.innerHTML=s||'';return el.textContent;};
   const norm=s=>plain(s).normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
   const records=JSON.parse(data.textContent), tracks=[];
@@ -14,7 +14,7 @@
   const player=$('listening-player'), params=new URLSearchParams(location.search);
   const popup=params.get('player')==='1';let current=-1,floating=null,pendingTransfer=false;
   const asset=file=>base+'/storage/audiosamples/'+encodeURIComponent(file);
-  const pageLink=path=>base+(de?'/de':'')+path;
+  const pageLink=path=>base+(language==='en'?'':'/'+language)+path;
   function select(filename,play=true,remember=true){
     const found=byFile.get(filename);
     // Unknown/obsolete requests must never select an unrelated last track.

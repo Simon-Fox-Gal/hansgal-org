@@ -19,8 +19,9 @@ class Text(HTMLParser):
 def plain(s):return re.sub(r'\s+',' ',''.join(Text(stripcslashes(s or '')).parts)).strip()
 tables={name:json.loads((ROOT/'content'/f'{name}.json').read_text(encoding='utf8')) for name in ['menu','recording','catalogue']}
 checked=0
-for lang,prefix in [('en',''),('de','de/')]:
- data=localize(tables) if lang=='de' else tables
+for lang in json.loads((ROOT/'locales/languages.json').read_text(encoding='utf8'))['published']:
+ prefix='' if lang=='en' else lang+'/'
+ data=localize(tables,lang) if lang!='en' else tables
  for table,fields in [('menu',['body']),('recording',['detail','review']),('catalogue',['movements','orchestration','availability','first_performance','other_performances','further_details','other_versions'])]:
   for row in data[table]:
    route=(row['mainmenu']+'/'+row['id']) if table=='menu' else ('recordings/' if table=='recording' else 'works/show/')+row['id']
@@ -29,8 +30,15 @@ for lang,prefix in [('en',''),('de','de/')]:
    assert 'id="main-content"' in markup and 'id="site-navigation"' in markup
    assert 'name="viewport"' in markup
    for field in fields:
-    source=plain(row.get(field))
-    assert not source or source in rendered,(lang,route,field,'authored text omitted')
+    # The shared contact panel is inserted at its explicit editorial marker.
+    # Both surrounding authored passages must remain complete and in order.
+    cursor=0
+    for part in (row.get(field) or '').split('<!-- SHARED_CONTACT_PANEL -->'):
+     source=plain(part)
+     if source:
+      position=rendered.find(source,cursor)
+      assert position>=0,(lang,route,field,'authored text omitted')
+      cursor=position+len(source)
     checked+=1
 logo=ROOT/'public/gfx/images/hansgal-logo-website.png'
 original=subprocess.check_output(['git','show','a97f4436f213652afe4486c32b0659fd4ca9483f:public/gfx/images/hansgal-logo-website.png'],cwd=ROOT)

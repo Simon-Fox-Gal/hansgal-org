@@ -3,42 +3,66 @@
     "id": "2",
     "question": "Did G&aacute;l write anything for [____]?",
     "answer": "G&aacute;l wrote for most instruments and genres. To check go to the works page and scroll the category search.",
-    "question_de": "Hat G\u00e1l etwas f\u00fcr [____] geschrieben?",
-    "answer_de": "G\u00e1l komponierte f\u00fcr die meisten Instrumente und Gattungen. Auf der Werkseite k\u00f6nnen Sie dies mithilfe der Kategorienauswahl nachsehen."
+    "question_de": "Hat Gál etwas für [____] geschrieben?",
+    "answer_de": "Gál komponierte für die meisten Instrumente und Gattungen. Auf der Werkseite können Sie dies mithilfe der Kategorienauswahl nachsehen.",
+    "question_fr": "Gál a-t-il composé pour [____] ?",
+    "question_ja": "ガールは［____］のための作品を書いていますか？",
+    "answer_fr": "Gál a écrit pour la plupart des instruments et dans la plupart des genres. Pour vérifier, consultez la page des œuvres et parcourez les catégories de recherche.",
+    "answer_ja": "ガールは多くの楽器とジャンルのために作曲しています。作品ページのカテゴリー検索でお確かめください。"
   },
   {
     "id": "3",
     "question": "How can I get hold of the music?",
     "answer": "Unless the work says 'available privately' it is in print and should be available from shops/publishers. However for historical reasons it is not always straightforward (see further FAQs below)",
     "question_de": "Wie kann ich die Noten bekommen?",
-    "answer_de": "Sofern bei einem Werk nicht \u201eprivat erh\u00e4ltlich\u201c angegeben ist, ist es gedruckt und sollte \u00fcber den Musikalienhandel oder den Verlag erh\u00e4ltlich sein. Aus historischen Gr\u00fcnden ist die Beschaffung allerdings nicht immer unkompliziert (siehe die weiteren Fragen unten)."
+    "answer_de": "Sofern bei einem Werk nicht „privat erhältlich“ angegeben ist, ist es gedruckt und sollte über den Musikalienhandel oder den Verlag erhältlich sein. Aus historischen Gründen ist die Beschaffung allerdings nicht immer unkompliziert (siehe die weiteren Fragen unten).",
+    "question_fr": "Comment se procurer les partitions ?",
+    "question_ja": "楽譜はどのように入手できますか？",
+    "answer_fr": "Sauf si la mention « available privately » (disponible auprès de particuliers) figure dans la notice, l’œuvre est publiée et devrait être disponible chez les marchands de musique ou les éditeurs. Pour des raisons historiques, la recherche n’est toutefois pas toujours simple : voir les questions suivantes.",
+    "answer_ja": "作品の説明に「available privately」（個人から入手可能）と記載されていない限り、楽譜は出版されており、楽譜店や出版社から入手できるはずです。ただし、歴史的な事情から、必ずしも簡単に見つかるとは限りません。以下の質問もご参照ください。"
   },
   {
     "id": "4",
     "question": "I tried to get music from a shop but they can't find it on the system",
     "answer": "Because G&aacute;l works are with a range of publishers, titles are not always distinctive and can get lost in the system. Please persevere. You may need the opus number, published and/or instrumentation or simply to include the 'a' accent in G&aacute;l (AltGr'a' on qwerty). Work details can be found on the Works page. In the UK, Schott, Boosey, Novello and Universal Edition all use the MDS distributor (this may help). Any persisting problems please contact us (see contacts page)",
     "question_de": "Ich habe im Musikalienhandel nach Noten gefragt, aber man konnte sie im System nicht finden.",
-    "answer_de": "G\u00e1ls Werke liegen bei verschiedenen Verlagen. Die Titel sind nicht immer eindeutig und k\u00f6nnen deshalb bei der Suche \u00fcbersehen werden. Bitte bleiben Sie beharrlich. M\u00f6glicherweise ben\u00f6tigen Sie die Opusnummer, den Verlag und/oder die Besetzung \u2013 oder Sie m\u00fcssen lediglich den Akzent auf dem \u201e\u00e1\u201c in G\u00e1l eingeben (auf einer QWERTY-Tastatur mit AltGr + a). Angaben zu den Werken finden Sie auf der Werkseite. In Gro\u00dfbritannien nutzen Schott, Boosey, Novello und Universal Edition den Vertrieb MDS; dieser Hinweis kann hilfreich sein. Bei anhaltenden Schwierigkeiten wenden Sie sich bitte an uns (siehe Kontaktseite)."
+    "answer_de": "Gáls Werke liegen bei verschiedenen Verlagen. Die Titel sind nicht immer eindeutig und können deshalb bei der Suche übersehen werden. Bitte bleiben Sie beharrlich. Möglicherweise benötigen Sie die Opusnummer, den Verlag und/oder die Besetzung – oder Sie müssen lediglich den Akzent auf dem „á“ in Gál eingeben (auf einer QWERTY-Tastatur mit AltGr + a). Angaben zu den Werken finden Sie auf der Werkseite. In Großbritannien nutzen Schott, Boosey, Novello und Universal Edition den Vertrieb MDS; dieser Hinweis kann hilfreich sein. Bei anhaltenden Schwierigkeiten wenden Sie sich bitte an uns (siehe Kontaktseite).",
+    "question_fr": "Le magasin auquel je me suis adressé ne trouve pas la partition dans son système.",
+    "question_ja": "楽譜店に問い合わせましたが、検索システムで見つからないと言われました。",
+    "answer_fr": "Les œuvres de Gál sont réparties entre plusieurs éditeurs, et leurs titres ne sont pas toujours suffisamment distinctifs pour être facilement retrouvés. Persévérez : le numéro d’opus, le nom de l’éditeur et/ou l’effectif instrumental peuvent être nécessaires. Il suffit parfois d’ajouter l’accent sur le « á » de Gál (AltGr + a sur un clavier QWERTY, selon l’indication de la version anglaise). Les renseignements figurent sur la page des œuvres. Au Royaume-Uni, Schott, Boosey, Novello et Universal Edition passent tous par le distributeur MDS ; cette précision peut aider. Si les difficultés persistent, contactez-nous par la page Contacts.",
+    "answer_ja": "ガールの作品は複数の出版社から出ており、題名だけでは区別しにくいため、検索で見落とされることがあります。あきらめずにお探しください。作品番号、出版社名、編成などが必要な場合や、Gálの「á」にアクセントを付けるだけで見つかる場合もあります（英語版ではQWERTY配列でAltGr＋aと案内しています）。作品の詳細は作品ページで確認できます。英国ではSchott、Boosey、Novello、Universal EditionはいずれもMDSを販売代理店として利用しており、この情報が役立つ場合があります。問題が続く場合は、お問い合わせページからご連絡ください。"
   },
   {
     "id": "5",
     "question": "I tried to get music from a shop but was told it is out of print/doesn't exist",
     "answer": "It can happen that when there are no more copies in the warehouse, they come up on the system as out of print. Please don't take no for an answer and inform us if problems persist (see contacts page) and we will take it up with the publishers",
-    "question_de": "Im Musikalienhandel hie\u00df es, die Noten seien vergriffen oder existierten nicht.",
-    "answer_de": "Wenn keine Exemplare mehr auf Lager sind, kann es vorkommen, dass ein Werk im System als vergriffen erscheint. Bitte geben Sie sich damit nicht zufrieden. Falls die Schwierigkeiten anhalten, informieren Sie uns bitte \u00fcber die Kontaktseite; wir werden uns dann an den Verlag wenden."
+    "question_de": "Im Musikalienhandel hieß es, die Noten seien vergriffen oder existierten nicht.",
+    "answer_de": "Wenn keine Exemplare mehr auf Lager sind, kann es vorkommen, dass ein Werk im System als vergriffen erscheint. Bitte geben Sie sich damit nicht zufrieden. Falls die Schwierigkeiten anhalten, informieren Sie uns bitte über die Kontaktseite; wir werden uns dann an den Verlag wenden.",
+    "question_fr": "Le magasin m’a dit que la partition était épuisée ou n’existait pas.",
+    "question_ja": "楽譜店で、絶版になっている、または存在しないと言われました。",
+    "answer_fr": "Lorsqu’il n’y a plus d’exemplaires en stock, une partition peut apparaître comme épuisée dans le système. Ne vous arrêtez pas à ce refus : si les difficultés persistent, signalez-le-nous par la page Contacts et nous interviendrons auprès de l’éditeur.",
+    "answer_ja": "倉庫の在庫がなくなると、検索システム上で絶版と表示されることがあります。それだけであきらめず、問題が続く場合はお問い合わせページからお知らせください。こちらから出版社に確認します。"
   },
   {
     "id": "6",
     "question": "I tried to get music from the publishers but they couldn't help",
     "answer": "Because G&aacute;l was forced to emigrate, some of his works are based with publishers in Austria, some in Germany, some in the UK, and not all publisher offices have the music on their system. Please don't take no for an answer, and contact us if problems persist.",
     "question_de": "Ich habe beim Verlag nachgefragt, aber man konnte mir nicht helfen.",
-    "answer_de": "Da G\u00e1l zur Emigration gezwungen war, liegen einige seiner Werke bei Verlagen in \u00d6sterreich, andere in Deutschland und wieder andere in Gro\u00dfbritannien. Nicht jede Verlagsniederlassung hat alle Noten in ihrem System. Bitte bleiben Sie beharrlich und wenden Sie sich an uns, wenn die Schwierigkeiten anhalten."
+    "answer_de": "Da Gál zur Emigration gezwungen war, liegen einige seiner Werke bei Verlagen in Österreich, andere in Deutschland und wieder andere in Großbritannien. Nicht jede Verlagsniederlassung hat alle Noten in ihrem System. Bitte bleiben Sie beharrlich und wenden Sie sich an uns, wenn die Schwierigkeiten anhalten.",
+    "question_fr": "L’éditeur auquel je me suis adressé n’a pas pu m’aider.",
+    "question_ja": "出版社に問い合わせましたが、対応できないと言われました。",
+    "answer_fr": "Gál ayant été contraint à l’exil, certaines de ses œuvres sont chez des éditeurs autrichiens, d’autres en Allemagne ou au Royaume-Uni. Toutes les succursales n’ont pas l’ensemble des partitions dans leur système. Persévérez et contactez-nous si les difficultés persistent.",
+    "answer_ja": "ガールが亡命を余儀なくされた事情から、作品の出版社はオーストリア、ドイツ、英国に分かれています。出版社のすべての支社で、すべての楽譜がシステムに登録されているとは限りません。あきらめず、問題が続く場合はご連絡ください。"
   },
   {
     "id": "7",
     "question": "How come I have never heard of G&aacute;l yet the music is so wonderful?",
     "answer": "You're in good company. This has complex historical reasons, but the tide has turned! Please help more to discover his music by suggesting G&aacute;l to orchestras, choirs, opera companies, musicians, festivals and radio stations. Thank you.",
-    "question_de": "Warum habe ich noch nie von G\u00e1l geh\u00f6rt, obwohl seine Musik so wunderbar ist?",
-    "answer_de": "Damit sind Sie in guter Gesellschaft. Die Gr\u00fcnde sind historisch vielschichtig, doch inzwischen hat sich das Blatt gewendet! Helfen Sie bitte dabei, seine Musik weiter bekannt zu machen: Schlagen Sie G\u00e1l Orchestern, Ch\u00f6ren, Opernh\u00e4usern, Musikerinnen und Musikern, Festivals und Radiosendern vor. Vielen Dank."
+    "question_de": "Warum habe ich noch nie von Gál gehört, obwohl seine Musik so wunderbar ist?",
+    "answer_de": "Damit sind Sie in guter Gesellschaft. Die Gründe sind historisch vielschichtig, doch inzwischen hat sich das Blatt gewendet! Helfen Sie bitte dabei, seine Musik weiter bekannt zu machen: Schlagen Sie Gál Orchestern, Chören, Opernhäusern, Musikerinnen und Musikern, Festivals und Radiosendern vor. Vielen Dank.",
+    "question_fr": "Comment se fait-il que je n’aie jamais entendu parler de Gál, alors que sa musique est si belle ?",
+    "question_ja": "こんなに素晴らしい音楽なのに、なぜ今までガールの名前を聞いたことがなかったのでしょう？",
+    "answer_fr": "Vous n’êtes pas seul ! Les raisons historiques sont complexes, mais les choses ont changé. Aidez d’autres auditeurs à découvrir sa musique en proposant Gál aux orchestres, chœurs, compagnies d’opéra, musiciens, festivals et stations de radio. Merci.",
+    "answer_ja": "そう感じる方は少なくありません。複雑な歴史的事情がありますが、今は状況が変わってきています。オーケストラ、合唱団、歌劇団、演奏家、音楽祭、ラジオ局などにガールを紹介し、より多くの方がその音楽に出会えるようご協力ください。ありがとうございます。"
   }
 ]

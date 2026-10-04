@@ -3,264 +3,352 @@
     "id": "1",
     "name": "all chamber",
     "type": "Genre",
-    "name_de": "Kammermusik: alle"
+    "name_de": "Kammermusik: alle",
+    "name_fr": "toute la musique de chambre",
+    "name_ja": "室内楽すべて"
   },
   {
     "id": "2",
     "name": "all instrument alone or with piano",
     "type": "Genre",
-    "name_de": "Soloinstrument, allein oder mit Klavier: alle"
+    "name_de": "Soloinstrument, allein oder mit Klavier: alle",
+    "name_fr": "instrument seul ou avec piano : tous",
+    "name_ja": "独奏楽器（無伴奏・ピアノ伴奏）すべて"
   },
   {
     "id": "3",
     "name": "all keyboard",
     "type": "Genre",
-    "name_de": "Tasteninstrumente: alle"
+    "name_de": "Tasteninstrumente: alle",
+    "name_fr": "tous les claviers",
+    "name_ja": "鍵盤楽器すべて"
   },
   {
     "id": "4",
     "name": "all orchestral",
     "type": "Genre",
-    "name_de": "Orchestermusik: alle"
+    "name_de": "Orchestermusik: alle",
+    "name_fr": "toute la musique orchestrale",
+    "name_ja": "管弦楽すべて"
   },
   {
     "id": "5",
     "name": "all vocal including choral",
     "type": "Genre",
-    "name_de": "Vokalmusik einschlie\u00dflich Chormusik: alle"
+    "name_de": "Vokalmusik einschließlich Chormusik: alle",
+    "name_fr": "toute la musique vocale, y compris les chœurs",
+    "name_ja": "声楽・合唱すべて"
   },
   {
     "id": "7",
     "name": "arrangements and editions",
     "type": "Genre",
-    "name_de": "Bearbeitungen und Editionen"
+    "name_de": "Bearbeitungen und Editionen",
+    "name_fr": "arrangements et éditions",
+    "name_ja": "編曲・校訂"
   },
   {
     "id": "8",
     "name": "bassoon",
     "type": "Instrument",
-    "name_de": "Fagott"
+    "name_de": "Fagott",
+    "name_fr": "basson",
+    "name_ja": "ファゴット"
   },
   {
     "id": "9",
     "name": "cello",
     "type": "Instrument",
-    "name_de": "Violoncello"
+    "name_de": "Violoncello",
+    "name_fr": "violoncelle",
+    "name_ja": "チェロ"
   },
   {
     "id": "10",
     "name": "choral a cappella",
     "type": "Genre",
-    "name_de": "Chor a cappella"
+    "name_de": "Chor a cappella",
+    "name_fr": "chœur a cappella",
+    "name_ja": "無伴奏合唱"
   },
   {
     "id": "11",
     "name": "choral female",
     "type": "Genre",
-    "name_de": "Frauenchor"
+    "name_de": "Frauenchor",
+    "name_fr": "chœur de femmes",
+    "name_ja": "女声合唱"
   },
   {
     "id": "12",
     "name": "choral male",
     "type": "Genre",
-    "name_de": "M\u00e4nnerchor"
+    "name_de": "Männerchor",
+    "name_fr": "chœur d’hommes",
+    "name_ja": "男声合唱"
   },
   {
     "id": "13",
     "name": "choral mixed",
     "type": "Genre",
-    "name_de": "Gemischter Chor"
+    "name_de": "Gemischter Chor",
+    "name_fr": "chœur mixte",
+    "name_ja": "混声合唱"
   },
   {
     "id": "14",
     "name": "chorus and orchestra",
     "type": "Genre",
-    "name_de": "Chor und Orchester"
+    "name_de": "Chor und Orchester",
+    "name_fr": "chœur et orchestre",
+    "name_ja": "合唱と管弦楽"
   },
   {
     "id": "15",
     "name": "clarinet",
     "type": "Instrument",
-    "name_de": "Klarinette"
+    "name_de": "Klarinette",
+    "name_fr": "clarinette",
+    "name_ja": "クラリネット"
   },
   {
     "id": "16",
     "name": "concertos and concertinos",
     "type": "Genre",
-    "name_de": "Konzerte und Concertinos"
+    "name_de": "Konzerte und Concertinos",
+    "name_fr": "concertos et concertinos",
+    "name_ja": "協奏曲・コンチェルティーノ"
   },
   {
     "id": "17",
     "name": "flute",
     "type": "Instrument",
-    "name_de": "Fl\u00f6te"
+    "name_de": "Flöte",
+    "name_fr": "flûte",
+    "name_ja": "フルート"
   },
   {
     "id": "18",
     "name": "guitar",
     "type": "Instrument",
-    "name_de": "Gitarre"
+    "name_de": "Gitarre",
+    "name_fr": "guitare",
+    "name_ja": "ギター"
   },
   {
     "id": "19",
     "name": "harp",
     "type": "Instrument",
-    "name_de": "Harfe"
+    "name_de": "Harfe",
+    "name_fr": "harpe",
+    "name_ja": "ハープ"
   },
   {
     "id": "20",
     "name": "harpsichord",
     "type": "Instrument",
-    "name_de": "Cembalo"
+    "name_de": "Cembalo",
+    "name_fr": "clavecin",
+    "name_ja": "チェンバロ"
   },
   {
     "id": "21",
     "name": "horn",
     "type": "Instrument",
-    "name_de": "Horn"
+    "name_de": "Horn",
+    "name_fr": "cor",
+    "name_ja": "ホルン"
   },
   {
     "id": "22",
     "name": "mandolin",
     "type": "Instrument",
-    "name_de": "Mandoline"
+    "name_de": "Mandoline",
+    "name_fr": "mandoline",
+    "name_ja": "マンドリン"
   },
   {
     "id": "24",
     "name": "oboe",
     "type": "Instrument",
-    "name_de": "Oboe"
+    "name_de": "Oboe",
+    "name_fr": "hautbois",
+    "name_ja": "オーボエ"
   },
   {
     "id": "25",
     "name": "opera",
     "type": "Genre",
-    "name_de": "Oper"
+    "name_de": "Oper",
+    "name_fr": "opéra",
+    "name_ja": "オペラ"
   },
   {
     "id": "26",
     "name": "organ",
     "type": "Instrument",
-    "name_de": "Orgel"
+    "name_de": "Orgel",
+    "name_fr": "orgue",
+    "name_ja": "オルガン"
   },
   {
     "id": "27",
     "name": "piano",
     "type": "Instrument",
-    "name_de": "Klavier"
+    "name_de": "Klavier",
+    "name_fr": "piano",
+    "name_ja": "ピアノ"
   },
   {
     "id": "28",
     "name": "piano duet",
     "type": "Genre",
-    "name_de": "Klavier zu vier H\u00e4nden"
+    "name_de": "Klavier zu vier Händen",
+    "name_fr": "piano à quatre mains",
+    "name_ja": "ピアノ連弾"
   },
   {
     "id": "29",
     "name": "piano quartet",
     "type": "Genre",
-    "name_de": "Klavierquartett"
+    "name_de": "Klavierquartett",
+    "name_fr": "quatuor avec piano",
+    "name_ja": "ピアノ四重奏"
   },
   {
     "id": "30",
     "name": "piano solo",
     "type": "Genre",
-    "name_de": "Klavier solo"
+    "name_de": "Klavier solo",
+    "name_fr": "piano seul",
+    "name_ja": "ピアノ独奏"
   },
   {
     "id": "31",
     "name": "piano trio",
     "type": "Genre",
-    "name_de": "Klaviertrio"
+    "name_de": "Klaviertrio",
+    "name_fr": "trio avec piano",
+    "name_ja": "ピアノ三重奏"
   },
   {
     "id": "32",
     "name": "recorder",
     "type": "Instrument",
-    "name_de": "Blockfl\u00f6te"
+    "name_de": "Blockflöte",
+    "name_fr": "flûte à bec",
+    "name_ja": "リコーダー"
   },
   {
     "id": "33",
     "name": "saxophone",
     "type": "Instrument",
-    "name_de": "Saxophon"
+    "name_de": "Saxophon",
+    "name_fr": "saxophone",
+    "name_ja": "サクソフォン"
   },
   {
     "id": "36",
     "name": "string orchestra",
     "type": "Genre",
-    "name_de": "Streichorchester"
+    "name_de": "Streichorchester",
+    "name_fr": "orchestre à cordes",
+    "name_ja": "弦楽合奏"
   },
   {
     "id": "37",
     "name": "string quartet",
     "type": "Genre",
-    "name_de": "Streichquartett"
+    "name_de": "Streichquartett",
+    "name_fr": "quatuor à cordes",
+    "name_ja": "弦楽四重奏"
   },
   {
     "id": "38",
     "name": "string trio",
     "type": "Genre",
-    "name_de": "Streichtrio"
+    "name_de": "Streichtrio",
+    "name_fr": "trio à cordes",
+    "name_ja": "弦楽三重奏"
   },
   {
     "id": "39",
     "name": "symphony",
     "type": "Genre",
-    "name_de": "Sinfonie"
+    "name_de": "Sinfonie",
+    "name_fr": "symphonie",
+    "name_ja": "交響曲"
   },
   {
     "id": "40",
     "name": "trumpet",
     "type": "Instrument",
-    "name_de": "Trompete"
+    "name_de": "Trompete",
+    "name_fr": "trompette",
+    "name_ja": "トランペット"
   },
   {
     "id": "41",
     "name": "viola",
     "type": "Instrument",
-    "name_de": "Viola"
+    "name_de": "Viola",
+    "name_fr": "alto",
+    "name_ja": "ヴィオラ"
   },
   {
     "id": "43",
     "name": "viola d'amore",
     "type": "Instrument",
-    "name_de": "Viola d\u2019amore"
+    "name_de": "Viola d’amore",
+    "name_fr": "viole d’amour",
+    "name_ja": "ヴィオラ・ダモーレ"
   },
   {
     "id": "42",
     "name": "viola da gamba",
     "type": "Instrument",
-    "name_de": "Viola da gamba"
+    "name_de": "Viola da gamba",
+    "name_fr": "viole de gambe",
+    "name_ja": "ヴィオラ・ダ・ガンバ"
   },
   {
     "id": "44",
     "name": "violin",
     "type": "Instrument",
-    "name_de": "Violine"
+    "name_de": "Violine",
+    "name_fr": "violon",
+    "name_ja": "ヴァイオリン"
   },
   {
     "id": "45",
     "name": "vocal chamber",
     "type": "Genre",
-    "name_de": "Vokale Kammermusik"
+    "name_de": "Vokale Kammermusik",
+    "name_fr": "musique de chambre vocale",
+    "name_ja": "声楽室内楽"
   },
   {
     "id": "46",
     "name": "vocal duet",
     "type": "Genre",
-    "name_de": "Vokalduett"
+    "name_de": "Vokalduett",
+    "name_fr": "duo vocal",
+    "name_ja": "二重唱"
   },
   {
     "id": "47",
     "name": "vocal solo",
     "type": "Genre",
-    "name_de": "Sologesang"
+    "name_de": "Sologesang",
+    "name_fr": "voix seule",
+    "name_ja": "独唱"
   },
   {
     "id": "48",
     "name": "wind ensemble",
     "type": "Genre",
-    "name_de": "Bl\u00e4serensemble"
+    "name_de": "Bläserensemble",
+    "name_fr": "ensemble à vent",
+    "name_ja": "管楽アンサンブル"
   }
 ]

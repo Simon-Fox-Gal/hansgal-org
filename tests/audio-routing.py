@@ -3,6 +3,8 @@ import json,pathlib,re,subprocess,html
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 def load(n):return json.loads((ROOT/'content'/f'{n}.json').read_text(encoding='utf8'))
 audio={r['id']:r for r in load('audio_sample')};credits={c['filename']:c for c in load('audio_credit')}
+def source_fields(row):return {k:v for k,v in row.items() if not k.endswith(('_fr','_ja'))}
+def player_credit(filename):return {k:credits.get(filename,{}).get(k) for k in ('performers','label','copyright','cover','album_title','link','preview')}
 def files(r):return [s.split('#',1)[1] for s in r['filename'].split('|')]
 checked=0
 for prefix in ('','de/'):
@@ -20,7 +22,7 @@ for prefix in ('','de/'):
    embedded=json.loads(re.search(r'<script type="application/json" id="audio-page-data">(.*?)</script>',page,re.S)[1])
    assert [f['filename'] for r in embedded for f in r['files']]==expected
    for r in embedded:
-    for f in r['files']:assert f['credit']==credits.get(f['filename'],{}), (prefix,kind,row['id'],'credit differs from Listen')
+    for f in r['files']:assert f['credit']==player_credit(f['filename']), (prefix,kind,row['id'],'credit differs from Listen')
    assert page.count('id="listening-player"')==1
    for link,fn in zip(links,expected):assert re.search(r'href="([^"]+)"',link)[1].endswith('/storage/audiosamples/'+fn)
    checked+=len(expected)
@@ -29,21 +31,21 @@ for prefix in ('','de/'):
  embedded=json.loads(re.search(r'<script type="application/json" id="audio-page-data">(.*?)</script>',page,re.S)[1])
  assert {r['id']: [f['filename'] for f in r['files']] for r in embedded}=={id:files(r) for id,r in audio.items()}
  for r in embedded:
-  for f in r['files']:assert f['credit']==credits.get(f['filename'],{})
+  for f in r['files']:assert f['credit']==player_credit(f['filename'])
 # Preserve all earlier selections except the explicitly replaced Op.33 songs 1–2
 # and the twelve choral excerpts from Music for Voices volumes 1 and 2.
 base=json.loads(subprocess.check_output(['git','show','b3f3504:content/audio_sample.json'],cwd=ROOT))
 choral={'17':('0509',[1]),'21':('0509',[6,7,8,9,10]),'23':('0644',[1,2,3]),'26':('0644',[4,5,6])}
 changed={'24',*choral}
-assert [r for r in load('audio_sample') if r['id'] not in changed]==[r for r in base if r['id'] not in changed]
+assert [source_fields(r) for r in load('audio_sample') if r['id'] not in changed]==[r for r in base if r['id'] not in changed]
 for aid,(album,tracks) in choral.items():
  original=next(r for r in base if r['id']==aid)
- assert {k:v for k,v in audio[aid].items() if k!='filename'}=={k:v for k,v in original.items() if k!='filename'}
+ assert {k:v for k,v in source_fields(audio[aid]).items() if k!='filename'}=={k:v for k,v in original.items() if k!='filename'}
  assert files(audio[aid])==[f'gal-tocc{album}-cd1-t{t:02d}.mp3' for t in tracks]
  assert [e.split('#',1)[0] for e in audio[aid]['filename'].split('|')]==[e.split('#',1)[0] for e in original['filename'].split('|')]
 old33=next(r for r in base if r['id']=='24');new33=audio['24']
 assert new33['filename'].split('|')[2:]==old33['filename'].split('|')[2:]
-assert {k:v for k,v in new33.items() if k not in ('filename','track_titles','track_titles_de')}=={k:v for k,v in old33.items() if k not in ('filename','track_titles','track_titles_de')}
+assert {k:v for k,v in source_fields(new33).items() if k not in ('filename','track_titles','track_titles_de')}=={k:v for k,v in old33.items() if k not in ('filename','track_titles','track_titles_de')}
 changes=subprocess.check_output(['git','diff','b3f3504','--name-status','--','public/storage/audiosamples'],cwd=ROOT).decode().splitlines()
 allowed={f'A\tpublic/storage/audiosamples/gal-bis2543-cd1-t{n}.mp3' for n in (27,28)}
 allowed|={f'A\tpublic/storage/audiosamples/gal-tocc{album}-cd1-t{t:02d}.mp3' for album,tracks in choral.values() for t in tracks}

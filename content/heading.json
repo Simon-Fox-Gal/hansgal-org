@@ -3,7 +3,9 @@
     "mainmenu": "hansgal",
     "body": "<p align=\"justify\"><span style=\"font-size: larger; \"><font face=\"Arial, Helvetica, sans-serif\">The composer Hans G&aacute;l was born near Vienna in 1890. Following considerable success in the 1920s, he was appointed Director of the Conservatory in Mainz in 1929. Hitler's accession to power in 1933 led to his instant dismissal and the banning of all his works. He returned to Vienna, but was again to forced to flee by Hitler's annexation of Austria in 1938. He emigrated to Britain and settled in Edinburgh, where he remained active until his death in 1987.</font></span></p>",
     "id": "1",
-    "body_de": "<p align=\"justify\"><span style=\"font-size: larger; \"><font face=\"Arial, Helvetica, sans-serif\">Der Komponist Hans G\u00e1l wurde 1890 in der N\u00e4he von Wien geboren. Nach beachtlichen Erfolgen in den 1920er Jahren wurde er 1929 zum Direktor des Konservatoriums in Mainz berufen. Hitlers Macht\u00fcbernahme 1933 f\u00fchrte zu seiner sofortigen Entlassung und zum Verbot s\u00e4mtlicher seiner Werke. Er kehrte nach Wien zur\u00fcck, musste jedoch nach der Annexion \u00d6sterreichs durch Hitler 1938 erneut fliehen. Er emigrierte nach Gro\u00dfbritannien und lie\u00df sich in Edinburgh nieder, wo er bis zu seinem Tod 1987 t\u00e4tig blieb.</font></span></p>"
+    "body_de": "<p align=\"justify\"><span style=\"font-size: larger; \"><font face=\"Arial, Helvetica, sans-serif\">Der Komponist Hans Gál wurde 1890 in der Nähe von Wien geboren. Nach beachtlichen Erfolgen in den 1920er Jahren wurde er 1929 zum Direktor des Konservatoriums in Mainz berufen. Hitlers Machtübernahme 1933 führte zu seiner sofortigen Entlassung und zum Verbot sämtlicher seiner Werke. Er kehrte nach Wien zurück, musste jedoch nach der Annexion Österreichs durch Hitler 1938 erneut fliehen. Er emigrierte nach Großbritannien und ließ sich in Edinburgh nieder, wo er bis zu seinem Tod 1987 tätig blieb.</font></span></p>",
+    "body_fr": "<p align=\"justify\"><span style=\"font-size: larger; \"><font face=\"Arial, Helvetica, sans-serif\">Le compositeur Hans Gál est né près de Vienne en 1890. Après d’importants succès dans les années 1920, il fut nommé directeur du conservatoire de Mayence en 1929. L’arrivée de Hitler au pouvoir en 1933 entraîna son renvoi immédiat et l’interdiction de toutes ses œuvres. Il retourna à Vienne, mais l’annexion de l’Autriche par Hitler en 1938 le contraignit de nouveau à fuir. Il émigra en Grande-Bretagne et s’installa à Édimbourg, où il poursuivit ses activités jusqu’à sa mort en 1987.</font></span></p>",
+    "body_ja": "<p align=\"justify\"><span style=\"font-size: larger; \"><font face=\"Arial, Helvetica, sans-serif\">作曲家ハンス・ガールは1890年、ウィーン近郊に生まれました。1920年代に大きな成功を収めた後、1929年にマインツ音楽院の院長に任命されました。1933年のヒトラーの政権掌握により、ただちに解任され、すべての作品が禁止されました。ウィーンに戻りましたが、1938年にヒトラーがオーストリアを併合したため、再び逃れることを余儀なくされました。英国に亡命してエディンバラに定住し、1987年に亡くなるまで活動を続けました。</font></span></p>"
   },
   {
     "mainmenu": "news",
@@ -15,24 +17,32 @@
     "mainmenu": "publishers",
     "body": "hullahopp<br />",
     "id": "3",
-    "body_de": "hullahopp<br />"
+    "body_de": "hullahopp<br />",
+    "body_fr": "hullahopp<br />",
+    "body_ja": "hullahopp<br />"
   },
   {
     "mainmenu": "bibliography",
     "body": "abcdefg<br />",
     "id": "4",
-    "body_de": "abcdefg<br />"
+    "body_de": "abcdefg<br />",
+    "body_fr": "abcdefg<br />",
+    "body_ja": "abcdefg<br />"
   },
   {
     "mainmenu": "contacts",
     "body": "fdsafdsafdasfdsafdsa<br />",
     "id": "5",
-    "body_de": "fdsafdsafdasfdsafdsa<br />"
+    "body_de": "fdsafdsafdasfdsafdsa<br />",
+    "body_fr": "fdsafdsafdasfdsafdsa<br />",
+    "body_ja": "fdsafdsafdasfdsafdsa<br />"
   },
   {
     "mainmenu": "booksandarticles",
     "body": "efsdc<br />",
     "id": "6",
-    "body_de": "efsdc<br />"
+    "body_de": "efsdc<br />",
+    "body_fr": "efsdc<br />",
+    "body_ja": "efsdc<br />"
   }
 ]

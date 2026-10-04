@@ -2,8 +2,8 @@
 (function(){
  'use strict';
  const base=document.querySelector('meta[name="hansgal-base"]')?.content||'';
- const de=document.documentElement.lang==='de';
- const t=(en,ger)=>de?ger:en;
+ const language=document.documentElement.lang||'en',de=language==='de';
+ const t=(en,ger)=>window.HansgalLocale?.labels?.[en]??(de?ger:en);
  const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
  let rows=[],chosen=[];
  try{const v=JSON.parse(localStorage.getItem('hansgal-scores')||'[]');if(Array.isArray(v))chosen=[...new Set(v.filter(x=>typeof x==='string'))];}catch{}
@@ -28,5 +28,5 @@
   };
  }
 
- fetch(base+'/app/site-data.json').then(r=>r.json()).then(data=>{rows=data.catalogue.filter(r=>r.score_available==='yes'&&scoreFiles(r).length);chosen=chosen.filter(id=>rows.some(r=>r.id===id));save();render();document.querySelectorAll('[data-add-score]').forEach(b=>b.onclick=()=>{if(!rows.some(r=>r.id===b.dataset.addScore))return;if(!chosen.includes(b.dataset.addScore))chosen.push(b.dataset.addScore);save();const status=document.getElementById('score-added-status');if(status)status.textContent=t('Added to your basket.','Zum Notenkorb hinzugefügt.');});}).catch(()=>{const e=document.getElementById('score-basket');if(e)e.textContent=t('Scores are temporarily unavailable. Please try again.','Die Noten sind vorübergehend nicht verfügbar. Bitte versuchen Sie es erneut.');});
+ fetch(base+'/app/site-data'+(language==='en'?'':'-'+language)+'.json').then(r=>r.json()).then(data=>{rows=data.catalogue.filter(r=>r.score_available==='yes'&&scoreFiles(r).length);chosen=chosen.filter(id=>rows.some(r=>r.id===id));save();render();document.querySelectorAll('[data-add-score]').forEach(b=>b.onclick=()=>{if(!rows.some(r=>r.id===b.dataset.addScore))return;if(!chosen.includes(b.dataset.addScore))chosen.push(b.dataset.addScore);save();const status=document.getElementById('score-added-status');if(status)status.textContent=t('Added to your basket.','Zum Notenkorb hinzugefügt.');});}).catch(()=>{const e=document.getElementById('score-basket');if(e)e.textContent=t('Scores are temporarily unavailable. Please try again.','Die Noten sind vorübergehend nicht verfügbar. Bitte versuchen Sie es erneut.');});
 })();

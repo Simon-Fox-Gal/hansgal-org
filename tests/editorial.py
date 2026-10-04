@@ -27,8 +27,9 @@ def compact(s):return re.sub(r'\s+','',s).replace('\xad','')
 historical='--historical-oct2' in sys.argv
 # One-off acceptance assertions describe the October 2 snapshot, not immutable CMS content.
 tables={name:load(name) for name in ['catalogue','recording','menu','catalogue_recordings']};checked=0
-for lang in ['en','de']:
- data=localize(tables) if lang=='de' else tables;prefix='de/' if lang=='de' else ''
+languages=json.loads((ROOT/'locales/languages.json').read_text(encoding='utf8'))['published']
+for lang in languages:
+ data=localize(tables,lang) if lang!='en' else tables;prefix=lang+'/' if lang!='en' else ''
  for r in data['catalogue']:
   file=ROOT/'dist/storage/work-notes'/lang/(r['id']+'.pdf');pdf=PdfReader(file)
   text=''.join(compact(page.extract_text()).replace(compact('Hans Gál · '+plain(r['title']))+str(n),'',1) for n,page in enumerate(pdf.pages,1))
@@ -62,7 +63,7 @@ for prefix in ['', 'de/']:
  rendered=re.findall(r'data-recording-link=["\'](\d+)["\']',markup)
  assert rendered==order, (prefix, 'Recording thumbnails must follow the current editable sequence')
 if historical:assert order.index('98')==order.index('99')+1
-assert len(list((ROOT/'dist/storage/work-notes').rglob('*.pdf')))==checked==2*len(tables['catalogue'])
+assert len(list((ROOT/'dist/storage/work-notes').rglob('*.pdf')))==checked==len(languages)*len(tables['catalogue'])
 # Compare all source rows with the pre-edit main. Fields outside the explicit
 # requested set must be byte-for-byte equal as values, including relationships.
 if historical:

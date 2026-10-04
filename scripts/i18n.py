@@ -3,7 +3,7 @@ FIELDS={
  'menu':['title','lead','body'],'catalogue':['title','description','movements','further_details','orchestration','availability','first_performance','other_performances','other_versions','free_downloads','score_note','score_file_titles'],
  'recording':['title','detail','review'],'photos':['title'],'faqs':['question','answer'],
  'properties':['value'],'heading':['body'],'category':['name'],'audio_sample':['title','details','track_titles'],
- 'thumbnail':['title'],'photos_category':['name'],
+ 'thumbnail':['title'],'photos_category':['name'],'audio_credit':['album_title','performers'],
 }
 UI={
  'Select a work':'Werk auswählen','SEARCH RESULT':'SUCHERGEBNIS',
@@ -31,24 +31,46 @@ UI={
  'Your browser does not support the HTML5 Audio element.':'Ihr Browser unterstützt dieses Audioformat nicht.',
  'A not-for-profit information site for the composer Hans Gál (1890-1987), jointly managed by The Hans Gál Society and Gál\'s family.':'Eine gemeinnützige Informationsseite über den Komponisten Hans Gál (1890–1987), gemeinsam betreut von der Hans-Gál-Gesellschaft und Gáls Familie.',
 }
-def localize(tables):
+def localize(tables,language='de'):
  import copy
  result=copy.deepcopy(tables)
  for table,fields in FIELDS.items():
   for row in result.get(table,[]):
    for field in fields:
-    if row.get(field+'_de') not in (None,''):row[field]=row[field+'_de']
+    if row.get(field+'_'+language) not in (None,''):row[field]=row[field+'_'+language]
  # Publisher identities and dates remain shared editorial data; only the
  # surrounding availability wording is localized in the German display copy.
- for row in result.get('catalogue',[]):
+ for row in result.get('catalogue',[]) if language=='de' else []:
   if row.get('publisher'):
    value=row['publisher']
    for en,de in [('First published by','Zuerst veröffentlicht bei'),('Suite only:','Nur die Suite:'),('orch. Parts:','Orchesterstimmen:'),('pending publication by','Veröffentlichung vorgesehen bei'),('Pending publication by','Veröffentlichung vorgesehen bei'),('now also','jetzt auch'),('now private','jetzt in Privatbesitz'),('now','jetzt'),('Unpublished','Unveröffentlicht'),('successors','Nachfolger'),('Vienna','Wien')]:
     value=value.replace(en,de)
    row['publisher']=value
+ if language in ('fr','ja'):
+  import re
+  phrases={
+   'First published by':('Première publication chez','初版出版社：'),'Suite only:':('Suite uniquement :','組曲のみ：'),
+   'orch. Parts:':('Parties d’orchestre :','管弦楽パート譜：'),'pending publication by':('publication prévue chez','出版予定：'),
+   'now also':('également chez','現在はこちらでも出版：'),'now private':('désormais en possession privée','現在は個人蔵'),
+   'now':('désormais','現在：'),'Unpublished':('Inédit','未出版'),'successors':('successeurs','後継出版社'),
+   'Vienna':('Vienne','ウィーン')}
+  pattern=re.compile(r'\b(?:'+'|'.join(re.escape(k) for k in sorted(phrases,key=len,reverse=True))+r')\b',re.I)
+  normalized={k.lower():v for k,v in phrases.items()}
+  for row in result.get('catalogue',[]):
+   if row.get('publisher'):row['publisher']=pattern.sub(lambda m:normalized[m[0].lower()][0 if language=='fr' else 1],row['publisher'])
  return result
 
-def translate_template(source):
+def translate_template(source,language='de'):
+ if language!='de':
+  import re
+  from languages import labels
+  # Localize literal template text, never identifiers or source strings in Jinja.
+  parts=re.split(r'({{.*?}}|{%.*?%}|{#.*?#})',source,flags=re.S)
+  dictionary=labels(language)
+  for i in range(0,len(parts),2):
+   for en in sorted(UI,key=len,reverse=True):
+    if en in dictionary:parts[i]=parts[i].replace(en,dictionary[en])
+  return ''.join(parts)
  # Only template source is processed; authored content uses its own locale fields.
  for en,de in sorted(UI.items(),key=lambda pair:-len(pair[0])):source=source.replace(en,de)
  return source

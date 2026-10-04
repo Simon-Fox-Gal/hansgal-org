@@ -1,7 +1,7 @@
 /* Progressive enhancements for the Living Edition. All reading links work without JS. */
 (()=>{'use strict';
  document.documentElement.classList.add('js');
- const de=document.documentElement.lang==='de',t=(en,ger)=>de?ger:en;
+ const language=document.documentElement.lang||'en',de=language==='de',t=(en,ger)=>window.HansgalLocale?.labels?.[en]??(de?ger:en);
  const toggle=document.querySelector('.menu-toggle'),nav=document.querySelector('.site-navigation'),search=document.querySelector('.masthead .searchbox');
  function menu(open){toggle?.setAttribute('aria-expanded',String(open));nav?.classList.toggle('is-open',open);search?.classList.toggle('is-open',open);}
  toggle?.addEventListener('click',()=>menu(toggle.getAttribute('aria-expanded')!=='true'));
@@ -10,7 +10,7 @@
  if(chapters&&matchMedia('(max-width:850px)').matches)chapters.open=false;
  const advanced=document.querySelector('.advanced-filters');if(advanced&&matchMedia('(max-width:600px)').matches&&!new URLSearchParams(location.search).size)advanced.open=false;
  const recordSearch=document.getElementById('recording-search');recordSearch?.addEventListener('input',()=>{const q=recordSearch.value.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();let count=0;document.querySelectorAll('.albumlist .item').forEach(a=>{a.hidden=!a.textContent.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().includes(q);if(!a.hidden)count++;});document.getElementById('recording-count').textContent=count+' '+t('recordings','Aufnahmen');});
- document.querySelectorAll('[data-language]').forEach(a=>{if(a.dataset.language===(de?'de':'en'))a.setAttribute('aria-current','page');});
+ document.querySelectorAll('[data-language]').forEach(a=>{if(a.dataset.language===language)a.setAttribute('aria-current','page');});
  const q=new URLSearchParams(location.search).get('keyword')||'';
  document.querySelectorAll('input[name=keyword]').forEach(i=>i.value=q);
  document.getElementById('reset-catalogue')?.addEventListener('click',()=>{const f=document.getElementById('worksform');f.reset();f.requestSubmit();});

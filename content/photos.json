@@ -5,15 +5,19 @@
     "filename": "tante_jenny.jpg",
     "photos_category_id": "4",
     "sorrend": "7",
-    "title_de": "Jenny Fleischer-Alt (Tante Jenny)"
+    "title_de": "Jenny Fleischer-Alt (Tante Jenny)",
+    "title_fr": "Jenny Fleischer-Alt (tante Jenny)",
+    "title_ja": "Jenny Fleischer-Alt（ジェニーおばさん）"
   },
   {
     "id": "11",
-    "title": "Ilka G\u00e1l, Mother of Hans",
+    "title": "Ilka Gál, Mother of Hans",
     "filename": "ilka_gal_mother.jpg",
     "photos_category_id": "4",
     "sorrend": "2",
-    "title_de": "Ilka G\u00e1l, Hans\u2019 Mutter"
+    "title_de": "Ilka Gál, Hans’ Mutter",
+    "title_fr": "Ilka Gál, mère de Hans",
+    "title_ja": "Hansの母、Ilka Gál"
   },
   {
     "id": "12",
@@ -21,15 +25,19 @@
     "filename": "hans_gal_with_sister_edith_1892.jpg",
     "photos_category_id": "4",
     "sorrend": "3",
-    "title_de": "Hans (rechts) mit seiner Schwester Edith, 1892"
+    "title_de": "Hans (rechts) mit seiner Schwester Edith, 1892",
+    "title_fr": "Hans (à droite) avec sa sœur Edith, 1892",
+    "title_ja": "姉妹のEdithとHans（右）、1892年"
   },
   {
     "id": "33",
-    "title": "Hans & Hanna G\u00e1l",
+    "title": "Hans & Hanna Gál",
     "filename": "35c6d06eddb9ce4e6b342f4aac8175e1.jpg",
     "photos_category_id": "4",
     "sorrend": "14",
-    "title_de": "Hans und Hanna G\u00e1l"
+    "title_de": "Hans und Hanna Gál",
+    "title_fr": "Hans et Hanna Gál",
+    "title_ja": "HansとHanna Gál"
   },
   {
     "id": "14",
@@ -37,7 +45,9 @@
     "filename": "tante_jenny_as_carmen_weimar_c_1896.jpg",
     "photos_category_id": "4",
     "sorrend": "5",
-    "title_de": "Jenny Fleischer-Alt (Tante Jenny) als Carmen, Weimar, um 1896"
+    "title_de": "Jenny Fleischer-Alt (Tante Jenny) als Carmen, Weimar, um 1896",
+    "title_fr": "Jenny Fleischer-Alt (tante Jenny) dans le rôle de Carmen, Weimar, vers 1896",
+    "title_ja": "Carmen役のJenny Fleischer-Alt（ジェニーおばさん）、Weimar、1896年頃"
   },
   {
     "id": "15",
@@ -45,7 +55,9 @@
     "filename": "tante_jenny_on_stage_weimar.jpg",
     "photos_category_id": "4",
     "sorrend": "6",
-    "title_de": "Jenny Fleischer-Alt (Tante Jenny) auf der B\u00fchne, Weimar"
+    "title_de": "Jenny Fleischer-Alt (Tante Jenny) auf der Bühne, Weimar",
+    "title_fr": "Jenny Fleischer-Alt (tante Jenny) sur scène, Weimar",
+    "title_ja": "舞台上のJenny Fleischer-Alt（ジェニーおばさん）、Weimar"
   },
   {
     "id": "35",
@@ -53,7 +65,9 @@
     "filename": "ea5d3bdd5df480030a1e09a566cf68e2.jpg",
     "photos_category_id": "6",
     "sorrend": "5",
-    "title_de": "\u201eDas Lied der Nacht\u201c, Finale, Urauff\u00fchrung, Breslau, 1926"
+    "title_de": "„Das Lied der Nacht“, Finale, Uraufführung, Breslau, 1926",
+    "title_fr": "Finale de Das Lied der Nacht [Le Chant de la nuit], création, Breslau, 1926",
+    "title_ja": "Das Lied der Nacht［夜の歌］のフィナーレ、初演、Breslau、1926年"
   },
   {
     "id": "20",
@@ -61,7 +75,9 @@
     "filename": "residents_of_1_probusgasse_1904.jpg",
     "photos_category_id": "4",
     "sorrend": "9",
-    "title_de": "Bewohner des Hauses Probusgasse 1, 1904. Hans steht in der zweiten Reihe im Matrosenanzug. Josef und Edith stehen rechts von ihm."
+    "title_de": "Bewohner des Hauses Probusgasse 1, 1904. Hans steht in der zweiten Reihe im Matrosenanzug. Josef und Edith stehen rechts von ihm.",
+    "title_fr": "Les habitants du 1, Probusgasse, en 1904. Hans est au deuxième rang, en costume marin. Josef et Edith sont à sa droite.",
+    "title_ja": "Probusgasse 1番地の住人たち、1904年。Hansは2列目で水兵服を着ている。その右にJosefとEdithがいる。"
   },
   {
     "id": "21",
@@ -69,15 +85,19 @@
     "filename": "receipt_for_cart_horses_and_oxen_bolzano_1918.jpg",
     "photos_category_id": "5",
     "sorrend": "1",
-    "title_de": "Quittung \u00fcber Pferde, Ochsen usw., Bozen"
+    "title_de": "Quittung über Pferde, Ochsen usw., Bozen",
+    "title_fr": "Reçu pour des chevaux, des bœufs, etc., Bolzano",
+    "title_ja": "馬、牛などの受領書、Bolzano"
   },
   {
     "id": "22",
-    "title": "Furtw\u00e4ngler Reference",
+    "title": "Furtwängler Reference",
     "filename": "recommendation_from_wilhelm_furtwangler.jpg",
     "photos_category_id": "5",
     "sorrend": "2",
-    "title_de": "Empfehlungsschreiben von Furtw\u00e4ngler"
+    "title_de": "Empfehlungsschreiben von Furtwängler",
+    "title_fr": "Lettre de recommandation de Furtwängler",
+    "title_ja": "Furtwänglerの推薦状"
   },
   {
     "id": "23",
@@ -85,7 +105,9 @@
     "filename": "cover_of_the_heurigen_variations.jpg",
     "photos_category_id": "6",
     "sorrend": "1",
-    "title_de": "Heurigen-Variationen"
+    "title_de": "Heurigen-Variationen",
+    "title_fr": "Variations « Heurigen » [sur un air de taverne viennoise]",
+    "title_ja": "「Heurigen」変奏曲［ウィーンの酒場の旋律による変奏曲］"
   },
   {
     "id": "24",
@@ -93,23 +115,29 @@
     "filename": "anleitung_zum_partiturlesen.jpg",
     "photos_category_id": "7",
     "sorrend": "1",
-    "title_de": "Anleitung zum Partiturlesen, Wien 1923"
+    "title_de": "Anleitung zum Partiturlesen, Wien 1923",
+    "title_fr": "Anleitung zum Partiturlesen [Guide de lecture des partitions d’orchestre], Vienne, 1923",
+    "title_ja": "Anleitung zum Partiturlesen［総譜の読み方］、ウィーン、1923年"
   },
   {
     "id": "25",
-    "title": "Brunn am Gebirge - G\u00e1l's birthplace",
+    "title": "Brunn am Gebirge - Gál's birthplace",
     "filename": "gals_birthplace_brunn_am_gebirge.jpg",
     "photos_category_id": "8",
     "sorrend": "1",
-    "title_de": "Brunn am Gebirge \u2013 G\u00e1ls Geburtsort"
+    "title_de": "Brunn am Gebirge – Gáls Geburtsort",
+    "title_fr": "Brunn am Gebirge — lieu de naissance de Gál",
+    "title_ja": "Brunn am Gebirge — Gálの出生地"
   },
   {
     "id": "26",
-    "title": "Hans G\u00e1l (2) 1925",
+    "title": "Hans Gál (2) 1925",
     "filename": "9441af196c13123268f5720922e7f090.jpg",
     "photos_category_id": "4",
     "sorrend": "19",
-    "title_de": "Hans G\u00e1l (2) 1925"
+    "title_de": "Hans Gál (2) 1925",
+    "title_fr": "Hans Gál (2), 1925",
+    "title_ja": "Hans Gál（2）、1925年"
   },
   {
     "id": "27",
@@ -117,7 +145,9 @@
     "filename": "cda6c8f49670b3bcbf7e9052c20777a7.jpg",
     "photos_category_id": "4",
     "sorrend": "57",
-    "title_de": "Guido Adler"
+    "title_de": "Guido Adler",
+    "title_fr": "Guido Adler",
+    "title_ja": "Guido Adler"
   },
   {
     "id": "28",
@@ -125,7 +155,9 @@
     "filename": "c1ae76d5d95a0308593e797d7a10f830.jpg",
     "photos_category_id": "4",
     "sorrend": "58",
-    "title_de": "Eusebius Mandyczewski"
+    "title_de": "Eusebius Mandyczewski",
+    "title_fr": "Eusebius Mandyczewski",
+    "title_ja": "Eusebius Mandyczewski"
   },
   {
     "id": "29",
@@ -133,7 +165,9 @@
     "filename": "184c0c58f174c65c18f8b9767a9be9eb.jpg",
     "photos_category_id": "4",
     "sorrend": "60",
-    "title_de": "Albine Mandyczewski"
+    "title_de": "Albine Mandyczewski",
+    "title_fr": "Albine Mandyczewski",
+    "title_ja": "Albine Mandyczewski"
   },
   {
     "id": "30",
@@ -141,31 +175,39 @@
     "filename": "a0ebd276ade0301c24a364e435c9bb54.jpg",
     "photos_category_id": "4",
     "sorrend": "66",
-    "title_de": "Fritz Busch"
+    "title_de": "Fritz Busch",
+    "title_fr": "Fritz Busch",
+    "title_ja": "Fritz Busch"
   },
   {
     "id": "31",
-    "title": "Franz G\u00e1l",
+    "title": "Franz Gál",
     "filename": "f02ab4f104846f12ba4a60f49272aa0a.jpg",
     "photos_category_id": "4",
     "sorrend": "41",
-    "title_de": "Franz G\u00e1l"
+    "title_de": "Franz Gál",
+    "title_fr": "Franz Gál",
+    "title_ja": "Franz Gál"
   },
   {
     "id": "32",
-    "title": "Hans G\u00e1l, 1895",
+    "title": "Hans Gál, 1895",
     "filename": "93da7d47704a0a7910a90b7803ff3e39.jpg",
     "photos_category_id": "4",
     "sorrend": "4",
-    "title_de": "Hans G\u00e1l, 1895"
+    "title_de": "Hans Gál, 1895",
+    "title_fr": "Hans Gál, 1895",
+    "title_ja": "Hans Gál、1895年"
   },
   {
     "id": "34",
-    "title": "Peter G\u00e1l",
+    "title": "Peter Gál",
     "filename": "9a234e7317effc12a94a5bee510288e1.jpg",
     "photos_category_id": "4",
     "sorrend": "42",
-    "title_de": "Peter G\u00e1l"
+    "title_de": "Peter Gál",
+    "title_fr": "Peter Gál",
+    "title_ja": "Peter Gál"
   },
   {
     "id": "36",
@@ -173,7 +215,9 @@
     "filename": "35517b49d2ea6038cd0ab5b2189cc0a8.jpg",
     "photos_category_id": "5",
     "sorrend": "3",
-    "title_de": "Nationalsozialistische Denunziation, Mainz, 1933"
+    "title_de": "Nationalsozialistische Denunziation, Mainz, 1933",
+    "title_fr": "Dénonciation nazie, Mayence, 1933",
+    "title_ja": "ナチスによる糾弾、マインツ、1933年"
   },
   {
     "id": "37",
@@ -181,7 +225,9 @@
     "filename": "bf86710b7aca59f6a8d58c8849ae6156.jpg",
     "photos_category_id": "5",
     "sorrend": "4",
-    "title_de": "Suspendierungsschreiben vom 29. M\u00e4rz 1933"
+    "title_de": "Suspendierungsschreiben vom 29. März 1933",
+    "title_fr": "Lettre de suspension, 29 mars 1933",
+    "title_ja": "職務停止通知、1933年3月29日"
   },
   {
     "id": "38",
@@ -189,15 +235,19 @@
     "filename": "ade0fd4f37ef016b572d4abd2604fc3c.jpg",
     "photos_category_id": "5",
     "sorrend": "5",
-    "title_de": "Empfehlungsschreiben von Fritz Busch an Donald Tovey"
+    "title_de": "Empfehlungsschreiben von Fritz Busch an Donald Tovey",
+    "title_fr": "Lettre de recommandation de Fritz Busch à Donald Tovey",
+    "title_ja": "Fritz BuschからDonald Toveyへの推薦状"
   },
   {
     "id": "39",
-    "title": "Josef G\u00e1l, father of Hans",
+    "title": "Josef Gál, father of Hans",
     "filename": "97298202347f61d24ed4e3620310c5e9.jpg",
     "photos_category_id": "4",
     "sorrend": "1",
-    "title_de": "Josef G\u00e1l, Hans\u2019 Vater"
+    "title_de": "Josef Gál, Hans’ Vater",
+    "title_fr": "Josef Gál, père de Hans",
+    "title_ja": "Hansの父、Josef Gál"
   },
   {
     "id": "40",
@@ -205,15 +255,19 @@
     "filename": "ff308b5de3043f4d862f4753bb5a1b12.jpg",
     "photos_category_id": "4",
     "sorrend": "10",
-    "title_de": "Hanna Schick"
+    "title_de": "Hanna Schick",
+    "title_fr": "Hanna Schick",
+    "title_ja": "Hanna Schick"
   },
   {
     "id": "41",
-    "title": "Portrait of Hanna G\u00e1l (chalk) by Johanna Kampmann",
+    "title": "Portrait of Hanna Gál (chalk) by Johanna Kampmann",
     "filename": "a8a9568568f146fa0ca2a58c20c48793.jpg",
     "photos_category_id": "4",
     "sorrend": "11",
-    "title_de": "Portr\u00e4t von Hanna G\u00e1l (Kreidezeichnung) von Johanna Kampmann"
+    "title_de": "Porträt von Hanna Gál (Kreidezeichnung) von Johanna Kampmann",
+    "title_fr": "Portrait de Hanna Gál à la craie, par Johanna Kampmann",
+    "title_ja": "Johanna Kampmann作、Hanna Gálの肖像（チョーク画）"
   },
   {
     "id": "42",
@@ -221,23 +275,29 @@
     "filename": "bc01903ca40ebf9f213fbed8243fb181.jpg",
     "photos_category_id": "4",
     "sorrend": "12",
-    "title_de": "Die S\u00f6hne Peter und Franz als Kinder"
+    "title_de": "Die Söhne Peter und Franz als Kinder",
+    "title_fr": "Ses fils Peter et Franz, enfants",
+    "title_ja": "幼い頃の息子PeterとFranz"
   },
   {
     "id": "43",
-    "title": "G\u00e1l with son Franz, 1923",
+    "title": "Gál with son Franz, 1923",
     "filename": "c7597547df0d25170a9425e9a2206d2e.jpg",
     "photos_category_id": "4",
     "sorrend": "13",
-    "title_de": "G\u00e1l mit seinem Sohn Franz, 1923"
+    "title_de": "Gál mit seinem Sohn Franz, 1923",
+    "title_fr": "Gál avec son fils Franz, 1923",
+    "title_ja": "息子FranzとGál、1923年"
   },
   {
     "id": "45",
-    "title": "Caricature of Hans G\u00e1l, 1927",
+    "title": "Caricature of Hans Gál, 1927",
     "filename": "b10d0e8f9ace11bd2133bed360fddb32.jpg",
     "photos_category_id": "4",
     "sorrend": "15",
-    "title_de": "Karikatur von Hans G\u00e1l, 1927"
+    "title_de": "Karikatur von Hans Gál, 1927",
+    "title_fr": "Caricature de Hans Gál, 1927",
+    "title_ja": "Hans Gálの風刺画、1927年"
   },
   {
     "id": "46",
@@ -245,23 +305,29 @@
     "filename": "c7a39a305a714917e7daa2e8b4926791.jpg",
     "photos_category_id": "4",
     "sorrend": "16",
-    "title_de": "Wilhelm Jerusalem"
+    "title_de": "Wilhelm Jerusalem",
+    "title_fr": "Wilhelm Jerusalem",
+    "title_ja": "Wilhelm Jerusalem"
   },
   {
     "id": "47",
-    "title": "Hans G\u00e1l (1) 1925",
+    "title": "Hans Gál (1) 1925",
     "filename": "1f1d1bfb1d4e7a4ef8503aadb5562270.jpg",
     "photos_category_id": "4",
     "sorrend": "18",
-    "title_de": "Hans G\u00e1l (1) 1925"
+    "title_de": "Hans Gál (1) 1925",
+    "title_fr": "Hans Gál (1), 1925",
+    "title_ja": "Hans Gál（1）、1925年"
   },
   {
     "id": "48",
-    "title": "Hans G\u00e1l conducting",
+    "title": "Hans Gál conducting",
     "filename": "8d03785448de4d255c5f03d9dad3c460.jpg",
     "photos_category_id": "4",
     "sorrend": "32",
-    "title_de": "Hans G\u00e1l beim Dirigieren"
+    "title_de": "Hans Gál beim Dirigieren",
+    "title_fr": "Hans Gál dirigeant",
+    "title_ja": "指揮するHans Gál"
   },
   {
     "id": "49",
@@ -269,7 +335,9 @@
     "filename": "4bbb4307e38931c497a1a86b563c85c5.jpg",
     "photos_category_id": "4",
     "sorrend": "51",
-    "title_de": "Erich Kleiber"
+    "title_de": "Erich Kleiber",
+    "title_fr": "Erich Kleiber",
+    "title_ja": "Erich Kleiber"
   },
   {
     "id": "50",
@@ -277,7 +345,9 @@
     "filename": "3daa3b49df9d6dcc71eabdb4603c41ae.jpg",
     "photos_category_id": "4",
     "sorrend": "68",
-    "title_de": "Sir Donald Tovey"
+    "title_de": "Sir Donald Tovey",
+    "title_fr": "Sir Donald Tovey",
+    "title_ja": "Sir Donald Tovey"
   },
   {
     "id": "127",
@@ -285,7 +355,9 @@
     "filename": "0be9ae8f665892162d302a32c093b93c.jpg",
     "photos_category_id": "4",
     "sorrend": "71",
-    "title_de": "Wilhelm Waldstein"
+    "title_de": "Wilhelm Waldstein",
+    "title_fr": "Wilhelm Waldstein",
+    "title_ja": "Wilhelm Waldstein"
   },
   {
     "id": "52",
@@ -293,7 +365,9 @@
     "filename": "d66378130f83a23b37f8f57f6a51d65a.jpg",
     "photos_category_id": "4",
     "sorrend": "69",
-    "title_de": "Otto Schmidtgen"
+    "title_de": "Otto Schmidtgen",
+    "title_fr": "Otto Schmidtgen",
+    "title_ja": "Otto Schmidtgen"
   },
   {
     "id": "53",
@@ -301,7 +375,9 @@
     "filename": "aad6803b5c39eed3f113f04abaa38b10.jpg",
     "photos_category_id": "4",
     "sorrend": "61",
-    "title_de": "Ernst Toch"
+    "title_de": "Ernst Toch",
+    "title_fr": "Ernst Toch",
+    "title_ja": "Ernst Toch"
   },
   {
     "id": "54",
@@ -309,15 +385,19 @@
     "filename": "e236a061eac51879492175fef53e666b.jpg",
     "photos_category_id": "4",
     "sorrend": "63",
-    "title_de": "Louise Wandel"
+    "title_de": "Louise Wandel",
+    "title_fr": "Louise Wandel",
+    "title_ja": "Louise Wandel"
   },
   {
     "id": "55",
-    "title": "\u00d6d\u00f6n von Horv\u00e1th",
+    "title": "Ödön von Horváth",
     "filename": "baaf0b5a8db9d84fa169045892cb35ae.jpg",
     "photos_category_id": "4",
     "sorrend": "65",
-    "title_de": "\u00d6d\u00f6n von Horv\u00e1th"
+    "title_de": "Ödön von Horváth",
+    "title_fr": "Ödön von Horváth",
+    "title_ja": "Ödön von Horváth"
   },
   {
     "id": "56",
@@ -325,23 +405,29 @@
     "filename": "f867694a54b72d7176b6cf19fbf5d59c.jpg",
     "photos_category_id": "4",
     "sorrend": "55",
-    "title_de": "Karl Michael von Levetzow"
+    "title_de": "Karl Michael von Levetzow",
+    "title_fr": "Karl Michael von Levetzow",
+    "title_ja": "Karl Michael von Levetzow"
   },
   {
     "id": "58",
-    "title": "Wilhelm Furtw\u00e4ngler",
+    "title": "Wilhelm Furtwängler",
     "filename": "53f85fd0491803426331ba560daf765b.jpg",
     "photos_category_id": "4",
     "sorrend": "56",
-    "title_de": "Wilhelm Furtw\u00e4ngler"
+    "title_de": "Wilhelm Furtwängler",
+    "title_fr": "Wilhelm Furtwängler",
+    "title_ja": "Wilhelm Furtwängler"
   },
   {
     "id": "59",
-    "title": "Alban Berg - portrait by Sch\u00f6nberg",
+    "title": "Alban Berg - portrait by Schönberg",
     "filename": "c0dd70aecad1c12ec14c34faef0e9a35.jpg",
     "photos_category_id": "4",
     "sorrend": "59",
-    "title_de": "Alban Berg \u2013 Portr\u00e4t von Sch\u00f6nberg"
+    "title_de": "Alban Berg – Porträt von Schönberg",
+    "title_fr": "Alban Berg — portrait par Schönberg",
+    "title_ja": "Schönberg作、Alban Bergの肖像"
   },
   {
     "id": "60",
@@ -349,55 +435,69 @@
     "filename": "73eddfbfd63b571daca61a164cca0590.jpg",
     "photos_category_id": "4",
     "sorrend": "64",
-    "title_de": "Rudolf Schwarz"
+    "title_de": "Rudolf Schwarz",
+    "title_fr": "Rudolf Schwarz",
+    "title_ja": "Rudolf Schwarz"
   },
   {
     "id": "61",
-    "title": "Hans G\u00e1l, 1962",
+    "title": "Hans Gál, 1962",
     "filename": "79cb2b142c68514d33f990890706cc7e.jpg",
     "photos_category_id": "4",
     "sorrend": "47",
-    "title_de": "Hans G\u00e1l, 1962"
+    "title_de": "Hans Gál, 1962",
+    "title_fr": "Hans Gál, 1962",
+    "title_ja": "Hans Gál、1962年"
   },
   {
     "id": "62",
-    "title": "Hans G\u00e1l, 1985",
+    "title": "Hans Gál, 1985",
     "filename": "49d89268dfe6389c5135e0642745cc9a.jpg",
     "photos_category_id": "4",
     "sorrend": "50",
-    "title_de": "Hans G\u00e1l, 1985"
+    "title_de": "Hans Gál, 1985",
+    "title_fr": "Hans Gál, 1985",
+    "title_ja": "Hans Gál、1985年"
   },
   {
     "id": "63",
-    "title": "Hans G\u00e1l, April 1985",
+    "title": "Hans Gál, April 1985",
     "filename": "8de5e6eee770461b31c7cc8723dea6c8.jpg",
     "photos_category_id": "4",
     "sorrend": "49",
-    "title_de": "Hans G\u00e1l, April 1985"
+    "title_de": "Hans Gál, April 1985",
+    "title_fr": "Hans Gál, avril 1985",
+    "title_ja": "Hans Gál、1985年4月"
   },
   {
     "id": "65",
-    "title": "Hans G\u00e1l with daughter Eva, Edinburgh, 1946",
+    "title": "Hans Gál with daughter Eva, Edinburgh, 1946",
     "filename": "b2af592e7ad2d5526bcf00dbb5645137.jpg",
     "photos_category_id": "4",
     "sorrend": "43",
-    "title_de": "Hans G\u00e1l mit seiner Tochter Eva, Edinburgh, 1946"
+    "title_de": "Hans Gál mit seiner Tochter Eva, Edinburgh, 1946",
+    "title_fr": "Hans Gál avec sa fille Eva, Édimbourg, 1946",
+    "title_ja": "娘EvaとHans Gál、エディンバラ、1946年"
   },
   {
     "id": "66",
-    "title": "Festival concert, 1952. G\u00e1l with Horst Guenter, Kathleen Ferrier, Irgard Seefried and Julius Patzak",
+    "title": "Festival concert, 1952. Gál with Horst Guenter, Kathleen Ferrier, Irgard Seefried and Julius Patzak",
     "filename": "566f098df86080ede3b557543278cd32.jpg",
     "photos_category_id": "4",
     "sorrend": "45",
-    "title_de": "Festivalkonzert, 1952. G\u00e1l mit Horst Guenter, Kathleen Ferrier, Irgard Seefried und Julius Patzak"
+    "title_de": "Festivalkonzert, 1952. Gál mit Horst Guenter, Kathleen Ferrier, Irgard Seefried und Julius Patzak",
+    "title_fr": "Concert du festival, 1952. Gál avec Horst Guenter, Kathleen Ferrier, Irgard Seefried et Julius Patzak",
+    "title_ja": "音楽祭の演奏会、1952年。Horst Guenter、Kathleen Ferrier、Irgard Seefried、Julius PatzakとGál"
   },
   {
     "id": "67",
-    "title": "Hans G\u00e1l playing chess with grandchildren, 1984",
+    "title": "Hans Gál playing chess with grandchildren, 1984",
     "filename": "0fc50d45c5ab5939d76d7c736e7e9940.jpg",
     "photos_category_id": "4",
     "sorrend": "48",
-    "title_de": "Hans G\u00e1l beim Schachspiel mit seinen Enkeln, 1984"
+    "title_de": "Hans Gál beim Schachspiel mit seinen Enkeln, 1984",
+    "title_fr": "Hans Gál jouant aux échecs avec ses petits-enfants, 1984",
+    "title_ja": "孫たちとチェスをするHans Gál、1984年"
   },
   {
     "id": "68",
@@ -405,7 +505,9 @@
     "filename": "f0166ea5255dfa780f48cb77676a0b3b.jpg",
     "photos_category_id": "4",
     "sorrend": "44",
-    "title_de": "Ehrendoktorw\u00fcrde, Edinburgh, 1948"
+    "title_de": "Ehrendoktorwürde, Edinburgh, 1948",
+    "title_fr": "Doctorat honoris causa, Édimbourg, 1948",
+    "title_ja": "名誉博士号、エディンバラ、1948年"
   },
   {
     "id": "69",
@@ -413,87 +515,109 @@
     "filename": "01096a3e168e8446fa65b5732d875ea6.jpg",
     "photos_category_id": "4",
     "sorrend": "40",
-    "title_de": "Tante Jenny, Ilka und Edith, Juli 1939"
+    "title_de": "Tante Jenny, Ilka und Edith, Juli 1939",
+    "title_fr": "Tante Jenny, Ilka et Edith, juillet 1939",
+    "title_ja": "ジェニーおばさん、Ilka、Edith、1939年7月"
   },
   {
     "id": "70",
-    "title": "Hans G\u00e1l with the Vienna Madrigal Society, 1929",
+    "title": "Hans Gál with the Vienna Madrigal Society, 1929",
     "filename": "0da166ddd3258cb87af4e2d59ce15de4.jpg",
     "photos_category_id": "4",
     "sorrend": "33",
-    "title_de": "Hans G\u00e1l mit der Wiener Madrigalvereinigung, 1929"
+    "title_de": "Hans Gál mit der Wiener Madrigalvereinigung, 1929",
+    "title_fr": "Hans Gál avec la Société des madrigaux de Vienne, 1929",
+    "title_ja": "ウィーン・マドリガル協会とHans Gál、1929年"
   },
   {
     "id": "71",
-    "title": "The G\u00e1ls in the Black Forest, 1933",
+    "title": "The Gáls in the Black Forest, 1933",
     "filename": "22d7543b97c3ac496496bf01fdbc100e.jpg",
     "photos_category_id": "4",
     "sorrend": "35",
-    "title_de": "Die Familie G\u00e1l im Schwarzwald, 1933"
+    "title_de": "Die Familie Gál im Schwarzwald, 1933",
+    "title_fr": "Les Gál en Forêt-Noire, 1933",
+    "title_ja": "シュヴァルツヴァルトのGál一家、1933年"
   },
   {
     "id": "72",
-    "title": "Hanna G\u00e1l, Vienna, 1937",
+    "title": "Hanna Gál, Vienna, 1937",
     "filename": "814c756a8547402068876dbe1bb3ae00.jpg",
     "photos_category_id": "4",
     "sorrend": "36",
-    "title_de": "Hanna G\u00e1l, Wien, 1937"
+    "title_de": "Hanna Gál, Wien, 1937",
+    "title_fr": "Hanna Gál, Vienne, 1937",
+    "title_ja": "Hanna Gál、ウィーン、1937年"
   },
   {
     "id": "75",
-    "title": "Hanna G\u00e1l, Mainz",
+    "title": "Hanna Gál, Mainz",
     "filename": "28ac8680248fef6468de239e79e26310.jpg",
     "photos_category_id": "4",
     "sorrend": "34",
-    "title_de": "Hanna G\u00e1l, Mainz"
+    "title_de": "Hanna Gál, Mainz",
+    "title_fr": "Hanna Gál, Mayence",
+    "title_ja": "Hanna Gál、マインツ"
   },
   {
     "id": "74",
-    "title": "Ilka G\u00e1l (mother), 1938",
+    "title": "Ilka Gál (mother), 1938",
     "filename": "17519344509d917594a33e74c67f005c.jpg",
     "photos_category_id": "4",
     "sorrend": "37",
-    "title_de": "Ilka G\u00e1l (Mutter), 1938"
+    "title_de": "Ilka Gál (Mutter), 1938",
+    "title_fr": "Ilka Gál (sa mère), 1938",
+    "title_ja": "Ilka Gál（母）、1938年"
   },
   {
     "id": "76",
-    "title": "Hans G\u00e1l (4)",
+    "title": "Hans Gál (4)",
     "filename": "8906a8571e2c0fb6c84070bcaa7d7323.jpg",
     "photos_category_id": "4",
     "sorrend": "21",
-    "title_de": "Hans G\u00e1l (4)"
+    "title_de": "Hans Gál (4)",
+    "title_fr": "Hans Gál (4)",
+    "title_ja": "Hans Gál（4）"
   },
   {
     "id": "77",
-    "title": "Hans G\u00e1l (5)",
+    "title": "Hans Gál (5)",
     "filename": "235d5fd74ea55c801cfc39f299ebb398.jpg",
     "photos_category_id": "4",
     "sorrend": "22",
-    "title_de": "Hans G\u00e1l (5)"
+    "title_de": "Hans Gál (5)",
+    "title_fr": "Hans Gál (5)",
+    "title_ja": "Hans Gál（5）"
   },
   {
     "id": "78",
-    "title": "Hans G\u00e1l (6)",
+    "title": "Hans Gál (6)",
     "filename": "462a57b1689ec9195b7153a6f989bdee.jpg",
     "photos_category_id": "4",
     "sorrend": "23",
-    "title_de": "Hans G\u00e1l (6)"
+    "title_de": "Hans Gál (6)",
+    "title_fr": "Hans Gál (6)",
+    "title_ja": "Hans Gál（6）"
   },
   {
     "id": "79",
-    "title": "Hans G\u00e1l (3)",
+    "title": "Hans Gál (3)",
     "filename": "e9ed60608a5a9313578b1bf6f5512864.jpg",
     "photos_category_id": "4",
     "sorrend": "20",
-    "title_de": "Hans G\u00e1l (3)"
+    "title_de": "Hans Gál (3)",
+    "title_fr": "Hans Gál (3)",
+    "title_ja": "Hans Gál（3）"
   },
   {
     "id": "80",
-    "title": "Hans G\u00e1l (7)",
+    "title": "Hans Gál (7)",
     "filename": "019550137a91bab26174e9922fa28c57.jpg",
     "photos_category_id": "4",
     "sorrend": "26",
-    "title_de": "Hans G\u00e1l (7)"
+    "title_de": "Hans Gál (7)",
+    "title_fr": "Hans Gál (7)",
+    "title_ja": "Hans Gál（7）"
   },
   {
     "id": "82",
@@ -501,7 +625,9 @@
     "filename": "ccdb2da8a8a7f2ecba7518d2dc0031cd.jpg",
     "photos_category_id": "4",
     "sorrend": "8",
-    "title_de": "Jenny Flerischer-Alt"
+    "title_de": "Jenny Flerischer-Alt",
+    "title_fr": "Jenny Flerischer-Alt",
+    "title_ja": "Jenny Flerischer-Alt"
   },
   {
     "id": "83",
@@ -509,7 +635,9 @@
     "filename": "e8f9ee104a986695e600b4f7b88ccd34.jpg",
     "photos_category_id": "6",
     "sorrend": "2",
-    "title_de": "\u201eDer Arzt der Sobeide\u201c, B\u00fchnenbild f\u00fcr den I. Akt, Breslau, November 1919"
+    "title_de": "„Der Arzt der Sobeide“, Bühnenbild für den I. Akt, Breslau, November 1919",
+    "title_fr": "Der Arzt der Sobeide [Le Médecin de Sobeide], décor du premier acte, Breslau, novembre 1919",
+    "title_ja": "Der Arzt der Sobeide［ゾベイデの医者］、第1幕の舞台装置、Breslau、1919年11月"
   },
   {
     "id": "84",
@@ -517,7 +645,9 @@
     "filename": "83fb60685730715392f2d21bf8dc551e.jpg",
     "photos_category_id": "6",
     "sorrend": "3",
-    "title_de": "Titelblatt von Op. 11, \u201eDrei Lieder\u201c"
+    "title_de": "Titelblatt von Op. 11, „Drei Lieder“",
+    "title_fr": "Couverture de Drei Lieder [Trois lieder], op. 11",
+    "title_ja": "Drei Lieder［3つの歌曲］、Op.11の表紙"
   },
   {
     "id": "85",
@@ -525,7 +655,9 @@
     "filename": "ed0a7d68214f8cf87ac4fe886feebbcc.jpg",
     "photos_category_id": "6",
     "sorrend": "4",
-    "title_de": "Titelblatt von Op. 13, Klavierquartett"
+    "title_de": "Titelblatt von Op. 13, Klavierquartett",
+    "title_fr": "Couverture de Piano Quartet [Quatuor avec piano], op. 13",
+    "title_ja": "Piano Quartet［ピアノ四重奏曲］、Op.13の表紙"
   },
   {
     "id": "87",
@@ -533,7 +665,9 @@
     "filename": "fde36e8ca442d649865c2e6b15184af8.jpg",
     "photos_category_id": "6",
     "sorrend": "6",
-    "title_de": "\u201eDas Lied der Nacht\u201c, Graz. Hela Quis als Lianora"
+    "title_de": "„Das Lied der Nacht“, Graz. Hela Quis als Lianora",
+    "title_fr": "Das Lied der Nacht [Le Chant de la nuit], Graz. Hela Quis dans le rôle de Lianora",
+    "title_ja": "Das Lied der Nacht［夜の歌］、Graz。Lianora役のHela Quis"
   },
   {
     "id": "88",
@@ -541,7 +675,9 @@
     "filename": "4a04e45afd70354c5c605c650fbc7051.jpg",
     "photos_category_id": "6",
     "sorrend": "7",
-    "title_de": "Plakat zu \u201eDie heilige Ente\u201c, 1923"
+    "title_de": "Plakat zu „Die heilige Ente“, 1923",
+    "title_fr": "Affiche de Die heilige Ente [Le Canard sacré], 1923",
+    "title_ja": "Die heilige Ente［聖なるあひる］のポスター、1923年"
   },
   {
     "id": "89",
@@ -549,7 +685,9 @@
     "filename": "6f6852ce1c63d973d853441c5758f828.jpg",
     "photos_category_id": "6",
     "sorrend": "8",
-    "title_de": "\u201eDie heilige Ente\u201c \u2013 Collage aus der Zeitschrift Radio Wien, 1929"
+    "title_de": "„Die heilige Ente“ – Collage aus der Zeitschrift Radio Wien, 1929",
+    "title_fr": "Die heilige Ente [Le Canard sacré] — collage du magazine Radio Vienna, 1929",
+    "title_ja": "Die heilige Ente［聖なるあひる］— 雑誌Radio Viennaのコラージュ、1929年"
   },
   {
     "id": "90",
@@ -557,7 +695,9 @@
     "filename": "56e13438ea35c519c34bc1dd2ddd66ca.jpg",
     "photos_category_id": "6",
     "sorrend": "9",
-    "title_de": "'Die heilige Ente', Mainz, 29.11.1932 (1)"
+    "title_de": "'Die heilige Ente', Mainz, 29.11.1932 (1)",
+    "title_fr": "Die heilige Ente [Le Canard sacré], Mayence, 29.11.1932 (1)",
+    "title_ja": "Die heilige Ente［聖なるあひる］、マインツ、29.11.1932（1）"
   },
   {
     "id": "91",
@@ -565,7 +705,9 @@
     "filename": "0f5397cf2430d9ae6c0af485f25cd1c6.jpg",
     "photos_category_id": "6",
     "sorrend": "10",
-    "title_de": "'Die heilige Ente', Mainz, 29.11.1932 (2)"
+    "title_de": "'Die heilige Ente', Mainz, 29.11.1932 (2)",
+    "title_fr": "Die heilige Ente [Le Canard sacré], Mayence, 29.11.1932 (2)",
+    "title_ja": "Die heilige Ente［聖なるあひる］、マインツ、29.11.1932（2）"
   },
   {
     "id": "92",
@@ -573,7 +715,9 @@
     "filename": "53164322619a329c2d0dd4bb418e6ab3.jpg",
     "photos_category_id": "6",
     "sorrend": "11",
-    "title_de": "'Die heilige Ente', Mainz, 29.11.1932 (3)"
+    "title_de": "'Die heilige Ente', Mainz, 29.11.1932 (3)",
+    "title_fr": "Die heilige Ente [Le Canard sacré], Mayence, 29.11.1932 (3)",
+    "title_ja": "Die heilige Ente［聖なるあひる］、マインツ、29.11.1932（3）"
   },
   {
     "id": "93",
@@ -581,7 +725,9 @@
     "filename": "b92dd1b5c81758a4dafb67db39c58c4e.jpg",
     "photos_category_id": "6",
     "sorrend": "12",
-    "title_de": "\u201eDie heilige Ente\u201c, Josef Witt als Kuli Yang"
+    "title_de": "„Die heilige Ente“, Josef Witt als Kuli Yang",
+    "title_fr": "Die heilige Ente [Le Canard sacré], Josef Witt dans le rôle du coolie Yang",
+    "title_ja": "Die heilige Ente［聖なるあひる］、苦力Yang役のJosef Witt"
   },
   {
     "id": "94",
@@ -589,7 +735,9 @@
     "filename": "d42f6268d225d183e994a99df905a815.jpg",
     "photos_category_id": "6",
     "sorrend": "13",
-    "title_de": "\u201eDie heilige Ente\u201c, K\u00f6ln, 2003"
+    "title_de": "„Die heilige Ente“, Köln, 2003",
+    "title_fr": "Die heilige Ente [Le Canard sacré], Cologne, 2003",
+    "title_ja": "Die heilige Ente［聖なるあひる］、ケルン、2003年"
   },
   {
     "id": "95",
@@ -597,7 +745,9 @@
     "filename": "36d926dffdf184e1845dc6bd902d2ca6.jpg",
     "photos_category_id": "6",
     "sorrend": "14",
-    "title_de": "Plakat zur Parodie \u201eDie heilige Rente\u201c"
+    "title_de": "Plakat zur Parodie „Die heilige Rente“",
+    "title_fr": "Affiche de la parodie Die heilige Rente [La Rente sacrée]",
+    "title_ja": "パロディーDie heilige Rente［聖なる年金］のポスター"
   },
   {
     "id": "96",
@@ -605,7 +755,9 @@
     "filename": "cab34a99828eacfbbc6aee26f1923ac9.jpg",
     "photos_category_id": "6",
     "sorrend": "15",
-    "title_de": "Anzeige f\u00fcr \u201eDer Zauberspiegel\u201c"
+    "title_de": "Anzeige für „Der Zauberspiegel“",
+    "title_fr": "Publicité pour Der Zauberspiegel [Le Miroir magique]",
+    "title_ja": "Der Zauberspiegel［魔法の鏡］の広告"
   },
   {
     "id": "97",
@@ -613,7 +765,9 @@
     "filename": "7e6708ebc94e70d982829ae3d33f39fb.jpg",
     "photos_category_id": "6",
     "sorrend": "16",
-    "title_de": "Szene aus \u201eDer Zauberspiegel\u201c"
+    "title_de": "Szene aus „Der Zauberspiegel“",
+    "title_fr": "Scène de Der Zauberspiegel [Le Miroir magique]",
+    "title_ja": "Der Zauberspiegel［魔法の鏡］の一場面"
   },
   {
     "id": "98",
@@ -621,7 +775,9 @@
     "filename": "3fbc5ea26bcd4d8951a3998333031d31.jpg",
     "photos_category_id": "6",
     "sorrend": "17",
-    "title_de": "Entw\u00fcrfe zu \u201eDer Zauberspiegel\u201c"
+    "title_de": "Entwürfe zu „Der Zauberspiegel“",
+    "title_fr": "Maquettes pour Der Zauberspiegel [Le Miroir magique]",
+    "title_ja": "Der Zauberspiegel［魔法の鏡］のデザイン画"
   },
   {
     "id": "99",
@@ -629,7 +785,9 @@
     "filename": "02a4f50967a35295934c8ade19a95d8c.jpg",
     "photos_category_id": "6",
     "sorrend": "18",
-    "title_de": "Probe des Violinkonzerts, Dresden, 1933"
+    "title_de": "Probe des Violinkonzerts, Dresden, 1933",
+    "title_fr": "Répétition de Violin Concerto [Concerto pour violon], Dresde, 1933",
+    "title_ja": "Violin Concerto［ヴァイオリン協奏曲］のリハーサル、ドレスデン、1933年"
   },
   {
     "id": "100",
@@ -637,7 +795,9 @@
     "filename": "2f6dd321f41e63565afa924cf45ba96e.jpg",
     "photos_category_id": "6",
     "sorrend": "19",
-    "title_de": "Plakat zu \u201eRich Claus, Poor Claus\u201c, York, 1990"
+    "title_de": "Plakat zu „Rich Claus, Poor Claus“, York, 1990",
+    "title_fr": "Affiche de Rich Claus, Poor Claus [Claus le riche, Claus le pauvre], York, 1990",
+    "title_ja": "Rich Claus, Poor Claus［金持ちクラウス、貧乏クラウス］のポスター、York、1990年"
   },
   {
     "id": "101",
@@ -645,7 +805,9 @@
     "filename": "a7b854819a19cd184ddef3af4df3914f.jpg",
     "photos_category_id": "6",
     "sorrend": "20",
-    "title_de": "Programm der Lagerrevue \u201eWhat a Life!\u201c, Isle of Man, 1940"
+    "title_de": "Programm der Lagerrevue „What a Life!“, Isle of Man, 1940",
+    "title_fr": "Programme de la revue du camp What a Life! [Quelle vie !], île de Man, 1940",
+    "title_ja": "収容所のレビューWhat a Life!［なんという人生！］のプログラム、マン島、1940年"
   },
   {
     "id": "102",
@@ -653,7 +815,9 @@
     "filename": "8112aa4282ede34cb2ec484e338d9b77.jpg",
     "photos_category_id": "6",
     "sorrend": "21",
-    "title_de": "Programm zur Urauff\u00fchrung von \u201eDe Profundis\u201c, Wiesbaden, 1948"
+    "title_de": "Programm zur Uraufführung von „De Profundis“, Wiesbaden, 1948",
+    "title_fr": "Programme de la création de De Profundis [Des profondeurs], Wiesbaden, 1948",
+    "title_ja": "De Profundis［深き淵より］初演のプログラム、Wiesbaden、1948年"
   },
   {
     "id": "103",
@@ -661,7 +825,9 @@
     "filename": "bddef4291b313da2d5a568632750c11c.jpg",
     "photos_category_id": "7",
     "sorrend": "2",
-    "title_de": "'The Golden Age of Vienna'"
+    "title_de": "'The Golden Age of Vienna'",
+    "title_fr": "The Golden Age of Vienna [L’Âge d’or de Vienne]",
+    "title_ja": "The Golden Age of Vienna［ウィーンの黄金時代］"
   },
   {
     "id": "104",
@@ -669,7 +835,9 @@
     "filename": "dd1f5190a56d9c895bcc758530348aa2.jpg",
     "photos_category_id": "7",
     "sorrend": "3",
-    "title_de": "Johannes Brahms"
+    "title_de": "Johannes Brahms",
+    "title_fr": "Johannes Brahms",
+    "title_ja": "Johannes Brahms"
   },
   {
     "id": "105",
@@ -677,7 +845,9 @@
     "filename": "8de589926f081811ab055cd22f0c7732.jpg",
     "photos_category_id": "7",
     "sorrend": "4",
-    "title_de": "Richard Wagner"
+    "title_de": "Richard Wagner",
+    "title_fr": "Richard Wagner",
+    "title_ja": "Richard Wagner"
   },
   {
     "id": "106",
@@ -685,7 +855,9 @@
     "filename": "0a6be6bd886bb7c2e132fced426b921b.jpg",
     "photos_category_id": "7",
     "sorrend": "5",
-    "title_de": "The Musician's World"
+    "title_de": "The Musician's World",
+    "title_fr": "The Musician's World [Le Monde du musicien]",
+    "title_ja": "The Musician's World［音楽家の世界］"
   },
   {
     "id": "107",
@@ -693,7 +865,9 @@
     "filename": "ca535e7ea075080dc451a5de867a7674.jpg",
     "photos_category_id": "7",
     "sorrend": "7",
-    "title_de": "Giuseppe Verdi"
+    "title_de": "Giuseppe Verdi",
+    "title_fr": "Giuseppe Verdi",
+    "title_ja": "Giuseppe Verdi"
   },
   {
     "id": "108",
@@ -701,7 +875,9 @@
     "filename": "982fd7da0eb9d4481a691e5215e661db.jpg",
     "photos_category_id": "7",
     "sorrend": "8",
-    "title_de": "Schumann Orchestral Music"
+    "title_de": "Schumann Orchestral Music",
+    "title_fr": "Schumann Orchestral Music [La Musique orchestrale de Schumann]",
+    "title_ja": "Schumann Orchestral Music［シューマンの管弦楽作品］"
   },
   {
     "id": "109",
@@ -709,15 +885,19 @@
     "filename": "0671b94fdf12eaa6ceaa4dd0be6ebc42.jpg",
     "photos_category_id": "7",
     "sorrend": "6",
-    "title_de": "Franz Schubert and the Essence of Melody"
+    "title_de": "Franz Schubert and the Essence of Melody",
+    "title_fr": "Franz Schubert and the Essence of Melody [Franz Schubert et l’essence de la mélodie]",
+    "title_ja": "Franz Schubert and the Essence of Melody［フランツ・シューベルトと旋律の本質］"
   },
   {
     "id": "110",
-    "title": "Wilhelm Waldstein: 'Hans G\u00e1l'",
+    "title": "Wilhelm Waldstein: 'Hans Gál'",
     "filename": "b2c07b72e52a732ee09e201e3279b972.jpg",
     "photos_category_id": "7",
     "sorrend": "9",
-    "title_de": "Wilhelm Waldstein: 'Hans G\u00e1l'"
+    "title_de": "Wilhelm Waldstein: 'Hans Gál'",
+    "title_fr": "Wilhelm Waldstein : Hans Gál",
+    "title_ja": "Wilhelm Waldstein：Hans Gál"
   },
   {
     "id": "111",
@@ -725,31 +905,39 @@
     "filename": "88a538bf05c127d3e4b1e33395da029c.jpg",
     "photos_category_id": "7",
     "sorrend": "10",
-    "title_de": "100 Jahre Mainzer Conservatorium"
+    "title_de": "100 Jahre Mainzer Conservatorium",
+    "title_fr": "100 Jahre Mainzer Conservatorium [Cent ans du Conservatoire de Mayence]",
+    "title_ja": "100 Jahre Mainzer Conservatorium［マインツ音楽院の100年］"
   },
   {
     "id": "112",
-    "title": "Hans G\u00e1l zum 100. Geburtstag (On the 100th birthday of Hans G\u00e1l)",
+    "title": "Hans Gál zum 100. Geburtstag (On the 100th birthday of Hans Gál)",
     "filename": "8c6d6938e1f32d51be563d7ecc22e976.jpg",
     "photos_category_id": "7",
     "sorrend": "11",
-    "title_de": "Hans G\u00e1l zum 100. Geburtstag"
+    "title_de": "Hans Gál zum 100. Geburtstag",
+    "title_fr": "Hans Gál zum 100. Geburtstag [Pour le centenaire de Hans Gál]",
+    "title_ja": "Hans Gál zum 100. Geburtstag［Hans Gál生誕100年を記念して］"
   },
   {
     "id": "113",
-    "title": "Musik des Aufbruchs: Hans G\u00e1l und Egon Wellesz. Continental Britons.",
+    "title": "Musik des Aufbruchs: Hans Gál und Egon Wellesz. Continental Britons.",
     "filename": "1e1eb979604f5823843eeaba8e6c7e67.jpg",
     "photos_category_id": "7",
     "sorrend": "12",
-    "title_de": "Musik des Aufbruchs: Hans G\u00e1l und Egon Wellesz. Continental Britons."
+    "title_de": "Musik des Aufbruchs: Hans Gál und Egon Wellesz. Continental Britons.",
+    "title_fr": "Musik des Aufbruchs: Hans Gál und Egon Wellesz [Une musique de renouveau : Hans Gál et Egon Wellesz]. Continental Britons [Britanniques venus du continent].",
+    "title_ja": "Musik des Aufbruchs: Hans Gál und Egon Wellesz［新たな出発の音楽：Hans GálとEgon Wellesz］。Continental Britons［大陸出身の英国人たち］。"
   },
   {
     "id": "114",
-    "title": "Eva Fox-G\u00e1l & Anthony Fox: Hans G\u00e1l - Ein Jahrhundert Musik",
+    "title": "Eva Fox-Gál & Anthony Fox: Hans Gál - Ein Jahrhundert Musik",
     "filename": "97549387281361e5c4bbf8a0e8eee91c.jpg",
     "photos_category_id": "7",
     "sorrend": "15",
-    "title_de": "Eva Fox-G\u00e1l und Anthony Fox: Hans G\u00e1l \u2013 Ein Jahrhundert Musik"
+    "title_de": "Eva Fox-Gál und Anthony Fox: Hans Gál – Ein Jahrhundert Musik",
+    "title_fr": "Eva Fox-Gál et Anthony Fox : Hans Gál – Ein Jahrhundert Musik [Hans Gál — Un siècle de musique]",
+    "title_ja": "Eva Fox-Gál、Anthony Fox：Hans Gál – Ein Jahrhundert Musik［Hans Gál — 音楽の一世紀］"
   },
   {
     "id": "115",
@@ -757,7 +945,9 @@
     "filename": "e0e3b5fbe1621ddfb154bd34eb0d3428.jpg",
     "photos_category_id": "8",
     "sorrend": "2",
-    "title_de": "Das Breslauer Theater heute"
+    "title_de": "Das Breslauer Theater heute",
+    "title_fr": "Le théâtre de Breslau aujourd’hui",
+    "title_ja": "現在のBreslauの劇場"
   },
   {
     "id": "116",
@@ -765,7 +955,9 @@
     "filename": "d3f7f24180cf844d9ee6bae92ecb4f8d.jpg",
     "photos_category_id": "8",
     "sorrend": "3",
-    "title_de": "Plakat zu \u201eDie Elf Scharfrichter\u201c"
+    "title_de": "Plakat zu „Die Elf Scharfrichter“",
+    "title_fr": "Affiche de Die Elf Scharfrichter [Les Onze Bourreaux]",
+    "title_ja": "Die Elf Scharfrichter［11人の処刑人］のポスター"
   },
   {
     "id": "117",
@@ -773,7 +965,9 @@
     "filename": "e9f1c51e788de27e79b61a6201129b62.jpg",
     "photos_category_id": "8",
     "sorrend": "4",
-    "title_de": "Gedenktafel in Weimar"
+    "title_de": "Gedenktafel in Weimar",
+    "title_fr": "Plaque commémorative à Weimar",
+    "title_ja": "Weimarの記念銘板"
   },
   {
     "id": "118",
@@ -781,7 +975,9 @@
     "filename": "c21a466199bf0a8d8e608b112ecad4da.jpg",
     "photos_category_id": "8",
     "sorrend": "5",
-    "title_de": "Internierungslager Huyton"
+    "title_de": "Internierungslager Huyton",
+    "title_fr": "Camp d’internement de Huyton",
+    "title_ja": "Huytonの収容所"
   },
   {
     "id": "119",
@@ -789,7 +985,9 @@
     "filename": "a950416ddceb3570bbbed35e98cb23eb.jpg",
     "photos_category_id": "8",
     "sorrend": "6",
-    "title_de": "Internierungslager auf der Isle of Man"
+    "title_de": "Internierungslager auf der Isle of Man",
+    "title_fr": "Camp d’internement de l’île de Man",
+    "title_ja": "マン島の収容所"
   },
   {
     "id": "120",
@@ -797,15 +995,19 @@
     "filename": "4bcc885a265a0a779fb56cb20c2b63d5.jpg",
     "photos_category_id": "8",
     "sorrend": "7",
-    "title_de": "Internierungslager auf der Isle of Man (2)"
+    "title_de": "Internierungslager auf der Isle of Man (2)",
+    "title_fr": "Camp d’internement de l’île de Man (2)",
+    "title_ja": "マン島の収容所（2）"
   },
   {
     "id": "121",
-    "title": "Rheinallee 5, Mainz. The G\u00e1ls lived here",
+    "title": "Rheinallee 5, Mainz. The Gáls lived here",
     "filename": "0df70c59e13115c322b3d186968c93af.jpg",
     "photos_category_id": "8",
     "sorrend": "8",
-    "title_de": "Rheinallee 5, Mainz. Hier wohnte die Familie G\u00e1l"
+    "title_de": "Rheinallee 5, Mainz. Hier wohnte die Familie Gál",
+    "title_fr": "Rheinallee 5, Mayence. Les Gál y ont habité.",
+    "title_ja": "Rheinallee 5番地、マインツ。Gál一家はここに住んでいた。"
   },
   {
     "id": "122",
@@ -813,7 +1015,9 @@
     "filename": "81564a392d3912abb8dace6bbc0a2e74.jpg",
     "photos_category_id": "8",
     "sorrend": "9",
-    "title_de": "Belvedere-Allee 6, Weimar. Tante Jennys Haus"
+    "title_de": "Belvedere-Allee 6, Weimar. Tante Jennys Haus",
+    "title_fr": "Belvedere-Allee 6, Weimar. Maison de tante Jenny.",
+    "title_ja": "Belvedere-Allee 6番地、Weimar。ジェニーおばさんの家。"
   },
   {
     "id": "123",
@@ -821,7 +1025,9 @@
     "filename": "1c2b27492d3cc32e9b5ea72e407679f5.jpg",
     "photos_category_id": "8",
     "sorrend": "10",
-    "title_de": "Der Wiener Musikverein"
+    "title_de": "Der Wiener Musikverein",
+    "title_fr": "Le Musikverein de Vienne",
+    "title_ja": "ウィーンのMusikverein"
   },
   {
     "id": "124",
@@ -829,7 +1035,9 @@
     "filename": "a37dad3e31439dfbddf5cbe21c925e50.jpg",
     "photos_category_id": "8",
     "sorrend": "11",
-    "title_de": "Die Reid School of Music, Edinburgh"
+    "title_de": "Die Reid School of Music, Edinburgh",
+    "title_fr": "La Reid School of Music, Édimbourg",
+    "title_ja": "エディンバラのReid School of Music"
   },
   {
     "id": "125",
@@ -837,14 +1045,18 @@
     "filename": "78401ed73c836830a61bb3e2691c8ffb.jpg",
     "photos_category_id": "8",
     "sorrend": "12",
-    "title_de": "Die Wiener Volksoper"
+    "title_de": "Die Wiener Volksoper",
+    "title_fr": "La Volksoper de Vienne",
+    "title_ja": "ウィーンのVolksoper"
   },
   {
     "id": "126",
-    "title": "'Musik hinter Stacheldraht'. Hans G\u00e1l's Internment Diary",
+    "title": "'Musik hinter Stacheldraht'. Hans Gál's Internment Diary",
     "filename": "9fb99c61ab51e3d84426b30e4d14b737.jpg",
     "photos_category_id": "7",
     "sorrend": "14",
-    "title_de": "\u201eMusik hinter Stacheldraht\u201c. Hans G\u00e1ls Internierungstagebuch"
+    "title_de": "„Musik hinter Stacheldraht“. Hans Gáls Internierungstagebuch",
+    "title_fr": "Musik hinter Stacheldraht [Musique derrière les barbelés]. Journal d’internement de Hans Gál.",
+    "title_ja": "Musik hinter Stacheldraht［有刺鉄線の向こうの音楽］。Hans Gálの収容所日記。"
   }
 ]

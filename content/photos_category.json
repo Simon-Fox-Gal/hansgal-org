@@ -2,26 +2,36 @@
   {
     "id": "4",
     "name": "People",
-    "name_de": "Personen"
+    "name_de": "Personen",
+    "name_fr": "Personnes",
+    "name_ja": "人物"
   },
   {
     "id": "5",
     "name": "Documents",
-    "name_de": "Dokumente"
+    "name_de": "Dokumente",
+    "name_fr": "Documents",
+    "name_ja": "文書"
   },
   {
     "id": "6",
     "name": "Works",
-    "name_de": "Werke"
+    "name_de": "Werke",
+    "name_fr": "Œuvres",
+    "name_ja": "作品"
   },
   {
     "id": "7",
     "name": "Books",
-    "name_de": "B\u00fccher"
+    "name_de": "Bücher",
+    "name_fr": "Livres",
+    "name_ja": "書籍"
   },
   {
     "id": "8",
     "name": "Other photographs",
-    "name_de": "Weitere Fotografien"
+    "name_de": "Weitere Fotografien",
+    "name_fr": "Autres photographies",
+    "name_ja": "その他の写真"
   }
 ]
