@@ -8,6 +8,8 @@ Read the latest main branch before preparing each change. Apply only requested f
 
 Common files:
 
+- `content/page_text.json`: editable bilingual wording formerly fixed in templates. Preserve IDs, page groups and paths; edit only `value` and `value_de`. The private editor groups these blocks by page alongside existing menu pages. `tests/page-text.py` records the initial lossless migration; later intentional copy edits should update its expectation through normal editorial review.
+
 - `content/menu.json`: page titles, lead and body text, navigation group, hidden flag.
 - `content/catalogue.json`: works and bilingual search fields; associated `catalogue_*` tables hold categories, recordings, images and audio links.
 - `content/recording.json`: title, cover filename, detail HTML, review/context HTML and display sequence. Cover files go in `public/storage/recordingcovers/`. Add the cover path, byte size and SHA-256 to `content/asset-manifest.json`.

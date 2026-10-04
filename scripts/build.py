@@ -87,6 +87,7 @@ def make_site(base_path='', review=True, language='en'):
             return (translate_template(source) if language=='de' else source),filename,uptodate
     env=Environment(loader=LocaleLoader(ROOT/'templates'),autoescape=False,undefined=ChainableUndefined,keep_trailing_newline=True,finalize=lambda v:'' if v is None else v)
     env.globals['language']=language
+    env.globals['page_text']=lambda id: html.escape(by_id['page_text'][id]['value_de' if language=='de' else 'value'],quote=True)
     env.filters['stripcslashes']=stripcslashes
     env.filters['work_pdf_filename']=lambda value:download_filename(stripcslashes(value))
     env.globals['php_truth']=php_truth

@@ -1,0 +1,1146 @@
+[
+  {
+    "id": "1",
+    "page": "Audio player — shared wording",
+    "path": "/audiosamples/",
+    "title": "Now playing",
+    "value": "Now playing",
+    "value_de": "Aktuelle Hörprobe"
+  },
+  {
+    "id": "2",
+    "page": "Audio player — shared wording",
+    "path": "/audiosamples/",
+    "title": "Minimise",
+    "value": "Minimise",
+    "value_de": "Verkleinern"
+  },
+  {
+    "id": "3",
+    "page": "Audio player — shared wording",
+    "path": "/audiosamples/",
+    "title": "Pause",
+    "value": "Pause",
+    "value_de": "Pause"
+  },
+  {
+    "id": "4",
+    "page": "Audio player — shared wording",
+    "path": "/audiosamples/",
+    "title": "Close player",
+    "value": "Close player",
+    "value_de": "Player schließen"
+  },
+  {
+    "id": "5",
+    "page": "Audio player — shared wording",
+    "path": "/audiosamples/",
+    "title": "On the music stand",
+    "value": "On the music stand",
+    "value_de": "Auf dem Notenpult"
+  },
+  {
+    "id": "6",
+    "page": "Audio player — shared wording",
+    "path": "/audiosamples/",
+    "title": "Previous",
+    "value": "Previous",
+    "value_de": "Zurück"
+  },
+  {
+    "id": "7",
+    "page": "Audio player — shared wording",
+    "path": "/audiosamples/",
+    "title": "Next",
+    "value": "Next",
+    "value_de": "Weiter"
+  },
+  {
+    "id": "8",
+    "page": "Audio player — shared wording",
+    "path": "/audiosamples/",
+    "title": "Listen while browsing ↗",
+    "value": "Listen while browsing ↗",
+    "value_de": "Beim Weitersurfen hören ↗"
+  },
+  {
+    "id": "9",
+    "page": "Audio player — shared wording",
+    "path": "/audiosamples/",
+    "title": "About this work",
+    "value": "About this work",
+    "value_de": "Über dieses Werk"
+  },
+  {
+    "id": "10",
+    "page": "Audio player — shared wording",
+    "path": "/audiosamples/",
+    "title": "Opens a small player window, or a separate tab on your phone.",
+    "value": "Opens a small player window, or a separate tab on your phone.",
+    "value_de": "Öffnet ein kleines Player-Fenster oder einen separaten Tab auf dem Smartphone."
+  },
+  {
+    "id": "11",
+    "page": "Audio player — shared wording",
+    "path": "/audiosamples/",
+    "title": "Continue to the next excerpt",
+    "value": "Continue to the next excerpt",
+    "value_de": "Nächste Hörprobe automatisch abspielen"
+  },
+  {
+    "id": "12",
+    "page": "Audio credits — shared wording",
+    "path": "/audiosamples/",
+    "title": "Unreleased recording · preview",
+    "value": "Unreleased recording · preview",
+    "value_de": "Unveröffentlichte Aufnahme · Vorschau"
+  },
+  {
+    "id": "13",
+    "page": "Audio credits — shared wording",
+    "path": "/audiosamples/",
+    "title": "Recording details & buying options",
+    "value": "Recording details & buying options",
+    "value_de": "Aufnahme & Kaufmöglichkeiten"
+  },
+  {
+    "id": "14",
+    "page": "Audio credits — shared wording",
+    "path": "/audiosamples/",
+    "title": "From the CD included with the book.",
+    "value": "From the CD included with the book.",
+    "value_de": "Von der dem Buch beiliegenden CD."
+  },
+  {
+    "id": "15",
+    "page": "Audio credits — shared wording",
+    "path": "/audiosamples/",
+    "title": "CD",
+    "value": "CD",
+    "value_de": "CD"
+  },
+  {
+    "id": "16",
+    "page": "Audio credits — shared wording",
+    "path": "/audiosamples/",
+    "title": "Track",
+    "value": "Track",
+    "value_de": "Titel"
+  },
+  {
+    "id": "17",
+    "page": "Audio credits — shared wording",
+    "path": "/audiosamples/",
+    "title": "About these excerpts",
+    "value": "About these excerpts",
+    "value_de": "Über diese Hörproben"
+  },
+  {
+    "id": "18",
+    "page": "Listen",
+    "path": "/audiosamples/",
+    "title": "The music, at first hand",
+    "value": "The music, at first hand",
+    "value_de": "Die Musik erleben"
+  },
+  {
+    "id": "19",
+    "page": "Listen",
+    "path": "/audiosamples/",
+    "title": "A place to listen",
+    "value": "A place to listen",
+    "value_de": "Ein Ort zum Zuhören"
+  },
+  {
+    "id": "20",
+    "page": "Listen",
+    "path": "/audiosamples/",
+    "title": "An open invitation to the music of Hans Gál. Begin with today’s excerpt, follow an instrument or a voice, or find a work you already love.",
+    "value": "An open invitation to the music of Hans Gál. Begin with today’s excerpt, follow an instrument or a voice, or find a work you already love.",
+    "value_de": "Eine Einladung in die Musik von Hans Gál. Beginnen Sie mit der heutigen Hörprobe, folgen Sie einem Instrument oder einer Stimme, oder finden Sie ein vertrautes Werk wieder."
+  },
+  {
+    "id": "21",
+    "page": "Listen",
+    "path": "/audiosamples/",
+    "title": "A different discovery every day",
+    "value": "A different discovery every day",
+    "value_de": "Jeden Tag eine neue Entdeckung"
+  },
+  {
+    "id": "22",
+    "page": "Listen",
+    "path": "/audiosamples/",
+    "title": "Today’s listening",
+    "value": "Today’s listening",
+    "value_de": "Heute hören"
+  },
+  {
+    "id": "23",
+    "page": "Listen",
+    "path": "/audiosamples/",
+    "title": "Play today’s excerpt",
+    "value": "Play today’s excerpt",
+    "value_de": "Heutige Hörprobe abspielen"
+  },
+  {
+    "id": "24",
+    "page": "Listen",
+    "path": "/audiosamples/",
+    "title": "From the recordings",
+    "value": "From the recordings",
+    "value_de": "Aus den Aufnahmen"
+  },
+  {
+    "id": "25",
+    "page": "Listen",
+    "path": "/audiosamples/",
+    "title": "Listen to excerpts from Gál’s works. Where the recording is identified, discover the performers and the complete album.",
+    "value": "Listen to excerpts from Gál’s works. Where the recording is identified, discover the performers and the complete album.",
+    "value_de": "Hören Sie Ausschnitte aus Gáls Werken. Wo die Aufnahme bekannt ist, finden Sie die Interpreten und das vollständige Album."
+  },
+  {
+    "id": "26",
+    "page": "Listen",
+    "path": "/audiosamples/",
+    "title": "Choose something for me",
+    "value": "Choose something for me",
+    "value_de": "Eine Hörprobe für mich auswählen"
+  },
+  {
+    "id": "27",
+    "page": "Listen",
+    "path": "/audiosamples/",
+    "title": "Find your way in",
+    "value": "Find your way in",
+    "value_de": "Zugänge zur Musik"
+  },
+  {
+    "id": "28",
+    "page": "Listen",
+    "path": "/audiosamples/",
+    "title": "Listening categories",
+    "value": "Listening categories",
+    "value_de": "Hörkategorien"
+  },
+  {
+    "id": "29",
+    "page": "Listen",
+    "path": "/audiosamples/",
+    "title": "Search the listening collection",
+    "value": "Search the listening collection",
+    "value_de": "Hörsammlung durchsuchen"
+  },
+  {
+    "id": "30",
+    "page": "Listen",
+    "path": "/audiosamples/",
+    "title": "A title, instrument or opus number",
+    "value": "A title, instrument or opus number",
+    "value_de": "Titel, Instrument oder Opusnummer"
+  },
+  {
+    "id": "31",
+    "page": "Listen",
+    "path": "/audiosamples/",
+    "title": "Short excerpts to help you discover the music. Explore the recording pages for the complete albums and ways to support the performers.",
+    "value": "Short excerpts to help you discover the music. Explore the recording pages for the complete albums and ways to support the performers.",
+    "value_de": "Kurze Ausschnitte zum Kennenlernen der Musik. Auf den Aufnahmenseiten finden Sie die vollständigen Alben und Kaufmöglichkeiten zur Unterstützung der Interpreten."
+  },
+  {
+    "id": "32",
+    "page": "Listen",
+    "path": "/audiosamples/",
+    "title": "From the archive",
+    "value": "From the archive",
+    "value_de": "Aus dem Archiv"
+  },
+  {
+    "id": "33",
+    "page": "Listen",
+    "path": "/audiosamples/",
+    "title": "About the work",
+    "value": "About the work",
+    "value_de": "Über das Werk"
+  },
+  {
+    "id": "34",
+    "page": "Listen",
+    "path": "/audiosamples/",
+    "title": "Unreleased recording · preview",
+    "value": "Unreleased recording · preview",
+    "value_de": "Unveröffentlichte Aufnahme · Vorschau"
+  },
+  {
+    "id": "35",
+    "page": "Listen",
+    "path": "/audiosamples/",
+    "title": "excerpt · open to listen",
+    "value": "excerpt · open to listen",
+    "value_de": "Hörprobe · zum Anhören öffnen"
+  },
+  {
+    "id": "36",
+    "page": "Listen",
+    "path": "/audiosamples/",
+    "title": "excerpts · open to listen",
+    "value": "excerpts · open to listen",
+    "value_de": "Hörproben · zum Anhören öffnen"
+  },
+  {
+    "id": "37",
+    "page": "Listen",
+    "path": "/audiosamples/",
+    "title": "Open a work and select an excerpt to listen directly. Enable JavaScript for daily discoveries and filters.",
+    "value": "Open a work and select an excerpt to listen directly. Enable JavaScript for daily discoveries and filters.",
+    "value_de": "Öffnen Sie ein Werk und wählen Sie eine Hörprobe aus. Aktivieren Sie JavaScript für die tägliche Auswahl und die Filter."
+  },
+  {
+    "id": "38",
+    "page": "Shared header and footer",
+    "path": "/",
+    "title": "The life, music and legacy of Hans Gál. Works, recordings, biography and resources from the Hans Gál Society.",
+    "value": "The life, music and legacy of Hans Gál. Works, recordings, biography and resources from the Hans Gál Society.",
+    "value_de": "Das Leben, die Musik und das Erbe von Hans Gál. Werke, Aufnahmen, Biografie und Quellen der Hans-Gál-Gesellschaft."
+  },
+  {
+    "id": "39",
+    "page": "Shared header and footer",
+    "path": "/",
+    "title": "Skip to content",
+    "value": "Skip to content",
+    "value_de": "Zum Inhalt"
+  },
+  {
+    "id": "40",
+    "page": "Shared header and footer",
+    "path": "/",
+    "title": "Hans Gál — home",
+    "value": "Hans Gál — home",
+    "value_de": "Hans Gál — Startseite"
+  },
+  {
+    "id": "41",
+    "page": "Shared header and footer",
+    "path": "/",
+    "title": "Basket",
+    "value": "Basket",
+    "value_de": "Korb"
+  },
+  {
+    "id": "42",
+    "page": "Shared header and footer",
+    "path": "/",
+    "title": "Menu",
+    "value": "Menu",
+    "value_de": "Menü"
+  },
+  {
+    "id": "43",
+    "page": "Shared header and footer",
+    "path": "/",
+    "title": "Main navigation",
+    "value": "Main navigation",
+    "value_de": "Hauptnavigation"
+  },
+  {
+    "id": "44",
+    "page": "Shared header and footer",
+    "path": "/",
+    "title": "Explore",
+    "value": "Explore",
+    "value_de": "Entdecken"
+  },
+  {
+    "id": "45",
+    "page": "Shared header and footer",
+    "path": "/",
+    "title": "Search the site",
+    "value": "Search the site",
+    "value_de": "Website durchsuchen"
+  },
+  {
+    "id": "46",
+    "page": "Shared header and footer",
+    "path": "/",
+    "title": "Search",
+    "value": "Search",
+    "value_de": "Suchen"
+  },
+  {
+    "id": "47",
+    "page": "Shared header and footer",
+    "path": "/",
+    "title": "Search",
+    "value": "Search",
+    "value_de": "Suchen"
+  },
+  {
+    "id": "48",
+    "page": "Shared header and footer",
+    "path": "/",
+    "title": "Audio player",
+    "value": "Audio player",
+    "value_de": "Audioplayer"
+  },
+  {
+    "id": "49",
+    "page": "Shared header and footer",
+    "path": "/",
+    "title": "The Hans Gál Society",
+    "value": "The Hans Gál Society",
+    "value_de": "Die Hans-Gál-Gesellschaft"
+  },
+  {
+    "id": "50",
+    "page": "Shared header and footer",
+    "path": "/",
+    "title": "Music for generations.",
+    "value": "Music for generations.",
+    "value_de": "Musik für Generationen."
+  },
+  {
+    "id": "51",
+    "page": "Shared header and footer",
+    "path": "/",
+    "title": "Exploring and sharing the life and music of Hans Gál, together with his family.",
+    "value": "Exploring and sharing the life and music of Hans Gál, together with his family.",
+    "value_de": "Gemeinsam mit seiner Familie erforschen und vermitteln wir Hans Gáls Leben und Musik."
+  },
+  {
+    "id": "52",
+    "page": "Shared header and footer",
+    "path": "/",
+    "title": "Further information",
+    "value": "Further information",
+    "value_de": "Weitere Informationen"
+  },
+  {
+    "id": "53",
+    "page": "Biography chapters — shared wording",
+    "path": "/hansgal/",
+    "title": "In this section",
+    "value": "In this section",
+    "value_de": "In diesem Abschnitt"
+  },
+  {
+    "id": "54",
+    "page": "Biography chapters — shared wording",
+    "path": "/hansgal/",
+    "title": "Section pages",
+    "value": "Section pages",
+    "value_de": "Seiten in diesem Abschnitt"
+  },
+  {
+    "id": "55",
+    "page": "About Gál",
+    "path": "/hansgal/",
+    "title": "The life & the music",
+    "value": "The life & the music",
+    "value_de": "Das Leben & die Musik"
+  },
+  {
+    "id": "56",
+    "page": "About Gál",
+    "path": "/hansgal/",
+    "title": "About Hans Gál",
+    "value": "About Hans Gál",
+    "value_de": "Über Hans Gál"
+  },
+  {
+    "id": "57",
+    "page": "About Gál",
+    "path": "/hansgal/",
+    "title": "Biographical resources",
+    "value": "Biographical resources",
+    "value_de": "Biografische Quellen"
+  },
+  {
+    "id": "58",
+    "page": "About Gál",
+    "path": "/hansgal/",
+    "title": "Chronology of Gál’s life",
+    "value": "Chronology of Gál’s life",
+    "value_de": "Gáls Leben in Daten"
+  },
+  {
+    "id": "59",
+    "page": "About Gál",
+    "path": "/hansgal/",
+    "title": "Family tree",
+    "value": "Family tree",
+    "value_de": "Stammbaum"
+  },
+  {
+    "id": "60",
+    "page": "Home",
+    "path": "/",
+    "title": "An individual voice.",
+    "value": "An individual voice.",
+    "value_de": "Eine eigene Stimme."
+  },
+  {
+    "id": "61",
+    "page": "Home",
+    "path": "/",
+    "title": "A world of music.",
+    "value": "A world of music.",
+    "value_de": "Eine Welt der Musik."
+  },
+  {
+    "id": "62",
+    "page": "Home",
+    "path": "/",
+    "title": "Explore the life, works and recordings of a composer with his own distinctive language.",
+    "value": "Explore the life, works and recordings of a composer with his own distinctive language.",
+    "value_de": "Entdecken Sie das Leben, die Werke und die Aufnahmen eines Komponisten mit einer ganz eigenen musikalischen Sprache."
+  },
+  {
+    "id": "63",
+    "page": "Home",
+    "path": "/",
+    "title": "Discover the music",
+    "value": "Discover the music",
+    "value_de": "Die Musik entdecken"
+  },
+  {
+    "id": "64",
+    "page": "Home",
+    "path": "/",
+    "title": "Explore the works",
+    "value": "Explore the works",
+    "value_de": "Die Werke erkunden"
+  },
+  {
+    "id": "65",
+    "page": "Home",
+    "path": "/",
+    "title": "Start exploring",
+    "value": "Start exploring",
+    "value_de": "Einstieg"
+  },
+  {
+    "id": "66",
+    "page": "Home",
+    "path": "/",
+    "title": "Listen",
+    "value": "Listen",
+    "value_de": "Hören"
+  },
+  {
+    "id": "67",
+    "page": "Home",
+    "path": "/",
+    "title": "Read",
+    "value": "Read",
+    "value_de": "Lesen"
+  },
+  {
+    "id": "68",
+    "page": "Home",
+    "path": "/",
+    "title": "Explore",
+    "value": "Explore",
+    "value_de": "Entdecken"
+  },
+  {
+    "id": "69",
+    "page": "Home",
+    "path": "/",
+    "title": "Portrait of Hans Gál by Lotte Meitner-Graf",
+    "value": "Portrait of Hans Gál by Lotte Meitner-Graf",
+    "value_de": "Porträt von Hans Gál von Lotte Meitner-Graf"
+  },
+  {
+    "id": "70",
+    "page": "Home",
+    "path": "/",
+    "title": "Photo:",
+    "value": "Photo:",
+    "value_de": "Foto:"
+  },
+  {
+    "id": "71",
+    "page": "Home",
+    "path": "/",
+    "title": "Discover Hans Gál",
+    "value": "Discover Hans Gál",
+    "value_de": "Hans Gál entdecken"
+  },
+  {
+    "id": "72",
+    "page": "Home",
+    "path": "/",
+    "title": "A life in music. A legacy to explore.",
+    "value": "A life in music. A legacy to explore.",
+    "value_de": "Ein Leben für die Musik. Ein Erbe zum Entdecken."
+  },
+  {
+    "id": "73",
+    "page": "Home",
+    "path": "/",
+    "title": "The life",
+    "value": "The life",
+    "value_de": "Das Leben"
+  },
+  {
+    "id": "74",
+    "page": "Home",
+    "path": "/",
+    "title": "From Vienna and Mainz to Edinburgh: a biography in chapters, photographs and recollections.",
+    "value": "From Vienna and Mainz to Edinburgh: a biography in chapters, photographs and recollections.",
+    "value_de": "Von Wien und Mainz nach Edinburgh: eine Biografie in Kapiteln, Fotografien und Erinnerungen."
+  },
+  {
+    "id": "75",
+    "page": "Home",
+    "path": "/",
+    "title": "Read the biography",
+    "value": "Read the biography",
+    "value_de": "Die Biografie lesen"
+  },
+  {
+    "id": "76",
+    "page": "Home",
+    "path": "/",
+    "title": "The works",
+    "value": "The works",
+    "value_de": "Die Werke"
+  },
+  {
+    "id": "77",
+    "page": "Home",
+    "path": "/",
+    "title": "Find a work by title, opus, instrument or genre. Explore its history, recordings and available scores.",
+    "value": "Find a work by title, opus, instrument or genre. Explore its history, recordings and available scores.",
+    "value_de": "Finden Sie ein Werk nach Titel, Opus, Instrument oder Gattung – mit Hintergründen, Aufnahmen und verfügbaren Noten."
+  },
+  {
+    "id": "78",
+    "page": "Home",
+    "path": "/",
+    "title": "Open the catalogue",
+    "value": "Open the catalogue",
+    "value_de": "Zum Werkverzeichnis"
+  },
+  {
+    "id": "79",
+    "page": "Home",
+    "path": "/",
+    "title": "The music",
+    "value": "The music",
+    "value_de": "Die Musik"
+  },
+  {
+    "id": "80",
+    "page": "Home",
+    "path": "/",
+    "title": "Listen to excerpts and discover the melodic voice and contrapuntal imagination of Hans Gál.",
+    "value": "Listen to excerpts and discover the melodic voice and contrapuntal imagination of Hans Gál.",
+    "value_de": "Hören Sie Ausschnitte und entdecken Sie Hans Gáls melodische Sprache und kontrapunktische Fantasie."
+  },
+  {
+    "id": "81",
+    "page": "Home",
+    "path": "/",
+    "title": "Start listening",
+    "value": "Start listening",
+    "value_de": "Musik hören"
+  },
+  {
+    "id": "82",
+    "page": "Home",
+    "path": "/",
+    "title": "On record",
+    "value": "On record",
+    "value_de": "Aufnahmen"
+  },
+  {
+    "id": "83",
+    "page": "Home",
+    "path": "/",
+    "title": "The music, brought to life.",
+    "value": "The music, brought to life.",
+    "value_de": "Die Musik wird lebendig."
+  },
+  {
+    "id": "84",
+    "page": "Home",
+    "path": "/",
+    "title": "Browse all recordings",
+    "value": "Browse all recordings",
+    "value_de": "Alle Aufnahmen ansehen"
+  },
+  {
+    "id": "85",
+    "page": "Home",
+    "path": "/",
+    "title": "Explore this recording",
+    "value": "Explore this recording",
+    "value_de": "Diese Aufnahme entdecken"
+  },
+  {
+    "id": "86",
+    "page": "Home",
+    "path": "/",
+    "title": "The Hans Gál Society",
+    "value": "The Hans Gál Society",
+    "value_de": "Die Hans-Gál-Gesellschaft"
+  },
+  {
+    "id": "87",
+    "page": "Home",
+    "path": "/",
+    "title": "Keeping the music in our lives.",
+    "value": "Keeping the music in our lives.",
+    "value_de": "Damit die Musik lebendig bleibt."
+  },
+  {
+    "id": "88",
+    "page": "Home",
+    "path": "/",
+    "title": "A not-for-profit resource, jointly managed by the Hans Gál Society and Gál’s family. Discover our work, explore the news and help this music reach new listeners.",
+    "value": "A not-for-profit resource, jointly managed by the Hans Gál Society and Gál’s family. Discover our work, explore the news and help this music reach new listeners.",
+    "value_de": "Eine gemeinnützige Informationsquelle, gemeinsam betreut von der Hans-Gál-Gesellschaft und Gáls Familie. Entdecken Sie unsere Arbeit und unsere Neuigkeiten und helfen Sie uns, neue Hörer zu erreichen."
+  },
+  {
+    "id": "89",
+    "page": "Home",
+    "path": "/",
+    "title": "Meet the Society",
+    "value": "Meet the Society",
+    "value_de": "Die Gesellschaft kennenlernen"
+  },
+  {
+    "id": "90",
+    "page": "Home",
+    "path": "/",
+    "title": "News & events",
+    "value": "News & events",
+    "value_de": "Aktuelles & Veranstaltungen"
+  },
+  {
+    "id": "91",
+    "page": "Photographs",
+    "path": "/photos/",
+    "title": "The archive",
+    "value": "The archive",
+    "value_de": "Das Archiv"
+  },
+  {
+    "id": "92",
+    "page": "Photographs",
+    "path": "/photos/",
+    "title": "Photographs",
+    "value": "Photographs",
+    "value_de": "Fotografien"
+  },
+  {
+    "id": "93",
+    "page": "Recordings",
+    "path": "/recordings/",
+    "title": "Listen & discover",
+    "value": "Listen & discover",
+    "value_de": "Hören & entdecken"
+  },
+  {
+    "id": "94",
+    "page": "Recordings",
+    "path": "/recordings/",
+    "title": "Recordings",
+    "value": "Recordings",
+    "value_de": "Aufnahmen"
+  },
+  {
+    "id": "95",
+    "page": "Recordings",
+    "path": "/recordings/",
+    "title": "All recordings",
+    "value": "All recordings",
+    "value_de": "Alle Aufnahmen"
+  },
+  {
+    "id": "96",
+    "page": "Recording pages — shared wording",
+    "path": "/recordings/",
+    "title": "The recording collection",
+    "value": "The recording collection",
+    "value_de": "Die Aufnahmensammlung"
+  },
+  {
+    "id": "97",
+    "page": "Recording pages — shared wording",
+    "path": "/recordings/",
+    "title": "Find a recording",
+    "value": "Find a recording",
+    "value_de": "Eine Aufnahme finden"
+  },
+  {
+    "id": "98",
+    "page": "Recording pages — shared wording",
+    "path": "/recordings/",
+    "title": "Horizontal view",
+    "value": "Horizontal view",
+    "value_de": "Horizontale Ansicht"
+  },
+  {
+    "id": "99",
+    "page": "Recording pages — shared wording",
+    "path": "/recordings/",
+    "title": "Enlarge cover",
+    "value": "Enlarge cover",
+    "value_de": "Cover vergrößern"
+  },
+  {
+    "id": "100",
+    "page": "Recording pages — shared wording",
+    "path": "/recordings/",
+    "title": "Listen to excerpts",
+    "value": "Listen to excerpts",
+    "value_de": "Hörproben"
+  },
+  {
+    "id": "101",
+    "page": "Search",
+    "path": "/search/",
+    "title": "Explore the archive",
+    "value": "Explore the archive",
+    "value_de": "Das Archiv erkunden"
+  },
+  {
+    "id": "102",
+    "page": "Search",
+    "path": "/search/",
+    "title": "Search the site",
+    "value": "Search the site",
+    "value_de": "Website durchsuchen"
+  },
+  {
+    "id": "103",
+    "page": "Search",
+    "path": "/search/",
+    "title": "What would you like to find?",
+    "value": "What would you like to find?",
+    "value_de": "Was möchten Sie finden?"
+  },
+  {
+    "id": "104",
+    "page": "Search",
+    "path": "/search/",
+    "title": "Search",
+    "value": "Search",
+    "value_de": "Suchen"
+  },
+  {
+    "id": "105",
+    "page": "Section pages — shared wording",
+    "path": "/hansgalsociety/",
+    "title": "In this section",
+    "value": "In this section",
+    "value_de": "In diesem Abschnitt"
+  },
+  {
+    "id": "106",
+    "page": "Section pages — shared wording",
+    "path": "/hansgalsociety/",
+    "title": "Section pages",
+    "value": "Section pages",
+    "value_de": "Seiten in diesem Abschnitt"
+  },
+  {
+    "id": "107",
+    "page": "Works catalogue",
+    "path": "/works/",
+    "title": "The music of Hans Gál",
+    "value": "The music of Hans Gál",
+    "value_de": "Die Musik von Hans Gál"
+  },
+  {
+    "id": "108",
+    "page": "Works catalogue",
+    "path": "/works/",
+    "title": "Works catalogue",
+    "value": "Works catalogue",
+    "value_de": "Werkverzeichnis"
+  },
+  {
+    "id": "109",
+    "page": "Works catalogue",
+    "path": "/works/",
+    "title": "Title",
+    "value": "Title",
+    "value_de": "Titel"
+  },
+  {
+    "id": "110",
+    "page": "Works catalogue",
+    "path": "/works/",
+    "title": "Title or keyword",
+    "value": "Title or keyword",
+    "value_de": "Titel oder Suchbegriff"
+  },
+  {
+    "id": "111",
+    "page": "Works catalogue",
+    "path": "/works/",
+    "title": "Filter by genre, instrument, opus or year",
+    "value": "Filter by genre, instrument, opus or year",
+    "value_de": "Nach Gattung, Instrument, Opus oder Jahr filtern"
+  },
+  {
+    "id": "112",
+    "page": "Works catalogue",
+    "path": "/works/",
+    "title": "Genre",
+    "value": "Genre",
+    "value_de": "Gattung"
+  },
+  {
+    "id": "113",
+    "page": "Works catalogue",
+    "path": "/works/",
+    "title": "Instrument",
+    "value": "Instrument",
+    "value_de": "Instrument"
+  },
+  {
+    "id": "114",
+    "page": "Works catalogue",
+    "path": "/works/",
+    "title": "e.g. 33",
+    "value": "e.g. 33",
+    "value_de": "z. B. 33"
+  },
+  {
+    "id": "115",
+    "page": "Works catalogue",
+    "path": "/works/",
+    "title": "Year",
+    "value": "Year",
+    "value_de": "Jahr"
+  },
+  {
+    "id": "116",
+    "page": "Works catalogue",
+    "path": "/works/",
+    "title": "Publisher",
+    "value": "Publisher",
+    "value_de": "Verlag"
+  },
+  {
+    "id": "117",
+    "page": "Works catalogue",
+    "path": "/works/",
+    "title": "Find works",
+    "value": "Find works",
+    "value_de": "Werke finden"
+  },
+  {
+    "id": "118",
+    "page": "Works catalogue",
+    "path": "/works/",
+    "title": "Clear filters",
+    "value": "Clear filters",
+    "value_de": "Filter zurücksetzen"
+  },
+  {
+    "id": "119",
+    "page": "Works catalogue",
+    "path": "/works/",
+    "title": "Search tips",
+    "value": "Search tips",
+    "value_de": "Hinweise zur Suche"
+  },
+  {
+    "id": "120",
+    "page": "Works catalogue",
+    "path": "/works/",
+    "title": "Availability symbols",
+    "value": "Availability symbols",
+    "value_de": "Verfügbarkeitssymbole"
+  },
+  {
+    "id": "121",
+    "page": "Works catalogue",
+    "path": "/works/",
+    "title": "Score",
+    "value": "Score",
+    "value_de": "Noten"
+  },
+  {
+    "id": "122",
+    "page": "Works catalogue",
+    "path": "/works/",
+    "title": "Recording",
+    "value": "Recording",
+    "value_de": "Aufnahme"
+  },
+  {
+    "id": "123",
+    "page": "Works catalogue",
+    "path": "/works/",
+    "title": "Listen",
+    "value": "Listen",
+    "value_de": "Hören"
+  },
+  {
+    "id": "124",
+    "page": "Works catalogue",
+    "path": "/works/",
+    "title": "works",
+    "value": "works",
+    "value_de": "Werke"
+  },
+  {
+    "id": "125",
+    "page": "Works catalogue",
+    "path": "/works/",
+    "title": "Works catalogue results",
+    "value": "Works catalogue results",
+    "value_de": "Ergebnisse im Werkverzeichnis"
+  },
+  {
+    "id": "126",
+    "page": "Works catalogue",
+    "path": "/works/",
+    "title": "sort ascending",
+    "value": "sort ascending",
+    "value_de": "aufsteigend sortieren"
+  },
+  {
+    "id": "127",
+    "page": "Works catalogue",
+    "path": "/works/",
+    "title": "sort descending",
+    "value": "sort descending",
+    "value_de": "absteigend sortieren"
+  },
+  {
+    "id": "128",
+    "page": "Works catalogue",
+    "path": "/works/",
+    "title": "Available",
+    "value": "Available",
+    "value_de": "Verfügbar"
+  },
+  {
+    "id": "129",
+    "page": "Works catalogue",
+    "path": "/works/",
+    "title": "Title",
+    "value": "Title",
+    "value_de": "Titel"
+  },
+  {
+    "id": "130",
+    "page": "Works catalogue",
+    "path": "/works/",
+    "title": "Description",
+    "value": "Description",
+    "value_de": "Beschreibung"
+  },
+  {
+    "id": "131",
+    "page": "Works catalogue",
+    "path": "/works/",
+    "title": "Year",
+    "value": "Year",
+    "value_de": "Jahr"
+  },
+  {
+    "id": "132",
+    "page": "Works catalogue",
+    "path": "/works/",
+    "title": "Publisher",
+    "value": "Publisher",
+    "value_de": "Verlag"
+  },
+  {
+    "id": "133",
+    "page": "Works catalogue",
+    "path": "/works/",
+    "title": "Available",
+    "value": "Available",
+    "value_de": "Verfügbar"
+  },
+  {
+    "id": "134",
+    "page": "Works catalogue",
+    "path": "/works/",
+    "title": "Downloadable score available",
+    "value": "Downloadable score available",
+    "value_de": "Noten zum Herunterladen verfügbar"
+  },
+  {
+    "id": "135",
+    "page": "Works catalogue",
+    "path": "/works/",
+    "title": "Downloadable score available",
+    "value": "Downloadable score available",
+    "value_de": "Noten zum Herunterladen verfügbar"
+  },
+  {
+    "id": "136",
+    "page": "Works catalogue",
+    "path": "/works/",
+    "title": "Recordings available",
+    "value": "Recordings available",
+    "value_de": "Aufnahmen verfügbar"
+  },
+  {
+    "id": "137",
+    "page": "Works catalogue",
+    "path": "/works/",
+    "title": "Recordings available",
+    "value": "Recordings available",
+    "value_de": "Aufnahmen verfügbar"
+  },
+  {
+    "id": "138",
+    "page": "Works catalogue",
+    "path": "/works/",
+    "title": "Audio samples available",
+    "value": "Audio samples available",
+    "value_de": "Hörproben verfügbar"
+  },
+  {
+    "id": "139",
+    "page": "Works catalogue",
+    "path": "/works/",
+    "title": "Audio samples available",
+    "value": "Audio samples available",
+    "value_de": "Hörproben verfügbar"
+  },
+  {
+    "id": "140",
+    "page": "Work pages — shared wording",
+    "path": "/works/",
+    "title": "Works catalogue",
+    "value": "Works catalogue",
+    "value_de": "Werkverzeichnis"
+  },
+  {
+    "id": "141",
+    "page": "Work pages — shared wording",
+    "path": "/works/",
+    "title": "Download work details (PDF)",
+    "value": "Download work details (PDF)",
+    "value_de": "Werkinformation als PDF herunterladen"
+  },
+  {
+    "id": "142",
+    "page": "Work pages — shared wording",
+    "path": "/works/",
+    "title": "Suggested donation",
+    "value": "Suggested donation",
+    "value_de": "Empfohlene Spende"
+  },
+  {
+    "id": "143",
+    "page": "Work pages — shared wording",
+    "path": "/works/",
+    "title": "A £0 download is also available.",
+    "value": "A £0 download is also available.",
+    "value_de": "Ein Download für £0 ist ebenfalls möglich."
+  }
+]

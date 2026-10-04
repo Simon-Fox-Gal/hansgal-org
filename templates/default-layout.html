@@ -2,7 +2,7 @@
 <html lang="{{ language }}" xmlns="http://www.w3.org/1999/xhtml">
 <head>
  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
- <title></title><meta name="description" content="{{ tr('The life, music and legacy of Hans Gál. Works, recordings, biography and resources from the Hans Gál Society.','Das Leben, die Musik und das Erbe von Hans Gál. Werke, Aufnahmen, Biografie und Quellen der Hans-Gál-Gesellschaft.') }}">
+ <title></title><meta name="description" content="{{ page_text('38') }}">
  <meta name="robots" content="index,follow">
  <link rel="stylesheet" href="/app/edition.css">
  <link rel="stylesheet" href="/app/editorial.css?v=audio2">
@@ -12,30 +12,30 @@
  <script src="/app/replica.js" defer></script><script src="/app/edition.js" defer></script>
 </head>
 <body id="top" class="section-{{ mainmenu or 'home' }}" data-page="{{ route }}">
- <a class="skip-link" href="#main-content">{{ tr('Skip to content','Zum Inhalt') }}</a>
+ <a class="skip-link" href="#main-content">{{ page_text('39') }}</a>
  <div id="wrapper">
  <header class="masthead">
   <div class="masthead-inner">
-   <a class="brand" href="/" aria-label="{{ tr('Hans Gál — home','Hans Gál — Startseite') }}"><img src="/gfx/images/hansgal-logo-website.png" width="314" height="117" alt="The Hans Gál Website — music for generations"></a>
-   <div class="header-tools"><!-- LANGUAGE_SWITCH --><a class="basket-link" href="/score-basket/"><svg class="basket-icon" viewBox="0 0 32 32" width="28" height="28" aria-hidden="true" focusable="false"><path d="M3 13h26l-3 15H6L3 13Zm5 0 5-9m11 9-4-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M18 16v7" fill="none" stroke="currentColor" stroke-width="2"/><path d="m18 16 5 2v3l-5-2Z" fill="currentColor"/><ellipse cx="15.5" cy="23" rx="3" ry="2" fill="currentColor"/></svg><span>{{ tr('Basket','Korb') }}</span></a></div>
-   <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation">{{ tr('Menu','Menü') }} <span aria-hidden="true">☰</span></button>
-   <nav id="site-navigation" class="site-navigation" aria-label="{{ tr('Main navigation','Hauptnavigation') }}">
+   <a class="brand" href="/" aria-label="{{ page_text('40') }}"><img src="/gfx/images/hansgal-logo-website.png" width="314" height="117" alt="The Hans Gál Website — music for generations"></a>
+   <div class="header-tools"><!-- LANGUAGE_SWITCH --><a class="basket-link" href="/score-basket/"><svg class="basket-icon" viewBox="0 0 32 32" width="28" height="28" aria-hidden="true" focusable="false"><path d="M3 13h26l-3 15H6L3 13Zm5 0 5-9m11 9-4-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M18 16v7" fill="none" stroke="currentColor" stroke-width="2"/><path d="m18 16 5 2v3l-5-2Z" fill="currentColor"/><ellipse cx="15.5" cy="23" rx="3" ry="2" fill="currentColor"/></svg><span>{{ page_text('41') }}</span></a></div>
+   <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation">{{ page_text('42') }} <span aria-hidden="true">☰</span></button>
+   <nav id="site-navigation" class="site-navigation" aria-label="{{ page_text('43') }}">
     {% for path,en,de in [('hansgal','About Gál','Über Gál'),('works','Works','Werke'),('recordings','Recordings','Aufnahmen'),('news','News','Aktuelles'),('hansgalsociety','The Society','Die Gesellschaft')] %}
     <a href="/{{ path }}/" {% if mainmenu==path %}aria-current="page"{% endif %}>{{ tr(en,de) }}</a>
     {% endfor %}
-    <details class="explore-menu"><summary>{{ tr('Explore','Entdecken') }}</summary><div class="explore-links">
+    <details class="explore-menu"><summary>{{ page_text('44') }}</summary><div class="explore-links">
     {% for path,en,de in [('audiosamples','Listen','Hören'),('booksandarticles','Books & articles','Bücher & Artikel'),('photos','Photographs','Fotografien'),('publishers','Publishers','Verlage'),('bibliography','Bibliography','Bibliografie'),('faqs','Questions & answers','Fragen & Antworten'),('contacts','Contact','Kontakt'),('donate','Support the Society','Die Gesellschaft unterstützen')] %}
      <a href="/{{ path }}/">{{ tr(en,de) }}</a>
     {% endfor %}</div></details>
    </nav>
-   <div class="searchbox"><form action="/search" method="get" role="search"><label class="sr-only" for="site-search">{{ tr('Search the site','Website durchsuchen') }}</label><input id="site-search" type="search" name="keyword" placeholder="{{ tr('Search','Suchen') }}"><button type="submit">{{ tr('Search','Suchen') }}</button></form></div>
+   <div class="searchbox"><form action="/search" method="get" role="search"><label class="sr-only" for="site-search">{{ page_text('45') }}</label><input id="site-search" type="search" name="keyword" placeholder="{{ page_text('46') }}"><button type="submit">{{ page_text('47') }}</button></form></div>
   </div>
  </header>
  <main id="main-content" tabindex="-1">{{ CONTENT }}</main>
- <div class="global-player" id="player" aria-label="{{ tr('Audio player','Audioplayer') }}"></div>
+ <div class="global-player" id="player" aria-label="{{ page_text('48') }}"></div>
  <footer class="site-footer"><div class="footer-inner">
-  <div class="footer-intro"><p class="eyebrow">{{ tr('The Hans Gál Society','Die Hans-Gál-Gesellschaft') }}</p><h2>{{ tr('Music for generations.','Musik für Generationen.') }}</h2><p>{{ tr('Exploring and sharing the life and music of Hans Gál, together with his family.','Gemeinsam mit seiner Familie erforschen und vermitteln wir Hans Gáls Leben und Musik.') }}</p></div>
-  <nav aria-label="{{ tr('Further information','Weitere Informationen') }}">{% for path,en,de in [('hansgal','About Hans Gál','Über Hans Gál'),('works','Works catalogue','Werkverzeichnis'),('audiosamples','Listen to the music','Musik hören'),('booksandarticles','Books & articles','Bücher & Artikel'),('publishers','Publishers','Verlage'),('bibliography','Bibliography','Bibliografie'),('photos','Photographs','Fotografien'),('faqs','Questions & answers','Fragen & Antworten'),('contacts','Contact','Kontakt'),('donate','Support the Society','Die Gesellschaft unterstützen')] %}<a href="/{{ path }}/">{{ tr(en,de) }}</a>{% endfor %}</nav>
+  <div class="footer-intro"><p class="eyebrow">{{ page_text('49') }}</p><h2>{{ page_text('50') }}</h2><p>{{ page_text('51') }}</p></div>
+  <nav aria-label="{{ page_text('52') }}">{% for path,en,de in [('hansgal','About Hans Gál','Über Hans Gál'),('works','Works catalogue','Werkverzeichnis'),('audiosamples','Listen to the music','Musik hören'),('booksandarticles','Books & articles','Bücher & Artikel'),('publishers','Publishers','Verlage'),('bibliography','Bibliography','Bibliografie'),('photos','Photographs','Fotografien'),('faqs','Questions & answers','Fragen & Antworten'),('contacts','Contact','Kontakt'),('donate','Support the Society','Die Gesellschaft unterstützen')] %}<a href="/{{ path }}/">{{ tr(en,de) }}</a>{% endfor %}</nav>
   <div id="copyright">{{ copyright_footer.value }}</div>
  </div></footer></div>
 </body></html>
