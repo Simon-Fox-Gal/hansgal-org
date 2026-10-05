@@ -1,0 +1,1171 @@
+{
+  "checked_date": "2026-10-05",
+  "scope": "Every structured sheet-music sales link, excluding hire-only links. All external work-page anchors open a new tab.",
+  "method": "Read product identity, edition/format, price and ordering controls using direct HTTP, browser DOM and indexed retailer pages. No order was submitted. HTTP success alone is not proof of purchase. Access-limited existing links are explicitly recorded rather than asserted to work.",
+  "retailer_regions": "UK and EU indicate retailer base, not guaranteed delivery country or tax treatment. Stretta is a German retailer; its English UK storefront allows selection of the delivery country.",
+  "entries": [
+    {
+      "work_id": "8",
+      "opus": "6",
+      "field": "purchase_url",
+      "original_url": "https://www.boosey.com/purchase-music/Hans-Gal-Suite-for-cello-and-piano/27974",
+      "decision": "replaced",
+      "current_urls": [
+        "https://www.stretta-music.uk/gl-suite-op-6-nr-495807.html",
+        "https://www.prestomusic.com/sheet-music/products/7251189--gal-h-suite-op-6"
+      ]
+    },
+    {
+      "work_id": "11",
+      "opus": "9",
+      "field": "purchase_url",
+      "original_url": "https://www.stretta-music.at/gl-variationen-op-9-nr-208871.html",
+      "decision": "retained_shop",
+      "current_urls": [
+        "https://www.stretta-music.at/gl-variationen-op-9-nr-208871.html"
+      ],
+      "verification_note": "Exact edition and enabled Add to cart confirmed on the retailer\u2019s English storefront; original localized product URL retained.",
+      "verification_url": "https://www.stretta-music.uk/gl-variationen-op-9-nr-208871.html"
+    },
+    {
+      "work_id": "12",
+      "opus": "10",
+      "field": "purchase_url",
+      "original_url": "https://www.boosey.com/purchase-music/Hans-Gal-5-Intermezzi/51490",
+      "decision": "replaced",
+      "current_urls": [
+        "https://www.stretta-music.uk/gl-5-intermezzi-op-10-nr-1539149.html",
+        "https://www.prestomusic.com/sheet-music/products/7250660--gal-h-5-intermezzi-op-10"
+      ]
+    },
+    {
+      "work_id": "13",
+      "opus": "10a",
+      "field": "purchase_url",
+      "original_url": "https://www.trekel.de/detailview?no=466056",
+      "decision": "retained_shop",
+      "current_urls": [
+        "https://www.trekel.de/detailview?no=466056"
+      ]
+    },
+    {
+      "work_id": "17",
+      "opus": "13",
+      "field": "purchase_url",
+      "original_url": "https://www.boosey.com/publications/sheet-music/Hans-Gal-Piano-Quartet-B-flat-op-13/36834",
+      "decision": "replaced",
+      "current_urls": [
+        "https://www.stretta-music.uk/klavierquartett-b-dur-op-13-nr-1538916.html",
+        "https://www.prestomusic.com/sheet-music/products/7250662--gal-h-piano-quartet-b-flat-major-op-13"
+      ]
+    },
+    {
+      "work_id": "18",
+      "opus": "14",
+      "field": "purchase_url",
+      "original_url": "https://theaterverlag-eirich.at/index.php?Itemid=148&catid=1860%3A_mw_de_G%C3%A1l-Hans&id=10554546%3AKinderverse-op--14_de&lang=de&option=com_phocacart&view=item",
+      "decision": "publisher_information",
+      "current_urls": [
+        "https://theaterverlag-eirich.at/index.php?Itemid=148&catid=1860%3A_mw_de_G%C3%A1l-Hans&id=10554546%3AKinderverse-op--14_de&lang=de&option=com_phocacart&view=item"
+      ]
+    },
+    {
+      "work_id": "20",
+      "opus": "16",
+      "field": "purchase_url",
+      "original_url": "https://www.boosey.com/purchase-music/Hans-Gal-String-Quartet-No-1-in-F-minor/51491",
+      "decision": "replaced",
+      "current_urls": [
+        "https://www.stretta-music.uk/gl-streichquartett-nr-1-f-moll-op-16-nr-1539101.html",
+        "https://www.prestomusic.com/sheet-music/products/7250669--gal-h-string-quartet-no-1-in-f-minor-f-minor-op-16"
+      ]
+    },
+    {
+      "work_id": "21",
+      "opus": "17",
+      "field": "purchase_url",
+      "original_url": "https://www.boosey.com/cr/music/Hans-Gal-Violin-Sonata/51232",
+      "decision": "replaced",
+      "current_urls": [
+        "https://www.stretta-music.uk/gl-sonate-op-17-nr-674648.html",
+        "https://www.prestomusic.com/sheet-music/products/7250663--gal-h-sonata-op-17"
+      ]
+    },
+    {
+      "work_id": "22",
+      "opus": "18",
+      "field": "purchase_url",
+      "original_url": "https://www.boosey.com/publications/sheet-music/Hans-Gal-Piano-Trio-in-E-op-18/36849",
+      "decision": "replaced",
+      "current_urls": [
+        "https://www.stretta-music.uk/gl-trio-e-dur-op-18-nr-1538940.html",
+        "https://www.prestomusic.com/sheet-music/products/7250664--gal-h-trio-in-e-major-e-major-op-18"
+      ]
+    },
+    {
+      "work_id": "132",
+      "opus": "",
+      "field": "purchase_url",
+      "original_url": "https://www.demond.de/hans-gal-capriccio-fuer-mandolinenorchester-21600",
+      "decision": "retained_shop",
+      "current_urls": [
+        "https://www.demond.de/hans-gal-capriccio-fuer-mandolinenorchester-21600"
+      ]
+    },
+    {
+      "work_id": "25",
+      "opus": "21",
+      "field": "purchase_url",
+      "original_url": "https://www.demond.de/hans-gal-2-geistliche-gesaenge-op-21-fuer-sopran-gambe-violoncello-und-orgel-67434",
+      "decision": "retained_shop",
+      "current_urls": [
+        "https://www.demond.de/hans-gal-2-geistliche-gesaenge-op-21-fuer-sopran-gambe-violoncello-und-orgel-67434"
+      ]
+    },
+    {
+      "work_id": "117",
+      "opus": "100",
+      "field": "purchase_url",
+      "original_url": "https://www.boosey.com/cr/music/Hans-Gal-Triptych/28683",
+      "decision": "replaced",
+      "current_urls": [
+        "https://www.stretta-music.uk/gl-triptych-op-100-nr-1538864.html",
+        "https://www.prestomusic.com/sheet-music/products/7251154--gal-h-triptych-op-100"
+      ]
+    },
+    {
+      "work_id": "123",
+      "opus": "105",
+      "field": "purchase_url",
+      "original_url": "https://www.boosey.com/cr/music/Hans-Gal-Symphony-No-4-Sinfonia-Concertante/28542",
+      "decision": "replaced",
+      "current_urls": [
+        "https://www.stretta-music.uk/gl-symphonie-nr-4-op-105-nr-1539069.html",
+        "https://www.prestomusic.com/sheet-music/products/7251179--gal-h-symphony-4-in-b-flat-op-105"
+      ]
+    },
+    {
+      "work_id": "28",
+      "opus": "23",
+      "field": "purchase_url",
+      "original_url": "https://repertoire-explorer.musikmph.de/de/produkt/gal-hans/",
+      "decision": "retained_shop",
+      "current_urls": [
+        "https://repertoire-explorer.musikmph.de/de/produkt/gal-hans/"
+      ]
+    },
+    {
+      "work_id": "96",
+      "opus": "81",
+      "field": "purchase_url",
+      "original_url": "https://www.demond.de/hans-gal-sinfonietta-fuer-mandolinen-orchester-partitur-184074",
+      "decision": "retained_shop",
+      "current_urls": [
+        "https://www.demond.de/hans-gal-sinfonietta-fuer-mandolinen-orchester-partitur-184074"
+      ]
+    },
+    {
+      "work_id": "134",
+      "opus": "",
+      "field": "purchase_url",
+      "original_url": "https://www.stretta-music.de/gl-kleine-suite-nr-314371.html",
+      "decision": "retained_shop",
+      "current_urls": [
+        "https://www.stretta-music.de/gl-kleine-suite-nr-314371.html",
+        "https://www.stretta-music.de/gl-kleine-suite-nr-748615.html"
+      ]
+    },
+    {
+      "work_id": "134",
+      "opus": "",
+      "field": "score_purchase_download_url",
+      "original_url": "https://www.stretta-music.de/gl-kleine-suite-nr-748615.html",
+      "decision": "retained_shop",
+      "current_urls": [
+        "https://www.stretta-music.de/gl-kleine-suite-nr-314371.html",
+        "https://www.stretta-music.de/gl-kleine-suite-nr-748615.html"
+      ]
+    },
+    {
+      "work_id": "98",
+      "opus": "83",
+      "field": "purchase_url",
+      "original_url": "https://www.sheetmusicplus.com/en/product/preludes-24-book-1-piano-5498557.html",
+      "decision": "replaced",
+      "current_urls": [
+        "https://www.prestomusic.com/sheet-music/products/7308349--gal-h-24-preludes-book-1-op-83",
+        "https://www.prestomusic.com/sheet-music/products/7308350--gal-h-24-preludes-book-2-op-83",
+        "https://musikhaus-magunia.notenlink-shop.de/hans-gal-24-preludes-vol-2-nos-13-24-for-piano-209603",
+        "https://www.all-sheetmusic.com/Piano-Organ-Accordion/Piano/GAL-24-PRELUDES-BOOK-1-S-Pft-op-83-Band-1.html"
+      ]
+    },
+    {
+      "work_id": "98",
+      "opus": "83",
+      "field": "purchase_url",
+      "original_url": "https://www.sheetmusicplus.com/en/product/preludes-24-book-2-piano-5498563.html",
+      "decision": "replaced",
+      "current_urls": [
+        "https://www.prestomusic.com/sheet-music/products/7308349--gal-h-24-preludes-book-1-op-83",
+        "https://www.prestomusic.com/sheet-music/products/7308350--gal-h-24-preludes-book-2-op-83",
+        "https://musikhaus-magunia.notenlink-shop.de/hans-gal-24-preludes-vol-2-nos-13-24-for-piano-209603",
+        "https://www.all-sheetmusic.com/Piano-Organ-Accordion/Piano/GAL-24-PRELUDES-BOOK-1-S-Pft-op-83-Band-1.html"
+      ]
+    },
+    {
+      "work_id": "126",
+      "opus": "108",
+      "field": "purchase_url",
+      "original_url": "https://www.sheetmusicplus.com/en/product/24-fugues-op108-pno-21337611.html",
+      "decision": "replaced",
+      "current_urls": [
+        "https://schottmusiclondon.com/24-fugues-noq53963.html",
+        "https://www.schott-music.com/en/24-fugues-noq53963.html"
+      ]
+    },
+    {
+      "work_id": "36",
+      "opus": "31",
+      "field": "purchase_url",
+      "original_url": "https://www.schott-music.com/en/three-songs-no174403.html",
+      "decision": "retained_shop",
+      "current_urls": [
+        "https://www.schott-music.com/en/three-songs-no174403.html"
+      ]
+    },
+    {
+      "work_id": "37",
+      "opus": "32",
+      "field": "purchase_url",
+      "original_url": "https://theaterverlag-eirich.at/index.php?Itemid=148&catid=1860%3A_mw_de_G%C3%A1l-Hans&id=10554548%3AFuenf-ernste-Gesaenge-op--32_de&lang=de&option=com_phocacart&view=item",
+      "decision": "publisher_information",
+      "current_urls": [
+        "https://theaterverlag-eirich.at/index.php?Itemid=148&catid=1860%3A_mw_de_G%C3%A1l-Hans&id=10554548%3AFuenf-ernste-Gesaenge-op--32_de&lang=de&option=com_phocacart&view=item"
+      ]
+    },
+    {
+      "work_id": "38",
+      "opus": "33",
+      "field": "purchase_url",
+      "original_url": "https://www.schott-music.com/en/5-songs-no174400.html",
+      "decision": "retained_shop",
+      "current_urls": [
+        "https://www.schott-music.com/en/5-songs-no174400.html"
+      ]
+    },
+    {
+      "work_id": "39",
+      "opus": "34",
+      "field": "purchase_url",
+      "original_url": "https://www.schott-music.com/de/drei-portraetstudien-noc22063.html",
+      "decision": "retained_shop",
+      "current_urls": [
+        "https://www.schott-music.com/de/drei-portraetstudien-noc22063.html"
+      ]
+    },
+    {
+      "work_id": "39",
+      "opus": "34",
+      "field": "score_purchase_download_url",
+      "original_url": "https://www.schott-music.com/de/drei-portraetstudien-noc22063.html",
+      "decision": "retained_shop",
+      "current_urls": [
+        "https://www.schott-music.com/de/drei-portraetstudien-noc22063.html"
+      ]
+    },
+    {
+      "work_id": "40",
+      "opus": "35",
+      "field": "purchase_url",
+      "original_url": "https://www.halleonard.com/product/49004143/string-quartet-2-op35-a-min-sc",
+      "decision": "replaced",
+      "current_urls": [
+        "https://www.prestomusic.com/sheet-music/products/7242125--gal-h-string-quartet-a-minor-no-2-op-35-score",
+        "https://www.schott-music.com/en/ii-quartet-a-minor-noc33541.html"
+      ]
+    },
+    {
+      "work_id": "44",
+      "opus": "39",
+      "field": "purchase_url",
+      "original_url": "https://www.breitkopf.com/en/work/2575/9790004189344/violin-concerto-op.-39",
+      "decision": "retained_shop",
+      "current_urls": [
+        "https://www.breitkopf.com/en/work/2575/9790004189344/violin-concerto-op.-39"
+      ]
+    },
+    {
+      "work_id": "76",
+      "opus": "65",
+      "field": "purchase_url",
+      "original_url": "https://www.halleonard.com/product/49008372/three-preludes-op-65three-preludes-op-65",
+      "decision": "replaced",
+      "current_urls": [
+        "https://www.prestomusic.com/sheet-music/products/7248531--gal-h-three-preludes-op-65",
+        "https://www.schott-music.com/en/drei-praeludien-noc39798.html",
+        "https://www.prestomusic.com/sheet-music/products/9564619--gal-hans-three-preludes-op-65"
+      ]
+    },
+    {
+      "work_id": "76",
+      "opus": "65",
+      "field": "score_purchase_download_url",
+      "original_url": "https://www.sheetmusicplus.com/en/product/three-preludes-21909710.html",
+      "decision": "replaced",
+      "current_urls": [
+        "https://www.prestomusic.com/sheet-music/products/7248531--gal-h-three-preludes-op-65",
+        "https://www.schott-music.com/en/drei-praeludien-noc39798.html",
+        "https://www.prestomusic.com/sheet-music/products/9564619--gal-hans-three-preludes-op-65"
+      ]
+    },
+    {
+      "work_id": "88",
+      "opus": "74",
+      "field": "purchase_url",
+      "original_url": "https://www.all-sheetmusic.com/Piano-Organ-Accordion/Piano/Three-Marionettes-Op-74.html",
+      "decision": "retained_shop",
+      "current_urls": [
+        "https://www.all-sheetmusic.com/Piano-Organ-Accordion/Piano/Three-Marionettes-Op-74.html"
+      ]
+    },
+    {
+      "work_id": "58",
+      "opus": "51",
+      "field": "purchase_url",
+      "original_url": "https://www.all-sheetmusic.com/Choir/Mixed-Choir/Youth-And-Cupid-Op-51-No-1.html",
+      "decision": "retained_shop",
+      "current_urls": [
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/Youth-And-Cupid-Op-51-No-1.html",
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/True-Love-Op-51-No-2.html",
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/A-Cradle-Song-Op-51-No-3.html",
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/A-Foolish-Love-Op-51-No-4.html"
+      ]
+    },
+    {
+      "work_id": "58",
+      "opus": "51",
+      "field": "purchase_url",
+      "original_url": "https://www.all-sheetmusic.com/Choir/Mixed-Choir/True-Love-Op-51-No-2.html",
+      "decision": "retained_shop",
+      "current_urls": [
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/Youth-And-Cupid-Op-51-No-1.html",
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/True-Love-Op-51-No-2.html",
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/A-Cradle-Song-Op-51-No-3.html",
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/A-Foolish-Love-Op-51-No-4.html"
+      ]
+    },
+    {
+      "work_id": "58",
+      "opus": "51",
+      "field": "purchase_url",
+      "original_url": "https://www.all-sheetmusic.com/Choir/Mixed-Choir/A-Cradle-Song-Op-51-No-3.html",
+      "decision": "retained_shop",
+      "current_urls": [
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/Youth-And-Cupid-Op-51-No-1.html",
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/True-Love-Op-51-No-2.html",
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/A-Cradle-Song-Op-51-No-3.html",
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/A-Foolish-Love-Op-51-No-4.html"
+      ]
+    },
+    {
+      "work_id": "58",
+      "opus": "51",
+      "field": "purchase_url",
+      "original_url": "https://www.all-sheetmusic.com/Choir/Mixed-Choir/A-Foolish-Love-Op-51-No-4.html",
+      "decision": "retained_shop",
+      "current_urls": [
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/Youth-And-Cupid-Op-51-No-1.html",
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/True-Love-Op-51-No-2.html",
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/A-Cradle-Song-Op-51-No-3.html",
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/A-Foolish-Love-Op-51-No-4.html"
+      ]
+    },
+    {
+      "work_id": "75",
+      "opus": "64",
+      "field": "purchase_url",
+      "original_url": "https://www.stretta-music.de/gl-drei-kleine-stuecke-op-64-nr-314370.html",
+      "decision": "retained_shop",
+      "current_urls": [
+        "https://www.stretta-music.de/gl-drei-kleine-stuecke-op-64-nr-314370.html"
+      ],
+      "verification_note": "Exact edition and enabled Add to cart confirmed on the retailer\u2019s English storefront; original localized product URL retained.",
+      "verification_url": "https://www.stretta-music.uk/gl-drei-kleine-stuecke-op-64-nr-314370.html"
+    },
+    {
+      "work_id": "64",
+      "opus": "56",
+      "field": "purchase_url",
+      "original_url": "https://www.prestomusic.com/sheet-music/products/7251151--gal-h-suite-in-g-op-56",
+      "decision": "retained_shop",
+      "current_urls": [
+        "https://www.prestomusic.com/sheet-music/products/7251151--gal-h-suite-in-g-op-56"
+      ]
+    },
+    {
+      "work_id": "65",
+      "opus": "56a",
+      "field": "purchase_url",
+      "original_url": "https://www.heinrichshofen.de/de/instrumental/zupfinstrumente/mandoline/492/partita?c=320",
+      "decision": "access_limited",
+      "current_urls": [
+        "https://www.heinrichshofen.de/de/instrumental/zupfinstrumente/mandoline/492/partita?c=320"
+      ]
+    },
+    {
+      "work_id": "68",
+      "opus": "59a",
+      "field": "purchase_url",
+      "original_url": "https://www.heinrichshofen.de/de/instrumental/zupfinstrumente/mandoline/473/sonatine?c=320",
+      "decision": "access_limited",
+      "current_urls": [
+        "https://www.heinrichshofen.de/de/instrumental/zupfinstrumente/mandoline/473/sonatine?c=320"
+      ]
+    },
+    {
+      "work_id": "69",
+      "opus": "59b",
+      "field": "purchase_url",
+      "original_url": "https://www.heinrichshofen.de/de/instrumental/zupfinstrumente/mandoline/472/suite",
+      "decision": "retained_shop",
+      "current_urls": [
+        "https://www.heinrichshofen.de/de/instrumental/zupfinstrumente/mandoline/472/suite"
+      ]
+    },
+    {
+      "work_id": "72",
+      "opus": "61",
+      "field": "purchase_url",
+      "original_url": "https://www.boosey.com/cr/music/Hans-Gal-4-Gesange/51502",
+      "decision": "publisher_information",
+      "current_urls": [
+        "https://www.boosey.com/cr/music/Hans-Gal-4-Gesange/51502"
+      ]
+    },
+    {
+      "work_id": "79",
+      "opus": "67",
+      "field": "purchase_url",
+      "original_url": "https://www.sheetmusicplus.com/en/product/violoncello-concerto-op-67-20318811.html",
+      "decision": "retained_shop",
+      "current_urls": [
+        "https://www.sheetmusicplus.com/en/product/violoncello-concerto-op-67-20318811.html"
+      ]
+    },
+    {
+      "work_id": "80",
+      "opus": "68a",
+      "field": "purchase_url",
+      "original_url": "https://preigu.de/buecher/suite-op68a-fuer-blockfloete-und-violine/121791764",
+      "decision": "retained_shop",
+      "current_urls": [
+        "https://preigu.de/buecher/suite-op68a-fuer-blockfloete-und-violine/121791764"
+      ]
+    },
+    {
+      "work_id": "81",
+      "opus": "68b",
+      "field": "purchase_url",
+      "original_url": "https://www.sheetmusicplus.com/en/product/6-zweistimmige-inventionen-17869807.html",
+      "decision": "replaced",
+      "current_urls": [
+        "https://www.prestomusic.com/sheet-music/products/7262845--hans-gal-6-zweistimmige-inventionen",
+        "https://www.stretta-music.at/gl-6-zweistimmige-inventionen-op-68b-nr-397339.html"
+      ]
+    },
+    {
+      "work_id": "43",
+      "opus": "38",
+      "field": "purchase_url",
+      "original_url": "https://repertoire-explorer.musikmph.de/product/gal-hans-2/",
+      "decision": "retained_shop",
+      "current_urls": [
+        "https://repertoire-explorer.musikmph.de/product/gal-hans-2/"
+      ]
+    },
+    {
+      "work_id": "85",
+      "opus": "71",
+      "field": "score_purchase_download_url",
+      "original_url": "https://www.prestomusic.com/sheet-music/products/9573872--gal-hans-3-sonatinas-op-71-1-3",
+      "decision": "retained_shop",
+      "current_urls": [
+        "https://www.prestomusic.com/sheet-music/products/9573872--gal-hans-3-sonatinas-op-71-1-3"
+      ]
+    },
+    {
+      "work_id": "89",
+      "opus": "75",
+      "field": "purchase_url",
+      "original_url": "https://www.boosey.com/cr/music/Hans-Gal-Jugendlieder/51503",
+      "decision": "publisher_information",
+      "current_urls": [
+        "https://www.boosey.com/cr/music/Hans-Gal-Jugendlieder/51503"
+      ]
+    },
+    {
+      "work_id": "94",
+      "opus": "80",
+      "field": "purchase_url",
+      "original_url": "https://www.stretta-music.de/gl-divertimento-fuer-mandoline-und-harfe-klavier-op-80-nr-418357.html",
+      "decision": "retained_shop",
+      "current_urls": [
+        "https://www.stretta-music.de/gl-divertimento-fuer-mandoline-und-harfe-klavier-op-80-nr-418357.html"
+      ],
+      "verification_note": "Exact edition and enabled Add to cart confirmed on the retailer\u2019s English storefront; original localized product URL retained.",
+      "verification_url": "https://www.stretta-music.uk/gl-divertimento-fuer-mandoline-und-harfe-klavier-op-80-nr-418357.html"
+    },
+    {
+      "work_id": "97",
+      "opus": "82",
+      "field": "purchase_url",
+      "original_url": "https://www.prestomusic.com/sheet-music/products/7308233--gal-hans-concertino-op-82",
+      "decision": "retained_shop",
+      "current_urls": [
+        "https://www.prestomusic.com/sheet-music/products/7308233--gal-hans-concertino-op-82"
+      ]
+    },
+    {
+      "work_id": "99",
+      "opus": "84",
+      "field": "purchase_url",
+      "original_url": "https://www.schott-music.com/en/sonata-noc65929.html",
+      "decision": "retained_shop",
+      "current_urls": [
+        "https://www.schott-music.com/en/sonata-noc65929.html"
+      ]
+    },
+    {
+      "work_id": "100",
+      "opus": "85",
+      "field": "score_purchase_download_url",
+      "original_url": "https://www.prestomusic.com/sheet-music/products/9566593--gal-hans-sonata-op-85",
+      "decision": "retained_shop",
+      "current_urls": [
+        "https://www.prestomusic.com/sheet-music/products/9566593--gal-hans-sonata-op-85"
+      ]
+    },
+    {
+      "work_id": "102",
+      "opus": "87",
+      "field": "purchase_url",
+      "original_url": "https://www.boosey.com/cr/music/Hans-Gal-Concertino-for-cello-and-strings/28251",
+      "decision": "replaced",
+      "current_urls": [
+        "https://www.stretta-music.uk/gl-concertino-g-moll-op-87-nr-495812.html",
+        "https://www.prestomusic.com/sheet-music/products/7251123--gal-h-cello-concertino-in-g-minor-g-minor-op-87"
+      ]
+    },
+    {
+      "work_id": "103",
+      "opus": "88",
+      "field": "score_purchase_download_url",
+      "original_url": "https://www.stretta-music.de/gl-trio-serenade-nr-793721.html",
+      "decision": "retained_shop",
+      "current_urls": [
+        "https://www.stretta-music.de/gl-trio-serenade-nr-793721.html"
+      ],
+      "verification_note": "Exact edition and enabled Add to cart confirmed on the retailer\u2019s English storefront; original localized product URL retained.",
+      "verification_url": "https://www.stretta-music.uk/gl-trio-serenade-nr-793721.html"
+    },
+    {
+      "work_id": "104",
+      "opus": "89",
+      "field": "purchase_url",
+      "original_url": "https://www.boosey.com/cr/music/Hans-Gal-Cello-Sonata/28356",
+      "decision": "replaced",
+      "current_urls": [
+        "https://www.stretta-music.uk/gl-sonata-op-89-nr-298491.html",
+        "https://www.prestomusic.com/sheet-music/products/7251129--gal-h-sonata-in-c-minor-op-89"
+      ]
+    },
+    {
+      "work_id": "105",
+      "opus": "90(1)",
+      "field": "purchase_url",
+      "original_url": "https://www.prestomusic.com/sheet-music/products/7251130--gal-h-divertimento-op-90-1",
+      "decision": "retained_shop",
+      "current_urls": [
+        "https://www.prestomusic.com/sheet-music/products/7251130--gal-h-divertimento-op-90-1"
+      ]
+    },
+    {
+      "work_id": "106",
+      "opus": "90(2)",
+      "field": "purchase_url",
+      "original_url": "https://www.sheetmusicplus.com/en/product/divertimento-in-a-op-90-2-21253005.html",
+      "decision": "replaced",
+      "current_urls": [
+        "https://www.prestomusic.com/sheet-music/products/7251131--gal-h-divertimento-in-a-a-major-op-90-2",
+        "https://www.broekmans.com/nl/bladmuziek/divertimento-op90-no2-a-dur-fur-violine-und-violoncello-931372"
+      ]
+    },
+    {
+      "work_id": "109",
+      "opus": "92",
+      "field": "purchase_url",
+      "original_url": "https://www.prestomusic.com/sheet-music/products/7251142--gal-h-huyton-suite-op-92",
+      "decision": "retained_shop",
+      "current_urls": [
+        "https://www.prestomusic.com/sheet-music/products/7251142--gal-h-huyton-suite-op-92"
+      ]
+    },
+    {
+      "work_id": "110",
+      "opus": "93",
+      "field": "purchase_url",
+      "original_url": "https://www.boosey.com/purchase-music/Hans-Gal-Serenade-for-clarinet-violin-and-cello/27993",
+      "decision": "replaced",
+      "current_urls": [
+        "https://www.stretta-music.uk/gl-serenade-op-93-nr-1539040.html",
+        "https://www.prestomusic.com/sheet-music/products/7251143--gal-h-serenade-op-93"
+      ]
+    },
+    {
+      "work_id": "111",
+      "opus": "94",
+      "field": "purchase_url",
+      "original_url": "https://www.boosey.com/cr/music/Hans-Gal-Trio-for-oboe-violin-and-viola/28311",
+      "decision": "replaced",
+      "current_urls": [
+        "https://www.stretta-music.uk/gl-trio-op-94-nr-1538973.html",
+        "https://www.prestomusic.com/sheet-music/products/7251145--gal-h-trio-in-a-op-94"
+      ]
+    },
+    {
+      "work_id": "112",
+      "opus": "95",
+      "field": "purchase_url",
+      "original_url": "https://www.noten-roehr.de/en/scores/0008/chamber-music-%283-9-instruments%29/0803/3-9-string-instruments/0805/string-quartets/046805",
+      "decision": "retained_shop",
+      "current_urls": [
+        "https://www.noten-roehr.de/en/scores/0008/chamber-music-%283-9-instruments%29/0803/3-9-string-instruments/0805/string-quartets/046805"
+      ]
+    },
+    {
+      "work_id": "113",
+      "opus": "96",
+      "field": "purchase_url",
+      "original_url": "https://www.boosey.com/cr/music/Hans-Gal-Sonata-in-C-for-two-violins-and-piano/28190",
+      "decision": "replaced",
+      "current_urls": [
+        "https://www.stretta-music.uk/gl-sonata-op-96-nr-1539048.html",
+        "https://www.prestomusic.com/sheet-music/products/7251149--gal-h-sonata-c-major-op-96"
+      ]
+    },
+    {
+      "work_id": "114",
+      "opus": "97",
+      "field": "purchase_url",
+      "original_url": "https://www.boosey.com/cr/music/Hans-Gal-Trio-for-violin-clarinet-and-piano/28270",
+      "decision": "replaced",
+      "current_urls": [
+        "https://www.stretta-music.uk/gl-trio-op-97-nr-154842.html",
+        "https://www.prestomusic.com/sheet-music/products/7251150--gal-h-trio-in-f-op-97"
+      ]
+    },
+    {
+      "work_id": "115",
+      "opus": "98",
+      "field": "purchase_url",
+      "original_url": "https://www.halleonard.com/product/49011221/divertimento-op-98",
+      "decision": "replaced",
+      "current_urls": [
+        "https://www.prestomusic.com/sheet-music/products/7287023--gal-h-divertimento-op-98",
+        "https://www.stretta-music.de/gl-divertimento-op-98-nr-420904.html"
+      ]
+    },
+    {
+      "work_id": "116",
+      "opus": "99",
+      "field": "purchase_url",
+      "original_url": "https://www.all-sheetmusic.com/String-Ensemble/String-Quartet-4-op-99.html",
+      "decision": "retained_shop",
+      "current_urls": [
+        "https://www.all-sheetmusic.com/String-Ensemble/String-Quartet-4-op-99.html",
+        "https://www.all-sheetmusic.com/String-Ensemble/String-Quartet-No-4-Op-99-Standard.html"
+      ]
+    },
+    {
+      "work_id": "116",
+      "opus": "99",
+      "field": "purchase_url",
+      "original_url": "https://www.all-sheetmusic.com/String-Ensemble/String-Quartet-No-4-Op-99-Standard.html",
+      "decision": "retained_shop",
+      "current_urls": [
+        "https://www.all-sheetmusic.com/String-Ensemble/String-Quartet-4-op-99.html",
+        "https://www.all-sheetmusic.com/String-Ensemble/String-Quartet-No-4-Op-99-Standard.html"
+      ]
+    },
+    {
+      "work_id": "118",
+      "opus": "101",
+      "field": "purchase_url",
+      "original_url": "https://www.sheetmusicplus.com/en/product/sonata-in-a-op-101-21287415.html",
+      "decision": "replaced",
+      "current_urls": [
+        "https://www.prestomusic.com/sheet-music/products/7251157--gal-h-sonata-in-a-op-101",
+        "https://www.schott-music.com/en/sonata-in-a-no130388.html"
+      ]
+    },
+    {
+      "work_id": "119",
+      "opus": "102a",
+      "field": "score_purchase_download_url",
+      "original_url": "https://www.boosey.com/publications/sheet-music/Hans-Gal-Suite/104435",
+      "decision": "replaced",
+      "current_urls": [
+        "https://www.prestomusic.com/sheet-music/products/7251158--gal-h-suite-for-viola-und-pianoforte-op-102a",
+        "https://www.stretta-music.de/gl-suite-for-viola-und-pianoforte-nr-1650917.html"
+      ]
+    },
+    {
+      "work_id": "120",
+      "opus": "102b",
+      "field": "purchase_url",
+      "original_url": "https://www.boosey.com/cr/music/Hans-Gal-Suite-for-alto-saxophone-and-piano/28397",
+      "decision": "replaced",
+      "current_urls": [
+        "https://www.stretta-music.uk/gl-suite-op-102b-nr-301144.html",
+        "https://www.prestomusic.com/sheet-music/products/7251159--gal-h-suite-in-b-flat-b-flat-major-op-102b"
+      ]
+    },
+    {
+      "work_id": "121",
+      "opus": "103",
+      "field": "purchase_url",
+      "original_url": "https://www.halleonard.com/product/49011235/3-intermezzi-op-103",
+      "decision": "replaced",
+      "current_urls": [
+        "https://www.prestomusic.com/sheet-music/products/7287037--gal-h-3-intermezzi",
+        "https://www.stretta-music.uk/gl-3-intermezzi-op-103-nr-420917.html"
+      ]
+    },
+    {
+      "work_id": "122",
+      "opus": "104",
+      "field": "purchase_url",
+      "original_url": "https://www.boosey.com/cr/music/Hans-Gal-String-Trio/28392",
+      "decision": "replaced",
+      "current_urls": [
+        "https://www.stretta-music.uk/gl-streichtrio-a-dur-op-104-nr-1539125.html",
+        "https://www.prestomusic.com/sheet-music/products/7251166--gal-h-string-trio-in-a-a-major-op-104"
+      ]
+    },
+    {
+      "work_id": "26",
+      "opus": "22",
+      "field": "purchase_url",
+      "original_url": "https://www.hebu-music.com/en/article/hans-gal/maecenas-music/divertimento-op22.595852/",
+      "decision": "retained_shop",
+      "current_urls": [
+        "https://www.hebu-music.com/en/article/hans-gal/maecenas-music/divertimento-op22.595852/"
+      ]
+    },
+    {
+      "work_id": "125",
+      "opus": "107",
+      "field": "purchase_url",
+      "original_url": "https://www.boosey.com/cr/music/Hans-Gal-Clarinet-Quintet/28772",
+      "decision": "replaced",
+      "current_urls": [
+        "https://www.stretta-music.uk/gl-quintet-op-107-nr-1539007.html",
+        "https://www.prestomusic.com/sheet-music/products/7251193--gal-h-quintet-d-major-op-107"
+      ]
+    },
+    {
+      "work_id": "127",
+      "opus": "109a",
+      "field": "purchase_url",
+      "original_url": "https://www.boosey.com/cr/music/Hans-Gal-Sonata-for-solo-cello/28366",
+      "decision": "replaced",
+      "current_urls": [
+        "https://www.stretta-music.uk/gl-sonate-op-109a-nr-1539168.html",
+        "https://www.prestomusic.com/sheet-music/products/7251211--gal-h-sonata-op-109a"
+      ]
+    },
+    {
+      "work_id": "128",
+      "opus": "109b",
+      "field": "purchase_url",
+      "original_url": "https://www.prestomusic.com/sheet-music/products/7251212--gal-h-suite-op-109b",
+      "decision": "retained_shop",
+      "current_urls": [
+        "https://www.prestomusic.com/sheet-music/products/7251212--gal-h-suite-op-109b"
+      ]
+    },
+    {
+      "work_id": "129",
+      "opus": "110a",
+      "field": "score_purchase_download_url",
+      "original_url": "https://www.sheetmusicplus.com/en/product/pieces-for-solo-recorder-vol-1-22874991.html",
+      "decision": "retained_shop",
+      "current_urls": [
+        "https://www.sheetmusicplus.com/en/product/pieces-for-solo-recorder-vol-1-22874991.html"
+      ]
+    },
+    {
+      "work_id": "130",
+      "opus": "110b",
+      "field": "purchase_url",
+      "original_url": "https://www.forsyths.co.uk/music/sheet-music/instruments/woodwind/recorder-sheet-music/13221-pieces-for-solo-recorder-sheet-music-album-9790570503254.html",
+      "decision": "retained_shop",
+      "current_urls": [
+        "https://www.forsyths.co.uk/music/sheet-music/instruments/woodwind/recorder-sheet-music/13221-pieces-for-solo-recorder-sheet-music-album-9790570503254.html",
+        "https://www.sheetmusicplus.com/en/product/pieces-for-solo-recorder-vol-2-21406037.html"
+      ]
+    },
+    {
+      "work_id": "130",
+      "opus": "110b",
+      "field": "score_purchase_download_url",
+      "original_url": "https://www.sheetmusicplus.com/en/product/pieces-for-solo-recorder-vol-2-21406037.html",
+      "decision": "retained_shop",
+      "current_urls": [
+        "https://www.forsyths.co.uk/music/sheet-music/instruments/woodwind/recorder-sheet-music/13221-pieces-for-solo-recorder-sheet-music-album-9790570503254.html",
+        "https://www.sheetmusicplus.com/en/product/pieces-for-solo-recorder-vol-2-21406037.html"
+      ]
+    },
+    {
+      "work_id": "34",
+      "opus": "29",
+      "field": "purchase_url",
+      "original_url": "https://www.prestomusic.com/sheet-music/products/7251644--gal-h-toccata-in-e-minor-e-minor-op-29",
+      "decision": "retained_shop",
+      "current_urls": [
+        "https://www.prestomusic.com/sheet-music/products/7251644--gal-h-toccata-in-e-minor-e-minor-op-29"
+      ]
+    },
+    {
+      "work_id": "135",
+      "opus": "",
+      "field": "purchase_url",
+      "original_url": "https://www.forsyths.co.uk/music/sheet-music/instruments/woodwind/recorder-sheet-music/13218-society-of-recorder-players-birthday-album---various-9790570503223.html",
+      "decision": "retained_shop",
+      "current_urls": [
+        "https://www.forsyths.co.uk/music/sheet-music/instruments/woodwind/recorder-sheet-music/13218-society-of-recorder-players-birthday-album---various-9790570503223.html"
+      ]
+    },
+    {
+      "work_id": "136",
+      "opus": "",
+      "field": "purchase_url",
+      "original_url": "https://www.schott-music.com/de/promenadenmusik-noc89418.html",
+      "decision": "retained_shop",
+      "current_urls": [
+        "https://www.schott-music.com/de/promenadenmusik-noc89418.html"
+      ]
+    },
+    {
+      "work_id": "136",
+      "opus": "",
+      "field": "score_purchase_download_url",
+      "original_url": "https://www.schott-music.com/de/promenadenmusik-noc89418.html",
+      "decision": "retained_shop",
+      "current_urls": [
+        "https://www.schott-music.com/de/promenadenmusik-noc89418.html"
+      ]
+    },
+    {
+      "work_id": "137",
+      "opus": "",
+      "field": "purchase_url",
+      "original_url": "https://www.sheetmusicplus.com/en/product/impromptu-19254678.html",
+      "decision": "replaced",
+      "current_urls": [
+        "https://www.prestomusic.com/sheet-music/products/7315336--gal-h-impromptu",
+        "https://www.schott-music.com/en/impromptu-noc234690.html",
+        "https://www.prestomusic.com/sheet-music/products/9568261--gal-hans-impromptu",
+        "https://www.stretta-music.de/gl-impromptu-nr-733175.html"
+      ]
+    },
+    {
+      "work_id": "137",
+      "opus": "",
+      "field": "score_purchase_download_url",
+      "original_url": "https://www.sheetmusicplus.com/en/product/impromptu-22203402.html",
+      "decision": "replaced",
+      "current_urls": [
+        "https://www.prestomusic.com/sheet-music/products/7315336--gal-h-impromptu",
+        "https://www.schott-music.com/en/impromptu-noc234690.html",
+        "https://www.prestomusic.com/sheet-music/products/9568261--gal-hans-impromptu",
+        "https://www.stretta-music.de/gl-impromptu-nr-733175.html"
+      ]
+    },
+    {
+      "work_id": "138",
+      "opus": "",
+      "field": "purchase_url",
+      "original_url": "https://www.boosey.com/publications/sheet-music/Hans-Gal-Sonate-in-D-1933-fur-Violine-und-Klavier/38774",
+      "decision": "replaced",
+      "current_urls": [
+        "https://www.stretta-music.uk/gl-sonate-in-d-nr-429330.html",
+        "https://www.prestomusic.com/sheet-music/products/7251911--gal-h-sonata-in-d-d-major"
+      ]
+    },
+    {
+      "work_id": "3",
+      "opus": "3",
+      "field": "purchase_url",
+      "original_url": "https://www.universaledition.com/Serbische-Weisen/P0049702",
+      "decision": "retained_shop",
+      "current_urls": [
+        "https://www.universaledition.com/Serbische-Weisen/P0049702"
+      ]
+    },
+    {
+      "work_id": "158",
+      "opus": "",
+      "field": "purchase_url",
+      "original_url": "https://www.all-sheetmusic.com/Choir/Mixed-Choir/4-British-Folk-Songs-No-1-Standard.html",
+      "decision": "retained_shop",
+      "current_urls": [
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/4-British-Folk-Songs-No-1-Standard.html",
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/4-British-Folk-Songs-No-2-Standard.html",
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/O-can-ye-sew-cushions-Standard.html",
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/4-British-Folk-Songs-No-4-Standard.html",
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/4-britische-Volkslieder-Nr-1-Download.html",
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/4-britische-Volkslieder-Nr-2-Download.html",
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/4-britische-Volkslieder-Nr-3-Download.html",
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/4-britische-Volkslieder-Nr-4-Download.html"
+      ]
+    },
+    {
+      "work_id": "158",
+      "opus": "",
+      "field": "purchase_url",
+      "original_url": "https://www.all-sheetmusic.com/Choir/Mixed-Choir/4-British-Folk-Songs-No-2-Standard.html",
+      "decision": "retained_shop",
+      "current_urls": [
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/4-British-Folk-Songs-No-1-Standard.html",
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/4-British-Folk-Songs-No-2-Standard.html",
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/O-can-ye-sew-cushions-Standard.html",
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/4-British-Folk-Songs-No-4-Standard.html",
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/4-britische-Volkslieder-Nr-1-Download.html",
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/4-britische-Volkslieder-Nr-2-Download.html",
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/4-britische-Volkslieder-Nr-3-Download.html",
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/4-britische-Volkslieder-Nr-4-Download.html"
+      ]
+    },
+    {
+      "work_id": "158",
+      "opus": "",
+      "field": "purchase_url",
+      "original_url": "https://www.all-sheetmusic.com/Choir/Mixed-Choir/O-can-ye-sew-cushions-Standard.html",
+      "decision": "retained_shop",
+      "current_urls": [
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/4-British-Folk-Songs-No-1-Standard.html",
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/4-British-Folk-Songs-No-2-Standard.html",
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/O-can-ye-sew-cushions-Standard.html",
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/4-British-Folk-Songs-No-4-Standard.html",
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/4-britische-Volkslieder-Nr-1-Download.html",
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/4-britische-Volkslieder-Nr-2-Download.html",
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/4-britische-Volkslieder-Nr-3-Download.html",
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/4-britische-Volkslieder-Nr-4-Download.html"
+      ]
+    },
+    {
+      "work_id": "158",
+      "opus": "",
+      "field": "purchase_url",
+      "original_url": "https://www.all-sheetmusic.com/Choir/Mixed-Choir/4-British-Folk-Songs-No-4-Standard.html",
+      "decision": "retained_shop",
+      "current_urls": [
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/4-British-Folk-Songs-No-1-Standard.html",
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/4-British-Folk-Songs-No-2-Standard.html",
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/O-can-ye-sew-cushions-Standard.html",
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/4-British-Folk-Songs-No-4-Standard.html",
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/4-britische-Volkslieder-Nr-1-Download.html",
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/4-britische-Volkslieder-Nr-2-Download.html",
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/4-britische-Volkslieder-Nr-3-Download.html",
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/4-britische-Volkslieder-Nr-4-Download.html"
+      ]
+    },
+    {
+      "work_id": "158",
+      "opus": "",
+      "field": "score_purchase_download_url",
+      "original_url": "https://www.all-sheetmusic.com/Choir/Mixed-Choir/4-britische-Volkslieder-Nr-1-Download.html",
+      "decision": "retained_shop",
+      "current_urls": [
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/4-British-Folk-Songs-No-1-Standard.html",
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/4-British-Folk-Songs-No-2-Standard.html",
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/O-can-ye-sew-cushions-Standard.html",
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/4-British-Folk-Songs-No-4-Standard.html",
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/4-britische-Volkslieder-Nr-1-Download.html",
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/4-britische-Volkslieder-Nr-2-Download.html",
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/4-britische-Volkslieder-Nr-3-Download.html",
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/4-britische-Volkslieder-Nr-4-Download.html"
+      ]
+    },
+    {
+      "work_id": "158",
+      "opus": "",
+      "field": "score_purchase_download_url",
+      "original_url": "https://www.all-sheetmusic.com/Choir/Mixed-Choir/4-britische-Volkslieder-Nr-2-Download.html",
+      "decision": "retained_shop",
+      "current_urls": [
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/4-British-Folk-Songs-No-1-Standard.html",
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/4-British-Folk-Songs-No-2-Standard.html",
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/O-can-ye-sew-cushions-Standard.html",
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/4-British-Folk-Songs-No-4-Standard.html",
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/4-britische-Volkslieder-Nr-1-Download.html",
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/4-britische-Volkslieder-Nr-2-Download.html",
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/4-britische-Volkslieder-Nr-3-Download.html",
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/4-britische-Volkslieder-Nr-4-Download.html"
+      ]
+    },
+    {
+      "work_id": "158",
+      "opus": "",
+      "field": "score_purchase_download_url",
+      "original_url": "https://www.all-sheetmusic.com/Choir/Mixed-Choir/4-britische-Volkslieder-Nr-3-Download.html",
+      "decision": "retained_shop",
+      "current_urls": [
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/4-British-Folk-Songs-No-1-Standard.html",
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/4-British-Folk-Songs-No-2-Standard.html",
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/O-can-ye-sew-cushions-Standard.html",
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/4-British-Folk-Songs-No-4-Standard.html",
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/4-britische-Volkslieder-Nr-1-Download.html",
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/4-britische-Volkslieder-Nr-2-Download.html",
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/4-britische-Volkslieder-Nr-3-Download.html",
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/4-britische-Volkslieder-Nr-4-Download.html"
+      ]
+    },
+    {
+      "work_id": "158",
+      "opus": "",
+      "field": "score_purchase_download_url",
+      "original_url": "https://www.all-sheetmusic.com/Choir/Mixed-Choir/4-britische-Volkslieder-Nr-4-Download.html",
+      "decision": "retained_shop",
+      "current_urls": [
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/4-British-Folk-Songs-No-1-Standard.html",
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/4-British-Folk-Songs-No-2-Standard.html",
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/O-can-ye-sew-cushions-Standard.html",
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/4-British-Folk-Songs-No-4-Standard.html",
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/4-britische-Volkslieder-Nr-1-Download.html",
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/4-britische-Volkslieder-Nr-2-Download.html",
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/4-britische-Volkslieder-Nr-3-Download.html",
+        "https://www.all-sheetmusic.com/Choir/Mixed-Choir/4-britische-Volkslieder-Nr-4-Download.html"
+      ]
+    },
+    {
+      "work_id": "165",
+      "opus": "",
+      "field": "purchase_url",
+      "original_url": "https://www.stretta-music.de/schuetz-two-dialogues-nr-982908.html",
+      "decision": "retained_shop",
+      "current_urls": [
+        "https://www.stretta-music.de/schuetz-two-dialogues-nr-982908.html"
+      ],
+      "verification_note": "Exact edition and enabled Add to cart confirmed on the retailer\u2019s English storefront; original localized product URL retained.",
+      "verification_url": "https://www.stretta-music.uk/schuetz-two-dialogues-nr-982908.html"
+    },
+    {
+      "work_id": "29",
+      "opus": "24",
+      "field": "purchase_url",
+      "original_url": "https://www.sheetmusicplus.com/en/product/suite-op-24-21283862.html",
+      "decision": "replaced",
+      "current_urls": [
+        "https://www.prestomusic.com/sheet-music/products/7250668--gal-h-suite-op-24",
+        "https://musikhaus-magunia.notenlink-shop.de/hans-gal-suite-op-24-fuer-klavier-479586"
+      ]
+    },
+    {
+      "work_id": "33",
+      "opus": "28",
+      "field": "purchase_url",
+      "original_url": "https://www.prestomusic.com/sheet-music/products/7251889--gal-h-piano-sonata-op-28",
+      "decision": "retained_shop",
+      "current_urls": [
+        "https://www.prestomusic.com/sheet-music/products/7251889--gal-h-piano-sonata-op-28"
+      ]
+    },
+    {
+      "work_id": "5",
+      "opus": "3c",
+      "field": "purchase_url",
+      "original_url": "https://www.heinrichshofen.de/de/ensemble-und-orchester/orchester/zupforchester/498/serbische-weisen",
+      "decision": "retained_shop",
+      "current_urls": [
+        "https://www.heinrichshofen.de/de/ensemble-und-orchester/orchester/zupforchester/498/serbische-weisen"
+      ]
+    },
+    {
+      "work_id": "66",
+      "opus": "57",
+      "field": "purchase_url",
+      "original_url": "https://www.breitkopf.com/en/work/2569/piano-concerto-op.-57",
+      "decision": "retained_shop",
+      "current_urls": [
+        "https://www.breitkopf.com/en/work/2569/piano-concerto-op.-57"
+      ]
+    },
+    {
+      "work_id": "67",
+      "opus": "58",
+      "field": "purchase_url",
+      "original_url": "https://www.halleonard.com/product/49012984/gal-two-sonatinas-pft",
+      "decision": "replaced",
+      "current_urls": [
+        "https://www.prestomusic.com/sheet-music/products/7248120--gal-h-two-sonatinas-no-1-c-major-no-2-a-major-op-58",
+        "https://www.stretta-music.de/gl-zwei-sonatinen-nr-1-c-dur-nr-2-a-dur-op-58-nr-106911.html"
+      ]
+    },
+    {
+      "work_id": "70",
+      "opus": "60",
+      "field": "purchase_url",
+      "original_url": "https://www.demond.de/hans-gal-improvisation-variationen-und-finale-ueber-ein-thema-von-mozart-op-60-fuer-mandoline-violine-viola-und-violoncello-614996",
+      "decision": "retained_shop",
+      "current_urls": [
+        "https://www.demond.de/hans-gal-improvisation-variationen-und-finale-ueber-ein-thema-von-mozart-op-60-fuer-mandoline-violine-viola-und-violoncello-614996"
+      ]
+    }
+  ],
+  "changed_work_ids": [
+    "8",
+    "12",
+    "17",
+    "20",
+    "21",
+    "22",
+    "29",
+    "40",
+    "67",
+    "76",
+    "81",
+    "98",
+    "102",
+    "104",
+    "106",
+    "110",
+    "111",
+    "113",
+    "114",
+    "115",
+    "117",
+    "118",
+    "119",
+    "120",
+    "121",
+    "122",
+    "123",
+    "125",
+    "126",
+    "127",
+    "137",
+    "138"
+  ],
+  "information_only_work_ids": [
+    "18",
+    "37",
+    "72",
+    "89"
+  ],
+  "access_limited_work_ids": [
+    "65",
+    "68"
+  ]
+}

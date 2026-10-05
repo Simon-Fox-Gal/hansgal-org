@@ -7,6 +7,7 @@ from jinja2 import Environment, FileSystemLoader, ChainableUndefined
 from i18n import localize, translate_template
 from work_pdfs import build_work_pdfs, download_filename
 from contacts import context as contact_context
+from score_links import score_link_label
 from languages import LANGUAGES, PUBLISHED, prefix, labels, text as translated_text
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
@@ -157,11 +158,15 @@ def make_site(base_path='', review=True, language='en', active_languages=None, i
                 if u.scheme not in ('https','http') or not u.hostname or u.username or u.password:
                     raise ValueError(f'Invalid public purchase URL: {row.get("id")} {field}')
                 display_label=tr(*label)
+                if field in ('purchase_url','hire_url','score_purchase_download_url'):
+                    display_label=score_link_label(value,field,tr)
                 if field=='cd_url' and row.get('cd_format')=='Hybrid SACD':
                     display_label=tr('Hybrid SACD / CD','Hybrid-SACD / CD')
                 if field=='cd_url' and row.get('cd_format')=='Used CD':
                     display_label=tr('Used CD','Gebrauchte CD')
-                links.append({'url':value,'host':u.hostname.removeprefix('www.'),'label':display_label})
+                host=u.hostname.removeprefix('www.')
+                if host.startswith('stretta-music.'):host='Stretta Music'
+                links.append({'url':value,'host':host,'label':display_label})
         return links
 
     def score_downloads(row):
@@ -198,6 +203,16 @@ def make_site(base_path='', review=True, language='en', active_languages=None, i
         # POST selection changes become browser-side state on a static host.
         markup=re.sub(r'''onchange="\$\('#(worksform|audioform|audiofile)'\)\.submit\(\)"''',lambda m:'onchange="Hansgal.submit(\''+m[1]+'\')"',markup)
         markup=re.sub(r'''\b(href|src|action|poster|data)\s*=\s*(["'])(.*?)\2''',lambda m:m[1]+'='+m[2]+html.escape(url(m[3]),quote=True)+m[2],markup,flags=re.I|re.S)
+        if route.startswith('/works/show/'):
+            def external_anchor(match):
+                tag=match[0]
+                href=re.search(r'''\bhref\s*=\s*(["'])(.*?)\1''',tag,re.I|re.S)
+                if not href:return tag
+                destination=urlsplit(html.unescape(href[2]))
+                if destination.scheme not in ('http','https') or destination.hostname in local_hosts:return tag
+                tag=re.sub(r'''\s+(?:target|rel)\s*=\s*(["']).*?\1''','',tag,flags=re.I|re.S)
+                return tag[:-1]+' target="_blank" rel="noopener noreferrer">'
+            markup=re.sub(r'<a\b[^>]*>',external_anchor,markup,flags=re.I|re.S)
         if base_path:
             markup=re.sub(r'''(location\.href\s*=\s*["'])(/[^"']*)''',lambda m:m[1]+base_path+m[2],markup)
         robots='noindex,nofollow' if review else 'index,follow'
