@@ -9487,5 +9487,11 @@
     "path": "/storage/audiosamples/gal-tocc0644-cd1-t06.mp3",
     "bytes": 1922121,
     "sha256": "f90d10bf4ab403618f76e35775cacff46142e1a190706428bc7e7b4aa9166d51"
+  },
+  {
+    "source_path": "storage/documents/hans-gal-society-constitution.pdf",
+    "path": "/storage/documents/hans-gal-society-constitution.pdf",
+    "bytes": 403370,
+    "sha256": "fd6b670fccb901807a06dad460d0dbc8f21cf3db15e1098e13f127774c713cb2"
   }
 ]
