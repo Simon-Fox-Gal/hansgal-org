@@ -9493,5 +9493,23 @@
     "path": "/storage/documents/hans-gal-society-constitution.pdf",
     "bytes": 403370,
     "sha256": "fd6b670fccb901807a06dad460d0dbc8f21cf3db15e1098e13f127774c713cb2"
+  },
+  {
+    "source_path": "https://is1-ssl.mzstatic.com/image/thumb/Music69/v4/b1/e7/02/b1e70272-35f1-6aeb-46af-3726f0d97095/855317003318.jpg/600x600bb.jpg",
+    "path": "/storage/recordingcovers/flashback-odrcd331.jpg",
+    "bytes": 34987,
+    "sha256": "6e2a7cec13761b88f0f42c3c4d4fe1a87ad7805241a89ca15ae908dace89b57d"
+  },
+  {
+    "source_path": "https://shop.supreme-music.group/cdn/shop/files/SMGG012_SebastianBreit_TheVienneseOboe_FrontCover_2000.jpg?v=1776258800&width=600",
+    "path": "/storage/recordingcovers/the-viennese-oboe-smgg012.jpg",
+    "bytes": 76150,
+    "sha256": "3142f1d926132e560770b5c0f8420594625b2fd556888533ef5fd9e6c7970e6e"
+  },
+  {
+    "source_path": "https://schott-production.s3.eu-central-1.amazonaws.com/media/catalog/product/cache/8d0bbb08099c1595b2cac06e0a67b532/t/_/t_4282_648.jpg",
+    "path": "/storage/recordingcovers/schott-harmonie-t4282.jpg",
+    "bytes": 19901,
+    "sha256": "a49f9eae9204cfbe593f71640c623a6831d9e1d2dec41f10260d2b37dc7d1d16"
   }
 ]
