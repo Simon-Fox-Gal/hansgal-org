@@ -1,0 +1,30 @@
+{
+  "checked_date": "2026-10-05",
+  "base_commit": "4b307f4615be5a9108e7b7ebadfb11636e4bbecc",
+  "recordings": [
+    {
+      "id": "100",
+      "work_id": "120",
+      "cover_source": "https://is1-ssl.mzstatic.com/image/thumb/Music69/v4/b1/e7/02/b1e70272-35f1-6aeb-46af-3726f0d97095/855317003318.jpg/600x600bb.jpg",
+      "notes": "Exact ODRCD331 release matched to artist site and Apple release metadata; UK CD/download offer verified in indexed Presto product page. Saxophone-and-piano version Op. 102b only. Phonogram 2015, commercial release 2016; dates vary by territory/format. No independent review confirmed. Amazon supplied identification was corroborated by artist site."
+    },
+    {
+      "id": "101",
+      "work_id": "100",
+      "cover_source": "https://shop.supreme-music.group/cdn/shop/files/SMGG012_SebastianBreit_TheVienneseOboe_FrontCover_2000.jpg?v=1776258800&width=600",
+      "notes": "Supreme Classics SMGG012, hybrid SACD, release 7 November 2025, matched to label product page, Apple track metadata and Europadisc. Gál Op. 85 tracks 5–7; Sebastian Breit and Stephanie Timoschek. Brief attributed review summary from Michael Gmasz, radio klassik, 22 November 2025. Amazon was inaccessible to automated retrieval; label, catalogue number and repertoire independently corroborate the release."
+    },
+    {
+      "id": "102",
+      "work_id": "136",
+      "cover_source": "https://schott-production.s3.eu-central-1.amazonaws.com/media/catalog/product/cache/8d0bbb08099c1595b2cac06e0a67b532/t/_/t_4282_648.jpg",
+      "notes": "Schott T 4282 / EAN 4010229042824 / Clarino CD Vol. 9 verified with publisher and Stretta. CD contains complete recordings including Promenadenmusik, not sheet music. Publication year 1998 from retailer. Orchestra, conductor, track numbering and timings are not identified in consulted listings; do not infer credits from other recordings. No independent review or digital listening offer confirmed."
+    }
+  ],
+  "languages": [
+    "en",
+    "de",
+    "fr",
+    "ja"
+  ]
+}
