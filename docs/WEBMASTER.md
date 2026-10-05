@@ -19,6 +19,14 @@ Common files:
 
 The private listening preview (menu record 82 and `ente_private_audio/`) is excluded. Do not restore it, its six clips, comments/submission tables, hosting credentials, raw exports or backups. Keep the seven other unlinked pages and their public URLs.
 
+## Sheet-music sales links
+
+Keep editable sales URLs in `content/catalogue.json`. `config/score-retailers.json` supplies shared region, edition and catalogue-number labels for HTML and printable work notes. UK/EU describes the retailer's location, not a promise about shipping or taxes. Retain hire links separately; a purchasable piano reduction does not make orchestral parts available for sale.
+
+For a sales-link change, verify the exact title/opus, instrumentation, edition, format, price and order control. A successful HTTP response, a publisher's “Buy now” referral or a generic retailer search page is insufficient. Replace non-orderable offers with matching UK and EU product pages where confirmed. If no direct offer is confirmed, label the link as publisher information/enquiry instead of purchase. Do not infer product unavailability from automated-access restrictions. Record limited checks explicitly. Remove unused URL metadata when replacing links. External work-page links open a new tab.
+
+The complete 5 October 2026 check is in `docs/sales-link-audit-2026-10-05.json`; current work/recording evidence is in `docs/purchase-audit.json`.
+
 ## Recording research
 
 For a request to add a CD, verify the exact release with the label or artists, then create a complete entry: cover with a legitimate source, performers, label/catalogue number, release date, track list, linked works, purchase/listening links, attributed review excerpts or summaries, review URLs, and factual context. Do not manufacture unavailable facts or critical quotations. Keep direct quotations brief and within source copyright limits. Save evidence in the private proposal and appropriate source links in the public entry.

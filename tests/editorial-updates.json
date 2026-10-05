@@ -308,5 +308,107 @@
     "62": {
       "value": "0c7eda08dafb534352cd7568900c408157342f4ac2abe09b4c871168fbaf09a9"
     }
+  },
+  "content/catalogue.json": {
+    "8": {
+      "purchase_url": "d87bd71c89fbff2a652493d2eeec1adf56dece12121e04fafc973d6731d18b13"
+    },
+    "12": {
+      "purchase_url": "5d4504f48076cf74220375c363bd2eca3ab60e9de4c2983430043d554dfa8ffe"
+    },
+    "17": {
+      "purchase_url": "2c859f52837dc9967ffcb8d26bd0944256426db2d3ebf8e1e7f7211eb32931bf"
+    },
+    "20": {
+      "purchase_url": "fecd525458cfc5e3c10a2999b955a10d0698489444ce467933688fd4f3c7ffc9"
+    },
+    "21": {
+      "purchase_url": "c931469388a34649f9e5de7e3d35da256f39117ad62f567572e48357b5dbbad0"
+    },
+    "22": {
+      "purchase_url": "a9e11d9dc03285b59272000f46874b9c95961f8e0638e7d3c7fb1a1078699595"
+    },
+    "117": {
+      "purchase_url": "553b6148582391b24f87b6cf2f3179a84bfa3190eb696e44540a97f00a39edd7"
+    },
+    "123": {
+      "purchase_url": "318684d3f138a04f0a679947f44e41955cde25717cbcd8a6c979434fb81b27a5"
+    },
+    "98": {
+      "purchase_url": "5175d3da4fc93a5baa55b23d36d86195ac885447ccca9cf73bcdc8c92d32a6f1"
+    },
+    "126": {
+      "purchase_url": "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+      "score_purchase_download_url": "50fa7c45d72b5970f1e69bb3c6693dde49da7bfe01b4ca132b2f593b3d8766f0"
+    },
+    "40": {
+      "purchase_url": "4d65c335dff78873701c6eb9294b033cb1258ea976d365eed56a29679f661120"
+    },
+    "76": {
+      "purchase_url": "ebc1a98efe7a10cb7768cbbc5531dc5682f95b1b3812b91b3087e3e2fce19afa",
+      "score_purchase_download_url": "592a967a9938f638a1f4e0bf1c2a0c6b5599b7b4fdd41bf17bf28945ef5088e3"
+    },
+    "81": {
+      "purchase_url": "d993c555ea6a7c35dff89dd86400bb0967d050067b5ee65a64e7298f5d623425"
+    },
+    "102": {
+      "purchase_url": "0c55bd130fadd159dff0c9d40a37cd6806f00416c17c848aac11d677cd9850ab"
+    },
+    "104": {
+      "purchase_url": "99511ecb1773fdd047cdbe5c408453d58c9ef70dfddf27eda191a0a0d3f88307"
+    },
+    "106": {
+      "purchase_url": "9e90e6344467d19c4c3fbfe9d1c47f6af4502a924e0be3fe00e7f1877136bad0"
+    },
+    "110": {
+      "purchase_url": "d811afd006c18d9c0fdf4e66d35b8f272e2ac5d12751eb92868ae8e38aa12f8d"
+    },
+    "111": {
+      "purchase_url": "3c2b883d8ac45f7d545b13db55650f3fbefac6e5c3bdec92af6be69907fc4207"
+    },
+    "113": {
+      "purchase_url": "30a6624b9880d3ed38cd825bdb7cb4020a45b3429e97e252e90146e25e671377"
+    },
+    "114": {
+      "purchase_url": "cfa207d89d4bfcef8937db689f204aab2e5cb3600bf7814591762637592ce6fe"
+    },
+    "115": {
+      "purchase_url": "51feb1751c556bcea480d21ecb2041f2346a42e4db3709bd954879bd49046be7"
+    },
+    "119": {
+      "purchase_url": "a3223a93888d0749fcf13315ede5713bdd1897aa0faebf69e3bf37a8bf9e51d7",
+      "score_purchase_download_url": "76312ede2024ee9551bac161aff99aa0a4b2f8abca950839b6f16cadc33cebbf"
+    },
+    "120": {
+      "purchase_url": "fa66094aa001060d084c5c1b2c9dcd3421e145b1f8a37cbb6a394d015c303c78"
+    },
+    "121": {
+      "purchase_url": "7c906f03106212733ebedb09021a42b5a22dcbea90958c69641d2dc8e9e43ced"
+    },
+    "122": {
+      "purchase_url": "4f3919b83ec2c8f05ca66a6bc2d56740a0545424ee3edfd0381aa29d6da44a4e"
+    },
+    "125": {
+      "purchase_url": "5050fd4fb269a42445605a245df21e925a1863d7f23a8f775a9625acb4e44ed6"
+    },
+    "127": {
+      "purchase_url": "45fb7a71b06c1ea88b7244590c1bcf77f5e70cf93a98ee9bacf6ca6abb9abe2c"
+    },
+    "137": {
+      "purchase_url": "762df920a7915d3a4f10253f3230edcbeb654829e909e839fb79476120bf986f",
+      "score_purchase_download_url": "d96243e966c1cee3db4e9ee85e849c1f0277ee01392b6ab88a36a850f5342d2a"
+    },
+    "138": {
+      "purchase_url": "1168442e29ca730077efbc9dff97e5b0a1c55bf8ccb2c739e543cfed0d6e944d"
+    },
+    "29": {
+      "purchase_url": "7082bc40edc2d03900ab7aa02402e815d1856d4c2a54dc553e52d9903b16f030"
+    },
+    "67": {
+      "purchase_url": "76ea44393fb4e64527c67542dade0049173d79f0ef147a2357dd6605873a7174"
+    },
+    "118": {
+      "purchase_url": "6cd98a9d09a0f5f0f69d7b102a9e76194bffa2af8a57824fbcd6053f0fdbf39b"
+    }
   }
 }

@@ -6,6 +6,7 @@ import reportlab
 from reportlab import rl_config
 rl_config.useA85=0  # Binary PDF streams avoid redundant ASCII expansion.
 from languages import prefix, text as translated_text
+from score_links import score_link_label
 from reportlab.lib import colors
 from reportlab.lib.pagesizes import A4
 from reportlab.lib.styles import ParagraphStyle
@@ -118,7 +119,7 @@ def build_work_pdfs(tables,out,language,base_path,strip):
   section('Downloads','Downloads',row.get('free_downloads'))
   for field,en,ger in [('purchase_url','Printed music','Gedruckte Noten'),('hire_url','Hire materials','Leihmaterial'),('score_purchase_download_url','Digital sheet music','Digitale Noten')]:
    for url in (row.get(field) or '').splitlines():
-    if url.strip():story.append(Paragraph('<link href="'+html.escape(url.strip(),quote=True)+'" color="#792858">'+t(en,ger)+'</link>',body))
+    if url.strip():story.append(Paragraph('<link href="'+html.escape(url.strip(),quote=True)+'" color="#792858">'+html.escape(score_link_label(url.strip(),field,t))+'</link>',body))
   if row.get('score_available')=='yes' and row.get('score_file'):
    section('Available score','Verfügbare Noten',row.get('score_note'))
    score_paths=[path.strip() for path in row['score_file'].splitlines() if path.strip()]
