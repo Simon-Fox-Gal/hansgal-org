@@ -69,10 +69,17 @@
       if(player.readyState>=1)resume();else{player.addEventListener('loadedmetadata',resume,{once:true});player.load();}
     }
   });
-  if(station&&tracks.length){
+  if($('play-daily')&&$('surprise-listening')&&tracks.length){
     const daily=(Math.floor(Date.now()/86400000)*37)%tracks.length,day=tracks[daily];
     $('daily-title').textContent=plain(day.record.title);$('daily-track').textContent=plain(day.title);
-    $('play-daily').onclick=()=>select(day.filename);$('surprise-listening').onclick=()=>select(tracks[Math.floor(Math.random()*tracks.length)].filename);
+    $('play-daily').onclick=()=>select(day.filename);
+    $('surprise-listening').onclick=()=>{
+      const previous=current>=0?tracks[current].filename:day.filename;
+      const choices=tracks.filter(track=>track.filename!==previous);
+      select((choices.length?choices:tracks)[Math.floor(Math.random()*(choices.length||tracks.length))].filename);
+    };
+  }
+  if(station&&tracks.length){
     let category='';const rows=new Map(records.map(r=>[r.id,r]));
     function filter(){let count=0;const query=norm($('listening-search').value);for(const card of station.querySelectorAll('article[data-audio-id]')){const r=rows.get(card.dataset.audioId);const show=(!category||r.categories.includes(category))&&(!query||norm(r.search).includes(query));card.hidden=!show;if(show)count++;}$('listening-count').textContent=count+' '+t('entries to explore','Einträge zum Entdecken');}
     for(const b of station.querySelectorAll('[data-listening-category]'))b.addEventListener('click',()=>{category=b.dataset.listeningCategory;for(const other of station.querySelectorAll('[data-listening-category]'))other.setAttribute('aria-pressed',String(other===b));filter();});
@@ -87,7 +94,6 @@
     const link=links.find(a=>a.dataset.sample===requested);if(link?.closest('details'))link.closest('details').open=true;
     const section=$('audiosamples_content');if(section){section.style.display='block';$('audio-samples')?.setAttribute('aria-expanded','true');}
   }else if(params.has('sample')||params.has('chosenfile')){panel.hidden=false;$('player-message').textContent=t('This excerpt is not available on this page. Choose a track below.','Diese Hörprobe ist auf dieser Seite nicht verfügbar. Wählen Sie unten einen Titel.');}
-  if(panel.dataset.startVisible==='true'&&!params.has('sample')&&!params.has('chosenfile')&&tracks.length)select(tracks[0].filename,false,false);
   if(location.hash==='#audio-samples'&&$('audiosamples_content')){$('audiosamples_content').style.display='block';$('audio-samples')?.setAttribute('aria-expanded','true');}
   if(popup){document.body.classList.add('listening-window');panel.hidden=false;$('popout-listening').hidden=true;for(const id of ['now-work','now-recording']){$(id).target='_blank';$(id).rel='noopener';}window.opener?.postMessage({type:'hansgal-ready'},location.origin);}
   panel.dataset.ready='true';
