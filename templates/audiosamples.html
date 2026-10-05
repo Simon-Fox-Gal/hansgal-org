@@ -2,7 +2,7 @@
 <p class="eyebrow">{{ page_text('18') }}</p>
 <h1>{{ page_text('19') }}</h1>
 <p class="listening-intro">{{ page_text('20') }}</p>
-<div class="listening-hero"><div><p class="eyebrow">{{ page_text('21') }}</p><h2 id="daily-title">{{ page_text('22') }}</h2><p id="daily-track"></p><button type="button" id="play-daily">{{ page_text('23') }} ▶</button></div><div class="listening-score"><p class="eyebrow">{{ page_text('24') }}</p><p>{{ page_text('25') }}</p><button type="button" id="surprise-listening">{{ page_text('26') }}</button></div></div>
+{% include 'listening-discovery.html' %}
 <h2>{{ page_text('27') }}</h2><div class="listening-toolbar" aria-label="{{ page_text('28') }}">{% for value,en,de in [('','Everything','Alles'),('4','Orchestra','Orchester'),('1','Chamber music','Kammermusik'),('3','Keyboard','Tasteninstrumente'),('5','Voices','Stimmen')] %}<button type="button" data-listening-category="{{ value }}" aria-pressed="{{ 'false' if value else 'true' }}">{{ tr(en,de) }}</button>{% endfor %}</div>
 <label class="listening-search">{{ page_text('29') }}<input type="search" id="listening-search" placeholder="{{ page_text('30') }}"></label><p id="listening-count" class="listening-status" role="status"></p>
 <p class="sample-policy">{{ page_text('31') }}</p>
