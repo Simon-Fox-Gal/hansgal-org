@@ -34,3 +34,4 @@ html:is([lang="fr"],[lang="ja"]) .hgs-form-grid :is(select,input,textarea){max-w
 html:is([lang="fr"],[lang="ja"]) .hgs-form-grid select{width:100%}
 html:is([lang="fr"],[lang="ja"]) .hgs-field-full>label{display:block;overflow-wrap:anywhere}
 html:is([lang="fr"],[lang="ja"]) .hgs-field-full textarea{display:block;width:100%}
+#hgs-contact .hgs-contact-item > strong{display:block;margin-bottom:.3rem}
