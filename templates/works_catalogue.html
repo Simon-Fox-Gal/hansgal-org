@@ -4,7 +4,16 @@
 		<div class="article"><br />
 			<br />
 			<h1>{{ catalogue.title|stripcslashes }}</h1>
-            <a class="work-pdf" href="/storage/work-notes/{{ language }}/{{ catalogue.id }}.pdf" download="{{ catalogue.title|work_pdf_filename|e }}">{{ page_text('141') }} ↓</a><br>
+            <div class="work-downloads">
+                <a class="work-pdf" href="/storage/work-notes/{{ language }}/{{ catalogue.id }}.pdf" download="{{ catalogue.title|work_pdf_filename|e }}">{{ page_text('141') }} ↓</a>
+                {% if catalogue.id == '19' %}
+                    {% if language == 'de' %}{% set libretto_label = 'Zweisprachiges Libretto herunterladen (Deutsch–Englisch)' %}
+                    {% elif language == 'fr' %}{% set libretto_label = 'Télécharger le livret bilingue (allemand–anglais)' %}
+                    {% elif language == 'ja' %}{% set libretto_label = '独英対訳リブレットをダウンロード' %}
+                    {% else %}{% set libretto_label = 'Download bilingual libretto (German–English)' %}{% endif %}
+                    <a class="work-pdf" href="/storage/libretti/die-heilige-ente-bilingual-libretto.pdf" download="Die Heilige Ente - bilingual libretto with CD tracks and synopsis.pdf">{{ libretto_label }} ↓</a>
+                {% endif %}
+            </div>
 			{{ catalogue.description|stripcslashes }}{% if php_truth(catalogue.opus_no) %}, Opus {{ catalogue.opus_no }}{% endif %}{% if php_truth(catalogue.year_of_composition) %} ({{ catalogue.year_of_composition }}){% endif %}<br />
             {% if catalogue.score_available == 'yes' and catalogue.score_file %}
             <section class="score-panel" id="downloadable-score" aria-label="Downloadable score"><p>{{ catalogue.score_note|e }}</p><p class="score-donation">{{ page_text('142') }}: £{{ catalogue.score_suggested_donation }} · {{ page_text('143') }}</p><div class="score-actions"><button type="button" data-add-score="{{ catalogue.id }}">Add to basket</button><a href="/score-basket/">View basket</a></div><p id="score-added-status" role="status"></p></section>
