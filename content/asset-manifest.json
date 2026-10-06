@@ -1,11 +1,5 @@
 [
   {
-    "source_path": "storage/libretti/die-heilige-ente-bilingual-libretto.pdf",
-    "path": "/storage/libretti/die-heilige-ente-bilingual-libretto.pdf",
-    "bytes": 1460479,
-    "sha256": "056f87c9b5c4acd641f0c52234ec3aac2e7b61fc222c3e41ece4da42d860981c"
-  },
-  {
     "source_path": "gfx/css/admin.css",
     "path": "/gfx/css/admin.css",
     "bytes": 1427,

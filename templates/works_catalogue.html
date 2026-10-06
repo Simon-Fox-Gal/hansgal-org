@@ -11,7 +11,7 @@
                     {% elif language == 'fr' %}{% set libretto_label = 'Télécharger le livret bilingue (allemand–anglais)' %}
                     {% elif language == 'ja' %}{% set libretto_label = '独英対訳リブレットをダウンロード' %}
                     {% else %}{% set libretto_label = 'Download bilingual libretto (German–English)' %}{% endif %}
-                    <a class="work-pdf" href="/storage/libretti/die-heilige-ente-bilingual-libretto.pdf" download="Die Heilige Ente - bilingual libretto with CD tracks and synopsis.pdf">{{ libretto_label }} ↓</a>
+                    <a class="work-pdf" href="https://simon-fox-gal.github.io/audio-delivery/die-heilige-ente/downloads/die-heilige-ente-bilingual-libretto.pdf" download="Die Heilige Ente - bilingual libretto with CD tracks and synopsis.pdf">{{ libretto_label }} ↓</a>
                 {% endif %}
             </div>
 			{{ catalogue.description|stripcslashes }}{% if php_truth(catalogue.opus_no) %}, Opus {{ catalogue.opus_no }}{% endif %}{% if php_truth(catalogue.year_of_composition) %} ({{ catalogue.year_of_composition }}){% endif %}<br />
