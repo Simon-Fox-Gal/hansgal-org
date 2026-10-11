@@ -9091,5 +9091,29 @@
     "path": "/storage/recordingcovers/schott-harmonie-t4282.jpg",
     "bytes": 19901,
     "sha256": "a49f9eae9204cfbe593f71640c623a6831d9e1d2dec41f10260d2b37dc7d1d16"
+  },
+  {
+    "source_path": "storage/documents/de-profundis/De_Profundis_English.pdf",
+    "path": "/storage/documents/de-profundis/De_Profundis_English.pdf",
+    "bytes": 6104647,
+    "sha256": "6282a39bc6f95f3967722243ce5c058756b052ad6142460ad4eef5bfe2f8d120"
+  },
+  {
+    "source_path": "storage/documents/de-profundis/De_Profundis_Deutsch.pdf",
+    "path": "/storage/documents/de-profundis/De_Profundis_Deutsch.pdf",
+    "bytes": 6096816,
+    "sha256": "03d23849de6c0991b49ba980c22da295518fc9b5968dd3ea7ab4a682dd563998"
+  },
+  {
+    "source_path": "storage/documents/de-profundis/De_Profundis_Francais.pdf",
+    "path": "/storage/documents/de-profundis/De_Profundis_Francais.pdf",
+    "bytes": 6108787,
+    "sha256": "d048564ca16223a18598855826fc29537aaba2d9223d2db798d655e1d47dcd4f"
+  },
+  {
+    "source_path": "storage/documents/de-profundis/De_Profundis_Japanese.pdf",
+    "path": "/storage/documents/de-profundis/De_Profundis_Japanese.pdf",
+    "bytes": 6274653,
+    "sha256": "e5bfc370e06af8bdc64c18eeefa642ad724dcd5807ce6cb6f3b9c2cf64a15ef9"
   }
 ]
