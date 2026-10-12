@@ -71,7 +71,10 @@
     }
   });
   if($('play-daily')&&$('surprise-listening')&&tracks.length){
-    const daily=(Math.floor(Date.now()/86400000)*37)%tracks.length,day=tracks[daily];
+    const today=new Date().toISOString().slice(0,10);
+    const dailyOverrides={'2026-10-12':'gal-tocc0761-cd1-t13.mp3'};
+    const daily=(Math.floor(Date.now()/86400000)*37)%tracks.length;
+    const day=byFile.get(dailyOverrides[today])?.track||tracks[daily];
     $('daily-title').textContent=plain(day.record.title);$('daily-track').textContent=plain(day.title);
     $('play-daily').onclick=()=>select(day.filename);
     $('surprise-listening').onclick=()=>{
