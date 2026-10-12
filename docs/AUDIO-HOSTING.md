@@ -5,7 +5,7 @@ The proposed public media repository is `Simon-Fox-Gal/hansgal-audio`, with GitH
 ## Publish in two stages
 
 1. Create the public audio repository and enable Pages for main / root. Generate its content with `python scripts/build_audio_site.py /absolute/output/directory`, upload the complete generated tree, and wait for its deployment. Every media file must retain its exact bytes and filename.
-2. Run `python scripts/retire_local_audio.py --check-only` to verify all hosted bytes. Verify HTTP byte-range requests and browser playback/seek on a work page, the listening page and pop-out player. Only after these pass, publish this player migration. Leave all original media copies in the website through the transition deadline.
+2. Run `python scripts/retire_local_audio.py --check-only` to verify all hosted bytes. Verify HTTP byte-range requests. After hosted integrity and range checks pass, publish this player migration with all originals still in place, then verify browser playback/seek on a work page, the listening page and pop-out player. Revert the player switch if an integration check fails. Leave all original media copies in the website through the transition deadline.
 
 ## Deferred retirement
 
