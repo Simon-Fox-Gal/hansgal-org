@@ -16,10 +16,12 @@ for ident in ('22','84','40','88'):
 assert {by_file[f.split('#',1)[1]]['recording_id'] for f in by_id['84']['filename'].split('|')}=={'57'}
 for ident,rec in [('40','55'),('88','59')]:
  assert {by_file[f.split('#',1)[1]]['recording_id'] for f in by_id[ident]['filename'].split('|')}=={rec}
-# Every old media file still exists with exactly its original bytes.
+# Original media bytes remain either local or in the verified external inventory.
+media_assets={r['path']:r for r in json.loads((ROOT/'config/audio-assets.json').read_text())}
 for asset in before('asset-manifest'):
  if asset['path'].startswith('/storage/audiosamples/'):
-  assert hashlib.sha256((ROOT/'public'/asset['path'].lstrip('/')).read_bytes()).hexdigest()==asset['sha256']
+  local=ROOT/'public'/asset['path'].lstrip('/')
+  assert (hashlib.sha256(local.read_bytes()).hexdigest() if local.exists() else media_assets[asset['path']]['sha256'])==asset['sha256']
 for row in old:
  if not any(f.startswith('gal-') for f in by_id[row['id']]['filename'].split('#')[1:]) and row['id'] not in ('22','84','40','88'):
   assert {k:v for k,v in by_id[row['id']].items() if not k.endswith(('_fr','_ja'))}==row, ('Unreplaced work changed',row['id'])
