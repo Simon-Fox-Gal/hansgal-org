@@ -11,6 +11,9 @@ from score_links import score_link_label
 from languages import LANGUAGES, PUBLISHED, prefix, labels, text as translated_text
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
+AUDIO_BASE=json.loads((ROOT/'config/audio-hosting.json').read_text())['base_url'].rstrip('/')
+assert urlsplit(AUDIO_BASE).scheme=='https' and urlsplit(AUDIO_BASE).netloc
+
 STANDALONE_GERMAN={
  '/storage/sketchbook/galpictures.html':[
   ('Sketches','Skizzen'),
@@ -190,6 +193,8 @@ def make_site(base_path='', review=True, language='en', active_languages=None, i
             value=u.path or '/'
             if u.query: value+='?'+u.query
             if u.fragment: value+='#'+u.fragment
+        if value.startswith('/storage/audiosamples/'):
+            return AUDIO_BASE+'/'+quote(unquote(value[len('/storage/audiosamples/'):]),safe='')
         if value.startswith('/') and not value.startswith('//'):
             if language!='en' and ((language=='de' and urlsplit(value).path in STANDALONE_GERMAN) or value=='/' or re.match(r'^/(?:hansgal|news|works|recordings|booksandarticles|audiosamples|publishers|bibliography|photos|faqs?|contacts|hansgalsociety|comments|donate|search|score-basket)(?:/|\?|$)',value)):
                 value=lang_prefix+value
@@ -228,7 +233,8 @@ def make_site(base_path='', review=True, language='en', active_languages=None, i
             page_title=html.unescape(re.sub('<[^>]*>','',by_id[table].get(match[2],{}).get('title') or page_title))
         if route.rstrip('/')=='/score-basket':page_title=tr('Your score basket','Ihr Notenkorb')
         markup=markup.replace('<title></title>','<title>'+html.escape(page_title)+' · Hans Gál</title>',1)
-        head='<meta name="hansgal-base" content="'+base_path+'" />\n<link rel="canonical" href="https://hansgal.org'+html.escape(localized,quote=True)+'" />\n'
+        head='<meta name="hansgal-audio-base" content="'+html.escape(AUDIO_BASE,quote=True)+'" />\n'
+        head+='<meta name="hansgal-base" content="'+base_path+'" />\n<link rel="canonical" href="https://hansgal.org'+html.escape(localized,quote=True)+'" />\n'
         for lang,language_prefix in [(l,prefix(l)) for l in active_languages]+[('x-default','')]:head+='<link rel="alternate" hreflang="'+lang+'" href="https://hansgal.org'+html.escape(language_prefix+route,quote=True)+'" />\n'
         head+='<script defer src="'+base_path+'/app/language.js"></script>\n'
         head+='<script defer src="'+base_path+'/app/editorial-bridge.js"></script>\n'

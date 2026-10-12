@@ -2,6 +2,7 @@
 (function () {
   'use strict';
   const base=document.querySelector('meta[name="hansgal-base"]')?.content||'';
+  const audioBase=document.querySelector('meta[name="hansgal-audio-base"]')?.content||base+'/storage/audiosamples';
   const language=document.documentElement.lang||'en';
   const t=(en,de)=>window.HansgalLocale?.labels?.[en]??(language==='de'?de:en);
   const href=p=>base+(language!=='en'&&!/^\/(app|storage|gfx|imageflow)\//.test(p)?'/'+language:'')+p;
@@ -21,7 +22,7 @@
   function player(container,filename,play=false) {
     let a=container.querySelector('audio');
     if(!a){a=document.createElement('audio');a.controls=true;a.preload='metadata';container.append(a);}
-    a.src=href('/storage/audiosamples/'+filename);
+    a.src=audioBase+'/'+encodeURIComponent(filename);
     if(play)a.play().catch(()=>{});
     return a;
   }

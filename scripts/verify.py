@@ -39,12 +39,16 @@ for r in build['routes']:
 for table,pattern in [('catalogue','/works/show/{}'),('recording','/recordings/{}')]:
  for r in tables[table]:assert (ROOT/'dist'/pattern.format(r['id']).lstrip('/')/'index.html').is_file()
 for r in tables['menu']:assert (ROOT/'dist'/r['mainmenu']/r['id']/'index.html').is_file()
+audio_assets={a['path']:a for a in read('config/audio-assets.json')}
 audio_files=[]
 for row in tables['audio_sample']:
  for item in row['filename'].split('|'):
   assert '#' in item,'Malformed audio sample'
   filename=item.split('#',1)[1];audio_files.append(filename)
-  assert (ROOT/'dist/storage/audiosamples'/filename).is_file(),filename
+  local=ROOT/'dist/storage/audiosamples'/filename
+  asset=audio_assets.get('/storage/audiosamples/'+filename)
+  assert asset,filename+' missing from external audio inventory'
+  if local.exists():assert hashlib.sha256(local.read_bytes()).hexdigest()==asset['sha256'],filename+' local audio hash differs'
 if preserve:assert len(audio_files)==230
 for p in (ROOT/'dist').rglob('*'):
  assert p.suffix.lower() not in ('.php','.sql','.log','.env'),str(p)+' must not be public'

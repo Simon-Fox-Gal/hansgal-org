@@ -49,5 +49,7 @@ assert {k:v for k,v in source_fields(new33).items() if k not in ('filename','tra
 changes=subprocess.check_output(['git','diff','b3f3504','--name-status','--','public/storage/audiosamples'],cwd=ROOT).decode().splitlines()
 allowed={f'A\tpublic/storage/audiosamples/gal-bis2543-cd1-t{n}.mp3' for n in (27,28)}
 allowed|={f'A\tpublic/storage/audiosamples/gal-tocc{album}-cd1-t{t:02d}.mp3' for album,tracks in choral.values() for t in tracks}
+media_assets=json.loads((ROOT/'config/audio-assets.json').read_text())
+allowed|={'D\tpublic'+a['path'] for a in media_assets}
 assert set(changes)<=allowed
 print(f'PASS: {checked} work/album track links in both languages match source relationships and embedded playlists; only the authorized Op.33 and choral replacements.')
