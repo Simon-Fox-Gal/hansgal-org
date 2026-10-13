@@ -21,9 +21,11 @@ The private listening preview (menu record 82 and `ente_private_audio/`) is excl
 
 ## Society CD shop
 
+CMS → Edit content → Website pages → HGS Shop contains customer-confirmation email wording (`hgs_order_email_message`), the empty-basket message (`hgs_basket_empty_message`), the score-donation introduction (`hgs_score_donation_intro`) and shared postage. The wording fields have four language tabs. Email text is a plain-text introduction: `{name}` and `{order_reference}` are optional placeholders; the service adds the authoritative itemised order, totals, delivery address, comments and payment instructions. Each order snapshots its wording so retries do not change an already-sent message. Do not use the editable introduction to imply that an unverified payment has been received.
+
 The compact basket distinguishes the score-download suggestion from the full order total. Use “suggested donation” when scores are selected and “voluntary donation” (initially £0) for CD-only orders. Comments entered at checkout belong to the private order snapshot and the Society's order/payment emails; never expose them through public receipt endpoints. Preserve typed checkout fields during quantity changes.
 
-`app/basket-feedback.js` provides the shared add-to-basket confirmation, musical-note burst and header counts. Count distinct selected PDF files and total CD quantities separately, using the catalogue symbols. Keep the text confirmation and basket link available even with reduced motion. Scores are downloaded from the basket, not the work pages; work-information PDFs and libretti are separate resources.
+`app/basket-feedback.js` provides the shared add-to-basket confirmation, musical-note burst and header counts. Count selected works (one per work, irrespective of score/part file count) and total CD quantities separately; hide either tally at zero, using the catalogue symbols. Keep the text confirmation and basket link available even with reduced motion. Scores are downloaded from the basket, not the work pages; work-information PDFs and libretti are separate resources.
 
 Recording fields `hgs_shop` (`yes` or `no`) and `hgs_price` (GBP decimal string) are shared across all four languages. Enable only CDs available from the Society. A checked recording needs a positive price; unchecked recordings have no Society offer. The recording page, associated works and audio player derive their offers from this same recording ID.
 
