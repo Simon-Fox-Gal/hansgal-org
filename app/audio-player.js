@@ -25,6 +25,7 @@
     panel.hidden=false;
     $('now-title').textContent=plain(track.record.title);$('now-track').textContent=plain(track.title);
     const c=track.credit||{};
+    const shop=document.getElementById('now-shop');if(shop){shop.dataset.recordingId=(c.link||'').match(/\/recordings\/(\d+)\//)?.[1]||'';window.HansgalShop?.refreshPlayer();}
     $('now-credit').textContent=[c.preview?t('Unreleased recording · preview','Unveröffentlichte Aufnahme · Vorschau'):'',c.performers,c.label,c.copyright].filter(Boolean).join(' · ');
     $('now-cover').src=base+(c.cover||'/app/audio-placeholder.svg');
     $('now-cover').alt=c.cover?plain(c.album_title):'';

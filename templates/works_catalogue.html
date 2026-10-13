@@ -55,7 +55,7 @@
 				<div>
 					<table border="0" cellpadding="10" cellspacing="0">
 						<tr>
-							<td><a href="/recordings/{{ recordings[i].id }}/"><img src="/storage/recordingcovers/{{ recordings[i].cover }}" width="120" alt="{{ recordings[i].title|striptags|e }}" /></a></td>
+							<td><a href="/recordings/{{ recordings[i].id }}/"><img src="/storage/recordingcovers/{{ recordings[i].cover }}" width="120" alt="{{ recordings[i].title|striptags|e }}" /></a>{% set shop_recording=recordings[i] %}{% include 'shop-offer.html' %}</td>
 							<td>{{ recordings[i].detail|stripcslashes }}</td>
 						</tr>
 					</table>

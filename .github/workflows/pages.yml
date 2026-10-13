@@ -42,6 +42,7 @@ jobs:
       - run: python tests/i18n-completion.py
       - run: node tests/language.test.cjs
       - run: node tests/donations.test.cjs
+      - run: node tests/shop.test.cjs
       - run: python tests/recordings.py
       - run: python tests/purchase-audit.py
       - run: python tests/edition.py

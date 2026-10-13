@@ -36,6 +36,7 @@ def localize(tables,language='de'):
  result=copy.deepcopy(tables)
  for table,fields in FIELDS.items():
   for row in result.get(table,[]):
+   if table=='properties' and row.get('name')=='hgs_shop_postage':continue
    for field in fields:
     if row.get(field+'_'+language) not in (None,''):row[field]=row[field+'_'+language]
  # Publisher identities and dates remain shared editorial data; only the
