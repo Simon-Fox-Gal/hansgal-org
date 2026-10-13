@@ -1,0 +1,10 @@
+<div class="reference-folio" data-reference-page="{{ mainmenu }}-{{ reference_id }}">
+ <header class="reference-heading"><p class="eyebrow">Hans Gál · {{ ref_ui.sections.get(mainmenu,title) }}</p><h1>{{ title if reference_hidden else ref_ui.sections.get(mainmenu,title) }}</h1>{% if mainmenu=='news' %}<p class="reference-deck">{{ ref_ui.news_intro }}</p>{% elif ref_ui.intros.get(mainmenu) and not (lead|striptags|trim) %}<p class="reference-deck">{{ ref_ui.intros[mainmenu] }}</p>{% endif %}{% if lead|striptags|trim %}<div class="reference-lead">{{ lead }}</div>{% endif %}</header>
+ {% set visible_pages=submenus|rejectattr('hidden','equalto','yes')|list %}
+ {% if visible_pages|length>1 %}<nav class="reference-sections" aria-label="{{ ref_ui.nav }}">{% for item in visible_pages %}<a href="/{{ mainmenu }}/{{ item.id }}/"{% if item.id==reference_id %} aria-current="page"{% endif %}>{{ ref_ui.pages.get(item.id,item.title) }}</a>{% endfor %}</nav>{% endif %}
+ <div class="reference-content">
+  {% if thumbnails %}<div class="reference-images">{% for photo in thumbnails %}<a class="imagesItem" rel="group" href="/storage/thumbnails/{{ photo.filename }}"><img src="/storage/thumbnails/thumb_{{ photo.filename }}" alt="{{ title|e }}"></a>{% endfor %}</div>{% endif %}
+  {% if mainmenu in ['bibliography','booksandarticles'] or reference_id=='76' %}<h2 class="reference-topic">{{ ref_ui.pages.get(reference_id,title) }}</h2>{% endif %}
+  <div class="article reference-source" data-reference-source>{{ body }}</div>
+ </div>
+</div>

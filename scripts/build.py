@@ -103,6 +103,7 @@ def make_site(base_path='', review=True, language='en', active_languages=None, i
             return (translate_template(source,language) if language!='en' else source),filename,uptodate
     env=Environment(loader=LocaleLoader(ROOT/'templates'),autoescape=False,undefined=ChainableUndefined,keep_trailing_newline=True,finalize=lambda v:'' if v is None else v)
     env.globals['language']=language
+    ref_ui=json.loads((ROOT/'config/reference-labels.json').read_text(encoding='utf8'))[language]
     env.globals['shop_text']=json.loads((ROOT/'config/shop-labels.json').read_text(encoding='utf8'))[language]
     def shop_offer(record):
         price=str(record.get('hgs_price') or '')
@@ -203,7 +204,7 @@ def make_site(base_path='', review=True, language='en', active_languages=None, i
 
     def context(route):
         section=route.split('/')[1] if route!='/' else ''
-        c=dict(props,language=language,tr=tr,route=route,mainmenu=section,viewmode='coverlist',chosenfile='',chosenwork='',autoplay='',genre='',instrument='',keywords={},audiosamples=[],recordings=[],thumbnails=[],thumb=False,piktorgram='',title='',lead='',body='')
+        c=dict(props,language=language,tr=tr,route=route,mainmenu=section,reference_folio=section not in ('','hansgal','works','recordings'),ref_ui=ref_ui,viewmode='coverlist',chosenfile='',chosenwork='',autoplay='',genre='',instrument='',keywords={},audiosamples=[],recordings=[],thumbnails=[],thumb=False,piktorgram='',title='',lead='',body='')
         for s in ['hansgal','news','works','recordings','booksandarticles','audiosamples','publishers','bibliography','photos','faq','contacts','hansgalsociety','comments','donate']:
             c['selected'+s]=' id="selected"' if section==s else ''
         return c
@@ -310,7 +311,7 @@ def make_site(base_path='', review=True, language='en', active_languages=None, i
         if section=='hansgal' and id=='55':
             c['audiosamples']=audio
             c['discover_player']=True
-        page(route,'hansgal' if section=='hansgal' else 'staticpage',**c)
+        page(route,'hansgal' if section=='hansgal' else 'reference',reference_id=id,reference_hidden=menu['hidden']=='yes',**c)
     # The initial ordering is captured from the source rather than guessed from a locale.
     order=load('catalogue-order') if (ROOT/'content/catalogue-order.json').exists() else [r['id'] for r in tables['catalogue']]
     basis=load('catalogue-orders')['orders'].get('__basis')
