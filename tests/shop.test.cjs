@@ -12,6 +12,12 @@ for(const lang of ['en','de','fr','ja']){
  const html=fs.readFileSync('dist'+prefix+'/recordings/57/index.html','utf8');assert(html.includes('data-add-cd="57"'));assert(html.includes('£14.00'));assert(html.includes(labels[lang].invitation));
  const unchecked=fs.readFileSync('dist'+prefix+'/recordings/24/index.html','utf8');assert(!unchecked.includes('data-add-cd="24"'));
  const data=JSON.parse(fs.readFileSync('dist/app/site-data'+(lang==='en'?'':'-'+lang)+'.json'));assert.equal(data.properties.find(p=>p.name==='hgs_shop_postage').value,'7.00');assert.equal(data.recording.find(r=>r.id==='57').hgs_price,'14.00');
+ // Every score download starts at the basket; work-information PDFs are separate.
+ for(const work of data.catalogue.filter(r=>r.score_available==='yes'&&r.score_file)){
+  const detail=fs.readFileSync('dist'+prefix+'/works/show/'+work.id+'/index.html','utf8');
+  assert(detail.includes('data-add-score="'+work.id+'"'));
+  for(const file of work.score_file.split(/\r?\n/).filter(Boolean))assert(!detail.includes(file),lang+': direct score link on work '+work.id);
+ }
 }
 const layout=fs.readFileSync('templates/default-layout.html','utf8');assert(layout.indexOf('shop-i18n.js')<layout.indexOf('shop.js'));
 console.log('PASS: shop offers in all four languages, disabled recordings unchanged, shared price/postage, quantity validation and separate basket totals.');
