@@ -1,10 +1,48 @@
-<div class="staticpage work-body">
-	<div class="text" style="width: 814px;">
-		<p class="page-kicker"><a href="/works/">← {{ page_text('140') }}</a></p>
-		<div class="article"><br />
-			<br />
-			<h1>{{ catalogue.title|stripcslashes }}</h1>
-            <div class="work-downloads">
+<article class="work-folio">
+<p class="folio-breadcrumb"><a href="/works/">← {{ page_text('140') }}</a></p>
+{% set tracks=audiosamples|map(attribute='files')|sum(start=[]) %}
+<header class="folio-hero{% if not tracks %} no-first-listen{% endif %}">
+<div><p class="eyebrow">Hans Gál · {{ page_text('140') }}</p>
+<h1>{{ catalogue.title|stripcslashes|folio_title(catalogue.title_original|stripcslashes) }}</h1>
+{% if present(catalogue.description) %}<div class="folio-description">{{ catalogue.description|stripcslashes }}</div>{% endif %}
+{% if present(catalogue.opus_no) or present(catalogue.year_of_composition) or present(catalogue.duration) %}
+<div class="folio-meta">{% if present(catalogue.opus_no) %}<span class="folio-opus">Op. {{ catalogue.opus_no|e }}</span>{% endif %}{% if present(catalogue.year_of_composition) %}<span class="folio-date">{{ catalogue.year_of_composition|e }}</span>{% endif %}{% if present(catalogue.duration) %}<span class="folio-duration">{{ folio_duration(catalogue.duration)|e }}</span>{% endif %}</div>
+{% endif %}</div>
+{% if tracks %}{% set first=tracks[0] %}
+<aside class="folio-first"><img src="{{ first.credit.cover or '/app/audio-placeholder.svg' }}" alt="" width="52" height="52"><div><p class="eyebrow">{{ page_text('12') if first.credit.preview else page_text('150') }}</p><h2 title="{{ first.title|striptags|e }}">{{ first.title|stripcslashes }}</h2></div><a class="folio-play" data-sample="{{ first.filename|e }}" href="/storage/audiosamples/{{ first.filename|e }}">▶ {{ page_text('151') }}</a></aside>
+{% endif %}</header>
+<nav class="folio-tabs" aria-label="{{ page_text('140') }}">
+<a id="tab-overview" href="#overview" data-panel="overview">{{ page_text('144') }}</a>
+{% if tracks %}<a id="audio-samples" href="#listen" data-panel="audiosamples_content">{{ page_text('145') }} <span class="folio-count">{{ tracks|length }}</span></a>{% endif %}
+{% if recordings %}<a id="recordings" href="#recordings_content" data-panel="recordings_content">{{ page_text('146') }} <span class="folio-count">{{ recordings|length }}</span></a>{% endif %}
+<a id="tab-music" href="#music" data-panel="music">{{ page_text('147') }}</a>
+{% if present(catalogue.first_performance) or present(catalogue.other_performances) %}<a id="tab-performances" href="#performances" data-panel="performances">{{ page_text('148') }}</a>{% endif %}
+{% if images %}<a id="tab-images" href="#images_content" data-panel="images_content">{{ page_text('149') }} <span class="folio-count">{{ images|length }}</span></a>{% endif %}
+</nav>
+<section id="overview" class="folio-panel"><h2 class="folio-panel-title">{{ page_text('144') }}</h2>
+<div class="folio-overview">
+{% if present(catalogue.further_details) or present(catalogue.movements) or present(catalogue.other_versions) %}<div>
+{% if present(catalogue.further_details) %}<div class="folio-prose">{{ catalogue.further_details|stripcslashes|editorial_fragment }}</div>{% endif %}
+{% if present(catalogue.movements) %}<section class="folio-movements"><h3>{{ page_text('156') }}</h3><div class="folio-prose">{{ catalogue.movements|stripcslashes }}</div></section>{% endif %}
+{% if present(catalogue.other_versions) %}<section><h3>{{ page_text('157') }}</h3><div class="folio-prose">{{ catalogue.other_versions|stripcslashes }}</div></section>{% endif %}
+</div>{% endif %}
+{% if present(catalogue.orchestration) or present(catalogue.publisher) or present(catalogue.availability) %}<aside class="folio-facts"><h3>{{ page_text('152') }}</h3><dl>
+{% for field,label in [('orchestration','153'),('publisher','154'),('availability','155')] %}{% if present(catalogue[field]) %}<div><dt>{{ page_text(label) }}</dt><dd>{{ catalogue[field]|stripcslashes }}</dd></div>{% endif %}{% endfor %}
+</dl></aside>{% endif %}</div></section>
+{% if tracks %}<section id="audiosamples_content" class="folio-panel work-samples"><h2 class="folio-panel-title">{{ page_text('145') }}</h2>
+{% for r in audiosamples %}<section class="listening-work"><span class="sample-card-cover"><img loading="lazy" src="{{ r.sources[0].credit.cover or '/app/audio-placeholder.svg' }}" alt="" width="80" height="80"></span><h3>{{ r.title|stripcslashes }}</h3>{% set listening_page=false %}{% include 'audio-sources.html' %}</section>{% endfor %}
+</section>{% endif %}
+{% if recordings %}<section id="recordings_content" class="folio-panel"><h2 class="folio-panel-title">{{ page_text('146') }}</h2><div class="folio-recordings">
+{% for record in recordings %}<article class="folio-record"><a class="folio-cover" href="/recordings/{{ record.id }}/"><img loading="lazy" src="{{ '/storage/recordingcovers/'+record.cover if record.cover else '/app/audio-placeholder.svg' }}" alt="{{ record.title|striptags|e }}" width="110"></a><div><h3>{{ record.title|stripcslashes }}</h3>{% set credit=recording_credit(record.id) %}{% if credit.performers %}<p class="folio-artists">{{ credit.performers|e }}</p>{% endif %}{% if credit.label %}<p class="folio-artists">{{ credit.label|e }}</p>{% endif %}<a class="folio-album-link" href="/recordings/{{ record.id }}/">{{ page_text('159') }} →</a></div>
+{% set shop_recording=record %}{% include 'shop-offer.html' %}
+{% if present(record.detail) %}<details><summary>{{ page_text('158') }}</summary><div class="folio-prose">{{ record.detail|stripcslashes|editorial_fragment }}</div></details>{% endif %}</article>{% endfor %}
+</div></section>{% endif %}
+<section id="music" class="folio-panel"><h2 class="folio-panel-title">{{ page_text('147') }}</h2>
+            {% if catalogue.score_available == 'yes' and catalogue.score_file %}
+            <section class="score-panel" id="downloadable-score" aria-label="{{ page_text('147') }}"><p>{{ catalogue.score_note|e }}</p><p class="score-donation">{{ page_text('142') }}: £{{ catalogue.score_suggested_donation }} · {{ page_text('143') }}</p><div class="score-actions"><button type="button" data-add-score="{{ catalogue.id }}">Add to basket</button><a href="/score-basket/">View basket</a></div><p id="score-added-status" role="status"></p></section>
+            {% endif %}
+
+<div class="folio-music-grid"><div>{% if purchase_links %}<h3>{{ page_text('160') }}</h3>{% include 'purchase-links.html' %}{% endif %}</div><div><h3>{{ page_text('161') }}</h3>            <div class="work-downloads">
                 <a class="work-pdf" href="/storage/work-notes/{{ language }}/{{ catalogue.id }}.pdf" download="{{ catalogue.title|work_pdf_filename|e }}">{{ page_text('141') }} ↓</a>
                 {% if catalogue.id == '19' %}
                     {% if language == 'de' %}{% set libretto_label = 'Zweisprachiges Libretto herunterladen (Deutsch–Englisch)' %}
@@ -29,87 +67,13 @@
                     {% endif %}
                     <a class="work-pdf" href="/storage/documents/de-profundis/{{ text_file }}" download="{{ text_file }}">{{ text_label }} ↓</a>
                 {% endif %}
-            </div>
-			{{ catalogue.description|stripcslashes }}{% if php_truth(catalogue.opus_no) %}, Opus {{ catalogue.opus_no }}{% endif %}{% if php_truth(catalogue.year_of_composition) %} ({{ catalogue.year_of_composition }}){% endif %}<br />
-            {% if catalogue.score_available == 'yes' and catalogue.score_file %}
-            <section class="score-panel" id="downloadable-score" aria-label="Downloadable score"><p>{{ catalogue.score_note|e }}</p><p class="score-donation">{{ page_text('142') }}: £{{ catalogue.score_suggested_donation }} · {{ page_text('143') }}</p><div class="score-actions"><button type="button" data-add-score="{{ catalogue.id }}">Add to basket</button><a href="/score-basket/">View basket</a></div><p id="score-added-status" role="status"></p></section>
-            {% endif %}
-                        {{ catalogue.movements|stripcslashes }}<br/>
-			{% if catalogue.other_versions %}
-                           {{ catalogue.other_versions|stripcslashes }}<br/>
-			{% endif %}
-			<br />
-			<div class="work-facts">
-				{{ catalogue.orchestration|stripcslashes }}<br />
-				Duration: {{ duration_label(catalogue.duration) }}<br />
-				Publisher: {{ catalogue.publisher }}<br />
-				{{ catalogue.availability|stripcslashes }}
-				{% include 'purchase-links.html' %}
-			</div>
-
-			{% if recordings %}
-			<br />
-			<button type="button" class="block" id="recordings" aria-expanded="false" aria-controls="recordings_content" onclick="Hansgal.showBlock('recordings_content')">RECORDINGS</button>
-			<div class="recordings_content" id="recordings_content" style="display: none;">
-				{% for i in range(recordings|length) %}
-				<div>
-					<table border="0" cellpadding="10" cellspacing="0">
-						<tr>
-							<td><a href="/recordings/{{ recordings[i].id }}/"><img src="/storage/recordingcovers/{{ recordings[i].cover }}" width="120" alt="{{ recordings[i].title|striptags|e }}" /></a>{% set shop_recording=recordings[i] %}{% include 'shop-offer.html' %}</td>
-							<td>{{ recordings[i].detail|stripcslashes }}</td>
-						</tr>
-					</table>
-				</div>
-				{% endfor %}
-			</div>
-			{% endif %}
-
-			{% if catalogue.first_performance or catalogue.other_performances %}
-			<button type="button" class="block" aria-expanded="false" aria-controls="performances" onclick="Hansgal.showBlock('performances')">PERFORMANCES</button>
-			<div class="performances" id="performances" style="display: none;">
-				{% if catalogue.first_performance %}
-				First performance: {{ catalogue.first_performance|stripcslashes }}<br />
-				{% endif %}
-				{% if catalogue.other_performances %}
-				<br />
-				Other performances: {{ catalogue.other_performances|stripcslashes }}<br />
-				{% endif %}
-			</div>
-			{% endif %}
-
-			{% if catalogue.further_details %}
-			<br />
-			<div>{{ catalogue.further_details|stripcslashes }}</div>
-			{% endif %}
-
-			<div class="clear"></div>
-
-			{% if audiosamples %}
-<button type="button" class="block" id="audio-samples" aria-expanded="false" aria-controls="audiosamples_content" onclick="Hansgal.showBlock('audiosamples_content')">AUDIO SAMPLES</button>
-<div id="audiosamples_content" class="work-samples" style="display:none">
-{% for r in audiosamples %}<section class="listening-work"><span class="sample-card-cover"><img loading="lazy" src="{{ r.sources[0].credit.cover or '/app/audio-placeholder.svg' }}" alt="" width="80" height="80"></span><h3>{{ r.title|stripcslashes }}</h3>{% set listening_page=false %}{% include 'audio-sources.html' %}</section>{% endfor %}
-</div>
-{% include 'audio-player.html' %}
-{% endif %}
-
-{% if images %}
-			<button type="button" class="block" aria-expanded="false" aria-controls="images_content" onclick="Hansgal.showBlock('images_content')">IMAGES</button>
-			<div class="images_content" id="images_content" style="display: none;">
-				{% for i in range(images|length) %}
-				<div class="thumbnail" style="width: 120px; height: 120px;">
-					<a class="imagesItem" rel="group" href="/storage/catalogueimages/{{ images[i].filename }}"><img src="/storage/catalogueimages/thumb_{{ images[i].filename }}" border="0" /></a>
-				</div>
-				{% endfor %}
-				<div class="clear"></div>
-			</div>
-			{% endif %}
-			{% if catalogue.free_downloads %}
-			<button type="button" class="block" aria-expanded="false" aria-controls="freedownloads_content" onclick="Hansgal.showBlock('freedownloads_content')">FREE DOWNLOADS</button>
-			<div class="freedownloads_content" id="freedownloads_content" style="display: none;">
-				{{ catalogue.free_downloads|stripcslashes }}
-			</div>
-			{% endif %}
-		</div>
-	</div>
-	<div class="clear"></div>
-</div>
+            </div><p class="folio-endnote">{{ page_text('167') }}</p></div></div>
+{% if present(catalogue.free_downloads) %}<section id="freedownloads_content"><h3>{{ page_text('162') }}</h3><div class="folio-prose">{{ catalogue.free_downloads|stripcslashes }}</div></section>{% endif %}
+</section>
+{% if present(catalogue.first_performance) or present(catalogue.other_performances) %}<section id="performances" class="folio-panel"><h2 class="folio-panel-title">{{ page_text('148') }}</h2>
+{% if present(catalogue.first_performance) %}<h3>{{ page_text('163') }}</h3><div class="folio-prose">{{ catalogue.first_performance|stripcslashes }}</div>{% endif %}
+{% if present(catalogue.other_performances) %}<h3>{{ page_text('164') }}</h3><div class="folio-prose">{{ catalogue.other_performances|stripcslashes }}</div>{% endif %}
+</section>{% endif %}
+{% if images %}<section id="images_content" class="folio-panel"><h2 class="folio-panel-title">{{ page_text('149') }}</h2><div class="folio-images">{% for image in images %}<a class="imagesItem" rel="group" href="/storage/catalogueimages/{{ image.filename }}"><img loading="lazy" src="/storage/catalogueimages/thumb_{{ image.filename }}" alt="{{ catalogue.title|striptags|e }}"></a>{% endfor %}</div></section>{% endif %}
+</article>
+{% if tracks %}{% include 'audio-player-folio.html' %}{% endif %}

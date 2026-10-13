@@ -19,6 +19,14 @@ Common files:
 
 The private listening preview (menu record 82 and `ente_private_audio/`) is excluded. Do not restore it, its six clips, comments/submission tables, hosting credentials, raw exports or backups. Keep the seven other unlinked pages and their public URLs.
 
+## Work-page presentation
+
+Work detail pages use the Folio template in all four languages. Shared labels are editable under “Work pages — shared wording”. The existing masthead and footer are unchanged. The tabs are progressive enhancement: all authored sections remain in the static HTML and print output; only populated optional sections get tabs. Keep the legacy audio, recording, score and image anchors working when editing this template.
+
+Missing, blank or zero-valued opus numbers, dates and durations are omitted without empty labels or separators. Do not invent missing catalogue data. The compact first-listen panel uses an actual clip belonging to the work; playback remains in the viewport-bound shared player, preserving recording credits and Society offers. Work-information PDFs and libretti remain separate from performing scores, which use the basket.
+
+Run `python tests/folio.py` after building, alongside the existing preservation, content, catalogue, translation, audio and shop checks. Check desktop and phone layouts with populated and sparse works whenever altering the layout.
+
 ## Society CD shop
 
 CMS → Edit content → Website pages → HGS Shop contains customer-confirmation email wording (`hgs_order_email_message`), the empty-basket message (`hgs_basket_empty_message`), the score-donation introduction (`hgs_score_donation_intro`) and shared postage. The wording fields have four language tabs. Email text is a plain-text introduction: `{name}` and `{order_reference}` are optional placeholders; the service adds the authoritative itemised order, totals, delivery address, comments and payment instructions. Each order snapshots its wording so retries do not change an already-sent message. Do not use the editable introduction to imply that an unverified payment has been received.

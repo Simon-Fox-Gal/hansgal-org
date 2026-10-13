@@ -1,0 +1,104 @@
+/* Work detail pages only: the established site masthead and footer are unchanged. */
+body.folio-work #main-content{max-width:1360px;margin:auto;padding:26px 40px 64px;min-height:65vh}
+.work-folio{color:#29252a;font:20px/1.7 Arial,Helvetica,sans-serif;overflow-wrap:anywhere}
+.work-folio *{box-sizing:border-box;min-width:0}
+.work-folio h1,.work-folio h2,.work-folio h3{color:#29252a;letter-spacing:0;text-transform:none;margin:0}
+.work-folio h1{font:400 clamp(38px,4.3vw,60px)/1.13 Georgia,serif;letter-spacing:-.035em;text-wrap:pretty}
+.work-folio .folio-translation{display:block;font-size:.56em;color:#645c60;margin-top:9px;line-height:1.25;letter-spacing:0}
+.work-folio h2{font:400 34px/1.2 Georgia,serif}
+.work-folio h3{font:400 25px/1.3 Georgia,serif;margin:24px 0 12px}
+.work-folio p{margin:0 0 18px}
+.work-folio a{color:#792858;text-underline-offset:4px}
+.work-folio :focus-visible{outline:3px solid #215d42;outline-offset:4px}
+.work-folio .eyebrow{font:600 15px/1.4 Arial,Helvetica,sans-serif;letter-spacing:.05em;color:#792858;margin:0 0 8px;text-transform:uppercase}
+.folio-breadcrumb{font-size:16px;line-height:1.4;margin:0 0 22px!important}
+.folio-breadcrumb a{display:inline-flex;align-items:center;min-height:44px;color:#215d42}
+.folio-hero{display:grid;grid-template-columns:minmax(0,1fr) 375px;gap:32px;align-items:start;padding-bottom:24px}
+.folio-hero.no-first-listen{display:block}
+.folio-description{font-size:20px;line-height:1.5;margin-top:13px;max-width:65ch}
+.folio-description p:last-child{margin-bottom:0}
+.folio-meta{display:flex;flex-wrap:wrap;gap:8px 22px;font-size:21px;font-weight:600;line-height:1.5;color:#3f4e40;margin-top:16px}
+.folio-meta span+span{border-left:1px solid #b7b7aa;padding-left:22px}
+.folio-meta .folio-date{font-weight:400}
+.folio-first{display:grid;grid-template-columns:52px minmax(0,1fr);gap:8px 14px;align-items:center;padding:16px 18px;background:#efeae1;border-left:3px solid #792858;margin-top:4px}
+.folio-first img{width:52px;height:52px;object-fit:contain;grid-row:1/3;box-shadow:0 3px 10px #0002}
+.folio-first .eyebrow{font-size:14px;line-height:1.3;letter-spacing:.03em;margin:0 0 3px}
+.folio-first .eyebrow{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.folio-first h2{font:400 19px/1.3 Georgia,serif;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.folio-first .folio-play{grid-column:2;justify-self:start;display:inline-flex;align-items:center;min-height:44px;padding:8px 15px;font:600 16px/1.4 Arial,sans-serif;background:#792858;color:#fff;text-decoration:none}
+.folio-tabs{display:flex;flex-wrap:wrap;gap:0;border-bottom:1px solid #b4aaa7;background:#f8f5ee;position:sticky;top:0;z-index:20}
+.folio-tabs a{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:500 18px/1.4 Arial,sans-serif;min-height:58px;padding:14px 22px;color:#4e474b;border-bottom:3px solid transparent;text-decoration:none}
+.folio-tabs a:hover{background:#eee5e8;color:#792858}
+.folio-tabs a[aria-selected=true]{background:#f0e7ec;color:#792858;border-bottom-color:#792858;font-weight:700}
+.folio-count{display:inline-flex;align-items:center;justify-content:center;border-radius:50%;font-size:14px;min-width:23px;height:23px;padding:0 5px;background:#e4e2d7;color:#4c5749}
+.folio-panel{padding:28px 0 10px;min-height:270px;scroll-margin-top:130px}
+.folio-panel[hidden]{display:none!important}
+.folio-panel-title{margin-bottom:24px!important}
+.folio-enhanced .folio-panel-title{position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.folio-overview{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(280px,.7fr);gap:48px;align-items:start}
+.folio-overview> :only-child{grid-column:1/-1;max-width:70ch}
+.folio-prose{font:20px/1.7 Arial,Helvetica,sans-serif;max-width:70ch;overflow-wrap:anywhere}
+.folio-prose p{margin:0 0 20px}
+.folio-prose img{max-width:100%;height:auto}
+.folio-prose table{max-width:100%;width:auto!important}
+.folio-prose [style*="width"]{max-width:100%}
+.folio-prose h1,.folio-prose h2{font-size:28px;margin:24px 0 12px}
+.folio-movements{padding:20px 24px;margin:24px 0;background:#efede5}
+.folio-movements h3{font:700 18px/1.4 Arial,sans-serif;margin:0 0 12px}
+.folio-facts h3{font:600 16px/1.4 Arial,sans-serif;letter-spacing:.04em;color:#792858;margin:0 0 13px}
+.folio-facts dl{margin:0}.folio-facts dl>div{padding:14px 0;border-bottom:1px solid #d4ccc8}
+.folio-facts dt{font-size:15px;letter-spacing:.035em;color:#5d555a}.folio-facts dd{margin:5px 0 0;font-size:18px;line-height:1.6}
+.folio-recordings{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:30px}
+.folio-record{display:grid;grid-template-columns:110px minmax(0,1fr);gap:18px;padding:23px 0;border-top:1px solid #d4ccc8;align-content:start}
+.folio-record .folio-cover img{width:110px;max-width:100%;height:auto;box-shadow:0 4px 14px #0002}
+.folio-record h3{font-size:24px;margin:0}
+.work-folio .folio-artists{font-size:17px;line-height:1.55;margin:9px 0 0;color:#575252;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.folio-album-link{display:inline-flex;align-items:center;font-size:17px;min-height:46px;margin-top:8px}
+.folio-record>details,.folio-record>.hgs-shop-offer{grid-column:1/-1}
+.folio-record summary{cursor:pointer;font-size:17px;line-height:1.5;min-height:48px;padding:12px 0;color:#792858}
+.folio-record details .folio-prose{font-size:18px;line-height:1.65}
+.work-folio .hgs-shop-offer{margin:0;font-size:17px;line-height:1.5;padding:17px}
+.work-folio .hgs-shop-offer small{font-size:15px}.work-folio .hgs-shop-offer button{font-size:16px;min-height:48px}
+.folio-music-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px}
+.folio-music-grid>div:empty{display:none}.folio-music-grid>div:empty+div{grid-column:1/-1}
+.work-folio .work-downloads{display:grid;gap:8px;align-items:start}.work-folio .work-downloads a{display:block;width:fit-content;font-size:18px;line-height:1.5;padding:13px 0;min-height:52px}
+.folio-endnote{font-size:16px;line-height:1.6;color:#62595d;margin-top:18px!important}
+.work-folio .score-panel{margin:0 0 25px;padding:25px;font-size:18px}
+.work-folio .score-actions{display:flex;flex-wrap:wrap;gap:15px;align-items:center}.work-folio .score-actions button,.work-folio .score-actions a{font-size:18px;min-height:48px}
+.folio-images{display:flex;flex-wrap:wrap;gap:24px}.folio-images img{width:180px;max-width:100%;height:auto}
+.work-folio .listening-work{padding:20px 0;border-bottom:1px solid #d4ccc8;background:transparent;border-radius:0}
+.work-folio .listening-work h3{font-size:25px;margin:0 0 18px}
+.work-folio .sample-source{font-size:18px}.work-folio .sample-source p{line-height:1.55}
+.work-folio .listening-track{font-size:19px;line-height:1.5;min-height:56px;padding-block:14px}
+/* Keep playback attached to the visible screen, independent of the selected tab. */
+body.folio-work{padding-bottom:var(--folio-player-height,0px)}
+body.folio-work:has(.listening-now:not([hidden])) #main-content{padding-bottom:64px}
+.folio-work .listening-now{position:fixed;left:0;right:0;bottom:0;z-index:100;margin:0 auto;max-height:55dvh;overflow-y:auto}
+.folio-work .listening-now h2{font-size:24px}.folio-work .listening-now #now-track{font-size:18px}
+.folio-work .now-credit{font-size:15px;line-height:1.5;max-height:none;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.folio-work .credits-open .now-credit{-webkit-line-clamp:unset;display:block;max-height:25dvh;overflow:auto}
+#folio-credits{display:block;background:transparent;color:#fff;border:0;text-decoration:underline;font:400 14px/1.5 Arial,sans-serif;min-height:36px;padding:3px 0;text-align:left}
+#folio-credits[hidden]{display:none}
+.folio-work .listening-now{padding:16px 24px;gap:24px;grid-template-columns:minmax(0,1fr) minmax(280px,390px)}
+.folio-work .listening-now .now-cover{width:58px;height:58px;margin-right:14px}
+.folio-work .listening-now .player-controls{gap:8px;margin-top:8px}
+.folio-work .listening-now .player-controls button,.folio-work .listening-now .player-window-tools button{font-size:15px;min-height:36px;padding:5px 10px}
+.folio-work .listening-now #now-recording{font-size:15px;line-height:1.5}
+.folio-work .listening-now #now-work{display:none}
+.folio-work .listening-now .hgs-shop-offer{padding:12px;margin-top:12px;font-size:15px}
+.folio-work .listening-now .hgs-shop-offer p{margin:4px 0 8px}
+.folio-work .listening-now .hgs-shop-actions{margin:0;gap:12px}
+.folio-work .listening-now .hgs-shop-actions button{min-height:38px;padding:6px 12px}
+.folio-work .listening-now.is-minimised{grid-template-columns:1fr;left:auto;right:1rem;bottom:1rem}
+.folio-player .player-window-tools{float:right;margin:0 0 8px 12px}
+.folio-player #now-title{padding-top:2px;font-size:21px}
+.folio-player #now-recording{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.folio-player #now-recording[hidden]{display:none}
+.folio-player-options summary{font-size:15px;min-height:36px;line-height:1.5;padding:6px 0;cursor:pointer;text-decoration:underline}
+.folio-work .listening-now.is-minimised #folio-credits{display:none}
+.folio-work .listening-now .popout-hint{font-size:14px}
+@media(max-width:1100px){.folio-hero{grid-template-columns:minmax(0,1fr) 315px;gap:25px}.folio-tabs a{padding-inline:17px}.folio-recordings{grid-template-columns:1fr}}
+@media(max-width:850px){body.folio-work #main-content{padding:22px 24px 48px}.folio-overview,.folio-music-grid{grid-template-columns:1fr;gap:28px}.folio-hero{grid-template-columns:1fr;gap:16px}.folio-first{grid-template-columns:48px minmax(0,1fr) auto;max-width:600px;padding:12px 15px;gap:14px;margin:0}.folio-first img{width:48px;height:48px;grid-row:1}.folio-first .folio-play{grid-column:3;grid-row:1}.folio-tabs a{padding:13px 15px}.folio-work .listening-now{max-height:50dvh}}
+@media(max-width:600px){body.folio-work #main-content{padding:16px 20px 38px}.work-folio{font-size:19px}.work-folio h1{font-size:37px;line-height:1.17}.work-folio h2{font-size:29px}.folio-breadcrumb{margin-bottom:17px!important}.folio-description{font-size:19px;margin-top:12px}.folio-meta{font-size:20px;margin-top:13px;gap:7px 15px}.folio-meta span+span{padding-left:15px}.folio-hero{padding-bottom:20px}.folio-first{grid-template-columns:40px minmax(0,1fr) auto;padding:12px;gap:10px}.folio-first img{width:40px;height:40px}.folio-first .eyebrow{font-size:13px}.folio-first h2{font-size:17px}.folio-first .folio-play{font-size:15px;padding:9px 11px;max-width:110px}.folio-tabs a{font-size:17px;flex:1 1 auto;padding:12px 13px;min-height:51px}.folio-count{font-size:13px;min-width:21px;height:21px}.folio-panel{padding-top:24px}.folio-prose{font-size:19px}.folio-record{grid-template-columns:85px minmax(0,1fr);gap:15px}.folio-record .folio-cover img{width:85px}.folio-record h3{font-size:23px}.work-folio .score-panel{padding:20px}.folio-work .listening-now h2{font-size:20px}.folio-work .listening-now #now-track{font-size:16px}.folio-work .now-credit{font-size:14px}.work-folio .listening-track{font-size:18px}.folio-tabs{position:static}}
+@media(max-width:850px){.folio-work .listening-now{grid-template-columns:1fr;gap:8px;padding:12px 16px}.folio-work .listening-now .player-window-tools{margin-bottom:4px}.folio-work .listening-now .now-cover{width:40px;height:40px}.folio-work .listening-now>div:nth-child(2){grid-row:2}.folio-work .listening-now .popout-hint{display:none}.folio-work .listening-now.is-minimised>div:first-child{grid-row:1}.folio-work .folio-player #now-title{font-size:18px}.folio-work .folio-player #now-track{font-size:16px}.folio-player audio{height:40px}.folio-player #now-recording{font-size:14px}.folio-player .player-window-tools{float:none;position:absolute;right:12px;top:8px}.folio-player>div:first-child{padding-top:36px}.folio-player.is-minimised>div:first-child{padding-top:0}.folio-player.is-minimised .player-window-tools{position:static}}
+@media print{.folio-tabs,.folio-first,.folio-work .listening-now{display:none!important}.folio-panel[hidden]{display:block!important}.folio-enhanced .folio-panel-title{position:static;width:auto;height:auto;clip-path:none;white-space:normal}.folio-record details>*{display:block!important}body.folio-work{padding:0}.folio-prose{max-width:none}}
