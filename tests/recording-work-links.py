@@ -19,6 +19,11 @@ class WorkPage(HTMLParser):
  def __init__(self,markup):super().__init__();self.depth=0;self.recordings=[];self.feed(markup)
  def handle_starttag(self,tag,attrs):
   attrs=dict(attrs)
+  # Folio cards deliberately have both a cover link and a View album link.
+  # Count each card's cover once; retain the old container parser for legacy HTML.
+  if tag=='a' and 'folio-cover' in attrs.get('class','').split():
+   match=re.search(r'/recordings/(\d+)/$',attrs.get('href',''))
+   if match:self.recordings.append(match[1])
   if tag=='div' and (self.depth or attrs.get('id')=='recordings_content'):self.depth+=1
   if self.depth and tag=='a':
    match=re.search(r'/recordings/(\d+)/$',attrs.get('href',''))

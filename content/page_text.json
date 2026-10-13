@@ -1428,5 +1428,255 @@
     "value_de": "Ein Download für £0 ist ebenfalls möglich.",
     "value_fr": "Le téléchargement est également possible pour 0 £.",
     "value_ja": "寄付額を0ポンドとしてダウンロードすることもできます。"
+  },
+  {
+    "id": "144",
+    "page": "Work pages — shared wording",
+    "path": "/works/",
+    "title": "Overview",
+    "value": "Overview",
+    "value_de": "Überblick",
+    "value_fr": "Vue d’ensemble",
+    "value_ja": "概要"
+  },
+  {
+    "id": "145",
+    "page": "Work pages — shared wording",
+    "path": "/works/",
+    "title": "Listen",
+    "value": "Listen",
+    "value_de": "Hören",
+    "value_fr": "Écouter",
+    "value_ja": "試聴"
+  },
+  {
+    "id": "146",
+    "page": "Work pages — shared wording",
+    "path": "/works/",
+    "title": "Recordings",
+    "value": "Recordings",
+    "value_de": "Aufnahmen",
+    "value_fr": "Enregistrements",
+    "value_ja": "録音"
+  },
+  {
+    "id": "147",
+    "page": "Work pages — shared wording",
+    "path": "/works/",
+    "title": "Scores & texts",
+    "value": "Scores & texts",
+    "value_de": "Noten & Texte",
+    "value_fr": "Partitions et textes",
+    "value_ja": "楽譜とテキスト"
+  },
+  {
+    "id": "148",
+    "page": "Work pages — shared wording",
+    "path": "/works/",
+    "title": "Performances",
+    "value": "Performances",
+    "value_de": "Aufführungen",
+    "value_fr": "Exécutions",
+    "value_ja": "演奏記録"
+  },
+  {
+    "id": "149",
+    "page": "Work pages — shared wording",
+    "path": "/works/",
+    "title": "Images",
+    "value": "Images",
+    "value_de": "Bilder",
+    "value_fr": "Images",
+    "value_ja": "画像"
+  },
+  {
+    "id": "150",
+    "page": "Work pages — shared wording",
+    "path": "/works/",
+    "title": "A first listen",
+    "value": "A first listen",
+    "value_de": "Zum ersten Hören",
+    "value_fr": "Une première écoute",
+    "value_ja": "まずは試聴"
+  },
+  {
+    "id": "151",
+    "page": "Work pages — shared wording",
+    "path": "/works/",
+    "title": "Play excerpt",
+    "value": "Play excerpt",
+    "value_de": "Ausschnitt abspielen",
+    "value_fr": "Écouter l’extrait",
+    "value_ja": "抜粋を再生"
+  },
+  {
+    "id": "152",
+    "page": "Work pages — shared wording",
+    "path": "/works/",
+    "title": "At a glance",
+    "value": "At a glance",
+    "value_de": "Auf einen Blick",
+    "value_fr": "En un coup d’œil",
+    "value_ja": "作品データ"
+  },
+  {
+    "id": "153",
+    "page": "Work pages — shared wording",
+    "path": "/works/",
+    "title": "Scoring",
+    "value": "Scoring",
+    "value_de": "Besetzung",
+    "value_fr": "Effectif",
+    "value_ja": "編成"
+  },
+  {
+    "id": "154",
+    "page": "Work pages — shared wording",
+    "path": "/works/",
+    "title": "Publisher",
+    "value": "Publisher",
+    "value_de": "Verlag",
+    "value_fr": "Éditeur",
+    "value_ja": "出版社"
+  },
+  {
+    "id": "155",
+    "page": "Work pages — shared wording",
+    "path": "/works/",
+    "title": "Availability",
+    "value": "Availability",
+    "value_de": "Verfügbarkeit",
+    "value_fr": "Disponibilité",
+    "value_ja": "入手方法"
+  },
+  {
+    "id": "156",
+    "page": "Work pages — shared wording",
+    "path": "/works/",
+    "title": "Movements",
+    "value": "Movements",
+    "value_de": "Sätze",
+    "value_fr": "Mouvements",
+    "value_ja": "楽章"
+  },
+  {
+    "id": "157",
+    "page": "Work pages — shared wording",
+    "path": "/works/",
+    "title": "Other versions",
+    "value": "Other versions",
+    "value_de": "Andere Fassungen",
+    "value_fr": "Autres versions",
+    "value_ja": "別稿・編曲"
+  },
+  {
+    "id": "158",
+    "page": "Work pages — shared wording",
+    "path": "/works/",
+    "title": "Programme & recording details",
+    "value": "Programme & recording details",
+    "value_de": "Programm & Aufnahmedetails",
+    "value_fr": "Programme et détails de l’enregistrement",
+    "value_ja": "収録内容と録音の詳細"
+  },
+  {
+    "id": "159",
+    "page": "Work pages — shared wording",
+    "path": "/works/",
+    "title": "View album",
+    "value": "View album",
+    "value_de": "Album ansehen",
+    "value_fr": "Voir l’album",
+    "value_ja": "アルバムを見る"
+  },
+  {
+    "id": "160",
+    "page": "Work pages — shared wording",
+    "path": "/works/",
+    "title": "Publication & availability",
+    "value": "Publication & availability",
+    "value_de": "Veröffentlichung & Verfügbarkeit",
+    "value_fr": "Publication et disponibilité",
+    "value_ja": "出版・入手方法"
+  },
+  {
+    "id": "161",
+    "page": "Work pages — shared wording",
+    "path": "/works/",
+    "title": "Read & keep",
+    "value": "Read & keep",
+    "value_de": "Lesen & aufbewahren",
+    "value_fr": "À lire et à conserver",
+    "value_ja": "資料のダウンロード"
+  },
+  {
+    "id": "162",
+    "page": "Work pages — shared wording",
+    "path": "/works/",
+    "title": "Further resources",
+    "value": "Further resources",
+    "value_de": "Weitere Materialien",
+    "value_fr": "Autres ressources",
+    "value_ja": "その他の資料"
+  },
+  {
+    "id": "163",
+    "page": "Work pages — shared wording",
+    "path": "/works/",
+    "title": "First performance",
+    "value": "First performance",
+    "value_de": "Uraufführung",
+    "value_fr": "Création",
+    "value_ja": "初演"
+  },
+  {
+    "id": "164",
+    "page": "Work pages — shared wording",
+    "path": "/works/",
+    "title": "Other performances",
+    "value": "Other performances",
+    "value_de": "Weitere Aufführungen",
+    "value_fr": "Autres exécutions",
+    "value_ja": "その他の演奏"
+  },
+  {
+    "id": "165",
+    "page": "Work pages — shared wording",
+    "path": "/works/",
+    "title": "Full recording credits",
+    "value": "Full recording credits",
+    "value_de": "Vollständige Aufnahmeangaben",
+    "value_fr": "Crédits complets de l’enregistrement",
+    "value_ja": "録音クレジットをすべて表示"
+  },
+  {
+    "id": "166",
+    "page": "Work pages — shared wording",
+    "path": "/works/",
+    "title": "Collapse credits",
+    "value": "Collapse credits",
+    "value_de": "Angaben einklappen",
+    "value_fr": "Réduire les crédits",
+    "value_ja": "クレジットを折りたたむ"
+  },
+  {
+    "id": "167",
+    "page": "Work pages — shared wording",
+    "path": "/works/",
+    "title": "Work information is separate from the performing score.",
+    "value": "Work information is separate from the performing score.",
+    "value_de": "Die Werkbeschreibung ist nicht die Spielpartitur.",
+    "value_fr": "La fiche de l’œuvre est distincte de la partition destinée à l’exécution.",
+    "value_ja": "作品解説の資料は、演奏用の楽譜とは異なります。"
+  },
+  {
+    "id": "168",
+    "page": "Work pages — shared wording",
+    "path": "/works/",
+    "title": "Playback options",
+    "value": "Playback options",
+    "value_de": "Wiedergabeoptionen",
+    "value_fr": "Options de lecture",
+    "value_ja": "再生オプション"
   }
 ]

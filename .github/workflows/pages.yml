@@ -46,6 +46,7 @@ jobs:
       - run: python tests/recordings.py
       - run: python tests/purchase-audit.py
       - run: python tests/edition.py
+      - run: python tests/folio.py
       - run: python tests/editorial.py
       - uses: actions/upload-pages-artifact@v4
         with:

@@ -8,6 +8,7 @@ from i18n import localize, translate_template
 from work_pdfs import build_work_pdfs, download_filename
 from contacts import context as contact_context
 from score_links import score_link_label
+from folio import present, folio_duration, folio_title
 from languages import LANGUAGES, PUBLISHED, prefix, labels, text as translated_text
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
@@ -116,6 +117,16 @@ def make_site(base_path='', review=True, language='en', active_languages=None, i
     env.filters['stripcslashes']=stripcslashes
     env.filters['work_pdf_filename']=lambda value:download_filename(stripcslashes(value))
     env.globals['php_truth']=php_truth
+    env.globals['present']=present
+    env.globals['folio_duration']=lambda value:tr('full evening','abendfüllend') if str(value or '').strip()=='full evening' else folio_duration(value)
+    env.filters['editorial_fragment']=editorial_fragment
+    env.filters['folio_title']=folio_title
+    def recording_credit(record_id):
+        rows=[r for r in tables.get('audio_credit',[]) if r.get('recording_id')==record_id]
+        values=lambda key: list(dict.fromkeys(r[key] for r in rows if r.get(key)))
+        performers=values('performers'); label=values('label')
+        return {'performers':performers[0] if len(performers)==1 else '', 'label':label[0] if len(label)==1 else ''}
+    env.globals['recording_credit']=recording_credit
     props={x['name']:x for x in tables['properties']}
     recordings=sorted(tables['recording'],key=lambda r:(int(r['sequence']),-int(r['id'])))
     audio=sorted(tables['audio_sample'],key=lambda r:(int(r['sequence']),r['opus_no']))
@@ -309,7 +320,7 @@ def make_site(base_path='', review=True, language='en', active_languages=None, i
     for work in tables['catalogue']:
         id=work['id']; w=copy.deepcopy(work)
         if len(w['free_downloads'] or '')<10:w['free_downloads']=False
-        page('/works/show/'+id,'works_catalogue',catalogue=w,score_downloads=score_downloads(w),purchase_links=purchase_links(w),recordings=related('catalogue_recordings','catalogue_id',id,'recording_id',by_id['recording']),audiosamples=related('catalogue_audio_sample','catalogue_id',id,'audio_sample_id',audios),images=[r for r in tables['catalogue_image'] if r['catalogue_id']==id])
+        page('/works/show/'+id,'works_catalogue',work_folio=True,catalogue=w,score_downloads=score_downloads(w),purchase_links=purchase_links(w),recordings=related('catalogue_recordings','catalogue_id',id,'recording_id',by_id['recording']),audiosamples=related('catalogue_audio_sample','catalogue_id',id,'audio_sample_id',audios),images=[r for r in tables['catalogue_image'] if r['catalogue_id']==id])
     for id in [None]+[r['id'] for r in recordings]:
         route='/recordings'+('/'+id if id else '')
         rec=by_id['recording'][id] if id else recordings[0]
