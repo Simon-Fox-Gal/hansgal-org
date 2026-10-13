@@ -37,6 +37,8 @@
    if(!config.endpoint){feedback.textContent=l.setup_pending;return;}
    const fields=Object.fromEntries(new FormData(form)),payload={items,scoreIds:scores().map(r=>r.id),donation:fields.donation,expectedTotal:q.total,language:lang,method:fields.method,comments:fields.comments.trim(),customer:Object.fromEntries(['name','email','address1','address2','city','postcode','country'].map(k=>[k,fields[k]])),website:fields.website,elapsedMs:Date.now()-started};
    let saved;try{saved=JSON.parse(sessionStorage.getItem('hansgal-order-attempt'));}catch{}delete payload.elapsedMs;
+   // Empty comments must not turn an older checkout retry into a new order.
+   if(!payload.comments)delete payload.comments;
    // Reuse the request ID after an uncertain response, without persisting personal details.
    const digest=Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(JSON.stringify(payload)))),b=>b.toString(16).padStart(2,'0')).join('');
    const id=saved?.digest===digest?saved.id:crypto.randomUUID();try{sessionStorage.setItem('hansgal-order-attempt',JSON.stringify({id,digest}));}catch{}
