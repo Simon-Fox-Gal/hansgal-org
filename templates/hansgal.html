@@ -1,33 +1,14 @@
-<div class="staticpage reading-layout">
-	<div class="widelead">{{ lead }}</div>
-<aside class="chapter-nav"><details open><summary>{{ page_text('53') }}</summary><nav aria-label="{{ page_text('54') }}">
- {% for item in submenus %}{% if item.hidden == 'no' %}<a href="/{{ mainmenu }}/{{ item.id }}/" {% if route == '/' ~ mainmenu ~ '/' ~ item.id %}aria-current="page"{% endif %}>{{ item.title }}</a>{% endif %}{% endfor %}
- </nav></details>		{% if thumb %}
-		<img class="thumb" src="/{{ thumb }}" border="0" />
-		<div class="clear"></div>
-		{% endif %}
-		<div class="piktogram">
-		{{ piktorgram }}
-		</div>
-</aside>
-    <div class="text">
-		<h1 class="title">{{ title }}</h1>
-		<div class="lead">
-			{% if thumbnails %}
-			<br /><br />
-			{% for i in range(thumbnails|length) %}
-			<div class="thumbnail">
-				<a class="imagesItem" rel="group" title="{{ thumbnails[i].title }}" href="/storage/thumbnails/{{ thumbnails[i].filename }}"><img alt="{{ thumbnails[i].title }}" title="{{ thumbnails[i].title }}" src="/storage/thumbnails/thumb_{{ thumbnails[i].filename }}" border="0" /></a>
-			</div>
-			{% endfor %}
-			<br />
-			<div class="clear"></div>
-			{% endif %}
-		</div>
-		{% if discover_player %}{% include 'listening-discovery.html' %}{% endif %}
-		<div class="article">{{ body }}</div>
-	</div>
-	<div class="clear"></div>
+<div class="biography-folio">
+ <nav class="bio-breadcrumb" aria-label="{{ bio_ui.about }}"><a href="/hansgal/">{{ bio_ui.about }}</a><span aria-hidden="true">/</span><span>{% if chapter %}{{ bio_ui.chapter }} {{ chapter.number }} {{ bio_ui.of }} {{ bio_chapters|length }}{% else %}{{ title }}{% endif %}</span></nav>
+ {% include 'biography-nav.html' %}
+ <header class="bio-heading"><p class="eyebrow">Hans Gál · 1890–1987</p><h1>{{ chapter.heading if chapter else title }}</h1>{% if lead|striptags|trim %}<div class="bio-deck">{{ lead }}</div>{% endif %}</header>
+ {% if discover_player %}{% include 'listening-discovery.html' %}{% endif %}
+ <div class="bio-reading{% if not bio_images %} bio-reading-solo{% endif %}">
+  <article id="chapter-text" class="article bio-prose">{{ body }}</article>
+  {% if bio_images %}<aside class="bio-gallery"><details open><summary>{{ bio_ui.illustrations }} <span>{{ bio_images|length }}</span></summary><p class="bio-gallery-hint">{{ bio_ui.enlarge }}</p><div class="bio-plates">{% for image in bio_images %}<figure><a class="imagesItem" rel="chapter" href="{{ image.src }}" title="{{ image.caption|e }}"><img src="{{ image.src }}" alt="{{ image.caption|e }}" loading="lazy"></a><figcaption>{{ image.caption }}</figcaption></figure>{% endfor %}</div></details></aside>{% endif %}
+ </div>
+ {% if bio_notes %}<section class="bio-notes" aria-labelledby="bio-notes-title"><h2 id="bio-notes-title">{{ bio_ui.notes }}</h2>{% for note in bio_notes %}<details id="note-{{ note.id }}"><summary>{{ note.title }}</summary><div class="article">{{ note.body }}</div><a href="#chapter-text">↑ {{ bio_ui.back }}</a></details>{% endfor %}</section>{% endif %}
+ <nav class="bio-turn" aria-label="{{ bio_ui.chapters }}">{% if bio_previous %}<a href="/hansgal/{{ bio_previous.id }}/"><small>← {{ bio_ui.previous }}</small><span>{{ bio_previous.heading }}</span></a>{% else %}<a href="/hansgal/"><small>← {{ bio_ui.contents }}</small><span>{{ bio_ui.book_title }}</span></a>{% endif %}{% if bio_next %}<a href="/hansgal/{{ bio_next.id }}/"><small>{{ bio_ui.next }} →</small><span>{{ bio_next.heading }}</span></a>{% else %}<a href="/works/"><small>{{ bio_ui.resources }} →</small><span>{{ tr('Works catalogue','Werkverzeichnis') }}</span></a>{% endif %}</nav>
+ {% include 'biography-resources.html' %}
 </div>
-
 {% if discover_player %}{% include 'audio-player.html' %}{% endif %}

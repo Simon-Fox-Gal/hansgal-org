@@ -12,6 +12,7 @@
  <script src="/app/catalogue.js" defer></script><script src="/app/score-zip.js" defer></script><script src="/app/scores.js?v=checkout3" defer></script>
  <script src="/app/replica.js" defer></script><script src="/app/edition.js" defer></script>
 {% if work_folio %}<link rel="stylesheet" href="/app/work-folio.css?v=1"><script defer src="/app/work-folio.js?v=1"></script>{% endif %}
+{% if mainmenu=='hansgal' %}<link rel="stylesheet" href="/app/biography.css?v=1"><script defer src="/app/biography.js?v=1"></script>{% endif %}
 </head>
 <body id="top" class="section-{{ mainmenu or 'home' }}{% if work_folio %} folio-work{% endif %}" data-page="{{ route }}">
  <a class="skip-link" href="#main-content">{{ page_text('39') }}</a>
