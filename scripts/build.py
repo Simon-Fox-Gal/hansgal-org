@@ -9,6 +9,8 @@ from work_pdfs import build_work_pdfs, download_filename
 from contacts import context as contact_context
 from score_links import score_link_label
 from folio import present, folio_duration, folio_title
+import biography
+from biography_pdfs import build_biography_pdf
 from languages import LANGUAGES, PUBLISHED, prefix, labels, text as translated_text
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
@@ -90,7 +92,11 @@ def make_site(base_path='', review=True, language='en', active_languages=None, i
     tables={p.stem:json.loads(p.read_text(encoding='utf8')) for p in (ROOT/'content').glob('*.json') if p.stem not in ('asset-manifest','legacy-routes','catalogue-order','catalogue-orders','accent-map')}
     if language!='en':tables=localize(tables,language)
     build_work_pdfs(tables,out,language,base_path,stripcslashes)
+    build_biography_pdf(tables,out,language,stripcslashes)
     by_id={k:{r.get('id'):r for r in v} for k,v in tables.items()}
+    bio_ui=biography.labels(language)
+    bio_chapters=biography.chapters(tables)
+    bio_shared=dict(bio_ui=bio_ui,bio_chapters=bio_chapters,bio_groups=biography.groups(bio_chapters,bio_ui),bio_pdf='/storage/biography/Hans-Gal-Biography-'+language+'.pdf')
     class LocaleLoader(FileSystemLoader):
         def get_source(self,environment,template):
             source,filename,uptodate=super().get_source(environment,template)
@@ -280,7 +286,7 @@ def make_site(base_path='', review=True, language='en', active_languages=None, i
 
     page('/','main',featured_recordings=recordings[:3])
     page('/score-basket','score-basket')
-    page('/hansgal','hansgal_index',biography_intro=by_id['heading']['1']['body'],biography_menu=by_id['menu'],biography_extra=[r for r in tables['menu'] if r['mainmenu']=='hansgal' and r['hidden']!='yes' and r['id'] not in ['1', '2', '9', '11', '27', '28', '29', '38', '39', '40', '41', '42', '43', '44', '45', '46', '47', '48', '49', '50', '51', '52', '53', '54', '55', '56']])
+    page('/hansgal','hansgal_index',**bio_shared,biography_intro=by_id['heading']['1']['body'],biography_extra=[r for r in tables['menu'] if r['mainmenu']=='hansgal' and r['hidden']!='yes' and r['id'] not in biography.CHAPTER_IDS])
     for menu in tables['menu']:
         section=menu['mainmenu']; id=menu['id']; route=f'/{section}/{id}'
         c={k:editorial_fragment(stripcslashes(menu[k])) for k in ('title','lead','body')}
@@ -289,6 +295,11 @@ def make_site(base_path='', review=True, language='en', active_languages=None, i
         c['submenus']=[r for r in tables['menu'] if r['mainmenu']==section]
         c['thumbnails']=[r for r in tables['thumbnail'] if r['menu_id']==id]
         if section=='hansgal':
+            c.update(bio_shared)
+            chapter=next((r for r in bio_chapters if r['id']==id),None)
+            index=bio_chapters.index(chapter) if chapter else -1
+            c.update(chapter=chapter,bio_previous=bio_chapters[index-1] if index>0 else None,bio_next=bio_chapters[index+1] if 0<=index<len(bio_chapters)-1 else None,bio_images=biography.illustrations(tables,id),bio_notes=[])
+            if chapter:c['body'],c['bio_notes']=biography.reading_body(c['body'],menu['body'])
             candidate=f'storage/pictureundersubmenus/thumb_hansgal_{id}.jpg'
             c['thumb']=candidate if (ROOT/'public'/candidate).is_file() else False
             text=ROOT/'public/storage/textsundersubmenus'/f'hansgal_{id}.html'

@@ -1,3 +1,7 @@
-<section class="biography-index"><p class="eyebrow">{{ page_text('55') }}</p><h1>{{ page_text('56') }}</h1><div class="biography-intro">{{ biography_intro }}</div>
-<nav class="biography-meta" aria-label="{{ page_text('57') }}"><a href="/hansgal/26/">{{ page_text('58') }} →</a><a href="/hansgal/12/">{{ page_text('59') }} →</a></nav>
-<div class="chapter-grid">{% for id in ['1','2','9','11','27','28','29','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56'] %}{% set item=biography_menu[id] %}{% if item and item.hidden!='yes' %}<a href="/hansgal/{{ id }}/">{{ item.title }}</a>{% endif %}{% endfor %}{% for item in biography_extra %}<a href="/hansgal/{{ item.id }}/">{{ item.title }}</a>{% endfor %}</div></section>
+<section class="biography-folio bio-index">
+ <div class="bio-index-hero"><div><p class="eyebrow">Hans Gál · 1890–1987</p><h1>{{ bio_ui.book_title }}</h1><div class="biography-intro">{{ biography_intro }}</div><div class="bio-actions"><a class="button" href="/hansgal/1/">{{ bio_ui.read }} →</a><a href="{{ bio_pdf }}" download>{{ bio_ui.download }} <small>PDF ↓ · {{ bio_ui.language }}</small></a></div></div><figure><img src="/storage/photos/235d5fd74ea55c801cfc39f299ebb398.jpg" alt="Hans Gál" width="369" height="500"><figcaption>{{ bio_ui.photo }}</figcaption></figure></div>
+ <div class="bio-index-label"><h2>{{ bio_ui.contents }}</h2><span>{{ bio_ui.chapters }}</span></div>
+ <div class="bio-chapter-groups">{% for group in bio_groups %}<section><h3>{{ group.title }}</h3><div>{% for item in group.chapters %}<a href="/hansgal/{{ item.id }}/"><span>{{ '%02d'|format(item.number) }}</span><strong>{{ item.heading }}</strong><span aria-hidden="true">→</span></a>{% endfor %}</div></section>{% endfor %}</div>
+ {% if biography_extra %}<div class="bio-extras">{% for item in biography_extra %}<a href="/hansgal/{{ item.id }}/">{{ item.title }} →</a>{% endfor %}</div>{% endif %}
+ {% include 'biography-resources.html' %}
+</section>

@@ -1,0 +1,6 @@
+<nav class="bio-toolbar" aria-label="{{ bio_ui.chapters }}">
+ <details class="bio-contents"><summary>{{ bio_ui.contents }} <span class="bio-position">{% if chapter %}{{ '%02d'|format(chapter.number) }} / {{ bio_chapters|length }}{% else %}{{ bio_ui.chapters }}{% endif %}</span></summary><div class="bio-contents-panel">{% for group in bio_groups %}<section><h2>{{ group.title }}</h2>{% for item in group.chapters %}<a href="/hansgal/{{ item.id }}/"{% if chapter and item.id==chapter.id %} aria-current="page"{% endif %}><span>{{ '%02d'|format(item.number) }}</span>{{ item.heading }}</a>{% endfor %}</section>{% endfor %}<a href="/hansgal/" class="bio-all">{{ bio_ui.all }} →</a></div></details>
+ <a class="bio-ebook-link" href="{{ bio_pdf }}" download>{{ bio_ui.download }} <span>PDF ↓</span></a>
+ <div class="bio-step">{% if bio_previous %}<a href="/hansgal/{{ bio_previous.id }}/" aria-label="{{ bio_ui.previous }}: {{ bio_previous.heading|e }}" title="{{ bio_previous.heading|e }}">←</a>{% endif %}{% if bio_next %}<a href="/hansgal/{{ bio_next.id }}/" aria-label="{{ bio_ui.next }}: {{ bio_next.heading|e }}" title="{{ bio_next.heading|e }}">→</a>{% endif %}</div>
+ <div class="bio-progress" aria-hidden="true"><span></span></div>
+</nav>
