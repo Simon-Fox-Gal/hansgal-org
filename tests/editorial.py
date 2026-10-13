@@ -11,6 +11,7 @@ subprocess.run(['node',str(ROOT/'tests/audio-player.test.cjs')],check=True)
 from i18n import localize
 from build import stripcslashes
 from work_pdfs import download_filename
+from languages import text as translated_text
 def load(name):return json.loads((ROOT/'content'/f'{name}.json').read_text(encoding='utf8'))
 class Text(HTMLParser):
  def __init__(self,s):super().__init__();self.parts=[];self.skip=0;self.feed(s)
@@ -32,7 +33,13 @@ for lang in languages:
  data=localize(tables,lang) if lang!='en' else tables;prefix=lang+'/' if lang!='en' else ''
  for r in data['catalogue']:
   file=ROOT/'dist/storage/work-notes'/lang/(r['id']+'.pdf');pdf=PdfReader(file)
-  text=''.join(compact(page.extract_text()).replace(compact('Hans Gál · '+plain(r['title']))+str(n),'',1) for n,page in enumerate(pdf.pages,1))
+  # Remove only the repeated page furniture before joining flowing text. The
+  # Folio masthead is selectable text, unlike the old raster logo.
+  header=compact('THE HANS GÁL SOCIETY'+translated_text(lang,'HANS GÁL · WORK NOTES','HANS GÁL · WERKINFORMATION'))
+  footer_link=compact(translated_text(lang,'View this work online','Dieses Werk online ansehen'))
+  page_texts=[compact(page.extract_text()).replace(header,'',1).replace(compact('Hans Gál · '+plain(r['title']))+footer_link+str(n),'',1) for n,page in enumerate(pdf.pages,1)]
+  assert all(page_texts),(lang,r['id'],'empty PDF page')
+  text=''.join(page_texts)
   footer=compact('Hans Gál · '+plain(r['title']))
   for page in pdf.pages:assert footer in compact(page.extract_text()),(lang,r['id'],'title missing from PDF footer')
   for field in ['title','description','movements','orchestration','availability','first_performance','other_performances','further_details','other_versions','publisher','free_downloads']:
@@ -40,7 +47,10 @@ for lang in languages:
    assert not source or source in text,(lang,r['id'],field,'PDF text missing')
   recordings={row['id']:row for row in data['recording']}
   for rel in data['catalogue_recordings']:
-   if rel['catalogue_id']==r['id'] and rel['recording_id'] in recordings:assert compact(plain(recordings[rel['recording_id']]['title'])) in text,(lang,r['id'],'recording')
+   if rel['catalogue_id']==r['id'] and rel['recording_id'] in recordings:
+    record=recordings[rel['recording_id']]
+    for field in ('title','detail'):
+     assert compact(plain(record[field])) in text,(lang,r['id'],'recording',rel['recording_id'],field)
   markup=(ROOT/'dist'/prefix/'works/show'/r['id']/'index.html').read_text(encoding='utf8')
   assert f'/storage/work-notes/{lang}/{r["id"]}.pdf' in markup
   filename=download_filename(stripcslashes(r['title']))

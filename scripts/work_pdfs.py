@@ -1,23 +1,13 @@
-"""Build bilingual, printable work notes directly from the catalogue tables."""
-import html,pathlib,re,io
+"""Build four-language, printable Folio notes directly from the catalogue tables."""
+import html,pathlib,re
 from html.parser import HTMLParser
 from urllib.parse import urljoin,urlsplit
 import reportlab
 from reportlab import rl_config
 rl_config.useA85=0  # Binary PDF streams avoid redundant ASCII expansion.
-from languages import prefix, text as translated_text
-from score_links import score_link_label
-from reportlab.lib import colors
-from reportlab.lib.pagesizes import A4
-from reportlab.lib.styles import ParagraphStyle
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
-from reportlab.platypus import SimpleDocTemplate,Paragraph,Spacer,HRFlowable,Table,TableStyle
-from reportlab.lib.utils import ImageReader
-from PIL import Image
-
-ROOT=pathlib.Path(__file__).resolve().parents[1]
-PLUM=colors.HexColor('#792858');INK=colors.HexColor('#29252a');GREEN=colors.HexColor('#215d42')
+from pdf_typography import Paragraph
 for name,file in [('Edition','Vera.ttf'),('Edition-Bold','VeraBd.ttf'),('Edition-Italic','VeraIt.ttf'),('Edition-BoldItalic','VeraBI.ttf')]:
  pdfmetrics.registerFont(TTFont(name,str(pathlib.Path(reportlab.__file__).parent/'fonts'/file)))
 pdfmetrics.registerFontFamily('Edition',normal='Edition',bold='Edition-Bold',italic='Edition-Italic',boldItalic='Edition-BoldItalic')
@@ -27,7 +17,7 @@ class Copy(HTMLParser):
   super().__init__(convert_charrefs=True);self.parts=[];self.skip=0;self.site=site;self.anchor=[];self.feed(source or '')
  def handle_starttag(self,tag,attrs):
   a=dict(attrs)
-  if tag in ('script','style'):self.skip+=1
+  if tag in ('head','script','style'):self.skip+=1
   if self.skip:return
   if tag in ('p','div','br','li','tr','h1','h2','h3','blockquote'):self.parts.append('\n')
   if tag=='td':self.parts.append(' ')
@@ -38,7 +28,7 @@ class Copy(HTMLParser):
    ok=urlsplit(url).scheme in ('http','https','mailto');self.anchor.append(ok)
    if ok:self.parts.append('<link href="'+html.escape(url,quote=True)+'" color="#792858">')
  def handle_endtag(self,tag):
-  if tag in ('script','style'):self.skip=max(0,self.skip-1);return
+  if tag in ('head','script','style'):self.skip=max(0,self.skip-1);return
   if self.skip:return
   if tag in ('b','strong'):self.parts.append('</b>')
   if tag in ('i','em'):self.parts.append('</i>')
@@ -65,88 +55,5 @@ def paragraphs(value,style,site,strip):
  return [Paragraph(line,style) for line in re.split(r'\n\s*\n|\n',text) if plain(line).strip()]
 
 def build_work_pdfs(tables,out,language,base_path,strip):
- # A print-sized copy avoids embedding the large lossless website masthead in
- # every generated document. The preserved website image stays byte-for-byte
- # unchanged; dimensions and colours of the PDF masthead are retained.
- logo_bytes=io.BytesIO()
- Image.open(ROOT/'public/gfx/images/hansgal-logo-website.png').convert('RGB').save(logo_bytes,format='JPEG',quality=90,subsampling=0,optimize=True)
- logo_bytes.seek(0);pdf_logo=ImageReader(logo_bytes)
- de=language=='de';t=lambda en,deutsch:translated_text(language,en,deutsch)
- font='Edition';bold='Edition-Bold'
- if language=='ja':
-  if 'Edition-Japanese' not in pdfmetrics.getRegisteredFontNames():
-   pdfmetrics.registerFont(TTFont('Edition-Japanese',str(ROOT/'vendor/fonts/NotoSansJP-Regular.ttf')))
-   pdfmetrics.registerFontFamily('Edition-Japanese',normal='Edition-Japanese',bold='Edition-Japanese',italic='Edition-Japanese',boldItalic='Edition-Japanese')
-  font=bold='Edition-Japanese'
- site=('https://simon-fox-gal.github.io'+base_path if base_path else 'https://hansgal.org')+'/'
- folder=out/'storage/work-notes'/language;folder.mkdir(parents=True,exist_ok=True)
- body=ParagraphStyle('body',fontName=font,fontSize=10.5,leading=16,textColor=INK,spaceAfter=7,splitLongWords=True,wordWrap='CJK' if language=='ja' else None)
- title=ParagraphStyle('title',parent=body,fontName=font,fontSize=29,leading=35,textColor=PLUM,spaceAfter=18)
- sub=ParagraphStyle('subtitle',parent=body,fontSize=12,leading=18,textColor=GREEN,spaceAfter=16)
- heading=ParagraphStyle('section',parent=body,fontName=bold,fontSize=11,leading=15,textColor=PLUM,spaceBefore=20,spaceAfter=10,keepWithNext=True)
- record_title=ParagraphStyle('record-title',parent=body,fontName=bold,textColor=PLUM,keepWithNext=True,spaceBefore=5)
- small=ParagraphStyle('small',parent=body,fontSize=9,leading=13,textColor=GREEN)
- label=ParagraphStyle('label',parent=body,fontName=bold,fontSize=9,leading=13,textColor=GREEN,spaceAfter=0)
- recordings={r['id']:r for r in tables['recording']}
- for row in tables['catalogue']:
-  work_url=site+prefix(language).strip('/')+('/' if language!='en' else '')+'works/show/'+row['id']+'/'
-  story=[Paragraph(t('HANS GÁL · WORK NOTES','HANS GÁL · WERKINFORMATION'),small),Spacer(1,12)]
-  story+=paragraphs(row['title'],title,site,strip)
-  desc=strip(row.get('description') or '')
-  if row.get('opus_no') not in (None,'','0'):desc+=' · Opus '+row['opus_no']
-  if row.get('year_of_composition') not in (None,'','0'):desc+=' · '+row['year_of_composition']
-  story+=paragraphs(desc,sub,site,strip)
-  story.append(HRFlowable(width='100%',thickness=2,color=PLUM,spaceAfter=6))
-  def section(en,ger,value):
-   content=paragraphs(value,body,site,strip)
-   if content:
-    # A quiet label column gives the catalogue facts a consistent reading grid.
-    # Long entries split within the content cell instead of forcing blank pages.
-    block=Table([[Paragraph(t(en,ger),label),content]],colWidths=[106,A4[0]-222],splitByRow=1,splitInRow=1,hAlign='LEFT')
-    block.setStyle(TableStyle([('VALIGN',(0,0),(-1,-1),'TOP'),('LEFTPADDING',(0,0),(0,-1),0),('LEFTPADDING',(1,0),(1,-1),14),('RIGHTPADDING',(0,0),(-1,-1),0),('TOPPADDING',(0,0),(-1,-1),12),('BOTTOMPADDING',(0,0),(-1,-1),12),('LINEABOVE',(0,0),(-1,0),.4,colors.HexColor('#ddd3d8'))]))
-    story.append(block)
-  section('Movements','Sätze',row.get('movements'))
-  section('Instrumentation','Besetzung',row.get('orchestration'))
-  if row.get('duration') not in (None,'','0'):
-   duration=translated_text(language,'full evening') if language in ('fr','ja') and row['duration']=='full evening' else row['duration'].rstrip("'′ ")+' '+t('minutes','Minuten')
-   section('Duration','Dauer',duration)
-  section('Publisher','Verlag',row.get('publisher'))
-  section('Availability','Verfügbarkeit',row.get('availability'))
-  section('Other versions','Weitere Fassungen',row.get('other_versions'))
-  section('First performance','Uraufführung',row.get('first_performance'))
-  section('Other performances','Weitere Aufführungen',row.get('other_performances'))
-  section('About the work','Über das Werk',row.get('further_details'))
-  section('Downloads','Downloads',row.get('free_downloads'))
-  for field,en,ger in [('purchase_url','Printed music','Gedruckte Noten'),('hire_url','Hire materials','Leihmaterial'),('score_purchase_download_url','Digital sheet music','Digitale Noten')]:
-   for url in (row.get(field) or '').splitlines():
-    if url.strip():story.append(Paragraph('<link href="'+html.escape(url.strip(),quote=True)+'" color="#792858">'+html.escape(score_link_label(url.strip(),field,t))+'</link>',body))
-  if row.get('score_available')=='yes' and row.get('score_file'):
-   section('Available score','Verfügbare Noten',row.get('score_note'))
-   score_paths=[path.strip() for path in row['score_file'].splitlines() if path.strip()]
-   score_labels=(row.get('score_file_titles') or '').splitlines()
-   for index,path in enumerate(score_paths):
-    score=urljoin(site,path.lstrip('/'))
-    fallback=t('Download score','Noten herunterladen')+((' '+str(index+1)) if len(score_paths)>1 else '')
-    score_label=score_labels[index].strip() if index<len(score_labels) and score_labels[index].strip() else fallback
-    story.append(Paragraph('<link href="'+html.escape(score,quote=True)+'" color="#792858">'+html.escape(score_label)+'</link>',body))
-   story.append(Paragraph(t('Suggested donation','Empfohlene Spende')+': £'+str(row.get('score_suggested_donation') or '0')+t(' (a £0 download is also available).',' (ein Download für £0 ist ebenfalls möglich).'),body))
-  ids=list(dict.fromkeys(r['recording_id'] for r in tables['catalogue_recordings'] if r['catalogue_id']==row['id'] and r['recording_id'] in recordings))
-  if ids:
-   story.append(Paragraph(t('Recordings','Aufnahmen'),heading));story.append(HRFlowable(width='100%',thickness=.5,color=PLUM,spaceAfter=12))
-   for id in ids:
-    record=recordings[id];url=site+prefix(language).strip('/')+('/' if language!='en' else '')+'recordings/'+id+'/'
-    story.append(Paragraph('<link href="'+url+'" color="#792858"><b>'+html.escape(plain(strip(record['title'])))+'</b></link>',record_title))
-    story+=paragraphs(record['detail'],body,site,strip);story.append(Spacer(1,14))
-  story.append(Spacer(1,15));story.append(Paragraph('<link href="'+work_url+'" color="#215d42">'+t('View this work online','Dieses Werk online ansehen')+'</link>',small))
-  footer=Paragraph('Hans Gál · '+html.escape(plain(strip(row['title']))),ParagraphStyle('footer',fontName=font,fontSize=8,leading=11,textColor=GREEN,wordWrap='CJK' if language=='ja' else None))
-  footer_width=A4[0]-118
-  _,footer_height=footer.wrap(footer_width,A4[1])
-  footer_line=28+footer_height+8
-  def furniture(canvas,doc):
-   canvas.saveState();canvas.setTitle(plain(strip(row['title']))+' · Hans Gál');canvas.setAuthor('The Hans Gál Society')
-   canvas.drawImage(pdf_logo,46,A4[1]-78,width=172,height=64,preserveAspectRatio=True)
-   canvas.setStrokeColor(PLUM);canvas.setLineWidth(.6);canvas.line(42,footer_line,A4[0]-42,footer_line)
-   canvas.setFont(font,8);canvas.setFillColor(GREEN);footer.drawOn(canvas,42,28);canvas.drawRightString(A4[0]-42,28,str(doc.page));canvas.restoreState()
-  doc=SimpleDocTemplate(str(folder/(row['id']+'.pdf')),pagesize=A4,rightMargin=52,leftMargin=52,topMargin=105,bottomMargin=footer_line+16,pageCompression=1,invariant=1)
-  doc.build(story,onFirstPage=furniture,onLaterPages=furniture)
- return len(tables['catalogue'])
+ from pdf_folio import build_folio_pdfs
+ return build_folio_pdfs(tables,out,language,base_path,strip,paragraphs,plain)

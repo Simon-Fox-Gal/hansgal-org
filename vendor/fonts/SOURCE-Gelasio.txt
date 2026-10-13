@@ -1,0 +1,4 @@
+Gelasio by Sorkin Type Co.
+Source: https://github.com/google/fonts/tree/main/ofl/gelasio
+Downloaded 2026-10-13. Unmodified variable font; ReportLab embeds its default regular instance.
+License: SIL Open Font License 1.1, see OFL-Gelasio.txt.
