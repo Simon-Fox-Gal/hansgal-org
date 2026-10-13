@@ -2,3 +2,68 @@
 
 .shop-receipt{margin:1rem 0 2rem;white-space:normal}.shop-receipt p{white-space:pre-line}.shop-receipt h2{overflow-wrap:anywhere}.shop-checkout input#shop-donation{width:7rem;padding:.5rem;font:inherit}@media print{body *{visibility:hidden}.shop-receipt,.shop-receipt *{visibility:visible}.shop-receipt{position:absolute;left:0;top:0;width:90%}.shop-print{display:none}}
 #listening-now #now-shop .hgs-shop-actions button{background:#75435f;color:#fff;border:0;font-size:.88rem;padding:.55rem .8rem}#listening-now #now-shop .hgs-shop-offer p,#listening-now #now-shop .hgs-shop-offer small,#listening-now #now-shop .hgs-shop-status{color:#302c26}
+
+/* Compact basket: score suggestions stay separate from the payable order total. */
+.basket-counts{display:inline-flex;align-items:center;gap:.3rem;margin-left:.1rem}
+.basket-count{display:inline-flex;align-items:center;gap:.2rem;background:#f2ede5;border:1px solid #d9cfbe;border-radius:1rem;padding:.1rem .4rem;font:.78rem/1.3 var(--sans,Arial,sans-serif);color:#385044}
+.basket-count svg{width:21px;height:21px;fill:none;stroke:currentColor;stroke-width:1.3}
+.basket-count .icon-hole,.basket-count .icon-shine{fill:currentColor;stroke:none}
+.basket-count-cd{color:#75435f}.basket-count b{min-width:.6rem;text-align:center}
+.hgs-shop-status:not(:empty){margin-top:.6rem;padding:.45rem .6rem;background:#fff;border-left:3px solid #385044;border-radius:2px;font-weight:600}
+#listening-now #now-shop .hgs-shop-status a{color:#653551!important;text-decoration:underline}
+#basket-added-toast{position:fixed;right:1.1rem;top:1.1rem;z-index:1001;max-width:min(28rem,calc(100vw - 2.2rem));box-sizing:border-box;padding:.8rem 1rem;background:#fffdf7;color:#294b3a;border:1px solid #a4b5a5;border-left:4px solid #385044;box-shadow:0 5px 25px #1f352233;border-radius:4px;font:600 .95rem/1.5 var(--sans,Arial,sans-serif)}
+#basket-added-toast a{color:#75435f;text-decoration:underline;white-space:nowrap}
+.basket-note-burst{position:fixed;z-index:1002;pointer-events:none;width:0;height:0}
+.basket-note-burst span{position:absolute;font:bold 27px/1 Georgia,serif;text-shadow:0 1px 2px #fff;animation:musical-bloom 1s ease-out forwards}
+@keyframes musical-bloom{0%{opacity:0;transform:translate(-50%,-50%) scale(.25)}15%{opacity:1}75%{opacity:1}100%{opacity:0;transform:translate(calc(-50% + var(--x)),calc(-50% + var(--y))) rotate(var(--turn)) scale(1.15)}}
+@media(prefers-reduced-motion:reduce){.basket-note-burst{display:none}}
+#score-basket{font:1rem/1.5 var(--sans,Arial,sans-serif)}
+#score-basket h1{margin-bottom:1rem}
+#score-basket h2{font-size:1.4rem;line-height:1.3}
+#score-basket p{margin:.4rem 0 .65rem}
+#score-basket .basket-intro{font-size:1rem;margin:0 0 1rem;max-width:850px}
+#score-basket.shop-has-cds .basket-intro{display:none}
+#score-basket .cd-basket{margin:.7rem 0 1rem;padding-top:.6rem}
+#score-basket .cd-basket h2{margin:0 0 .3rem}
+#score-basket .cd-basket-row{padding:.6rem 0;gap:.75rem;align-items:center}
+#score-basket .cd-basket-row h3{font-size:1rem;line-height:1.35;margin:0 0 .25rem}
+#score-basket .cd-basket-row p{display:inline-block;margin:0 .8rem .3rem 0;font-size:.9rem}
+#score-basket .cd-basket-row input{display:inline-block;width:3.5rem;margin:0;padding:.3rem;min-height:36px}
+#score-basket .cd-basket-row button{padding:.3rem .6rem;min-height:36px;font-size:.85rem}
+#score-basket .basket-layout{gap:1.2rem}
+#score-basket .basket-section-title{margin:.5rem 0}
+#score-basket .basket-item{padding:.65rem 0 .8rem}
+#score-basket .basket-item h2{font-size:1.25rem}
+#score-basket .basket-item-amount{font-size:1rem;flex-basis:160px}
+#score-basket .basket-item-amount span{font-size:.8rem}
+#score-basket .basket-item-note{font-size:.9rem;margin:.3rem 0 .5rem}
+#score-basket .basket-item-note:empty,#score-basket [role=status]:empty{display:none}
+#score-basket .basket-item-actions{gap:.5rem;justify-content:flex-start}
+#score-basket .basket-item-actions :is(a,button),#score-basket #download-selection{font-size:.88rem;padding:.45rem .65rem;min-height:40px}
+#score-basket .basket-downloads{padding-top:.6rem}
+#score-basket .basket-total{font-size:.9rem;justify-content:flex-start;align-items:baseline;margin:0 0 .6rem;color:#385044}
+#score-basket .basket-total strong{white-space:nowrap}
+#score-basket .basket-support{padding:1rem}
+#score-basket .basket-support h2{font-size:1.4rem;margin:0 0 .7rem}
+#score-basket .basket-support p{font-size:.88rem}
+#score-basket #score-donation label{font-size:1rem}
+#score-basket .shop-checkout{padding:1rem;margin:1rem 0}
+#score-basket .shop-checkout h2{margin:0 0 .75rem}
+#score-basket .shop-checkout-grid{gap:1.5rem}
+#score-basket .shop-fields{gap:.5rem .7rem}
+#score-basket .shop-fields input{padding:.45rem;min-height:38px}
+#score-basket .shop-checkout fieldset{margin:0 0 .7rem}
+#score-basket .shop-checkout legend{margin-bottom:.35rem}
+#score-basket .shop-country{font-size:.85rem;margin:0}
+#score-basket .shop-payment label{display:inline-flex;align-items:center;gap:.25rem;margin:.25rem .7rem .3rem 0;font-size:.9rem;min-height:32px}
+#score-basket #shop-donation{display:inline-block;margin:.35rem .5rem;width:7rem;min-height:38px}
+#score-basket #shop-totals{background:#fff;border:1px solid #d8cdbd;padding:.7rem .85rem;margin:.75rem 0}
+#score-basket .shop-totals{margin:0;gap:.35rem .75rem;font-size:.95rem}
+#score-basket .shop-totals dd{text-align:right;white-space:nowrap}
+#score-basket .shop-totals .grand{border-color:#75435f;color:#653551;font-size:1.3rem;padding-top:.65rem;margin-top:.3rem}
+#score-basket .shop-checkout small{font-size:.78rem;line-height:1.45}
+#score-basket .shop-checkout .shop-privacy{margin-top:.7rem}
+#score-basket .shop-comments{display:block;font-weight:600;margin-top:.7rem}
+#score-basket textarea{box-sizing:border-box;width:100%;padding:.5rem;border:1px solid #b8aea0;background:white;font:inherit;resize:vertical;min-height:75px}
+#score-basket .shop-feedback{font-size:.9rem}
+@media(max-width:650px){#score-basket .shop-checkout-grid{gap:.5rem}#score-basket .cd-basket-row>strong{grid-column:2;margin-top:-.25rem}#score-basket .basket-item-amount{margin:.2rem 0}#score-basket .basket-total{display:block}#score-basket .shop-totals .grand{font-size:1.15rem}}

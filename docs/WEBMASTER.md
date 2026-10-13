@@ -21,6 +21,10 @@ The private listening preview (menu record 82 and `ente_private_audio/`) is excl
 
 ## Society CD shop
 
+The compact basket distinguishes the score-download suggestion from the full order total. Use “suggested donation” when scores are selected and “voluntary donation” (initially £0) for CD-only orders. Comments entered at checkout belong to the private order snapshot and the Society's order/payment emails; never expose them through public receipt endpoints. Preserve typed checkout fields during quantity changes.
+
+`app/basket-feedback.js` provides the shared add-to-basket confirmation, musical-note burst and header counts. Count distinct selected PDF files and total CD quantities separately, using the catalogue symbols. Keep the text confirmation and basket link available even with reduced motion. Scores are downloaded from the basket, not the work pages; work-information PDFs and libretti are separate resources.
+
 Recording fields `hgs_shop` (`yes` or `no`) and `hgs_price` (GBP decimal string) are shared across all four languages. Enable only CDs available from the Society. A checked recording needs a positive price; unchecked recordings have no Society offer. The recording page, associated works and audio player derive their offers from this same recording ID.
 
 `properties.hgs_shop_postage` is one GBP amount per CD order, shared across languages and edited in the CMS under Edit → Pages → HGS Shop. It is never charged on a scores-only basket. Scores remain freely downloadable and donations are voluntary. Preserve the separate CD, postage and donation totals.
