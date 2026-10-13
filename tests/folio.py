@@ -1,5 +1,6 @@
 """Folio contracts across every work/language, including sparse catalogue entries."""
 import json
+import html
 from pathlib import Path
 import re
 import sys
@@ -9,6 +10,7 @@ ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'scripts'))
 from folio import present, folio_duration, folio_title
 from i18n import localize
+from build import stripcslashes
 
 class Page(HTMLParser):
     def __init__(self,markup):
@@ -63,6 +65,12 @@ for lang in ('en','de','fr','ja'):
         recs=[r for r in tables['catalogue_recordings'] if r['catalogue_id']==w['id']]
         assert len(page.matches('folio-record'))==len(recs),(lang,w['id'],'recording omitted or duplicated')
         assert len(page.matches('folio-facts'))<=1
+        # Publication facts are intentionally repeated beside the actual offers.
+        music=text.split('<section id="music"',1)[1].split('</dl>',1)[0]
+        for field in ('publisher','availability'):
+            if present(w.get(field)):
+                clean=lambda s:re.sub(r'\s+','',html.unescape(re.sub(r'<[^>]*>','',s)))
+                assert clean(stripcslashes(w[field])) in clean(music),(lang,w['id'],field,'publication information absent from Scores & texts')
         assert 'work-folio.css' in text and 'work-folio.js' in text
         total+=1
     labels=[r for r in tables['page_text'] if 144<=int(r['id'])<=168]

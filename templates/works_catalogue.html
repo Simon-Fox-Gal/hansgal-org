@@ -42,7 +42,9 @@
             <section class="score-panel" id="downloadable-score" aria-label="{{ page_text('147') }}"><p>{{ catalogue.score_note|e }}</p><p class="score-donation">{{ page_text('142') }}: £{{ catalogue.score_suggested_donation }} · {{ page_text('143') }}</p><div class="score-actions"><button type="button" data-add-score="{{ catalogue.id }}">Add to basket</button><a href="/score-basket/">View basket</a></div><p id="score-added-status" role="status"></p></section>
             {% endif %}
 
-<div class="folio-music-grid"><div>{% if purchase_links %}<h3>{{ page_text('160') }}</h3>{% include 'purchase-links.html' %}{% endif %}</div><div><h3>{{ page_text('161') }}</h3>            <div class="work-downloads">
+<div class="folio-music-grid"><div>{% if purchase_links or present(catalogue.publisher) or present(catalogue.availability) %}<h3>{{ page_text('160') }}</h3>
+<dl class="folio-publication">{% for field,label in [('publisher','154'),('availability','155')] %}{% if present(catalogue[field]) %}<div><dt>{{ page_text(label) }}</dt><dd>{{ catalogue[field]|stripcslashes }}</dd></div>{% endif %}{% endfor %}</dl>
+{% if purchase_links %}{% include 'purchase-links.html' %}{% endif %}{% endif %}</div><div><h3>{{ page_text('161') }}</h3>            <div class="work-downloads">
                 <a class="work-pdf" href="/storage/work-notes/{{ language }}/{{ catalogue.id }}.pdf" download="{{ catalogue.title|work_pdf_filename|e }}">{{ page_text('141') }} ↓</a>
                 {% if catalogue.id == '19' %}
                     {% if language == 'de' %}{% set libretto_label = 'Zweisprachiges Libretto herunterladen (Deutsch–Englisch)' %}
