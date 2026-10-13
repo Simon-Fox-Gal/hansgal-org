@@ -5,6 +5,7 @@
 
 /* Compact basket: score suggestions stay separate from the payable order total. */
 .basket-counts{display:inline-flex;align-items:center;gap:.3rem;margin-left:.1rem}
+.basket-counts[hidden]{display:none}
 .basket-count{display:inline-flex;align-items:center;gap:.2rem;background:#f2ede5;border:1px solid #d9cfbe;border-radius:1rem;padding:.1rem .4rem;font:.78rem/1.3 var(--sans,Arial,sans-serif);color:#385044}
 .basket-count svg{width:21px;height:21px;fill:none;stroke:currentColor;stroke-width:1.3}
 .basket-count .icon-hole,.basket-count .icon-shine{fill:currentColor;stroke:none}
@@ -67,3 +68,9 @@
 #score-basket textarea{box-sizing:border-box;width:100%;padding:.5rem;border:1px solid #b8aea0;background:white;font:inherit;resize:vertical;min-height:75px}
 #score-basket .shop-feedback{font-size:.9rem}
 @media(max-width:650px){#score-basket .shop-checkout-grid{gap:.5rem}#score-basket .cd-basket-row>strong{grid-column:2;margin-top:-.25rem}#score-basket .basket-item-amount{margin:.2rem 0}#score-basket .basket-total{display:block}#score-basket .shop-totals .grand{font-size:1.15rem}}
+
+#score-basket .shop-payment-instructions:has(.shop-payment-details){margin-top:.5rem;padding:.65rem .8rem;background:#fffdf8;border-left:3px solid #927139;font-size:.88rem;line-height:1.5}
+#score-basket .shop-payment-details{white-space:pre-line;overflow-wrap:anywhere}
+
+#score-basket .basket-empty{padding:1rem 0;max-width:50rem}
+#score-basket .basket-empty-links{display:flex;gap:1.2rem;flex-wrap:wrap;margin-top:1rem}

@@ -11,12 +11,14 @@
  function update(){
   if(!data)return;
   const selected=new Set(read('hansgal-scores'));
-  const pdfs=new Set(data.catalogue.filter(r=>selected.has(r.id)&&r.score_available==='yes').flatMap(r=>String(r.score_file||'').split(/\r?\n/).map(s=>s.trim()).filter(s=>/^\/storage\/scores\/[^/]+\.pdf$/.test(s)))).size;
+  const works=data.catalogue.filter(r=>selected.has(r.id)&&r.score_available==='yes'&&String(r.score_file||'').split(/\r?\n/).some(s=>/^\/storage\/scores\/[^/]+\.pdf$/.test(s.trim()))).length;
   const ids=new Set();const cds=read('hansgal-cds').reduce((n,r)=>{if(ids.has(r.id)||!Number.isInteger(r.quantity)||r.quantity<1||r.quantity>20||!data.recording.some(p=>p.id===r.id&&p.hgs_shop==='yes'&&Number(p.hgs_price)>0))return n;ids.add(r.id);return n+r.quantity;},0);
   document.querySelectorAll('.basket-link').forEach(link=>{
    let counts=link.querySelector('.basket-counts');if(!counts){counts=document.createElement('span');counts.className='basket-counts';link.append(counts);}
    counts.replaceChildren();
-   for(const [kind,count,label,svg] of [['score',pdfs,l.pdf_count,scoreSvg],['cd',cds,l.cd_count,cdSvg]]){
+   counts.hidden=!works&&!cds;
+   for(const [kind,count,label,svg] of [['score',works,l.pdf_count,scoreSvg],['cd',cds,l.cd_count,cdSvg]]){
+    if(!count)continue;
     const badge=document.createElement('span');badge.className='basket-count basket-count-'+kind;badge.title=label+': '+count;badge.setAttribute('aria-label',badge.title);
     badge.innerHTML='<svg viewBox="0 0 28 28" aria-hidden="true">'+svg+'</svg><b aria-hidden="true">'+count+'</b>';counts.append(badge);
    }

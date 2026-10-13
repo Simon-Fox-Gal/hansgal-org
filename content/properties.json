@@ -38,5 +38,29 @@
     "value_de": null,
     "value_fr": null,
     "value_ja": null
+  },
+  {
+    "id": "6",
+    "name": "hgs_order_email_message",
+    "value": "Dear {name},\n\nThank you for your order and for supporting the Hans Gál Society. Your order reference is {order_reference}.\n\nYour order and payment details are below. If you have any questions, please reply to this email.",
+    "value_de": "Guten Tag {name},\n\nvielen Dank für Ihre Bestellung und Ihre Unterstützung der Hans-Gál-Gesellschaft. Ihre Bestellnummer lautet {order_reference}.\n\nUnten finden Sie Ihre Bestell- und Zahlungsdetails. Bei Fragen antworten Sie bitte auf diese E-Mail.",
+    "value_fr": "Bonjour {name},\n\nMerci de votre commande et de votre soutien à la Société Hans Gál. Votre référence de commande est {order_reference}.\n\nVous trouverez ci-dessous les détails de votre commande et du paiement. Pour toute question, veuillez répondre à cet e-mail.",
+    "value_ja": "{name} 様\n\nご注文いただき、またハンス・ガール協会をご支援いただき、ありがとうございます。注文参照番号は {order_reference} です。\n\nご注文内容とお支払いの詳細は以下のとおりです。ご質問は、このメールへの返信でお問い合わせください。"
+  },
+  {
+    "id": "7",
+    "name": "hgs_basket_empty_message",
+    "value": "Your basket is empty. Add downloadable scores from the works catalogue, or choose from selected CDs available from the Hans Gál Society in Recordings. CD delivery is currently available to UK addresses only.",
+    "value_de": "Ihr Warenkorb ist leer. Fügen Sie Notendownloads aus dem Werkverzeichnis hinzu oder wählen Sie unter „Aufnahmen“ aus den CDs, die bei der Hans-Gál-Gesellschaft erhältlich sind. CDs werden derzeit nur an Adressen im Vereinigten Königreich geliefert.",
+    "value_fr": "Votre panier est vide. Ajoutez des partitions à télécharger depuis le catalogue des œuvres, ou choisissez parmi les CD proposés par la Société Hans Gál dans la rubrique Enregistrements. La livraison des CD est actuellement limitée au Royaume-Uni.",
+    "value_ja": "買い物かごは空です。作品目録からダウンロードできる楽譜を追加するか、「録音」からハンス・ガール協会が販売するCDをお選びください。CDの配送先は現在、英国内に限られます。"
+  },
+  {
+    "id": "8",
+    "name": "hgs_score_donation_intro",
+    "value": "Your donation helps the Hans Gál Society prepare and share scores, bringing this music to more performers. Choose any amount, including £0. Every score is available without a donation.",
+    "value_de": "Mit Ihrer Spende helfen Sie der Hans-Gál-Gesellschaft, Noten aufzubereiten und zugänglich zu machen, damit noch mehr Menschen diese Musik spielen können. Wählen Sie einen beliebigen Betrag, auch £0. Alle Noten sind ohne Spende erhältlich.",
+    "value_fr": "Votre don aide la Société Hans Gál à préparer et à diffuser les partitions, pour faire découvrir cette musique à davantage d’interprètes. Choisissez le montant qui vous convient, y compris £0. Toutes les partitions sont disponibles sans don.",
+    "value_ja": "寄付はハンス・ガール協会による楽譜の整備と公開を支え、この音楽をより多くの演奏家に届ける助けとなります。金額は£0を含め自由にお選びいただけます。すべての楽譜は寄付なしでもご利用いただけます。"
   }
 ]
