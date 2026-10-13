@@ -96,6 +96,13 @@ def make_site(base_path='', review=True, language='en', active_languages=None, i
             return (translate_template(source,language) if language!='en' else source),filename,uptodate
     env=Environment(loader=LocaleLoader(ROOT/'templates'),autoescape=False,undefined=ChainableUndefined,keep_trailing_newline=True,finalize=lambda v:'' if v is None else v)
     env.globals['language']=language
+    env.globals['shop_text']=json.loads((ROOT/'config/shop-labels.json').read_text(encoding='utf8'))[language]
+    def shop_offer(record):
+        price=str(record.get('hgs_price') or '')
+        if record.get('hgs_shop')!='yes':return None
+        if not re.fullmatch(r'\d{1,4}(?:\.\d{1,2})?',price) or float(price)<=0:raise ValueError('Shop CD needs a positive GBP price: '+record['id'])
+        return {'id':record['id'],'price':format(float(price),'.2f')}
+    env.globals['shop_offer']=shop_offer
     env.globals['duration_label']=lambda value:tr('full evening') if language in ('fr','ja') and value=='full evening' else str(value or '')+"'"
     # The player needs one copy of the current-language track and credit data,
     # not the full editorial row (and the same credits again in source groups).

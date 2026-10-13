@@ -30,5 +30,13 @@
     "value_de": "<br />",
     "value_fr": "<br />",
     "value_ja": "<br />"
+  },
+  {
+    "id": "5",
+    "name": "hgs_shop_postage",
+    "value": "7.00",
+    "value_de": null,
+    "value_fr": null,
+    "value_ja": null
   }
 ]

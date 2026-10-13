@@ -19,6 +19,16 @@ Common files:
 
 The private listening preview (menu record 82 and `ente_private_audio/`) is excluded. Do not restore it, its six clips, comments/submission tables, hosting credentials, raw exports or backups. Keep the seven other unlinked pages and their public URLs.
 
+## Society CD shop
+
+Recording fields `hgs_shop` (`yes` or `no`) and `hgs_price` (GBP decimal string) are shared across all four languages. Enable only CDs available from the Society. A checked recording needs a positive price; unchecked recordings have no Society offer. The recording page, associated works and audio player derive their offers from this same recording ID.
+
+`properties.hgs_shop_postage` is one GBP amount per CD order, shared across languages and edited in the CMS under Edit → Pages → HGS Shop. It is never charged on a scores-only basket. Scores remain freely downloadable and donations are voluntary. Preserve the separate CD, postage and donation totals.
+
+`app/shop-config.json` points to the separate order service. That service validates current published prices and UK delivery before recording an order. It emails the designated Society recipient and returns bank/cheque instructions or PayPal checkout. A PayPal return page is not payment proof: the service requires a verified payment notification. Mail credentials and customer addresses must never enter this public repository. Test orders must go to an explicitly authorised test recipient; restore production routing after the test.
+
+Run `node tests/shop.test.cjs` after building. Check enabled and unchecked recordings, work-page offers, player offers, CD quantities and optional donations. Keep the public service's server-side validation in step with any basket changes; its separate private source contains the order and mail tests.
+
 ## Sheet-music sales links
 
 Keep editable sales URLs in `content/catalogue.json`. `config/score-retailers.json` supplies shared region, edition and catalogue-number labels for HTML and printable work notes. UK/EU describes the retailer's location, not a promise about shipping or taxes. Retain hire links separately; a purchasable piano reduction does not make orchestral parts available for sale.

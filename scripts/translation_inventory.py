@@ -8,6 +8,7 @@ def inventory(language):
     items=[]
     for table,fields in TRANSLATABLE.items():
         for row in json.loads((ROOT/'content'/f'{table}.json').read_text(encoding='utf8')):
+            if table=='properties' and row.get('name')=='hgs_shop_postage':continue # Shared GBP amount, not prose.
             for field in fields:
                 source=row.get(field) or ''
                 plain=html.unescape(re.sub(r'<[^>]*>','',source)).strip()
