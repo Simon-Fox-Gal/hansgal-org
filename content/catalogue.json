@@ -3274,7 +3274,7 @@
     "duration": "75'",
     "publisher": "Breitkopf & Härtel (1948)",
     "further_details": "&quot;The movements of this cantata are not like the acts of a play, which follow on from one another and produce a whole as a sequence. They are like variations on the same theme, each one arrives at the same conclusion, affirming this world and this life with all its bitterness, bringing creator and created together through humble submission; the differences lie only in the path, in light, colour, landscape, in the threatening dangers and their conquest.&quot; [Wilhelm Waldstein: Hans G&aacute;l: eine Studie, 1965. p.62.] <br />\r\n<br />\r\nAfter the first performance G&aacute;l wrote to his wife Hanna:<br />\r\n&quot;The whole business churned me up inside, more than anything I have experienced before. This piece has weighed on me for so many years, more than you ever suspected. And now all at once it has become alive and sounds exactly like I dreamt it would, absolutely so, except that it is real. And now it has ideal proportions and dimensions, so to speak, and everything works indescribably, from the first solo oboe to the finale, which is so quiet that we were all puzzled whether the people wouldn't all go home silent and subdued. And it did take a minute for them to begin to move, but then there was a thunderous noise, the whole house, full to the last seat, remained standing and there was a good quarter of an hour of ovations, not without the strong participation of the Mainz colony, led by Kraus and Oppenheim, the mayors. . . . <br />\r\n<br />\r\nIncidentally, the whole thing has exactly the right dimensions for a not too extensive evening's performance. I had them make an interval after the third piece, but there was already separate applause after the second piece, that was indescribably delightful, and the third also made an extraordinary impression. But I didn't show myself then, one lot of bowing and scraping was enough for me, and there was plenty of that. Conductor and soloists, soloists, conductor, soloists, composer and conductor, composer and conductor, soloists and composer, soloists alone, composer alone, etc. etc. It was really awful. . . .&quot;",
-    "free_downloads": "<br />",
+    "free_downloads": "<p><a href=\"/storage/documents/De_Profundis_German_English_Texts.pdf\" download target=\"_blank\" rel=\"noopener\">Download the complete texts — German original and English translation (PDF, 25 pages)</a></p>",
     "orchestration": "2(picc),2(cor),2,2(cbn); 4,3,3,1; timp; perc; hrp; org(ad lib.); str",
     "availability": "available for hire",
     "first_performance": "Wiesbaden, Mar. 1948 (Symphonie-Orchester der Stadt Wiesbaden/Schmidtgen)",
@@ -3299,7 +3299,7 @@
     "hire_url": "https://www.breitkopf.com/en/work/2566/de-profundis-op.-50",
     "score_purchase_download_url": "",
     "purchase_checked": "2026-10-01",
-    "free_downloads_de": "<br />",
+    "free_downloads_de": "<p><a href=\"/storage/documents/De_Profundis_German_English_Texts.pdf\" download target=\"_blank\" rel=\"noopener\">Vollständige Texte herunterladen — deutsches Original und englische Übersetzung (PDF, 25 Seiten)</a></p>",
     "title_fr": "De Profundis [Des profondeurs]",
     "title_ja": "De Profundis［深き淵より］",
     "description_fr": "Cantate sur des poèmes baroques allemands, pour quatre solistes (SATB), chœur mixte (SATB) et orchestre",
@@ -3315,7 +3315,9 @@
     "orchestration_fr": "2(picc),2(cor),2,2(cbn); 4,3,3,1; timbales; percussion; harpe; orgue(ad lib.); cordes",
     "orchestration_ja": "2(picc),2(cor),2,2(cbn); 4,3,3,1; ティンパニ; 打楽器; ハープ; オルガン(ad lib.); 弦",
     "movements_fr": "Von der Vergänglichkeit [De l’éphémère]' (Gryphius), 'Auf grüner Erde [Sur la verte terre]' (Fleming), 'Nachtgesänge [Chants nocturnes]' (Gryphius), 'Totentanz [Danse macabre]' (Albert, Gryphius), 'Zum Frieden [Vers la paix]' (Logau, Ulrich von Brandenburg)",
-    "movements_ja": "Von der Vergänglichkeit［無常について］' (Gryphius), 'Auf grüner Erde［緑の大地で］' (Fleming), 'Nachtgesänge［夜の歌］' (Gryphius), 'Totentanz［死の舞踏］' (Albert, Gryphius), 'Zum Frieden［平和へ］' (Logau, Ulrich von Brandenburg)"
+    "movements_ja": "Von der Vergänglichkeit［無常について］' (Gryphius), 'Auf grüner Erde［緑の大地で］' (Fleming), 'Nachtgesänge［夜の歌］' (Gryphius), 'Totentanz［死の舞踏］' (Albert, Gryphius), 'Zum Frieden［平和へ］' (Logau, Ulrich von Brandenburg)",
+    "free_downloads_fr": "<p><a href=\"/storage/documents/De_Profundis_German_English_Texts.pdf\" download target=\"_blank\" rel=\"noopener\">Télécharger les textes complets — original allemand et traduction anglaise (PDF, 25 pages)</a></p>",
+    "free_downloads_ja": "<p><a href=\"/storage/documents/De_Profundis_German_English_Texts.pdf\" download target=\"_blank\" rel=\"noopener\">全歌詞をダウンロード — ドイツ語原文・英語訳（PDF、25ページ）</a></p>"
   },
   {
     "id": "58",

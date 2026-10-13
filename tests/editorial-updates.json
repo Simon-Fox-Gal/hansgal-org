@@ -420,6 +420,12 @@
     },
     "118": {
       "purchase_url": "6cd98a9d09a0f5f0f69d7b102a9e76194bffa2af8a57824fbcd6053f0fdbf39b"
+    },
+    "57": {
+      "free_downloads": "98000ff03849ca2297442be260a13710845916f5fdc576b0c0b848765123faeb",
+      "free_downloads_de": "017e2f217d9692497f7f639ba0b7d7ed3dc1daf7d97bb97a4adf143c5cd335a5",
+      "free_downloads_fr": "e370b3f8133c028e23698af1c0f3cf963a36b4ae840ad785d0a5993a3ce0129b",
+      "free_downloads_ja": "91ec03a6aff8e9bfcd2d431885a77dcbddf3501934868d1d75184d9abac60725"
     }
   }
 }

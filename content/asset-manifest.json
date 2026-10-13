@@ -9115,5 +9115,11 @@
     "path": "/storage/documents/de-profundis/De_Profundis_Japanese.pdf",
     "bytes": 6274653,
     "sha256": "e5bfc370e06af8bdc64c18eeefa642ad724dcd5807ce6cb6f3b9c2cf64a15ef9"
+  },
+  {
+    "source_path": "storage/documents/De_Profundis_German_English_Texts.pdf",
+    "path": "/storage/documents/De_Profundis_German_English_Texts.pdf",
+    "bytes": 6113777,
+    "sha256": "195a3eb274d57ece2f700cef83ca95c71e8b79f3bb336f56977c6694c9143b93"
   }
 ]
