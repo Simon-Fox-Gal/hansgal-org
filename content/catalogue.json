@@ -8942,7 +8942,7 @@
     "description_de": "",
     "hidden_terms": null,
     "year_of_composition": "1924",
-    "movements": "Intrata, Pagliazzo, Cavatine, Intermezzi grazioso, Pifferari",
+    "movements": "Intrata, Capriccio, Cavatina, Intermezzo, Rondino",
     "duration": "25'",
     "publisher": "pending publication by Leuckart",
     "further_details": "",
@@ -8960,7 +8960,7 @@
     "title_original": "Divertimento for Small Orchestra",
     "title_original_language": "und",
     "title_provenance": "Original language not established; German display is a translation of the existing catalogue label, not a newly claimed original title.",
-    "movements_de": "Intrata, Pagliazzo, Cavatine, Intermezzi grazioso, Pifferari",
+    "movements_de": "Intrata, Capriccio, Cavatina, Intermezzo, Rondino",
     "further_details_de": "",
     "orchestration_de": "",
     "availability_de": "privat erhältlich",
@@ -8978,8 +8978,8 @@
     "availability_ja": "個別の問い合わせで入手可能",
     "other_versions_fr": "Également pour flûte, hautbois, deux clarinettes, trompette, deux cors et basson (voir op. 22)",
     "other_versions_ja": "フルート、オーボエ、クラリネット2、トランペット、ホルン2とファゴットのための版もあり（Op.22参照）",
-    "movements_fr": "Intrata [Entrée], Pagliazzo [Paillasse], Cavatine, Intermezzi grazioso, Pifferari [Joueurs de fifre]",
-    "movements_ja": "Intrata［入場曲］, Pagliazzo［道化師］, Cavatine［カヴァティーナ］, Intermezzi grazioso, Pifferari［笛吹きたち］"
+    "movements_fr": "Intrata [Entrée], Capriccio, Cavatina, Intermezzo, Rondino",
+    "movements_ja": "Intrata［入場曲］, Capriccio［奇想曲］, Cavatina［カヴァティーナ］, Intermezzo［間奏曲］, Rondino［小ロンド］"
   },
   {
     "id": "101",
