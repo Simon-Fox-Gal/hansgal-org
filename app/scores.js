@@ -11,13 +11,56 @@
  const save=()=>{try{localStorage.setItem('hansgal-scores',JSON.stringify(chosen));}catch{}document.dispatchEvent(new CustomEvent('hansgal-basket-changed'));};
  const title=r=>de?(r.title_de||r.title):r.title;
  const scoreFiles=r=>{const paths=String(r.score_file||'').split(/\r?\n/).map(s=>s.trim()).filter(path=>/^\/storage\/scores\/[^/]+\.pdf$/.test(path));const labels=String((de?r.score_file_titles_de:r.score_file_titles)||'').split(/\r?\n/);return paths.map((path,i)=>({path,label:labels[i]?.trim()||t('Download PDF','PDF herunterladen')+(paths.length>1?' '+(i+1):'')}));};
+ // PayPal Payments Standard: item_name/item_number 127 characters; custom
+ // uses the lower documented IPN/PDT limit of 255. Donate ignores on*/os*.
+ const chars=s=>Array.from(s);
+ const clip=(s,n)=>chars(s).length<=n?s:chars(s).slice(0,Math.max(0,n-1)).join('')+'…';
+ const plain=value=>{const template=document.createElement('template');template.innerHTML=String(value||'').replace(/<br\s*\/?>/gi,' ');return template.content.textContent.replace(/\s+/g,' ').trim();};
+ function donationFields(selected){
+  if(!selected.length)return {};
+  const works=selected.map(r=>({name:plain(title(r)),opus:plain(r.opus_no),id:r.id}));
+  const opus=w=>w.opus&&w.opus!=='0'?'Op. '+w.opus:'';
+  const full=w=>w.name+(opus(w)?', '+opus(w):'');
+  const reference=w=>opus(w)||'#'+w.id;
+  // Retain every work: shorten titles first, then use opus/catalogue numbers.
+  // Only an exceptionally large list that exceeds even the numeric budget
+  // needs an explicit omitted-work count.
+  function summary(limit){
+   const all=works.map(full).join('; ');if(chars(all).length<=limit)return all;
+   const size=Math.floor((limit-2*(works.length-1))/works.length);
+   if(works.every(w=>size-chars(opus(w)?', '+opus(w):' [#'+w.id+']').length>=12)){
+    return works.map(w=>{
+     const suffix=opus(w)?', '+opus(w):' [#'+w.id+']';
+     return clip(w.name,size-chars(suffix).length)+suffix;
+    }).join('; ');
+   }
+   return referenceList(limit);
+  }
+  function referenceList(limit){
+   const references=works.map(reference);
+   if(chars(references.join('; ')).length<=limit)return references.join('; ');
+   for(let count=references.length-1;count>0;count--){
+    const result=references.slice(0,count).join('; ')+'; +'+(references.length-count)+' more';
+    if(chars(result).length<=limit)return result;
+   }
+   return clip(works.length+' scores',limit);
+  }
+  const prefix='Hans Gál Society — General Fund — Scores: ';
+  return {
+   item_name:clip(prefix+summary(127-chars(prefix).length),127),
+   custom:'Scores: '+summary(255-8),
+   item_number:'Scores: '+referenceList(127-8)
+  };
+ }
  function render(){
   const target=document.getElementById('score-basket');if(!target)return;
   const selected=rows.filter(r=>chosen.includes(r.id));
+  const payment=donationFields(selected);
+  const paymentInputs=Object.entries(payment).map(([name,value])=>'<input type="hidden" name="'+name+'" value="'+esc(value)+'">').join('');
   const total=selected.reduce((sum,r)=>sum+(Number(r.score_suggested_donation)||0),0);
   const basketKey=selected.map(r=>r.id).sort().join(',');let amount=total.toFixed(2);
   try{const remembered=JSON.parse(sessionStorage.getItem('hansgal-donation')||'null');if(remembered?.basket===basketKey&&/^\d+(?:\.\d{1,2})?$/.test(remembered.amount))amount=remembered.amount;}catch{}
-  target.innerHTML='<h1>'+t('Your basket','Ihr Notenkorb')+'</h1>'+(selected.length?'<p class="basket-intro">'+esc(pageText.hgs_score_donation_intro||labels.donation_note)+'</p>':'')+(selected.length?'<div class="basket-layout"><section class="basket-selection" aria-label="'+t('Selected scores','Ausgewählte Noten')+'"><h2 class="basket-section-title">'+esc(labels.scores)+'</h2><ul class="basket-items">'+selected.map(r=>'<li class="basket-item"><div class="basket-item-heading"><h2>'+title(r)+'</h2><p class="basket-item-amount">'+(r.score_suggested_donation==null||r.score_suggested_donation===''?t('No suggested amount set','Kein Spendenrichtwert festgelegt'):'£'+Number(r.score_suggested_donation).toFixed(2)+' <span>'+t('(suggested donation)','(Spendenempfehlung)')+'</span>')+'</p></div><p class="basket-item-note">'+esc(de?r.score_note_de:r.score_note)+'</p><div class="basket-item-actions"><button type="button" class="basket-remove" data-remove-score="'+r.id+'">'+t('Remove','Entfernen')+'</button> '+scoreFiles(r).map(file=>'<a class="button" download href="'+esc(base+file.path)+'">'+esc(file.label)+'</a>').join(' ')+'</div></li>').join('')+'</ul><div class="basket-downloads"><p class="basket-total">'+esc(labels.score_suggestion)+': <strong>£'+total.toFixed(2)+'</strong></p><button type="button" id="download-selection">'+t('Download selected scores','Ausgewählte Noten herunterladen')+'</button><p id="score-download-status" role="status"></p></div></section><aside class="basket-support"><h2>'+t('Support this music','Diese Musik unterstützen')+'</h2><form action="https://www.paypal.com/cgi-bin/webscr" method="post" accept-charset="UTF-8" id="score-donation"><input type="hidden" name="charset" value="utf-8"><input type="hidden" name="cmd" value="_donations"><input type="hidden" name="business" value="donations@hansgalsociety.org"><input type="hidden" name="item_name" value="Hans Gál Society — General Fund — score availability"><input type="hidden" name="currency_code" value="GBP"><label for="score-amount">'+esc(labels.suggested_donation)+'</label> <input id="score-amount" name="amount" type="number" min="0" step="0.01" value="'+amount+'" required><button type="submit">'+t('Continue to PayPal or card','Weiter zu PayPal oder Kartenzahlung')+'</button><p>'+t('Payment is completed with PayPal. This website cannot confirm payment; your downloads are already available above.','Die Zahlung erfolgt bei PayPal. Diese Website kann den Zahlungseingang nicht bestätigen; Ihre Downloads stehen oben bereits bereit.')+'</p></form><details><summary>'+t('Donate by bank transfer or cheque','Per Banküberweisung oder Scheck spenden')+'</summary><p>Hans Gál Society · Lloyds, 2 Pavement, York YO1 9LB, United Kingdom<br>Sort Code: 30-99-99 · Account: 02531852<br>BIC: LOYD GB 21225<br>IBAN: GB16 LOYD 3099 9902 5318 52</p><p>'+t('GBP only. Please use “General Fund” as the reference. Sterling cheques: The Hans Gál Society, 67 Osbaldwick Village, Osbaldwick, York YO10 3NP, England.','Nur GBP. Bitte geben Sie „General Fund“ als Verwendungszweck an. Schecks in Pfund Sterling: The Hans Gál Society, 67 Osbaldwick Village, Osbaldwick, York YO10 3NP, England.')+'</p></details></aside></div>':'<div class="basket-empty"><p>'+esc(pageText.hgs_basket_empty_message||'Your basket is empty.')+'</p><p class="basket-empty-links"><a href="'+base+(language==='en'?'':'/'+language)+'/works/">'+esc(t('Works catalogue','Werkverzeichnis'))+' →</a><a href="'+base+(language==='en'?'':'/'+language)+'/recordings/">'+esc(t('Recordings','Aufnahmen'))+' →</a></p></div>');
+  target.innerHTML='<h1>'+t('Your basket','Ihr Notenkorb')+'</h1>'+(selected.length?'<p class="basket-intro">'+esc(pageText.hgs_score_donation_intro||labels.donation_note)+'</p>':'')+(selected.length?'<div class="basket-layout"><section class="basket-selection" aria-label="'+t('Selected scores','Ausgewählte Noten')+'"><h2 class="basket-section-title">'+esc(labels.scores)+'</h2><ul class="basket-items">'+selected.map(r=>'<li class="basket-item"><div class="basket-item-heading"><h2>'+title(r)+'</h2><p class="basket-item-amount">'+(r.score_suggested_donation==null||r.score_suggested_donation===''?t('No suggested amount set','Kein Spendenrichtwert festgelegt'):'£'+Number(r.score_suggested_donation).toFixed(2)+' <span>'+t('(suggested donation)','(Spendenempfehlung)')+'</span>')+'</p></div><p class="basket-item-note">'+esc(de?r.score_note_de:r.score_note)+'</p><div class="basket-item-actions"><button type="button" class="basket-remove" data-remove-score="'+r.id+'">'+t('Remove','Entfernen')+'</button> '+scoreFiles(r).map(file=>'<a class="button" download href="'+esc(base+file.path)+'">'+esc(file.label)+'</a>').join(' ')+'</div></li>').join('')+'</ul><div class="basket-downloads"><p class="basket-total">'+esc(labels.score_suggestion)+': <strong>£'+total.toFixed(2)+'</strong></p><button type="button" id="download-selection">'+t('Download selected scores','Ausgewählte Noten herunterladen')+'</button><p id="score-download-status" role="status"></p></div></section><aside class="basket-support"><h2>'+t('Support this music','Diese Musik unterstützen')+'</h2><form action="https://www.paypal.com/cgi-bin/webscr" method="post" accept-charset="UTF-8" id="score-donation"><input type="hidden" name="charset" value="utf-8"><input type="hidden" name="cmd" value="_donations"><input type="hidden" name="business" value="donations@hansgalsociety.org">'+paymentInputs+'<input type="hidden" name="currency_code" value="GBP"><label for="score-amount">'+esc(labels.suggested_donation)+'</label> <input id="score-amount" name="amount" type="number" min="0" step="0.01" value="'+amount+'" required><button type="submit">'+t('Continue to PayPal or card','Weiter zu PayPal oder Kartenzahlung')+'</button><p>'+t('Payment is completed with PayPal. This website cannot confirm payment; your downloads are already available above.','Die Zahlung erfolgt bei PayPal. Diese Website kann den Zahlungseingang nicht bestätigen; Ihre Downloads stehen oben bereits bereit.')+'</p></form><details><summary>'+t('Donate by bank transfer or cheque','Per Banküberweisung oder Scheck spenden')+'</summary><p>Hans Gál Society · Lloyds, 2 Pavement, York YO1 9LB, United Kingdom<br>Sort Code: 30-99-99 · Account: 02531852<br>BIC: LOYD GB 21225<br>IBAN: GB16 LOYD 3099 9902 5318 52</p><p>'+t('GBP only. Please use “General Fund” as the reference. Sterling cheques: The Hans Gál Society, 67 Osbaldwick Village, Osbaldwick, York YO10 3NP, England.','Nur GBP. Bitte geben Sie „General Fund“ als Verwendungszweck an. Schecks in Pfund Sterling: The Hans Gál Society, 67 Osbaldwick Village, Osbaldwick, York YO10 3NP, England.')+'</p></details></aside></div>':'<div class="basket-empty"><p>'+esc(pageText.hgs_basket_empty_message||'Your basket is empty.')+'</p><p class="basket-empty-links"><a href="'+base+(language==='en'?'':'/'+language)+'/works/">'+esc(t('Works catalogue','Werkverzeichnis'))+' →</a><a href="'+base+(language==='en'?'':'/'+language)+'/recordings/">'+esc(t('Recordings','Aufnahmen'))+' →</a></p></div>');
   document.dispatchEvent(new CustomEvent('hansgal-scores-rendered'));
   target.querySelectorAll('[data-remove-score]').forEach(b=>b.onclick=()=>{chosen=chosen.filter(id=>id!==b.dataset.removeScore);save();render();});
   const amountInput=document.getElementById('score-amount');if(amountInput)amountInput.oninput=()=>{if(amountInput.checkValidity())try{sessionStorage.setItem('hansgal-donation',JSON.stringify({basket:basketKey,amount:amountInput.value}));}catch{}};
