@@ -41,6 +41,8 @@ jobs:
       - run: python tests/mission.py
       - run: python tests/i18n-completion.py
       - run: node tests/language.test.cjs
+      - run: node tests/bank-details.test.cjs
+      - run: node tests/bank-form.test.cjs
       - run: node tests/donations.test.cjs
       - run: node tests/shop.test.cjs
       - run: python tests/recordings.py
