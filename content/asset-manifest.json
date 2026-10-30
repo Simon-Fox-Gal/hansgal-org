@@ -5959,5 +5959,11 @@
     "path": "/storage/documents/De_Profundis_German_English_Texts.pdf",
     "bytes": 6113777,
     "sha256": "195a3eb274d57ece2f700cef83ca95c71e8b79f3bb336f56977c6694c9143b93"
+  },
+  {
+    "source_path": "storage/documents/lebenskreise/Hans_Gal_Lebenskreise_Entdeckungsbuch_DE.pdf",
+    "path": "/storage/documents/lebenskreise/Hans_Gal_Lebenskreise_Entdeckungsbuch_DE.pdf",
+    "bytes": 156712,
+    "sha256": "bf6834c1bbc6804a9591f492f1857d75e7cd90dde7158ee3aef3b06bcf87f811"
   }
 ]
