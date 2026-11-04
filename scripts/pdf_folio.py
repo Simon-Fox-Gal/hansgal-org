@@ -31,7 +31,7 @@ WIDTH = A4[0] - 88
 
 
 @lru_cache
-def register_fonts(japanese):
+def register_fonts(japanese=True):
     # Gelasio is an open, Georgia-compatible serif. The variable font's default
     # instance is regular; the unmodified upstream font and OFL are vendored.
     pdfmetrics.registerFont(TTFont('Folio-Serif', str(ROOT/'vendor/fonts/Gelasio-variable.ttf')))
