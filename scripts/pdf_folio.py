@@ -31,10 +31,12 @@ WIDTH = A4[0] - 88
 
 
 @lru_cache
-def register_fonts():
+def register_fonts(japanese):
     # Gelasio is an open, Georgia-compatible serif. The variable font's default
     # instance is regular; the unmodified upstream font and OFL are vendored.
     pdfmetrics.registerFont(TTFont('Folio-Serif', str(ROOT/'vendor/fonts/Gelasio-variable.ttf')))
+    if not japanese:
+        return
     pdfmetrics.registerFont(TTFont('Edition-Japanese', str(ROOT/'vendor/fonts/NotoSansJP-Regular.ttf')))
     pdfmetrics.registerFontFamily('Edition-Japanese', normal='Edition-Japanese',
         bold='Edition-Japanese', italic='Edition-Japanese', boldItalic='Edition-Japanese')
@@ -54,8 +56,8 @@ def cover_bytes(name):
 
 
 def build_folio_pdfs(tables, out, language, base_path, strip, paragraphs, plain):
-    register_fonts()
     japanese = language == 'ja'
+    register_fonts(japanese)
     font = 'Edition-Japanese' if japanese else 'Edition'
     bold = 'Edition-Japanese' if japanese else 'Edition-Bold'
     serif = 'Edition-Japanese' if japanese else 'Folio-Serif'
@@ -81,10 +83,15 @@ def build_folio_pdfs(tables, out, language, base_path, strip, paragraphs, plain)
         'fact': ParagraphStyle('fact', parent=body, fontSize=10.3,
             leading=15.3, spaceAfter=13),
         'heading': ParagraphStyle('heading', parent=body, fontName=serif,
-            fontSize=25, leading=32, textColor=INK,
-            spaceBefore=8, spaceAfter=16, keepWithNext=True),
+            fontSize=25 if japanese else 15, leading=32 if japanese else 20, textColor=INK,
+            spaceBefore=8 if japanese else 13, spaceAfter=16 if japanese else 8, keepWithNext=True),
+        'performance': ParagraphStyle('performance', parent=body, fontSize=10.3,
+            leading=14, spaceAfter=5),
+        'record_detail': ParagraphStyle('record-detail', parent=body, fontSize=10.3,
+            leading=14.4, spaceAfter=4),
         'record': ParagraphStyle('record', parent=body, fontName=serif,
-            fontSize=19, leading=25, spaceAfter=8, keepWithNext=True),
+            fontSize=19 if japanese else 13, leading=25 if japanese else 18,
+            spaceAfter=8 if japanese else 6, keepWithNext=True),
         'small': ParagraphStyle('small', parent=body, fontSize=9,
             leading=13, textColor=MUTED),
         'link': ParagraphStyle('link', parent=body, fontName=bold,
@@ -123,7 +130,7 @@ def build_folio_pdfs(tables, out, language, base_path, strip, paragraphs, plain)
         return [label(en, de), *contents] if contents else []
 
     def section_rule():
-        rule=HRFlowable(width='100%',thickness=.7,color=PLUM,spaceAfter=16)
+        rule=HRFlowable(width='100%',thickness=.7,color=PLUM if japanese else LINE,spaceAfter=16 if japanese else 11)
         rule.keepWithNext=True
         return rule
 
@@ -159,8 +166,11 @@ def build_folio_pdfs(tables, out, language, base_path, strip, paragraphs, plain)
             story += [HRFlowable(width='100%',thickness=.5,color=LINE),Spacer(1,20)]
 
         facts = []
-        for field,en,de in [('publisher','Publisher','Verlag'),('availability','Availability','Verfügbarkeit'),
-                ('first_performance','First performance','Uraufführung'),('other_versions','Other versions','Weitere Fassungen')]:
+        fields = [('publisher','Publisher','Verlag'), ('availability','Availability','Verfügbarkeit')]
+        if japanese:
+            fields.append(('first_performance','First performance','Uraufführung'))
+        fields.append(('other_versions','Other versions','Weitere Fassungen'))
+        for field,en,de in fields:
             if present(row.get(field)):
                 facts += section(en,de,row[field],'fact')
         for field in ('purchase_url','hire_url','score_purchase_download_url'):
@@ -173,15 +183,26 @@ def build_folio_pdfs(tables, out, language, base_path, strip, paragraphs, plain)
                 ('movements','Movements','Sätze'),('orchestration','Instrumentation','Besetzung')]:
             if present(row.get(field)):
                 narrative += section(en,de,row[field])
+        def facts_panel():
+            panel = Table([[facts]], colWidths=[WIDTH], splitInRow=1, hAlign='LEFT')
+            panel.setStyle(TableStyle([
+                ('BACKGROUND',(0,0),(-1,-1),CREAM),
+                ('LEFTPADDING',(0,0),(-1,-1),14),('RIGHTPADDING',(0,0),(-1,-1),14),
+                ('TOPPADDING',(0,0),(-1,-1),13),('BOTTOMPADDING',(0,0),(-1,-1),8),
+            ]))
+            panel.spaceAfter = 14
+            return panel
+
         if facts and narrative and len(plain(strip(row.get('further_details') or '')))>2200:
             # Extended essays use the full measure after a compact facts grid.
             # A narrow continuation column would waste paper and hinder reading.
-            story += [BalancedColumns(facts,nCols=2,innerPadding=24,needed=120),
+            story += [BalancedColumns(facts,nCols=2,innerPadding=24,needed=120) if japanese else facts_panel(),
                 Spacer(1,14),HRFlowable(width='100%',thickness=.5,color=LINE,spaceAfter=18)]
             story += narrative
         elif facts and narrative:
             # Both cells can split. Long notes never shrink, clip, or disappear.
-            columns = Table([[facts,narrative]],colWidths=[159,WIDTH-159],
+            sidebar = 159 if japanese else 180
+            columns = Table([[facts,narrative]],colWidths=[sidebar,WIDTH-sidebar],
                 splitByRow=1,splitInRow=1,hAlign='LEFT')
             columns.setStyle(TableStyle([('VALIGN',(0,0),(-1,-1),'TOP'),
                 ('BACKGROUND',(0,0),(0,-1),CREAM),('LEFTPADDING',(0,0),(0,-1),14),
@@ -192,12 +213,14 @@ def build_folio_pdfs(tables, out, language, base_path, strip, paragraphs, plain)
             if columns.wrap(WIDTH,2000)[1]>first_space:
                 # Don't carry a spent, empty sidebar onto a second page.
                 # Reflow facts above an extended note instead.
-                story += [BalancedColumns(facts,nCols=2,innerPadding=24,needed=120),
+                story += [BalancedColumns(facts,nCols=2,innerPadding=24,needed=120) if japanese else facts_panel(),
                     HRFlowable(width='100%',thickness=.5,color=LINE,spaceBefore=12,spaceAfter=18)]
                 story += narrative
             else:
                 columns.spaceAfter=14
                 story.append(columns)
+        elif facts and not japanese:
+            story.append(facts_panel())
         else:
             story += narrative or facts
         story += section('Downloads','Downloads',row.get('free_downloads'))
@@ -212,12 +235,39 @@ def build_folio_pdfs(tables, out, language, base_path, strip, paragraphs, plain)
             story += p(t('Suggested donation','Empfohlene Spende')+': £'+str(row.get('score_suggested_donation') or '0')
                 +t(' (a £0 download is also available).',' (ein Download für £0 ist ebenfalls möglich).'))
 
-        performances = p(row.get('other_performances'))
-        if performances:
-            story += [PageBreak() if len(plain(strip(row.get('other_performances'))))>1000 else CondPageBreak(220),Paragraph(t('Other performances','Weitere Aufführungen'),styles['heading']),
-                section_rule()]
-            story.append(BalancedColumns(performances,nCols=2,innerPadding=22,
-                leftPadding=0,rightPadding=0,topPadding=0,bottomPadding=0,needed=120))
+        if japanese:
+            performances = p(row.get('other_performances'))
+            if performances:
+                story += [PageBreak() if len(plain(strip(row.get('other_performances'))))>1000 else CondPageBreak(220),Paragraph(t('Other performances','Weitere Aufführungen'),styles['heading']),
+                    section_rule()]
+                story.append(BalancedColumns(performances,nCols=2,innerPadding=22,
+                    leftPadding=0,rightPadding=0,topPadding=0,bottomPadding=0,needed=120))
+        else:
+            premiere = section('First performance', 'Uraufführung', row.get('first_performance'), 'performance')
+            performances = p(row.get('other_performances'), 'performance')
+            if premiere or performances:
+                intro = [Paragraph(t('Performances', 'Aufführungen'), styles['heading']), section_rule(), *premiere]
+                if premiere and performances:
+                    intro += [Spacer(1, 4), label('Other performances', 'Weitere Aufführungen')]
+                if len(performances) >= 7:
+                    # Balance whole entries in reading order. A table can be
+                    # measured before layout, so it stays with the introduction.
+                    column_width = (WIDTH - 22) / 2
+                    heights = [item.wrap(column_width, A4[1])[1] + item.getSpaceAfter()
+                        for item in performances]
+                    total = sum(heights)
+                    split = min(range(1, len(heights)), key=lambda i: abs(total - 2 * sum(heights[:i])))
+                    columns = Table([[performances[:split], '', performances[split:]]],
+                        colWidths=[column_width, 22, column_width], hAlign='LEFT')
+                    columns.setStyle(TableStyle([
+                        ('VALIGN',(0,0),(-1,-1),'TOP'),
+                        ('LEFTPADDING',(0,0),(-1,-1),0), ('RIGHTPADDING',(0,0),(-1,-1),0),
+                        ('TOPPADDING',(0,0),(-1,-1),0), ('BOTTOMPADDING',(0,0),(-1,-1),0),
+                    ]))
+                    if columns.wrap(WIDTH, A4[1])[1] < 450:
+                        performances = [columns]
+                story.append(KeepTogether(intro + performances[:1]))
+                story += performances[1:]
 
         ids = list(dict.fromkeys(r['recording_id'] for r in tables['catalogue_recordings']
             if r['catalogue_id']==row['id'] and r['recording_id'] in recordings))
@@ -229,7 +279,7 @@ def build_folio_pdfs(tables, out, language, base_path, strip, paragraphs, plain)
                 url = site+lang_path+'recordings/'+id+'/'
                 title = Paragraph('<link href="'+url+'" color="#29252a">'
                     +html.escape(plain(strip(record['title'])))+'</link>',styles['record'])
-                content = p(record.get('detail'))
+                content = p(record.get('detail'), 'body' if japanese else 'record_detail')
                 head = [Paragraph(f'{index+1:02d}',styles['label']),title]
                 cover = cover_bytes(record.get('cover') or '')
                 if cover:
@@ -247,7 +297,7 @@ def build_folio_pdfs(tables, out, language, base_path, strip, paragraphs, plain)
                     block.setStyle(TableStyle([('VALIGN',(0,0),(-1,-1),'TOP'),
                         ('LEFTPADDING',(0,0),(-1,-1),0),('RIGHTPADDING',(0,0),(-1,-1),0),
                         ('TOPPADDING',(0,0),(-1,-1),0),('BOTTOMPADDING',(0,0),(-1,-1),0)]))
-                    header = [block,Spacer(1,13)]
+                    header = [block,Spacer(1,13 if japanese else 8)]
                 else:
                     header = head
                 # Do not orphan a cover/title at the foot of a page.
@@ -278,7 +328,7 @@ def build_folio_pdfs(tables, out, language, base_path, strip, paragraphs, plain)
                 else:
                     story.append(KeepTogether(header+[link(t('View recording','Aufnahme ansehen'),url)]))
                 if index+1<len(ids):
-                    story += [HRFlowable(width='100%',thickness=.5,color=LINE,spaceAfter=17),CondPageBreak(150)]
+                    story += [HRFlowable(width='100%',thickness=.5,color=LINE,spaceAfter=17 if japanese else 12),CondPageBreak(150)]
 
         footer_style = ParagraphStyle('footer',parent=styles['small'],fontSize=7.2,leading=10,textColor=MUTED)
         footer = Paragraph('Hans Gál · '+html.escape(work_title),footer_style)
