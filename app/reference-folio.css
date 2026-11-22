@@ -25,3 +25,5 @@
 .folio-reference .photo-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.folio-reference .photo-grid a{min-width:0}.ref-publication-archive>.ref-disclosure{margin:0}.ref-year-group>.ref-entry{margin:0;padding:1.4rem;border-left:0}.ref-year-group{margin-bottom:.8rem}.ref-year-group>summary{font:400 1.8rem/1.3 var(--serif)}.ref-entry-heading:empty{display:none}@media(max-width:600px){.folio-reference .photo-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 
 .ref-summary-text{display:block;min-width:0}.ref-book-plates{display:flex;gap:24px;flex-wrap:wrap;padding:1.5rem 0}.ref-book-plates img{max-height:250px;width:auto}.reference-source .book-purchases ul{padding-left:1.3rem}.reference-source .book-purchases li{margin:.8rem 0}.reference-source .hgs-form-grid>div>label{display:block;margin-bottom:.4rem}.reference-source .hgs-form-grid :is(input:not([type=checkbox]):not([type=radio]),select){width:100%}.ref-publication-archive summary font{font:inherit!important}.reference-source .contact-person{border-radius:0}
+
+.news-event-panel{margin:18px 0;padding:16px;background:#f4f0f2;border:1px solid #d6c3cc}
