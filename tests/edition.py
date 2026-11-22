@@ -18,6 +18,7 @@ class Text(HTMLParser):
   if not self.skip:self.parts.append(data)
 def plain(s):return re.sub(r'\s+',' ',''.join(Text(stripcslashes(s or '')).parts)).strip()
 tables={name:json.loads((ROOT/'content'/f'{name}.json').read_text(encoding='utf8')) for name in ['menu','recording','catalogue']}
+tables['recording']=[r for r in tables['recording'] if not r.get('moved_to')]
 checked=0
 for lang in json.loads((ROOT/'locales/languages.json').read_text(encoding='utf8'))['published']:
  prefix='' if lang=='en' else lang+'/'

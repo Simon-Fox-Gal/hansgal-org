@@ -90,6 +90,9 @@ def make_site(base_path='', review=True, language='en', active_languages=None, i
             value=re.sub(r'(url\(\s*["\']?)(/(?!/))',lambda m:m[1]+base_path+'/',value)
             css.write_text(value,encoding='utf8')
     tables={p.stem:json.loads(p.read_text(encoding='utf8')) for p in (ROOT/'content').glob('*.json') if p.stem not in ('asset-manifest','legacy-routes','catalogue-order','catalogue-orders','accent-map')}
+    moved_recordings={r['id']:r['moved_to'] for r in tables['recording'] if r.get('moved_to')}
+    tables['recording']=[r for r in tables['recording'] if r['id'] not in moved_recordings]
+    tables['catalogue_recordings']=[r for r in tables['catalogue_recordings'] if r['recording_id'] not in moved_recordings]
     if language!='en':tables=localize(tables,language)
     build_work_pdfs(tables,out,language,base_path,stripcslashes)
     build_biography_pdf(tables,out,language,stripcslashes)
@@ -285,7 +288,16 @@ def make_site(base_path='', review=True, language='en', active_languages=None, i
         c['CONTENT']=content
         save(route,env.get_template('default-layout.html').render(**c),template)
 
-    page('/','main',featured_recordings=recordings[:3])
+    news_body=editorial_fragment(by_id['menu']['68']['body'])
+    headline=re.search(r'<(summary|h[2-4])\b[^>]*>(.*?)</\1>',news_body,re.I|re.S)
+    news_headline=''
+    if headline:
+        news_headline=headline[2]
+        subject=re.match(r'\s*<p>\s*<b>(.*?)</b>',news_body[headline.end():],re.I|re.S)
+        if subject:
+            news_headline+=' · '+subject[1]
+        news_headline=' '.join(html.unescape(re.sub('<[^>]+>','',news_headline)).split())
+    page('/','main',featured_recordings=recordings[:3],news_headline=news_headline)
     page('/score-basket','score-basket')
     page('/hansgal','hansgal_index',**bio_shared,biography_intro=by_id['heading']['1']['body'],biography_extra=[r for r in tables['menu'] if r['mainmenu']=='hansgal' and r['hidden']!='yes' and r['id'] not in biography.CHAPTER_IDS])
     for menu in tables['menu']:
@@ -389,6 +401,9 @@ def make_site(base_path='', review=True, language='en', active_languages=None, i
             markup=re.sub(r'(<body\b[^>]*>)',lambda m:m[1]+nav,markup,count=1,flags=re.I)
             target=out/'de'/route.lstrip('/');target.parent.mkdir(parents=True,exist_ok=True);target.write_text(markup,encoding='utf8')
             generated['/de'+route]={'path':'/de'+route,'file':target.relative_to(out).as_posix(),'template':'standalone-german','sha256':hashlib.sha256(markup.encode()).hexdigest()}
+    for ident,destination in moved_recordings.items():
+        aliases['/recordings/'+ident]=destination
+        aliases['/recordings/getalbuminfo/'+ident]=destination
     for mode in ('coverlist','coverflow'):
         aliases['/recordings/changeview/'+mode]='/recordings?view='+mode
     for route,target in aliases.items():

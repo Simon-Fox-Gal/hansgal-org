@@ -28,6 +28,7 @@ def compact(s):return re.sub(r'\s+','',s).replace('\xad','')
 historical='--historical-oct2' in sys.argv
 # One-off acceptance assertions describe the October 2 snapshot, not immutable CMS content.
 tables={name:load(name) for name in ['catalogue','recording','menu','catalogue_recordings']};checked=0
+tables['recording']=[r for r in tables['recording'] if not r.get('moved_to')]
 languages=json.loads((ROOT/'locales/languages.json').read_text(encoding='utf8'))['published']
 for lang in languages:
  data=localize(tables,lang) if lang!='en' else tables;prefix=lang+'/' if lang!='en' else ''
