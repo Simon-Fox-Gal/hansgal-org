@@ -85,8 +85,9 @@
     const eventLink=first.querySelector('a[href*="ekihd.de"]'),event=eventLink?.parentElement;
     if(event){event.classList.add('ref-event-facts');const b=event.querySelector('b');if(b){const h=node('h2','ref-event-title');h.append(...b.childNodes);b.replaceWith(h);event.prepend(h);}}
     const intro=first.querySelector('div>b');if(intro&&/FORTHCOMING|KOMMENDE|ÉVÉNEMENTS|今後/.test(text(intro)))intro.parentElement.classList.add('ref-event-kicker');
-    const paras=[...lastCurrent.children];const from=paras.find(e=>e.tagName==='P'&&e.querySelector('b')&&paras.indexOf(e)>2);
-    if(from){const more=node('div','ref-event-more');more.append(rangeContents(from,null,lastCurrent));lastCurrent.append(more);const h=generated(node('h3','',ui.details));more.prepend(h);disclosure(more,h);}
+    const panel=lastCurrent.querySelector(':scope > .news-event-panel')||lastCurrent;
+    const paras=[...panel.children];const from=paras.find(e=>e.tagName==='P'&&e.querySelector('b')&&paras.indexOf(e)>2);
+    if(from){const more=node('div','ref-event-more');more.append(rangeContents(from,null,panel));panel.append(more);const h=generated(node('h3','',ui.details));more.prepend(h);disclosure(more,h);}
     }
     const oldEntries=entries(archive);let year='';oldEntries.forEach(e=>{const match=text(e).match(/(?:^|[^0-9])(20\d{2}|19\d{2})(?=[^0-9]|$)/);if(match)year=match[1];e.dataset.year=year;});
     const yearGroups=new Map();oldEntries.filter(e=>e.dataset.year).forEach(e=>{let g=yearGroups.get(e.dataset.year);if(!g){g=node('details','ref-disclosure ref-year-group');const s=generated(node('summary','',e.dataset.year));g.append(s);e.before(g);yearGroups.set(e.dataset.year,g);}g.append(e);});oldEntries.filter(e=>!e.dataset.year).forEach(e=>e.className='ref-entry-heading');
