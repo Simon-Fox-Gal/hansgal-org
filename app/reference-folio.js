@@ -73,20 +73,20 @@
  function rangeContents(start,end,container){const r=document.createRange();r.setStartBefore(start);end?r.setEndBefore(end):r.setEnd(container,container.childNodes.length);return r.extractContents();}
  if(source){
   if(page==='news-68'){
-   const lastCurrent=source.querySelector('#wigmore-hall-2027');
+   const concerts=[...source.querySelectorAll('section:has(> .news-event-panel)')];
    const walker=document.createTreeWalker(source,NodeFilter.SHOW_TEXT);let boundary;while(walker.nextNode()){if(/^(PAST EVENTS|VERGANGENE VERANSTALTUNGEN|ÉVÉNEMENTS PASSÉS|過去の催し)/.test(walker.currentNode.textContent.trim())){boundary=walker.currentNode;break;}}
    if(boundary){
     const r=document.createRange();r.setStartBefore(boundary);r.setEnd(source,source.childNodes.length);const old=r.extractContents();
     const latest=node('section','ref-current'),archive=node('section','ref-archive');latest.id='current-events';archive.id='event-archive';latest.append(...source.childNodes);archive.append(old);source.append(latest,archive);
-    if(lastCurrent){
-    const first=node('article','ref-event');const before=document.createRange();before.setStart(latest,0);before.setEndBefore(lastCurrent);first.append(before.extractContents());latest.prepend(first);lastCurrent.classList.add('ref-event');latest.append(lastCurrent);
-    [...latest.children].filter(e=>e!==first&&e!==lastCurrent&&!text(e)&&!e.querySelector('a,img')).forEach(e=>e.remove());
+    if(concerts.length){
+    const first=node('article','ref-event');const before=document.createRange();before.setStart(latest,0);before.setEndBefore(concerts[0]);first.append(before.extractContents());latest.prepend(first);for(const concert of concerts){concert.classList.add('ref-event');latest.append(concert);}
+    [...latest.children].filter(e=>e!==first&&!concerts.includes(e)&&!text(e)&&!e.querySelector('a,img')).forEach(e=>e.remove());
     const context=[...first.querySelectorAll('div[style]')].find(d=>d.style.backgroundColor);if(context)disclosure(context,context.querySelector('b'));
     const eventLink=first.querySelector('a[href*="ekihd.de"]'),event=eventLink?.parentElement;
     if(event){event.classList.add('ref-event-facts');const b=event.querySelector('b');if(b){const h=node('h2','ref-event-title');h.append(...b.childNodes);b.replaceWith(h);event.prepend(h);}}
     const intro=first.querySelector('div>b');if(intro&&/FORTHCOMING|KOMMENDE|ÉVÉNEMENTS|今後/.test(text(intro)))intro.parentElement.classList.add('ref-event-kicker');
-    const panel=lastCurrent.querySelector(':scope > .news-event-panel')||lastCurrent;
-    const paras=[...panel.children];const from=paras.find(e=>e.tagName==='P'&&e.querySelector('b')&&paras.indexOf(e)>2);
+    const panel=latest.querySelector('#wigmore-hall-2027 > .news-event-panel');
+    const paras=panel?[...panel.children]:[];const from=paras.find(e=>e.tagName==='P'&&e.querySelector('b')&&paras.indexOf(e)>2);
     if(from){const more=node('div','ref-event-more');more.append(rangeContents(from,null,panel));panel.append(more);const h=generated(node('h3','',ui.details));more.prepend(h);disclosure(more,h);}
     }
     const oldEntries=entries(archive);let year='';oldEntries.forEach(e=>{const match=text(e).match(/(?:^|[^0-9])(20\d{2}|19\d{2})(?=[^0-9]|$)/);if(match)year=match[1];e.dataset.year=year;});

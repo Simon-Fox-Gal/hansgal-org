@@ -8,7 +8,7 @@ const base=process.env.SITE_BASE||'http://127.0.0.1:8770/hansgal-org';let checks
 const go=async(p)=>{await page.goto(base+p);await page.waitForFunction(()=>document.documentElement.dataset.referenceReady==='true');};
 for(const lang of ['en','de','fr','ja']){
 const pref=lang==='en'?'':'/'+lang;
-await go(pref+'/news/68/');assert.equal(await page.locator('.ref-current>.ref-event').count(),2);assert(!await page.locator('#event-archive').isVisible());
+await go(pref+'/news/68/');assert.equal(await page.locator('.ref-current>.ref-event').count(),4);assert(!await page.locator('#event-archive').isVisible());
 await page.locator('[aria-controls=event-archive]').click();assert(await page.locator('#event-archive').isVisible());await page.locator('.ref-year select').selectOption('2023');assert.equal(await page.locator('.ref-year-group:visible').count(),1);assert.equal(await page.locator('.ref-year-group:visible>.ref-entry:visible').count(),3);await page.locator('.ref-archive .ref-clear').click();
 await page.goBack();assert(await page.locator('#current-events').isVisible());await page.goForward();assert(await page.locator('#event-archive').isVisible());
 await page.locator('[aria-controls=event-archive]').focus();await page.keyboard.press('Home');assert.equal(await page.locator('[aria-controls=current-events]').getAttribute('aria-selected'),'true');checks+=7;
