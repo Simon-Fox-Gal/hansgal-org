@@ -22,8 +22,8 @@
 <section id="overview" class="folio-panel"><h2 class="folio-panel-title">{{ page_text('144') }}</h2>
 <div class="folio-overview">
 {% if present(catalogue.further_details) or present(catalogue.movements) or present(catalogue.other_versions) %}<div>
-{% if present(catalogue.further_details) %}<div class="folio-prose">{{ catalogue.further_details|stripcslashes|editorial_fragment }}</div>{% endif %}
 {% if present(catalogue.movements) %}<section class="folio-movements"><h3>{{ page_text('156') }}</h3><div class="folio-prose">{{ catalogue.movements|stripcslashes }}</div></section>{% endif %}
+{% if present(catalogue.further_details) %}<div class="folio-prose">{{ catalogue.further_details|stripcslashes|editorial_fragment }}</div>{% endif %}
 {% if present(catalogue.other_versions) %}<section><h3>{{ page_text('157') }}</h3><div class="folio-prose">{{ catalogue.other_versions|stripcslashes }}</div></section>{% endif %}
 </div>{% endif %}
 {% if present(catalogue.orchestration) or present(catalogue.publisher) or present(catalogue.availability) %}<aside class="folio-facts"><h3>{{ page_text('152') }}</h3><dl>

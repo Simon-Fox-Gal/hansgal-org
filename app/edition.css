@@ -35,3 +35,21 @@ html:is([lang="fr"],[lang="ja"]) .hgs-form-grid select{width:100%}
 html:is([lang="fr"],[lang="ja"]) .hgs-field-full>label{display:block;overflow-wrap:anywhere}
 html:is([lang="fr"],[lang="ja"]) .hgs-field-full textarea{display:block;width:100%}
 #hgs-contact .hgs-contact-item > strong{display:block;margin-bottom:.3rem}
+
+/* A single editorial headline sits beneath the primary homepage links. */
+.home-news{display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:center;gap:.85rem;min-height:44px;margin-top:1rem;padding:.55rem .15rem;border-top:1px solid var(--line);color:var(--plum);text-decoration:none}
+.home-news-label{font:700 .75rem/1.3 var(--sans);letter-spacing:.07em;color:var(--green);border-right:1px solid var(--line);padding-right:.85rem}
+.home-news-title{font:1rem/1.35 var(--serif);color:var(--ink)}
+.home-news:hover .home-news-title,.home-news:focus-visible .home-news-title{text-decoration:underline;text-underline-offset:.2em}
+@media(max-width:600px){.home-news{gap:.55rem}.home-news-label{padding-right:.55rem}.home-news-title{font-size:.93rem}}
+
+.hero-actions:has(+.home-news){margin-bottom:.75rem}
+.home-news+.hero-index{margin-top:.65rem}
+@media(max-height:740px),(max-width:720px),(max-width:1150px) and (max-height:900px){
+ .hero-copy:has(.home-news){display:flex;flex-direction:column}
+ .hero-copy .home-news{order:-1;margin:0 0 1.2rem}
+}
+@media(max-height:900px){
+ html[lang="fr"] .hero-copy:has(.home-news){display:flex;flex-direction:column}
+ html[lang="fr"] .hero-copy .home-news{order:-1;margin:0 0 1.2rem}
+}

@@ -28,6 +28,12 @@ def main():
     p = argparse.ArgumentParser(); p.add_argument('--host'); args = p.parse_args()
     rows = json.loads((ROOT/'content/recording.json').read_text(encoding='utf8'))
     base = json.loads((ROOT/'dist/app/runtime-config.json').read_text())['basePath']
+    moved = [r for r in rows if r.get('moved_to')]
+    for r in moved:
+        for prefix in ('', '/de', '/fr', '/ja'):
+            path = ROOT/'dist'/prefix.strip('/')/'recordings'/r['id']/'index.html'
+            assert '0;url='+base+prefix+r['moved_to'] in path.read_text(encoding='utf8')
+    rows = [r for r in rows if not r.get('moved_to')]
     ids = {r['id'] for r in rows}
     for ident in [None] + sorted(ids):
         route = '/recordings/' + (ident+'/' if ident else '')

@@ -30,11 +30,12 @@ class WorkPage(HTMLParser):
    if match:self.recordings.append(match[1])
  def handle_endtag(self,tag):
   if tag=='div' and self.depth:self.depth-=1
+visible_records={r['id'] for r in load('recording') if not r.get('moved_to')}
 checked=0
 for prefix in ('','de/','fr/','ja/'):
  for work in works:
   page=WorkPage((ROOT/'dist'/prefix/'works/show'/work/'index.html').read_text(encoding='utf8'))
-  expected={r for w,r in relations if w==work and r in records}
+  expected={r for w,r in relations if w==work and r in visible_records}
   assert set(page.recordings)==expected,(prefix,work,'missing/unexpected recording card')
   assert len(page.recordings)==len(set(page.recordings)),(prefix,work,'duplicate recording card')
   checked+=len(expected)

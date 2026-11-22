@@ -30,6 +30,7 @@ assert folio_title('Sinfonie Nr. 2 F-Dur','Symphony No. 2 (F major)')=='Sinfonie
 assert folio_title('A work (in F major)','')=='A work (in F major)'
 
 tables={p.stem:json.loads(p.read_text(encoding='utf8')) for p in (ROOT/'content').glob('*.json') if p.stem in ['catalogue','catalogue_recordings','catalogue_audio_sample','audio_sample','catalogue_image','page_text']}
+visible_records={r['id'] for r in json.loads((ROOT/'content/recording.json').read_text(encoding='utf8')) if not r.get('moved_to')}
 total=0
 for lang in ('en','de','fr','ja'):
     data=localize(tables,lang) if lang!='en' else tables
@@ -62,7 +63,7 @@ for lang in ('en','de','fr','ja'):
         assert len(first)==bool(files)
         if files:assert first[0]['data-sample']==files[0]
         else:assert 'no-first-listen' in text and not page.matches('folio-first')
-        recs=[r for r in tables['catalogue_recordings'] if r['catalogue_id']==w['id']]
+        recs=[r for r in tables['catalogue_recordings'] if r['catalogue_id']==w['id'] and r['recording_id'] in visible_records]
         assert len(page.matches('folio-record'))==len(recs),(lang,w['id'],'recording omitted or duplicated')
         assert len(page.matches('folio-facts'))<=1
         # Publication facts are intentionally repeated beside the actual offers.

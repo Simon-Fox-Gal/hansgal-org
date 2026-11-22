@@ -87,7 +87,7 @@ for row in load('content/catalogue.json'):
     if amount not in (None,''):
         assert re.fullmatch(r'\d+(\.\d{1,2})?',amount),('invalid suggestion',row['id'])
 
-recording_ids={x['id'] for x in load('content/recording.json')}
+recording_ids={x['id'] for x in load('content/recording.json') if not x.get('moved_to')}
 audio_ids={x['id'] for x in load('content/audio_sample.json')}
 catalogue_ids={x['id'] for x in load('content/catalogue.json')}
 recording_works={r['catalogue_id'] for r in load('content/catalogue_recordings.json') if r['catalogue_id'] in catalogue_ids and r['recording_id'] in recording_ids}
