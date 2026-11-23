@@ -114,6 +114,22 @@
    questions.forEach((heading,i)=>{const holder=node('div','ref-answer');heading.before(holder);holder.append(rangeContents(heading,questions[i+1]||tail,source));disclosure(holder,heading);});
    const items=[...source.querySelectorAll('.ref-disclosure')];searchEntries(source,items);
   }else if(page==='hansgalsociety-32'){
+   const fundHelp=source.querySelector('.hgs-fund-help');
+   if(fundHelp){
+    let pinned=false;
+    const trigger=fundHelp.querySelector('summary');
+    const close=()=>{pinned=false;fundHelp.open=false;};
+    fundHelp.addEventListener('pointerenter',e=>{if(e.pointerType==='mouse')fundHelp.open=true;});
+    fundHelp.addEventListener('pointerleave',e=>{if(e.pointerType==='mouse'&&!pinned)close();});
+    trigger.addEventListener('click',e=>{
+     e.preventDefault();
+     pinned=!pinned;
+     fundHelp.open=pinned;
+    });
+    trigger.addEventListener('blur',close);
+    document.addEventListener('click',e=>{if(fundHelp.open&&!fundHelp.contains(e.target))close();});
+    document.addEventListener('keydown',e=>{if(e.key==='Escape'&&fundHelp.open)close();});
+   }
    const sections=[...source.querySelectorAll('.hgs-society-page > section, .hgs-society-page > .hgs-overview-footer')];
    if(sections.length){
     const overview=sections.filter(e=>!e.id&&!e.getAttribute('aria-labelledby')?.includes('privacy')||e.classList.contains('hgs-top-card')||e.id==='hgs-funds');
