@@ -8,7 +8,11 @@
  document.addEventListener('keydown',e=>{if(e.key==='Escape'){document.querySelectorAll('.explore-menu[open]').forEach(d=>d.open=false);if(toggle?.getAttribute('aria-expanded')==='true'){menu(false);toggle.focus();}}});
  const chapters=document.querySelector('.chapter-nav>details');
  if(chapters&&matchMedia('(max-width:850px)').matches)chapters.open=false;
- const advanced=document.querySelector('.advanced-filters');if(advanced&&matchMedia('(max-width:600px)').matches&&!new URLSearchParams(location.search).size)advanced.open=false;
+ const advanced=document.querySelector('.advanced-filters');
+ if(advanced){
+  const params=new URLSearchParams(location.search);
+  advanced.open=['genre','instrument','opus_number','year','publisher'].some(name=>params.get(name));
+ }
  const recordSearch=document.getElementById('recording-search');recordSearch?.addEventListener('input',()=>{const q=recordSearch.value.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();let count=0;document.querySelectorAll('.albumlist .item').forEach(a=>{a.hidden=!a.textContent.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().includes(q);if(!a.hidden)count++;});document.getElementById('recording-count').textContent=count+' '+t('recordings','Aufnahmen');});
  document.querySelectorAll('[data-language]').forEach(a=>{if(a.dataset.language===language)a.setAttribute('aria-current','page');});
  const q=new URLSearchParams(location.search).get('keyword')||'';

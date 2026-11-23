@@ -112,3 +112,54 @@
   border-inline-end:2px solid;
   transform:rotate(45deg);
 }
+
+.reference-source .hgs-fund-label {
+  position:relative;
+  display:flex;
+  align-items:center;
+  gap:.5rem;
+  margin-bottom:.4rem;
+}
+.hgs-fund-help > summary {
+  display:grid;
+  place-items:center;
+  width:1.5rem;
+  height:1.5rem;
+  padding:0;
+  border:1px solid currentColor;
+  border-radius:50%;
+  color:var(--plum);
+  font:700 .9rem/1 var(--sans);
+  list-style:none;
+  cursor:pointer;
+}
+.hgs-fund-help > summary::-webkit-details-marker {display:none}
+.hgs-fund-help[open] > summary {
+  color:#fff;
+  background:var(--plum);
+  border-color:var(--plum);
+}
+.reference-source .hgs-fund-help-panel {
+  position:absolute;
+  z-index:2;
+  inset-block-start:100%;
+  inset-inline-start:0;
+  width:min(24rem,100%);
+  box-sizing:border-box;
+  padding:.7rem .9rem;
+  border:1px solid var(--line);
+  background:var(--paper);
+  box-shadow:0 4px 14px #0002;
+  font:400 .9rem/1.4 var(--sans);
+  overflow-wrap:anywhere;
+}
+.reference-source .hgs-fund-help-panel > p {margin:0}
+.hgs-fund-help-panel strong {display:block}
+.reference-source .hgs-fund-help-panel > p + p {margin-top:.5rem}
+.reference-source #hgs_notes {
+  display:block;
+  width:100%;
+  max-width:100%;
+  box-sizing:border-box;
+  resize:vertical;
+}

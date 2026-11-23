@@ -5971,5 +5971,11 @@
     "path": "/storage/userfiles/hans-gal-society-logo.webp",
     "bytes": 65506,
     "sha256": "2515e9e85f7d3b9e7b5ed3f309d5afffb2f65f1947d23a34c4ece7cf14856de6"
+  },
+  {
+    "source_path": "storage/userfiles/hans-gal-society-logo-rgb.jpg",
+    "path": "/storage/userfiles/hans-gal-society-logo-rgb.jpg",
+    "bytes": 185144,
+    "sha256": "fd97b29fc18c22e6cbce9e5b3b79fa9be9470bd1ba0af1812a3947d3c06e946c"
   }
 ]
