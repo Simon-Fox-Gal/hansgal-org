@@ -163,3 +163,6 @@
   box-sizing:border-box;
   resize:vertical;
 }
+@media(max-width:600px) {
+  .reference-source #hgs_notes::placeholder {font-size:.875rem}
+}
