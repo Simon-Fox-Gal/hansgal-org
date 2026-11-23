@@ -83,3 +83,39 @@ p.eyebrow.section-eyebrow {
 @media(max-width:600px) {
   :root {--section-top:32px}
 }
+
+/* Keep the first catalogue result close to the search controls. */
+.catalogue-page .catalogue-filters {
+  margin:.85rem 0 .6rem;
+  padding:.85rem 1rem .4rem;
+}
+.catalogue-search-row {
+  display:flex;
+  align-items:end;
+  gap:.75rem 1rem;
+  flex-wrap:wrap;
+}
+.catalogue-title-search {flex:1 1 18rem}
+.catalogue-title-search label {gap:.25rem}
+.catalogue-search-row .filter-actions {margin:0;gap:.5rem}
+.catalogue-search-row :is(input[type="search"],button) {min-height:44px;padding-block:.4rem}
+.catalogue-filter-tools {
+  display:flex;
+  flex-wrap:wrap;
+  align-items:start;
+  column-gap:1.3rem;
+}
+.catalogue-filter-tools details {margin:0}
+.catalogue-filter-tools details[open] {flex-basis:100%}
+.catalogue-filter-tools summary {min-height:44px;padding-block:.6rem;font-size:.95rem}
+.catalogue-results-bar {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:.25rem 1rem;
+  padding:.3rem 0 .4rem;
+}
+.catalogue-results-bar :is(.availability-key,.catalogue-count) {margin:0}
+.catalogue-page .catalogue-results th {padding-block:.5rem}
+#discover > .eyebrow {margin:0 0 1.4rem}
