@@ -194,3 +194,10 @@
 .reference-source .hgs-gift-form [role="status"]:empty {display:none}
 .reference-source .hgs-gift-declaration {margin:1rem 0}
 .reference-source .hgs-gift-previous {margin:1.1rem 0 0}
+
+.reference-source .hgs-gift-previous [data-gift-previous] {
+  margin-inline-start:.25em;
+  font-weight:700;
+  text-decoration:underline;
+  text-underline-offset:.15em;
+}

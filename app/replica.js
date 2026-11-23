@@ -124,6 +124,7 @@
     if(path==='/works') {
       const form=document.getElementById('worksform');form.onsubmit=e=>{e.preventDefault();submit('worksform',e.submitter?.value||'Go');};
       for(const [k,v] of Object.entries(params))if(form.elements[k]&&k!=='submitbutton')form.elements[k].value=v;
+      if(params.q===undefined&&params.title)form.elements.q.value=params.title;
       form.querySelectorAll('select').forEach(select=>select.addEventListener('change',()=>submit('worksform')));
       if(Object.keys(params).length)renderWorks(params);
     }

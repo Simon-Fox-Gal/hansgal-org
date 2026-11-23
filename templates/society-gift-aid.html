@@ -61,7 +61,7 @@
 <script type="module" src="/app/society-support.js?v=1"></script>
 {% else %}
 <div id="hgs-giftaid" class="hgs-gift-previous">
-  <a href="#hgs-giftaid" class="text-link" aria-controls="hgs_giftaid_form" aria-expanded="false" data-gift-previous>{{ gift.already }}</a>
+  <p><span>{{ gift.already_prompt }}</span> <a href="#hgs-giftaid" aria-controls="hgs_giftaid_form" aria-expanded="false" data-gift-previous>{{ gift.already }}</a></p>
   <div data-gift-outside></div>
   <noscript><p><a href="#hgs-contact">{{ gift.contact }}</a></p></noscript>
 </div>

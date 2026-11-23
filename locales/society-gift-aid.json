@@ -35,8 +35,9 @@
     "sent": "Your Gift Aid declaration was accepted for delivery.",
     "reference": "Your reference is {reference}.",
     "bank_reference": "Use {reference} as the bank transfer reference or include it with your cheque.",
-    "already": "Already donated? Add Gift Aid",
-    "contact": "Contact the Society about Gift Aid."
+    "already": "Add Gift Aid",
+    "contact": "Contact the Society about Gift Aid.",
+    "already_prompt": "Already donated?"
   },
   "de": {
     "uk": "Für Personen, die im Vereinigten Königreich Steuern zahlen",
@@ -74,8 +75,9 @@
     "sent": "Ihre Gift-Aid-Erklärung wurde zur Zustellung angenommen.",
     "reference": "Ihre Referenz lautet {reference}.",
     "bank_reference": "Geben Sie {reference} als Verwendungszweck bei der Überweisung an oder legen Sie die Referenz Ihrem Scheck bei.",
-    "already": "Schon gespendet? Gift Aid nachreichen",
-    "contact": "Kontakt zur Gesellschaft zu Gift Aid."
+    "already": "Gift Aid nachreichen",
+    "contact": "Kontakt zur Gesellschaft zu Gift Aid.",
+    "already_prompt": "Schon gespendet?"
   },
   "fr": {
     "uk": "Pour les personnes qui paient des impôts au Royaume-Uni",
@@ -113,8 +115,9 @@
     "sent": "Votre déclaration Gift Aid a été acceptée pour acheminement.",
     "reference": "Votre référence est {reference}.",
     "bank_reference": "Indiquez {reference} comme référence de virement ou joignez-la à votre chèque.",
-    "already": "Vous avez déjà fait un don ? Ajoutez Gift Aid",
-    "contact": "Contacter la Société au sujet de Gift Aid."
+    "already": "Ajouter Gift Aid",
+    "contact": "Contacter la Société au sujet de Gift Aid.",
+    "already_prompt": "Vous avez déjà fait un don ?"
   },
   "ja": {
     "uk": "英国で納税されている方へ",
@@ -152,7 +155,8 @@
     "sent": "Gift Aid申告が送信のために受け付けられました。",
     "reference": "参照番号は {reference} です。",
     "bank_reference": "銀行振込の参照欄に {reference} を入力するか、小切手に添えてください。",
-    "already": "寄付がお済みの方はこちらからGift Aidを申告",
-    "contact": "Gift Aidについて協会に問い合わせる。"
+    "already": "Gift Aidを申告する",
+    "contact": "Gift Aidについて協会に問い合わせる。",
+    "already_prompt": "すでに寄付された方へ"
   }
 }
