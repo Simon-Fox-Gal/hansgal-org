@@ -36,10 +36,10 @@
       "title": "d52ca767df80bedf784a704caca922df89a865cd017d80c56e0c2fbeecedab77"
     },
     "32": {
-      "body": "581eba7a5db079eee71eb1d3af3e23606f5c7fe877fcc3419da4a193d90322ad",
-      "body_de": "044573d589dadd57a2c246047c9d43bdc5e2671387b0c2a6f2dde7d19fb46ca5",
-      "body_fr": "010c018d277e835939351c2d274b171344c32c91c45ef838e05e59b7fd198309",
-      "body_ja": "a543ff664f8cd93f316206900966332255ddfcea489acaff08a59c504921676a"
+      "body": "6dcd22a1709782225a693d009f8d4c98730b41a8929c5ff04035276ae04866e6",
+      "body_de": "1b4042fc83c6d3bda7c2ddcec54e6b1dd7a1eb4603db91d02eaaf295fe71ca6c",
+      "body_fr": "55bc6a3729d79522fcf87e77a8dd1bcb51b8dc8eb230fd99bc657e9a41046c0e",
+      "body_ja": "09a1cb4c7556e976fc86ecb5a114e3faf5f168beaf630bfab34a7b2c3dcb445b"
     },
     "34": {
       "body": "dc75e5532f7ac31e6ea780e6c15085277ae0dcc5d673393aed8ac701f5561aba",
@@ -88,7 +88,8 @@
       "body": "504635dd706f5716273eaa0ec3843a0fbd31026e6c6410f9d5b5615a5ca41a9f",
       "body_de": "b75966667b6d2f4319f1f00df3906b064507ae4de996164447879c2943d6ed44",
       "body_fr": "ed75f22fcb10c634e761e2dc2a6f94eeeb453cf854a9e9820d52203b3b08f962",
-      "body_ja": "964e4b2874fc5132d3fe0c8ced9c8b66ef60fb7b0c72d5b98f888cf368f0b8ac"
+      "body_ja": "964e4b2874fc5132d3fe0c8ced9c8b66ef60fb7b0c72d5b98f888cf368f0b8ac",
+      "hidden": "6c76a9331e7f5ff9db2754d119a61395717be0c0877d0d8bd462197dff961e4c"
     },
     "80": {
       "body": "1825292685135418ca245fe9fdd221d8671d2acb466250026b759ed392cc6130"
@@ -97,7 +98,8 @@
       "body": "587eb6f930175c8c49329320536ca286cf0227a8e2765b1cefbaad51d11170fe",
       "body_de": "7b382632c8d99323e017c564cbc878312468616042dd8000dc7408f37a061aac",
       "body_fr": "97b4aa0e7b292dba723f55c2132ebad6952a9ee9f1fdbaa590bd71dd4ec1b94c",
-      "body_ja": "ae87c0e15f2f38d10f526e2121a6fc480a7f3160fcdb2ad33bfb37b8a85f5703"
+      "body_ja": "ae87c0e15f2f38d10f526e2121a6fc480a7f3160fcdb2ad33bfb37b8a85f5703",
+      "hidden": "6c76a9331e7f5ff9db2754d119a61395717be0c0877d0d8bd462197dff961e4c"
     }
   },
   "content/audio_sample.json": {

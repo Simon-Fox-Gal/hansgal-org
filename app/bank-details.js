@@ -25,10 +25,12 @@
   form.onsubmit=async event=>{
    event.preventDefault();if(button.disabled||!form.reportValidity())return;
    button.disabled=true;status.textContent=l[4];
-   const email=form.elements.email.value.trim(),fund=slot.dataset.bankFund||'general';
+   const email=form.elements.email.value.trim();
+   const selection=document.getElementById(slot.dataset.bankFundSelect);
+   const fund=selection?.value==='Live Performance Fund'?'performance':slot.dataset.bankFund||'general';
    try{
     const {endpoint}=await config();if(!endpoint)throw Error();
-    if(!pending||pending.email!==email||Date.now()-pending.created>540000){
+    if(!pending||pending.email!==email||pending.fund!==fund||Date.now()-pending.created>540000){
      const challenge=await fetch(endpoint,{cache:'no-store',signal:AbortSignal.timeout(20000)});if(challenge.status===429)throw Error('rate');if(!challenge.ok)throw Error();
      const c=await challenge.json();if(c.difficulty!==16||typeof c.token!=='string')throw Error();
      pending={email,language:lang,fund,token:c.token,proof:await solve(c.token),website:form.elements.website.value,created:Date.now()};

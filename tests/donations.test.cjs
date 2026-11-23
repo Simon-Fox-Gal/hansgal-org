@@ -1,6 +1,6 @@
 const fs=require('fs'),vm=require('vm'),assert=require('assert/strict');
-const row=JSON.parse(fs.readFileSync(require('path').join(__dirname,'../content/menu.json'),'utf8')).find(r=>r.id==='79');
-for(const field of ['body','body_de']) {
+const row=JSON.parse(fs.readFileSync(require('path').join(__dirname,'../content/menu.json'),'utf8')).find(r=>r.id==='32');
+for(const field of ['body','body_de','body_fr','body_ja']) {
  const html=row[field],script=[...html.matchAll(/<script[^>]*>([\s\S]*?)<\/script>/g)].map(m=>m[1]).join('\n');
  const el={};for(const id of ['donation_amount','paypal_amount_hidden','donation_fund','paypal_item_name','currency','paypal_currency_code','payment_method'])el['hgs_'+id]={value:''};
  el.hgs_currency.options=['GBP','EUR','USD','Other'].map(value=>({value}));
@@ -11,6 +11,6 @@ for(const field of ['body','body_de']) {
  assert(html.includes('name="business" value="donations@hansgalsociety.org"'));
  assert(html.includes('data-bank-request'));
 }
-console.log('PASS: EN/DE donation logic retains PayPal recipient, bank request form, chosen fund and exact amount; GBP-only payment methods and zero rejection preserved. No payment or email sent.');
+console.log('PASS: four-language Society donation logic retains PayPal recipient, bank request form, chosen fund and exact amount; GBP-only payment methods and zero rejection preserved. No payment or email sent.');
 
 require('./score-donations.test.cjs');

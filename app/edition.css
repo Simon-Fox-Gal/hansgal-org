@@ -47,11 +47,13 @@ html:is([lang="fr"],[lang="ja"]) .hgs-field-full textarea{display:block;width:10
 .home-news+.hero-index{margin-top:.65rem}
 @media(max-height:740px),(max-width:720px),(max-width:1150px) and (max-height:900px){
  .hero-copy:has(.home-news){display:flex;flex-direction:column}
+ .hero-copy .section-eyebrow{order:-2}
  .hero-copy .home-news{order:-1;margin:0 0 1.2rem}
 }
 @media(max-height:900px){
  html[lang="fr"] .hero-copy:has(.home-news){display:flex;flex-direction:column}
- html[lang="fr"] .hero-copy .home-news{order:-1;margin:0 0 1.2rem}
+ html[lang="fr"] .hero-copy .section-eyebrow{order:-2}
+ .hero-copy .home-news{order:-1;margin:0 0 1.2rem}
 }
 
 /* Shared heading scale for the site’s main sections. */
@@ -67,4 +69,17 @@ p.eyebrow.section-eyebrow {
 }
 @media(max-width:600px) {
   p.eyebrow.section-eyebrow {font-size:.9rem}
+}
+
+/* Start the main sections at the same distance below the masthead. */
+:root {--section-top:42px}
+@media screen {
+  body:not(.folio-work):is(.section-works,.section-recordings,.folio-reference,[data-page="/hansgal"]) #main-content,
+  .home-hero {padding-block-start:var(--section-top)}
+}
+@media (min-width:701px) and (max-width:850px) {
+  body[data-page="/hansgal"] #main-content {padding-inline:24px}
+}
+@media(max-width:600px) {
+  :root {--section-top:32px}
 }
