@@ -30,7 +30,7 @@
   let id;try{id=decodeURIComponent(location.hash.slice(1));}catch{return;}
   const target=id&&document.getElementById(id);
   for(const g of groups){const n=target?g.panels.findIndex(p=>p===target||p.contains(target)):-1;if(n>=0)g.activate(n);else if(!id)g.activate(g.defaultIndex);}
-  if(target){let p=target;while(p){if(p.tagName==='DETAILS')p.open=true;p=p.parentElement;}if(scroll)requestAnimationFrame(()=>target.scrollIntoView({block:'start'}));}
+  if(target){let p=target;while(p){if(p.tagName==='DETAILS')p.open=true;p=p.parentElement;}if(scroll)requestAnimationFrame(()=>(id==='hgs-join'?document.getElementById('hgs-donate'):target).scrollIntoView({block:'start'}));}
  }
  function disclosure(element,heading,open=false){
   if(!heading)return element;
@@ -134,7 +134,7 @@
    if(sections.length){
     const overview=sections.filter(e=>!e.id&&!e.getAttribute('aria-labelledby')?.includes('privacy')||e.classList.contains('hgs-top-card')||e.id==='hgs-funds');
     const panels=[group(overview,'society-overview')];const names=[ui.overview];
-    for(const [id,label] of [['hgs-donate',ui.support],['hgs-giftaid',ui.gift],['hgs-contact',ui.contact]]){const s=sections.find(e=>e.id===id);if(s){panels.push(s);names.push(label);}}
+    for(const [id,label] of [['hgs-donate',ui.support],['hgs-contact',ui.contact]]){const s=sections.find(e=>e.id===id);if(s){panels.push(s);names.push(label);}}
     const privacy=sections.find(e=>e.getAttribute('aria-labelledby')==='hgs-privacy-title');if(privacy){privacy.id='society-privacy';panels.push(privacy);names.push(ui.privacy);}
     tabs(panels,names);
    }

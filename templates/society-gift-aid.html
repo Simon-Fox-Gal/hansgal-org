@@ -1,0 +1,68 @@
+{% if inline %}
+<div class="hgs-gift-option">
+  <p class="hgs-small-caps" id="hgs-gift-eligibility">{{ gift.uk }}</p>
+  <label class="hgs-gift-check" for="hgs-gift-choice">
+    <input id="hgs-gift-choice" type="checkbox" aria-controls="hgs_giftaid_form" aria-describedby="hgs-gift-eligibility">
+    {{ gift.add }}
+  </label>
+  <div data-gift-inline>
+    <form id="hgs_giftaid_form" class="hgs-gift-form" method="post" hidden
+      data-sending="{{ gift.sending | e }}" data-error="{{ gift.error | e }}" data-sent="{{ gift.sent | e }}"
+      data-reference="{{ gift.reference | e }}" data-bank-reference="{{ gift.bank_reference | e }}"
+      data-uk-territory="{{ gift.uk_territory | e }}">
+      <h4 tabindex="-1" data-gift-heading>{{ gift.title }}</h4>
+      <p>{{ gift.intro }}</p>
+      <fieldset class="hgs-fieldset" data-gift-past-fields hidden disabled>
+        <legend>{{ gift.previous }}</legend>
+        <div class="hgs-form-grid">
+          <div><label for="hgs-gift-date">{{ gift.date }}</label><input type="date" id="hgs-gift-date" name="date" required></div>
+          <div><label for="hgs-gift-amount">{{ gift.amount }}</label><input id="hgs-gift-amount" name="amount" type="number" min=".01" step=".01" required></div>
+          <div><label for="hgs-gift-currency">{{ gift.currency }}</label><select id="hgs-gift-currency" name="currency">
+            <option>GBP</option><option>EUR</option><option>USD</option><option value="">{{ gift.other }}</option>
+          </select></div>
+          <div hidden><label for="hgs-gift-other-currency">{{ gift.other_currency }}</label><input id="hgs-gift-other-currency" name="otherCurrency" maxlength="3" pattern="[A-Za-z]{3}" disabled></div>
+          <div class="hgs-field-full"><label for="hgs_payment_reference">{{ gift.existing_reference }}</label><input id="hgs_payment_reference" name="paymentReference" maxlength="100"></div>
+        </div>
+      </fieldset>
+      <div class="hgs-form-grid">
+        <div><label for="hgs-gift-name">{{ gift.full_name }}</label><input id="hgs-gift-name" name="name" autocomplete="name" maxlength="150" pattern=".*\S.*" required></div>
+        <div><label for="hgs-gift-email">{{ contact_copy[4] }}</label><input id="hgs-gift-email" name="email" type="email" autocomplete="email" maxlength="254" required></div>
+        <div><label for="hgs-gift-address">{{ gift.address }}</label><input id="hgs-gift-address" name="address" autocomplete="address-line1" maxlength="180" pattern=".*\S.*" required></div>
+        <div><label for="hgs-gift-postcode">{{ gift.postcode }}</label><input id="hgs-gift-postcode" name="postcode" autocomplete="postal-code" maxlength="20" required></div>
+        <div class="hgs-field-full"><label for="hgs-gift-country">{{ gift.residence }}</label><select id="hgs-gift-country" name="residence">
+          <option value="uk">{{ gift.uk_territory }}</option>
+          <option value="islands">{{ gift.islands }}</option>
+          <option value="overseas">{{ gift.overseas }}</option>
+        </select></div>
+        <fieldset class="hgs-fieldset hgs-field-full hgs-form-grid" data-gift-overseas hidden disabled>
+          <legend>{{ gift.full_address }}</legend>
+          <div><label for="hgs-gift-town">{{ gift.town }}</label><input id="hgs-gift-town" name="town" autocomplete="address-level2" maxlength="100" required></div>
+          <div><label for="hgs-gift-region">{{ gift.region }}</label><input id="hgs-gift-region" name="region" autocomplete="address-level1" maxlength="100"></div>
+          <div><label for="hgs-gift-country-name">{{ gift.country }}</label><input id="hgs-gift-country-name" name="country" autocomplete="country-name" maxlength="100" required></div>
+        </fieldset>
+      </div>
+      <fieldset class="hgs-fieldset hgs-gift-declaration">
+        <legend>{{ gift.scope }}</legend>
+        <label class="hgs-gift-check"><input name="scope" type="radio" value="one" checked> <span data-gift-scope="one">{{ gift.one }}</span></label>
+        <label class="hgs-gift-check"><input name="scope" type="radio" value="all"> <span data-gift-scope="all">{{ gift.all }}</span></label>
+        <p id="hgs-gift-tax">{{ gift.tax }}</p>
+        <label class="hgs-gift-check" for="hgs_giftaid_confirm">
+          <input id="hgs_giftaid_confirm" name="confirm" type="checkbox" aria-describedby="hgs-gift-tax" required>
+          <span data-gift-confirm>{{ gift.confirm }}</span>
+        </label>
+      </fieldset>
+      <p class="hgs-note">{{ gift.privacy }} <a href="#society-privacy">{{ gift.privacy_link }}</a></p>
+      <div class="contact-trap" aria-hidden="true"><label>{{ contact_copy[13] }}<input name="website" tabindex="-1" autocomplete="off"></label></div>
+      <button class="hgs-button hgs-secondary" type="submit">{{ gift.send }}</button>
+      <p role="status" aria-live="polite" data-gift-status></p>
+    </form>
+  </div>
+</div>
+<script type="module" src="/app/society-support.js?v=1"></script>
+{% else %}
+<div id="hgs-giftaid" class="hgs-gift-previous">
+  <a href="#hgs-giftaid" class="text-link" aria-controls="hgs_giftaid_form" aria-expanded="false" data-gift-previous>{{ gift.already }}</a>
+  <div data-gift-outside></div>
+  <noscript><p><a href="#hgs-contact">{{ gift.contact }}</a></p></noscript>
+</div>
+{% endif %}

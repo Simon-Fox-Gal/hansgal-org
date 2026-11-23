@@ -12,6 +12,22 @@ async function contactEndpoint() {
 }
 
 const endpoint = forms.length ? contactEndpoint() : Promise.resolve();
+
+export async function sendContact(body, id) {
+  const url = await endpoint || await contactEndpoint();
+  if (!url) throw new Error('Contact service unavailable');
+
+  const response = await fetch(url, {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({...body, id, language: document.documentElement.lang, elapsedMs: Date.now() - started}),
+    credentials: 'omit',
+    signal: AbortSignal.timeout(20000)
+  });
+  const result = await response.json();
+  if (!response.ok || result.accepted !== true) throw new Error('Not accepted');
+}
+
 for (const form of forms) {
   const status = form.querySelector('[data-contact-status]');
   const submit = form.querySelector('button[type="submit"]');
@@ -40,22 +56,8 @@ for (const form of forms) {
       body.message = 'Membership request: ' + body.membership;
       delete body.membership;
     }
-    Object.assign(body, {
-      language: document.documentElement.lang,
-      id: key,
-      elapsedMs: Date.now() - started
-    });
-
     try {
-      const response = await fetch(url, {
-        method: 'POST',
-        headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify(body),
-        credentials: 'omit',
-        signal: AbortSignal.timeout(20000)
-      });
-      const result = await response.json();
-      if (!response.ok || result.accepted !== true) throw new Error('Not accepted');
+      await sendContact(body, key);
       status.textContent = form.dataset.success;
       form.reset();
       key = '';
@@ -82,13 +84,4 @@ for (const panel of document.querySelectorAll('[data-contact-panel]')) {
       form.elements.name.focus({preventScroll: true});
     });
   }
-}
-
-const membershipChoice = document.getElementById('hgs-join-choice');
-if (membershipChoice) {
-  function openMembershipFromLink() {
-    if (location.hash === '#hgs-join') membershipChoice.checked = true;
-  }
-  openMembershipFromLink();
-  window.addEventListener('hashchange', openMembershipFromLink);
 }

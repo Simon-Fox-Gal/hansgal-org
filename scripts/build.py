@@ -16,6 +16,7 @@ from languages import LANGUAGES, PUBLISHED, prefix, labels, text as translated_t
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 AUDIO_BASE=json.loads((ROOT/'config/audio-hosting.json').read_text())['base_url'].rstrip('/')
 assert urlsplit(AUDIO_BASE).scheme=='https' and urlsplit(AUDIO_BASE).netloc
+SOCIETY_GIFT_AID = json.loads((ROOT/'locales/society-gift-aid.json').read_text(encoding='utf8'))
 
 STANDALONE_GERMAN={
  '/storage/sketchbook/galpictures.html':[
@@ -313,6 +314,12 @@ def make_site(base_path='', review=True, language='en', active_languages=None, i
         if membership_marker in c['body']:
             membership_form=env.get_template('society-membership.html').render(membership=ref_ui['membership'], **contact_context(language))
             c['body']=c['body'].replace(membership_marker,membership_form)
+            gift_template=env.get_template('society-gift-aid.html')
+            for part in ('INLINE','PREVIOUS'):
+                marker=f'<!-- SOCIETY_GIFT_AID_{part} -->'
+                if marker in c['body']:
+                    gift_form=gift_template.render(gift=SOCIETY_GIFT_AID[language],inline=part=='INLINE',**contact_context(language))
+                    c['body']=c['body'].replace(marker,gift_form)
         c['submenus']=[r for r in tables['menu'] if r['mainmenu']==section]
         c['thumbnails']=[r for r in tables['thumbnail'] if r['menu_id']==id]
         if section=='hansgal':
