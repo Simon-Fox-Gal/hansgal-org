@@ -201,3 +201,23 @@
   text-decoration:underline;
   text-underline-offset:.15em;
 }
+
+.news-replay-timings {
+  border-block-start:1px solid var(--line);
+  margin:1.25rem 0;
+  padding-block-start:.8rem;
+}
+.news-replay-timings > p {margin:0 0 .45rem}
+.news-replay-timings dl {
+  display:grid;
+  grid-template-columns:max-content minmax(0,1fr);
+  gap:.45rem .8rem;
+  margin:0;
+}
+.news-replay-timings dt {font-weight:700;font-variant-numeric:tabular-nums}
+.news-replay-timings dd {margin:0}
+.news-replay-timings a {
+  font-weight:700;
+  text-decoration:underline;
+  text-underline-offset:.18em;
+}
