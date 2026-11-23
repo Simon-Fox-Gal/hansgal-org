@@ -29,3 +29,29 @@ assert.deepEqual(engine.select(edited,{submitbutton:'Search',title:'editorialnew
 const current={catalogue:json('content','catalogue'),catalogue_category:json('content','catalogue_category')};
 assert.equal(engine.select(current,{},accent,orders).length,current.catalogue.length);
 console.log('PASS: edited sort values, new work visibility, category membership and search; current catalogue contains every work.');
+
+const ids=form=>engine.select(current,form,accent,orders).map(row=>row.id);
+for (const [query,filter] of [
+ ['33',{opus_number:'33'}],['Op. 33',{opus_number:'33'}],['opus 22 B',{opus_number:'22b'}],
+ ['Op. 90( 3 )',{opus_number:'90(3)'}],['１９３７',{year:'1937'}],['1937',{year:'1937'}],
+ ['piano',{title:'piano'}],['De Profundis',{title:'De Profundis'}]
+]) {
+ const expected=ids({submitbutton:'Go',...filter});
+ assert(expected.length>0,query);
+ assert.deepEqual(ids({q:query}),expected,query);
+}
+const category=current.catalogue_category.find(row=>row.catalogue_id===ids({q:'22b'})[0]);
+assert.deepEqual(ids({q:'22b',genre:category.category_id}),ids({submitbutton:'Go',opus_number:'22b',genre:category.category_id}));
+const japanese={...current,catalogue:current.catalogue.map((row,index)=>index?row:{...row,title:'ピアノのための変奏曲'})};
+assert.deepEqual(engine.select(japanese,{q:'変奏曲'},accent,orders).map(row=>row.id),[current.catalogue[0].id]);
+assert.deepEqual(ids({q:'Op. 999'}),[]);
+for (const [input,number] of [
+ ['Opus no. 33','33'],['Catalogue entry: Op. 22b (arrangement)','22b'],
+ ['Op. 90 (3), revised','90(3)'],['opus 22 b','22b'],['作品番号２２ｂ','22b'],
+ ['No. 22 for orchestra','22']
+]) {
+ assert.deepEqual(ids({submitbutton:'Go',opus_number:input}),ids({submitbutton:'Go',opus_number:number}),input);
+}
+assert.deepEqual(ids({q:'Opus No. 22b'}),ids({q:'22b'}));
+assert.deepEqual(ids({submitbutton:'Go',opus_number:'opus only'}),[]);
+console.log('PASS: unified title, opus and year queries, full-width digits, Japanese text and detailed filter combinations.');

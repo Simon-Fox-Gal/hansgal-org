@@ -1084,30 +1084,30 @@
     "page": "Works catalogue",
     "path": "/works/",
     "title": "Title",
-    "value": "Title",
-    "value_de": "Titel",
-    "value_fr": "Titre",
-    "value_ja": "作品名"
+    "value": "Title, opus or year",
+    "value_de": "Titel, Opus oder Jahr",
+    "value_fr": "Titre, opus ou année",
+    "value_ja": "作品名・作品番号・作曲年"
   },
   {
     "id": "110",
     "page": "Works catalogue",
     "path": "/works/",
     "title": "Title or keyword",
-    "value": "Title or keyword",
-    "value_de": "Titel oder Suchbegriff",
-    "value_fr": "Titre ou mot-clé",
-    "value_ja": "作品名またはキーワード"
+    "value": "e.g. piano, Op. 33, 1937",
+    "value_de": "z. B. Klavier, Op. 33, 1937",
+    "value_fr": "p. ex. piano, op. 33, 1937",
+    "value_ja": "例：ピアノ、Op. 33、1937"
   },
   {
     "id": "111",
     "page": "Works catalogue",
     "path": "/works/",
     "title": "Filter by genre, instrument, opus or year",
-    "value": "Filter by genre, instrument, opus or year",
-    "value_de": "Nach Gattung, Instrument, Opus oder Jahr filtern",
-    "value_fr": "Filtrer par genre, instrument, opus ou année",
-    "value_ja": "ジャンル・楽器・作品番号・年で絞り込む"
+    "value": "More filters",
+    "value_de": "Weitere Filter",
+    "value_fr": "Plus de filtres",
+    "value_ja": "絞り込み条件を表示"
   },
   {
     "id": "112",

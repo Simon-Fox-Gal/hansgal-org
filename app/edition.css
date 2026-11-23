@@ -119,3 +119,30 @@ p.eyebrow.section-eyebrow {
 .catalogue-results-bar :is(.availability-key,.catalogue-count) {margin:0}
 .catalogue-page .catalogue-results th {padding-block:.5rem}
 #discover > .eyebrow {margin:0 0 1.4rem}
+
+.catalogue-page .catalogue-filter-tools {
+  align-items:center;
+  row-gap:.35rem;
+  padding-top:.55rem;
+}
+.catalogue-page .advanced-filters summary {
+  display:inline-flex;
+  align-items:center;
+  gap:.45rem;
+  border:1px solid var(--green);
+  border-radius:4px;
+  padding:.4rem .75rem;
+  background:var(--paper);
+  font-weight:700;
+  list-style:none;
+  cursor:pointer;
+}
+.catalogue-page .advanced-filters summary::-webkit-details-marker {display:none}
+.catalogue-filter-icon::before {
+  content:"+";
+  display:inline-block;
+  width:1em;
+  text-align:center;
+}
+.advanced-filters[open] .catalogue-filter-icon::before {content:"−"}
+.catalogue-page .advanced-filters[open] summary {margin-bottom:.75rem}

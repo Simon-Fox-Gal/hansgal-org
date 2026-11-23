@@ -23,11 +23,29 @@
     try { return new RegExp('^'+String(term).replace(/[()]/g,'\\$&')+'([^0-9]|$)','i').test(String(value??'')); }
     catch {return false;}
   }
+  function extractOpus(value) {
+    const text = String(value ?? '').normalize('NFKC');
+    const match = /\d+(?:\s*\(\s*\d+\s*\)|[a-z](?![\p{L}\p{N}])|\s+[a-z]\s*$)?/iu.exec(text);
+    return match?.[0].replace(/\s/g, '') ?? '';
+  }
+  function catalogueQuery(value) {
+    const query = String(value ?? '').normalize('NFKC').trim();
+    if (/^[12]\d{3}$/.test(query)) return {year: query};
+
+    const explicitOpus = /^op(?:us)?(?=\.|\s|\d)/i.test(query);
+    const bareOpus = /^\d{1,3}(?:\s*[a-z]|\s*\(\s*\d+\s*\))?$/i.test(query);
+    const opus = explicitOpus || bareOpus ? extractOpus(query) : '';
+    if (opus) return {opus};
+
+    return {text: query};
+  }
   function select(data, form={}, accentMap={}, orders={}) {
-    const title=form.submitbutton?form.title:'';
-    const opus=form.submitbutton?form.opus_number:'';
+    const quick = form.q === undefined ? null : catalogueQuery(form.q);
+    const title = quick ? quick.text : (form.submitbutton ? form.title : '');
+    const opusInput = form.submitbutton ? String(form.opus_number ?? '').trim() : '';
+    const opus = extractOpus(opusInput);
     const publisher=form.submitbutton?form.publisher:'';
-    const words=unaccent(title,accentMap).split(/\W+/).filter(Boolean).map(s=>s.toLowerCase());
+    const words=unaccent(title,accentMap).split(quick ? /[^\p{L}\p{N}]+/u : /\W+/).filter(Boolean).map(s=>s.toLowerCase());
     const category=new Map();
     for(const r of data.catalogue_category) {
       if(!category.has(r.catalogue_id))category.set(r.catalogue_id,new Set());
@@ -37,13 +55,16 @@
       const cs=category.get(r.id)||new Set();
       if(form.genre&&!cs.has(String(form.genre)))return false;
       if(form.instrument&&!cs.has(String(form.instrument)))return false;
-      if(opus&&opus!=='Search Opus No.'&&!numberPrefix(r.opus_no,opus))return false;
+      if(quick?.opus&&!numberPrefix(r.opus_no,quick.opus))return false;
+      if(quick?.year&&!numberPrefix(r.year_of_composition,quick.year))return false;
+      if(opusInput && opusInput !== 'Search Opus No.' && (!opus || !numberPrefix(r.opus_no, opus))) return false;
       if(form.year&&form.year!=='Search Year'&&!numberPrefix(r.year_of_composition,form.year))return false;
       if(publisher&&publisher!=='Search Publisher'&&!publisher.split(/\s+/).every(w=>like(unaccent(r.publisher,accentMap),unaccent(w,accentMap))))return false;
       if(form.duration&&form.duration!=='Search Duration'&&!String(form.duration).split(/\s+/).every(w=>like(r.duration,w)))return false;
       if(words.length) {
         const fields=['title','description','title_de','description_de','hidden_terms'].map(k=>r[k]??'').join('');
-        const text=unaccent(decode(fields),accentMap).toLowerCase();
+        const decoded=decode(fields);
+        const text=unaccent(quick ? decoded.normalize('NFKC') : decoded,accentMap).toLowerCase();
         if(!words.every(w=>text.includes(w)))return false;
       }
       return true;
