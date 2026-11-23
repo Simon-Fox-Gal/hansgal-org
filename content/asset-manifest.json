@@ -5965,5 +5965,11 @@
     "path": "/storage/documents/lebenskreise/Hans_Gal_Lebenskreise_Entdeckungsbuch_DE.pdf",
     "bytes": 210801,
     "sha256": "76fb854849095654d074bad693f777ce24c19e97780167b6e6cfed3fb67977d8"
+  },
+  {
+    "source_path": "storage/userfiles/hans-gal-society-logo.webp",
+    "path": "/storage/userfiles/hans-gal-society-logo.webp",
+    "bytes": 65506,
+    "sha256": "2515e9e85f7d3b9e7b5ed3f309d5afffb2f65f1947d23a34c4ece7cf14856de6"
   }
 ]
