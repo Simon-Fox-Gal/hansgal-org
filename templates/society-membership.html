@@ -1,0 +1,33 @@
+<section class="hgs-membership" id="hgs-join">
+  <label for="hgs-join-choice"><input type="checkbox" id="hgs-join-choice" aria-controls="hgs-membership-details"> {{ membership.request | e }}</label>
+  <div class="hgs-membership-details" id="hgs-membership-details">
+    <p>{{ membership.instructions | e }}</p>
+    <form id="hgs-membership-form" data-contact-form data-membership-form
+      data-sending="{{ contact_copy[10] | e }}" data-success="{{ contact_copy[11] | e }}" data-error="{{ contact_copy[12] | e }}" data-unavailable="{{ contact_copy[9] | e }}">
+      <input type="hidden" name="recipient" value="general">
+      <div class="hgs-form-grid">
+        <div>
+          <label for="hgs-membership-name">{{ contact_copy[3] | e }}</label>
+          <input id="hgs-membership-name" name="name" autocomplete="name" maxlength="150" required>
+        </div>
+        <div>
+          <label for="hgs-membership-email">{{ contact_copy[4] | e }}</label>
+          <input id="hgs-membership-email" name="email" type="email" autocomplete="email" maxlength="254" required>
+        </div>
+        <div class="hgs-field-full">
+          <label for="hgs-membership-type">{{ membership.type | e }}</label>
+          <select id="hgs-membership-type" name="membership">
+            <option value="Annual membership">{{ membership.annual | e }} · £20 / €25 / $30</option>
+            <option value="Life membership">{{ membership.life | e }} · £200 / €250 / $300</option>
+          </select>
+        </div>
+      </div>
+      <div class="contact-trap" aria-hidden="true"><label>{{ contact_copy[13] | e }}<input name="website" tabindex="-1" autocomplete="off"></label></div>
+      <div class="hgs-button-row"><button class="hgs-button" type="submit" disabled>{{ membership.send | e }}</button></div>
+      <p role="status" aria-live="polite" data-contact-status>{{ contact_copy[9] | e }}</p>
+    </form>
+    <p class="hgs-note">{{ membership.email_directly | e }} <a href="mailto:tanya@hansgalsociety.org">tanya@hansgalsociety.org</a></p>
+  </div>
+</section>
+<link rel="stylesheet" href="/app/contacts.css">
+<script type="module" src="/app/contacts.js?v=2"></script>

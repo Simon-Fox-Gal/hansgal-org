@@ -31,10 +31,10 @@ for lang in json.loads((ROOT/'locales/languages.json').read_text(encoding='utf8'
    assert 'id="main-content"' in markup and 'id="site-navigation"' in markup
    assert 'name="viewport"' in markup
    for field in fields:
-    # The shared contact panel is inserted at its explicit editorial marker.
+    # Shared forms are inserted at their explicit editorial markers.
     # Both surrounding authored passages must remain complete and in order.
     cursor=0
-    for part in (row.get(field) or '').split('<!-- SHARED_CONTACT_PANEL -->'):
+    for part in re.split(r'<!-- (?:SHARED_CONTACT_PANEL|SOCIETY_MEMBERSHIP_FORM) -->', row.get(field) or ''):
      source=plain(part)
      if source:
       position=rendered.find(source,cursor)

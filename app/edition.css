@@ -53,3 +53,18 @@ html:is([lang="fr"],[lang="ja"]) .hgs-field-full textarea{display:block;width:10
  html[lang="fr"] .hero-copy:has(.home-news){display:flex;flex-direction:column}
  html[lang="fr"] .hero-copy .home-news{order:-1;margin:0 0 1.2rem}
 }
+
+/* Shared heading scale for the site’s main sections. */
+h1.section-title {
+  font:400 clamp(36px,4.2vw,58px)/1.15 var(--serif);
+  letter-spacing:-.025em;
+  text-wrap:pretty;
+  margin:0 0 1rem;
+}
+p.eyebrow.section-eyebrow {
+  font-size:1rem;
+  margin:0 0 .75rem;
+}
+@media(max-width:600px) {
+  p.eyebrow.section-eyebrow {font-size:.9rem}
+}

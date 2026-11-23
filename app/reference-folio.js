@@ -114,7 +114,7 @@
    questions.forEach((heading,i)=>{const holder=node('div','ref-answer');heading.before(holder);holder.append(rangeContents(heading,questions[i+1]||tail,source));disclosure(holder,heading);});
    const items=[...source.querySelectorAll('.ref-disclosure')];searchEntries(source,items);
   }else if(page==='hansgalsociety-32'||page==='donate-79'){
-   const sections=[...source.querySelectorAll('.hgs-society-page > section')];
+   const sections=[...source.querySelectorAll('.hgs-society-page > section, .hgs-society-page > .hgs-overview-footer')];
    if(sections.length){
     const overview=sections.filter(e=>!e.id&&!e.getAttribute('aria-labelledby')?.includes('privacy')||e.classList.contains('hgs-top-card')||e.id==='hgs-funds');
     const panels=[group(overview,'society-overview')];const names=[page==='donate-79'?ui.funds:ui.overview];

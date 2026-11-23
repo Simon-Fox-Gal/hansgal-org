@@ -12,9 +12,16 @@ COPY = {
  'ja': ['協会へのお問い合わせ', 'お問い合わせ先を選択', '連絡先：', 'お名前', 'メールアドレス', 'お問い合わせ内容', '送信', 'お問い合わせ内容と連絡先は、ご返信のために使用します。', 'フォームをご利用いただけない場合は、次のアドレスにメールをお送りください：', '現在、お問い合わせフォームはご利用いただけません。下記の協会のメールアドレスをご利用ください。', '送信中…', 'メッセージの送信を受け付けました。ありがとうございます。', '送信を確認できませんでした。入力内容はこの画面に残っています。再度お試しいただくか、下記のメールアドレスをご利用ください。', 'この欄は空欄のままにしてください'],
 }
 
+FORM_COPY = {
+    'en': {'topic': 'Enquiry topic', 'ask': 'Make an enquiry', 'routing': 'This form sends enquiries to Tanya Fox, the Society’s membership and general enquiries contact.'},
+    'de': {'topic': 'Thema Ihrer Anfrage', 'ask': 'Anfrage stellen', 'routing': 'Über dieses Formular erreichen Sie Tanya Fox, die Ansprechpartnerin der Gesellschaft für Mitgliedschaft und allgemeine Anfragen.'},
+    'fr': {'topic': 'Objet de votre demande', 'ask': 'Poser une question', 'routing': 'Ce formulaire transmet votre demande à Tanya Fox, chargée des adhésions et des renseignements généraux.'},
+    'ja': {'topic': 'お問い合わせの内容', 'ask': '問い合わせる', 'routing': 'このフォームは、協会の入会・一般のお問い合わせ担当のTanya Foxに届きます。'},
+}
+
 def context(language):
     index = ['en', 'de', 'fr', 'ja'].index(language)
-    return {'contact_copy': COPY[language], 'contact_people': [
+    return {'contact_copy': COPY[language], 'contact_form_copy': FORM_COPY[language], 'contact_people': [
         {'id': id, 'name': name, 'first': first, 'role': roles[index]}
         for id, name, first, roles in PEOPLE
     ]}

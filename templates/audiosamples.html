@@ -1,6 +1,6 @@
 <section class="listening-station" id="listening-station">
-<p class="eyebrow">{{ page_text('18') }}</p>
-<h1>{{ page_text('19') }}</h1>
+<p class="eyebrow section-eyebrow">Hans Gál · {{ page_text('18') }}</p>
+<h1 class="section-title">{{ page_text('19') }}</h1>
 <p class="listening-intro">{{ page_text('20') }}</p>
 {% include 'listening-discovery.html' %}
 <h2>{{ page_text('27') }}</h2><div class="listening-toolbar" aria-label="{{ page_text('28') }}">{% for value,en,de in [('','Everything','Alles'),('4','Orchestra','Orchester'),('1','Chamber music','Kammermusik'),('3','Keyboard','Tasteninstrumente'),('5','Voices','Stimmen')] %}<button type="button" data-listening-category="{{ value }}" aria-pressed="{{ 'false' if value else 'true' }}">{{ tr(en,de) }}</button>{% endfor %}</div>

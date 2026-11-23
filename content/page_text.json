@@ -1064,10 +1064,10 @@
     "page": "Works catalogue",
     "path": "/works/",
     "title": "The music of Hans Gál",
-    "value": "The music of Hans Gál",
-    "value_de": "Die Musik von Hans Gál",
-    "value_fr": "La musique de Hans Gál",
-    "value_ja": "ハンス・ガールの音楽"
+    "value": "The music",
+    "value_de": "Die Musik",
+    "value_fr": "La musique",
+    "value_ja": "その音楽"
   },
   {
     "id": "108",

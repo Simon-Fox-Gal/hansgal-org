@@ -3,12 +3,13 @@
  {% for person in contact_people %}
  <article class="contact-person">
   <h3>{{ person.role | e }}</h3><p>{{ person.name | e }}</p>
-  <a class="hgs-button hgs-secondary" href="#contact-message" data-contact-person="{{ person.id }}">{{ contact_copy[2] | e }}{{ person.first | e }}</a>
+  <a class="hgs-button hgs-secondary" href="#contact-message" data-contact-person="{{ person.id }}">{{ contact_form_copy.ask | e }}</a>
  </article>
  {% endfor %}
  </div>
  <form id="contact-message" class="contact-message" data-contact-form data-sending="{{ contact_copy[10] | e }}" data-success="{{ contact_copy[11] | e }}" data-error="{{ contact_copy[12] | e }}" data-unavailable="{{ contact_copy[9] | e }}">
-  <label for="contact-recipient">{{ contact_copy[1] | e }}</label>
+  <p>{{ contact_form_copy.routing | e }}</p>
+  <label for="contact-recipient">{{ contact_form_copy.topic | e }}</label>
   <select id="contact-recipient" name="recipient" required>{% for person in contact_people %}<option value="{{ person.id }}">{{ person.name | e }} — {{ person.role | e }}</option>{% endfor %}</select>
   <label for="contact-name">{{ contact_copy[3] | e }}</label><input id="contact-name" name="name" autocomplete="name" maxlength="150" required>
   <label for="contact-email">{{ contact_copy[4] | e }}</label><input id="contact-email" name="email" type="email" autocomplete="email" maxlength="254" required>
@@ -22,4 +23,4 @@
  <address>The Hans Gál Society<br>67 Osbaldwick Village, York YO10 3NP, UK<br><a href="tel:+441904411696">+44 (0)1904 411696</a></address>
 </section>
 <link rel="stylesheet" href="/app/contacts.css">
-<script defer src="/app/contacts.js"></script>
+<script type="module" src="/app/contacts.js?v=2"></script>

@@ -1,7 +1,7 @@
 <div class="biography-folio">
  <nav class="bio-breadcrumb" aria-label="{{ bio_ui.about }}"><a href="/hansgal/">{{ bio_ui.about }}</a><span aria-hidden="true">/</span><span>{% if chapter %}{{ bio_ui.chapter }} {{ chapter.number }} {{ bio_ui.of }} {{ bio_chapters|length }}{% else %}{{ title }}{% endif %}</span></nav>
  {% include 'biography-nav.html' %}
- <header class="bio-heading"><p class="eyebrow">Hans Gál · 1890–1987</p><h1>{{ chapter.heading if chapter else title }}</h1>{% if lead|striptags|trim %}<div class="bio-deck">{{ lead }}</div>{% endif %}</header>
+ <header class="bio-heading"><p class="eyebrow section-eyebrow">Hans Gál · 1890–1987</p><h1 class="section-title">{{ chapter.heading if chapter else title }}</h1>{% if lead|striptags|trim %}<div class="bio-deck">{{ lead }}</div>{% endif %}</header>
  {% if discover_player %}{% include 'listening-discovery.html' %}{% endif %}
  <div class="bio-reading{% if not bio_images %} bio-reading-solo{% endif %}">
   <article id="chapter-text" class="article bio-prose">{{ body }}</article>
