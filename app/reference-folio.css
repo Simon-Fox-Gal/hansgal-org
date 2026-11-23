@@ -1,7 +1,7 @@
 /* Folio for the Society, reference collections and news. Scoped away from works,
    recordings and biography; large type and real controls take priority. */
 .folio-reference #main-content{padding-top:42px}
-.reference-heading{max-width:1050px;margin-bottom:28px}.reference-heading .eyebrow{margin-bottom:.8rem;font-size:1rem}.reference-heading h1{font-size:clamp(2.6rem,4.8vw,4.3rem);margin:0 0 1rem}.reference-deck,.reference-lead{max-width:850px;font-size:1.25rem;line-height:1.6;margin:0}.reference-lead:empty{display:none}
+.reference-heading{max-width:1050px;margin-bottom:28px}.reference-deck,.reference-lead{max-width:850px;font-size:1.25rem;line-height:1.6;margin:0}.reference-lead:empty{display:none}
 .reference-sections{display:flex;flex-wrap:wrap;gap:0 1.8rem;border-block:1px solid var(--line);margin:0 0 26px}.reference-sections a{display:flex;align-items:center;min-height:62px;padding:.65rem .15rem;text-decoration:none;color:var(--muted);font-size:1.13rem;line-height:1.35}.reference-sections a[aria-current]{color:var(--green);font-weight:700;box-shadow:inset 0 -3px var(--green)}
 .reference-content,.reference-source{min-width:0;width:100%}.reference-source{font-size:1.2rem;line-height:1.7}.reference-source a{overflow-wrap:anywhere}.reference-topic{font-size:2rem;margin:1.2rem 0 1.4rem}.reference-images{float:right;max-width:30%;margin:0 0 1.5rem 2rem}.reference-images img{max-height:230px;width:auto}.reference-source :is(h2,h3){text-wrap:pretty}.reference-source h2{font-size:2rem}.reference-source h3{font-size:1.5rem}.reference-source>p,.reference-source>ul,.reference-source>div:not(.ref-find):not(.hgs-recordings-page):not(.ref-panel){max-width:100%}
 .ref-tabs{display:flex;flex-wrap:wrap;gap:0;background:var(--paper);border-block:1px solid var(--line);position:sticky;top:0;z-index:12;margin:0 0 26px;font:600 1.08rem/1.35 var(--sans)}.ref-tabs a{min-height:58px;padding:.8rem 1.2rem;text-decoration:none;display:flex;align-items:center;justify-content:center;color:var(--muted)!important;flex:0 1 auto;box-shadow:inset 0 -2px transparent}.ref-tabs a[aria-selected=true]{color:var(--green)!important;background:#215d420b;box-shadow:inset 0 -3px var(--green)}.ref-tabs a:hover{background:#ede3e866}.ref-panel{scroll-margin-top:140px;min-width:0}.ref-panel:focus{outline-offset:6px}.reference-source [id],.reference-source summary{scroll-margin-top:145px}
@@ -14,7 +14,7 @@
 .folio-reference .photos-page>.photo-group{margin-top:1.5rem}.folio-reference .photos-page>.photo-group>h2{font-size:2rem}.folio-reference .photo-grid{gap:30px}.folio-reference .photo-grid a{padding-bottom:1rem;border-bottom:1px solid var(--line)}.folio-reference .photo-grid img{background:#eae7df}.folio-reference .listening-station>h1{margin-bottom:1rem}.folio-reference .listening-hero{margin:0;border-top:2px solid var(--green)}.folio-reference .listening-library{gap:24px}.folio-reference .page-search{padding:1.4rem;background:#e9ece3;border:1px solid var(--line);margin-bottom:2rem}.folio-reference .search-results section{border:0;margin-top:1.5rem}.folio-reference .search-results article{border-top:1px solid var(--line);padding:1.1rem 0;margin:0}.folio-reference .search-results h3{margin:.4rem 0}.folio-reference.section-comments textarea{width:100%;min-height:220px}
 @media(min-width:1100px){.reference-source .hgs-recordings-page>.ref-disclosure{max-width:1050px}.reference-source #hgs-giftaid{max-width:1000px}.reference-source #society-privacy{max-width:900px}}
 @media(max-width:850px){.reference-source #society-overview{grid-template-columns:1fr}.reference-source .recent-recordings{grid-template-columns:1fr}.reference-source .contact-panel{grid-template-columns:1fr}.reference-source .contact-message{grid-column:1;grid-row:auto}.reference-source .contact-people{grid-template-columns:repeat(2,minmax(0,1fr))}.ref-event{padding:24px}.reference-source :is(.hgs-donation-grid,.hgs-form-grid){grid-template-columns:1fr}.ref-tabs a{flex-grow:1;font-size:1rem;padding:.75rem .85rem}.reference-source .recordings-list ul{columns:1}}
-@media(max-width:600px){.folio-reference #main-content{padding-top:28px}.reference-heading{margin-bottom:22px}.reference-heading h1{font-size:2.6rem}.reference-deck,.reference-lead,.reference-source{font-size:1.15rem}.reference-heading .eyebrow{font-size:.9rem}.reference-sections{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 16px;margin-bottom:22px}.reference-sections a{font-size:1.04rem;min-height:54px;border-bottom:1px solid var(--line)}.ref-tabs{position:relative;top:auto;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));margin-bottom:22px}.ref-tabs a{min-height:52px;justify-content:flex-start;font-size:1.02rem}.ref-panel,.reference-source [id],.reference-source summary{scroll-margin-top:20px}.ref-find{padding:1rem}.ref-find-row{flex-wrap:wrap;gap:10px}.ref-find-row input{flex-basis:calc(100% - 100px);width:calc(100% - 100px)}.ref-find-row:has(.ref-year) input{flex-basis:100%;width:100%}.ref-find-row .ref-year{flex:1}.ref-find-row .ref-clear{padding:.6rem .8rem}.ref-entry{padding:1.2rem .1rem 1.2rem 2.6rem}.ref-entry:before{left:0;font-size:.9rem;top:1.4rem}.ref-disclosure>summary{font-size:1.3rem;padding:1rem .6rem}.ref-disclosure-body{padding:1rem!important;font-size:1.1rem}.ref-event{padding:20px}.ref-event :is(h2,h3){font-size:1.75rem}.reference-source .hgs-see-also-list{columns:1}.reference-source .hgs-society-page :is(.hgs-donation-grid,.hgs-form-grid){grid-template-columns:1fr}.reference-source .hgs-mini-card,.reference-source .hgs-fund-card{padding:1rem}.reference-source .contact-people{grid-template-columns:1fr}.reference-source .contact-message{padding:1rem}.reference-source .recent-recordings article{padding:1rem}.reference-source .recent-recordings img{width:90px}.reference-source .recent-recordings h3{font-size:1.45rem}.reference-images{float:none;max-width:none;margin:0 0 1rem}.reference-images img{max-height:170px}.folio-reference .photo-grid{grid-template-columns:1fr 1fr;gap:22px 16px}.folio-reference .photo-grid img{height:170px}}
+@media(max-width:600px){.folio-reference #main-content{padding-top:28px}.reference-heading{margin-bottom:22px}.reference-deck,.reference-lead,.reference-source{font-size:1.15rem}.reference-sections{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 16px;margin-bottom:22px}.reference-sections a{font-size:1.04rem;min-height:54px;border-bottom:1px solid var(--line)}.ref-tabs{position:relative;top:auto;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));margin-bottom:22px}.ref-tabs a{min-height:52px;justify-content:flex-start;font-size:1.02rem}.ref-panel,.reference-source [id],.reference-source summary{scroll-margin-top:20px}.ref-find{padding:1rem}.ref-find-row{flex-wrap:wrap;gap:10px}.ref-find-row input{flex-basis:calc(100% - 100px);width:calc(100% - 100px)}.ref-find-row:has(.ref-year) input{flex-basis:100%;width:100%}.ref-find-row .ref-year{flex:1}.ref-find-row .ref-clear{padding:.6rem .8rem}.ref-entry{padding:1.2rem .1rem 1.2rem 2.6rem}.ref-entry:before{left:0;font-size:.9rem;top:1.4rem}.ref-disclosure>summary{font-size:1.3rem;padding:1rem .6rem}.ref-disclosure-body{padding:1rem!important;font-size:1.1rem}.ref-event{padding:20px}.ref-event :is(h2,h3){font-size:1.75rem}.reference-source .hgs-see-also-list{columns:1}.reference-source .hgs-society-page :is(.hgs-donation-grid,.hgs-form-grid){grid-template-columns:1fr}.reference-source .hgs-mini-card,.reference-source .hgs-fund-card{padding:1rem}.reference-source .contact-people{grid-template-columns:1fr}.reference-source .contact-message{padding:1rem}.reference-source .recent-recordings article{padding:1rem}.reference-source .recent-recordings img{width:90px}.reference-source .recent-recordings h3{font-size:1.45rem}.reference-images{float:none;max-width:none;margin:0 0 1rem}.reference-images img{max-height:170px}.folio-reference .photo-grid{grid-template-columns:1fr 1fr;gap:22px 16px}.folio-reference .photo-grid img{height:170px}}
 @media(prefers-reduced-motion:reduce){.folio-reference{scroll-behavior:auto}}
 @media print{.ref-tabs,.reference-sections,.ref-find,.ref-empty{display:none!important}.ref-panel[hidden],.ref-entry[hidden],.ref-disclosure[hidden]{display:block!important}.ref-disclosure::details-content{display:block}.ref-disclosure>*{display:block!important}.ref-disclosure>summary:after{display:none}.ref-event,.ref-current,.reference-source #society-overview{display:block}.ref-event{break-inside:avoid;margin-bottom:1rem!important}.reference-source{font-size:11pt}.folio-reference #main-content{padding:0}.ref-entry,.ref-disclosure{break-inside:avoid}}
 
@@ -27,3 +27,41 @@
 .ref-summary-text{display:block;min-width:0}.ref-book-plates{display:flex;gap:24px;flex-wrap:wrap;padding:1.5rem 0}.ref-book-plates img{max-height:250px;width:auto}.reference-source .book-purchases ul{padding-left:1.3rem}.reference-source .book-purchases li{margin:.8rem 0}.reference-source .hgs-form-grid>div>label{display:block;margin-bottom:.4rem}.reference-source .hgs-form-grid :is(input:not([type=checkbox]):not([type=radio]),select){width:100%}.ref-publication-archive summary font{font:inherit!important}.reference-source .contact-person{border-radius:0}
 
 .news-event-panel{margin:18px 0;padding:16px;background:#f4f0f2;border:1px solid #d6c3cc}
+
+.hgs-overview-footer {
+  grid-column:1/-1;
+  padding-top:1.25rem;
+  border-top:1px solid var(--line);
+}
+.reference-source .hgs-overview-footer .hgs-footer-note {
+  border:0;
+  padding:0;
+  margin:0 0 .85rem;
+}
+.reference-source .hgs-overview-footer .hgs-logo {
+  display:block;
+  width:min(290px,100%);
+  margin:0;
+  mix-blend-mode:multiply;
+}
+.reference-source .hgs-membership {
+  max-width:48rem;
+  padding:1rem 1.25rem;
+  border:1px solid var(--line);
+  background:var(--paper);
+  margin:1.35rem 0;
+}
+.reference-source .hgs-membership > label {
+  display:flex;
+  align-items:center;
+  gap:.65rem;
+  min-height:44px;
+  font-weight:700;
+  color:var(--green);
+}
+.hgs-membership input[type=checkbox] {flex:none;margin:0}
+.hgs-membership:not(:has(input[type=checkbox]:checked)) .hgs-membership-details {display:none}
+.hgs-membership-details {padding-top:.6rem}
+.reference-source .hgs-membership-details .hgs-form-grid {gap:.4rem 1rem}
+.hgs-membership-details input:not([type=checkbox]),.hgs-membership-details select {width:100%}
+.hgs-membership-details .hgs-note {font-size:.95rem}

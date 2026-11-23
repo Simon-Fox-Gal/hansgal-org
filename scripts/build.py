@@ -305,6 +305,10 @@ def make_site(base_path='', review=True, language='en', active_languages=None, i
         c={k:editorial_fragment(stripcslashes(menu[k])) for k in ('title','lead','body')}
         if '<!-- SHARED_CONTACT_PANEL -->' in c['body']:
             c['body']=c['body'].replace('<!-- SHARED_CONTACT_PANEL -->',env.get_template('contact-panel.html').render(**contact_context(language)))
+        membership_marker='<!-- SOCIETY_MEMBERSHIP_FORM -->'
+        if membership_marker in c['body']:
+            membership_form=env.get_template('society-membership.html').render(membership=ref_ui['membership'], **contact_context(language))
+            c['body']=c['body'].replace(membership_marker,membership_form)
         c['submenus']=[r for r in tables['menu'] if r['mainmenu']==section]
         c['thumbnails']=[r for r in tables['thumbnail'] if r['menu_id']==id]
         if section=='hansgal':
