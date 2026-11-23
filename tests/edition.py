@@ -35,7 +35,7 @@ for lang in json.loads((ROOT/'locales/languages.json').read_text(encoding='utf8'
     # Shared forms are inserted at their explicit editorial markers.
     # Both surrounding authored passages must remain complete and in order.
     cursor=0
-    for part in re.split(r'<!-- (?:SHARED_CONTACT_PANEL|SOCIETY_MEMBERSHIP_FORM) -->', row.get(field) or ''):
+    for part in re.split(r'<!-- (?:SHARED_CONTACT_PANEL|SOCIETY_MEMBERSHIP_FORM|SOCIETY_GIFT_AID_(?:INLINE|PREVIOUS)) -->', row.get(field) or ''):
      source=plain(part)
      if source:
       position=rendered.find(source,cursor)
