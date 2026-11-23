@@ -202,6 +202,8 @@
   text-underline-offset:.15em;
 }
 
+#de-profundis-radio-replay .button {color:#fff!important}
+
 .news-replay-timings {
   border-block-start:1px solid var(--line);
   margin:1.25rem 0;
