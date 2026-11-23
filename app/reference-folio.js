@@ -113,12 +113,12 @@
    const questions=[...source.children].filter(e=>e.tagName==='STRONG'),tail=source.querySelector('h2');
    questions.forEach((heading,i)=>{const holder=node('div','ref-answer');heading.before(holder);holder.append(rangeContents(heading,questions[i+1]||tail,source));disclosure(holder,heading);});
    const items=[...source.querySelectorAll('.ref-disclosure')];searchEntries(source,items);
-  }else if(page==='hansgalsociety-32'||page==='donate-79'){
+  }else if(page==='hansgalsociety-32'){
    const sections=[...source.querySelectorAll('.hgs-society-page > section, .hgs-society-page > .hgs-overview-footer')];
    if(sections.length){
     const overview=sections.filter(e=>!e.id&&!e.getAttribute('aria-labelledby')?.includes('privacy')||e.classList.contains('hgs-top-card')||e.id==='hgs-funds');
-    const panels=[group(overview,'society-overview')];const names=[page==='donate-79'?ui.funds:ui.overview];
-    for(const [id,label] of [['hgs-donate',page==='donate-79'?ui.donate:ui.support],['hgs-giftaid',ui.gift],['hgs-contact',ui.contact]]){const s=sections.find(e=>e.id===id);if(s){panels.push(s);names.push(label);}}
+    const panels=[group(overview,'society-overview')];const names=[ui.overview];
+    for(const [id,label] of [['hgs-donate',ui.support],['hgs-giftaid',ui.gift],['hgs-contact',ui.contact]]){const s=sections.find(e=>e.id===id);if(s){panels.push(s);names.push(label);}}
     const privacy=sections.find(e=>e.getAttribute('aria-labelledby')==='hgs-privacy-title');if(privacy){privacy.id='society-privacy';panels.push(privacy);names.push(ui.privacy);}
     tabs(panels,names);
    }

@@ -170,6 +170,9 @@ def make_site(base_path='', review=True, language='en', active_languages=None, i
     route_rows=load('legacy-routes')
     generated={}
     aliases={r['path']:r['redirect'] for r in route_rows if 'redirect' in r}
+    donate_bookmarks={'/donate':'#hgs-donate','/donate/79':'#hgs-donate','/donate/81':'#hgs-performance-fund-title'}
+    aliases.update({route:'/hansgalsociety/32/' for route in donate_bookmarks})
+
     aliases.update({'/biography/15-nazitakeover.html':'/hansgal/45','/works/op53.html':'/works/show/61'})
 
     def related(table,left,id,right,objects):
@@ -302,6 +305,7 @@ def make_site(base_path='', review=True, language='en', active_languages=None, i
     page('/hansgal','hansgal_index',**bio_shared,biography_intro=by_id['heading']['1']['body'],biography_extra=[r for r in tables['menu'] if r['mainmenu']=='hansgal' and r['hidden']!='yes' and r['id'] not in biography.CHAPTER_IDS])
     for menu in tables['menu']:
         section=menu['mainmenu']; id=menu['id']; route=f'/{section}/{id}'
+        if route in donate_bookmarks:continue
         c={k:editorial_fragment(stripcslashes(menu[k])) for k in ('title','lead','body')}
         if '<!-- SHARED_CONTACT_PANEL -->' in c['body']:
             c['body']=c['body'].replace('<!-- SHARED_CONTACT_PANEL -->',env.get_template('contact-panel.html').render(**contact_context(language)))
@@ -412,7 +416,9 @@ def make_site(base_path='', review=True, language='en', active_languages=None, i
         aliases['/recordings/changeview/'+mode]='/recordings?view='+mode
     for route,target in aliases.items():
         destination=url(target)
-        markup='<!doctype html><html><head><meta charset="utf-8"><meta name="robots" content="'+('noindex,nofollow' if review else 'index,follow')+'"><meta http-equiv="refresh" content="0;url='+html.escape(destination,quote=True)+'"><link rel="canonical" href="https://hansgal.org'+html.escape(target,quote=True)+'"></head><body><a href="'+html.escape(destination,quote=True)+'">Continue</a><script>location.replace('+json.dumps(destination)+'+location.hash)</script></body></html>'
+        default_hash=donate_bookmarks.get(route,'')
+        fallback=html.escape(destination+default_hash,quote=True)
+        markup='<!doctype html><html><head><meta charset="utf-8"><meta name="robots" content="'+('noindex,nofollow' if review else 'index,follow')+'"><meta http-equiv="refresh" content="0;url='+fallback+'"><link rel="canonical" href="https://hansgal.org'+html.escape(target,quote=True)+'"></head><body><a href="'+fallback+'">Continue</a><script>location.replace('+json.dumps(destination)+'+(location.hash||'+json.dumps(default_hash)+'))</script></body></html>'
         # Already rewritten above; do not apply the base path twice.
         local_route=lang_prefix+route
         targetfile=out/local_route.lstrip('/') if route.endswith('.html') else out/local_route.lstrip('/')/'index.html';targetfile.parent.mkdir(parents=True,exist_ok=True);targetfile.write_text(markup,encoding='utf8')
