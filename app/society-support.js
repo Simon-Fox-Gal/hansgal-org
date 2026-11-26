@@ -108,7 +108,6 @@ function paymentDetails(data) {
   const value = id => document.getElementById(id).value.trim();
   const amount = value('hgs_donation_amount');
   return [
-    'Donation fund: ' + value('hgs_donation_fund'),
     amount && 'Intended amount: ' + value('hgs_currency') + ' ' + amount,
     'Payment method: ' + value('hgs_payment_method')
   ];
