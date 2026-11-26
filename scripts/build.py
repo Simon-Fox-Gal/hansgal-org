@@ -312,7 +312,7 @@ def make_site(base_path='', review=True, language='en', active_languages=None, i
             c['body']=c['body'].replace('<!-- SHARED_CONTACT_PANEL -->',env.get_template('contact-panel.html').render(**contact_context(language)))
         membership_marker='<!-- SOCIETY_MEMBERSHIP_FORM -->'
         if membership_marker in c['body']:
-            membership_form=env.get_template('society-membership.html').render(membership=ref_ui['membership'], **contact_context(language))
+            membership_form=env.get_template('society-membership.html').render(guide=ref_ui['supportGuide'], membership=ref_ui['membership'], **contact_context(language))
             c['body']=c['body'].replace(membership_marker,membership_form)
             gift_template=env.get_template('society-gift-aid.html')
             for part in ('INLINE','PREVIOUS'):
