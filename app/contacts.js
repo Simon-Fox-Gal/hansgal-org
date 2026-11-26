@@ -59,7 +59,7 @@ for (const form of forms) {
     try {
       await sendContact(body, key);
       status.textContent = form.dataset.success;
-      form.reset();
+      if (!membership) form.reset();
       key = '';
     } catch {
       status.textContent = form.dataset.error;

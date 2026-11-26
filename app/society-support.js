@@ -1,4 +1,4 @@
-import {sendContact} from './contacts.js?v=3';
+import {sendContact} from './contacts.js?v=4';
 
 const support = document.getElementById('hgs-donate');
 const choice = document.getElementById('hgs-join-choice');
@@ -42,9 +42,84 @@ function disclose(next, focus = false) {
   if (focus) gift.querySelector('[data-gift-heading]').focus();
 }
 
+const guide = JSON.parse(document.getElementById('hgs-support-guide').textContent);
+const title = document.getElementById('hgs-donate-title');
+const introduction = title.nextElementSibling;
+const benefits = introduction.nextElementSibling;
+const prices = benefits.nextElementSibling;
+const paymentTitle = document.getElementById('hgs-donation-details-title');
+const paymentIntro = paymentTitle.nextElementSibling;
+const amount = document.getElementById('hgs_donation_amount');
+const currency = document.getElementById('hgs_currency');
+const method = document.getElementById('hgs_payment_method');
+const tier = membership.elements.membership;
+const itemName = paypal.elements.item_name;
+const donationItem = itemName.value;
+const amountLabel = amount.parentElement.firstChild;
+const quickAmounts = support.querySelector('.hgs-quick-amounts');
+const ordinary = {heading: paymentTitle.textContent, intro: paymentIntro.textContent, label: amountLabel.textContent};
+const extraRow = document.createElement('div');
+extraRow.className = 'hgs-field-full';
+const extraLabel = document.createElement('label');
+extraLabel.textContent = guide.extra;
+const extra = document.createElement('input');
+Object.assign(extra, {type: 'number', min: '0', step: '0.01', placeholder: '0', inputMode: 'decimal'});
+extraLabel.append(extra);
+const feeLine = document.createElement('p');
+extraRow.append(feeLine, extraLabel);
+amount.closest('.hgs-amount-row').before(extraRow);
+let joining;
+let donation = '';
+
+function updateTotal() {
+  if (!joining) return;
+  const other = currency.querySelector('option[value="Other"]');
+  other.disabled = other.hidden = true;
+  if (currency.value === 'Other' || !currency.value) currency.value = 'GBP';
+  const fee = Number(tier.selectedOptions[0].dataset[currency.value.toLowerCase()]);
+  itemName.value = 'Hans Gál Society — ' + tier.value;
+  const format = new Intl.NumberFormat(document.documentElement.lang, {style: 'currency', currency: currency.value});
+  feeLine.textContent = guide.fee + ' · ' + format.format(fee);
+  amount.value = extra.validity.valid ? ((fee * 100 + Math.round((extra.valueAsNumber || 0) * 100)) / 100).toFixed(2) : '0';
+}
+
+function showIntent() {
+  const next = choice.checked;
+  if (next !== joining) {
+    if (next) {
+      donation = amount.value;
+      if (donation) extra.value = donation;
+    } else if (joining) {
+      amount.value = donation;
+      itemName.value = donationItem;
+      window.hgsUpdatePaymentCurrencyOptions();
+    }
+    joining = next;
+  }
+  title.textContent = joining ? guide.join : guide.donate;
+  introduction.textContent = joining ? guide.welcome : guide.thanks;
+  benefits.textContent = guide.benefits;
+  benefits.hidden = !joining;
+  prices.hidden = !joining;
+  membership.previousElementSibling.hidden = joining;
+  paymentTitle.textContent = joining ? guide.payment : ordinary.heading;
+  paymentIntro.textContent = joining ? guide.explain : ordinary.intro;
+  extraRow.hidden = !joining;
+  quickAmounts.style.display = joining ? 'none' : '';
+  amount.readOnly = joining;
+  amountLabel.textContent = joining ? guide.total + ' ' : ordinary.label;
+  updateTotal();
+}
+choice.addEventListener('change', () => {
+  history.replaceState(null, '', choice.checked ? '#hgs-join' : '#hgs-donate');
+  showIntent();
+});
+for (const control of [tier, currency, method]) control.addEventListener('change', updateTotal);
+extra.addEventListener('input', updateTotal);
 function openFromAnchor() {
   if (location.hash === '#hgs-join') choice.checked = true;
   if (location.hash === '#hgs-donate') choice.checked = false;
+  showIntent();
   if (location.hash === '#hgs-giftaid') disclose('past');
   else if (mode === 'past') disclose('none');
 }
@@ -53,6 +128,7 @@ document.querySelectorAll('.hgs-top-card a[href="#hgs-join"], .hgs-top-card a[hr
   link.addEventListener('click', event => {
     if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
     choice.checked = link.hash === '#hgs-join';
+    showIntent();
   });
 });
 window.addEventListener('hashchange', openFromAnchor);
@@ -64,7 +140,7 @@ membership.addEventListener('submit', () => {
 });
 
 optIn.addEventListener('change', () => {
-  if (location.hash === '#hgs-giftaid') history.replaceState(null, '', '#hgs-donate');
+  if (location.hash === '#hgs-giftaid') history.replaceState(null, '', joining ? '#hgs-join' : '#hgs-donate');
   disclose(optIn.checked ? 'current' : 'none');
 });
 
@@ -73,7 +149,7 @@ previousLink.addEventListener('click', event => {
   if (busy) { event.preventDefault(); return; }
   if (mode === 'past') {
     event.preventDefault();
-    history.replaceState(null, '', '#hgs-donate');
+    history.replaceState(null, '', joining ? '#hgs-join' : '#hgs-donate');
     disclose('none');
   } else {
     disclose('past', true);

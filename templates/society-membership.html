@@ -1,3 +1,4 @@
+<script type="application/json" id="hgs-support-guide">{{ guide | tojson }}</script>
 <section class="hgs-membership" id="hgs-join">
   <label for="hgs-join-choice"><input type="checkbox" id="hgs-join-choice" aria-controls="hgs-membership-details"> {{ membership.request | e }}</label>
   <div class="hgs-membership-details" id="hgs-membership-details">
@@ -17,8 +18,8 @@
         <div class="hgs-field-full">
           <label for="hgs-membership-type">{{ membership.type | e }}</label>
           <select id="hgs-membership-type" name="membership">
-            <option value="Annual membership">{{ membership.annual | e }} · £20 / €25 / $30</option>
-            <option value="Life membership">{{ membership.life | e }} · £200 / €250 / $300</option>
+            <option value="Annual membership" data-gbp="20" data-eur="25" data-usd="30">{{ membership.annual | e }} · £20 / €25 / $30</option>
+            <option value="Life membership" data-gbp="200" data-eur="250" data-usd="300">{{ membership.life | e }} · £200 / €250 / $300</option>
           </select>
         </div>
       </div>
@@ -30,4 +31,4 @@
   </div>
 </section>
 <link rel="stylesheet" href="/app/contacts.css">
-<script type="module" src="/app/contacts.js?v=3"></script>
+<script type="module" src="/app/contacts.js?v=4"></script>
